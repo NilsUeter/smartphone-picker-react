@@ -1,0 +1,24 @@
+.filterBox {
+  margin-bottom: 15px;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  background: rgb(249, 249, 249);
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.12), 0 0 3px rgba(0, 0, 0, 0.24);
+}
+
+.filterBox p {
+  text-align: left;
+  letter-spacing: 0;
+  color: #12709e;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 8px 8px 4px;
+}
+
+.filterBox-Header {
+  vertical-align: top;
+  color: white;
+  background: #12709e;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 8px 8px 4px;
+}

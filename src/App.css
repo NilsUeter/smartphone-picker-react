@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans2", sans-serif;
+}
+
+@font-face {
+  font-family: "Open Sans2";
+  font-weight: 300;
+  font-style: normal;
+  src: local("Open Sans Light"), local("OpenSans-Light"),
+    url("./fonts/open-sans-v15-latin-ext_latin-300.woff2") format("woff2"),
+    url("./fonts/open-sans-v15-latin-ext_latin-300.woff") format("woff");
+}
+/* open-sans-regular - latin-ext_latin */
+@font-face {
+  font-family: "Open Sans2";
+  font-weight: 400;
+  font-style: normal;
+  src: local("Open Sans Regular"), local("OpenSans-Regular"),
+    url("./fonts/open-sans-v15-latin-ext_latin-regular.woff2") format("woff2"),
+    url("./fonts/open-sans-v15-latin-ext_latin-regular.woff") format("woff");
+}
+/* open-sans-600 - latin-ext_latin */
+@font-face {
+  font-family: "Open Sans2";
+  font-weight: 600;
+  font-style: normal;
+  src: local("Open Sans SemiBold"), local("OpenSans-SemiBold"),
+    url("./fonts/open-sans-v15-latin-ext_latin-600.woff2") format("woff2"),
+    url("./fonts/open-sans-v15-latin-ext_latin-600.woff") format("woff");
+}
+/* open-sans-700 - latin-ext_latin */
+@font-face {
+  font-family: "Open Sans2";
+  font-weight: 700;
+  font-style: normal;
+  src: local("Open Sans Bold"), local("OpenSans-Bold"),
+    url("./fonts/open-sans-v15-latin-ext_latin-700.woff2") format("woff2"),
+    url("./fonts/open-sans-v15-latin-ext_latin-700.woff") format("woff");
+}
+/* open-sans-800 - latin-ext_latin */
+@font-face {
+  font-family: "Open Sans2";
+  font-weight: 800;
+  font-style: normal;
+  src: local("Open Sans ExtraBold"), local("OpenSans-ExtraBold"),
+    url("./fonts/open-sans-v15-latin-ext_latin-800.woff2") format("woff2"),
+    url("./fonts/open-sans-v15-latin-ext_latin-800.woff") format("woff");
+}
+
+.App {
+  display: grid;
+  grid-template-rows: minmax(10px, 10vh) minmax(200px, 80vh) minmax(10px, 10vh);
+
+  grid-template-columns: minmax(10px, 320px) minmax(10px, 5fr);
+  grid-template-areas:
+    "header header header"
+    "sidebar content content"
+    "footer footer footer";
+}
+
+.sidebar {
+  grid-area: sidebar;
+}
+
+.content {
+  grid-area: content;
+}
+
+.header {
+  grid-area: header;
+}
+
+.footer {
+  grid-area: footer;
+}
