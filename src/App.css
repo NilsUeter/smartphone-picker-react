@@ -54,7 +54,7 @@ body {
 
 .App {
   display: grid;
-  grid-template-rows: minmax(10px, 13vh) minmax(200px, 80vh) minmax(0, 7vh);
+  grid-template-rows: minmax(100px, 11vh) minmax(200px, 88vh) minmax(0, 1vh);
 
   grid-template-columns: minmax(200px, 200px) minmax(10px, 5fr);
   grid-template-areas:
@@ -65,6 +65,8 @@ body {
 
 .sidebar {
   grid-area: sidebar;
+
+  overflow: auto;
 }
 
 .content {
@@ -79,4 +81,13 @@ body {
 
 .footer {
   grid-area: footer;
+
+  box-sizing: border-box;
+  font-weight: bold;
+  z-index: 20;
+  padding-top: 10px;
+  padding-left: 15%;
+  text-align: left;
+  background-color: #12709e;
+  box-shadow: 0 -10px 20px rgba(0, 0, 0, 0.19), 0 -6px 6px rgba(0, 0, 0, 0.23);
 }

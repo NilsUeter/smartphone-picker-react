@@ -17,14 +17,23 @@ class Sidebar extends Component {
         </div>
         <div className="filterBox">
           <div className="filterBox-Header">Budget and Size</div>
-          <FilterElement />
+          <p>Price</p>
+          <p>Size</p>
+          <p>Display</p>
+          <p>Length</p>
+          <p>Width</p>
         </div>
         <div className="filterBox">
           <div className="filterBox-Header">Ratings</div>
+          <p>Design</p>
           <RatingStars name="design" />
+          <p>Processor</p>
           <RatingStars name="processor" />
+          <p>Updates</p>
           <RatingStars name="updates" />
+          <p>Camera</p>
           <RatingStars name="camera" />
+          <p>Battery</p>
           <RatingStars name="battery" />
         </div>
         <div className="filterBox">
