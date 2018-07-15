@@ -13,7 +13,7 @@ class Sidebar extends Component {
         <div className="filterBox">
           <div className="filterBox-Header">Sorting Options</div>
           <p>Scale phones</p>
-          <ToggleSwitch />
+          <ToggleSwitch name="scaleInput" />
         </div>
         <div className="filterBox">
           <div className="filterBox-Header">Budget and Size</div>
@@ -30,13 +30,13 @@ class Sidebar extends Component {
         <div className="filterBox">
           <div className="filterBox-Header">Personal Preferences</div>
           <p>Headphone-Jack</p>
-          <ToggleSwitch />
+          <ToggleSwitch name="headphoneJack" />
           <p>2 SIMS</p>
-          <ToggleSwitch />
+          <ToggleSwitch name="simCards" />
           <p>SD Slot</p>
-          <ToggleSwitch />
+          <ToggleSwitch name="sdSlot" />
           <p>No notch</p>
-          <ToggleSwitch />
+          <ToggleSwitch name="notch" />
         </div>
       </div>
     );

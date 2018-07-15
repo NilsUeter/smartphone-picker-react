@@ -4,6 +4,9 @@
   font-family: "Open Sans2", sans-serif;
 }
 
+body {
+}
+
 @font-face {
   font-family: "Open Sans2";
   font-weight: 300;
@@ -51,9 +54,9 @@
 
 .App {
   display: grid;
-  grid-template-rows: minmax(10px, 10vh) minmax(200px, 80vh) minmax(10px, 10vh);
+  grid-template-rows: minmax(10px, 13vh) minmax(200px, 80vh) minmax(0, 7vh);
 
-  grid-template-columns: minmax(10px, 320px) minmax(10px, 5fr);
+  grid-template-columns: minmax(200px, 200px) minmax(10px, 5fr);
   grid-template-areas:
     "header header header"
     "sidebar content content"
@@ -66,6 +69,8 @@
 
 .content {
   grid-area: content;
+
+  overflow: auto;
 }
 
 .header {

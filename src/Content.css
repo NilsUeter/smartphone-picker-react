@@ -1,0 +1,9 @@
+.smartphone {
+  margin: 5px;
+}
+
+.smartphones {
+  display: flex; /* or inline-flex */
+  flex-direction: row;
+  margin-top: 30px;
+}

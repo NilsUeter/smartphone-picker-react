@@ -1,0 +1,40 @@
+.smartphone-details {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: minmax(0, auto);
+  padding: 10px;
+}
+
+.smartphone-name {
+}
+
+.ls {
+  grid-column: 1;
+}
+
+.rs {
+  grid-column: 2;
+  text-align: right;
+}
+
+.bs {
+  grid-column: 1 / span 2;
+}
+
+.qtip-img {
+  vertical-align: bottom;
+  width: auto;
+  height: auto;
+  max-height: 400px;
+}
+
+.img-container {
+  height: 410px;
+  align-items: flex-end;
+  display: flex;
+}
+
+.horizontalRule {
+  border: none;
+  border-top: 1px solid #8c8b8b;
+}

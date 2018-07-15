@@ -3,7 +3,7 @@
     {
       "name": "6.1",
       "brand": "Nokia",
-      "imagelink": "images\\\\/TheNewNokia6_hardware-phone.jpg?fm=png",
+      "imagelink": "TheNewNokia6_hardware-phone.jpg?fm=png",
       "smallestPrice": 0,
       "design": 4,
       "display": 5.5,
@@ -20,7 +20,7 @@
       "simcards": 2,
       "notch": 0,
       "waterproof": "",
-      "headphonejack": 1,
+      "headphoneJack": 1,
       "totalscore": 0,
       "asin": {
         "de": [
@@ -57,7 +57,7 @@
     {
       "name": "7 plus",
       "brand": "Nokia",
-      "imagelink": "images\\\\/Nokia7plus_ROW_hardware-phone.jpg?fm=png",
+      "imagelink": "Nokia7plus_ROW_hardware-phone.jpg?fm=png",
       "smallestPrice": 0,
       "design": 4,
       "display": 6,
@@ -74,7 +74,7 @@
       "simcards": 2,
       "notch": 0,
       "waterproof": "0",
-      "headphonejack": 1,
+      "headphoneJack": 1,
       "totalscore": 0,
       "asin": {
         "de": [
@@ -110,7 +110,7 @@
     {
       "name": "8",
       "brand": "Nokia",
-      "imagelink": "images\\\\/nokia8normal.jpg",
+      "imagelink": "nokia8normal.jpg",
       "smallestPrice": 0,
       "design": 4,
       "display": 5.3,
@@ -127,7 +127,7 @@
       "simcards": 1,
       "notch": 0,
       "waterproof": "4",
-      "headphonejack": 1,
+      "headphoneJack": 1,
       "totalscore": 0,
       "asin": {
         "de": [
@@ -166,7 +166,7 @@
     {
       "name": "8 Sirocco",
       "brand": "Nokia",
-      "imagelink": "images\\\\/Nokia8Sirocco_ROW__power-phone.jpg?fm=png",
+      "imagelink": "Nokia8Sirocco_ROW__power-phone.jpg?fm=png",
       "smallestPrice": 0,
       "design": 5,
       "display": 5.5,
@@ -183,7 +183,7 @@
       "simcards": 1,
       "notch": 0,
       "waterproof": "7",
-      "headphonejack": 0,
+      "headphoneJack": 0,
       "totalscore": 0,
       "asin": {
         "de": [["black", "B07B69SLMB"]],
@@ -202,7 +202,7 @@
     {
       "name": "Redmi Note 5 (32GB)",
       "brand": "Xiamoi",
-      "imagelink": "images\\\\/redmiNote5.jpg",
+      "imagelink": "redmiNote5.jpg",
       "smallestPrice": 0,
       "design": 4,
       "display": 6,
@@ -219,7 +219,7 @@
       "simcards": 2,
       "notch": 0,
       "waterproof": "0",
-      "headphonejack": 1,
+      "headphoneJack": 1,
       "totalscore": 0,
       "asin": {
         "de": [["black", "B07CZPXGVJ"], ["gold", "B07CRGJW16"]],
@@ -241,7 +241,7 @@
     {
       "name": "Redmi Note 5 (64GB)",
       "brand": "Xiamoi",
-      "imagelink": "images\\\\/redmiNote5.jpg",
+      "imagelink": "redmiNote5.jpg",
       "smallestPrice": 0,
       "design": 4,
       "display": 6,
@@ -258,7 +258,7 @@
       "simcards": 2,
       "notch": 0,
       "waterproof": "0",
-      "headphonejack": 1,
+      "headphoneJack": 1,
       "totalscore": 0,
       "asin": {
         "de": [
@@ -287,7 +287,7 @@
     {
       "name": "Mi A1",
       "brand": "Xiamoi",
-      "imagelink": "images\\\\/y74WpwR.jpg",
+      "imagelink": "y74WpwR.jpg",
       "smallestPrice": 0,
       "design": 4,
       "display": 5.5,
@@ -304,7 +304,7 @@
       "simcards": 2,
       "notch": 0,
       "waterproof": "0",
-      "headphonejack": 1,
+      "headphoneJack": 1,
       "totalscore": 0,
       "asin": {
         "de": [
@@ -341,7 +341,7 @@
     {
       "name": "Mi MIX 2",
       "brand": "Xiamoi",
-      "imagelink": "images\\\\/7EIAsGt.jpg",
+      "imagelink": "7EIAsGt.jpg",
       "smallestPrice": 0,
       "design": 5,
       "display": 6,
@@ -358,7 +358,7 @@
       "simcards": 2,
       "notch": 0,
       "waterproof": "0",
-      "headphonejack": 0,
+      "headphoneJack": 0,
       "totalscore": 0,
       "asin": {
         "de": [
@@ -387,7 +387,7 @@
     {
       "name": "Mi MIX 2s (64GB)",
       "brand": "Xiamoi",
-      "imagelink": "images\\\\/7EIAsGt.jpg",
+      "imagelink": "7EIAsGt.jpg",
       "smallestPrice": 0,
       "design": 5,
       "display": 6,
@@ -404,7 +404,7 @@
       "simcards": 2,
       "notch": 0,
       "waterproof": "0",
-      "headphonejack": 0,
+      "headphoneJack": 0,
       "totalscore": 0,
       "asin": {
         "de": [["black", "B07CZFRXP1"], ["white", "B07D4NBDM9"]],
@@ -426,7 +426,7 @@
     {
       "name": "Mi MIX 2s (128GB)",
       "brand": "Xiamoi",
-      "imagelink": "images\\\\/7EIAsGt.jpg",
+      "imagelink": "7EIAsGt.jpg",
       "smallestPrice": 0,
       "design": 5,
       "display": 6,
@@ -443,7 +443,7 @@
       "simcards": 2,
       "notch": 0,
       "waterproof": "0",
-      "headphonejack": 0,
+      "headphoneJack": 0,
       "totalscore": 0,
       "asin": { "de": [["black", "B07D4QL67S"]], "com": [] },
       "price": { "de": [[549]], "com": [] },
@@ -459,7 +459,7 @@
     {
       "name": "U11 life",
       "brand": "HTC",
-      "imagelink": "images\\\\/61iBTjkp3yL._SY741_.jpg",
+      "imagelink": "61iBTjkp3yL._SY741_.jpg",
       "smallestPrice": 0,
       "design": 4,
       "display": 5.2,
@@ -476,7 +476,7 @@
       "simcards": 2,
       "notch": 0,
       "waterproof": "7",
-      "headphonejack": 0,
+      "headphoneJack": 0,
       "totalscore": 0,
       "asin": {
         "de": [
@@ -501,7 +501,7 @@
     {
       "name": "U11 Plus",
       "brand": "HTC",
-      "imagelink": "images\\\\/51XltEAiihL._SY879_.jpg",
+      "imagelink": "51XltEAiihL._SY879_.jpg",
       "smallestPrice": 0,
       "design": 5,
       "display": 6,
@@ -518,7 +518,7 @@
       "simcards": 2,
       "notch": 0,
       "waterproof": "8",
-      "headphonejack": 0,
+      "headphoneJack": 0,
       "totalscore": 0,
       "asin": {
         "de": [
@@ -556,7 +556,7 @@
     {
       "name": "U12 Plus",
       "brand": "HTC",
-      "imagelink": "images\\\\/htcu12+.jpg",
+      "imagelink": "htcu12+.jpg",
       "smallestPrice": 0,
       "design": 5,
       "display": 6,
@@ -573,7 +573,7 @@
       "simcards": 2,
       "notch": 0,
       "waterproof": "8",
-      "headphonejack": 0,
+      "headphoneJack": 0,
       "totalscore": 0,
       "asin": {
         "de": [
@@ -606,7 +606,7 @@
     {
       "name": "Pixel 2",
       "brand": "Google",
-      "imagelink": "images\\\\/81Ea5V2MehL._SY879_.jpg",
+      "imagelink": "81Ea5V2MehL._SY879_.jpg",
       "smallestPrice": 0,
       "design": 4,
       "display": 5,
@@ -623,7 +623,7 @@
       "simcards": 1,
       "notch": 0,
       "waterproof": "7",
-      "headphonejack": 0,
+      "headphoneJack": 0,
       "totalscore": 0,
       "asin": {
         "de": [
@@ -661,7 +661,7 @@
     {
       "name": "Pixel 2 XL",
       "brand": "Google",
-      "imagelink": "images\\\\/pixel2xl.jpg",
+      "imagelink": "pixel2xl.jpg",
       "smallestPrice": 0,
       "design": 4,
       "display": 6,
@@ -678,7 +678,7 @@
       "simcards": 1,
       "notch": 0,
       "waterproof": "7",
-      "headphonejack": 0,
+      "headphoneJack": 0,
       "totalscore": 0,
       "asin": {
         "de": [
@@ -715,7 +715,7 @@
     {
       "name": "5t (64GB)",
       "brand": "OnePlus",
-      "imagelink": "images\\\\/qPbTGxu.jpg",
+      "imagelink": "qPbTGxu.jpg",
       "smallestPrice": 0,
       "design": 5,
       "display": 6,
@@ -732,7 +732,7 @@
       "simcards": 2,
       "notch": 0,
       "waterproof": "0",
-      "headphonejack": 1,
+      "headphoneJack": 1,
       "totalscore": 0,
       "asin": {
         "de": [
@@ -755,7 +755,7 @@
     {
       "name": "5t (128GB)",
       "brand": "OnePlus",
-      "imagelink": "images\\\\/qPbTGxu.jpg",
+      "imagelink": "qPbTGxu.jpg",
       "smallestPrice": 0,
       "design": 5,
       "display": 6,
@@ -772,7 +772,7 @@
       "simcards": 2,
       "notch": 0,
       "waterproof": "0",
-      "headphonejack": 1,
+      "headphoneJack": 1,
       "totalscore": 0,
       "asin": {
         "de": [
@@ -801,7 +801,7 @@
     {
       "name": "6 (64GB)",
       "brand": "OnePlus",
-      "imagelink": "images\\\\/oneplus6.jpg",
+      "imagelink": "oneplus6.jpg",
       "smallestPrice": 0,
       "design": 5,
       "display": 6.3,
@@ -818,7 +818,7 @@
       "simcards": 2,
       "notch": 1,
       "waterproof": "0",
-      "headphonejack": 1,
+      "headphoneJack": 1,
       "totalscore": 0,
       "asin": {
         "de": [
@@ -845,7 +845,7 @@
     {
       "name": "6 (128GB)",
       "brand": "OnePlus",
-      "imagelink": "images\\\\/oneplus6.jpg",
+      "imagelink": "oneplus6.jpg",
       "smallestPrice": 0,
       "design": 5,
       "display": 6,
@@ -862,7 +862,7 @@
       "simcards": 2,
       "notch": 1,
       "waterproof": "0",
-      "headphonejack": 1,
+      "headphoneJack": 1,
       "totalscore": 0,
       "asin": {
         "de": [
@@ -895,7 +895,7 @@
     {
       "name": "Honor 7X",
       "brand": "Huawei",
-      "imagelink": "images\\\\/9chGwId.jpg",
+      "imagelink": "9chGwId.jpg",
       "smallestPrice": 0,
       "design": 4,
       "display": 5.9,
@@ -912,7 +912,7 @@
       "simcards": 2,
       "notch": 0,
       "waterproof": "0",
-      "headphonejack": 1,
+      "headphoneJack": 1,
       "totalscore": 0,
       "asin": {
         "de": [
@@ -948,7 +948,7 @@
     {
       "name": "Honor 10",
       "brand": "Huawei",
-      "imagelink": "images\\\\/honor10.jpg",
+      "imagelink": "honor10.jpg",
       "smallestPrice": 0,
       "design": 4,
       "display": 5.8,
@@ -965,7 +965,7 @@
       "simcards": 2,
       "notch": 1,
       "waterproof": "0",
-      "headphonejack": 1,
+      "headphoneJack": 1,
       "totalscore": 0,
       "asin": {
         "de": [
@@ -1003,7 +1003,7 @@
     {
       "name": "Mate 10 Pro",
       "brand": "Huawei",
-      "imagelink": "images\\\\/huawei-mate10-pro.jpg",
+      "imagelink": "huawei-mate10-pro.jpg",
       "smallestPrice": 0,
       "design": 4,
       "display": 6,
@@ -1020,7 +1020,7 @@
       "simcards": 2,
       "notch": 0,
       "waterproof": "7",
-      "headphonejack": 0,
+      "headphoneJack": 0,
       "totalscore": 0,
       "asin": {
         "de": [
@@ -1040,7 +1040,7 @@
     {
       "name": "P20",
       "brand": "Huawei",
-      "imagelink": "images\\\\/vqPQcia.jpg",
+      "imagelink": "vqPQcia.jpg",
       "smallestPrice": 0,
       "design": 5,
       "display": 5.8,
@@ -1057,7 +1057,7 @@
       "simcards": 2,
       "notch": 1,
       "waterproof": "4",
-      "headphonejack": 0,
+      "headphoneJack": 0,
       "totalscore": 0,
       "asin": {
         "de": [["black", "B07BHD7MHL"], ["blue", "B07BHDC33K"]],
@@ -1079,7 +1079,7 @@
     {
       "name": "P20 lite",
       "brand": "Huawei",
-      "imagelink": "images\\\\/5wTSOmp.jpg",
+      "imagelink": "5wTSOmp.jpg",
       "smallestPrice": 0,
       "design": 4,
       "display": 5.8,
@@ -1096,7 +1096,7 @@
       "simcards": 2,
       "notch": 1,
       "waterproof": "0",
-      "headphonejack": 1,
+      "headphoneJack": 1,
       "totalscore": 0,
       "asin": {
         "de": [
@@ -1129,7 +1129,7 @@
     {
       "name": "P20 Pro",
       "brand": "Huawei",
-      "imagelink": "images\\\\/Vc0thgM.jpg",
+      "imagelink": "Vc0thgM.jpg",
       "smallestPrice": 0,
       "design": 5,
       "display": 6.1,
@@ -1146,7 +1146,7 @@
       "simcards": 2,
       "notch": 1,
       "waterproof": "7",
-      "headphonejack": 1,
+      "headphoneJack": 1,
       "totalscore": 0,
       "asin": {
         "de": [
@@ -1175,7 +1175,7 @@
     {
       "name": "Phone",
       "brand": "Essential",
-      "imagelink": "images\\\\/OGr1dfB.jpg",
+      "imagelink": "OGr1dfB.jpg",
       "smallestPrice": 0,
       "design": 5,
       "display": 5.7,
@@ -1192,7 +1192,7 @@
       "simcards": 1,
       "notch": 1,
       "waterproof": "0",
-      "headphonejack": 0,
+      "headphoneJack": 0,
       "totalscore": 0,
       "asin": {
         "de": [
@@ -1221,7 +1221,7 @@
     {
       "name": "G6",
       "brand": "LG",
-      "imagelink": "images\\\\/814YBWa7gGL._SY879_.jpg",
+      "imagelink": "814YBWa7gGL._SY879_.jpg",
       "smallestPrice": 0,
       "design": 3,
       "display": 5.7,
@@ -1238,7 +1238,7 @@
       "simcards": 1,
       "notch": 0,
       "waterproof": "8",
-      "headphonejack": 1,
+      "headphoneJack": 1,
       "totalscore": 0,
       "asin": {
         "de": [
@@ -1275,7 +1275,7 @@
     {
       "name": "G7 ThinQ",
       "brand": "LG",
-      "imagelink": "images\\\\/g7thinQ.jpg",
+      "imagelink": "g7thinQ.jpg",
       "smallestPrice": 0,
       "design": 5,
       "display": 6.1,
@@ -1292,7 +1292,7 @@
       "simcards": 1,
       "notch": 1,
       "waterproof": "8",
-      "headphonejack": 1,
+      "headphoneJack": 1,
       "totalscore": 0,
       "asin": {
         "de": [["platinum grey", "B07D7NXYT6"], ["black", "B07D69KKBZ"]],
@@ -1314,7 +1314,7 @@
     {
       "name": "V30",
       "brand": "LG",
-      "imagelink": "images\\\\/715GbwmYJjL._SY879_.jpg",
+      "imagelink": "715GbwmYJjL._SY879_.jpg",
       "smallestPrice": 0,
       "design": 4,
       "display": 6,
@@ -1331,7 +1331,7 @@
       "simcards": 2,
       "notch": 0,
       "waterproof": "8",
-      "headphonejack": 1,
+      "headphoneJack": 1,
       "totalscore": 0,
       "asin": {
         "de": [["cloud silver", "B075GYD539"], ["moroccan blue", "B075GTJYSV"]],
@@ -1353,7 +1353,7 @@
     {
       "name": "Xperia XZ2",
       "brand": "Sony",
-      "imagelink": "images\\\\/lis9AWg.jpg",
+      "imagelink": "lis9AWg.jpg",
       "smallestPrice": 0,
       "design": 3,
       "display": 5.7,
@@ -1370,7 +1370,7 @@
       "simcards": 2,
       "notch": 0,
       "waterproof": "8",
-      "headphonejack": 0,
+      "headphoneJack": 0,
       "totalscore": 0,
       "asin": {
         "de": [
@@ -1403,7 +1403,7 @@
     {
       "name": "Xperia XZ2 Compact",
       "brand": "Sony",
-      "imagelink": "images\\\\/ExuzR25.jpg",
+      "imagelink": "ExuzR25.jpg",
       "smallestPrice": 0,
       "design": 3,
       "display": 5,
@@ -1420,7 +1420,7 @@
       "simcards": 2,
       "notch": 0,
       "waterproof": "8",
-      "headphonejack": 0,
+      "headphoneJack": 0,
       "totalscore": 0,
       "asin": {
         "de": [
@@ -1453,7 +1453,7 @@
     {
       "name": "iPhone 8 (64GB)",
       "brand": "Apple",
-      "imagelink": "images\\\\/xGEFWor.jpg",
+      "imagelink": "xGEFWor.jpg",
       "smallestPrice": 0,
       "design": 3,
       "display": 4.7,
@@ -1470,7 +1470,7 @@
       "simcards": 1,
       "notch": 0,
       "waterproof": "7",
-      "headphonejack": 0,
+      "headphoneJack": 0,
       "totalscore": 0,
       "asin": {
         "de": [
@@ -1499,7 +1499,7 @@
     {
       "name": "iPhone 8 (256GB)",
       "brand": "Apple",
-      "imagelink": "images\\\\/xGEFWor.jpg",
+      "imagelink": "xGEFWor.jpg",
       "smallestPrice": 0,
       "design": 3,
       "display": 4.7,
@@ -1516,7 +1516,7 @@
       "simcards": 1,
       "notch": 0,
       "waterproof": "7",
-      "headphonejack": 0,
+      "headphoneJack": 0,
       "totalscore": 0,
       "asin": {
         "de": [
@@ -1545,7 +1545,7 @@
     {
       "name": "iPhone 8 Plus (64GB)",
       "brand": "Apple",
-      "imagelink": "images\\\\/lq2EmJG.jpg",
+      "imagelink": "lq2EmJG.jpg",
       "smallestPrice": 0,
       "design": 3,
       "display": 5.5,
@@ -1562,7 +1562,7 @@
       "simcards": 1,
       "notch": 0,
       "waterproof": "7",
-      "headphonejack": 0,
+      "headphoneJack": 0,
       "totalscore": 0,
       "asin": {
         "de": [
@@ -1595,7 +1595,7 @@
     {
       "name": "iPhone 8 Plus (256GB)",
       "brand": "Apple",
-      "imagelink": "images\\\\/lq2EmJG.jpg",
+      "imagelink": "lq2EmJG.jpg",
       "smallestPrice": 0,
       "design": 3,
       "display": 5.5,
@@ -1612,7 +1612,7 @@
       "simcards": 1,
       "notch": 0,
       "waterproof": "7",
-      "headphonejack": 0,
+      "headphoneJack": 0,
       "totalscore": 0,
       "asin": {
         "de": [
@@ -1641,7 +1641,7 @@
     {
       "name": "iPhone X (64GB)",
       "brand": "Apple",
-      "imagelink": "images\\\\/UDV8YUp.jpg",
+      "imagelink": "UDV8YUp.jpg",
       "smallestPrice": 0,
       "design": 5,
       "display": 5.8,
@@ -1658,7 +1658,7 @@
       "simcards": 1,
       "notch": 1,
       "waterproof": "7",
-      "headphonejack": 0,
+      "headphoneJack": 0,
       "totalscore": 0,
       "asin": {
         "de": [["space grey", "B075LXNK24"], ["silver", "B075LYDD7Z"]],
@@ -1680,7 +1680,7 @@
     {
       "name": "iPhone X (256GB)",
       "brand": "Apple",
-      "imagelink": "images\\\\/UDV8YUp.jpg",
+      "imagelink": "UDV8YUp.jpg",
       "smallestPrice": 0,
       "design": 5,
       "display": 5.8,
@@ -1697,7 +1697,7 @@
       "simcards": 1,
       "notch": 1,
       "waterproof": "7",
-      "headphonejack": 0,
+      "headphoneJack": 0,
       "totalscore": 0,
       "asin": {
         "de": [["space grey", "B075LWF4C3"], ["silver", "B075LRK2QK"]],
@@ -1719,7 +1719,7 @@
     {
       "name": "Moto X4",
       "brand": "Motorola",
-      "imagelink": "images\\\\/61eEr3fsroL._SY879_.jpg",
+      "imagelink": "61eEr3fsroL._SY879_.jpg",
       "smallestPrice": 0,
       "design": 3,
       "display": 5.2,
@@ -1736,7 +1736,7 @@
       "simcards": 2,
       "notch": 0,
       "waterproof": "7",
-      "headphonejack": 1,
+      "headphoneJack": 1,
       "totalscore": 0,
       "asin": {
         "de": [["super black", "B074MHFGFS"], ["sterling blue", "B00V4Y3RII"]],
@@ -1758,7 +1758,7 @@
     {
       "name": "Moto Z2 Play",
       "brand": "Motorola",
-      "imagelink": "images\\\\/motoz2play.jpg",
+      "imagelink": "motoz2play.jpg",
       "smallestPrice": 0,
       "design": 3,
       "display": 5.5,
@@ -1775,7 +1775,7 @@
       "simcards": 2,
       "notch": 0,
       "waterproof": "4",
-      "headphonejack": 1,
+      "headphoneJack": 1,
       "totalscore": 0,
       "asin": {
         "de": [["lunar grey", "B0747WYLTX"], ["fine gold", "B0747X83J5"]],
@@ -1797,7 +1797,7 @@
     {
       "name": "Moto Z2 Force",
       "brand": "Motorola",
-      "imagelink": "images\\\\/motoz2force.jpg",
+      "imagelink": "motoz2force.jpg",
       "smallestPrice": 0,
       "design": 3,
       "display": 5.5,
@@ -1814,7 +1814,7 @@
       "simcards": 2,
       "notch": 0,
       "waterproof": "4",
-      "headphonejack": 0,
+      "headphoneJack": 0,
       "totalscore": 0,
       "asin": {
         "de": [["black", "B074MH8DJ5"]],
@@ -1833,7 +1833,7 @@
     {
       "name": "Moto G6",
       "brand": "Motorola",
-      "imagelink": "images\\\\/v3WB6HT.jpg",
+      "imagelink": "v3WB6HT.jpg",
       "smallestPrice": 0,
       "design": 3,
       "display": 5.7,
@@ -1850,7 +1850,7 @@
       "simcards": 2,
       "notch": 0,
       "waterproof": "4",
-      "headphonejack": 1,
+      "headphoneJack": 1,
       "totalscore": 0,
       "asin": {
         "de": [["deep indigo", "B07BXWZ8ZG"]],
@@ -1869,7 +1869,7 @@
     {
       "name": "Moto G6 [Amazon]",
       "brand": "Motorola",
-      "imagelink": "images\\\\/motog6amazonexclusive.jpg",
+      "imagelink": "motog6amazonexclusive.jpg",
       "smallestPrice": 0,
       "design": 3,
       "display": 5.7,
@@ -1886,7 +1886,7 @@
       "simcards": 2,
       "notch": 0,
       "waterproof": "4",
-      "headphonejack": 1,
+      "headphoneJack": 1,
       "totalscore": 0,
       "asin": {
         "de": [["deep indigo", "B079MT5K9N"]],
@@ -1905,7 +1905,7 @@
     {
       "name": "Moto G6 Plus",
       "brand": "Motorola",
-      "imagelink": "images\\\\/phQJx7z.jpg",
+      "imagelink": "phQJx7z.jpg",
       "smallestPrice": 0,
       "design": 3,
       "display": 5.9,
@@ -1922,7 +1922,7 @@
       "simcards": 2,
       "notch": 0,
       "waterproof": "4",
-      "headphonejack": 1,
+      "headphoneJack": 1,
       "totalscore": 0,
       "asin": {
         "de": [["deep indigo", "B07CBC869D"]],
@@ -1941,7 +1941,7 @@
     {
       "name": "Moto G6 Play",
       "brand": "Motorola",
-      "imagelink": "images\\\\/JQ7Vnzc.jpg",
+      "imagelink": "JQ7Vnzc.jpg",
       "smallestPrice": 0,
       "design": 3,
       "display": 5.7,
@@ -1958,7 +1958,7 @@
       "simcards": 2,
       "notch": 0,
       "waterproof": "4",
-      "headphonejack": 1,
+      "headphoneJack": 1,
       "totalscore": 0,
       "asin": {
         "de": [["deep indigo", "B07BXFRK2Q"]],
@@ -1977,7 +1977,7 @@
     {
       "name": "Moto E4",
       "brand": "Motorola",
-      "imagelink": "images\\\\/71r21xr50KL._SY879_.jpg",
+      "imagelink": "71r21xr50KL._SY879_.jpg",
       "smallestPrice": 0,
       "design": 2,
       "display": 5,
@@ -1994,7 +1994,7 @@
       "simcards": 2,
       "notch": 0,
       "waterproof": "0",
-      "headphonejack": 1,
+      "headphoneJack": 1,
       "totalscore": 0,
       "asin": {
         "de": [
@@ -2027,7 +2027,7 @@
     {
       "name": "Moto E4 Plus",
       "brand": "Motorola",
-      "imagelink": "images\\\\/motoe4plus.jpg",
+      "imagelink": "motoe4plus.jpg",
       "smallestPrice": 0,
       "design": 2,
       "display": 5.5,
@@ -2044,7 +2044,7 @@
       "simcards": 2,
       "notch": 0,
       "waterproof": "0",
-      "headphonejack": 1,
+      "headphoneJack": 1,
       "totalscore": 0,
       "asin": {
         "de": [["fine gold", "B071J7FRBD"]],
@@ -2063,7 +2063,7 @@
     {
       "name": "Moto G5S",
       "brand": "Motorola",
-      "imagelink": "images\\\\/S9FO30n.jpg",
+      "imagelink": "S9FO30n.jpg",
       "smallestPrice": 0,
       "design": 3,
       "display": 5.2,
@@ -2080,7 +2080,7 @@
       "simcards": 2,
       "notch": 0,
       "waterproof": "4",
-      "headphonejack": 1,
+      "headphoneJack": 1,
       "totalscore": 0,
       "asin": {
         "de": [["fine gold", "B074MHL2DN"], ["lunar grey", "B074MGP8GJ"]],
@@ -2102,7 +2102,7 @@
     {
       "name": "Moto G5S Plus",
       "brand": "Motorola",
-      "imagelink": "images\\\\/tdlPqFG.jpg",
+      "imagelink": "tdlPqFG.jpg",
       "smallestPrice": 0,
       "design": 3,
       "display": 5.5,
@@ -2119,7 +2119,7 @@
       "simcards": 2,
       "notch": 0,
       "waterproof": "4",
-      "headphonejack": 1,
+      "headphoneJack": 1,
       "totalscore": 0,
       "asin": {
         "de": [["blush gold", "B074SQZ2PB"], ["lunar grey", "B074SR2DVT"]],
@@ -2141,7 +2141,7 @@
     {
       "name": "Galaxy A5",
       "brand": "Samsung",
-      "imagelink": "images\\\\/wrIcHyN.jpg",
+      "imagelink": "wrIcHyN.jpg",
       "smallestPrice": 0,
       "design": 1,
       "display": 5.2,
@@ -2158,7 +2158,7 @@
       "simcards": 1,
       "notch": 0,
       "waterproof": "8",
-      "headphonejack": 1,
+      "headphoneJack": 1,
       "totalscore": 0,
       "asin": {
         "de": [
@@ -2191,7 +2191,7 @@
     {
       "name": "Galaxy S9 (64GB)",
       "brand": "Samsung",
-      "imagelink": "images\\\\/71uI%2BnAzruL._SY879_.jpg",
+      "imagelink": "71uI%2BnAzruL._SY879_.jpg",
       "smallestPrice": 0,
       "design": 5,
       "display": 5.8,
@@ -2208,7 +2208,7 @@
       "simcards": 2,
       "notch": 0,
       "waterproof": "8",
-      "headphonejack": 1,
+      "headphoneJack": 1,
       "totalscore": 0,
       "asin": {
         "de": [
@@ -2241,7 +2241,7 @@
     {
       "name": "Galaxy S9 (256GB)",
       "brand": "Samsung",
-      "imagelink": "images\\\\/71uI%2BnAzruL._SY879_.jpg",
+      "imagelink": "71uI%2BnAzruL._SY879_.jpg",
       "smallestPrice": 0,
       "design": 5,
       "display": 5.8,
@@ -2258,7 +2258,7 @@
       "simcards": 1,
       "notch": 0,
       "waterproof": "8",
-      "headphonejack": 1,
+      "headphoneJack": 1,
       "totalscore": 0,
       "asin": {
         "de": [["grey", "B07C6351NJ"], ["midnight black", "B07C5ZNN9Q"]],
@@ -2280,7 +2280,7 @@
     {
       "name": "Galaxy S9 Plus (64GB)",
       "brand": "Samsung",
-      "imagelink": "images\\\\/71dd-elhT7L._SY879_.jpg",
+      "imagelink": "71dd-elhT7L._SY879_.jpg",
       "smallestPrice": 0,
       "design": 5,
       "display": 6.2,
@@ -2297,7 +2297,7 @@
       "simcards": 2,
       "notch": 0,
       "waterproof": "8",
-      "headphonejack": 1,
+      "headphoneJack": 1,
       "totalscore": 0,
       "asin": {
         "de": [
@@ -2330,7 +2330,7 @@
     {
       "name": "Galaxy S9 Plus (256GB)",
       "brand": "Samsung",
-      "imagelink": "images\\\\/71dd-elhT7L._SY879_.jpg",
+      "imagelink": "71dd-elhT7L._SY879_.jpg",
       "smallestPrice": 0,
       "design": 5,
       "display": 6.2,
@@ -2347,7 +2347,7 @@
       "simcards": 1,
       "notch": 0,
       "waterproof": "8",
-      "headphonejack": 1,
+      "headphoneJack": 1,
       "totalscore": 0,
       "asin": {
         "de": [["grey", "B07C64N3WD"], ["midnight black", "B07C61XVDQ"]],
@@ -2369,7 +2369,7 @@
     {
       "name": "Galaxy S8 Note",
       "brand": "Samsung",
-      "imagelink": "images\\\\/PQYBIud.jpg",
+      "imagelink": "PQYBIud.jpg",
       "smallestPrice": 0,
       "design": 5,
       "display": 6.3,
@@ -2386,7 +2386,7 @@
       "simcards": 1,
       "notch": 0,
       "waterproof": "8",
-      "headphonejack": 1,
+      "headphoneJack": 1,
       "totalscore": 0,
       "asin": {
         "de": [
@@ -2415,7 +2415,7 @@
     {
       "name": "Galaxy S8",
       "brand": "Samsung",
-      "imagelink": "images\\\\/6gY3U53.jpg",
+      "imagelink": "6gY3U53.jpg",
       "smallestPrice": 0,
       "design": 5,
       "display": 5.8,
@@ -2432,7 +2432,7 @@
       "simcards": 1,
       "notch": 0,
       "waterproof": "8",
-      "headphonejack": 1,
+      "headphoneJack": 1,
       "totalscore": 0,
       "asin": {
         "de": [
