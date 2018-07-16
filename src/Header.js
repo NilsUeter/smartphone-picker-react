@@ -2,6 +2,10 @@ import React, { Component } from "react";
 import { observer } from "mobx-react";
 import "./Header.css";
 
+import TextSelect from "./TextSelect";
+
+import SmartphoneStore from "./SmartphoneStore.js";
+
 @observer
 class Header extends Component {
   render() {
@@ -43,16 +47,19 @@ class Header extends Component {
               <ul>
                 <li>
                   <a id="smartphoneCount" className="smartphoneCount">
-                    100
+                    {SmartphoneStore.listOfFilteredAndScoredObjects
+                      ? SmartphoneStore.listOfFilteredAndScoredObjects.length
+                      : 0}/
+                    {SmartphoneStore.obj.smartphones
+                      ? SmartphoneStore.obj.smartphones.length
+                      : 0}
                   </a>
                 </li>
                 <li>
-                  <select id="countryInput" className="countryInput">
-                    <option value="de" defaultValue>
-                      GERMANY
-                    </option>
-                    <option value="com">UNITED STATES</option>
-                  </select>
+                  <TextSelect
+                    name="country"
+                    options={[["de", "GERMANY"], ["com", "UNITED STATES"]]}
+                  />
                 </li>
               </ul>
             </div>

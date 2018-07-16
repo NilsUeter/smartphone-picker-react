@@ -1,16 +1,19 @@
 import React, { Component } from "react";
 import { observer } from "mobx-react";
-import "./TextSelect.css";
+import "./TextField.css";
 
 import FilterStore from "./FilterStore.js";
 
 @observer
-class TextSelect extends Component {
+class TextField extends Component {
   render() {
     return (
-      <select
-        id={this.props.name}
-        className="textSelect"
+      <input
+        id={FilterStore[this.props.name]}
+        name={FilterStore[this.props.name]}
+        className="smallInput"
+        size="2"
+        type="text"
         value={FilterStore[this.props.name]}
         onChange={changeEvent => {
           FilterStore.changeAttribute(
@@ -18,15 +21,9 @@ class TextSelect extends Component {
             changeEvent.target.value
           );
         }}
-      >
-        {this.props.options.map(smartphone => (
-          <option key={smartphone[0]} value={smartphone[0]}>
-            {smartphone[1]}
-          </option>
-        ))}
-      </select>
+      />
     );
   }
 }
 
-export default TextSelect;
+export default TextField;

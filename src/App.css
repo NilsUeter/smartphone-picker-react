@@ -56,7 +56,7 @@ body {
   display: grid;
   grid-template-rows: minmax(100px, 11vh) minmax(200px, 88vh) minmax(0, 1vh);
 
-  grid-template-columns: minmax(200px, 200px) minmax(10px, 5fr);
+  grid-template-columns: minmax(250px, 250px) minmax(10px, 5fr);
   grid-template-areas:
     "header header header"
     "sidebar content content"
@@ -65,7 +65,7 @@ body {
 
 .sidebar {
   grid-area: sidebar;
-
+  padding: 10px;
   overflow: auto;
 }
 

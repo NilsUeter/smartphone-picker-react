@@ -4,6 +4,7 @@ import "./Sidebar.css";
 import RatingStars from "./RatingStars";
 import ToggleSwitch from "./ToggleSwitch";
 import TextSelect from "./TextSelect";
+import TextField from "./TextField";
 
 @observer
 class Sidebar extends Component {
@@ -23,16 +24,29 @@ class Sidebar extends Component {
               ["cheap", "Smartphones for small budgets."]
             ]}
           />
+          <p>Sort table by</p>
+          <TextSelect
+            name="filterType"
+            options={[
+              ["price", "Price"],
+              ["length", "Body-Size"],
+              ["display", "Screen-Size"],
+              ["totalscore", "Total Score"]
+            ]}
+          />
           <p>Scale phones</p>
           <ToggleSwitch name="scaleInput" />
         </div>
         <div className="filterBox">
           <div className="filterBox-Header">Budget and Size</div>
           <p>Price</p>
-          <p>Size</p>
+          <TextField name="price_minimum_1" />-<TextField name="price_maximum_1" />
           <p>Display</p>
+          <TextField name="size_minimum_1" />-<TextField name="size_maximum_1" />
           <p>Length</p>
+          <TextField name="size_minimum_2" />-<TextField name="size_maximum_2" />
           <p>Width</p>
+          <TextField name="size_minimum_3" />-<TextField name="size_maximum_3" />
         </div>
         <div className="filterBox">
           <div className="filterBox-Header">Ratings</div>

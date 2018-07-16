@@ -14,7 +14,7 @@ class Smartphone extends Component {
           {FilterStore.scaleInput ? (
             <img
               style={{
-                maxHeight: 0.3 * this.props.smartphone.length + "vh"
+                maxHeight: 0.28 * this.props.smartphone.length + "vh"
               }}
               className="qtip-img"
               src={"images/" + this.props.smartphone.imagelink}
@@ -43,7 +43,7 @@ class Smartphone extends Component {
               this.props.smartphone.price[FilterStore.country][
                 this.props.smartphone.smallestPrice
               ][0]
-            }
+            }€
           </p>
           <p className="smartphone-size ls">
             {this.props.smartphone.width +
@@ -51,22 +51,38 @@ class Smartphone extends Component {
               this.props.smartphone.length +
               "mm"}
           </p>
-          <p className="smartphone-memory ls">{this.props.smartphone.memory}</p>
-          <p className="smartphone-batterysize rs">
-            {this.props.smartphone.batterysize}
-          </p>
-          <p className="smartphone-storage ls">
-            {this.props.smartphone.storage}
-          </p>
+          <div className="ls">
+            <img className="icon" alt="" src="images/ram_icon.png" />
+            <p className="smartphone-memory">{this.props.smartphone.memory}</p>
+          </div>
+          <div className="rs">
+            <img className="icon" alt="" src="images/charging-battery.png" />
+            <p className="smartphone-batterysize">
+              {this.props.smartphone.batterysize}
+            </p>
+          </div>
+          <div className="ls">
+            <img className="icon" alt="" src="images/sd_storage.png" />
+            <p className="smartphone-storage">
+              {this.props.smartphone.storage}
+            </p>
+          </div>
+
           <p />
+          <br />
+          <p className="ls">Design</p>
           <p className="smartphone-design rs">{this.props.smartphone.design}</p>
+          <p className="ls">Processor</p>
           <p className="smartphone-processor rs">
             {this.props.smartphone.processor}
           </p>
+          <p className="ls">Software</p>
           <p className="smartphone-updates rs">
             {this.props.smartphone.updates}
           </p>
+          <p className="ls">Camera</p>
           <p className="smartphone-camera rs">{this.props.smartphone.camera}</p>
+          <p className="ls">Battery</p>
           <p className="smartphone-battery rs">
             {this.props.smartphone.battery}
           </p>
@@ -74,6 +90,34 @@ class Smartphone extends Component {
           <p className="smartphone-totalscore rs">
             {this.props.smartphone.totalscore}
           </p>
+
+          <div className="wrapper">
+            <span className="a-button a-button-primary">
+              <a
+                className="a-link"
+                target="_blank"
+                href={
+                  this.props.smartphone.amazon[FilterStore.country][
+                    this.props.smartphone.smallestPrice
+                  ][0]
+                }
+              >
+                <span className="a-button-inner">
+                  <img
+                    alt=""
+                    src="images/Amazon-Favicon-64x64.png"
+                    className="a-icon a-icon-shop-now"
+                  />
+                  <input
+                    className="a-button-input"
+                    type="submit"
+                    value="Add to cart"
+                  />
+                  <span className="a-button-text">Shop Now</span>
+                </span>
+              </a>
+            </span>
+          </div>
         </div>
       </div>
     );

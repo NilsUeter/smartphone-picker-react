@@ -17,7 +17,7 @@ class Content extends Component {
     var delta = Math.max(-1, Math.min(1, e.deltaY || -e.detail));
 
     // TODO: Make Scrolling smooth
-    this.myRef.current.scrollBy(delta * 55, delta * 55);
+    this.myRef.current.scrollBy(delta * 55, 0);
     e.preventDefault();
   }
 

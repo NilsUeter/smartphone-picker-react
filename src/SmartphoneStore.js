@@ -3,7 +3,6 @@ import { observable, computed, action } from "mobx";
 import FilterStore from "./FilterStore.js";
 
 class SmartphoneStore {
-  @observable todos = [];
   @observable obj = [];
 
   constructor(props) {
@@ -87,6 +86,63 @@ class SmartphoneStore {
       return xListOfFilteredObjects;
     }
     for (var i = 0; i < this.obj.smartphones.length; i++) {
+      if (
+        this.obj.smartphones[i]["price"][FilterStore.country][
+          this.obj.smartphones[i].smallestPrice
+        ] == null ||
+        this.obj.smartphones[i]["price"][FilterStore.country][
+          this.obj.smartphones[i].smallestPrice
+        ][0] === 0
+      ) {
+        continue;
+      }
+
+      //prize
+      if (
+        (FilterStore.price_minimum_1 !== "" &&
+          FilterStore.price_minimum_1 >
+            this.obj.smartphones[i]["price"][FilterStore.country][
+              this.obj.smartphones[i].smallestPrice
+            ][0]) ||
+        (FilterStore.price_maximum_1 !== "" &&
+          FilterStore.price_maximum_1 <
+            this.obj.smartphones[i]["price"][FilterStore.country][
+              this.obj.smartphones[i].smallestPrice
+            ][0])
+      ) {
+        continue;
+      }
+
+      //display
+      if (
+        (FilterStore.size_minimum_1 !== "" &&
+          FilterStore.size_minimum_1 > this.obj.smartphones[i].display) ||
+        (FilterStore.size_maximum_1 !== "" &&
+          FilterStore.size_maximum_1 < this.obj.smartphones[i].display)
+      ) {
+        continue;
+      }
+
+      //length
+      if (
+        (FilterStore.size_minimum_2 !== "" &&
+          FilterStore.size_minimum_2 > this.obj.smartphones[i].length) ||
+        (FilterStore.size_maximum_2 !== "" &&
+          FilterStore.size_maximum_2 < this.obj.smartphones[i].length)
+      ) {
+        continue;
+      }
+
+      //width
+      if (
+        (FilterStore.size_minimum_3 !== "" &&
+          FilterStore.size_minimum_3 > this.obj.smartphones[i].width) ||
+        (FilterStore.size_maximum_3 !== "" &&
+          FilterStore.size_maximum_3 < this.obj.smartphones[i].width)
+      ) {
+        continue;
+      }
+
       //design
       if (this.obj.smartphones[i].design < FilterStore.design) {
         continue;
@@ -158,9 +214,9 @@ class SmartphoneStore {
 
   @computed
   get listOfFilteredAndScoredObjects() {
-    console.log("daas");
     switch (FilterStore.filterType) {
       case "price":
+        console.log("ccc" + FilterStore.country);
         return this.sortBy(
           this.getLowestParameter,
           "price",
