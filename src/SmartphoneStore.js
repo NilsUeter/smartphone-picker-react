@@ -5,14 +5,12 @@ import FilterStore from "./FilterStore.js";
 class SmartphoneStore {
   @observable todos = [];
   @observable obj = [];
-  @observable listOfFilteredAndScoredObjects = [];
 
   constructor(props) {
     this.init();
   }
 
   init = () => {
-    console.log("init");
     this.loadJSON(this.init2);
   };
 
@@ -25,7 +23,6 @@ class SmartphoneStore {
   };
 
   loadJSON = callback => {
-    console.log("loading data");
     var xobj = new XMLHttpRequest();
     xobj.overrideMimeType("application/json");
     xobj.open("GET", "./data/smartphones.json", true); // Replace 'my_data' with the path to your file
@@ -90,8 +87,6 @@ class SmartphoneStore {
       return xListOfFilteredObjects;
     }
     for (var i = 0; i < this.obj.smartphones.length; i++) {
-      console.log(i);
-      console.log(FilterStore.processor);
       //design
       if (this.obj.smartphones[i].design < FilterStore.design) {
         continue;
@@ -115,6 +110,19 @@ class SmartphoneStore {
       //battery
       if (this.obj.smartphones[i].battery < FilterStore.battery) {
         continue;
+      }
+
+      //storage
+      if (FilterStore.storage !== "") {
+        if (this.obj.smartphones[i].storage < FilterStore.storage) {
+          continue;
+        }
+      }
+      //storage
+      if (FilterStore.waterproof !== "") {
+        if (this.obj.smartphones[i].waterproof < FilterStore.waterproof) {
+          continue;
+        }
       }
 
       //headphonejack
@@ -150,6 +158,7 @@ class SmartphoneStore {
 
   @computed
   get listOfFilteredAndScoredObjects() {
+    console.log("daas");
     switch (FilterStore.filterType) {
       case "price":
         return this.sortBy(
@@ -188,7 +197,7 @@ class SmartphoneStore {
         );
 
       default:
-        return null;
+        return [];
     }
   }
 
@@ -254,27 +263,8 @@ class SmartphoneStore {
         }
       }
     }
+    return listOfFilteredAndScoredObjects;
   }
-
-  getTodos = () => {
-    return this.todos;
-  };
-
-  getFilteredAndSortedSmartphones = () => {
-    return this.listOfFilteredAndScoredObjects;
-  };
-
-  getTodo = id => {
-    return this.todos.find(todo => todo.id === id);
-  };
-
-  addTodo = (text, id) => {
-    this.todos.push({ id: Date.now(), text });
-  };
-
-  removeTodo = id => {
-    this.todos = this.todos.filter(todo => todo.id !== id);
-  };
 }
 
 const smartphoneStore = new SmartphoneStore();

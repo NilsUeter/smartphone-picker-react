@@ -29,7 +29,7 @@
 }
 
 .img-container {
-  height: 410px;
+  height: 50vh;
   align-items: flex-end;
   display: flex;
 }

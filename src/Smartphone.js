@@ -14,9 +14,7 @@ class Smartphone extends Component {
           {FilterStore.scaleInput ? (
             <img
               style={{
-                maxHeight:
-                  this.props.filterStore.scale * this.props.smartphone.length +
-                  "px"
+                maxHeight: 0.3 * this.props.smartphone.length + "vh"
               }}
               className="qtip-img"
               src={"images/" + this.props.smartphone.imagelink}
@@ -25,7 +23,7 @@ class Smartphone extends Component {
             />
           ) : (
             <img
-              style={{}}
+              style={{ maxHeight: 0.3 * 155 + "vh" }}
               className="qtip-img"
               src={"images/" + this.props.smartphone.imagelink}
               alt=""
@@ -40,7 +38,13 @@ class Smartphone extends Component {
           <p className="smartphone-display ls">
             {this.props.smartphone.display + '"'}
           </p>
-          <p className="smartphone-price rs">{"price"}</p>
+          <p className="smartphone-price rs">
+            {
+              this.props.smartphone.price[FilterStore.country][
+                this.props.smartphone.smallestPrice
+              ][0]
+            }
+          </p>
           <p className="smartphone-size ls">
             {this.props.smartphone.width +
               "*" +

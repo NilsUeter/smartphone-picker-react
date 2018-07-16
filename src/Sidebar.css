@@ -11,7 +11,9 @@
   color: #12709e;
   font-size: 16px;
   font-weight: bold;
-  padding: 8px 8px 4px;
+  padding-left: 5px;
+  padding-top: 4px;
+  padding-bottom: 4px;
 }
 
 .filterBox-Header {
@@ -20,5 +22,44 @@
   background: #12709e;
   font-size: 16px;
   font-weight: bold;
-  padding: 8px 8px 4px;
+  padding-left: 5px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+input[type="date"],
+input[type="datetime"],
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="text"],
+input[type="time"],
+input[type="url"],
+select,
+textarea {
+  width: 150px;
+  font-size: 16px;
+  margin-left: 5px;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  transition: all 0.3s ease-in-out;
+  color: #12709e;
+  border: 1px solid #12709e;
+  background-color: rgb(249, 249, 249);
+}
+
+input[type="date"]:focus,
+input[type="datetime"]:focus,
+input[type="email"]:focus,
+input[type="number"]:focus,
+input[type="search"]:focus,
+input[type="text"]:focus,
+input[type="time"]:focus,
+input[type="url"]:focus,
+select:focus,
+textarea:focus {
+  border: 1px solid #12709e;
+  -webkit-box-shadow: 0 0 8px #12709e;
+  -moz-box-shadow: 0 0 8px #12709e;
+  box-shadow: 0 0 6px #12709e;
 }

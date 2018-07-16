@@ -3,7 +3,6 @@ import { observer } from "mobx-react";
 import "./ToggleSwitch.css";
 
 import FilterStore from "./FilterStore.js";
-import SmartphoneStore from "./SmartphoneStore.js";
 
 @observer
 class ToggleSwitch extends Component {
@@ -14,7 +13,7 @@ class ToggleSwitch extends Component {
           type="checkbox"
           id={this.props.name}
           className="cbx hidden rating_updater"
-          defaultChecked={FilterStore[this.props.name]}
+          checked={FilterStore[this.props.name]}
           onChange={() => {
             console.log(FilterStore[this.props.name]);
             FilterStore.toggleAttribute(this.props.name);

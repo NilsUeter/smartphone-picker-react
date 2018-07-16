@@ -8,11 +8,28 @@ import Smartphone from "./Smartphone.js";
 
 @observer
 class Content extends Component {
+  constructor(props) {
+    super(props);
+    this.myRef = React.createRef();
+  }
+
+  scrollHorizontally(e) {
+    var delta = Math.max(-1, Math.min(1, e.deltaY || -e.detail));
+
+    // TODO: Make Scrolling smooth
+    this.myRef.current.scrollBy(delta * 55, delta * 55);
+    e.preventDefault();
+  }
+
   render() {
     return (
-      <div className="content">
+      <div
+        className="content"
+        ref={this.myRef}
+        onWheel={e => this.scrollHorizontally(e)}
+      >
         <div className="smartphones">
-          {SmartphoneStore.listOfFilteredObjects.map(smartphone => (
+          {SmartphoneStore.listOfFilteredAndScoredObjects.map(smartphone => (
             <div key={smartphone.name} className="smartphone">
               <Smartphone
                 id={smartphone}
