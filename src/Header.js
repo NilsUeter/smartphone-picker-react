@@ -4,6 +4,7 @@ import "./Header.css";
 
 import TextSelect from "./TextSelect";
 
+import FilterStore from "./FilterStore.js";
 import SmartphoneStore from "./SmartphoneStore.js";
 
 @observer
@@ -17,6 +18,16 @@ class Header extends Component {
           </a>
         </div>
         <div className="main-menu">
+          <button
+            className="show-sidebar"
+            onClick={() => {
+              console.log(FilterStore["sidebarHidden"]);
+              FilterStore.toggleAttribute("sidebarHidden");
+              console.log(FilterStore["sidebarHidden"]);
+            }}
+          >
+            Show/Hide Filters
+          </button>
           <div className="main-menu-text">
             <div className="navdiv">
               <ul>

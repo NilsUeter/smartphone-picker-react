@@ -6,11 +6,13 @@ import ToggleSwitch from "./ToggleSwitch";
 import TextSelect from "./TextSelect";
 import TextField from "./TextField";
 
+import FilterStore from "./FilterStore.js";
+
 @observer
 class Sidebar extends Component {
   render() {
     return (
-      <div className="box sidebar">
+      <div className={FilterStore.sidebarHidden ? "sidebar hidden" : "sidebar"}>
         <div className="filterBox">
           <div className="filterBox-Header bs">Sorting Options</div>
           <p>Filter Templates</p>
@@ -25,15 +27,26 @@ class Sidebar extends Component {
             ]}
           />
           <p>Sort table by</p>
-          <TextSelect
-            name="filterType"
-            options={[
-              ["price", "Price"],
-              ["length", "Body-Size"],
-              ["display", "Screen-Size"],
-              ["totalscore", "Total Score"]
-            ]}
-          />
+          <div>
+            <TextSelect
+              name="filterType"
+              options={[
+                ["price", "Price"],
+                ["length", "Body-Size"],
+                ["display", "Screen-Size"],
+                ["totalscore", "Total Score"]
+              ]}
+            />
+            <input
+              type="image"
+              src="images/sort_arrows.png"
+              id="sorting_order"
+              className="sorting_order"
+              height="22px"
+              width="22px"
+              alt="Submit"
+            />
+          </div>
           <p>Scale phones</p>
           <ToggleSwitch name="scaleInput" />
         </div>

@@ -7,13 +7,19 @@ import Sidebar from "./Sidebar.js";
 import Content from "./Content.js";
 import Footer from "./Footer.js";
 
+import FilterStore from "./FilterStore.js";
+
 import { observer } from "mobx-react";
 
 @observer
 class App extends Component {
   render() {
     return (
-      <div className="App">
+      <div
+        className={
+          FilterStore.sidebarHidden ? "App hide-sidebar" : "App show-sidebar"
+        }
+      >
         <DevTools />
         <Header />
         <Sidebar />

@@ -2,6 +2,7 @@ import {} from "mobx-react";
 import { observable, action } from "mobx";
 
 class FilterStore {
+  @observable sidebarHidden = false;
   @observable country = "de";
 
   @observable filterTemplate = "";
@@ -77,6 +78,7 @@ class FilterStore {
       switch (name) {
         case "filterTemplate": //Define filters which aren't expected to be reset
         case "country":
+        case "sidebarHidden":
           break;
         default:
           if (this[name] !== resetCopy[name]) {

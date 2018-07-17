@@ -55,12 +55,18 @@ body {
 .App {
   display: grid;
   grid-template-rows: minmax(100px, 11vh) minmax(200px, 88vh) minmax(0, 1vh);
-
-  grid-template-columns: minmax(300px, 300px) minmax(10px, 5fr);
   grid-template-areas:
     "header header header"
     "sidebar content content"
     "footer footer footer";
+}
+
+.show-sidebar {
+  grid-template-columns: minmax(300px, 300px) minmax(10px, 5fr);
+}
+
+.hide-sidebar {
+  grid-template-columns: minmax(0px, 0px) minmax(10px, 5fr);
 }
 
 .sidebar {
