@@ -51,8 +51,6 @@ class FilterStore {
   setFilterTemplate = () => {
     this.resetFilters();
     switch (this.filterTemplate) {
-      case "":
-        break;
       case "justGood":
         this.design = "3";
         this.processor = "3";
@@ -68,15 +66,38 @@ class FilterStore {
         break;
       case "cheap":
         break;
-
       default:
         break;
     }
   };
 
-  resetFilters = () => {};
+  @action
+  resetFilters = () => {
+    for (var name in this) {
+      switch (name) {
+        case "filterTemplate": //Define filters which aren't expected to be reset
+        case "country":
+          break;
+        default:
+          if (this[name] !== resetCopy[name]) {
+            console.log(name);
+            this[name] = resetCopy[name];
+          }
+          break;
+      }
+    }
+  };
 }
 
 const filterStore = new FilterStore();
+
+const resetCopy = createBackup();
+function createBackup() {
+  const da = new FilterStore();
+  for (var name in filterStore) {
+    da[name] = filterStore[name];
+  }
+  return da;
+}
 
 export default filterStore;

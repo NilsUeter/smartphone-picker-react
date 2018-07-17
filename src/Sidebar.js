@@ -12,7 +12,7 @@ class Sidebar extends Component {
     return (
       <div className="box sidebar">
         <div className="filterBox">
-          <div className="filterBox-Header">Sorting Options</div>
+          <div className="filterBox-Header bs">Sorting Options</div>
           <p>Filter Templates</p>
           <TextSelect
             name="filterTemplate"
@@ -38,18 +38,26 @@ class Sidebar extends Component {
           <ToggleSwitch name="scaleInput" />
         </div>
         <div className="filterBox">
-          <div className="filterBox-Header">Budget and Size</div>
+          <div className="filterBox-Header bs">Budget and Size</div>
           <p>Price</p>
-          <TextField name="price_minimum_1" />-<TextField name="price_maximum_1" />
+          <div>
+            <TextField name="price_minimum_1" />-<TextField name="price_maximum_1" />
+          </div>
           <p>Display</p>
-          <TextField name="size_minimum_1" />-<TextField name="size_maximum_1" />
+          <div>
+            <TextField name="size_minimum_1" />-<TextField name="size_maximum_1" />
+          </div>
           <p>Length</p>
-          <TextField name="size_minimum_2" />-<TextField name="size_maximum_2" />
+          <div>
+            <TextField name="size_minimum_2" />-<TextField name="size_maximum_2" />
+          </div>
           <p>Width</p>
-          <TextField name="size_minimum_3" />-<TextField name="size_maximum_3" />
+          <div>
+            <TextField name="size_minimum_3" />-<TextField name="size_maximum_3" />
+          </div>
         </div>
         <div className="filterBox">
-          <div className="filterBox-Header">Ratings</div>
+          <div className="filterBox-Header bs">Ratings</div>
           <p>Design</p>
           <RatingStars name="design" />
           <p>Processor</p>
@@ -62,7 +70,7 @@ class Sidebar extends Component {
           <RatingStars name="battery" />
         </div>
         <div className="filterBox">
-          <div className="filterBox-Header">Personal Preferences</div>
+          <div className="filterBox-Header bs">Personal Preferences</div>
           <p>Storage</p>
           <TextSelect
             name="storage"

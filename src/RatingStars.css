@@ -1,3 +1,7 @@
+.rating-stars {
+  width: 80px;
+}
+
 .first-rating-star {
   background-position: 0 0;
 }

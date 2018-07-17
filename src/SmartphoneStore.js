@@ -80,7 +80,6 @@ class SmartphoneStore {
 
   @computed
   get listOfFilteredObjects() {
-    console.log("LIIIIIIIIIISSSS");
     var xListOfFilteredObjects = [];
     if (this.obj.smartphones == null) {
       return xListOfFilteredObjects;
@@ -216,7 +215,6 @@ class SmartphoneStore {
   get listOfFilteredAndScoredObjects() {
     switch (FilterStore.filterType) {
       case "price":
-        console.log("ccc" + FilterStore.country);
         return this.sortBy(
           this.getLowestParameter,
           "price",
