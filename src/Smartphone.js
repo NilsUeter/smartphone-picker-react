@@ -4,12 +4,19 @@ import { observer } from "mobx-react";
 import "./Smartphone.css";
 
 import FilterStore from "./FilterStore.js";
+import SmartphoneStore from "./SmartphoneStore.js";
 
 @observer
 class Smartphone extends Component {
   render() {
     return (
       <div>
+        <div className="smartphone-filtercriteria">
+          {SmartphoneStore.getAttributeFromSmartphone(
+            this.props.smartphone,
+            FilterStore.filterType
+          )}
+        </div>
         <div className="img-container">
           {FilterStore.scaleInput ? (
             <img

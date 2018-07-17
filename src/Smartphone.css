@@ -18,6 +18,14 @@
   display: inline;
 }
 
+.smartphone-filtercriteria {
+  font-weight: bold;
+  padding-left: 8px;
+  padding-top: 8px;
+  vertical-align: top;
+  color: #12709e;
+}
+
 .smartphone-name {
   float: right;
   font-size: 12px;
@@ -71,7 +79,7 @@
 }
 
 .img-container {
-  height: 42vh;
+  height: 46vh;
   align-items: flex-end;
   display: flex;
   justify-content: center;

@@ -319,6 +319,25 @@ class SmartphoneStore {
     }
     return listOfFilteredAndScoredObjects;
   }
+
+  getAttributeFromSmartphone = (smartphone, name) => {
+    switch (name) {
+      case "price":
+        return (
+          smartphone[name][FilterStore.country][smartphone.smallestPrice][0] +
+          "€"
+        );
+      case "length":
+      case "width":
+        return smartphone[name] + "mm";
+      case "display":
+        return smartphone[name] + '"';
+      case "totalscore":
+        return smartphone[name] + " Points";
+      default:
+        return smartphone[name];
+    }
+  };
 }
 
 const smartphoneStore = new SmartphoneStore();
