@@ -84,11 +84,6 @@ textarea:focus {
   box-shadow: 0 0 6px #12709e;
 }
 
-.show-sidebar {
-  position: fixed;
-  margin: 0;
-}
-
 .hidden {
   display: none;
 }

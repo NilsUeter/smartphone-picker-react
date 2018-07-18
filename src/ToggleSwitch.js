@@ -12,7 +12,7 @@ class ToggleSwitch extends Component {
         <input
           type="checkbox"
           id={this.props.name}
-          className="cbx hidden rating_updater"
+          className="cbx toggle-hidden rating_updater"
           checked={FilterStore[this.props.name]}
           onChange={() => {
             console.log(FilterStore[this.props.name]);

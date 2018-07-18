@@ -12,9 +12,15 @@
 }
 
 .logo-text {
-  font-size: 43.2px;
+  font-size: 20px;
   text-decoration: none;
   color: #fefefe;
+}
+
+@media only screen and (min-width: 650px) {
+  .logo-text {
+    font-size: 43.2px;
+  }
 }
 
 .main-menu-link {
@@ -35,42 +41,22 @@
   outline-color: rgb(102, 102, 102);
   background-color: rgb(249, 249, 249);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  display: grid;
+  align-items: center;
+  grid-template-columns: minmax(110px, 15%) minmax(200px, 1fr) minmax(10px, 4fr);
 }
 
-.main-menu-text {
-  margin-right: 15%;
-  margin-left: 15%;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  vertical-align: middle;
-  /* the same as your div height */
+.show-sidebar {
+  min-width: 95px;
 }
 
-.main-menu-text ul {
-  float: left;
-  position: relative;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.main-menu-text li {
-  display: inline-block;
-}
-
-.main-menu-text a {
+.main-menu-link {
   padding-right: 20px;
 }
 
-.navDiv {
-  float: left;
-}
-
-.countryDiv {
-  float: right;
-}
-
 .smartphoneCount {
+  float: right;
+  padding-right: 20px;
   font-weight: bold;
   color: #12709e;
 }

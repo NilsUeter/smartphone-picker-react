@@ -16,64 +16,48 @@ class Header extends Component {
           <a className="logo-text" href="index.html">
             <span>smartphone-picker</span>
           </a>
+          <TextSelect
+            name="country"
+            options={[["de", "GERMANY"], ["com", "UNITED STATES"]]}
+          />
         </div>
         <div className="main-menu">
-          <button
-            className="show-sidebar"
-            onClick={() => {
-              console.log(FilterStore["sidebarHidden"]);
-              FilterStore.toggleAttribute("sidebarHidden");
-              console.log(FilterStore["sidebarHidden"]);
-            }}
-          >
-            Show/Hide Filters
-          </button>
-          <div className="main-menu-text">
-            <div className="navdiv">
-              <ul>
-                <li>
-                  <a
-                    className="main-menu-link"
-                    href="https://blog.smartphone-picker.com/"
-                  >
-                    Blog
-                  </a>
-                </li>
-                <li>
-                  <a
-                    className="main-menu-link"
-                    href="mailto:admin@smartphone-picker.com"
-                  >
-                    Contact
-                  </a>
-                </li>
-                <li>
-                  <a className="main-menu-link" href="sites/about.html">
-                    About
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <div className="countryDiv">
-              <ul>
-                <li>
-                  <a id="smartphoneCount" className="smartphoneCount">
-                    {SmartphoneStore.listOfFilteredAndScoredObjects
-                      ? SmartphoneStore.listOfFilteredAndScoredObjects.length
-                      : 0}/
-                    {SmartphoneStore.obj.smartphones
-                      ? SmartphoneStore.obj.smartphones.length
-                      : 0}
-                  </a>
-                </li>
-                <li>
-                  <TextSelect
-                    name="country"
-                    options={[["de", "GERMANY"], ["com", "UNITED STATES"]]}
-                  />
-                </li>
-              </ul>
-            </div>
+          <div>
+            <button
+              className="show-sidebar"
+              onClick={() => {
+                FilterStore.toggleAttribute("sidebarHidden");
+              }}
+            >
+              {FilterStore.sidebarHidden ? "Show" : "Hide"} Filters
+            </button>
+          </div>
+          <div className="navdiv">
+            <a
+              className="main-menu-link"
+              href="https://blog.smartphone-picker.com/"
+            >
+              Blog
+            </a>
+            <a
+              className="main-menu-link"
+              href="mailto:admin@smartphone-picker.com"
+            >
+              Contact
+            </a>
+            <a className="main-menu-link" href="sites/about.html">
+              About
+            </a>
+          </div>
+          <div className="countryDiv">
+            <a id="smartphoneCount" className="smartphoneCount">
+              {SmartphoneStore.listOfFilteredAndScoredObjects
+                ? SmartphoneStore.listOfFilteredAndScoredObjects.length
+                : 0}/
+              {SmartphoneStore.obj.smartphones
+                ? SmartphoneStore.obj.smartphones.length
+                : 0}
+            </a>
           </div>
         </div>
       </header>

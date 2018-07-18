@@ -54,7 +54,7 @@ body {
 
 .App {
   display: grid;
-  grid-template-rows: minmax(100px, 11vh) minmax(200px, 88vh) minmax(0, 1vh);
+  grid-template-rows: minmax(100px, 11vh) minmax(200px, 88.5vh) minmax(0, 0.5vh);
   grid-template-areas:
     "header header header"
     "sidebar content content"
@@ -62,11 +62,21 @@ body {
 }
 
 .show-sidebar {
-  grid-template-columns: minmax(300px, 300px) minmax(10px, 5fr);
+  grid-template-columns: minmax(300px, 100fr) minmax(1px, 1fr);
 }
 
 .hide-sidebar {
   grid-template-columns: minmax(0px, 0px) minmax(10px, 5fr);
+}
+
+@media only screen and (min-width: 500px) {
+  .show-sidebar {
+    grid-template-columns: minmax(300px, 300px) minmax(10px, 5fr);
+  }
+
+  .hide-sidebar {
+    grid-template-columns: minmax(0px, 0px) minmax(10px, 5fr);
+  }
 }
 
 .sidebar {
@@ -93,7 +103,6 @@ body {
   box-sizing: border-box;
   font-weight: bold;
   z-index: 20;
-  padding-top: 10px;
   padding-left: 15%;
   text-align: left;
   background-color: #12709e;

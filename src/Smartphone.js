@@ -21,7 +21,7 @@ class Smartphone extends Component {
           {FilterStore.scaleInput ? (
             <img
               style={{
-                maxHeight: 0.28 * this.props.smartphone.length + "vh"
+                maxHeight: 0.27 * this.props.smartphone.length + "vh"
               }}
               className="qtip-img"
               src={"images/" + this.props.smartphone.imagelink}
