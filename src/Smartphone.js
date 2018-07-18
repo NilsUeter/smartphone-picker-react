@@ -3,8 +3,8 @@ import { observer } from "mobx-react";
 
 import "./Smartphone.css";
 
-import FilterStore from "./FilterStore.js";
-import SmartphoneStore from "./SmartphoneStore.js";
+import FilterStore from "./FilterStore";
+import SmartphoneStore from "./SmartphoneStore";
 
 @observer
 class Smartphone extends Component {
@@ -108,6 +108,7 @@ class Smartphone extends Component {
                     this.props.smartphone.smallestPrice
                   ][0]
                 }
+                rel="noopener"
               >
                 <span className="a-button-inner">
                   <img
