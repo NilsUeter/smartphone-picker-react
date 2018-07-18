@@ -1,16 +1,16 @@
 import React, { Component } from "react";
 import { observer } from "mobx-react";
-//import "./About.css";
+import "./About.css";
 
 @observer
 class About extends Component {
   render() {
     return (
-      <div className="description">
+      <div className="about">
         <div>
-          <p>
+          <h2>
             Shopping for a new smartphone is exhausting and frustrating. Period.
-          </p>
+          </h2>
           <p>
             {" "}
             You just want to buy the best product in your price range, right?
@@ -78,7 +78,7 @@ class About extends Component {
           </table>
           <br />
           <p>I think you understand the problem, but there is a solution...</p>
-          <p>We read the reviews and rate the important aspects:</p>
+          <h2>We read the reviews and rate the important aspects:</h2>
           <p>
             You want to know if the{" "}
             <span className="accentColor">processor</span> is powerful and not
@@ -100,11 +100,11 @@ class About extends Component {
           <br />
           <br />
           <div>
-            <p>
+            <h2>
               We at smartphone-picker try our best to ensure that our smartphone
               data is correct and our ratings are appropriate. Still we can make
               mistakes and our ratings may be subject to bias.
-            </p>
+            </h2>
             <p>
               If a particular specification or aspect is vital to you, we always
               recommend checking with the phone seller or reading trusted

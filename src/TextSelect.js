@@ -10,7 +10,7 @@ class TextSelect extends Component {
     return (
       <select
         id={this.props.name}
-        className="textSelect"
+        className={"textSelect " + this.props.colorScheme}
         value={FilterStore[this.props.name]}
         onChange={changeEvent => {
           FilterStore.changeAttribute(

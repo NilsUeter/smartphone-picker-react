@@ -19,12 +19,13 @@ class Header extends Component {
           <TextSelect
             name="country"
             options={[["de", "GERMANY"], ["com", "UNITED STATES"]]}
+            colorScheme="blue-white"
           />
         </div>
         <div className="main-menu">
           <div>
             <button
-              className="show-sidebar"
+              className="show-sidebar-button"
               onClick={() => {
                 FilterStore.toggleAttribute("sidebarHidden");
               }}

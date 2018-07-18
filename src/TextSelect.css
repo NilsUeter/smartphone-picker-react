@@ -1,3 +1,9 @@
 .textSelect {
   width: 120px;
 }
+
+.blue-white {
+  color: rgb(249, 249, 249);
+  border: 1px solid #12709e;
+  background-color: #12709e;
+}
