@@ -20,7 +20,7 @@
       "simcards": 2,
       "notch": 0,
       "waterproof": "",
-      "headphoneJack": 1,
+      "headphonejack": 1,
       "totalscore": 0,
       "asin": {
         "de": [
@@ -35,7 +35,7 @@
           ["black/copper", "B07BVDG8P1", "Unlocked"]
         ]
       },
-      "price": { "de": [[265], [273], [255], [276]], "com": [] },
+      "price": { "de": [[265], [276], [249], [276]], "com": [] },
       "amazon": {
         "de": [
           [
@@ -74,7 +74,7 @@
       "simcards": 2,
       "notch": 0,
       "waterproof": "0",
-      "headphoneJack": 1,
+      "headphonejack": 1,
       "totalscore": 0,
       "asin": {
         "de": [
@@ -88,7 +88,7 @@
           ["black/copper", "B07BVS4LMN", ""]
         ]
       },
-      "price": { "de": [[362], [374], [362], [379]], "com": [] },
+      "price": { "de": [[369], [372], [350], [369]], "com": [] },
       "amazon": {
         "de": [
           [
@@ -127,7 +127,7 @@
       "simcards": 1,
       "notch": 0,
       "waterproof": "4",
-      "headphoneJack": 1,
+      "headphonejack": 1,
       "totalscore": 0,
       "asin": {
         "de": [
@@ -145,7 +145,7 @@
           ["tempered blue", "B074SJJBY2"]
         ]
       },
-      "price": { "de": [[355], [394], [0], [0], [317]], "com": [] },
+      "price": { "de": [[336], [337], [0], [0], [355]], "com": [] },
       "amazon": {
         "de": [
           [
@@ -183,7 +183,7 @@
       "simcards": 1,
       "notch": 0,
       "waterproof": "7",
-      "headphoneJack": 0,
+      "headphonejack": 0,
       "totalscore": 0,
       "asin": {
         "de": [["black", "B07B69SLMB"]],
@@ -219,13 +219,13 @@
       "simcards": 2,
       "notch": 0,
       "waterproof": "0",
-      "headphoneJack": 1,
+      "headphonejack": 1,
       "totalscore": 0,
       "asin": {
         "de": [["black", "B07CZPXGVJ"], ["gold", "B07CRGJW16"]],
         "com": []
       },
-      "price": { "de": [[199], [189]], "com": [] },
+      "price": { "de": [[194], [189]], "com": [] },
       "amazon": {
         "de": [
           [
@@ -258,7 +258,7 @@
       "simcards": 2,
       "notch": 0,
       "waterproof": "0",
-      "headphoneJack": 1,
+      "headphonejack": 1,
       "totalscore": 0,
       "asin": {
         "de": [
@@ -268,7 +268,7 @@
         ],
         "com": []
       },
-      "price": { "de": [[231], [206], [219]], "com": [] },
+      "price": { "de": [[201], [216], [209]], "com": [] },
       "amazon": {
         "de": [
           [
@@ -304,7 +304,7 @@
       "simcards": 2,
       "notch": 0,
       "waterproof": "0",
-      "headphoneJack": 1,
+      "headphonejack": 1,
       "totalscore": 0,
       "asin": {
         "de": [
@@ -319,7 +319,7 @@
           ["black", "B076HQ6FSY"]
         ]
       },
-      "price": { "de": [[188], [180], [195], [183]], "com": [] },
+      "price": { "de": [[200], [168], [198], [182]], "com": [] },
       "amazon": {
         "de": [
           [
@@ -358,7 +358,7 @@
       "simcards": 2,
       "notch": 0,
       "waterproof": "0",
-      "headphoneJack": 0,
+      "headphonejack": 0,
       "totalscore": 0,
       "asin": {
         "de": [
@@ -368,7 +368,7 @@
         ],
         "com": [["black", "B075SBJ3T2"], ["black", "B079816Y5T"]]
       },
-      "price": { "de": [[350], [389], [548]], "com": [] },
+      "price": { "de": [[354], [369], [548]], "com": [] },
       "amazon": {
         "de": [
           [
@@ -404,20 +404,20 @@
       "simcards": 2,
       "notch": 0,
       "waterproof": "0",
-      "headphoneJack": 0,
+      "headphonejack": 0,
       "totalscore": 0,
       "asin": {
         "de": [["black", "B07CZFRXP1"], ["white", "B07D4NBDM9"]],
         "com": []
       },
-      "price": { "de": [[485], [522]], "com": [] },
+      "price": { "de": [[479], [522]], "com": [] },
       "amazon": {
         "de": [
           [
             "https://www.amazon.de/Xiaomi-Mi-Mix-2S-Schwarz/dp/B07CZFRXP1?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07CZFRXP1"
           ],
           [
-            "https://www.amazon.de/Xiaomi-Mix-64GB-Handy-wei%C3%9F/dp/B07D4NBDM9?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07D4NBDM9"
+            "https://www.amazon.de/Xiaomi-Mix-64GB-Handy-Wei%C3%9F/dp/B07D4NBDM9?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07D4NBDM9"
           ]
         ],
         "com": []
@@ -443,7 +443,7 @@
       "simcards": 2,
       "notch": 0,
       "waterproof": "0",
-      "headphoneJack": 0,
+      "headphonejack": 0,
       "totalscore": 0,
       "asin": { "de": [["black", "B07D4QL67S"]], "com": [] },
       "price": { "de": [[549]], "com": [] },
@@ -476,7 +476,7 @@
       "simcards": 2,
       "notch": 0,
       "waterproof": "7",
-      "headphoneJack": 0,
+      "headphonejack": 0,
       "totalscore": 0,
       "asin": {
         "de": [
@@ -485,7 +485,7 @@
         ],
         "com": [["sapphire blue", "B075GH2QP8"]]
       },
-      "price": { "de": [[230], [259]], "com": [] },
+      "price": { "de": [[224], [306]], "com": [] },
       "amazon": {
         "de": [
           [
@@ -518,7 +518,7 @@
       "simcards": 2,
       "notch": 0,
       "waterproof": "8",
-      "headphoneJack": 0,
+      "headphonejack": 0,
       "totalscore": 0,
       "asin": {
         "de": [
@@ -534,7 +534,7 @@
           ["translucent oil", "B077TMKPTQ"]
         ]
       },
-      "price": { "de": [[749], [644], [749], [633]], "com": [] },
+      "price": { "de": [[749], [667], [749], [628]], "com": [] },
       "amazon": {
         "de": [
           [
@@ -573,7 +573,7 @@
       "simcards": 2,
       "notch": 0,
       "waterproof": "8",
-      "headphoneJack": 0,
+      "headphonejack": 0,
       "totalscore": 0,
       "asin": {
         "de": [
@@ -587,7 +587,7 @@
           ["translucent blue", "B07D2Q65ZM"]
         ]
       },
-      "price": { "de": [[759], [799], [769]], "com": [] },
+      "price": { "de": [[729], [799], [757]], "com": [] },
       "amazon": {
         "de": [
           [
@@ -623,7 +623,7 @@
       "simcards": 1,
       "notch": 0,
       "waterproof": "7",
-      "headphoneJack": 0,
+      "headphonejack": 0,
       "totalscore": 0,
       "asin": {
         "de": [
@@ -639,7 +639,7 @@
           ["kinda blue", "B076KM3PYP"]
         ]
       },
-      "price": { "de": [[643], [730], [699], [749]], "com": [] },
+      "price": { "de": [[678], [699], [629], [699]], "com": [] },
       "amazon": {
         "de": [
           [
@@ -678,7 +678,7 @@
       "simcards": 1,
       "notch": 0,
       "waterproof": "7",
-      "headphoneJack": 0,
+      "headphonejack": 0,
       "totalscore": 0,
       "asin": {
         "de": [
@@ -693,7 +693,7 @@
           ["black/white", "B079J5FD54"]
         ]
       },
-      "price": { "de": [[699], [695], [699], [816]], "com": [] },
+      "price": { "de": [[699], [708], [799], [816]], "com": [] },
       "amazon": {
         "de": [
           [
@@ -732,7 +732,7 @@
       "simcards": 2,
       "notch": 0,
       "waterproof": "0",
-      "headphoneJack": 1,
+      "headphonejack": 1,
       "totalscore": 0,
       "asin": {
         "de": [
@@ -772,7 +772,7 @@
       "simcards": 2,
       "notch": 0,
       "waterproof": "0",
-      "headphoneJack": 1,
+      "headphonejack": 1,
       "totalscore": 0,
       "asin": {
         "de": [
@@ -785,7 +785,7 @@
           ["white", "B07917BQWC"]
         ]
       },
-      "price": { "de": [[583], [581]], "com": [] },
+      "price": { "de": [[578], [581]], "com": [] },
       "amazon": {
         "de": [
           [
@@ -818,7 +818,7 @@
       "simcards": 2,
       "notch": 1,
       "waterproof": "0",
-      "headphoneJack": 1,
+      "headphonejack": 1,
       "totalscore": 0,
       "asin": {
         "de": [
@@ -832,7 +832,7 @@
           ["silk white", ""]
         ]
       },
-      "price": { "de": [[524]], "com": [] },
+      "price": { "de": [[519]], "com": [] },
       "amazon": {
         "de": [
           [
@@ -862,7 +862,7 @@
       "simcards": 2,
       "notch": 1,
       "waterproof": "0",
-      "headphoneJack": 1,
+      "headphonejack": 1,
       "totalscore": 0,
       "asin": {
         "de": [
@@ -876,7 +876,7 @@
           ["silk white", "B078BNQ2ZS"]
         ]
       },
-      "price": { "de": [[567], [569], [569]], "com": [] },
+      "price": { "de": [[569], [569], [569]], "com": [] },
       "amazon": {
         "de": [
           [
@@ -912,7 +912,7 @@
       "simcards": 2,
       "notch": 0,
       "waterproof": "0",
-      "headphoneJack": 1,
+      "headphonejack": 1,
       "totalscore": 0,
       "asin": {
         "de": [
@@ -926,7 +926,7 @@
           ["sapphire blue", "B078NCL7GJ"]
         ]
       },
-      "price": { "de": [[245], [226], [0], [217]], "com": [] },
+      "price": { "de": [[228], [219], [0], [203]], "com": [] },
       "amazon": {
         "de": [
           [
@@ -965,7 +965,7 @@
       "simcards": 2,
       "notch": 1,
       "waterproof": "0",
-      "headphoneJack": 1,
+      "headphonejack": 1,
       "totalscore": 0,
       "asin": {
         "de": [
@@ -981,7 +981,7 @@
           ["phantom green", "B07CTF3B98"]
         ]
       },
-      "price": { "de": [[368], [384], [378], [389]], "com": [] },
+      "price": { "de": [[369], [369], [379], [379]], "com": [] },
       "amazon": {
         "de": [
           [
@@ -1020,7 +1020,7 @@
       "simcards": 2,
       "notch": 0,
       "waterproof": "7",
-      "headphoneJack": 0,
+      "headphonejack": 0,
       "totalscore": 0,
       "asin": {
         "de": [
@@ -1057,20 +1057,20 @@
       "simcards": 2,
       "notch": 1,
       "waterproof": "4",
-      "headphoneJack": 0,
+      "headphonejack": 0,
       "totalscore": 0,
       "asin": {
         "de": [["black", "B07BHD7MHL"], ["blue", "B07BHDC33K"]],
         "com": [["white", ""], ["black", ""]]
       },
-      "price": { "de": [[499], [503]], "com": [] },
+      "price": { "de": [[499], [497]], "com": [] },
       "amazon": {
         "de": [
           [
             "https://www.amazon.de/Huawei-Smartphone-interner-Speicher-Android-Schwarz/dp/B07BHD7MHL?SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07BHD7MHL"
           ],
           [
-            "https://www.amazon.de/HUAWEI-Smartphone-interner-Speicher-Android-Blau/dp/B07BHDC33K?SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07BHDC33K"
+            "https://www.amazon.de/Huawei-Smartphone-interner-Speicher-Android-Blau/dp/B07BHDC33K?SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07BHDC33K"
           ]
         ],
         "com": []
@@ -1096,7 +1096,7 @@
       "simcards": 2,
       "notch": 1,
       "waterproof": "0",
-      "headphoneJack": 1,
+      "headphonejack": 1,
       "totalscore": 0,
       "asin": {
         "de": [
@@ -1107,7 +1107,7 @@
         ],
         "com": [["white", ""], ["black", ""]]
       },
-      "price": { "de": [[285], [302], [298], [303]], "com": [] },
+      "price": { "de": [[297], [302], [289], [290]], "com": [] },
       "amazon": {
         "de": [
           [
@@ -1146,7 +1146,7 @@
       "simcards": 2,
       "notch": 1,
       "waterproof": "7",
-      "headphoneJack": 1,
+      "headphonejack": 1,
       "totalscore": 0,
       "asin": {
         "de": [
@@ -1156,11 +1156,11 @@
         ],
         "com": [["white", ""], ["black", ""]]
       },
-      "price": { "de": [[682], [688], [680]], "com": [] },
+      "price": { "de": [[899], [694], [739]], "com": [] },
       "amazon": {
         "de": [
           [
-            "https://www.amazon.de/HUAWEI-Smartphone-interner-Speicher-Android-Blau/dp/B07BHD3L23?SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07BHD3L23"
+            "https://www.amazon.de/Huawei-Smartphone-interner-Speicher-Android-Blau/dp/B07BHD3L23?SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07BHD3L23"
           ],
           [
             "https://www.amazon.de/Huawei-Smartphone-interner-Speicher-Android-Schwarz/dp/B07BHDMHR1?SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07BHDMHR1"
@@ -1192,7 +1192,7 @@
       "simcards": 1,
       "notch": 1,
       "waterproof": "0",
-      "headphoneJack": 0,
+      "headphonejack": 0,
       "totalscore": 0,
       "asin": {
         "de": [
@@ -1202,7 +1202,7 @@
         ],
         "com": [["white", ""], ["black", ""]]
       },
-      "price": { "de": [[649], [649], [649]], "com": [] },
+      "price": { "de": [[669], [679], [689]], "com": [] },
       "amazon": {
         "de": [
           [
@@ -1238,7 +1238,7 @@
       "simcards": 1,
       "notch": 0,
       "waterproof": "8",
-      "headphoneJack": 1,
+      "headphonejack": 1,
       "totalscore": 0,
       "asin": {
         "de": [
@@ -1250,7 +1250,7 @@
         ],
         "com": [["white", ""], ["black", ""]]
       },
-      "price": { "de": [[302], [333], [336], [300], [345]], "com": [] },
+      "price": { "de": [[290], [384], [363], [300], [360]], "com": [] },
       "amazon": {
         "de": [
           [
@@ -1292,13 +1292,13 @@
       "simcards": 1,
       "notch": 1,
       "waterproof": "8",
-      "headphoneJack": 1,
+      "headphonejack": 1,
       "totalscore": 0,
       "asin": {
         "de": [["platinum grey", "B07D7NXYT6"], ["black", "B07D69KKBZ"]],
         "com": [["white", ""], ["black", ""]]
       },
-      "price": { "de": [[649], [571]], "com": [] },
+      "price": { "de": [[608], [572]], "com": [] },
       "amazon": {
         "de": [
           [
@@ -1331,13 +1331,13 @@
       "simcards": 2,
       "notch": 0,
       "waterproof": "8",
-      "headphoneJack": 1,
+      "headphonejack": 1,
       "totalscore": 0,
       "asin": {
         "de": [["cloud silver", "B075GYD539"], ["moroccan blue", "B075GTJYSV"]],
         "com": [["white", ""], ["black", ""]]
       },
-      "price": { "de": [[462], [462]], "com": [] },
+      "price": { "de": [[489], [467]], "com": [] },
       "amazon": {
         "de": [
           [
@@ -1370,7 +1370,7 @@
       "simcards": 2,
       "notch": 0,
       "waterproof": "8",
-      "headphoneJack": 0,
+      "headphonejack": 0,
       "totalscore": 0,
       "asin": {
         "de": [
@@ -1381,7 +1381,7 @@
         ],
         "com": [["white", ""], ["black", ""]]
       },
-      "price": { "de": [[554], [554], [554], [554]], "com": [] },
+      "price": { "de": [[632], [652], [649], [653]], "com": [] },
       "amazon": {
         "de": [
           [
@@ -1420,7 +1420,7 @@
       "simcards": 2,
       "notch": 0,
       "waterproof": "8",
-      "headphoneJack": 0,
+      "headphonejack": 0,
       "totalscore": 0,
       "asin": {
         "de": [
@@ -1431,7 +1431,7 @@
         ],
         "com": [["white", ""], ["black", ""]]
       },
-      "price": { "de": [[506], [515], [513], [520]], "com": [] },
+      "price": { "de": [[539], [529], [549], [549]], "com": [] },
       "amazon": {
         "de": [
           [
@@ -1470,7 +1470,7 @@
       "simcards": 1,
       "notch": 0,
       "waterproof": "7",
-      "headphoneJack": 0,
+      "headphonejack": 0,
       "totalscore": 0,
       "asin": {
         "de": [
@@ -1480,17 +1480,17 @@
         ],
         "com": [["white", ""], ["black", ""]]
       },
-      "price": { "de": [[652], [642], [654]], "com": [] },
+      "price": { "de": [[659], [658], [654]], "com": [] },
       "amazon": {
         "de": [
           [
-            "https://www.amazon.de/Apple-MQ6J2ZD-iPhone-Zoll-Kamera-Gold/dp/B075LY82PT?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B075LY82PT"
+            "https://www.amazon.de/Apple-iPhone-Display-2017-Gold/dp/B075LY82PT?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B075LY82PT"
           ],
           [
-            "https://www.amazon.de/Apple-MQ6H2ZD-iPhone-Kamera-Silber/dp/B075LZGVKJ?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B075LZGVKJ"
+            "https://www.amazon.de/Apple-iPhone-Display-2017-Silber/dp/B075LZGVKJ?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B075LZGVKJ"
           ],
           [
-            "https://www.amazon.de/Apple-MQ6G2ZD-iPhone-Kamera-Space-Grau/dp/B075LXNGFH?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B075LXNGFH"
+            "https://www.amazon.de/Apple-iPhone-Display-2017-Space-Grau/dp/B075LXNGFH?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B075LXNGFH"
           ]
         ],
         "com": []
@@ -1516,7 +1516,7 @@
       "simcards": 1,
       "notch": 0,
       "waterproof": "7",
-      "headphoneJack": 0,
+      "headphonejack": 0,
       "totalscore": 0,
       "asin": {
         "de": [
@@ -1526,17 +1526,17 @@
         ],
         "com": [["white", ""], ["black", ""]]
       },
-      "price": { "de": [[752], [883], [889]], "com": [] },
+      "price": { "de": [[835], [886], [886]], "com": [] },
       "amazon": {
         "de": [
           [
-            "https://www.amazon.de/Apple-MQ7E2ZD-iPhone-Zoll-Kamera-Gold/dp/B075LWT4JR?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B075LWT4JR"
+            "https://www.amazon.de/Apple-iPhone-Display-2017-Gold/dp/B075LWT4JR?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B075LWT4JR"
           ],
           [
-            "https://www.amazon.de/Apple-MQ7D2ZD-iPhone-Zoll-Silber/dp/B075LZMNDM?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B075LZMNDM"
+            "https://www.amazon.de/Apple-iPhone-Display-2017-Silber/dp/B075LZMNDM?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B075LZMNDM"
           ],
           [
-            "https://www.amazon.de/Apple-MQ7C2ZD-iPhone-Zoll-Space-Grau/dp/B075LX5T7P?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B075LX5T7P"
+            "https://www.amazon.de/Apple-iPhone-Display-2017-Space-Grau/dp/B075LX5T7P?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B075LX5T7P"
           ]
         ],
         "com": []
@@ -1562,7 +1562,7 @@
       "simcards": 1,
       "notch": 0,
       "waterproof": "7",
-      "headphoneJack": 0,
+      "headphonejack": 0,
       "totalscore": 0,
       "asin": {
         "de": [
@@ -1573,20 +1573,20 @@
         ],
         "com": [["white", ""], ["black", ""]]
       },
-      "price": { "de": [[783], [783], [763], [756]], "com": [] },
+      "price": { "de": [[795], [778], [848], [795]], "com": [] },
       "amazon": {
         "de": [
           [
-            "https://www.amazon.de/Apple-iPhone-Plus-Product-Red-Rot/dp/B07CC27HW5?SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07CC27HW5"
+            "https://www.amazon.de/Apple-iPhone-Plus-Display-2017-Rot/dp/B07CC27HW5?SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07CC27HW5"
           ],
           [
-            "https://www.amazon.de/Apple-MQ8L2ZD-iPhone-Kamera-Aufl%C3%B6sung-Space-Grey/dp/B075LZ4VQW?SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B075LZ4VQW"
+            "https://www.amazon.de/Apple-iPhone-Plus-Display-Space-Grau/dp/B075LZ4VQW?SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B075LZ4VQW"
           ],
           [
-            "https://www.amazon.de/Apple-MQ8M2ZD-iPhone-Kamera-Aufl%C3%B6sung-Silver/dp/B075M4QCKW?SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B075M4QCKW"
+            "https://www.amazon.de/Apple-iPhone-Plus-Display-Silber/dp/B075M4QCKW?SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B075M4QCKW"
           ],
           [
-            "https://www.amazon.de/Apple-MQ8N2ZD-iPhone-Kamera-Aufl%C3%B6sung-Gold/dp/B075LW8Z5R?SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B075LW8Z5R"
+            "https://www.amazon.de/Apple-iPhone-Plus-Display-2017-Gold/dp/B075LW8Z5R?SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B075LW8Z5R"
           ]
         ],
         "com": []
@@ -1612,7 +1612,7 @@
       "simcards": 1,
       "notch": 0,
       "waterproof": "7",
-      "headphoneJack": 0,
+      "headphonejack": 0,
       "totalscore": 0,
       "asin": {
         "de": [
@@ -1622,17 +1622,17 @@
         ],
         "com": [["white", ""], ["black", ""]]
       },
-      "price": { "de": [[965], [981], [973]], "com": [] },
+      "price": { "de": [[984], [979], [1060]], "com": [] },
       "amazon": {
         "de": [
           [
-            "https://www.amazon.de/Apple-MQ8P2ZD-iPhone-Kamera-Aufl%C3%B6sung-Space-Grey/dp/B075LY524V?SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B075LY524V"
+            "https://www.amazon.de/Apple-iPhone-Plus-Display-Space-Grau/dp/B075LY524V?SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B075LY524V"
           ],
           [
-            "https://www.amazon.de/Apple-MQ8Q2ZD-iPhone-Kamera-Aufl%C3%B6sung-Silver/dp/B075LXS8MK?SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B075LXS8MK"
+            "https://www.amazon.de/Apple-iPhone-Plus-Display-Silber/dp/B075LXS8MK?SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B075LXS8MK"
           ],
           [
-            "https://www.amazon.de/Apple-MQ8R2ZD-iPhone-Kamera-Aufl%C3%B6sung-Gold/dp/B075LYPPY9?SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B075LYPPY9"
+            "https://www.amazon.de/Apple-iPhone-Plus-Display-2017-Gold/dp/B075LYPPY9?SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B075LYPPY9"
           ]
         ],
         "com": []
@@ -1658,20 +1658,20 @@
       "simcards": 1,
       "notch": 1,
       "waterproof": "7",
-      "headphoneJack": 0,
+      "headphonejack": 0,
       "totalscore": 0,
       "asin": {
         "de": [["space grey", "B075LXNK24"], ["silver", "B075LYDD7Z"]],
         "com": [["white", ""], ["black", ""]]
       },
-      "price": { "de": [[997], [995]], "com": [] },
+      "price": { "de": [[990], [979]], "com": [] },
       "amazon": {
         "de": [
           [
-            "https://www.amazon.de/Apple-MQAC2ZD-iPhone-Kamera-Aufl%C3%B6sung-Space-Grey/dp/B075LXNK24?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B075LXNK24"
+            "https://www.amazon.de/Apple-iPhone-Display-2017-Space-Grau/dp/B075LXNK24?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B075LXNK24"
           ],
           [
-            "https://www.amazon.de/Apple-MQAD2ZD-iPhone-Kamera-Aufl%C3%B6sung-Silver/dp/B075LYDD7Z?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B075LYDD7Z"
+            "https://www.amazon.de/Apple-iPhone-Display-2017-Silber/dp/B075LYDD7Z?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B075LYDD7Z"
           ]
         ],
         "com": []
@@ -1697,20 +1697,20 @@
       "simcards": 1,
       "notch": 1,
       "waterproof": "7",
-      "headphoneJack": 0,
+      "headphonejack": 0,
       "totalscore": 0,
       "asin": {
         "de": [["space grey", "B075LWF4C3"], ["silver", "B075LRK2QK"]],
         "com": [["white", ""], ["black", ""]]
       },
-      "price": { "de": [[1105], [1105]], "com": [] },
+      "price": { "de": [[1139], [1175]], "com": [] },
       "amazon": {
         "de": [
           [
-            "https://www.amazon.de/Apple-MQAF2ZD-iPhone-Kamera-Aufl%C3%B6sung-Space-Grey/dp/B075LWF4C3?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B075LWF4C3"
+            "https://www.amazon.de/Apple-iPhone-Display-2017-Space-Grau/dp/B075LWF4C3?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B075LWF4C3"
           ],
           [
-            "https://www.amazon.de/Apple-MQAG2ZD-iPhone-Kamera-Aufl%C3%B6sung-Silver/dp/B075LRK2QK?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B075LRK2QK"
+            "https://www.amazon.de/Apple-iPhone-Display-2017-Silber/dp/B075LRK2QK?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B075LRK2QK"
           ]
         ],
         "com": []
@@ -1736,13 +1736,13 @@
       "simcards": 2,
       "notch": 0,
       "waterproof": "7",
-      "headphoneJack": 1,
+      "headphonejack": 1,
       "totalscore": 0,
       "asin": {
         "de": [["super black", "B074MHFGFS"], ["sterling blue", "B00V4Y3RII"]],
         "com": [["white", ""], ["black", ""]]
       },
-      "price": { "de": [[236], [249]], "com": [] },
+      "price": { "de": [[238], [245]], "com": [] },
       "amazon": {
         "de": [
           [
@@ -1775,7 +1775,7 @@
       "simcards": 2,
       "notch": 0,
       "waterproof": "4",
-      "headphoneJack": 1,
+      "headphonejack": 1,
       "totalscore": 0,
       "asin": {
         "de": [["lunar grey", "B0747WYLTX"], ["fine gold", "B0747X83J5"]],
@@ -1814,13 +1814,13 @@
       "simcards": 2,
       "notch": 0,
       "waterproof": "4",
-      "headphoneJack": 0,
+      "headphonejack": 0,
       "totalscore": 0,
       "asin": {
         "de": [["black", "B074MH8DJ5"]],
         "com": [["white", ""], ["black", ""]]
       },
-      "price": { "de": [[369]], "com": [] },
+      "price": { "de": [[349]], "com": [] },
       "amazon": {
         "de": [
           [
@@ -1850,13 +1850,13 @@
       "simcards": 2,
       "notch": 0,
       "waterproof": "4",
-      "headphoneJack": 1,
+      "headphonejack": 1,
       "totalscore": 0,
       "asin": {
         "de": [["deep indigo", "B07BXWZ8ZG"]],
         "com": [["white", ""], ["black", ""]]
       },
-      "price": { "de": [[217]], "com": [] },
+      "price": { "de": [[230]], "com": [] },
       "amazon": {
         "de": [
           [
@@ -1886,7 +1886,7 @@
       "simcards": 2,
       "notch": 0,
       "waterproof": "4",
-      "headphoneJack": 1,
+      "headphonejack": 1,
       "totalscore": 0,
       "asin": {
         "de": [["deep indigo", "B079MT5K9N"]],
@@ -1922,13 +1922,13 @@
       "simcards": 2,
       "notch": 0,
       "waterproof": "4",
-      "headphoneJack": 1,
+      "headphonejack": 1,
       "totalscore": 0,
       "asin": {
         "de": [["deep indigo", "B07CBC869D"]],
         "com": [["white", ""], ["black", ""]]
       },
-      "price": { "de": [[299]], "com": [] },
+      "price": { "de": [[273]], "com": [] },
       "amazon": {
         "de": [
           [
@@ -1958,13 +1958,13 @@
       "simcards": 2,
       "notch": 0,
       "waterproof": "4",
-      "headphoneJack": 1,
+      "headphonejack": 1,
       "totalscore": 0,
       "asin": {
         "de": [["deep indigo", "B07BXFRK2Q"]],
         "com": [["white", ""], ["black", ""]]
       },
-      "price": { "de": [[169]], "com": [] },
+      "price": { "de": [[189]], "com": [] },
       "amazon": {
         "de": [
           [
@@ -1994,7 +1994,7 @@
       "simcards": 2,
       "notch": 0,
       "waterproof": "0",
-      "headphoneJack": 1,
+      "headphonejack": 1,
       "totalscore": 0,
       "asin": {
         "de": [
@@ -2005,7 +2005,7 @@
         ],
         "com": [["white", ""], ["black", ""]]
       },
-      "price": { "de": [[99], [159], [99], [117]], "com": [] },
+      "price": { "de": [[99], [118], [99], [116]], "com": [] },
       "amazon": {
         "de": [
           [
@@ -2044,13 +2044,13 @@
       "simcards": 2,
       "notch": 0,
       "waterproof": "0",
-      "headphoneJack": 1,
+      "headphonejack": 1,
       "totalscore": 0,
       "asin": {
         "de": [["fine gold", "B071J7FRBD"]],
         "com": [["white", ""], ["black", ""]]
       },
-      "price": { "de": [[159]], "com": [] },
+      "price": { "de": [[118]], "com": [] },
       "amazon": {
         "de": [
           [
@@ -2080,13 +2080,13 @@
       "simcards": 2,
       "notch": 0,
       "waterproof": "4",
-      "headphoneJack": 1,
+      "headphonejack": 1,
       "totalscore": 0,
       "asin": {
         "de": [["fine gold", "B074MHL2DN"], ["lunar grey", "B074MGP8GJ"]],
         "com": [["white", ""], ["black", ""]]
       },
-      "price": { "de": [[139], [125]], "com": [] },
+      "price": { "de": [[139], [127]], "com": [] },
       "amazon": {
         "de": [
           [
@@ -2119,13 +2119,13 @@
       "simcards": 2,
       "notch": 0,
       "waterproof": "4",
-      "headphoneJack": 1,
+      "headphonejack": 1,
       "totalscore": 0,
       "asin": {
         "de": [["blush gold", "B074SQZ2PB"], ["lunar grey", "B074SR2DVT"]],
         "com": [["white", ""], ["black", ""]]
       },
-      "price": { "de": [[189], [194]], "com": [] },
+      "price": { "de": [[187], [191]], "com": [] },
       "amazon": {
         "de": [
           [
@@ -2158,7 +2158,7 @@
       "simcards": 1,
       "notch": 0,
       "waterproof": "8",
-      "headphoneJack": 1,
+      "headphonejack": 1,
       "totalscore": 0,
       "asin": {
         "de": [
@@ -2169,7 +2169,7 @@
         ],
         "com": [["white", ""], ["black", ""]]
       },
-      "price": { "de": [[213], [233], [204], [220]], "com": [] },
+      "price": { "de": [[242], [245], [206], [230]], "com": [] },
       "amazon": {
         "de": [
           [
@@ -2208,7 +2208,7 @@
       "simcards": 2,
       "notch": 0,
       "waterproof": "8",
-      "headphoneJack": 1,
+      "headphonejack": 1,
       "totalscore": 0,
       "asin": {
         "de": [
@@ -2219,7 +2219,7 @@
         ],
         "com": [["white", ""], ["black", ""]]
       },
-      "price": { "de": [[650], [610], [589], [706]], "com": [] },
+      "price": { "de": [[849], [601], [563], [706]], "com": [] },
       "amazon": {
         "de": [
           [
@@ -2258,13 +2258,13 @@
       "simcards": 1,
       "notch": 0,
       "waterproof": "8",
-      "headphoneJack": 1,
+      "headphonejack": 1,
       "totalscore": 0,
       "asin": {
         "de": [["grey", "B07C6351NJ"], ["midnight black", "B07C5ZNN9Q"]],
         "com": [["white", ""], ["black", ""]]
       },
-      "price": { "de": [[949], [949]], "com": [] },
+      "price": { "de": [[0], [949]], "com": [] },
       "amazon": {
         "de": [
           [
@@ -2297,7 +2297,7 @@
       "simcards": 2,
       "notch": 0,
       "waterproof": "8",
-      "headphoneJack": 1,
+      "headphonejack": 1,
       "totalscore": 0,
       "asin": {
         "de": [
@@ -2308,7 +2308,7 @@
         ],
         "com": [["white", ""], ["black", ""]]
       },
-      "price": { "de": [[769], [779], [688], [918]], "com": [] },
+      "price": { "de": [[749], [732], [0], [802]], "com": [] },
       "amazon": {
         "de": [
           [
@@ -2347,7 +2347,7 @@
       "simcards": 1,
       "notch": 0,
       "waterproof": "8",
-      "headphoneJack": 1,
+      "headphonejack": 1,
       "totalscore": 0,
       "asin": {
         "de": [["grey", "B07C64N3WD"], ["midnight black", "B07C61XVDQ"]],
@@ -2386,7 +2386,7 @@
       "simcards": 1,
       "notch": 0,
       "waterproof": "8",
-      "headphoneJack": 1,
+      "headphonejack": 1,
       "totalscore": 0,
       "asin": {
         "de": [
@@ -2396,7 +2396,7 @@
         ],
         "com": [["white", ""], ["black", ""]]
       },
-      "price": { "de": [[648], [604], [608]], "com": [] },
+      "price": { "de": [[648], [645], [639]], "com": [] },
       "amazon": {
         "de": [
           [
@@ -2432,7 +2432,7 @@
       "simcards": 1,
       "notch": 0,
       "waterproof": "8",
-      "headphoneJack": 1,
+      "headphonejack": 1,
       "totalscore": 0,
       "asin": {
         "de": [
@@ -2443,7 +2443,7 @@
         ],
         "com": [["white", ""], ["black", ""]]
       },
-      "price": { "de": [[443], [469], [455], [464]], "com": [] },
+      "price": { "de": [[437], [483], [475], [458]], "com": [] },
       "amazon": {
         "de": [
           [
