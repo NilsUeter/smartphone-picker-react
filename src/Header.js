@@ -45,8 +45,13 @@ class Header extends Component {
             >
               Contact
             </a>
-            <a className="main-menu-link" href="sites/about.html">
-              About
+            <a
+              className="main-menu-link"
+              onClick={() => {
+                FilterStore.toggleAttribute("showAbout");
+              }}
+            >
+              {FilterStore.showAbout ? "Smartphones" : "About"}
             </a>
           </div>
           <div className="countryDiv">

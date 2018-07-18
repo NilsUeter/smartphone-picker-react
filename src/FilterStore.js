@@ -2,6 +2,7 @@ import {} from "mobx-react";
 import { observable, action } from "mobx";
 
 class FilterStore {
+  @observable showAbout = false;
   @observable sidebarHidden = false;
   @observable country = "de";
 

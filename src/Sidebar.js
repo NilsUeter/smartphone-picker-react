@@ -41,10 +41,17 @@ class Sidebar extends Component {
               type="image"
               src="images/sort_arrows.png"
               id="sorting_order"
-              className="sorting_order"
+              className={
+                FilterStore.isDescending
+                  ? "sorting_order rotate-sorting-order"
+                  : "sorting_order"
+              }
               height="22px"
               width="22px"
               alt="Submit"
+              onClick={() => {
+                FilterStore.toggleAttribute("isDescending");
+              }}
             />
           </div>
           <p>Scale phones</p>

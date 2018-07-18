@@ -88,6 +88,10 @@ textarea:focus {
   display: none;
 }
 
+.rotate-sorting-order {
+  transform: rotate(180deg);
+}
+
 .sorting_order {
   transition: transform 0.8s ease;
   vertical-align: middle;

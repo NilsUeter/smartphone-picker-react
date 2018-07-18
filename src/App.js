@@ -5,6 +5,7 @@ import "./App.css";
 import Header from "./Header.js";
 import Sidebar from "./Sidebar.js";
 import Content from "./Content.js";
+import About from "./About.js";
 import Footer from "./Footer.js";
 
 import FilterStore from "./FilterStore.js";
@@ -23,7 +24,8 @@ class App extends Component {
         <DevTools />
         <Header />
         <Sidebar />
-        <Content />
+        {FilterStore.showAbout ? <About /> : <Content />}
+
         <Footer />
       </div>
     );
