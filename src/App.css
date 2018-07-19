@@ -51,7 +51,7 @@
 
 .App {
   display: grid;
-  grid-template-rows: minmax(100px, 11vh) minmax(200px, 88.5vh) minmax(0, 0.5vh);
+  grid-template-rows: minmax(60px, 9vh) minmax(200px, 90.5vh) minmax(0, 0.5vh);
   grid-template-areas:
     "header header header"
     "sidebar content content"

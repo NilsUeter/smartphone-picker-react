@@ -3,7 +3,7 @@ import { observable, action } from "mobx";
 
 class FilterStore {
   @observable showAbout = false;
-  @observable sidebarHidden = false;
+  @observable sidebarHidden = true;
   @observable country = "de";
 
   @observable filterTemplate = "";

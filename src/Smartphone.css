@@ -79,7 +79,7 @@
 }
 
 .img-container {
-  height: 44vh;
+  height: 43vh;
   align-items: flex-end;
   display: flex;
   justify-content: center;
@@ -123,6 +123,7 @@
   -moz-border-radius: 3px;
   border-radius: 3px;
   background: #febd69;
+  margin: 0 auto;
 }
 
 .a-link {

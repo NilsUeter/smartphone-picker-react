@@ -3,7 +3,6 @@
   font-weight: bold;
   position: relative;
   z-index: 20;
-  height: 58px;
   padding-top: 0;
   padding-left: 15%;
   text-align: left;
@@ -35,10 +34,7 @@
   box-sizing: border-box;
   position: relative;
   z-index: 10;
-  height: 48px;
   margin-top: 0;
-  padding-top: 5px;
-  padding-bottom: 10px;
   border-top: 1px solid #dcdcdc;
   outline-color: rgb(102, 102, 102);
   background-color: rgb(249, 249, 249);

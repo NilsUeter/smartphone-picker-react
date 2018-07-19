@@ -21,7 +21,7 @@ class Smartphone extends Component {
           {FilterStore.scaleInput ? (
             <img
               style={{
-                maxHeight: 0.27 * this.props.smartphone.length + "vh"
+                maxHeight: 0.26 * this.props.smartphone.length + "vh"
               }}
               className="qtip-img"
               src={"images/" + this.props.smartphone.imagelink}
@@ -30,7 +30,7 @@ class Smartphone extends Component {
             />
           ) : (
             <img
-              style={{ maxHeight: 0.3 * 155 + "vh" }}
+              style={{ maxHeight: 0.3 * 140 + "vh" }}
               className="qtip-img"
               src={"images/" + this.props.smartphone.imagelink}
               alt=""
@@ -98,8 +98,8 @@ class Smartphone extends Component {
             {this.props.smartphone.totalscore}
           </p>
 
-          <div className="wrapper">
-            <span className="a-button a-button-primary">
+          <div className="wrapper bs">
+            <div className="a-button a-button-primary">
               <a
                 className="a-link"
                 target="_blank"
@@ -124,7 +124,7 @@ class Smartphone extends Component {
                   <span className="a-button-text">Shop Now</span>
                 </span>
               </a>
-            </span>
+            </div>
           </div>
         </div>
       </div>
