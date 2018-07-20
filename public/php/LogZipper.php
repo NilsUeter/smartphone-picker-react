@@ -11,7 +11,7 @@
   ignore_user_abort(true);
   set_time_limit(100);
 
-  require_once "logger.php";
+  require_once "Logger.php";
 
   logToFile("LogZipper", "Starting to zip Logs of last Week");
   echo "br>Starting to zip Logs of last Week<br>";

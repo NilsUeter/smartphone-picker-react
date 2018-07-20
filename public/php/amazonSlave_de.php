@@ -7,7 +7,7 @@
   ignore_user_abort(true);
   set_time_limit(100);
 
-  require_once "logger.php";
+  require_once "Logger.php";
   require_once "SmartphoneDataRequester.php";
 
   $json = json_decode(file_get_contents("../data/smartphones.json"),TRUE);

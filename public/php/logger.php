@@ -1,7 +1,7 @@
 <<?php
-  function logToFile($file_prefix, $message) {
+  function logToFile($logfile_name, $message) {
     $date_time = date("d.m.Y H:i:s");
-    $logfile = "logs/" . $file_prefix . date("d.m.Y_H") . " Uhr.txt";
+    $logfile = "logs/" . date("Ymd") . "_" . $logfile_name;
     $message = array($date_time, $message);
     $line = implode(" ", $message);
 
