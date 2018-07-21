@@ -61,19 +61,27 @@ class Sidebar extends Component {
           <div className="filterBox-Header bs">Budget and Size</div>
           <p>Price</p>
           <div>
-            <TextField name="price_minimum_1" />-<TextField name="price_maximum_1" />
+            <TextField name="price_minimum_1" />
+            <span className="textField-descriptor">-</span>
+            <TextField name="price_maximum_1" />
           </div>
           <p>Display</p>
           <div>
-            <TextField name="size_minimum_1" />-<TextField name="size_maximum_1" />
+            <TextField name="size_minimum_1" />
+            <span className="textField-descriptor">-</span>
+            <TextField name="size_maximum_1" />
           </div>
           <p>Length</p>
           <div>
-            <TextField name="size_minimum_2" />-<TextField name="size_maximum_2" />
+            <TextField name="size_minimum_2" />
+            <span className="textField-descriptor">-</span>
+            <TextField name="size_maximum_2" />
           </div>
           <p>Width</p>
           <div>
-            <TextField name="size_minimum_3" />-<TextField name="size_maximum_3" />
+            <TextField name="size_minimum_3" />
+            <span className="textField-descriptor">-</span>
+            <TextField name="size_maximum_3" />
           </div>
         </div>
         <div className="filterBox">
