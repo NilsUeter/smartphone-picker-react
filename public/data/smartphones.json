@@ -3,7 +3,7 @@
     {
       "name": "6.1",
       "brand": "Nokia",
-      "imagelink": "TheNewNokia6_hardware-phone.jpg?fm=png",
+      "imagelink": "TheNewNokia6_hardware-phone",
       "smallestPrice": 0,
       "design": 4,
       "display": 5.5,
@@ -35,7 +35,7 @@
           ["black/copper", "B07BVDG8P1", "Unlocked"]
         ]
       },
-      "price": { "de": [[265], [276], [249], [276]], "com": [] },
+      "price": { "de": [[264], [264], [244], [273]], "com": [] },
       "amazon": {
         "de": [
           [
@@ -57,7 +57,7 @@
     {
       "name": "7 plus",
       "brand": "Nokia",
-      "imagelink": "Nokia7plus_ROW_hardware-phone.jpg?fm=png",
+      "imagelink": "Nokia7plus_ROW_hardware-phone",
       "smallestPrice": 0,
       "design": 4,
       "display": 6,
@@ -88,7 +88,7 @@
           ["black/copper", "B07BVS4LMN", ""]
         ]
       },
-      "price": { "de": [[369], [372], [350], [369]], "com": [] },
+      "price": { "de": [[360], [379], [350], [369]], "com": [] },
       "amazon": {
         "de": [
           [
@@ -110,7 +110,7 @@
     {
       "name": "8",
       "brand": "Nokia",
-      "imagelink": "nokia8normal.jpg",
+      "imagelink": "nokia8normal",
       "smallestPrice": 0,
       "design": 4,
       "display": 5.3,
@@ -145,7 +145,7 @@
           ["tempered blue", "B074SJJBY2"]
         ]
       },
-      "price": { "de": [[336], [337], [0], [0], [355]], "com": [] },
+      "price": { "de": [[318], [622], [0], [0], [355]], "com": [] },
       "amazon": {
         "de": [
           [
@@ -166,7 +166,7 @@
     {
       "name": "8 Sirocco",
       "brand": "Nokia",
-      "imagelink": "Nokia8Sirocco_ROW__power-phone.jpg?fm=png",
+      "imagelink": "Nokia8Sirocco_ROW__power-phone",
       "smallestPrice": 0,
       "design": 5,
       "display": 5.5,
@@ -202,7 +202,7 @@
     {
       "name": "Redmi Note 5 (32GB)",
       "brand": "Xiamoi",
-      "imagelink": "redmiNote5.jpg",
+      "imagelink": "redmiNote5",
       "smallestPrice": 0,
       "design": 4,
       "display": 6,
@@ -225,7 +225,7 @@
         "de": [["black", "B07CZPXGVJ"], ["gold", "B07CRGJW16"]],
         "com": []
       },
-      "price": { "de": [[194], [189]], "com": [] },
+      "price": { "de": [[184], [184]], "com": [] },
       "amazon": {
         "de": [
           [
@@ -241,7 +241,7 @@
     {
       "name": "Redmi Note 5 (64GB)",
       "brand": "Xiamoi",
-      "imagelink": "redmiNote5.jpg",
+      "imagelink": "redmiNote5",
       "smallestPrice": 0,
       "design": 4,
       "display": 6,
@@ -268,7 +268,7 @@
         ],
         "com": []
       },
-      "price": { "de": [[201], [216], [209]], "com": [] },
+      "price": { "de": [[219], [219], [224]], "com": [] },
       "amazon": {
         "de": [
           [
@@ -287,7 +287,7 @@
     {
       "name": "Mi A1",
       "brand": "Xiamoi",
-      "imagelink": "y74WpwR.jpg",
+      "imagelink": "y74WpwR",
       "smallestPrice": 0,
       "design": 4,
       "display": 5.5,
@@ -319,20 +319,20 @@
           ["black", "B076HQ6FSY"]
         ]
       },
-      "price": { "de": [[200], [168], [198], [182]], "com": [] },
+      "price": { "de": [[195], [168], [188], [189]], "com": [] },
       "amazon": {
         "de": [
           [
-            "https://www.amazon.de/Xiaomi-Mi-A1-Gold-64Gb/dp/B076FTDYFY?SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B076FTDYFY"
+            "https://www.amazon.de/Xiaomi-A1-Smartphone-64GB-Gold-Wei%C3%9F/dp/B076FTDYFY?SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B076FTDYFY"
           ],
           [
-            "https://www.amazon.de/Xiaomi-Mi-A1-Smartphone-Touchscreen-schwarz/dp/B0787LD1VS?SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B0787LD1VS"
+            "https://www.amazon.de/Xiaomi-Mi-A1-Smartphone-Display-Wei%C3%9F-Gold/dp/B0787LD1VS?SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B0787LD1VS"
           ],
           [
-            "https://www.amazon.de/Xiaomi-Smartphone-Touchscreen-Speicher-Ros%C3%A9gold/dp/B075V2TCLH?SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B075V2TCLH"
+            "https://www.amazon.de/Xiaomi-Smartphone-Display-Android-Ros%C3%A9gold/dp/B075V2TCLH?SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B075V2TCLH"
           ],
           [
-            "https://www.amazon.de/Xiaomi-A1-Black-Global-Version-schwarz/dp/B076493W9X?SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B076493W9X"
+            "https://www.amazon.de/Xiaomi-A1-Smartphone-Display-Android-Schwarz/dp/B076493W9X?SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B076493W9X"
           ]
         ],
         "com": []
@@ -341,7 +341,7 @@
     {
       "name": "Mi MIX 2",
       "brand": "Xiamoi",
-      "imagelink": "7EIAsGt.jpg",
+      "imagelink": "7EIAsGt",
       "smallestPrice": 0,
       "design": 5,
       "display": 6,
@@ -368,17 +368,17 @@
         ],
         "com": [["black", "B075SBJ3T2"], ["black", "B079816Y5T"]]
       },
-      "price": { "de": [[354], [369], [548]], "com": [] },
+      "price": { "de": [[354], [379], [491]], "com": [] },
       "amazon": {
         "de": [
           [
-            "https://www.amazon.de/Xiaomi-Mi-Mix-Black-EU-Ware-schwarz/dp/B0784RQR88?SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B0784RQR88"
+            "https://www.amazon.de/Xiaomi-Mi-Mix-Smartphone-Display-Schwarz/dp/B0784RQR88?SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B0784RQR88"
           ],
           [
-            "https://www.amazon.de/Xiaomi-Globale-Marken-Snapdragon-Smartphone-Schwarz/dp/B076VLN14J?SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B076VLN14J"
+            "https://www.amazon.de/Xiaomi-Smartphone-Display-Android-Schwarz/dp/B076VLN14J?SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B076VLN14J"
           ],
           [
-            "https://www.amazon.de/Xiaomi-Mix-128GB-Dual-SIM-white/dp/B0792TXZ46?SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B0792TXZ46"
+            "https://www.amazon.de/Xiaomi-Smartphone-15-2cm-Display-Android-Wei%C3%9F/dp/B0792TXZ46?SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B0792TXZ46"
           ]
         ],
         "com": []
@@ -387,7 +387,7 @@
     {
       "name": "Mi MIX 2s (64GB)",
       "brand": "Xiamoi",
-      "imagelink": "7EIAsGt.jpg",
+      "imagelink": "7EIAsGt",
       "smallestPrice": 0,
       "design": 5,
       "display": 6,
@@ -426,7 +426,7 @@
     {
       "name": "Mi MIX 2s (128GB)",
       "brand": "Xiamoi",
-      "imagelink": "7EIAsGt.jpg",
+      "imagelink": "7EIAsGt",
       "smallestPrice": 0,
       "design": 5,
       "display": 6,
@@ -459,7 +459,7 @@
     {
       "name": "U11 life",
       "brand": "HTC",
-      "imagelink": "61iBTjkp3yL._SY741_.jpg",
+      "imagelink": "61iBTjkp3yL._SY741_",
       "smallestPrice": 0,
       "design": 4,
       "display": 5.2,
@@ -485,7 +485,7 @@
         ],
         "com": [["sapphire blue", "B075GH2QP8"]]
       },
-      "price": { "de": [[224], [306]], "com": [] },
+      "price": { "de": [[227], [303]], "com": [] },
       "amazon": {
         "de": [
           [
@@ -501,7 +501,7 @@
     {
       "name": "U11 Plus",
       "brand": "HTC",
-      "imagelink": "51XltEAiihL._SY879_.jpg",
+      "imagelink": "51XltEAiihL._SY879_",
       "smallestPrice": 0,
       "design": 5,
       "display": 6,
@@ -534,7 +534,7 @@
           ["translucent oil", "B077TMKPTQ"]
         ]
       },
-      "price": { "de": [[749], [667], [749], [628]], "com": [] },
+      "price": { "de": [[699], [656], [699], [632]], "com": [] },
       "amazon": {
         "de": [
           [
@@ -556,7 +556,7 @@
     {
       "name": "U12 Plus",
       "brand": "HTC",
-      "imagelink": "htcu12+.jpg",
+      "imagelink": "htcu12+",
       "smallestPrice": 0,
       "design": 5,
       "display": 6,
@@ -587,7 +587,7 @@
           ["translucent blue", "B07D2Q65ZM"]
         ]
       },
-      "price": { "de": [[729], [799], [757]], "com": [] },
+      "price": { "de": [[729], [785], [757]], "com": [] },
       "amazon": {
         "de": [
           [
@@ -606,7 +606,7 @@
     {
       "name": "Pixel 2",
       "brand": "Google",
-      "imagelink": "81Ea5V2MehL._SY879_.jpg",
+      "imagelink": "81Ea5V2MehL._SY879_",
       "smallestPrice": 0,
       "design": 4,
       "display": 5,
@@ -639,7 +639,7 @@
           ["kinda blue", "B076KM3PYP"]
         ]
       },
-      "price": { "de": [[678], [699], [629], [699]], "com": [] },
+      "price": { "de": [[678], [731], [629], [674]], "com": [] },
       "amazon": {
         "de": [
           [
@@ -649,7 +649,7 @@
             "https://www.amazon.de/Google-Pixel-64GB-Vertrag-just-black-black/dp/B076KSTG53?SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B076KSTG53"
           ],
           [
-            "https://www.amazon.de/Google-Pixel-64GB-Android-black-Schwarz/dp/B076L5FQ23?SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B076L5FQ23"
+            "https://www.amazon.de/Google-Pixel-64GB-Android-Black-Schwarz/dp/B076L5FQ23?SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B076L5FQ23"
           ],
           [
             "https://www.amazon.de/Google-Pixel-64GB-Vertrag-kinda-blue-blau/dp/B076KM3PYP?SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B076KM3PYP"
@@ -661,7 +661,7 @@
     {
       "name": "Pixel 2 XL",
       "brand": "Google",
-      "imagelink": "pixel2xl.jpg",
+      "imagelink": "pixel2xl",
       "smallestPrice": 0,
       "design": 4,
       "display": 6,
@@ -693,14 +693,14 @@
           ["black/white", "B079J5FD54"]
         ]
       },
-      "price": { "de": [[699], [708], [799], [816]], "com": [] },
+      "price": { "de": [[639], [675], [799], [816]], "com": [] },
       "amazon": {
         "de": [
           [
             "https://www.amazon.de/Google-Pixel-64GB-just-black-schwarz/dp/B077H28GFX?SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B077H28GFX"
           ],
           [
-            "https://www.amazon.de/Google-Pixel-XL-64GB-schwarz/dp/B076KT8HT2?SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B076KT8HT2"
+            "https://www.amazon.de/Google-Pixel-XL-64GB-Schwarz/dp/B076KT8HT2?SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B076KT8HT2"
           ],
           [
             "https://www.amazon.de/Google-Pixel-64GB-black-white-wei%C3%9F/dp/B077WSVG4Z?SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B077WSVG4Z"
@@ -715,7 +715,7 @@
     {
       "name": "5t (64GB)",
       "brand": "OnePlus",
-      "imagelink": "qPbTGxu.jpg",
+      "imagelink": "qPbTGxu",
       "smallestPrice": 0,
       "design": 5,
       "display": 6,
@@ -755,7 +755,7 @@
     {
       "name": "5t (128GB)",
       "brand": "OnePlus",
-      "imagelink": "qPbTGxu.jpg",
+      "imagelink": "qPbTGxu",
       "smallestPrice": 0,
       "design": 5,
       "display": 6,
@@ -785,14 +785,14 @@
           ["white", "B07917BQWC"]
         ]
       },
-      "price": { "de": [[578], [581]], "com": [] },
+      "price": { "de": [[577], [577]], "com": [] },
       "amazon": {
         "de": [
           [
             "https://www.amazon.de/A5010-Smartphone-Touch-Display-interner-Speicher-Midnight-Schwarz/dp/B078WSFXPW?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B078WSFXPW"
           ],
           [
-            "https://www.amazon.de/OnePlus-Star-Sandstein-128GB-Dual-SIM-Schwarz-Wei%C3%9F/dp/B0789MN114?SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B0789MN114"
+            "https://www.amazon.de/OnePlus-Star-Sandstein-128GB-Dual-Sim-Schwarz-Wei%C3%9F/dp/B0789MN114?SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B0789MN114"
           ]
         ],
         "com": []
@@ -801,7 +801,7 @@
     {
       "name": "6 (64GB)",
       "brand": "OnePlus",
-      "imagelink": "oneplus6.jpg",
+      "imagelink": "oneplus6",
       "smallestPrice": 0,
       "design": 5,
       "display": 6.3,
@@ -845,7 +845,7 @@
     {
       "name": "6 (128GB)",
       "brand": "OnePlus",
-      "imagelink": "oneplus6.jpg",
+      "imagelink": "oneplus6",
       "smallestPrice": 0,
       "design": 5,
       "display": 6,
@@ -876,7 +876,7 @@
           ["silk white", "B078BNQ2ZS"]
         ]
       },
-      "price": { "de": [[569], [569], [569]], "com": [] },
+      "price": { "de": [[569], [569], [550]], "com": [] },
       "amazon": {
         "de": [
           [
@@ -895,7 +895,7 @@
     {
       "name": "Honor 7X",
       "brand": "Huawei",
-      "imagelink": "9chGwId.jpg",
+      "imagelink": "9chGwId",
       "smallestPrice": 0,
       "design": 4,
       "display": 5.9,
@@ -926,7 +926,7 @@
           ["sapphire blue", "B078NCL7GJ"]
         ]
       },
-      "price": { "de": [[228], [219], [0], [203]], "com": [] },
+      "price": { "de": [[227], [185], [0], [185]], "com": [] },
       "amazon": {
         "de": [
           [
@@ -948,7 +948,7 @@
     {
       "name": "Honor 10",
       "brand": "Huawei",
-      "imagelink": "honor10.jpg",
+      "imagelink": "honor10",
       "smallestPrice": 0,
       "design": 4,
       "display": 5.8,
@@ -981,7 +981,7 @@
           ["phantom green", "B07CTF3B98"]
         ]
       },
-      "price": { "de": [[369], [369], [379], [379]], "com": [] },
+      "price": { "de": [[366], [369], [379], [379]], "com": [] },
       "amazon": {
         "de": [
           [
@@ -1003,7 +1003,7 @@
     {
       "name": "Mate 10 Pro",
       "brand": "Huawei",
-      "imagelink": "huawei-mate10-pro.jpg",
+      "imagelink": "huawei-mate10-pro",
       "smallestPrice": 0,
       "design": 4,
       "display": 6,
@@ -1040,7 +1040,7 @@
     {
       "name": "P20",
       "brand": "Huawei",
-      "imagelink": "vqPQcia.jpg",
+      "imagelink": "vqPQcia",
       "smallestPrice": 0,
       "design": 5,
       "display": 5.8,
@@ -1063,7 +1063,7 @@
         "de": [["black", "B07BHD7MHL"], ["blue", "B07BHDC33K"]],
         "com": [["white", ""], ["black", ""]]
       },
-      "price": { "de": [[499], [497]], "com": [] },
+      "price": { "de": [[485], [528]], "com": [] },
       "amazon": {
         "de": [
           [
@@ -1079,7 +1079,7 @@
     {
       "name": "P20 lite",
       "brand": "Huawei",
-      "imagelink": "5wTSOmp.jpg",
+      "imagelink": "5wTSOmp",
       "smallestPrice": 0,
       "design": 4,
       "display": 5.8,
@@ -1107,7 +1107,7 @@
         ],
         "com": [["white", ""], ["black", ""]]
       },
-      "price": { "de": [[297], [302], [289], [290]], "com": [] },
+      "price": { "de": [[295], [295], [278], [313]], "com": [] },
       "amazon": {
         "de": [
           [
@@ -1129,7 +1129,7 @@
     {
       "name": "P20 Pro",
       "brand": "Huawei",
-      "imagelink": "Vc0thgM.jpg",
+      "imagelink": "Vc0thgM",
       "smallestPrice": 0,
       "design": 5,
       "display": 6.1,
@@ -1156,7 +1156,7 @@
         ],
         "com": [["white", ""], ["black", ""]]
       },
-      "price": { "de": [[899], [694], [739]], "com": [] },
+      "price": { "de": [[692], [682], [761]], "com": [] },
       "amazon": {
         "de": [
           [
@@ -1175,7 +1175,7 @@
     {
       "name": "Phone",
       "brand": "Essential",
-      "imagelink": "OGr1dfB.jpg",
+      "imagelink": "OGr1dfB",
       "smallestPrice": 0,
       "design": 5,
       "display": 5.7,
@@ -1202,7 +1202,7 @@
         ],
         "com": [["white", ""], ["black", ""]]
       },
-      "price": { "de": [[669], [679], [689]], "com": [] },
+      "price": { "de": [[649], [695], [0]], "com": [] },
       "amazon": {
         "de": [
           [
@@ -1221,7 +1221,7 @@
     {
       "name": "G6",
       "brand": "LG",
-      "imagelink": "814YBWa7gGL._SY879_.jpg",
+      "imagelink": "814YBWa7gGL._SY879_",
       "smallestPrice": 0,
       "design": 3,
       "display": 5.7,
@@ -1250,7 +1250,7 @@
         ],
         "com": [["white", ""], ["black", ""]]
       },
-      "price": { "de": [[290], [384], [363], [300], [360]], "com": [] },
+      "price": { "de": [[291], [372], [399], [290], [345]], "com": [] },
       "amazon": {
         "de": [
           [
@@ -1275,7 +1275,7 @@
     {
       "name": "G7 ThinQ",
       "brand": "LG",
-      "imagelink": "g7thinQ.jpg",
+      "imagelink": "g7thinQ",
       "smallestPrice": 0,
       "design": 5,
       "display": 6.1,
@@ -1298,7 +1298,7 @@
         "de": [["platinum grey", "B07D7NXYT6"], ["black", "B07D69KKBZ"]],
         "com": [["white", ""], ["black", ""]]
       },
-      "price": { "de": [[608], [572]], "com": [] },
+      "price": { "de": [[599], [575]], "com": [] },
       "amazon": {
         "de": [
           [
@@ -1314,7 +1314,7 @@
     {
       "name": "V30",
       "brand": "LG",
-      "imagelink": "715GbwmYJjL._SY879_.jpg",
+      "imagelink": "715GbwmYJjL._SY879_",
       "smallestPrice": 0,
       "design": 4,
       "display": 6,
@@ -1337,7 +1337,7 @@
         "de": [["cloud silver", "B075GYD539"], ["moroccan blue", "B075GTJYSV"]],
         "com": [["white", ""], ["black", ""]]
       },
-      "price": { "de": [[489], [467]], "com": [] },
+      "price": { "de": [[495], [510]], "com": [] },
       "amazon": {
         "de": [
           [
@@ -1353,7 +1353,7 @@
     {
       "name": "Xperia XZ2",
       "brand": "Sony",
-      "imagelink": "lis9AWg.jpg",
+      "imagelink": "lis9AWg",
       "smallestPrice": 0,
       "design": 3,
       "display": 5.7,
@@ -1381,20 +1381,20 @@
         ],
         "com": [["white", ""], ["black", ""]]
       },
-      "price": { "de": [[632], [652], [649], [653]], "com": [] },
+      "price": { "de": [[635], [629], [629], [640]], "com": [] },
       "amazon": {
         "de": [
           [
             "https://www.amazon.de/Sony-Smartphone-interner-Speicher-Dual-Sim-Liquid-Black/dp/B079YSBTY7?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B079YSBTY7"
           ],
           [
-            "https://www.amazon.de/Sony-Smartphone-interner-Speicher-Dual-SIM-Ash-Pink/dp/B079Z1G1DW?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B079Z1G1DW"
+            "https://www.amazon.de/Sony-Smartphone-interner-Speicher-Dual-Sim-Ash-Pink/dp/B079Z1G1DW?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B079Z1G1DW"
           ],
           [
-            "https://www.amazon.de/Sony-Smartphone-interner-Speicher-Dual-SIM-Deep-Green/dp/B079YS5Q9K?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B079YS5Q9K"
+            "https://www.amazon.de/Sony-Smartphone-interner-Speicher-Dual-Sim-Deep-Green/dp/B079YS5Q9K?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B079YS5Q9K"
           ],
           [
-            "https://www.amazon.de/Sony-Smartphone-interner-Speicher-Dual-SIM-Liquid-Silver/dp/B079YS8SDR?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B079YS8SDR"
+            "https://www.amazon.de/Sony-Smartphone-interner-Speicher-Dual-Sim-Liquid-Silver/dp/B079YS8SDR?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B079YS8SDR"
           ]
         ],
         "com": []
@@ -1403,7 +1403,7 @@
     {
       "name": "Xperia XZ2 Compact",
       "brand": "Sony",
-      "imagelink": "ExuzR25.jpg",
+      "imagelink": "ExuzR25",
       "smallestPrice": 0,
       "design": 3,
       "display": 5,
@@ -1431,7 +1431,7 @@
         ],
         "com": [["white", ""], ["black", ""]]
       },
-      "price": { "de": [[539], [529], [549], [549]], "com": [] },
+      "price": { "de": [[529], [529], [549], [549]], "com": [] },
       "amazon": {
         "de": [
           [
@@ -1444,7 +1444,7 @@
             "https://www.amazon.de/Sony-Smartphone-interner-Speicher-Dual-Sim-Moss-Green/dp/B079YTJ1S4?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B079YTJ1S4"
           ],
           [
-            "https://www.amazon.de/Sony-Smartphone-interner-Speicher-Dual-SIM-White-Silver/dp/B079YRR6QR?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B079YRR6QR"
+            "https://www.amazon.de/Sony-Smartphone-interner-Speicher-Dual-Sim-White-Silver/dp/B079YRR6QR?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B079YRR6QR"
           ]
         ],
         "com": []
@@ -1453,7 +1453,7 @@
     {
       "name": "iPhone 8 (64GB)",
       "brand": "Apple",
-      "imagelink": "xGEFWor.jpg",
+      "imagelink": "xGEFWor",
       "smallestPrice": 0,
       "design": 3,
       "display": 4.7,
@@ -1480,7 +1480,7 @@
         ],
         "com": [["white", ""], ["black", ""]]
       },
-      "price": { "de": [[659], [658], [654]], "com": [] },
+      "price": { "de": [[657], [664], [665]], "com": [] },
       "amazon": {
         "de": [
           [
@@ -1499,7 +1499,7 @@
     {
       "name": "iPhone 8 (256GB)",
       "brand": "Apple",
-      "imagelink": "xGEFWor.jpg",
+      "imagelink": "xGEFWor",
       "smallestPrice": 0,
       "design": 3,
       "display": 4.7,
@@ -1526,7 +1526,7 @@
         ],
         "com": [["white", ""], ["black", ""]]
       },
-      "price": { "de": [[835], [886], [886]], "com": [] },
+      "price": { "de": [[784], [890], [885]], "com": [] },
       "amazon": {
         "de": [
           [
@@ -1545,7 +1545,7 @@
     {
       "name": "iPhone 8 Plus (64GB)",
       "brand": "Apple",
-      "imagelink": "lq2EmJG.jpg",
+      "imagelink": "lq2EmJG",
       "smallestPrice": 0,
       "design": 3,
       "display": 5.5,
@@ -1573,7 +1573,7 @@
         ],
         "com": [["white", ""], ["black", ""]]
       },
-      "price": { "de": [[795], [778], [848], [795]], "com": [] },
+      "price": { "de": [[795], [784], [778], [793]], "com": [] },
       "amazon": {
         "de": [
           [
@@ -1595,7 +1595,7 @@
     {
       "name": "iPhone 8 Plus (256GB)",
       "brand": "Apple",
-      "imagelink": "lq2EmJG.jpg",
+      "imagelink": "lq2EmJG",
       "smallestPrice": 0,
       "design": 3,
       "display": 5.5,
@@ -1622,7 +1622,7 @@
         ],
         "com": [["white", ""], ["black", ""]]
       },
-      "price": { "de": [[984], [979], [1060]], "com": [] },
+      "price": { "de": [[966], [979], [925]], "com": [] },
       "amazon": {
         "de": [
           [
@@ -1641,7 +1641,7 @@
     {
       "name": "iPhone X (64GB)",
       "brand": "Apple",
-      "imagelink": "UDV8YUp.jpg",
+      "imagelink": "UDV8YUp",
       "smallestPrice": 0,
       "design": 5,
       "display": 5.8,
@@ -1664,7 +1664,7 @@
         "de": [["space grey", "B075LXNK24"], ["silver", "B075LYDD7Z"]],
         "com": [["white", ""], ["black", ""]]
       },
-      "price": { "de": [[990], [979]], "com": [] },
+      "price": { "de": [[999], [999]], "com": [] },
       "amazon": {
         "de": [
           [
@@ -1680,7 +1680,7 @@
     {
       "name": "iPhone X (256GB)",
       "brand": "Apple",
-      "imagelink": "UDV8YUp.jpg",
+      "imagelink": "UDV8YUp",
       "smallestPrice": 0,
       "design": 5,
       "display": 5.8,
@@ -1703,7 +1703,7 @@
         "de": [["space grey", "B075LWF4C3"], ["silver", "B075LRK2QK"]],
         "com": [["white", ""], ["black", ""]]
       },
-      "price": { "de": [[1139], [1175]], "com": [] },
+      "price": { "de": [[1172], [1174]], "com": [] },
       "amazon": {
         "de": [
           [
@@ -1719,7 +1719,7 @@
     {
       "name": "Moto X4",
       "brand": "Motorola",
-      "imagelink": "61eEr3fsroL._SY879_.jpg",
+      "imagelink": "61eEr3fsroL._SY879_",
       "smallestPrice": 0,
       "design": 3,
       "display": 5.2,
@@ -1742,7 +1742,7 @@
         "de": [["super black", "B074MHFGFS"], ["sterling blue", "B00V4Y3RII"]],
         "com": [["white", ""], ["black", ""]]
       },
-      "price": { "de": [[238], [245]], "com": [] },
+      "price": { "de": [[233], [245]], "com": [] },
       "amazon": {
         "de": [
           [
@@ -1758,7 +1758,7 @@
     {
       "name": "Moto Z2 Play",
       "brand": "Motorola",
-      "imagelink": "motoz2play.jpg",
+      "imagelink": "motoz2play",
       "smallestPrice": 0,
       "design": 3,
       "display": 5.5,
@@ -1781,7 +1781,7 @@
         "de": [["lunar grey", "B0747WYLTX"], ["fine gold", "B0747X83J5"]],
         "com": [["white", ""], ["black", ""]]
       },
-      "price": { "de": [[299], [289]], "com": [] },
+      "price": { "de": [[322], [299]], "com": [] },
       "amazon": {
         "de": [
           [
@@ -1797,7 +1797,7 @@
     {
       "name": "Moto Z2 Force",
       "brand": "Motorola",
-      "imagelink": "motoz2force.jpg",
+      "imagelink": "motoz2force",
       "smallestPrice": 0,
       "design": 3,
       "display": 5.5,
@@ -1820,7 +1820,7 @@
         "de": [["black", "B074MH8DJ5"]],
         "com": [["white", ""], ["black", ""]]
       },
-      "price": { "de": [[349]], "com": [] },
+      "price": { "de": [[340]], "com": [] },
       "amazon": {
         "de": [
           [
@@ -1833,7 +1833,7 @@
     {
       "name": "Moto G6",
       "brand": "Motorola",
-      "imagelink": "v3WB6HT.jpg",
+      "imagelink": "v3WB6HT",
       "smallestPrice": 0,
       "design": 3,
       "display": 5.7,
@@ -1869,7 +1869,7 @@
     {
       "name": "Moto G6 [Amazon]",
       "brand": "Motorola",
-      "imagelink": "motog6amazonexclusive.jpg",
+      "imagelink": "motog6amazonexclusive",
       "smallestPrice": 0,
       "design": 3,
       "display": 5.7,
@@ -1892,7 +1892,7 @@
         "de": [["deep indigo", "B079MT5K9N"]],
         "com": [["white", ""], ["black", ""]]
       },
-      "price": { "de": [[269]], "com": [] },
+      "price": { "de": [[242]], "com": [] },
       "amazon": {
         "de": [
           [
@@ -1905,7 +1905,7 @@
     {
       "name": "Moto G6 Plus",
       "brand": "Motorola",
-      "imagelink": "phQJx7z.jpg",
+      "imagelink": "phQJx7z",
       "smallestPrice": 0,
       "design": 3,
       "display": 5.9,
@@ -1928,7 +1928,7 @@
         "de": [["deep indigo", "B07CBC869D"]],
         "com": [["white", ""], ["black", ""]]
       },
-      "price": { "de": [[273]], "com": [] },
+      "price": { "de": [[262]], "com": [] },
       "amazon": {
         "de": [
           [
@@ -1941,7 +1941,7 @@
     {
       "name": "Moto G6 Play",
       "brand": "Motorola",
-      "imagelink": "JQ7Vnzc.jpg",
+      "imagelink": "JQ7Vnzc",
       "smallestPrice": 0,
       "design": 3,
       "display": 5.7,
@@ -1964,7 +1964,7 @@
         "de": [["deep indigo", "B07BXFRK2Q"]],
         "com": [["white", ""], ["black", ""]]
       },
-      "price": { "de": [[189]], "com": [] },
+      "price": { "de": [[179]], "com": [] },
       "amazon": {
         "de": [
           [
@@ -1977,7 +1977,7 @@
     {
       "name": "Moto E4",
       "brand": "Motorola",
-      "imagelink": "71r21xr50KL._SY879_.jpg",
+      "imagelink": "71r21xr50KL._SY879_",
       "smallestPrice": 0,
       "design": 2,
       "display": 5,
@@ -2005,11 +2005,11 @@
         ],
         "com": [["white", ""], ["black", ""]]
       },
-      "price": { "de": [[99], [118], [99], [116]], "com": [] },
+      "price": { "de": [[99], [118], [99], [114]], "com": [] },
       "amazon": {
         "de": [
           [
-            "https://www.amazon.de/Motorola-Smartphone-Display-Android-blush-Gold/dp/B073Q2FYWF?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B073Q2FYWF"
+            "https://www.amazon.de/Motorola-Smartphone-Display-Android-Blush-Gold/dp/B073Q2FYWF?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B073Q2FYWF"
           ],
           [
             "https://www.amazon.de/Motorola-Moto-Plus-Smartphone-Android-Fine-Gold/dp/B071J7FRBD?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B071J7FRBD"
@@ -2018,7 +2018,7 @@
             "https://www.amazon.de/Motorola-Moto-Smartphone-Display-Android-Iron-Gray/dp/B073Q2D8RJ?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B073Q2D8RJ"
           ],
           [
-            "https://www.amazon.de/Motorola-Moto-Smartphone-Android-oxford-Blue/dp/B073Q32CF9?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B073Q32CF9"
+            "https://www.amazon.de/Motorola-Moto-Smartphone-Android-Oxford-Blue/dp/B073Q32CF9?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B073Q32CF9"
           ]
         ],
         "com": []
@@ -2027,7 +2027,7 @@
     {
       "name": "Moto E4 Plus",
       "brand": "Motorola",
-      "imagelink": "motoe4plus.jpg",
+      "imagelink": "motoe4plus",
       "smallestPrice": 0,
       "design": 2,
       "display": 5.5,
@@ -2063,7 +2063,7 @@
     {
       "name": "Moto G5S",
       "brand": "Motorola",
-      "imagelink": "S9FO30n.jpg",
+      "imagelink": "S9FO30n",
       "smallestPrice": 0,
       "design": 3,
       "display": 5.2,
@@ -2086,7 +2086,7 @@
         "de": [["fine gold", "B074MHL2DN"], ["lunar grey", "B074MGP8GJ"]],
         "com": [["white", ""], ["black", ""]]
       },
-      "price": { "de": [[139], [127]], "com": [] },
+      "price": { "de": [[139], [126]], "com": [] },
       "amazon": {
         "de": [
           [
@@ -2102,7 +2102,7 @@
     {
       "name": "Moto G5S Plus",
       "brand": "Motorola",
-      "imagelink": "tdlPqFG.jpg",
+      "imagelink": "tdlPqFG",
       "smallestPrice": 0,
       "design": 3,
       "display": 5.5,
@@ -2125,7 +2125,7 @@
         "de": [["blush gold", "B074SQZ2PB"], ["lunar grey", "B074SR2DVT"]],
         "com": [["white", ""], ["black", ""]]
       },
-      "price": { "de": [[187], [191]], "com": [] },
+      "price": { "de": [[189], [189]], "com": [] },
       "amazon": {
         "de": [
           [
@@ -2141,7 +2141,7 @@
     {
       "name": "Galaxy A5",
       "brand": "Samsung",
-      "imagelink": "wrIcHyN.jpg",
+      "imagelink": "wrIcHyN",
       "smallestPrice": 0,
       "design": 1,
       "display": 5.2,
@@ -2169,7 +2169,7 @@
         ],
         "com": [["white", ""], ["black", ""]]
       },
-      "price": { "de": [[242], [245], [206], [230]], "com": [] },
+      "price": { "de": [[217], [221], [203], [225]], "com": [] },
       "amazon": {
         "de": [
           [
@@ -2191,7 +2191,7 @@
     {
       "name": "Galaxy S9 (64GB)",
       "brand": "Samsung",
-      "imagelink": "71uI%2BnAzruL._SY879_.jpg",
+      "imagelink": "71uI%2BnAzruL._SY879_",
       "smallestPrice": 0,
       "design": 5,
       "display": 5.8,
@@ -2219,7 +2219,7 @@
         ],
         "com": [["white", ""], ["black", ""]]
       },
-      "price": { "de": [[849], [601], [563], [706]], "com": [] },
+      "price": { "de": [[597], [642], [597], [638]], "com": [] },
       "amazon": {
         "de": [
           [
@@ -2241,7 +2241,7 @@
     {
       "name": "Galaxy S9 (256GB)",
       "brand": "Samsung",
-      "imagelink": "71uI%2BnAzruL._SY879_.jpg",
+      "imagelink": "71uI%2BnAzruL._SY879_",
       "smallestPrice": 0,
       "design": 5,
       "display": 5.8,
@@ -2264,7 +2264,7 @@
         "de": [["grey", "B07C6351NJ"], ["midnight black", "B07C5ZNN9Q"]],
         "com": [["white", ""], ["black", ""]]
       },
-      "price": { "de": [[0], [949]], "com": [] },
+      "price": { "de": [[0], [0]], "com": [] },
       "amazon": {
         "de": [
           [
@@ -2280,7 +2280,7 @@
     {
       "name": "Galaxy S9 Plus (64GB)",
       "brand": "Samsung",
-      "imagelink": "71dd-elhT7L._SY879_.jpg",
+      "imagelink": "71dd-elhT7L._SY879_",
       "smallestPrice": 0,
       "design": 5,
       "display": 6.2,
@@ -2308,7 +2308,7 @@
         ],
         "com": [["white", ""], ["black", ""]]
       },
-      "price": { "de": [[749], [732], [0], [802]], "com": [] },
+      "price": { "de": [[752], [732], [710], [782]], "com": [] },
       "amazon": {
         "de": [
           [
@@ -2330,7 +2330,7 @@
     {
       "name": "Galaxy S9 Plus (256GB)",
       "brand": "Samsung",
-      "imagelink": "71dd-elhT7L._SY879_.jpg",
+      "imagelink": "71dd-elhT7L._SY879_",
       "smallestPrice": 0,
       "design": 5,
       "display": 6.2,
@@ -2353,7 +2353,7 @@
         "de": [["grey", "B07C64N3WD"], ["midnight black", "B07C61XVDQ"]],
         "com": [["white", ""], ["black", ""]]
       },
-      "price": { "de": [[0], [1036]], "com": [] },
+      "price": { "de": [[0], [1049]], "com": [] },
       "amazon": {
         "de": [
           [
@@ -2369,7 +2369,7 @@
     {
       "name": "Galaxy S8 Note",
       "brand": "Samsung",
-      "imagelink": "PQYBIud.jpg",
+      "imagelink": "PQYBIud",
       "smallestPrice": 0,
       "design": 5,
       "display": 6.3,
@@ -2396,7 +2396,7 @@
         ],
         "com": [["white", ""], ["black", ""]]
       },
-      "price": { "de": [[648], [645], [639]], "com": [] },
+      "price": { "de": [[624], [636], [639]], "com": [] },
       "amazon": {
         "de": [
           [
@@ -2415,7 +2415,7 @@
     {
       "name": "Galaxy S8",
       "brand": "Samsung",
-      "imagelink": "6gY3U53.jpg",
+      "imagelink": "6gY3U53",
       "smallestPrice": 0,
       "design": 5,
       "display": 5.8,
@@ -2443,7 +2443,7 @@
         ],
         "com": [["white", ""], ["black", ""]]
       },
-      "price": { "de": [[437], [483], [475], [458]], "com": [] },
+      "price": { "de": [[434], [454], [442], [504]], "com": [] },
       "amazon": {
         "de": [
           [

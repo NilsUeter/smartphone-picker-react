@@ -56,6 +56,8 @@ class Sidebar extends Component {
           </div>
           <p>Scale phones</p>
           <ToggleSwitch name="scaleInput" />
+          <p>Empty phones</p>
+          <ToggleSwitch name="emptySmartphones" />
         </div>
         <div className="filterBox">
           <div className="filterBox-Header bs">Budget and Size</div>
