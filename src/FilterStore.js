@@ -10,7 +10,7 @@ class FilterStore {
   @observable filterType = "price";
   @observable isDescending = false;
   @observable scaleInput = true;
-  @observable emptySmartphones = true;
+  @observable emptySmartphones = false;
 
   @observable price_minimum_1 = "";
   @observable price_maximum_1 = "";
