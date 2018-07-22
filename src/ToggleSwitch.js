@@ -15,9 +15,7 @@ class ToggleSwitch extends Component {
           className="cbx toggle-hidden rating_updater"
           checked={FilterStore[this.props.name]}
           onChange={() => {
-            console.log(FilterStore[this.props.name]);
             FilterStore.toggleAttribute(this.props.name);
-            console.log(FilterStore[this.props.name]);
           }}
         />
         <label htmlFor={this.props.name} className="lbl" />

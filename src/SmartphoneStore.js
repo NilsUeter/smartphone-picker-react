@@ -183,7 +183,7 @@ class SmartphoneStore {
       //headphonejack
       if (
         FilterStore.headphoneJack === true &&
-        this.obj.smartphones[i].headphoneJack === 0
+        this.obj.smartphones[i].headphonejack === 0
       ) {
         continue;
       }
