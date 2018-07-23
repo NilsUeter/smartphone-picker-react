@@ -57,16 +57,16 @@
 
   logToFile("LogZipper", "Number of logfiles: " . $zip->numFiles);
   echo "<br>Number of logfiles: " . $zip->numFiles . "<br>";
-  logToFile("LogZipper", "File size Sum: " . $fileSizeSum);
-  echo "<br>File size Sum: " . $fileSizeSum . "<br>";
+  logToFile("LogZipper", "File size Sum: " . humanFilesize($fileSizeSum));
+  echo "<br>File size Sum: " . humanFilesize($fileSizeSum) . "<br>";
   logToFile("LogZipper", "Status of the new zip file:" . $zip->status);
   echo "Status of the new zip file:" . $zip->status . "<br>";
 
   $ret = $zip->close();
   logToFile("LogZipper", "Closed zipfile with result: " . ($ret ? "true" : "false"));
   echo "Closed zipfile with result: " . ($ret ? "true" : "false") . "<br>";
-  logToFile("LogZipper", "Zip filesize: " . filesize($fileinfo->getPathName($filename)));
-  echo "<br>Zip filesize: " . filesize($fileinfo->getPathName($filename)) . "<br>";
+  logToFile("LogZipper", "Zip filesize: " . humanFilesize(filesize($filename)));
+  echo "<br>Zip filesize: " . humanFilesize(filesize($filename)) . "<br>";
 
   logToFile("LogZipper", "Logfiles");
   echo "<br>Logfiles<br>";
@@ -79,4 +79,11 @@
 
   logToFile("LogZipper", "Deleted original log files after saving them in the archive zip");
   echo "<br>Deleted original log files after saving them in the archive zip<br>";
+
+  //Take bytes as Input and return human readable sizes
+  function humanFilesize($bytes, $decimals = 2) {
+    $sz = 'BKMGTP';
+    $factor = floor((strlen($bytes) - 1) / 3);
+    return sprintf("%.{$decimals}f", $bytes / pow(1024, $factor)) . @$sz[$factor];
+  }
  ?>
