@@ -1,4 +1,7 @@
 <?php
+  ignore_user_abort(true);
+  set_time_limit(0);
+
   function logToFile($logfile_name, $message) {
     $date_time = date("d.m.Y H:i:s");
     $logfile = "logs/" . date("Ymd") . "_" . $logfile_name . ".txt";
