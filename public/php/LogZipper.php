@@ -17,13 +17,13 @@
   echo "br>Starting to zip Logs of last Week<br>";
 
   //Create archive directory if not existing
-  if (!file_exists('logs/archive')) {
-    mkdir('logs/archive');
+  if (!file_exists('../logs/archive')) {
+    mkdir('../logs/archive');
   }
 
   //Create a new zip file
   $zip = new ZipArchive();
-  $filename = "logs/archive/" . date("Y") . "_week_" . (intval(date("W"))-1) . "_logs.zip";
+  $filename = "../logs/archive/" . date("Y") . "_week_" . (intval(date("W"))-1) . "_logs.zip";
   $zip->open($filename, ZipArchive::CREATE);
 
   $date_current = new DateTime();
@@ -74,7 +74,7 @@
   foreach ($logfiles as $i => $logfile) {
     logToFile("LogZipper", $logfile);
     echo $logfile . "<br>";
-    unlink('logs/' . $logfile);
+    unlink('../logs/' . $logfile);
   }
 
   logToFile("LogZipper", "Deleted original log files after saving them in the archive zip");
