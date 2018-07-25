@@ -1,0 +1,82 @@
+[
+    {
+        "name": "6.1",
+        "brand": "Nokia",
+        "imagelink": "TheNewNokia6_hardware-phone",
+        "smallestPrice": 0,
+        "design": 4,
+        "display": 5.5,
+        "length": 149,
+        "width": 76,
+        "processor": 3,
+        "updates": 5,
+        "camera": 3,
+        "battery": 3,
+        "batterysize": 3000,
+        "storage": 32,
+        "memory": 3,
+        "sdslot": 1,
+        "simcards": 2,
+        "notch": 0,
+        "waterproof": "",
+        "headphonejack": 1,
+        "totalscore": 0,
+        "types": {
+            "de": [
+                {
+                    "name": "white/iron",
+                    "asin": "B07B6BBC35",
+                    "price": 0,
+                    "link": "https://www.amazon.de/Nokia-Smartphone-interner-Speicher-Dual-Sim-Wei%C3%9F-Kupfer/dp/B07B6BBC35?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B6BBC35"
+                },
+                {
+                    "name": "black/copper",
+                    "asin": "B07B6CMJ7K",
+                    "price": 0,
+                    "link": "https://www.amazon.de/Nokia-Smartphone-interner-Speicher-Dual-SIM-Schwarz-Kupfer/dp/B07B6CMJ7K?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B6CMJ7K"
+                }
+            ],
+            "com": []
+        }
+    },
+    {
+        "name": "7 plus",
+        "brand": "Nokia",
+        "imagelink": "Nokia7plus_ROW_hardware-phone",
+        "smallestPrice": 0,
+        "design": 4,
+        "display": 6,
+        "length": 158,
+        "width": 76,
+        "processor": 4,
+        "updates": 5,
+        "camera": 4,
+        "battery": 5,
+        "batterysize": 3800,
+        "storage": 64,
+        "memory": 4,
+        "sdslot": 1,
+        "simcards": 2,
+        "notch": 0,
+        "waterproof": "0",
+        "headphonejack": 1,
+        "totalscore": 0,
+        "types": {
+            "de": [
+                {
+                    "name": "white/iron",
+                    "asin": "B07B68D9KP",
+                    "price": 0,
+                    "link": "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+                },
+                {
+                    "name": "black/copper",
+                    "asin": "B07B68N35M",
+                    "price": 0,
+                    "link": "https://www.amazon.de/Nokia-Plus-Handy-schwarz-kupfer/dp/B07B68N35M?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68N35M"
+                }
+            ],
+            "com": []
+        }
+    }
+]
