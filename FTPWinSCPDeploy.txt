@@ -1,0 +1,18 @@
+# Connect to the ftp server with give authentification parameters
+open ftp://%1%:%2%@%3%/
+# Delete old deployment
+rm "data*"
+rm "images*"
+rm "php*"
+rm "static*"
+rm "asset-manifest.json*"
+rm "favicon.ico*"
+# Delete all pngs on root, should only be favicons in different resolutions
+rm "*.png"
+rm "index.html*"
+rm "manifest.json*"
+rm "service-worker.js*"
+# Upload new deployment build
+lcd build/
+put *
+close
