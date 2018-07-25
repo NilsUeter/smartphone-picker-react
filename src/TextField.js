@@ -14,11 +14,13 @@ class TextField extends Component {
         className="smallInput"
         size="2"
         type="text"
+        pattern="[0-9]+([\.,][0-9]+)?"
         value={FilterStore[this.props.name]}
         onChange={changeEvent => {
           FilterStore.changeAttribute(
             this.props.name,
-            changeEvent.target.value
+            changeEvent.target.value,
+            "int"
           );
         }}
       />

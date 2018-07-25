@@ -1,3 +1,7 @@
+.toggleSwitch {
+  justify-self: center;
+}
+
 .lbl:after {
   box-sizing: border-box;
   position: absolute;

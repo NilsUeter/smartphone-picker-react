@@ -1,7 +1,7 @@
 .filterBox {
   display: grid;
   align-items: center;
-  grid-template-columns: minmax(75px, 1fr) minmax(75px, 1fr);
+  grid-template-columns: minmax(100px, 0.7fr) minmax(80px, 1fr);
   grid-auto-rows: minmax(0, auto);
   margin-bottom: 15px;
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
@@ -9,12 +9,26 @@
   box-shadow: 0 0 4px rgba(0, 0, 0, 0.12), 0 0 3px rgba(0, 0, 0, 0.24);
 }
 
-.filterBox:first-of-type {
-  margin-top: 30px;
-}
-
 #filterTemplate {
   width: 90%;
+}
+
+.sliderContainer {
+  padding-left: 30px;
+  padding-right: 12px;
+  padding-top: 5px;
+}
+
+.flexBox {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  padding-left: 3px;
+  padding-right: 6.5px;
+}
+
+.filler {
+  flex: 1;
 }
 
 .ls {
@@ -63,14 +77,9 @@ input[type="url"],
 select,
 button,
 textarea {
-  font-size: 16px;
-  margin-left: 5px;
-  margin-right: 5px;
-  margin-top: 4px;
-  margin-bottom: 4px;
   transition: all 0.3s ease-in-out;
   color: #12709e;
-  border: 1px solid #12709e;
+
   background-color: rgb(249, 249, 249);
 }
 
@@ -84,7 +93,6 @@ input[type="time"]:focus,
 input[type="url"]:focus,
 select:focus,
 textarea:focus {
-  border: 1px solid #12709e;
   -webkit-box-shadow: 0 0 8px #12709e;
   -moz-box-shadow: 0 0 8px #12709e;
   box-shadow: 0 0 6px #12709e;
@@ -108,5 +116,14 @@ textarea:focus {
 }
 
 #filterType {
-  width: 108px;
+  width: 145px;
+}
+
+.storageSlider {
+  padding-bottom: 20px;
+}
+
+.prefix {
+  color: #12709e;
+  font-size: 12px;
 }

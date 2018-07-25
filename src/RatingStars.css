@@ -1,6 +1,7 @@
 .rating-stars {
   height: 22px;
   width: 110px;
+  justify-self: center;
 }
 
 .first-rating-star {

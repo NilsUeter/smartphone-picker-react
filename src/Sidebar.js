@@ -5,8 +5,21 @@ import RatingStars from "./RatingStars";
 import ToggleSwitch from "./ToggleSwitch";
 import TextSelect from "./TextSelect";
 import TextField from "./TextField";
+import "rc-slider/assets/index.css";
+import Slider from "rc-slider";
 
 import FilterStore from "./FilterStore.js";
+
+const createSliderWithTooltip = Slider.createSliderWithTooltip;
+const Range = createSliderWithTooltip(Slider.Range);
+
+const storageMarks = {
+  0: "16",
+  1: "32",
+  2: "64",
+  3: "128",
+  4: "256"
+};
 
 @observer
 class Sidebar extends Component {
@@ -63,27 +76,133 @@ class Sidebar extends Component {
           <div className="filterBox-Header bs">Budget and Size</div>
           <p>Price</p>
           <div>
-            <TextField name="price_minimum_1" />
-            <span className="textField-descriptor">-</span>
-            <TextField name="price_maximum_1" />
+            <div className="sliderContainer">
+              <Range
+                min={0}
+                max={1200}
+                step={50}
+                value={[
+                  parseInt(FilterStore.price_minimum_1, 10)
+                    ? parseInt(FilterStore.price_minimum_1, 10)
+                    : 0,
+                  parseInt(FilterStore.price_maximum_1, 10)
+                    ? parseInt(FilterStore.price_maximum_1, 10)
+                    : 0
+                ]}
+                pushable={50}
+                onChange={changeEvent => {
+                  console.log(changeEvent);
+                  FilterStore.changeAttribute(
+                    "price_minimum_1",
+                    parseInt(changeEvent[0], 10)
+                  );
+                  FilterStore.changeAttribute(
+                    "price_maximum_1",
+                    parseInt(changeEvent[1], 10)
+                  );
+                }}
+              />
+            </div>
+            <div className="flexBox">
+              <TextField name="price_minimum_1" />
+              <span className="prefix">€</span>
+              <div className="filler" />
+              <TextField name="price_maximum_1" />
+              <span className="prefix">€</span>
+            </div>
           </div>
+
           <p>Display</p>
           <div>
-            <TextField name="size_minimum_1" />
-            <span className="textField-descriptor">-</span>
-            <TextField name="size_maximum_1" />
+            <div className="sliderContainer">
+              <Range
+                min={4.7}
+                max={6.3}
+                step={0.1}
+                pushable={0.1}
+                value={[
+                  parseFloat(FilterStore.size_minimum_1)
+                    ? parseFloat(FilterStore.size_minimum_1)
+                    : 0,
+                  parseFloat(FilterStore.size_maximum_1)
+                    ? parseFloat(FilterStore.size_maximum_1)
+                    : 0
+                ]}
+                onChange={changeEvent => {
+                  FilterStore.changeAttribute("size_minimum_1", changeEvent[0]);
+                  FilterStore.changeAttribute("size_maximum_1", changeEvent[1]);
+                }}
+              />
+            </div>
+            <div className="flexBox">
+              <TextField name="size_minimum_1" />
+              <span className="prefix">"</span>
+              <div className="filler" />
+              <TextField name="size_maximum_1" />
+              <span className="prefix">"</span>
+            </div>
           </div>
+
           <p>Length</p>
           <div>
-            <TextField name="size_minimum_2" />
-            <span className="textField-descriptor">-</span>
-            <TextField name="size_maximum_2" />
+            <div className="sliderContainer">
+              <Range
+                min={135}
+                max={163}
+                step={1}
+                pushable={1}
+                value={[
+                  parseInt(FilterStore.size_minimum_2, 10)
+                    ? parseInt(FilterStore.size_minimum_2, 10)
+                    : 0,
+                  parseInt(FilterStore.size_maximum_2, 10)
+                    ? parseInt(FilterStore.size_maximum_2, 10)
+                    : 0
+                ]}
+                onChange={changeEvent => {
+                  FilterStore.changeAttribute("size_minimum_2", changeEvent[0]);
+                  FilterStore.changeAttribute("size_maximum_2", changeEvent[1]);
+                }}
+              />
+            </div>
+            <div className="flexBox">
+              <TextField name="size_minimum_2" />
+              <span className="prefix">mm</span>
+              <div className="filler" />
+              <TextField name="size_maximum_2" />
+              <span className="prefix">mm</span>
+            </div>
           </div>
+
           <p>Width</p>
           <div>
-            <TextField name="size_minimum_3" />
-            <span className="textField-descriptor">-</span>
-            <TextField name="size_maximum_3" />
+            <div className="sliderContainer">
+              <Range
+                min={65}
+                max={78}
+                step={1}
+                pushable={1}
+                value={[
+                  parseInt(FilterStore.size_minimum_3, 10)
+                    ? parseInt(FilterStore.size_minimum_3, 10)
+                    : 0,
+                  parseInt(FilterStore.size_maximum_3, 10)
+                    ? parseInt(FilterStore.size_maximum_3, 10)
+                    : 0
+                ]}
+                onChange={changeEvent => {
+                  FilterStore.changeAttribute("size_minimum_3", changeEvent[0]);
+                  FilterStore.changeAttribute("size_maximum_3", changeEvent[1]);
+                }}
+              />
+            </div>
+            <div className="flexBox">
+              <TextField name="size_minimum_3" />
+              <span className="prefix">mm</span>
+              <div className="filler" />
+              <TextField name="size_maximum_3" />
+              <span className="prefix">mm</span>
+            </div>
           </div>
         </div>
         <div className="filterBox">
@@ -102,16 +221,20 @@ class Sidebar extends Component {
         <div className="filterBox">
           <div className="filterBox-Header bs">Personal Preferences</div>
           <p>Storage</p>
-          <TextSelect
-            name="storage"
-            options={[
-              ["16", "16GB => ∞"],
-              ["32", "32GB => ∞"],
-              ["64", "64GB => ∞"],
-              ["128", "128GB => ∞"],
-              ["256", "256GB => ∞"]
-            ]}
-          />
+          <div className="sliderContainer storageSlider">
+            <Slider
+              min={0}
+              max={4}
+              marks={storageMarks}
+              step={null}
+              onChange={changeEvent => {
+                FilterStore.changeAttribute(
+                  "storage",
+                  16 * Math.pow(2, changeEvent)
+                );
+              }}
+            />
+          </div>
           <p>Headphone-Jack</p>
           <ToggleSwitch name="headphoneJack" />
           <p>2 SIMS</p>

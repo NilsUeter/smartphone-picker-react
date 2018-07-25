@@ -8,7 +8,7 @@ import FilterStore from "./FilterStore.js";
 class ToggleSwitch extends Component {
   render() {
     return (
-      <div>
+      <div className="toggleSwitch">
         <input
           type="checkbox"
           id={this.props.name}

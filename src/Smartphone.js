@@ -36,7 +36,11 @@ class Smartphone extends Component {
             <img
               style={{ maxHeight: 0.3 * 140 + "vh" }}
               className="qtip-img"
-              src={"images/" + this.props.smartphone.imagelink}
+              src={
+                FilterStore.emptySmartphones
+                  ? "images/" + this.props.smartphone.imagelink + "_blank.png"
+                  : "images/" + this.props.smartphone.imagelink + ".jpg"
+              }
               alt=""
               height="450"
             />

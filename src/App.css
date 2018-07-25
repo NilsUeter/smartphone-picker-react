@@ -51,15 +51,21 @@
 
 .App {
   display: grid;
-  grid-template-rows: minmax(60px, 9vh) minmax(200px, 90.5vh) minmax(0, 0.5vh);
+  grid-template-rows: minmax(60px, 7vh) minmax(200px, 92.5vh) minmax(0, 0.5vh);
   grid-template-areas:
     "header header header"
     "sidebar content content"
     "footer footer footer";
 }
 
+@media only screen and (min-width: 650px) {
+  .App {
+    grid-template-rows: minmax(60px, 9vh) minmax(200px, 90.5vh) minmax(0, 0.5vh);
+  }
+}
+
 .show-sidebar {
-  grid-template-columns: minmax(300px, 100fr) minmax(1px, 1fr);
+  grid-template-columns: minmax(300px, 100fr) minmax(0px, 0.01fr);
 }
 
 .hide-sidebar {
@@ -68,7 +74,7 @@
 
 @media only screen and (min-width: 500px) {
   .show-sidebar {
-    grid-template-columns: minmax(300px, 300px) minmax(10px, 5fr);
+    grid-template-columns: minmax(330px, 330px) minmax(10px, 5fr);
   }
 
   .hide-sidebar {
@@ -79,7 +85,6 @@
 .sidebar {
   grid-area: sidebar;
   padding: 10px;
-  padding-right: 0;
   overflow: auto;
 }
 

@@ -47,6 +47,10 @@
 .show-sidebar-button {
   min-width: 95px;
   cursor: pointer;
+  color: #12709e;
+  border: 1px solid #12709e;
+  font-size: 16px;
+  margin-left: 5px;
 }
 
 .show-sidebar-button:hover {

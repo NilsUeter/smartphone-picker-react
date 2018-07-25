@@ -12,17 +12,17 @@ class FilterStore {
   @observable scaleInput = true;
   @observable emptySmartphones = false;
 
-  @observable price_minimum_1 = "";
-  @observable price_maximum_1 = "";
+  @observable price_minimum_1 = 0;
+  @observable price_maximum_1 = 1200;
 
-  @observable size_minimum_1 = "";
-  @observable size_maximum_1 = "";
+  @observable size_minimum_1 = 4.7;
+  @observable size_maximum_1 = 6.3;
 
-  @observable size_minimum_2 = "";
-  @observable size_maximum_2 = "";
+  @observable size_minimum_2 = 135;
+  @observable size_maximum_2 = 163;
 
-  @observable size_minimum_3 = "";
-  @observable size_maximum_3 = "";
+  @observable size_minimum_3 = 65;
+  @observable size_maximum_3 = 78;
 
   @observable design = "1";
   @observable processor = "1";
@@ -43,8 +43,9 @@ class FilterStore {
   };
 
   @action
-  changeAttribute = (name, newValue) => {
+  changeAttribute = (name, newValue, type = "") => {
     this[name] = newValue;
+
     if (name === "filterTemplate") {
       this.setFilterTemplate();
     }
@@ -68,6 +69,7 @@ class FilterStore {
         this.size_minimum_2 = 150;
         break;
       case "cheap":
+        this.price_maximum_1 = 200;
         break;
       default:
         break;
@@ -84,7 +86,6 @@ class FilterStore {
           break;
         default:
           if (this[name] !== resetCopy[name]) {
-            console.log(name);
             this[name] = resetCopy[name];
           }
           break;
