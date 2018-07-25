@@ -24,7 +24,7 @@ yarn-debug.log*
 yarn-error.log*
 
 #keys
-*keys.js
+*keys.*
 
 #specific batch scripts
 *.bat
