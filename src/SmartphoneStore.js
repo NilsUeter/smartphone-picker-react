@@ -80,6 +80,7 @@ class SmartphoneStore {
 
   @computed
   get listOfFilteredObjects() {
+    console.log("filtering");
     var xListOfFilteredObjects = [];
     if (this.obj.smartphones == null) {
       return xListOfFilteredObjects;
@@ -213,111 +214,42 @@ class SmartphoneStore {
 
   @computed
   get listOfFilteredAndScoredObjects() {
+    var listOfFilteredAndScoredObjects = this.listOfFilteredObjects.slice(0);
     switch (FilterStore.filterType) {
       case "price":
-        return this.sortBy(
-          this.getLowestParameter,
-          "price",
-          this.getNormalParameter,
-          "totalscore",
-          FilterStore.isDescending
-        );
+        return listOfFilteredAndScoredObjects.sort((a, b) => {
+          return this.compareFunctionLowest(a, b, "price");
+        });
 
       case "totalscore":
-        return this.sortBy(
-          this.getNormalParameter,
-          "totalscore",
-          this.getLowestParameter,
-          "price",
-          FilterStore.isDescending
-        );
+        return listOfFilteredAndScoredObjects.sort((a, b) => {
+          return this.compareFunctionNormal(a, b, "totalscore");
+        });
 
       case "length":
-        return this.sortBy(
-          this.getNormalParameter,
-          "length",
-          this.getNormalParameter,
-          "width",
-          FilterStore.isDescending
-        );
+        return listOfFilteredAndScoredObjects.sort((a, b) => {
+          return this.compareFunctionNormal(a, b, "length");
+        });
 
       case "display":
-        return this.sortBy(
-          this.getNormalParameter,
-          "display",
-          this.getNormalParameter,
-          "length",
-          FilterStore.isDescending
-        );
+        return listOfFilteredAndScoredObjects.sort((a, b) => {
+          return this.compareFunctionNormal(a, b, "display");
+        });
 
       default:
         return [];
     }
   }
 
-  getNormalParameter(json, i, type) {
-    return json[i][type];
+  compareFunctionNormal(a, b, type) {
+    return FilterStore.isDescending ? b[type] - a[type] : a[type] - b[type];
   }
-
-  getLowestParameter(json, i, type) {
-    return json[i][type][FilterStore.country][json[i].smallestPrice][0];
-  }
-
-  sortBy(getMethod1, first, getMethod2, second, isDescending) {
-    var listOfFilteredAndScoredObjects = [];
-
-    //first score stuff
-    for (var i = 0; i < this.listOfFilteredObjects.length; i++) {
-      //then sort it into listOfFilteredAndScoredObjects
-      for (var e = 0; e < this.listOfFilteredObjects.length; e++) {
-        if (listOfFilteredAndScoredObjects.length === 0) {
-          listOfFilteredAndScoredObjects.push(this.listOfFilteredObjects[i]);
-          break;
-        } else if (e === listOfFilteredAndScoredObjects.length) {
-          listOfFilteredAndScoredObjects.splice(
-            listOfFilteredAndScoredObjects.length,
-            0,
-            this.listOfFilteredObjects[i]
-          );
-          break;
-        } else if (
-          getMethod1(this.listOfFilteredObjects, i, first) >
-            getMethod1(listOfFilteredAndScoredObjects, e, first) &&
-          FilterStore.isDescending
-        ) {
-          listOfFilteredAndScoredObjects.splice(
-            e,
-            0,
-            this.listOfFilteredObjects[i]
-          );
-          break;
-        } else if (
-          getMethod1(this.listOfFilteredObjects, i, first) <
-            getMethod1(listOfFilteredAndScoredObjects, e, first) &&
-          !FilterStore.isDescending
-        ) {
-          listOfFilteredAndScoredObjects.splice(
-            e,
-            0,
-            this.listOfFilteredObjects[i]
-          );
-          break;
-        } else if (
-          getMethod1(this.listOfFilteredObjects, i, first) ===
-            getMethod1(listOfFilteredAndScoredObjects, e, first) &&
-          getMethod2(this.listOfFilteredObjects, i, second) <
-            getMethod2(listOfFilteredAndScoredObjects, e, second)
-        ) {
-          listOfFilteredAndScoredObjects.splice(
-            e,
-            0,
-            this.listOfFilteredObjects[i]
-          );
-          break;
-        }
-      }
-    }
-    return listOfFilteredAndScoredObjects;
+  compareFunctionLowest(a, b, type) {
+    return FilterStore.isDescending
+      ? b[type][FilterStore.country][b.smallestPrice][0] -
+          a[type][FilterStore.country][a.smallestPrice][0]
+      : a[type][FilterStore.country][a.smallestPrice][0] -
+          b[type][FilterStore.country][b.smallestPrice][0];
   }
 
   getAttributeFromSmartphone = (smartphone, name) => {

@@ -23,8 +23,12 @@ class App extends Component {
       >
         <Header />
         <Sidebar />
-        {FilterStore.showAbout ? <About /> : <Content />}
-
+        {FilterStore.showAbout ? <About /> : <div />}
+        {!FilterStore.sidebarHidden && window.innerWidth < 500 ? (
+          <div />
+        ) : (
+          <Content />
+        )}
         <Footer />
       </div>
     );

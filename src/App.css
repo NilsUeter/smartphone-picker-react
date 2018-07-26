@@ -97,6 +97,8 @@
 
 .about {
   grid-area: content;
+  z-index: 100;
+  background-color: rgba(249, 249, 249);
 }
 
 .header {

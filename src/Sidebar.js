@@ -10,8 +10,7 @@ import Slider from "rc-slider";
 
 import FilterStore from "./FilterStore.js";
 
-const createSliderWithTooltip = Slider.createSliderWithTooltip;
-const Range = createSliderWithTooltip(Slider.Range);
+const Range = Slider.Range;
 
 const storageMarks = {
   0: "16",
@@ -91,7 +90,6 @@ class Sidebar extends Component {
                 ]}
                 pushable={50}
                 onChange={changeEvent => {
-                  console.log(changeEvent);
                   FilterStore.changeAttribute(
                     "price_minimum_1",
                     parseInt(changeEvent[0], 10)
@@ -101,6 +99,11 @@ class Sidebar extends Component {
                     parseInt(changeEvent[1], 10)
                   );
                 }}
+                trackStyle={[{ backgroundColor: "#12709e" }]}
+                handleStyle={[
+                  { border: "solid 2px #12709e" },
+                  { border: "solid 2px #12709e" }
+                ]}
               />
             </div>
             <div className="flexBox">
@@ -132,6 +135,11 @@ class Sidebar extends Component {
                   FilterStore.changeAttribute("size_minimum_1", changeEvent[0]);
                   FilterStore.changeAttribute("size_maximum_1", changeEvent[1]);
                 }}
+                trackStyle={[{ backgroundColor: "#12709e" }]}
+                handleStyle={[
+                  { border: "solid 2px #12709e" },
+                  { border: "solid 2px #12709e" }
+                ]}
               />
             </div>
             <div className="flexBox">
@@ -163,6 +171,11 @@ class Sidebar extends Component {
                   FilterStore.changeAttribute("size_minimum_2", changeEvent[0]);
                   FilterStore.changeAttribute("size_maximum_2", changeEvent[1]);
                 }}
+                trackStyle={[{ backgroundColor: "#12709e" }]}
+                handleStyle={[
+                  { border: "solid 2px #12709e" },
+                  { border: "solid 2px #12709e" }
+                ]}
               />
             </div>
             <div className="flexBox">
@@ -194,6 +207,11 @@ class Sidebar extends Component {
                   FilterStore.changeAttribute("size_minimum_3", changeEvent[0]);
                   FilterStore.changeAttribute("size_maximum_3", changeEvent[1]);
                 }}
+                trackStyle={[{ backgroundColor: "#12709e" }]}
+                handleStyle={[
+                  { border: "solid 2px #12709e" },
+                  { border: "solid 2px #12709e" }
+                ]}
               />
             </div>
             <div className="flexBox">
@@ -233,6 +251,11 @@ class Sidebar extends Component {
                   16 * Math.pow(2, changeEvent)
                 );
               }}
+              trackStyle={[{ backgroundColor: "#12709e" }]}
+              handleStyle={[
+                { border: "solid 2px #12709e" },
+                { border: "solid 2px #12709e" }
+              ]}
             />
           </div>
           <p>Headphone-Jack</p>
