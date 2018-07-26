@@ -1,0 +1,10 @@
+{
+  "de": {
+    "endpoint": "webservices.amazon.de",
+    "associateTag": "smartphonep08-21"
+  },
+  "com": {
+    "endpoint": "webservices.amazon.com",
+    "associateTag": "smartphonep08-20"
+  }
+}
