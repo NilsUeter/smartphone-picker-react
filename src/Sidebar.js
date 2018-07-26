@@ -256,6 +256,7 @@ class Sidebar extends Component {
                 { border: "solid 2px #12709e" },
                 { border: "solid 2px #12709e" }
               ]}
+              activeDotStyle={{ border: "solid 2px #12709e" }}
             />
           </div>
           <p>Headphone-Jack</p>

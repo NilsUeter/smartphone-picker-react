@@ -55,6 +55,7 @@ radio {
   width: 22px;
   height: 22px;
   background: url("/images/star.png") 0 -22px;
+  background-size: 22px;
 }
 
 .rating-star {
