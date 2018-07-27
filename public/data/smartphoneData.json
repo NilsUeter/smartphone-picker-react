@@ -1367,6 +1367,7 @@
   {
     "name": "V30",
     "brand": "LG",
+    "released": "2017-08",
     "imagelink": "715GbwmYJjL._SY879_",
     "smallestPrice": 0,
     "design": 4,
@@ -1386,19 +1387,22 @@
     "waterproof": "8",
     "headphonejack": 1,
     "totalscore": 0,
-    "asin": {
-      "de": [["cloud silver", "B075GYD539"], ["moroccan blue", "B075GTJYSV"]],
-      "com": [["white", ""], ["black", ""]]
-    },
-    "price": { "de": [[495], [510]], "com": [] },
-    "amazon": {
+    "types": {
       "de": [
-        [
-          "https://www.amazon.de/LG-Smartphone-Display-Speicher-Android-Cloud-Silver/dp/B075GYD539?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B075GYD539"
-        ],
-        [
-          "https://www.amazon.de/LG-Smartphone-Display-Speicher-Moroccan-Blue/dp/B075GTJYSV?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B075GTJYSV"
-        ]
+        {
+          "name": "cloud silver",
+          "asin": "B075GYD539",
+          "price": 0,
+          "link":
+            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+        },
+        {
+          "name": "moroccan blue",
+          "asin": "B075GTJYSV",
+          "price": 0,
+          "link":
+            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+        }
       ],
       "com": []
     }
@@ -1406,6 +1410,7 @@
   {
     "name": "Xperia XZ2",
     "brand": "Sony",
+    "released": "2018-04",
     "imagelink": "lis9AWg",
     "smallestPrice": 0,
     "design": 3,
@@ -1425,30 +1430,36 @@
     "waterproof": "8",
     "headphonejack": 0,
     "totalscore": 0,
-    "asin": {
+    "types": {
       "de": [
-        ["liquid black", "B079YSBTY7"],
-        ["ash pink", "B079Z1G1DW"],
-        ["deep green", "B079YS5Q9K"],
-        ["liquid silver", "B079YS8SDR"]
-      ],
-      "com": [["white", ""], ["black", ""]]
-    },
-    "price": { "de": [[635], [629], [629], [640]], "com": [] },
-    "amazon": {
-      "de": [
-        [
-          "https://www.amazon.de/Sony-Smartphone-interner-Speicher-Dual-Sim-Liquid-Black/dp/B079YSBTY7?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B079YSBTY7"
-        ],
-        [
-          "https://www.amazon.de/Sony-Smartphone-interner-Speicher-Dual-Sim-Ash-Pink/dp/B079Z1G1DW?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B079Z1G1DW"
-        ],
-        [
-          "https://www.amazon.de/Sony-Smartphone-interner-Speicher-Dual-Sim-Deep-Green/dp/B079YS5Q9K?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B079YS5Q9K"
-        ],
-        [
-          "https://www.amazon.de/Sony-Smartphone-interner-Speicher-Dual-Sim-Liquid-Silver/dp/B079YS8SDR?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B079YS8SDR"
-        ]
+        {
+          "name": "liquid black",
+          "asin": "B079YSBTY7",
+          "price": 0,
+          "link":
+            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+        },
+        {
+          "name": "ash pink",
+          "asin": "B079Z1G1DW",
+          "price": 0,
+          "link":
+            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+        },
+        {
+          "name": "deep green",
+          "asin": "B079YS5Q9K",
+          "price": 0,
+          "link":
+            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+        },
+        {
+          "name": "liquid silver",
+          "asin": "B079YS8SDR",
+          "price": 0,
+          "link":
+            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+        }
       ],
       "com": []
     }
@@ -1456,6 +1467,7 @@
   {
     "name": "Xperia XZ2 Compact",
     "brand": "Sony",
+    "released": "2018-04",
     "imagelink": "ExuzR25",
     "smallestPrice": 0,
     "design": 3,
@@ -1475,30 +1487,36 @@
     "waterproof": "8",
     "headphonejack": 0,
     "totalscore": 0,
-    "asin": {
+    "types": {
       "de": [
-        ["black", "B079YZ7ZS4"],
-        ["coral pink", "B079YRCCK6"],
-        ["moss green", "B079YTJ1S4"],
-        ["white silver", "B079YRR6QR"]
-      ],
-      "com": [["white", ""], ["black", ""]]
-    },
-    "price": { "de": [[529], [529], [549], [549]], "com": [] },
-    "amazon": {
-      "de": [
-        [
-          "https://www.amazon.de/Sony-Smartphone-interner-Speicher-Dual-Sim-Black/dp/B079YZ7ZS4?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B079YZ7ZS4"
-        ],
-        [
-          "https://www.amazon.de/Sony-Smartphone-interner-Speicher-Dual-Sim-Coral-Pink/dp/B079YRCCK6?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B079YRCCK6"
-        ],
-        [
-          "https://www.amazon.de/Sony-Smartphone-interner-Speicher-Dual-Sim-Moss-Green/dp/B079YTJ1S4?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B079YTJ1S4"
-        ],
-        [
-          "https://www.amazon.de/Sony-Smartphone-interner-Speicher-Dual-Sim-White-Silver/dp/B079YRR6QR?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B079YRR6QR"
-        ]
+        {
+          "name": "black",
+          "asin": "B079YZ7ZS4",
+          "price": 0,
+          "link":
+            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+        },
+        {
+          "name": "coral pink",
+          "asin": "B079YRCCK6",
+          "price": 0,
+          "link":
+            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+        },
+        {
+          "name": "moss green",
+          "asin": "B079YTJ1S4",
+          "price": 0,
+          "link":
+            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+        },
+        {
+          "name": "white silver",
+          "asin": "B079YRR6QR",
+          "price": 0,
+          "link":
+            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+        }
       ],
       "com": []
     }
@@ -1506,6 +1524,7 @@
   {
     "name": "iPhone 8 (64GB)",
     "brand": "Apple",
+    "released": "2017-09",
     "imagelink": "xGEFWor",
     "smallestPrice": 0,
     "design": 3,
@@ -1525,26 +1544,29 @@
     "waterproof": "7",
     "headphonejack": 0,
     "totalscore": 0,
-    "asin": {
+    "types": {
       "de": [
-        ["gold", "B075LY82PT"],
-        ["silver", "B075LZGVKJ"],
-        ["space grey", "B075LXNGFH"]
-      ],
-      "com": [["white", ""], ["black", ""]]
-    },
-    "price": { "de": [[657], [664], [665]], "com": [] },
-    "amazon": {
-      "de": [
-        [
-          "https://www.amazon.de/Apple-iPhone-Display-2017-Gold/dp/B075LY82PT?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B075LY82PT"
-        ],
-        [
-          "https://www.amazon.de/Apple-iPhone-Display-2017-Silber/dp/B075LZGVKJ?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B075LZGVKJ"
-        ],
-        [
-          "https://www.amazon.de/Apple-iPhone-Display-2017-Space-Grau/dp/B075LXNGFH?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B075LXNGFH"
-        ]
+        {
+          "name": "gold",
+          "asin": "B075LY82PT",
+          "price": 0,
+          "link":
+            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+        },
+        {
+          "name": "silver",
+          "asin": "B075LZGVKJ",
+          "price": 0,
+          "link":
+            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+        },
+        {
+          "name": "space grey",
+          "asin": "B075LXNGFH",
+          "price": 0,
+          "link":
+            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+        }
       ],
       "com": []
     }
@@ -1552,6 +1574,7 @@
   {
     "name": "iPhone 8 (256GB)",
     "brand": "Apple",
+    "released": "2017-09",
     "imagelink": "xGEFWor",
     "smallestPrice": 0,
     "design": 3,
@@ -1571,26 +1594,29 @@
     "waterproof": "7",
     "headphonejack": 0,
     "totalscore": 0,
-    "asin": {
+    "types": {
       "de": [
-        ["gold", "B075LWT4JR"],
-        ["silver", "B075LZMNDM"],
-        ["space grey", "B075LX5T7P"]
-      ],
-      "com": [["white", ""], ["black", ""]]
-    },
-    "price": { "de": [[784], [890], [885]], "com": [] },
-    "amazon": {
-      "de": [
-        [
-          "https://www.amazon.de/Apple-iPhone-Display-2017-Gold/dp/B075LWT4JR?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B075LWT4JR"
-        ],
-        [
-          "https://www.amazon.de/Apple-iPhone-Display-2017-Silber/dp/B075LZMNDM?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B075LZMNDM"
-        ],
-        [
-          "https://www.amazon.de/Apple-iPhone-Display-2017-Space-Grau/dp/B075LX5T7P?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B075LX5T7P"
-        ]
+        {
+          "name": "gold",
+          "asin": "B075LWT4JR",
+          "price": 0,
+          "link":
+            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+        },
+        {
+          "name": "silver",
+          "asin": "B075LZMNDM",
+          "price": 0,
+          "link":
+            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+        },
+        {
+          "name": "space grey",
+          "asin": "B075LX5T7P",
+          "price": 0,
+          "link":
+            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+        }
       ],
       "com": []
     }
@@ -1598,6 +1624,7 @@
   {
     "name": "iPhone 8 Plus (64GB)",
     "brand": "Apple",
+    "released": "2017-09",
     "imagelink": "lq2EmJG",
     "smallestPrice": 0,
     "design": 3,
@@ -1617,30 +1644,36 @@
     "waterproof": "7",
     "headphonejack": 0,
     "totalscore": 0,
-    "asin": {
+    "types": {
       "de": [
-        ["red", "B07CC27HW5"],
-        ["space grey", "B075LZ4VQW"],
-        ["silver", "B075M4QCKW"],
-        ["gold", "B075LW8Z5R"]
-      ],
-      "com": [["white", ""], ["black", ""]]
-    },
-    "price": { "de": [[795], [784], [778], [793]], "com": [] },
-    "amazon": {
-      "de": [
-        [
-          "https://www.amazon.de/Apple-iPhone-Plus-Display-2017-Rot/dp/B07CC27HW5?SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07CC27HW5"
-        ],
-        [
-          "https://www.amazon.de/Apple-iPhone-Plus-Display-Space-Grau/dp/B075LZ4VQW?SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B075LZ4VQW"
-        ],
-        [
-          "https://www.amazon.de/Apple-iPhone-Plus-Display-Silber/dp/B075M4QCKW?SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B075M4QCKW"
-        ],
-        [
-          "https://www.amazon.de/Apple-iPhone-Plus-Display-2017-Gold/dp/B075LW8Z5R?SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B075LW8Z5R"
-        ]
+        {
+          "name": "red",
+          "asin": "B07CC27HW5",
+          "price": 0,
+          "link":
+            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+        },
+        {
+          "name": "space grey",
+          "asin": "B075LZ4VQW",
+          "price": 0,
+          "link":
+            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+        },
+        {
+          "name": "silver",
+          "asin": "B075M4QCKW",
+          "price": 0,
+          "link":
+            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+        },
+        {
+          "name": "gold",
+          "asin": "B075LW8Z5R",
+          "price": 0,
+          "link":
+            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+        }
       ],
       "com": []
     }
@@ -1648,6 +1681,7 @@
   {
     "name": "iPhone 8 Plus (256GB)",
     "brand": "Apple",
+    "released": "2017-09",
     "imagelink": "lq2EmJG",
     "smallestPrice": 0,
     "design": 3,
@@ -1667,26 +1701,29 @@
     "waterproof": "7",
     "headphonejack": 0,
     "totalscore": 0,
-    "asin": {
+    "types": {
       "de": [
-        ["space grey", "B075LY524V"],
-        ["silver", "B075LXS8MK"],
-        ["gold", "B075LYPPY9"]
-      ],
-      "com": [["white", ""], ["black", ""]]
-    },
-    "price": { "de": [[966], [979], [925]], "com": [] },
-    "amazon": {
-      "de": [
-        [
-          "https://www.amazon.de/Apple-iPhone-Plus-Display-Space-Grau/dp/B075LY524V?SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B075LY524V"
-        ],
-        [
-          "https://www.amazon.de/Apple-iPhone-Plus-Display-Silber/dp/B075LXS8MK?SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B075LXS8MK"
-        ],
-        [
-          "https://www.amazon.de/Apple-iPhone-Plus-Display-2017-Gold/dp/B075LYPPY9?SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B075LYPPY9"
-        ]
+        {
+          "name": "space grey",
+          "asin": "B075LY524V",
+          "price": 0,
+          "link":
+            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+        },
+        {
+          "name": "silver",
+          "asin": "B075LXS8MK",
+          "price": 0,
+          "link":
+            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+        },
+        {
+          "name": "gold",
+          "asin": "B075LYPPY9",
+          "price": 0,
+          "link":
+            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+        }
       ],
       "com": []
     }
@@ -1694,6 +1731,7 @@
   {
     "name": "iPhone X (64GB)",
     "brand": "Apple",
+    "released": "2017-10",
     "imagelink": "UDV8YUp",
     "smallestPrice": 0,
     "design": 5,
@@ -1713,19 +1751,22 @@
     "waterproof": "7",
     "headphonejack": 0,
     "totalscore": 0,
-    "asin": {
-      "de": [["space grey", "B075LXNK24"], ["silver", "B075LYDD7Z"]],
-      "com": [["white", ""], ["black", ""]]
-    },
-    "price": { "de": [[999], [999]], "com": [] },
-    "amazon": {
+    "types": {
       "de": [
-        [
-          "https://www.amazon.de/Apple-iPhone-Display-2017-Space-Grau/dp/B075LXNK24?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B075LXNK24"
-        ],
-        [
-          "https://www.amazon.de/Apple-iPhone-Display-2017-Silber/dp/B075LYDD7Z?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B075LYDD7Z"
-        ]
+        {
+          "name": "space grey",
+          "asin": "B075LXNK24",
+          "price": 0,
+          "link":
+            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+        },
+        {
+          "name": "silver",
+          "asin": "B075LYDD7Z",
+          "price": 0,
+          "link":
+            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+        }
       ],
       "com": []
     }
@@ -1733,6 +1774,7 @@
   {
     "name": "iPhone X (256GB)",
     "brand": "Apple",
+    "released": "2017-10",
     "imagelink": "UDV8YUp",
     "smallestPrice": 0,
     "design": 5,
@@ -1752,19 +1794,22 @@
     "waterproof": "7",
     "headphonejack": 0,
     "totalscore": 0,
-    "asin": {
-      "de": [["space grey", "B075LWF4C3"], ["silver", "B075LRK2QK"]],
-      "com": [["white", ""], ["black", ""]]
-    },
-    "price": { "de": [[1172], [1174]], "com": [] },
-    "amazon": {
+    "types": {
       "de": [
-        [
-          "https://www.amazon.de/Apple-iPhone-Display-2017-Space-Grau/dp/B075LWF4C3?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B075LWF4C3"
-        ],
-        [
-          "https://www.amazon.de/Apple-iPhone-Display-2017-Silber/dp/B075LRK2QK?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B075LRK2QK"
-        ]
+        {
+          "name": "space grey",
+          "asin": "B075LWF4C3",
+          "price": 0,
+          "link":
+            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+        },
+        {
+          "name": "silver",
+          "asin": "B075LRK2QK",
+          "price": 0,
+          "link":
+            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+        }
       ],
       "com": []
     }
@@ -1772,6 +1817,7 @@
   {
     "name": "Moto X4",
     "brand": "Motorola",
+    "released": "2017-10",
     "imagelink": "61eEr3fsroL._SY879_",
     "smallestPrice": 0,
     "design": 3,
@@ -1791,19 +1837,22 @@
     "waterproof": "7",
     "headphonejack": 1,
     "totalscore": 0,
-    "asin": {
-      "de": [["super black", "B074MHFGFS"], ["sterling blue", "B00V4Y3RII"]],
-      "com": [["white", ""], ["black", ""]]
-    },
-    "price": { "de": [[233], [245]], "com": [] },
-    "amazon": {
+    "types": {
       "de": [
-        [
-          "https://www.amazon.de/Motorola-Smartphone-Kamera-Android-Schwarz/dp/B074MHFGFS?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B074MHFGFS"
-        ],
-        [
-          "https://www.amazon.de/Motorola-Smartphone-Kamera-Android-Sterling-blau-nimbus/dp/B00V4Y3RII?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B00V4Y3RII"
-        ]
+        {
+          "name": "super black",
+          "asin": "B074MHFGFS",
+          "price": 0,
+          "link":
+            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+        },
+        {
+          "name": "sterling blue",
+          "asin": "B00V4Y3RII",
+          "price": 0,
+          "link":
+            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+        }
       ],
       "com": []
     }
@@ -1811,6 +1860,7 @@
   {
     "name": "Moto Z2 Play",
     "brand": "Motorola",
+    "released": "2017-06",
     "imagelink": "motoz2play",
     "smallestPrice": 0,
     "design": 3,
@@ -1830,19 +1880,22 @@
     "waterproof": "4",
     "headphonejack": 1,
     "totalscore": 0,
-    "asin": {
-      "de": [["lunar grey", "B0747WYLTX"], ["fine gold", "B0747X83J5"]],
-      "com": [["white", ""], ["black", ""]]
-    },
-    "price": { "de": [[322], [299]], "com": [] },
-    "amazon": {
+    "types": {
       "de": [
-        [
-          "https://www.amazon.de/Motorola-Smartphone-Android-SoundBoost-Speaker-Black-Lunar-Gray/dp/B0747WYLTX?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B0747WYLTX"
-        ],
-        [
-          "https://www.amazon.de/Motorola-Smartphone-Android-SoundBoost-Speaker-White-Fine-Gold/dp/B0747X83J5?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B0747X83J5"
-        ]
+        {
+          "name": "lunar grey",
+          "asin": "B0747WYLTX",
+          "price": 0,
+          "link":
+            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+        },
+        {
+          "name": "fine gold",
+          "asin": "B0747X83J5",
+          "price": 0,
+          "link":
+            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+        }
       ],
       "com": []
     }
@@ -1850,6 +1903,7 @@
   {
     "name": "Moto Z2 Force",
     "brand": "Motorola",
+    "released": "2017-08",
     "imagelink": "motoz2force",
     "smallestPrice": 0,
     "design": 3,
@@ -1869,16 +1923,15 @@
     "waterproof": "4",
     "headphonejack": 0,
     "totalscore": 0,
-    "asin": {
-      "de": [["black", "B074MH8DJ5"]],
-      "com": [["white", ""], ["black", ""]]
-    },
-    "price": { "de": [[340]], "com": [] },
-    "amazon": {
+    "types": {
       "de": [
-        [
-          "https://www.amazon.de/Motorola-Smartphone-Speicher-Android-Schwarz-Super-Black/dp/B074MH8DJ5?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B074MH8DJ5"
-        ]
+        {
+          "name": "black",
+          "asin": "B074MH8DJ5",
+          "price": 0,
+          "link":
+            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+        }
       ],
       "com": []
     }
@@ -1886,6 +1939,7 @@
   {
     "name": "Moto G6",
     "brand": "Motorola",
+    "released": "2018-04",
     "imagelink": "v3WB6HT",
     "smallestPrice": 0,
     "design": 3,
@@ -1905,16 +1959,15 @@
     "waterproof": "4",
     "headphonejack": 1,
     "totalscore": 0,
-    "asin": {
-      "de": [["deep indigo", "B07BXWZ8ZG"]],
-      "com": [["white", ""], ["black", ""]]
-    },
-    "price": { "de": [[230]], "com": [] },
-    "amazon": {
+    "types": {
       "de": [
-        [
-          "https://www.amazon.de/Motorola-Smartphone-interner-Speicher-Android-Deep-Indigo/dp/B07BXWZ8ZG?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07BXWZ8ZG"
-        ]
+        {
+          "name": "deep indigo",
+          "asin": "B07BXWZ8ZG",
+          "price": 0,
+          "link":
+            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+        }
       ],
       "com": []
     }
@@ -1922,6 +1975,7 @@
   {
     "name": "Moto G6 [Amazon]",
     "brand": "Motorola",
+    "released": "2018-04",
     "imagelink": "motog6amazonexclusive",
     "smallestPrice": 0,
     "design": 3,
@@ -1941,16 +1995,15 @@
     "waterproof": "4",
     "headphonejack": 1,
     "totalscore": 0,
-    "asin": {
-      "de": [["deep indigo", "B079MT5K9N"]],
-      "com": [["white", ""], ["black", ""]]
-    },
-    "price": { "de": [[242]], "com": [] },
-    "amazon": {
+    "types": {
       "de": [
-        [
-          "https://www.amazon.de/Motorola-Smartphone-interner-Speicher-Exklusiv-Deep-Indigo/dp/B079MT5K9N?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B079MT5K9N"
-        ]
+        {
+          "name": "deep indigo",
+          "asin": "B079MT5K9N",
+          "price": 0,
+          "link":
+            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+        }
       ],
       "com": []
     }
@@ -1958,6 +2011,7 @@
   {
     "name": "Moto G6 Plus",
     "brand": "Motorola",
+    "released": "2018-05",
     "imagelink": "phQJx7z",
     "smallestPrice": 0,
     "design": 3,
@@ -1977,16 +2031,15 @@
     "waterproof": "4",
     "headphonejack": 1,
     "totalscore": 0,
-    "asin": {
-      "de": [["deep indigo", "B07CBC869D"]],
-      "com": [["white", ""], ["black", ""]]
-    },
-    "price": { "de": [[262]], "com": [] },
-    "amazon": {
+    "types": {
       "de": [
-        [
-          "https://www.amazon.de/Motorola-Smartphone-interner-Speicher-Android-Deep-Indigo/dp/B07CBC869D?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07CBC869D"
-        ]
+        {
+          "name": "deep indigo",
+          "asin": "B07CBC869D",
+          "price": 0,
+          "link":
+            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+        }
       ],
       "com": []
     }
@@ -1994,6 +2047,7 @@
   {
     "name": "Moto G6 Play",
     "brand": "Motorola",
+    "released": "2018-05",
     "imagelink": "JQ7Vnzc",
     "smallestPrice": 0,
     "design": 3,
@@ -2013,16 +2067,15 @@
     "waterproof": "4",
     "headphonejack": 1,
     "totalscore": 0,
-    "asin": {
-      "de": [["deep indigo", "B07BXFRK2Q"]],
-      "com": [["white", ""], ["black", ""]]
-    },
-    "price": { "de": [[179]], "com": [] },
-    "amazon": {
+    "types": {
       "de": [
-        [
-          "https://www.amazon.de/Motorola-Smartphone-interner-Speicher-Android-Deep-Indigo/dp/B07BXFRK2Q?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07BXFRK2Q"
-        ]
+        {
+          "name": "deep indigo",
+          "asin": "B07BXFRK2Q",
+          "price": 0,
+          "link":
+            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+        }
       ],
       "com": []
     }
@@ -2030,6 +2083,7 @@
   {
     "name": "Moto E4",
     "brand": "Motorola",
+    "released": "2017-06",
     "imagelink": "71r21xr50KL._SY879_",
     "smallestPrice": 0,
     "design": 2,
@@ -2049,30 +2103,36 @@
     "waterproof": "0",
     "headphonejack": 1,
     "totalscore": 0,
-    "asin": {
+    "types": {
       "de": [
-        ["blush gold", "B073Q2FYWF"],
-        ["fine gold", "B071J7FRBD"],
-        ["iron grey", "B073Q2D8RJ"],
-        ["oxford blue", "B073Q32CF9"]
-      ],
-      "com": [["white", ""], ["black", ""]]
-    },
-    "price": { "de": [[99], [118], [99], [114]], "com": [] },
-    "amazon": {
-      "de": [
-        [
-          "https://www.amazon.de/Motorola-Smartphone-Display-Android-Blush-Gold/dp/B073Q2FYWF?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B073Q2FYWF"
-        ],
-        [
-          "https://www.amazon.de/Motorola-Moto-Plus-Smartphone-Android-Fine-Gold/dp/B071J7FRBD?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B071J7FRBD"
-        ],
-        [
-          "https://www.amazon.de/Motorola-Moto-Smartphone-Display-Android-Iron-Gray/dp/B073Q2D8RJ?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B073Q2D8RJ"
-        ],
-        [
-          "https://www.amazon.de/Motorola-Moto-Smartphone-Android-Oxford-Blue/dp/B073Q32CF9?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B073Q32CF9"
-        ]
+        {
+          "name": "blush gold",
+          "asin": "B073Q2FYWF",
+          "price": 0,
+          "link":
+            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+        },
+        {
+          "name": "fine gold",
+          "asin": "B071J7FRBD",
+          "price": 0,
+          "link":
+            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+        },
+        {
+          "name": "iron grey",
+          "asin": "B073Q2D8RJ",
+          "price": 0,
+          "link":
+            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+        },
+        {
+          "name": "oxford blue",
+          "asin": "B073Q32CF9",
+          "price": 0,
+          "link":
+            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+        }
       ],
       "com": []
     }
@@ -2080,6 +2140,7 @@
   {
     "name": "Moto E4 Plus",
     "brand": "Motorola",
+    "released": "2017-06",
     "imagelink": "motoe4plus",
     "smallestPrice": 0,
     "design": 2,
@@ -2099,16 +2160,15 @@
     "waterproof": "0",
     "headphonejack": 1,
     "totalscore": 0,
-    "asin": {
-      "de": [["fine gold", "B071J7FRBD"]],
-      "com": [["white", ""], ["black", ""]]
-    },
-    "price": { "de": [[118]], "com": [] },
-    "amazon": {
+    "types": {
       "de": [
-        [
-          "https://www.amazon.de/Motorola-Moto-Plus-Smartphone-Android-Fine-Gold/dp/B071J7FRBD?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B071J7FRBD"
-        ]
+        {
+          "name": "fine gold",
+          "asin": "B071J7FRBD",
+          "price": 0,
+          "link":
+            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+        }
       ],
       "com": []
     }
@@ -2116,6 +2176,7 @@
   {
     "name": "Moto G5S",
     "brand": "Motorola",
+    "released": "2017-08",
     "imagelink": "S9FO30n",
     "smallestPrice": 0,
     "design": 3,
@@ -2135,19 +2196,22 @@
     "waterproof": "4",
     "headphonejack": 1,
     "totalscore": 0,
-    "asin": {
-      "de": [["fine gold", "B074MHL2DN"], ["lunar grey", "B074MGP8GJ"]],
-      "com": [["white", ""], ["black", ""]]
-    },
-    "price": { "de": [[139], [126]], "com": [] },
-    "amazon": {
+    "types": {
       "de": [
-        [
-          "https://www.amazon.de/Motorola-Moto-Smartphone-Zoll-Android-Fine-Gold/dp/B074MHL2DN?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B074MHL2DN"
-        ],
-        [
-          "https://www.amazon.de/Motorola-Moto-Smartphone-Android-Mondgrau/dp/B074MGP8GJ?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B074MGP8GJ"
-        ]
+        {
+          "name": "fine gold",
+          "asin": "B074MHL2DN",
+          "price": 0,
+          "link":
+            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+        },
+        {
+          "name": "lunar grey",
+          "asin": "B074MGP8GJ",
+          "price": 0,
+          "link":
+            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+        }
       ],
       "com": []
     }
@@ -2155,6 +2219,7 @@
   {
     "name": "Moto G5S Plus",
     "brand": "Motorola",
+    "released": "2017-08",
     "imagelink": "tdlPqFG",
     "smallestPrice": 0,
     "design": 3,
@@ -2174,19 +2239,22 @@
     "waterproof": "4",
     "headphonejack": 1,
     "totalscore": 0,
-    "asin": {
-      "de": [["blush gold", "B074SQZ2PB"], ["lunar grey", "B074SR2DVT"]],
-      "com": [["white", ""], ["black", ""]]
-    },
-    "price": { "de": [[189], [189]], "com": [] },
-    "amazon": {
+    "types": {
       "de": [
-        [
-          "https://www.amazon.de/Motorola-Smartphone-Kamera-Android-Blush-Gold/dp/B074SQZ2PB?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B074SQZ2PB"
-        ],
-        [
-          "https://www.amazon.de/Motorola-Smartphone-Kamera-Android-Lunar-Gray/dp/B074SR2DVT?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B074SR2DVT"
-        ]
+        {
+          "name": "blush gold",
+          "asin": "B074SQZ2PB",
+          "price": 0,
+          "link":
+            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+        },
+        {
+          "name": "lunar grey",
+          "asin": "B074SR2DVT",
+          "price": 0,
+          "link":
+            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+        }
       ],
       "com": []
     }
@@ -2194,6 +2262,7 @@
   {
     "name": "Galaxy A5",
     "brand": "Samsung",
+    "released": "2017-01",
     "imagelink": "wrIcHyN",
     "smallestPrice": 0,
     "design": 1,
@@ -2213,30 +2282,36 @@
     "waterproof": "8",
     "headphonejack": 1,
     "totalscore": 0,
-    "asin": {
+    "types": {
       "de": [
-        ["black", "B01N6M3K34"],
-        ["blue", "B01N9MJTE6"],
-        ["gold", "B01MU5VUXK"],
-        ["peach-cloud", "B06W2H865T"]
-      ],
-      "com": [["white", ""], ["black", ""]]
-    },
-    "price": { "de": [[217], [221], [203], [225]], "com": [] },
-    "amazon": {
-      "de": [
-        [
-          "https://www.amazon.de/Samsung-Smartphone-Touch-Display-Speicher-Android-schwarz/dp/B01N6M3K34?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B01N6M3K34"
-        ],
-        [
-          "https://www.amazon.de/Samsung-Smartphone-Touch-Display-Speicher-European-blau/dp/B01N9MJTE6?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B01N9MJTE6"
-        ],
-        [
-          "https://www.amazon.de/Samsung-Smartphone-Touch-Display-Speicher-European-gold/dp/B01MU5VUXK?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B01MU5VUXK"
-        ],
-        [
-          "https://www.amazon.de/Samsung-Smartphone-Touch-Display-Speicher-Peach-Cloud/dp/B06W2H865T?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B06W2H865T"
-        ]
+        {
+          "name": "black",
+          "asin": "B01N6M3K34",
+          "price": 0,
+          "link":
+            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+        },
+        {
+          "name": "blue",
+          "asin": "B01N9MJTE6",
+          "price": 0,
+          "link":
+            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+        },
+        {
+          "name": "gold",
+          "asin": "B01MU5VUXK",
+          "price": 0,
+          "link":
+            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+        },
+        {
+          "name": "peach-cloud",
+          "asin": "B06W2H865T",
+          "price": 0,
+          "link":
+            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+        }
       ],
       "com": []
     }
@@ -2244,6 +2319,7 @@
   {
     "name": "Galaxy S9 (64GB)",
     "brand": "Samsung",
+    "released": "2018-03",
     "imagelink": "71uI%2BnAzruL._SY879_",
     "smallestPrice": 0,
     "design": 5,
@@ -2263,30 +2339,36 @@
     "waterproof": "8",
     "headphonejack": 1,
     "totalscore": 0,
-    "asin": {
+    "types": {
       "de": [
-        ["coral blue", "B079SQ39RZ"],
-        ["lilac purple", "B079S5MZYH"],
-        ["midnight black", "B079SQ5VHX"],
-        ["sunrise gold", "B07D4PRJKW"]
-      ],
-      "com": [["white", ""], ["black", ""]]
-    },
-    "price": { "de": [[597], [642], [597], [638]], "com": [] },
-    "amazon": {
-      "de": [
-        [
-          "https://www.amazon.de/Samsung-Smartphone-Touch-Display-interner-Speicher-Coral-Blue/dp/B079SQ39RZ?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B079SQ39RZ"
-        ],
-        [
-          "https://www.amazon.de/Samsung-Smartphone-Touch-Display-interner-Speicher-Lilac-Purple/dp/B079S5MZYH?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B079S5MZYH"
-        ],
-        [
-          "https://www.amazon.de/Samsung-Smartphone-Touch-Display-interner-Speicher-Midnight-Black/dp/B079SQ5VHX?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B079SQ5VHX"
-        ],
-        [
-          "https://www.amazon.de/Samsung-Smartphone-Touch-Display-interner-Speicher-Sunrise-Gold/dp/B07D4PRJKW?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07D4PRJKW"
-        ]
+        {
+          "name": "coral blue",
+          "asin": "B079SQ39RZ",
+          "price": 0,
+          "link":
+            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+        },
+        {
+          "name": "lilac purple",
+          "asin": "B079S5MZYH",
+          "price": 0,
+          "link":
+            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+        },
+        {
+          "name": "midnight black",
+          "asin": "B079SQ5VHX",
+          "price": 0,
+          "link":
+            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+        },
+        {
+          "name": "sunrise gold",
+          "asin": "B07D4PRJKW",
+          "price": 0,
+          "link":
+            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+        }
       ],
       "com": []
     }
@@ -2294,6 +2376,7 @@
   {
     "name": "Galaxy S9 (256GB)",
     "brand": "Samsung",
+    "released": "2018-03",
     "imagelink": "71uI%2BnAzruL._SY879_",
     "smallestPrice": 0,
     "design": 5,
@@ -2313,19 +2396,22 @@
     "waterproof": "8",
     "headphonejack": 1,
     "totalscore": 0,
-    "asin": {
-      "de": [["grey", "B07C6351NJ"], ["midnight black", "B07C5ZNN9Q"]],
-      "com": [["white", ""], ["black", ""]]
-    },
-    "price": { "de": [[0], [0]], "com": [] },
-    "amazon": {
+    "types": {
       "de": [
-        [
-          "https://www.amazon.de/Samsung-Smartphone-interner-Speicher-Dual-Sim-Grey/dp/B07C6351NJ?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07C6351NJ"
-        ],
-        [
-          "https://www.amazon.de/Samsung-Smartphone-interner-Speicher-Dual-Sim-Midnight-Black/dp/B07C5ZNN9Q?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07C5ZNN9Q"
-        ]
+        {
+          "name": "grey",
+          "asin": "B07C6351NJ",
+          "price": 0,
+          "link":
+            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+        },
+        {
+          "name": "midnight black",
+          "asin": "B07C5ZNN9Q",
+          "price": 0,
+          "link":
+            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+        }
       ],
       "com": []
     }
@@ -2333,6 +2419,7 @@
   {
     "name": "Galaxy S9 Plus (64GB)",
     "brand": "Samsung",
+    "released": "2018-03",
     "imagelink": "71dd-elhT7L._SY879_",
     "smallestPrice": 0,
     "design": 5,
@@ -2352,30 +2439,36 @@
     "waterproof": "8",
     "headphonejack": 1,
     "totalscore": 0,
-    "asin": {
+    "types": {
       "de": [
-        ["coral blue", "B079SNGM3V"],
-        ["lilac purple", "B079SD4B68"],
-        ["midnight black", "B079SNGV9P"],
-        ["sunrise gold", "B07D4Q2L2T"]
-      ],
-      "com": [["white", ""], ["black", ""]]
-    },
-    "price": { "de": [[752], [732], [710], [782]], "com": [] },
-    "amazon": {
-      "de": [
-        [
-          "https://www.amazon.de/Samsung-Smartphone-Touch-Display-interner-Speicher-Coral-Blue/dp/B079SNGM3V?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B079SNGM3V"
-        ],
-        [
-          "https://www.amazon.de/Samsung-Smartphone-Touch-Display-interner-Speicher-Lilac-Purple/dp/B079SD4B68?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B079SD4B68"
-        ],
-        [
-          "https://www.amazon.de/Samsung-Smartphone-Touch-Display-interner-Speicher-Midnight-Black/dp/B079SNGV9P?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B079SNGV9P"
-        ],
-        [
-          "https://www.amazon.de/Samsung-Smartphone-Touch-Display-interner-Speicher-Sunrise-Gold/dp/B07D4Q2L2T?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07D4Q2L2T"
-        ]
+        {
+          "name": "coral blue",
+          "asin": "B079SNGM3V",
+          "price": 0,
+          "link":
+            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+        },
+        {
+          "name": "lilac purple",
+          "asin": "B079SD4B68",
+          "price": 0,
+          "link":
+            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+        },
+        {
+          "name": "midnight black",
+          "asin": "B079SNGV9P",
+          "price": 0,
+          "link":
+            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+        },
+        {
+          "name": "sunrise gold",
+          "asin": "B07D4Q2L2T",
+          "price": 0,
+          "link":
+            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+        }
       ],
       "com": []
     }
@@ -2383,6 +2476,7 @@
   {
     "name": "Galaxy S9 Plus (256GB)",
     "brand": "Samsung",
+    "released": "2018-03",
     "imagelink": "71dd-elhT7L._SY879_",
     "smallestPrice": 0,
     "design": 5,
@@ -2402,19 +2496,22 @@
     "waterproof": "8",
     "headphonejack": 1,
     "totalscore": 0,
-    "asin": {
-      "de": [["grey", "B07C64N3WD"], ["midnight black", "B07C61XVDQ"]],
-      "com": [["white", ""], ["black", ""]]
-    },
-    "price": { "de": [[0], [1049]], "com": [] },
-    "amazon": {
+    "types": {
       "de": [
-        [
-          "https://www.amazon.de/Samsung-Smartphone-interner-Speicher-Dual-Sim-Titanium-Grey/dp/B07C64N3WD?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07C64N3WD"
-        ],
-        [
-          "https://www.amazon.de/Samsung-Smartphone-interner-Speicher-Dual-Sim-Midnight-Black/dp/B07C61XVDQ?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07C61XVDQ"
-        ]
+        {
+          "name": "grey",
+          "asin": "B07C64N3WD",
+          "price": 0,
+          "link":
+            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+        },
+        {
+          "name": "midnight black",
+          "asin": "B07C61XVDQ",
+          "price": 0,
+          "link":
+            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+        }
       ],
       "com": []
     }
@@ -2422,6 +2519,7 @@
   {
     "name": "Galaxy S8 Note",
     "brand": "Samsung",
+    "released": "2017-08",
     "imagelink": "PQYBIud",
     "smallestPrice": 0,
     "design": 5,
@@ -2441,26 +2539,29 @@
     "waterproof": "8",
     "headphonejack": 1,
     "totalscore": 0,
-    "asin": {
+    "types": {
       "de": [
-        ["deepsea blue", "B076WWRQXX"],
-        ["maple gold", "B074PBD4V3"],
-        ["maple gold", "B074PBH2P4"]
-      ],
-      "com": [["white", ""], ["black", ""]]
-    },
-    "price": { "de": [[624], [636], [639]], "com": [] },
-    "amazon": {
-      "de": [
-        [
-          "https://www.amazon.de/Samsung-Smartphone-Display-Speicher-Android-Deepsea-Blue/dp/B076WWRQXX?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B076WWRQXX"
-        ],
-        [
-          "https://www.amazon.de/Samsung-Smartphone-Touch-Display-interner-Speicher-maple-gold/dp/B074PBD4V3?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B074PBD4V3"
-        ],
-        [
-          "https://www.amazon.de/Samsung-Smartphone-Touch-Display-interner-Speicher-midnight-black/dp/B074PBH2P4?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B074PBH2P4"
-        ]
+        {
+          "name": "deepsea blue",
+          "asin": "B076WWRQXX",
+          "price": 0,
+          "link":
+            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+        },
+        {
+          "name": "maple gold",
+          "asin": "B074PBD4V3",
+          "price": 0,
+          "link":
+            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+        },
+        {
+          "name": "maple gold",
+          "asin": "B074PBH2P4",
+          "price": 0,
+          "link":
+            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+        }
       ],
       "com": []
     }
@@ -2468,6 +2569,7 @@
   {
     "name": "Galaxy S8",
     "brand": "Samsung",
+    "released": "2017-04",
     "imagelink": "6gY3U53",
     "smallestPrice": 0,
     "design": 5,
@@ -2487,30 +2589,36 @@
     "waterproof": "8",
     "headphonejack": 1,
     "totalscore": 0,
-    "asin": {
+    "types": {
       "de": [
-        ["midnight black", "B06XJ49G5B"],
-        ["arctiv silver", "B06XJ65K58"],
-        ["orchid grey", "B06XHRDF78"],
-        ["rosa", "B076X8K1ND"]
-      ],
-      "com": [["white", ""], ["black", ""]]
-    },
-    "price": { "de": [[434], [454], [442], [504]], "com": [] },
-    "amazon": {
-      "de": [
-        [
-          "https://www.amazon.de/Samsung-Smartphone-Touch-Display-interner-Speicher-midnight-black/dp/B06XJ49G5B?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B06XJ49G5B"
-        ],
-        [
-          "https://www.amazon.de/Samsung-Smartphone-Touch-Display-interner-Speicher-arctic-silver/dp/B06XJ65K58?SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B06XJ65K58"
-        ],
-        [
-          "https://www.amazon.de/Samsung-Smartphone-Touch-Display-interner-Speicher-orchid-grey/dp/B06XHRDF78?SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B06XHRDF78"
-        ],
-        [
-          "https://www.amazon.de/Samsung-S8-Smartphone-Display-Speicher-rosa/dp/B076X8K1ND?SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B076X8K1ND"
-        ]
+        {
+          "name": "midnight black",
+          "asin": "B06XJ49G5B",
+          "price": 0,
+          "link":
+            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+        },
+        {
+          "name": "arctiv silver",
+          "asin": "B06XJ65K58",
+          "price": 0,
+          "link":
+            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+        },
+        {
+          "name": "orchid grey",
+          "asin": "B06XHRDF78",
+          "price": 0,
+          "link":
+            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+        },
+        {
+          "name": "rosa",
+          "asin": "B076X8K1ND",
+          "price": 0,
+          "link":
+            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+        }
       ],
       "com": []
     }
