@@ -55,9 +55,9 @@ class Smartphone extends Component {
           </p>
           <p className="smartphone-price rs">
             {
-              this.props.smartphone.price[FilterStore.country][
+              this.props.smartphone.types[FilterStore.country][
                 this.props.smartphone.smallestPrice
-              ][0]
+              ].price
             }€
           </p>
           <p className="smartphone-size ls">
@@ -112,9 +112,9 @@ class Smartphone extends Component {
                 className="a-link"
                 target="_blank"
                 href={
-                  this.props.smartphone.amazon[FilterStore.country][
+                  this.props.smartphone.types[FilterStore.country][
                     this.props.smartphone.smallestPrice
-                  ][0]
+                  ].amazon
                 }
                 rel="noopener"
               >

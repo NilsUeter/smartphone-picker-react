@@ -24,7 +24,7 @@ class SmartphoneStore {
   loadJSON = callback => {
     var xobj = new XMLHttpRequest();
     xobj.overrideMimeType("application/json");
-    xobj.open("GET", "./data/smartphones.json", true); // Replace 'my_data' with the path to your file
+    xobj.open("GET", "./data/smartphoneData.json", true); // Replace 'my_data' with the path to your file
     xobj.onreadystatechange = () => {
       if (xobj.readyState === 4 && xobj.status === 200) {
         // Required use of an anonymous callback as .open will NOT return a value but simply returns undefined in asynchronous mode
@@ -46,14 +46,14 @@ class SmartphoneStore {
 
   findLowestPriceForOneSmartphones = smartphone => {
     var lowest = 0;
-    for (var i = 1; i < smartphone["price"][FilterStore.country].length; i++) {
+    for (var i = 1; i < smartphone.types[FilterStore.country].length; i++) {
       if (
-        smartphone["price"][FilterStore.country][i][0] <
-          smartphone["price"][FilterStore.country][lowest][0] &&
-        smartphone["price"][FilterStore.country][i][0] !== 0
+        smartphone.types[FilterStore.country][i].price <
+          smartphone.types[FilterStore.country][lowest].price &&
+        smartphone.types[FilterStore.country][i].price !== 0
       ) {
         lowest = i;
-      } else if (smartphone["price"][FilterStore.country][lowest][0] === 0) {
+      } else if (smartphone.types[FilterStore.country][lowest].price === 0) {
         lowest = i;
       }
     }
@@ -86,26 +86,34 @@ class SmartphoneStore {
     }
     for (var i = 0; i < this.obj.smartphones.length; i++) {
       if (
-        this.obj.smartphones[i]["price"][FilterStore.country][
+        this.obj.smartphones[i].types[FilterStore.country][
           this.obj.smartphones[i].smallestPrice
-        ] == null ||
-        this.obj.smartphones[i]["price"][FilterStore.country][
+        ].price == null ||
+        this.obj.smartphones[i].types[FilterStore.country][
           this.obj.smartphones[i].smallestPrice
-        ][0] === 0
+        ].price === 0
       ) {
         continue;
       }
 
-      //prize
+      //release-date
+      if (
+        FilterStore.release_minimum > this.obj.smartphones[i].released ||
+        FilterStore.release_maximum < this.obj.smartphones[i].released
+      ) {
+        continue;
+      }
+
+      //price
       if (
         FilterStore.price_minimum_1 >
-          this.obj.smartphones[i]["price"][FilterStore.country][
+          this.obj.smartphones[i].types[FilterStore.country][
             this.obj.smartphones[i].smallestPrice
-          ][0] ||
+          ].price ||
         FilterStore.price_maximum_1 <
-          this.obj.smartphones[i]["price"][FilterStore.country][
+          this.obj.smartphones[i].types[FilterStore.country][
             this.obj.smartphones[i].smallestPrice
-          ][0]
+          ].price
       ) {
         continue;
       }
@@ -234,28 +242,29 @@ class SmartphoneStore {
   }
   compareFunctionLowest(a, b, type) {
     return FilterStore.isDescending
-      ? b[type][FilterStore.country][b.smallestPrice][0] -
-          a[type][FilterStore.country][a.smallestPrice][0]
-      : a[type][FilterStore.country][a.smallestPrice][0] -
-          b[type][FilterStore.country][b.smallestPrice][0];
+      ? b.types[FilterStore.country][b.smallestPrice][type] -
+          a.types[FilterStore.country][b.smallestPrice][type]
+      : a.types[FilterStore.country][b.smallestPrice][type] -
+          b.types[FilterStore.country][b.smallestPrice][type];
   }
 
-  getAttributeFromSmartphone = (smartphone, name) => {
-    switch (name) {
+  getAttributeFromSmartphone = (smartphone, type) => {
+    switch (type) {
       case "price":
         return (
-          smartphone[name][FilterStore.country][smartphone.smallestPrice][0] +
-          "€"
+          smartphone.types[FilterStore.country][smartphone.smallestPrice][
+            type
+          ] + "€"
         );
       case "length":
       case "width":
-        return smartphone[name] + "mm";
+        return smartphone[type] + "mm";
       case "display":
-        return smartphone[name] + '"';
+        return smartphone[type] + '"';
       case "totalscore":
-        return smartphone[name] + " Points";
+        return smartphone[type] + " Points";
       default:
-        return smartphone[name];
+        return smartphone[type];
     }
   };
 }

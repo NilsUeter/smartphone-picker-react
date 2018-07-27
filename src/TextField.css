@@ -4,3 +4,10 @@
   text-align: right;
   border: none;
 }
+
+.bigInput {
+  width: 45px;
+  font-size: 12px;
+  text-align: right;
+  border: none;
+}

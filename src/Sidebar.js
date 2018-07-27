@@ -22,6 +22,27 @@ const storageMarks = {
 
 @observer
 class Sidebar extends Component {
+  getMinDate() {
+    var start = new Date("2017-01");
+    var min = new Date(FilterStore.release_minimum);
+    var monthsMin;
+    monthsMin = (min.getFullYear() - start.getFullYear()) * 12;
+    monthsMin -= start.getMonth();
+    monthsMin += min.getMonth();
+    return monthsMin;
+  }
+
+  getMaxDate() {
+    var start = new Date("2017-01");
+    var max = new Date(FilterStore.release_maximum);
+    var monthsMax;
+
+    monthsMax = (max.getFullYear() - start.getFullYear()) * 12;
+    monthsMax -= start.getMonth();
+    monthsMax += max.getMonth();
+    return monthsMax;
+  }
+
   render() {
     return (
       <div className={FilterStore.sidebarHidden ? "sidebar hidden" : "sidebar"}>
@@ -70,6 +91,45 @@ class Sidebar extends Component {
           <ToggleSwitch name="scaleInput" />
           <p>Empty phones</p>
           <ToggleSwitch name="emptySmartphones" />
+          <p>Release</p>
+          <div>
+            <div className="sliderContainer">
+              <Range
+                min={0}
+                max={23}
+                step={1}
+                pushable={1}
+                value={[this.getMinDate(), this.getMaxDate()]}
+                onChange={changeEvent => {
+                  FilterStore.changeAttribute(
+                    "release_minimum",
+                    "201" +
+                      (7 + Math.floor(changeEvent[0] / 12)) +
+                      "-" +
+                      ("00" + ((changeEvent[0] % 12) + 1)).slice(-2)
+                  );
+
+                  FilterStore.changeAttribute(
+                    "release_maximum",
+                    "201" +
+                      (7 + Math.floor(changeEvent[1] / 12)) +
+                      "-" +
+                      ("00" + ((changeEvent[1] % 12) + 1)).slice(-2)
+                  );
+                }}
+                trackStyle={[{ backgroundColor: "#12709e" }]}
+                handleStyle={[
+                  { border: "solid 2px #12709e" },
+                  { border: "solid 2px #12709e" }
+                ]}
+              />
+            </div>
+            <div className="flexBox">
+              <TextField name="release_minimum" big={true} />
+              <div className="filler" />
+              <TextField name="release_maximum" big={true} />
+            </div>
+          </div>
         </div>
         <div className="filterBox">
           <div className="filterBox-Header bs">Budget and Size</div>

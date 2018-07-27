@@ -11,10 +11,10 @@ class TextField extends Component {
       <input
         id={FilterStore[this.props.name]}
         name={FilterStore[this.props.name]}
-        className="smallInput"
+        className={this.props.big ? "bigInput" : "smallInput"}
         size="2"
         type="text"
-        pattern="[0-9]+([\.,][0-9]+)?"
+        pattern="[0-9]+([\.,-][0-9]+)?"
         value={FilterStore[this.props.name]}
         onChange={changeEvent => {
           FilterStore.changeAttribute(

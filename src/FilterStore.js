@@ -11,6 +11,8 @@ class FilterStore {
   @observable isDescending = false;
   @observable scaleInput = true;
   @observable emptySmartphones = false;
+  @observable release_minimum = "2017-01";
+  @observable release_maximum = "2018-12";
 
   @observable price_minimum_1 = 0;
   @observable price_maximum_1 = 1200;
