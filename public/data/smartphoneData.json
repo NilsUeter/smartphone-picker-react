@@ -1,2628 +1,2626 @@
-{
-  "smartphones": [
-    {
-      "name": "6.1",
-      "brand": "Nokia",
-      "released": "2018-04",
-      "imagelink": "TheNewNokia6_hardware-phone",
-      "smallestPrice": 0,
-      "design": 4,
-      "display": 5.5,
-      "length": 149,
-      "width": 76,
-      "processor": 3,
-      "updates": 5,
-      "camera": 3,
-      "battery": 3,
-      "batterysize": 3000,
-      "storage": 32,
-      "memory": 3,
-      "sdslot": 1,
-      "simcards": 2,
-      "notch": 0,
-      "waterproof": "",
-      "headphonejack": 1,
-      "totalscore": 0,
-      "types": {
-        "de": [
-          {
-            "name": "white/iron",
-            "asin": "B07B6BBC35",
-            "price": 1,
-            "link":
-              "https://www.amazon.de/Nokia-Smartphone-interner-Speicher-Dual-Sim-Wei%C3%9F-Kupfer/dp/B07B6BBC35?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B6BBC35"
-          },
-          {
-            "name": "black/copper",
-            "asin": "B07B6CMJ7K",
-            "price": 1,
-            "link":
-              "https://www.amazon.de/Nokia-Smartphone-interner-Speicher-Dual-SIM-Schwarz-Kupfer/dp/B07B6CMJ7K?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B6CMJ7K"
-          }
-        ],
-        "com": []
-      }
-    },
-    {
-      "name": "7 plus",
-      "brand": "Nokia",
-      "released": "2018-03",
-      "imagelink": "Nokia7plus_ROW_hardware-phone",
-      "smallestPrice": 0,
-      "design": 4,
-      "display": 6,
-      "length": 158,
-      "width": 76,
-      "processor": 4,
-      "updates": 5,
-      "camera": 4,
-      "battery": 5,
-      "batterysize": 3800,
-      "storage": 64,
-      "memory": 4,
-      "sdslot": 1,
-      "simcards": 2,
-      "notch": 0,
-      "waterproof": "0",
-      "headphonejack": 1,
-      "totalscore": 0,
-      "types": {
-        "de": [
-          {
-            "name": "white/iron",
-            "asin": "B07B68D9KP",
-            "price": 1,
-            "link":
-              "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
-          },
-          {
-            "name": "black/copper",
-            "asin": "B07B68N35M",
-            "price": 1,
-            "link":
-              "https://www.amazon.de/Nokia-Plus-Handy-schwarz-kupfer/dp/B07B68N35M?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68N35M"
-          }
-        ],
-        "com": []
-      }
-    },
-    {
-      "name": "8",
-      "brand": "Nokia",
-      "released": "2017-10",
-      "imagelink": "nokia8normal",
-      "smallestPrice": 0,
-      "design": 4,
-      "display": 5.3,
-      "length": 152,
-      "width": 74,
-      "processor": 5,
-      "updates": 4,
-      "camera": 4,
-      "battery": 3,
-      "batterysize": 3090,
-      "storage": 64,
-      "memory": 4,
-      "sdslot": 1,
-      "simcards": 1,
-      "notch": 0,
-      "waterproof": "4",
-      "headphonejack": 1,
-      "totalscore": 0,
-      "types": {
-        "de": [
-          {
-            "name": "glossy blue",
-            "asin": "B0756RCPBZ",
-            "price": 1,
-            "link":
-              "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
-          },
-          {
-            "name": "copper",
-            "asin": "B0756RGSVH",
-            "price": 1,
-            "link":
-              "https://www.amazon.de/Nokia-Plus-Handy-schwarz-kupfer/dp/B07B68N35M?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68N35M"
-          },
-          {
-            "name": "stainless steel",
-            "asin": "B074SRNB6S",
-            "price": 1,
-            "link":
-              "https://www.amazon.de/Nokia-Plus-Handy-schwarz-kupfer/dp/B07B68N35M?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68N35M"
-          },
-          {
-            "name": "tempered blue",
-            "asin": "B074SJJBY2",
-            "price": 1,
-            "link":
-              "https://www.amazon.de/Nokia-Plus-Handy-schwarz-kupfer/dp/B07B68N35M?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68N35M"
-          },
-          {
-            "name": "tempered",
-            "asin": "B0759NLL2T",
-            "price": 1,
-            "link":
-              "https://www.amazon.de/Nokia-Plus-Handy-schwarz-kupfer/dp/B07B68N35M?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68N35M"
-          }
-        ],
-        "com": []
-      }
-    },
-    {
-      "name": "8 Sirocco",
-      "brand": "Nokia",
-      "released": "2018-04",
-      "imagelink": "Nokia8Sirocco_ROW__power-phone",
-      "smallestPrice": 0,
-      "design": 5,
-      "display": 5.5,
-      "length": 141,
-      "width": 73,
-      "processor": 5,
-      "updates": 5,
-      "camera": 4,
-      "battery": 4,
-      "batterysize": 3260,
-      "storage": 128,
-      "memory": 6,
-      "sdslot": 1,
-      "simcards": 1,
-      "notch": 0,
-      "waterproof": "7",
-      "headphonejack": 0,
-      "totalscore": 0,
-      "types": {
-        "de": [
-          {
-            "name": "black",
-            "asin": "B07B69SLMB",
-            "price": 1,
-            "link":
-              "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
-          },
-          {
-            "name": "black",
-            "asin": "B07B69SLMB",
-            "price": 1,
-            "link":
-              "https://www.amazon.de/Nokia-Plus-Handy-schwarz-kupfer/dp/B07B68N35M?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68N35M"
-          }
-        ],
-        "com": []
-      }
-    },
-    {
-      "name": "Redmi Note 5 (32GB)",
-      "brand": "Xiamoi",
-      "released": "2018-02",
-      "imagelink": "redmiNote5",
-      "smallestPrice": 0,
-      "design": 4,
-      "display": 6,
-      "length": 159,
-      "width": 76,
-      "processor": 3,
-      "updates": 3,
-      "camera": 3,
-      "battery": 5,
-      "batterysize": 4000,
-      "storage": 32,
-      "memory": 3,
-      "sdslot": 1,
-      "simcards": 2,
-      "notch": 0,
-      "waterproof": "0",
-      "headphonejack": 1,
-      "totalscore": 0,
-      "types": {
-        "de": [
-          {
-            "name": "black",
-            "asin": "B07CZPXGVJ",
-            "price": 1,
-            "link":
-              "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
-          },
-          {
-            "name": "gold",
-            "asin": "B07CRGJW16",
-            "price": 1,
-            "link":
-              "https://www.amazon.de/Nokia-Plus-Handy-schwarz-kupfer/dp/B07B68N35M?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68N35M"
-          }
-        ],
-        "com": []
-      }
-    },
-    {
-      "name": "Redmi Note 5 (64GB)",
-      "brand": "Xiamoi",
-      "released": "2018-02",
-      "imagelink": "redmiNote5",
-      "smallestPrice": 0,
-      "design": 4,
-      "display": 6,
-      "length": 159,
-      "width": 76,
-      "processor": 3,
-      "updates": 3,
-      "camera": 3,
-      "battery": 5,
-      "batterysize": 4000,
-      "storage": 64,
-      "memory": 4,
-      "sdslot": 1,
-      "simcards": 2,
-      "notch": 0,
-      "waterproof": "0",
-      "headphonejack": 1,
-      "totalscore": 0,
-      "types": {
-        "de": [
-          {
-            "name": "black",
-            "asin": "B07CZS8W5Y",
-            "price": 1,
-            "link":
-              "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
-          },
-          {
-            "name": "gold",
-            "asin": "B07CZS7T17",
-            "price": 1,
-            "link":
-              "https://www.amazon.de/Nokia-Plus-Handy-schwarz-kupfer/dp/B07B68N35M?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68N35M"
-          },
-          {
-            "name": "blue",
-            "asin": "B07CZS9QDB",
-            "price": 1,
-            "link":
-              "https://www.amazon.de/Nokia-Plus-Handy-schwarz-kupfer/dp/B07B68N35M?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68N35M"
-          }
-        ],
-        "com": []
-      }
-    },
-    {
-      "name": "Mi A1",
-      "brand": "Xiamoi",
-      "released": "2017-09",
-      "imagelink": "y74WpwR",
-      "smallestPrice": 0,
-      "design": 4,
-      "display": 5.5,
-      "length": 155,
-      "width": 76,
-      "processor": 3,
-      "updates": 5,
-      "camera": 3,
-      "battery": 3,
-      "batterysize": 3080,
-      "storage": 64,
-      "memory": 4,
-      "sdslot": 1,
-      "simcards": 2,
-      "notch": 0,
-      "waterproof": "0",
-      "headphonejack": 1,
-      "totalscore": 0,
-      "types": {
-        "de": [
-          {
-            "name": "gold",
-            "asin": "B076FTDYFY",
-            "price": 1,
-            "link":
-              "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
-          },
-          {
-            "name": "gold",
-            "asin": "B0787LD1VS",
-            "price": 1,
-            "link":
-              "https://www.amazon.de/Nokia-Plus-Handy-schwarz-kupfer/dp/B07B68N35M?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68N35M"
-          },
-          {
-            "name": "rose gold",
-            "asin": "B075V2TCLH",
-            "price": 1,
-            "link":
-              "https://www.amazon.de/Nokia-Plus-Handy-schwarz-kupfer/dp/B07B68N35M?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68N35M"
-          },
-          {
-            "name": "black",
-            "asin": "B076493W9X",
-            "price": 1,
-            "link":
-              "https://www.amazon.de/Nokia-Plus-Handy-schwarz-kupfer/dp/B07B68N35M?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68N35M"
-          }
-        ],
-        "com": []
-      }
-    },
-    {
-      "name": "Mi MIX 2",
-      "brand": "Xiamoi",
-      "released": "2017-09",
-      "imagelink": "7EIAsGt",
-      "smallestPrice": 0,
-      "design": 5,
-      "display": 6,
-      "length": 152,
-      "width": 76,
-      "processor": 5,
-      "updates": 2,
-      "camera": 4,
-      "battery": 4,
-      "batterysize": 3400,
-      "storage": 64,
-      "memory": 6,
-      "sdslot": 0,
-      "simcards": 2,
-      "notch": 0,
-      "waterproof": "0",
-      "headphonejack": 0,
-      "totalscore": 0,
-      "types": {
-        "de": [
-          {
-            "name": "black",
-            "asin": "B0784RQR88",
-            "price": 1,
-            "link":
-              "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
-          },
-          {
-            "name": "black",
-            "asin": "B076VLN14J",
-            "price": 1,
-            "link":
-              "https://www.amazon.de/Nokia-Plus-Handy-schwarz-kupfer/dp/B07B68N35M?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68N35M"
-          },
-          {
-            "name": "white",
-            "asin": "B0792TXZ46",
-            "price": 1,
-            "link":
-              "https://www.amazon.de/Nokia-Plus-Handy-schwarz-kupfer/dp/B07B68N35M?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68N35M"
-          }
-        ],
-        "com": []
-      }
-    },
-    {
-      "name": "Mi MIX 2s (64GB)",
-      "brand": "Xiamoi",
-      "released": "2018-04",
-      "imagelink": "7EIAsGt",
-      "smallestPrice": 0,
-      "design": 5,
-      "display": 6,
-      "length": 152,
-      "width": 76,
-      "processor": 5,
-      "updates": 3,
-      "camera": 5,
-      "battery": 4,
-      "batterysize": 3400,
-      "storage": 64,
-      "memory": 6,
-      "sdslot": 0,
-      "simcards": 2,
-      "notch": 0,
-      "waterproof": "0",
-      "headphonejack": 0,
-      "totalscore": 0,
-      "types": {
-        "de": [
-          {
-            "name": "black",
-            "asin": "B07CZFRXP1",
-            "price": 1,
-            "link":
-              "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
-          },
-          {
-            "name": "white",
-            "asin": "B07D4NBDM9",
-            "price": 1,
-            "link":
-              "https://www.amazon.de/Nokia-Plus-Handy-schwarz-kupfer/dp/B07B68N35M?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68N35M"
-          }
-        ],
-        "com": []
-      }
-    },
-    {
-      "name": "Mi MIX 2s (128GB)",
-      "brand": "Xiamoi",
-      "released": "2018-04",
-      "imagelink": "7EIAsGt",
-      "smallestPrice": 0,
-      "design": 5,
-      "display": 6,
-      "length": 152,
-      "width": 76,
-      "processor": 5,
-      "updates": 3,
-      "camera": 5,
-      "battery": 4,
-      "batterysize": 3400,
-      "storage": 64,
-      "memory": 6,
-      "sdslot": 0,
-      "simcards": 2,
-      "notch": 0,
-      "waterproof": "0",
-      "headphonejack": 0,
-      "totalscore": 0,
-      "types": {
-        "de": [
-          {
-            "name": "black",
-            "asin": "B07D4QL67S",
-            "price": 1,
-            "link":
-              "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
-          }
-        ],
-        "com": []
-      }
-    },
-    {
-      "name": "U11 life",
-      "brand": "HTC",
-      "released": "2017-12",
-      "imagelink": "61iBTjkp3yL._SY741_",
-      "smallestPrice": 0,
-      "design": 4,
-      "display": 5.2,
-      "length": 149,
-      "width": 73,
-      "processor": 3,
-      "updates": 5,
-      "camera": 3,
-      "battery": 3,
-      "batterysize": 2600,
-      "storage": 32,
-      "memory": 3,
-      "sdslot": 2,
-      "simcards": 2,
-      "notch": 0,
-      "waterproof": "7",
-      "headphonejack": 0,
-      "totalscore": 0,
-      "types": {
-        "de": [
-          {
-            "name": "brilliant black",
-            "asin": "B076HWW5HN",
-            "price": 1,
-            "link":
-              "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
-          },
-          {
-            "name": "sapphire blue",
-            "asin": "B076HSNZ8H",
-            "price": 1,
-            "link":
-              "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
-          }
-        ],
-        "com": []
-      }
-    },
-    {
-      "name": "U11 Plus",
-      "brand": "HTC",
-      "released": "2017-12",
-      "imagelink": "51XltEAiihL._SY879_",
-      "smallestPrice": 0,
-      "design": 5,
-      "display": 6,
-      "length": 159,
-      "width": 75,
-      "processor": 5,
-      "updates": 4,
-      "camera": 5,
-      "battery": 5,
-      "batterysize": 3930,
-      "storage": 128,
-      "memory": 6,
-      "sdslot": 1,
-      "simcards": 2,
-      "notch": 0,
-      "waterproof": "8",
-      "headphonejack": 0,
-      "totalscore": 0,
-      "types": {
-        "de": [
-          {
-            "name": "amazing silver",
-            "asin": "B077PJXZFK",
-            "price": 1,
-            "link":
-              "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
-          },
-          {
-            "name": "ceramic black",
-            "asin": "B077PMJM3M",
-            "price": 1,
-            "link":
-              "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
-          },
-          {
-            "name": "solar red",
-            "asin": "B079RCFMTB",
-            "price": 1,
-            "link":
-              "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
-          },
-          {
-            "name": "translucent oil",
-            "asin": "B077PG7JD3",
-            "price": 1,
-            "link":
-              "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
-          }
-        ],
-        "com": []
-      }
-    },
-    {
-      "name": "U12 Plus",
-      "brand": "HTC",
-      "released": "2018-06",
-      "imagelink": "htcu12+",
-      "smallestPrice": 0,
-      "design": 5,
-      "display": 6,
-      "length": 157,
-      "width": 74,
-      "processor": 5,
-      "updates": 4,
-      "camera": 5,
-      "battery": 4,
-      "batterysize": 3500,
-      "storage": 64,
-      "memory": 6,
-      "sdslot": 1,
-      "simcards": 2,
-      "notch": 0,
-      "waterproof": "8",
-      "headphonejack": 0,
-      "totalscore": 0,
-      "types": {
-        "de": [
-          {
-            "name": "ceramic black",
-            "asin": "B07D4Q89NG",
-            "price": 1,
-            "link":
-              "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
-          },
-          {
-            "name": "flame red",
-            "asin": "B07D4RG7QQ",
-            "price": 1,
-            "link":
-              "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
-          },
-          {
-            "name": "translucent blue",
-            "asin": "B07D4RN2WQ",
-            "price": 1,
-            "link":
-              "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
-          }
-        ],
-        "com": []
-      }
-    },
-    {
-      "name": "Pixel 2",
-      "brand": "Google",
-      "released": "2017-10",
-      "imagelink": "81Ea5V2MehL._SY879_",
-      "smallestPrice": 0,
-      "design": 4,
-      "display": 5,
-      "length": 146,
-      "width": 70,
-      "processor": 5,
-      "updates": 5,
-      "camera": 5,
-      "battery": 3,
-      "batterysize": 2700,
-      "storage": 64,
-      "memory": 4,
-      "sdslot": 0,
-      "simcards": 1,
-      "notch": 0,
-      "waterproof": "7",
-      "headphonejack": 0,
-      "totalscore": 0,
-      "types": {
-        "de": [
-          {
-            "name": "clearly white",
-            "asin": "B076KLKZ23",
-            "price": 1,
-            "link":
-              "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
-          },
-          {
-            "name": "just black",
-            "asin": "B076KSTG53",
-            "price": 1,
-            "link":
-              "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
-          },
-          {
-            "name": "just black",
-            "asin": "B076L5FQ23",
-            "price": 1,
-            "link":
-              "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
-          },
-          {
-            "name": "kinda blue",
-            "asin": "B076KM3PYP",
-            "price": 1,
-            "link":
-              "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
-          }
-        ],
-        "com": []
-      }
-    },
-    {
-      "name": "Pixel 2 XL",
-      "brand": "Google",
-      "released": "2017-10",
-      "imagelink": "pixel2xl",
-      "smallestPrice": 0,
-      "design": 4,
-      "display": 6,
-      "length": 158,
-      "width": 77,
-      "processor": 5,
-      "updates": 5,
-      "camera": 5,
-      "battery": 4,
-      "batterysize": 3520,
-      "storage": 64,
-      "memory": 4,
-      "sdslot": 0,
-      "simcards": 1,
-      "notch": 0,
-      "waterproof": "7",
-      "headphonejack": 0,
-      "totalscore": 0,
-      "types": {
-        "de": [
-          {
-            "name": "just black",
-            "asin": "B077H28GFX",
-            "price": 1,
-            "link":
-              "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
-          },
-          {
-            "name": "just black",
-            "asin": "B076KT8HT2",
-            "price": 1,
-            "link":
-              "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
-          },
-          {
-            "name": "black/white",
-            "asin": "B077WSVG4Z",
-            "price": 1,
-            "link":
-              "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
-          },
-          {
-            "name": "black/white",
-            "asin": "B076L5ZZK1",
-            "price": 1,
-            "link":
-              "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
-          }
-        ],
-        "com": []
-      }
-    },
-    {
-      "name": "5t (64GB)",
-      "brand": "OnePlus",
-      "released": "2017-11",
-      "imagelink": "qPbTGxu",
-      "smallestPrice": 0,
-      "design": 5,
-      "display": 6,
-      "length": 156,
-      "width": 75,
-      "processor": 5,
-      "updates": 4,
-      "camera": 4,
-      "battery": 4,
-      "batterysize": 3300,
-      "storage": 64,
-      "memory": 6,
-      "sdslot": 0,
-      "simcards": 2,
-      "notch": 0,
-      "waterproof": "0",
-      "headphonejack": 1,
-      "totalscore": 0,
-      "types": {
-        "de": [
-          {
-            "name": "midnight black",
-            "asin": "B078WSQ4SC",
-            "price": 1,
-            "link":
-              "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
-          }
-        ],
-        "com": []
-      }
-    },
-    {
-      "name": "5t (128GB)",
-      "brand": "OnePlus",
-      "released": "2017-11",
-      "imagelink": "qPbTGxu",
-      "smallestPrice": 0,
-      "design": 5,
-      "display": 6,
-      "length": 156,
-      "width": 75,
-      "processor": 5,
-      "updates": 4,
-      "camera": 4,
-      "battery": 4,
-      "batterysize": 3300,
-      "storage": 128,
-      "memory": 8,
-      "sdslot": 0,
-      "simcards": 2,
-      "notch": 0,
-      "waterproof": "0",
-      "headphonejack": 1,
-      "totalscore": 0,
-      "types": {
-        "de": [
-          {
-            "name": "midnight black",
-            "asin": "B078WSFXPW",
-            "price": 1,
-            "link":
-              "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
-          },
-          {
-            "name": "star wars white",
-            "asin": "B0789MN114",
-            "price": 1,
-            "link":
-              "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
-          }
-        ],
-        "com": []
-      }
-    },
-    {
-      "name": "6 (64GB)",
-      "brand": "OnePlus",
-      "released": "2018-05",
-      "imagelink": "oneplus6",
-      "smallestPrice": 0,
-      "design": 5,
-      "display": 6.3,
-      "length": 156,
-      "width": 75,
-      "processor": 5,
-      "updates": 4,
-      "camera": 5,
-      "battery": 4,
-      "batterysize": 3300,
-      "storage": 64,
-      "memory": 6,
-      "sdslot": 0,
-      "simcards": 2,
-      "notch": 1,
-      "waterproof": "0",
-      "headphonejack": 1,
-      "totalscore": 0,
-      "types": {
-        "de": [
-          {
-            "name": "mirror black",
-            "asin": "B07CHQHFDZ",
-            "price": 1,
-            "link":
-              "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
-          }
-        ],
-        "com": []
-      }
-    },
-    {
-      "name": "6 (128GB)",
-      "brand": "OnePlus",
-      "released": "2018-05",
-      "imagelink": "oneplus6",
-      "smallestPrice": 0,
-      "design": 5,
-      "display": 6,
-      "length": 156,
-      "width": 75,
-      "processor": 5,
-      "updates": 4,
-      "camera": 4,
-      "battery": 4,
-      "batterysize": 3300,
-      "storage": 128,
-      "memory": 8,
-      "sdslot": 0,
-      "simcards": 2,
-      "notch": 1,
-      "waterproof": "0",
-      "headphonejack": 1,
-      "totalscore": 0,
-      "types": {
-        "de": [
-          {
-            "name": "mirror black",
-            "asin": "B07CK7KB95",
-            "price": 1,
-            "link":
-              "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
-          },
-          {
-            "name": "midnight black",
-            "asin": "B07CHL6XN6",
-            "price": 1,
-            "link":
-              "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
-          },
-          {
-            "name": "silk white",
-            "asin": "B07D5LXXG3",
-            "price": 1,
-            "link":
-              "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
-          }
-        ],
-        "com": []
-      }
-    },
-    {
-      "name": "Honor 7X",
-      "brand": "Huawei",
-      "released": "2017-12",
-      "imagelink": "9chGwId",
-      "smallestPrice": 0,
-      "design": 4,
-      "display": 5.9,
-      "length": 157,
-      "width": 75,
-      "processor": 3,
-      "updates": 4,
-      "camera": 3,
-      "battery": 4,
-      "batterysize": 3340,
-      "storage": 64,
-      "memory": 4,
-      "sdslot": 1,
-      "simcards": 2,
-      "notch": 0,
-      "waterproof": "0",
-      "headphonejack": 1,
-      "totalscore": 0,
-      "types": {
-        "de": [
-          {
-            "name": "grey",
-            "asin": "B0779STLGF",
-            "price": 1,
-            "link":
-              "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
-          },
-          {
-            "name": "midnight black",
-            "asin": "B0779SG4ZN",
-            "price": 1,
-            "link":
-              "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
-          },
-          {
-            "name": "phoenix red",
-            "asin": "B079SDRNJM",
-            "price": 1,
-            "link":
-              "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
-          },
-          {
-            "name": "sapphire blue",
-            "asin": "B0779RWX11",
-            "price": 1,
-            "link":
-              "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
-          }
-        ],
-        "com": []
-      }
-    },
-    {
-      "name": "Honor 10",
-      "brand": "Huawei",
-      "released": "2018-05",
-      "imagelink": "honor10",
-      "smallestPrice": 0,
-      "design": 4,
-      "display": 5.8,
-      "length": 150,
-      "width": 71,
-      "processor": 5,
-      "updates": 4,
-      "camera": 4,
-      "battery": 4,
-      "batterysize": 3400,
-      "storage": 64,
-      "memory": 4,
-      "sdslot": 0,
-      "simcards": 2,
-      "notch": 1,
-      "waterproof": "0",
-      "headphonejack": 1,
-      "totalscore": 0,
-      "types": {
-        "de": [
-          {
-            "name": "midnight black",
-            "asin": "B07CMSTFKQ",
-            "price": 1,
-            "link":
-              "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
-          },
-          {
-            "name": "glacier grey",
-            "asin": "B07CN24WB3",
-            "price": 1,
-            "link":
-              "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
-          },
-          {
-            "name": "phantom blue",
-            "asin": "B07CMXSHGH",
-            "price": 1,
-            "link":
-              "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
-          },
-          {
-            "name": "phantom green",
-            "asin": "B07D83JHPB",
-            "price": 1,
-            "link":
-              "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
-          }
-        ],
-        "com": []
-      }
-    },
-    {
-      "name": "Mate 10 Pro",
-      "brand": "Huawei",
-      "released": "2017-10",
-      "imagelink": "huawei-mate10-pro",
-      "smallestPrice": 0,
-      "design": 4,
-      "display": 6,
-      "length": 157,
-      "width": 75,
-      "processor": 3,
-      "updates": 3,
-      "camera": 4,
-      "battery": 5,
-      "batterysize": 4000,
-      "storage": 128,
-      "memory": 6,
-      "sdslot": 0,
-      "simcards": 2,
-      "notch": 0,
-      "waterproof": "7",
-      "headphonejack": 0,
-      "totalscore": 0,
-      "types": {
-        "de": [
-          {
-            "name": "midnight blue",
-            "asin": "B076CHQGV9",
-            "price": 1,
-            "link":
-              "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
-          },
-          {
-            "name": "titanium grey",
-            "asin": "B076CNDP4J",
-            "price": 1,
-            "link":
-              "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
-          }
-        ],
-        "com": []
-      }
-    },
-    {
-      "name": "P20",
-      "brand": "Huawei",
-      "released": "2018-04",
-      "imagelink": "vqPQcia",
-      "smallestPrice": 0,
-      "design": 5,
-      "display": 5.8,
-      "length": 149,
-      "width": 71,
-      "processor": 4,
-      "updates": 4,
-      "camera": 5,
-      "battery": 4,
-      "batterysize": 3400,
-      "storage": 128,
-      "memory": 4,
-      "sdslot": 0,
-      "simcards": 2,
-      "notch": 1,
-      "waterproof": "4",
-      "headphonejack": 0,
-      "totalscore": 0,
-      "types": {
-        "de": [
-          {
-            "name": "black",
-            "asin": "B07BHD7MHL",
-            "price": 1,
-            "link":
-              "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
-          },
-          {
-            "name": "blue",
-            "asin": "B07BHDC33K",
-            "price": 1,
-            "link":
-              "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
-          }
-        ],
-        "com": []
-      }
-    },
-    {
-      "name": "P20 lite",
-      "brand": "Huawei",
-      "released": "2018-03",
-      "imagelink": "5wTSOmp",
-      "smallestPrice": 0,
-      "design": 4,
-      "display": 5.8,
-      "length": 149,
-      "width": 71,
-      "processor": 4,
-      "updates": 3,
-      "camera": 3,
-      "battery": 4,
-      "batterysize": 3000,
-      "storage": 64,
-      "memory": 4,
-      "sdslot": 1,
-      "simcards": 2,
-      "notch": 1,
-      "waterproof": "0",
-      "headphonejack": 1,
-      "totalscore": 0,
-      "types": {
-        "de": [
-          {
-            "name": "black",
-            "asin": "B07BHDC9V6",
-            "price": 1,
-            "link":
-              "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
-          },
-          {
-            "name": "pink",
-            "asin": "B07BHDQPD9",
-            "price": 1,
-            "link":
-              "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
-          },
-          {
-            "name": "blue",
-            "asin": "B07BHDDDHB",
-            "price": 1,
-            "link":
-              "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
-          },
-          {
-            "name": "gold",
-            "asin": "B07BLYRC9M",
-            "price": 1,
-            "link":
-              "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
-          }
-        ],
-        "com": []
-      }
-    },
-    {
-      "name": "P20 Pro",
-      "brand": "Huawei",
-      "released": "2018-04",
-      "imagelink": "Vc0thgM",
-      "smallestPrice": 0,
-      "design": 5,
-      "display": 6.1,
-      "length": 155,
-      "width": 74,
-      "processor": 5,
-      "updates": 4,
-      "camera": 5,
-      "battery": 5,
-      "batterysize": 4000,
-      "storage": 128,
-      "memory": 6,
-      "sdslot": 1,
-      "simcards": 2,
-      "notch": 1,
-      "waterproof": "7",
-      "headphonejack": 1,
-      "totalscore": 0,
-      "types": {
-        "de": [
-          {
-            "name": "blue",
-            "asin": "B07BHD3L23",
-            "price": 1,
-            "link":
-              "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
-          },
-          {
-            "name": "black",
-            "asin": "B07BHDMHR1",
-            "price": 1,
-            "link":
-              "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
-          },
-          {
-            "name": "twilight",
-            "asin": "B07BHDDDHJ",
-            "price": 1,
-            "link":
-              "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
-          }
-        ],
-        "com": []
-      }
-    },
-    {
-      "name": "Phone",
-      "brand": "Essential",
-      "released": "2017-08",
-      "imagelink": "OGr1dfB",
-      "smallestPrice": 0,
-      "design": 5,
-      "display": 5.7,
-      "length": 142,
-      "width": 71,
-      "processor": 5,
-      "updates": 5,
-      "camera": 5,
-      "battery": 4,
-      "batterysize": 3040,
-      "storage": 128,
-      "memory": 4,
-      "sdslot": 0,
-      "simcards": 1,
-      "notch": 1,
-      "waterproof": "0",
-      "headphonejack": 0,
-      "totalscore": 0,
-      "types": {
-        "de": [
-          {
-            "name": "black moon",
-            "asin": "B074BWGRKH",
-            "price": 1,
-            "link":
-              "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
-          },
-          {
-            "name": "halo grey",
-            "asin": "B078SQ7GWK",
-            "price": 1,
-            "link":
-              "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
-          },
-          {
-            "name": "pure white",
-            "asin": "B0748TWQHK",
-            "price": 1,
-            "link":
-              "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
-          }
-        ],
-        "com": []
-      }
-    },
-    {
-      "name": "G6",
-      "brand": "LG",
-      "released": "2017-03",
-      "imagelink": "814YBWa7gGL._SY879_",
-      "smallestPrice": 0,
-      "design": 3,
-      "display": 5.7,
-      "length": 149,
-      "width": 72,
-      "processor": 4,
-      "updates": 4,
-      "camera": 4,
-      "battery": 4,
-      "batterysize": 3300,
-      "storage": 32,
-      "memory": 4,
-      "sdslot": 1,
-      "simcards": 1,
-      "notch": 0,
-      "waterproof": "8",
-      "headphonejack": 1,
-      "totalscore": 0,
-      "types": {
-        "de": [
-          {
-            "name": "black",
-            "asin": "B06XFRBM26",
-            "price": 1,
-            "link":
-              "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
-          },
-          {
-            "name": "blue",
-            "asin": "B077KDDQLV",
-            "price": 1,
-            "link":
-              "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
-          },
-          {
-            "name": "gold",
-            "asin": "B075SJ6LL4",
-            "price": 1,
-            "link":
-              "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
-          },
-          {
-            "name": "platinum",
-            "asin": "B06XFGMDKN",
-            "price": 1,
-            "link":
-              "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
-          },
-          {
-            "name": "white",
-            "asin": "B06XFS8F1Z",
-            "price": 1,
-            "link":
-              "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
-          }
-        ],
-        "com": []
-      }
-    },
-    {
-      "name": "G7 ThinQ",
-      "brand": "LG",
-      "released": "2018-05",
-      "imagelink": "g7thinQ",
-      "smallestPrice": 0,
-      "design": 5,
-      "display": 6.1,
-      "length": 153,
-      "width": 72,
-      "processor": 5,
-      "updates": 4,
-      "camera": 4,
-      "battery": 3,
-      "batterysize": 3000,
-      "storage": 64,
-      "memory": 4,
-      "sdslot": 1,
-      "simcards": 1,
-      "notch": 1,
-      "waterproof": "8",
-      "headphonejack": 1,
-      "totalscore": 0,
-      "types": {
-        "de": [
-          {
-            "name": "platinum grey",
-            "asin": "B07D7NXYT6",
-            "price": 1,
-            "link":
-              "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
-          },
-          {
-            "name": "black",
-            "asin": "B07D69KKBZ",
-            "price": 1,
-            "link":
-              "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
-          }
-        ],
-        "com": []
-      }
-    },
-    {
-      "name": "V30",
-      "brand": "LG",
-      "released": "2017-08",
-      "imagelink": "715GbwmYJjL._SY879_",
-      "smallestPrice": 0,
-      "design": 4,
-      "display": 6,
-      "length": 152,
-      "width": 75,
-      "processor": 5,
-      "updates": 4,
-      "camera": 4,
-      "battery": 4,
-      "batterysize": 3300,
-      "storage": 64,
-      "memory": 4,
-      "sdslot": 2,
-      "simcards": 2,
-      "notch": 0,
-      "waterproof": "8",
-      "headphonejack": 1,
-      "totalscore": 0,
-      "types": {
-        "de": [
-          {
-            "name": "cloud silver",
-            "asin": "B075GYD539",
-            "price": 1,
-            "link":
-              "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
-          },
-          {
-            "name": "moroccan blue",
-            "asin": "B075GTJYSV",
-            "price": 1,
-            "link":
-              "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
-          }
-        ],
-        "com": []
-      }
-    },
-    {
-      "name": "Xperia XZ2",
-      "brand": "Sony",
-      "released": "2018-04",
-      "imagelink": "lis9AWg",
-      "smallestPrice": 0,
-      "design": 3,
-      "display": 5.7,
-      "length": 153,
-      "width": 72,
-      "processor": 5,
-      "updates": 4,
-      "camera": 4,
-      "battery": 4,
-      "batterysize": 3180,
-      "storage": 64,
-      "memory": 4,
-      "sdslot": 1,
-      "simcards": 2,
-      "notch": 0,
-      "waterproof": "8",
-      "headphonejack": 0,
-      "totalscore": 0,
-      "types": {
-        "de": [
-          {
-            "name": "liquid black",
-            "asin": "B079YSBTY7",
-            "price": 1,
-            "link":
-              "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
-          },
-          {
-            "name": "ash pink",
-            "asin": "B079Z1G1DW",
-            "price": 1,
-            "link":
-              "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
-          },
-          {
-            "name": "deep green",
-            "asin": "B079YS5Q9K",
-            "price": 1,
-            "link":
-              "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
-          },
-          {
-            "name": "liquid silver",
-            "asin": "B079YS8SDR",
-            "price": 1,
-            "link":
-              "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
-          }
-        ],
-        "com": []
-      }
-    },
-    {
-      "name": "Xperia XZ2 Compact",
-      "brand": "Sony",
-      "released": "2018-04",
-      "imagelink": "ExuzR25",
-      "smallestPrice": 0,
-      "design": 3,
-      "display": 5,
-      "length": 135,
-      "width": 65,
-      "processor": 5,
-      "updates": 4,
-      "camera": 4,
-      "battery": 3,
-      "batterysize": 2870,
-      "storage": 64,
-      "memory": 4,
-      "sdslot": 1,
-      "simcards": 2,
-      "notch": 0,
-      "waterproof": "8",
-      "headphonejack": 0,
-      "totalscore": 0,
-      "types": {
-        "de": [
-          {
-            "name": "black",
-            "asin": "B079YZ7ZS4",
-            "price": 1,
-            "link":
-              "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
-          },
-          {
-            "name": "coral pink",
-            "asin": "B079YRCCK6",
-            "price": 1,
-            "link":
-              "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
-          },
-          {
-            "name": "moss green",
-            "asin": "B079YTJ1S4",
-            "price": 1,
-            "link":
-              "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
-          },
-          {
-            "name": "white silver",
-            "asin": "B079YRR6QR",
-            "price": 1,
-            "link":
-              "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
-          }
-        ],
-        "com": []
-      }
-    },
-    {
-      "name": "iPhone 8 (64GB)",
-      "brand": "Apple",
-      "released": "2017-09",
-      "imagelink": "xGEFWor",
-      "smallestPrice": 0,
-      "design": 3,
-      "display": 4.7,
-      "length": 138,
-      "width": 67,
-      "processor": 5,
-      "updates": 5,
-      "camera": 5,
-      "battery": 3,
-      "batterysize": 1821,
-      "storage": 64,
-      "memory": 2,
-      "sdslot": 0,
-      "simcards": 1,
-      "notch": 0,
-      "waterproof": "7",
-      "headphonejack": 0,
-      "totalscore": 0,
-      "types": {
-        "de": [
-          {
-            "name": "gold",
-            "asin": "B075LY82PT",
-            "price": 1,
-            "link":
-              "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
-          },
-          {
-            "name": "silver",
-            "asin": "B075LZGVKJ",
-            "price": 1,
-            "link":
-              "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
-          },
-          {
-            "name": "space grey",
-            "asin": "B075LXNGFH",
-            "price": 1,
-            "link":
-              "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
-          }
-        ],
-        "com": []
-      }
-    },
-    {
-      "name": "iPhone 8 (256GB)",
-      "brand": "Apple",
-      "released": "2017-09",
-      "imagelink": "xGEFWor",
-      "smallestPrice": 0,
-      "design": 3,
-      "display": 4.7,
-      "length": 138,
-      "width": 67,
-      "processor": 5,
-      "updates": 5,
-      "camera": 5,
-      "battery": 3,
-      "batterysize": 1821,
-      "storage": 256,
-      "memory": 2,
-      "sdslot": 0,
-      "simcards": 1,
-      "notch": 0,
-      "waterproof": "7",
-      "headphonejack": 0,
-      "totalscore": 0,
-      "types": {
-        "de": [
-          {
-            "name": "gold",
-            "asin": "B075LWT4JR",
-            "price": 1,
-            "link":
-              "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
-          },
-          {
-            "name": "silver",
-            "asin": "B075LZMNDM",
-            "price": 1,
-            "link":
-              "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
-          },
-          {
-            "name": "space grey",
-            "asin": "B075LX5T7P",
-            "price": 1,
-            "link":
-              "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
-          }
-        ],
-        "com": []
-      }
-    },
-    {
-      "name": "iPhone 8 Plus (64GB)",
-      "brand": "Apple",
-      "released": "2017-09",
-      "imagelink": "lq2EmJG",
-      "smallestPrice": 0,
-      "design": 3,
-      "display": 5.5,
-      "length": 158,
-      "width": 78,
-      "processor": 5,
-      "updates": 5,
-      "camera": 5,
-      "battery": 4,
-      "batterysize": 2691,
-      "storage": 64,
-      "memory": 3,
-      "sdslot": 0,
-      "simcards": 1,
-      "notch": 0,
-      "waterproof": "7",
-      "headphonejack": 0,
-      "totalscore": 0,
-      "types": {
-        "de": [
-          {
-            "name": "red",
-            "asin": "B07CC27HW5",
-            "price": 1,
-            "link":
-              "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
-          },
-          {
-            "name": "space grey",
-            "asin": "B075LZ4VQW",
-            "price": 1,
-            "link":
-              "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
-          },
-          {
-            "name": "silver",
-            "asin": "B075M4QCKW",
-            "price": 1,
-            "link":
-              "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
-          },
-          {
-            "name": "gold",
-            "asin": "B075LW8Z5R",
-            "price": 1,
-            "link":
-              "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
-          }
-        ],
-        "com": []
-      }
-    },
-    {
-      "name": "iPhone 8 Plus (256GB)",
-      "brand": "Apple",
-      "released": "2017-09",
-      "imagelink": "lq2EmJG",
-      "smallestPrice": 0,
-      "design": 3,
-      "display": 5.5,
-      "length": 158,
-      "width": 78,
-      "processor": 5,
-      "updates": 5,
-      "camera": 5,
-      "battery": 4,
-      "batterysize": 2691,
-      "storage": 256,
-      "memory": 3,
-      "sdslot": 0,
-      "simcards": 1,
-      "notch": 0,
-      "waterproof": "7",
-      "headphonejack": 0,
-      "totalscore": 0,
-      "types": {
-        "de": [
-          {
-            "name": "space grey",
-            "asin": "B075LY524V",
-            "price": 1,
-            "link":
-              "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
-          },
-          {
-            "name": "silver",
-            "asin": "B075LXS8MK",
-            "price": 1,
-            "link":
-              "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
-          },
-          {
-            "name": "gold",
-            "asin": "B075LYPPY9",
-            "price": 1,
-            "link":
-              "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
-          }
-        ],
-        "com": []
-      }
-    },
-    {
-      "name": "iPhone X (64GB)",
-      "brand": "Apple",
-      "released": "2017-10",
-      "imagelink": "UDV8YUp",
-      "smallestPrice": 0,
-      "design": 5,
-      "display": 5.8,
-      "length": 144,
-      "width": 71,
-      "processor": 5,
-      "updates": 5,
-      "camera": 5,
-      "battery": 4,
-      "batterysize": 2716,
-      "storage": 64,
-      "memory": 3,
-      "sdslot": 0,
-      "simcards": 1,
-      "notch": 1,
-      "waterproof": "7",
-      "headphonejack": 0,
-      "totalscore": 0,
-      "types": {
-        "de": [
-          {
-            "name": "space grey",
-            "asin": "B075LXNK24",
-            "price": 1,
-            "link":
-              "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
-          },
-          {
-            "name": "silver",
-            "asin": "B075LYDD7Z",
-            "price": 1,
-            "link":
-              "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
-          }
-        ],
-        "com": []
-      }
-    },
-    {
-      "name": "iPhone X (256GB)",
-      "brand": "Apple",
-      "released": "2017-10",
-      "imagelink": "UDV8YUp",
-      "smallestPrice": 0,
-      "design": 5,
-      "display": 5.8,
-      "length": 144,
-      "width": 71,
-      "processor": 5,
-      "updates": 5,
-      "camera": 5,
-      "battery": 4,
-      "batterysize": 2716,
-      "storage": 256,
-      "memory": 3,
-      "sdslot": 0,
-      "simcards": 1,
-      "notch": 1,
-      "waterproof": "7",
-      "headphonejack": 0,
-      "totalscore": 0,
-      "types": {
-        "de": [
-          {
-            "name": "space grey",
-            "asin": "B075LWF4C3",
-            "price": 1,
-            "link":
-              "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
-          },
-          {
-            "name": "silver",
-            "asin": "B075LRK2QK",
-            "price": 1,
-            "link":
-              "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
-          }
-        ],
-        "com": []
-      }
-    },
-    {
-      "name": "Moto X4",
-      "brand": "Motorola",
-      "released": "2017-10",
-      "imagelink": "61eEr3fsroL._SY879_",
-      "smallestPrice": 0,
-      "design": 3,
-      "display": 5.2,
-      "length": 148,
-      "width": 73,
-      "processor": 3,
-      "updates": 3,
-      "camera": 4,
-      "battery": 3,
-      "batterysize": 3000,
-      "storage": 32,
-      "memory": 3,
-      "sdslot": 1,
-      "simcards": 2,
-      "notch": 0,
-      "waterproof": "7",
-      "headphonejack": 1,
-      "totalscore": 0,
-      "types": {
-        "de": [
-          {
-            "name": "super black",
-            "asin": "B074MHFGFS",
-            "price": 1,
-            "link":
-              "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
-          },
-          {
-            "name": "sterling blue",
-            "asin": "B00V4Y3RII",
-            "price": 1,
-            "link":
-              "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
-          }
-        ],
-        "com": []
-      }
-    },
-    {
-      "name": "Moto Z2 Play",
-      "brand": "Motorola",
-      "released": "2017-06",
-      "imagelink": "motoz2play",
-      "smallestPrice": 0,
-      "design": 3,
-      "display": 5.5,
-      "length": 156,
-      "width": 76,
-      "processor": 3,
-      "updates": 3,
-      "camera": 3,
-      "battery": 3,
-      "batterysize": 3000,
-      "storage": 64,
-      "memory": 4,
-      "sdslot": 1,
-      "simcards": 2,
-      "notch": 0,
-      "waterproof": "4",
-      "headphonejack": 1,
-      "totalscore": 0,
-      "types": {
-        "de": [
-          {
-            "name": "lunar grey",
-            "asin": "B0747WYLTX",
-            "price": 1,
-            "link":
-              "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
-          },
-          {
-            "name": "fine gold",
-            "asin": "B0747X83J5",
-            "price": 1,
-            "link":
-              "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
-          }
-        ],
-        "com": []
-      }
-    },
-    {
-      "name": "Moto Z2 Force",
-      "brand": "Motorola",
-      "released": "2017-08",
-      "imagelink": "motoz2force",
-      "smallestPrice": 0,
-      "design": 3,
-      "display": 5.5,
-      "length": 156,
-      "width": 76,
-      "processor": 4,
-      "updates": 3,
-      "camera": 4,
-      "battery": 3,
-      "batterysize": 2730,
-      "storage": 64,
-      "memory": 6,
-      "sdslot": 1,
-      "simcards": 2,
-      "notch": 0,
-      "waterproof": "4",
-      "headphonejack": 0,
-      "totalscore": 0,
-      "types": {
-        "de": [
-          {
-            "name": "black",
-            "asin": "B074MH8DJ5",
-            "price": 1,
-            "link":
-              "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
-          }
-        ],
-        "com": []
-      }
-    },
-    {
-      "name": "Moto G6",
-      "brand": "Motorola",
-      "released": "2018-04",
-      "imagelink": "v3WB6HT",
-      "smallestPrice": 0,
-      "design": 3,
-      "display": 5.7,
-      "length": 154,
-      "width": 72,
-      "processor": 3,
-      "updates": 3,
-      "camera": 3,
-      "battery": 3,
-      "batterysize": 3000,
-      "storage": 32,
-      "memory": 3,
-      "sdslot": 1,
-      "simcards": 2,
-      "notch": 0,
-      "waterproof": "4",
-      "headphonejack": 1,
-      "totalscore": 0,
-      "types": {
-        "de": [
-          {
-            "name": "deep indigo",
-            "asin": "B07BXWZ8ZG",
-            "price": 1,
-            "link":
-              "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
-          }
-        ],
-        "com": []
-      }
-    },
-    {
-      "name": "Moto G6 [Amazon]",
-      "brand": "Motorola",
-      "released": "2018-04",
-      "imagelink": "motog6amazonexclusive",
-      "smallestPrice": 0,
-      "design": 3,
-      "display": 5.7,
-      "length": 154,
-      "width": 72,
-      "processor": 3,
-      "updates": 3,
-      "camera": 3,
-      "battery": 3,
-      "batterysize": 3000,
-      "storage": 64,
-      "memory": 4,
-      "sdslot": 1,
-      "simcards": 2,
-      "notch": 0,
-      "waterproof": "4",
-      "headphonejack": 1,
-      "totalscore": 0,
-      "types": {
-        "de": [
-          {
-            "name": "deep indigo",
-            "asin": "B079MT5K9N",
-            "price": 1,
-            "link":
-              "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
-          }
-        ],
-        "com": []
-      }
-    },
-    {
-      "name": "Moto G6 Plus",
-      "brand": "Motorola",
-      "released": "2018-05",
-      "imagelink": "phQJx7z",
-      "smallestPrice": 0,
-      "design": 3,
-      "display": 5.9,
-      "length": 160,
-      "width": 76,
-      "processor": 3,
-      "updates": 3,
-      "camera": 4,
-      "battery": 3,
-      "batterysize": 3200,
-      "storage": 64,
-      "memory": 3,
-      "sdslot": 1,
-      "simcards": 2,
-      "notch": 0,
-      "waterproof": "4",
-      "headphonejack": 1,
-      "totalscore": 0,
-      "types": {
-        "de": [
-          {
-            "name": "deep indigo",
-            "asin": "B07CBC869D",
-            "price": 1,
-            "link":
-              "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
-          }
-        ],
-        "com": []
-      }
-    },
-    {
-      "name": "Moto G6 Play",
-      "brand": "Motorola",
-      "released": "2018-05",
-      "imagelink": "JQ7Vnzc",
-      "smallestPrice": 0,
-      "design": 3,
-      "display": 5.7,
-      "length": 154,
-      "width": 72,
-      "processor": 2,
-      "updates": 2,
-      "camera": 3,
-      "battery": 5,
-      "batterysize": 4000,
-      "storage": 32,
-      "memory": 3,
-      "sdslot": 1,
-      "simcards": 2,
-      "notch": 0,
-      "waterproof": "4",
-      "headphonejack": 1,
-      "totalscore": 0,
-      "types": {
-        "de": [
-          {
-            "name": "deep indigo",
-            "asin": "B07BXFRK2Q",
-            "price": 1,
-            "link":
-              "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
-          }
-        ],
-        "com": []
-      }
-    },
-    {
-      "name": "Moto E4",
-      "brand": "Motorola",
-      "released": "2017-06",
-      "imagelink": "71r21xr50KL._SY879_",
-      "smallestPrice": 0,
-      "design": 2,
-      "display": 5,
-      "length": 144,
-      "width": 73,
-      "processor": 2,
-      "updates": 2,
-      "camera": 2,
-      "battery": 2,
-      "batterysize": 2800,
-      "storage": 16,
-      "memory": 2,
-      "sdslot": 1,
-      "simcards": 2,
-      "notch": 0,
-      "waterproof": "0",
-      "headphonejack": 1,
-      "totalscore": 0,
-      "types": {
-        "de": [
-          {
-            "name": "blush gold",
-            "asin": "B073Q2FYWF",
-            "price": 1,
-            "link":
-              "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
-          },
-          {
-            "name": "fine gold",
-            "asin": "B071J7FRBD",
-            "price": 1,
-            "link":
-              "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
-          },
-          {
-            "name": "iron grey",
-            "asin": "B073Q2D8RJ",
-            "price": 1,
-            "link":
-              "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
-          },
-          {
-            "name": "oxford blue",
-            "asin": "B073Q32CF9",
-            "price": 1,
-            "link":
-              "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
-          }
-        ],
-        "com": []
-      }
-    },
-    {
-      "name": "Moto E4 Plus",
-      "brand": "Motorola",
-      "released": "2017-06",
-      "imagelink": "motoe4plus",
-      "smallestPrice": 0,
-      "design": 2,
-      "display": 5.5,
-      "length": 155,
-      "width": 78,
-      "processor": 2,
-      "updates": 2,
-      "camera": 2,
-      "battery": 5,
-      "batterysize": 5000,
-      "storage": 16,
-      "memory": 3,
-      "sdslot": 1,
-      "simcards": 2,
-      "notch": 0,
-      "waterproof": "0",
-      "headphonejack": 1,
-      "totalscore": 0,
-      "types": {
-        "de": [
-          {
-            "name": "fine gold",
-            "asin": "B071J7FRBD",
-            "price": 1,
-            "link":
-              "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
-          }
-        ],
-        "com": []
-      }
-    },
-    {
-      "name": "Moto G5S",
-      "brand": "Motorola",
-      "released": "2017-08",
-      "imagelink": "S9FO30n",
-      "smallestPrice": 0,
-      "design": 3,
-      "display": 5.2,
-      "length": 150,
-      "width": 74,
-      "processor": 3,
-      "updates": 2,
-      "camera": 3,
-      "battery": 3,
-      "batterysize": 3000,
-      "storage": 32,
-      "memory": 3,
-      "sdslot": 1,
-      "simcards": 2,
-      "notch": 0,
-      "waterproof": "4",
-      "headphonejack": 1,
-      "totalscore": 0,
-      "types": {
-        "de": [
-          {
-            "name": "fine gold",
-            "asin": "B074MHL2DN",
-            "price": 1,
-            "link":
-              "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
-          },
-          {
-            "name": "lunar grey",
-            "asin": "B074MGP8GJ",
-            "price": 1,
-            "link":
-              "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
-          }
-        ],
-        "com": []
-      }
-    },
-    {
-      "name": "Moto G5S Plus",
-      "brand": "Motorola",
-      "released": "2017-08",
-      "imagelink": "tdlPqFG",
-      "smallestPrice": 0,
-      "design": 3,
-      "display": 5.5,
-      "length": 154,
-      "width": 76,
-      "processor": 3,
-      "updates": 2,
-      "camera": 3,
-      "battery": 3,
-      "batterysize": 3000,
-      "storage": 32,
-      "memory": 3,
-      "sdslot": 1,
-      "simcards": 2,
-      "notch": 0,
-      "waterproof": "4",
-      "headphonejack": 1,
-      "totalscore": 0,
-      "types": {
-        "de": [
-          {
-            "name": "blush gold",
-            "asin": "B074SQZ2PB",
-            "price": 1,
-            "link":
-              "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
-          },
-          {
-            "name": "lunar grey",
-            "asin": "B074SR2DVT",
-            "price": 1,
-            "link":
-              "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
-          }
-        ],
-        "com": []
-      }
-    },
-    {
-      "name": "Galaxy A5",
-      "brand": "Samsung",
-      "released": "2017-01",
-      "imagelink": "wrIcHyN",
-      "smallestPrice": 0,
-      "design": 1,
-      "display": 5.2,
-      "length": 146,
-      "width": 71,
-      "processor": 3,
-      "updates": 3,
-      "camera": 3,
-      "battery": 3,
-      "batterysize": 3000,
-      "storage": 32,
-      "memory": 3,
-      "sdslot": 1,
-      "simcards": 1,
-      "notch": 0,
-      "waterproof": "8",
-      "headphonejack": 1,
-      "totalscore": 0,
-      "types": {
-        "de": [
-          {
-            "name": "black",
-            "asin": "B01N6M3K34",
-            "price": 1,
-            "link":
-              "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
-          },
-          {
-            "name": "blue",
-            "asin": "B01N9MJTE6",
-            "price": 1,
-            "link":
-              "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
-          },
-          {
-            "name": "gold",
-            "asin": "B01MU5VUXK",
-            "price": 1,
-            "link":
-              "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
-          },
-          {
-            "name": "peach-cloud",
-            "asin": "B06W2H865T",
-            "price": 1,
-            "link":
-              "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
-          }
-        ],
-        "com": []
-      }
-    },
-    {
-      "name": "Galaxy S9 (64GB)",
-      "brand": "Samsung",
-      "released": "2018-03",
-      "imagelink": "71uI%2BnAzruL._SY879_",
-      "smallestPrice": 0,
-      "design": 5,
-      "display": 5.8,
-      "length": 148,
-      "width": 68,
-      "processor": 5,
-      "updates": 4,
-      "camera": 5,
-      "battery": 4,
-      "batterysize": 3000,
-      "storage": 64,
-      "memory": 4,
-      "sdslot": 1,
-      "simcards": 2,
-      "notch": 0,
-      "waterproof": "8",
-      "headphonejack": 1,
-      "totalscore": 0,
-      "types": {
-        "de": [
-          {
-            "name": "coral blue",
-            "asin": "B079SQ39RZ",
-            "price": 1,
-            "link":
-              "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
-          },
-          {
-            "name": "lilac purple",
-            "asin": "B079S5MZYH",
-            "price": 1,
-            "link":
-              "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
-          },
-          {
-            "name": "midnight black",
-            "asin": "B079SQ5VHX",
-            "price": 1,
-            "link":
-              "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
-          },
-          {
-            "name": "sunrise gold",
-            "asin": "B07D4PRJKW",
-            "price": 1,
-            "link":
-              "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
-          }
-        ],
-        "com": []
-      }
-    },
-    {
-      "name": "Galaxy S9 (256GB)",
-      "brand": "Samsung",
-      "released": "2018-03",
-      "imagelink": "71uI%2BnAzruL._SY879_",
-      "smallestPrice": 0,
-      "design": 5,
-      "display": 5.8,
-      "length": 148,
-      "width": 68,
-      "processor": 5,
-      "updates": 4,
-      "camera": 5,
-      "battery": 4,
-      "batterysize": 3000,
-      "storage": 256,
-      "memory": 4,
-      "sdslot": 1,
-      "simcards": 1,
-      "notch": 0,
-      "waterproof": "8",
-      "headphonejack": 1,
-      "totalscore": 0,
-      "types": {
-        "de": [
-          {
-            "name": "grey",
-            "asin": "B07C6351NJ",
-            "price": 1,
-            "link":
-              "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
-          },
-          {
-            "name": "midnight black",
-            "asin": "B07C5ZNN9Q",
-            "price": 1,
-            "link":
-              "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
-          }
-        ],
-        "com": []
-      }
-    },
-    {
-      "name": "Galaxy S9 Plus (64GB)",
-      "brand": "Samsung",
-      "released": "2018-03",
-      "imagelink": "71dd-elhT7L._SY879_",
-      "smallestPrice": 0,
-      "design": 5,
-      "display": 6.2,
-      "length": 158,
-      "width": 74,
-      "processor": 5,
-      "updates": 4,
-      "camera": 5,
-      "battery": 4,
-      "batterysize": 3500,
-      "storage": 64,
-      "memory": 6,
-      "sdslot": 1,
-      "simcards": 2,
-      "notch": 0,
-      "waterproof": "8",
-      "headphonejack": 1,
-      "totalscore": 0,
-      "types": {
-        "de": [
-          {
-            "name": "coral blue",
-            "asin": "B079SNGM3V",
-            "price": 1,
-            "link":
-              "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
-          },
-          {
-            "name": "lilac purple",
-            "asin": "B079SD4B68",
-            "price": 1,
-            "link":
-              "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
-          },
-          {
-            "name": "midnight black",
-            "asin": "B079SNGV9P",
-            "price": 1,
-            "link":
-              "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
-          },
-          {
-            "name": "sunrise gold",
-            "asin": "B07D4Q2L2T",
-            "price": 1,
-            "link":
-              "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
-          }
-        ],
-        "com": []
-      }
-    },
-    {
-      "name": "Galaxy S9 Plus (256GB)",
-      "brand": "Samsung",
-      "released": "2018-03",
-      "imagelink": "71dd-elhT7L._SY879_",
-      "smallestPrice": 0,
-      "design": 5,
-      "display": 6.2,
-      "length": 158,
-      "width": 74,
-      "processor": 5,
-      "updates": 4,
-      "camera": 5,
-      "battery": 4,
-      "batterysize": 3500,
-      "storage": 256,
-      "memory": 6,
-      "sdslot": 1,
-      "simcards": 1,
-      "notch": 0,
-      "waterproof": "8",
-      "headphonejack": 1,
-      "totalscore": 0,
-      "types": {
-        "de": [
-          {
-            "name": "grey",
-            "asin": "B07C64N3WD",
-            "price": 1,
-            "link":
-              "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
-          },
-          {
-            "name": "midnight black",
-            "asin": "B07C61XVDQ",
-            "price": 1,
-            "link":
-              "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
-          }
-        ],
-        "com": []
-      }
-    },
-    {
-      "name": "Galaxy S8 Note",
-      "brand": "Samsung",
-      "released": "2017-08",
-      "imagelink": "PQYBIud",
-      "smallestPrice": 0,
-      "design": 5,
-      "display": 6.3,
-      "length": 163,
-      "width": 75,
-      "processor": 5,
-      "updates": 4,
-      "camera": 5,
-      "battery": 4,
-      "batterysize": 3300,
-      "storage": 64,
-      "memory": 6,
-      "sdslot": 1,
-      "simcards": 1,
-      "notch": 0,
-      "waterproof": "8",
-      "headphonejack": 1,
-      "totalscore": 0,
-      "types": {
-        "de": [
-          {
-            "name": "deepsea blue",
-            "asin": "B076WWRQXX",
-            "price": 1,
-            "link":
-              "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
-          },
-          {
-            "name": "maple gold",
-            "asin": "B074PBD4V3",
-            "price": 1,
-            "link":
-              "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
-          },
-          {
-            "name": "maple gold",
-            "asin": "B074PBH2P4",
-            "price": 1,
-            "link":
-              "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
-          }
-        ],
-        "com": []
-      }
-    },
-    {
-      "name": "Galaxy S8",
-      "brand": "Samsung",
-      "released": "2017-04",
-      "imagelink": "6gY3U53",
-      "smallestPrice": 0,
-      "design": 5,
-      "display": 5.8,
-      "length": 148,
-      "width": 68,
-      "processor": 5,
-      "updates": 3,
-      "camera": 4,
-      "battery": 4,
-      "batterysize": 3000,
-      "storage": 64,
-      "memory": 4,
-      "sdslot": 1,
-      "simcards": 1,
-      "notch": 0,
-      "waterproof": "8",
-      "headphonejack": 1,
-      "totalscore": 0,
-      "types": {
-        "de": [
-          {
-            "name": "midnight black",
-            "asin": "B06XJ49G5B",
-            "price": 1,
-            "link":
-              "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
-          },
-          {
-            "name": "arctiv silver",
-            "asin": "B06XJ65K58",
-            "price": 1,
-            "link":
-              "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
-          },
-          {
-            "name": "orchid grey",
-            "asin": "B06XHRDF78",
-            "price": 1,
-            "link":
-              "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
-          },
-          {
-            "name": "rosa",
-            "asin": "B076X8K1ND",
-            "price": 1,
-            "link":
-              "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
-          }
-        ],
-        "com": []
-      }
+[
+  {
+    "name": "6.1",
+    "brand": "Nokia",
+    "released": "2018-04",
+    "imagelink": "TheNewNokia6_hardware-phone",
+    "smallestPrice": 0,
+    "design": 4,
+    "display": 5.5,
+    "length": 149,
+    "width": 76,
+    "processor": 3,
+    "updates": 5,
+    "camera": 3,
+    "battery": 3,
+    "batterysize": 3000,
+    "storage": 32,
+    "memory": 3,
+    "sdslot": 1,
+    "simcards": 2,
+    "notch": 0,
+    "waterproof": "",
+    "headphonejack": 1,
+    "totalscore": 0,
+    "types": {
+      "de": [
+        {
+          "name": "white/iron",
+          "asin": "B07B6BBC35",
+          "price": 1,
+          "link":
+            "https://www.amazon.de/Nokia-Smartphone-interner-Speicher-Dual-Sim-Wei%C3%9F-Kupfer/dp/B07B6BBC35?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B6BBC35"
+        },
+        {
+          "name": "black/copper",
+          "asin": "B07B6CMJ7K",
+          "price": 1,
+          "link":
+            "https://www.amazon.de/Nokia-Smartphone-interner-Speicher-Dual-SIM-Schwarz-Kupfer/dp/B07B6CMJ7K?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B6CMJ7K"
+        }
+      ],
+      "com": []
     }
-  ]
-}
+  },
+  {
+    "name": "7 plus",
+    "brand": "Nokia",
+    "released": "2018-03",
+    "imagelink": "Nokia7plus_ROW_hardware-phone",
+    "smallestPrice": 0,
+    "design": 4,
+    "display": 6,
+    "length": 158,
+    "width": 76,
+    "processor": 4,
+    "updates": 5,
+    "camera": 4,
+    "battery": 5,
+    "batterysize": 3800,
+    "storage": 64,
+    "memory": 4,
+    "sdslot": 1,
+    "simcards": 2,
+    "notch": 0,
+    "waterproof": "0",
+    "headphonejack": 1,
+    "totalscore": 0,
+    "types": {
+      "de": [
+        {
+          "name": "white/iron",
+          "asin": "B07B68D9KP",
+          "price": 1,
+          "link":
+            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+        },
+        {
+          "name": "black/copper",
+          "asin": "B07B68N35M",
+          "price": 1,
+          "link":
+            "https://www.amazon.de/Nokia-Plus-Handy-schwarz-kupfer/dp/B07B68N35M?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68N35M"
+        }
+      ],
+      "com": []
+    }
+  },
+  {
+    "name": "8",
+    "brand": "Nokia",
+    "released": "2017-10",
+    "imagelink": "nokia8normal",
+    "smallestPrice": 0,
+    "design": 4,
+    "display": 5.3,
+    "length": 152,
+    "width": 74,
+    "processor": 5,
+    "updates": 4,
+    "camera": 4,
+    "battery": 3,
+    "batterysize": 3090,
+    "storage": 64,
+    "memory": 4,
+    "sdslot": 1,
+    "simcards": 1,
+    "notch": 0,
+    "waterproof": "4",
+    "headphonejack": 1,
+    "totalscore": 0,
+    "types": {
+      "de": [
+        {
+          "name": "glossy blue",
+          "asin": "B0756RCPBZ",
+          "price": 1,
+          "link":
+            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+        },
+        {
+          "name": "copper",
+          "asin": "B0756RGSVH",
+          "price": 1,
+          "link":
+            "https://www.amazon.de/Nokia-Plus-Handy-schwarz-kupfer/dp/B07B68N35M?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68N35M"
+        },
+        {
+          "name": "stainless steel",
+          "asin": "B074SRNB6S",
+          "price": 1,
+          "link":
+            "https://www.amazon.de/Nokia-Plus-Handy-schwarz-kupfer/dp/B07B68N35M?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68N35M"
+        },
+        {
+          "name": "tempered blue",
+          "asin": "B074SJJBY2",
+          "price": 1,
+          "link":
+            "https://www.amazon.de/Nokia-Plus-Handy-schwarz-kupfer/dp/B07B68N35M?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68N35M"
+        },
+        {
+          "name": "tempered",
+          "asin": "B0759NLL2T",
+          "price": 1,
+          "link":
+            "https://www.amazon.de/Nokia-Plus-Handy-schwarz-kupfer/dp/B07B68N35M?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68N35M"
+        }
+      ],
+      "com": []
+    }
+  },
+  {
+    "name": "8 Sirocco",
+    "brand": "Nokia",
+    "released": "2018-04",
+    "imagelink": "Nokia8Sirocco_ROW__power-phone",
+    "smallestPrice": 0,
+    "design": 5,
+    "display": 5.5,
+    "length": 141,
+    "width": 73,
+    "processor": 5,
+    "updates": 5,
+    "camera": 4,
+    "battery": 4,
+    "batterysize": 3260,
+    "storage": 128,
+    "memory": 6,
+    "sdslot": 1,
+    "simcards": 1,
+    "notch": 0,
+    "waterproof": "7",
+    "headphonejack": 0,
+    "totalscore": 0,
+    "types": {
+      "de": [
+        {
+          "name": "black",
+          "asin": "B07B69SLMB",
+          "price": 1,
+          "link":
+            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+        },
+        {
+          "name": "black",
+          "asin": "B07B69SLMB",
+          "price": 1,
+          "link":
+            "https://www.amazon.de/Nokia-Plus-Handy-schwarz-kupfer/dp/B07B68N35M?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68N35M"
+        }
+      ],
+      "com": []
+    }
+  },
+  {
+    "name": "Redmi Note 5 (32GB)",
+    "brand": "Xiamoi",
+    "released": "2018-02",
+    "imagelink": "redmiNote5",
+    "smallestPrice": 0,
+    "design": 4,
+    "display": 6,
+    "length": 159,
+    "width": 76,
+    "processor": 3,
+    "updates": 3,
+    "camera": 3,
+    "battery": 5,
+    "batterysize": 4000,
+    "storage": 32,
+    "memory": 3,
+    "sdslot": 1,
+    "simcards": 2,
+    "notch": 0,
+    "waterproof": "0",
+    "headphonejack": 1,
+    "totalscore": 0,
+    "types": {
+      "de": [
+        {
+          "name": "black",
+          "asin": "B07CZPXGVJ",
+          "price": 1,
+          "link":
+            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+        },
+        {
+          "name": "gold",
+          "asin": "B07CRGJW16",
+          "price": 1,
+          "link":
+            "https://www.amazon.de/Nokia-Plus-Handy-schwarz-kupfer/dp/B07B68N35M?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68N35M"
+        }
+      ],
+      "com": []
+    }
+  },
+  {
+    "name": "Redmi Note 5 (64GB)",
+    "brand": "Xiamoi",
+    "released": "2018-02",
+    "imagelink": "redmiNote5",
+    "smallestPrice": 0,
+    "design": 4,
+    "display": 6,
+    "length": 159,
+    "width": 76,
+    "processor": 3,
+    "updates": 3,
+    "camera": 3,
+    "battery": 5,
+    "batterysize": 4000,
+    "storage": 64,
+    "memory": 4,
+    "sdslot": 1,
+    "simcards": 2,
+    "notch": 0,
+    "waterproof": "0",
+    "headphonejack": 1,
+    "totalscore": 0,
+    "types": {
+      "de": [
+        {
+          "name": "black",
+          "asin": "B07CZS8W5Y",
+          "price": 1,
+          "link":
+            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+        },
+        {
+          "name": "gold",
+          "asin": "B07CZS7T17",
+          "price": 1,
+          "link":
+            "https://www.amazon.de/Nokia-Plus-Handy-schwarz-kupfer/dp/B07B68N35M?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68N35M"
+        },
+        {
+          "name": "blue",
+          "asin": "B07CZS9QDB",
+          "price": 1,
+          "link":
+            "https://www.amazon.de/Nokia-Plus-Handy-schwarz-kupfer/dp/B07B68N35M?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68N35M"
+        }
+      ],
+      "com": []
+    }
+  },
+  {
+    "name": "Mi A1",
+    "brand": "Xiamoi",
+    "released": "2017-09",
+    "imagelink": "y74WpwR",
+    "smallestPrice": 0,
+    "design": 4,
+    "display": 5.5,
+    "length": 155,
+    "width": 76,
+    "processor": 3,
+    "updates": 5,
+    "camera": 3,
+    "battery": 3,
+    "batterysize": 3080,
+    "storage": 64,
+    "memory": 4,
+    "sdslot": 1,
+    "simcards": 2,
+    "notch": 0,
+    "waterproof": "0",
+    "headphonejack": 1,
+    "totalscore": 0,
+    "types": {
+      "de": [
+        {
+          "name": "gold",
+          "asin": "B076FTDYFY",
+          "price": 1,
+          "link":
+            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+        },
+        {
+          "name": "gold",
+          "asin": "B0787LD1VS",
+          "price": 1,
+          "link":
+            "https://www.amazon.de/Nokia-Plus-Handy-schwarz-kupfer/dp/B07B68N35M?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68N35M"
+        },
+        {
+          "name": "rose gold",
+          "asin": "B075V2TCLH",
+          "price": 1,
+          "link":
+            "https://www.amazon.de/Nokia-Plus-Handy-schwarz-kupfer/dp/B07B68N35M?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68N35M"
+        },
+        {
+          "name": "black",
+          "asin": "B076493W9X",
+          "price": 1,
+          "link":
+            "https://www.amazon.de/Nokia-Plus-Handy-schwarz-kupfer/dp/B07B68N35M?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68N35M"
+        }
+      ],
+      "com": []
+    }
+  },
+  {
+    "name": "Mi MIX 2",
+    "brand": "Xiamoi",
+    "released": "2017-09",
+    "imagelink": "7EIAsGt",
+    "smallestPrice": 0,
+    "design": 5,
+    "display": 6,
+    "length": 152,
+    "width": 76,
+    "processor": 5,
+    "updates": 2,
+    "camera": 4,
+    "battery": 4,
+    "batterysize": 3400,
+    "storage": 64,
+    "memory": 6,
+    "sdslot": 0,
+    "simcards": 2,
+    "notch": 0,
+    "waterproof": "0",
+    "headphonejack": 0,
+    "totalscore": 0,
+    "types": {
+      "de": [
+        {
+          "name": "black",
+          "asin": "B0784RQR88",
+          "price": 1,
+          "link":
+            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+        },
+        {
+          "name": "black",
+          "asin": "B076VLN14J",
+          "price": 1,
+          "link":
+            "https://www.amazon.de/Nokia-Plus-Handy-schwarz-kupfer/dp/B07B68N35M?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68N35M"
+        },
+        {
+          "name": "white",
+          "asin": "B0792TXZ46",
+          "price": 1,
+          "link":
+            "https://www.amazon.de/Nokia-Plus-Handy-schwarz-kupfer/dp/B07B68N35M?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68N35M"
+        }
+      ],
+      "com": []
+    }
+  },
+  {
+    "name": "Mi MIX 2s (64GB)",
+    "brand": "Xiamoi",
+    "released": "2018-04",
+    "imagelink": "7EIAsGt",
+    "smallestPrice": 0,
+    "design": 5,
+    "display": 6,
+    "length": 152,
+    "width": 76,
+    "processor": 5,
+    "updates": 3,
+    "camera": 5,
+    "battery": 4,
+    "batterysize": 3400,
+    "storage": 64,
+    "memory": 6,
+    "sdslot": 0,
+    "simcards": 2,
+    "notch": 0,
+    "waterproof": "0",
+    "headphonejack": 0,
+    "totalscore": 0,
+    "types": {
+      "de": [
+        {
+          "name": "black",
+          "asin": "B07CZFRXP1",
+          "price": 1,
+          "link":
+            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+        },
+        {
+          "name": "white",
+          "asin": "B07D4NBDM9",
+          "price": 1,
+          "link":
+            "https://www.amazon.de/Nokia-Plus-Handy-schwarz-kupfer/dp/B07B68N35M?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68N35M"
+        }
+      ],
+      "com": []
+    }
+  },
+  {
+    "name": "Mi MIX 2s (128GB)",
+    "brand": "Xiamoi",
+    "released": "2018-04",
+    "imagelink": "7EIAsGt",
+    "smallestPrice": 0,
+    "design": 5,
+    "display": 6,
+    "length": 152,
+    "width": 76,
+    "processor": 5,
+    "updates": 3,
+    "camera": 5,
+    "battery": 4,
+    "batterysize": 3400,
+    "storage": 64,
+    "memory": 6,
+    "sdslot": 0,
+    "simcards": 2,
+    "notch": 0,
+    "waterproof": "0",
+    "headphonejack": 0,
+    "totalscore": 0,
+    "types": {
+      "de": [
+        {
+          "name": "black",
+          "asin": "B07D4QL67S",
+          "price": 1,
+          "link":
+            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+        }
+      ],
+      "com": []
+    }
+  },
+  {
+    "name": "U11 life",
+    "brand": "HTC",
+    "released": "2017-12",
+    "imagelink": "61iBTjkp3yL._SY741_",
+    "smallestPrice": 0,
+    "design": 4,
+    "display": 5.2,
+    "length": 149,
+    "width": 73,
+    "processor": 3,
+    "updates": 5,
+    "camera": 3,
+    "battery": 3,
+    "batterysize": 2600,
+    "storage": 32,
+    "memory": 3,
+    "sdslot": 2,
+    "simcards": 2,
+    "notch": 0,
+    "waterproof": "7",
+    "headphonejack": 0,
+    "totalscore": 0,
+    "types": {
+      "de": [
+        {
+          "name": "brilliant black",
+          "asin": "B076HWW5HN",
+          "price": 1,
+          "link":
+            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+        },
+        {
+          "name": "sapphire blue",
+          "asin": "B076HSNZ8H",
+          "price": 1,
+          "link":
+            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+        }
+      ],
+      "com": []
+    }
+  },
+  {
+    "name": "U11 Plus",
+    "brand": "HTC",
+    "released": "2017-12",
+    "imagelink": "51XltEAiihL._SY879_",
+    "smallestPrice": 0,
+    "design": 5,
+    "display": 6,
+    "length": 159,
+    "width": 75,
+    "processor": 5,
+    "updates": 4,
+    "camera": 5,
+    "battery": 5,
+    "batterysize": 3930,
+    "storage": 128,
+    "memory": 6,
+    "sdslot": 1,
+    "simcards": 2,
+    "notch": 0,
+    "waterproof": "8",
+    "headphonejack": 0,
+    "totalscore": 0,
+    "types": {
+      "de": [
+        {
+          "name": "amazing silver",
+          "asin": "B077PJXZFK",
+          "price": 1,
+          "link":
+            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+        },
+        {
+          "name": "ceramic black",
+          "asin": "B077PMJM3M",
+          "price": 1,
+          "link":
+            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+        },
+        {
+          "name": "solar red",
+          "asin": "B079RCFMTB",
+          "price": 1,
+          "link":
+            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+        },
+        {
+          "name": "translucent oil",
+          "asin": "B077PG7JD3",
+          "price": 1,
+          "link":
+            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+        }
+      ],
+      "com": []
+    }
+  },
+  {
+    "name": "U12 Plus",
+    "brand": "HTC",
+    "released": "2018-06",
+    "imagelink": "htcu12+",
+    "smallestPrice": 0,
+    "design": 5,
+    "display": 6,
+    "length": 157,
+    "width": 74,
+    "processor": 5,
+    "updates": 4,
+    "camera": 5,
+    "battery": 4,
+    "batterysize": 3500,
+    "storage": 64,
+    "memory": 6,
+    "sdslot": 1,
+    "simcards": 2,
+    "notch": 0,
+    "waterproof": "8",
+    "headphonejack": 0,
+    "totalscore": 0,
+    "types": {
+      "de": [
+        {
+          "name": "ceramic black",
+          "asin": "B07D4Q89NG",
+          "price": 1,
+          "link":
+            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+        },
+        {
+          "name": "flame red",
+          "asin": "B07D4RG7QQ",
+          "price": 1,
+          "link":
+            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+        },
+        {
+          "name": "translucent blue",
+          "asin": "B07D4RN2WQ",
+          "price": 1,
+          "link":
+            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+        }
+      ],
+      "com": []
+    }
+  },
+  {
+    "name": "Pixel 2",
+    "brand": "Google",
+    "released": "2017-10",
+    "imagelink": "81Ea5V2MehL._SY879_",
+    "smallestPrice": 0,
+    "design": 4,
+    "display": 5,
+    "length": 146,
+    "width": 70,
+    "processor": 5,
+    "updates": 5,
+    "camera": 5,
+    "battery": 3,
+    "batterysize": 2700,
+    "storage": 64,
+    "memory": 4,
+    "sdslot": 0,
+    "simcards": 1,
+    "notch": 0,
+    "waterproof": "7",
+    "headphonejack": 0,
+    "totalscore": 0,
+    "types": {
+      "de": [
+        {
+          "name": "clearly white",
+          "asin": "B076KLKZ23",
+          "price": 1,
+          "link":
+            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+        },
+        {
+          "name": "just black",
+          "asin": "B076KSTG53",
+          "price": 1,
+          "link":
+            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+        },
+        {
+          "name": "just black",
+          "asin": "B076L5FQ23",
+          "price": 1,
+          "link":
+            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+        },
+        {
+          "name": "kinda blue",
+          "asin": "B076KM3PYP",
+          "price": 1,
+          "link":
+            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+        }
+      ],
+      "com": []
+    }
+  },
+  {
+    "name": "Pixel 2 XL",
+    "brand": "Google",
+    "released": "2017-10",
+    "imagelink": "pixel2xl",
+    "smallestPrice": 0,
+    "design": 4,
+    "display": 6,
+    "length": 158,
+    "width": 77,
+    "processor": 5,
+    "updates": 5,
+    "camera": 5,
+    "battery": 4,
+    "batterysize": 3520,
+    "storage": 64,
+    "memory": 4,
+    "sdslot": 0,
+    "simcards": 1,
+    "notch": 0,
+    "waterproof": "7",
+    "headphonejack": 0,
+    "totalscore": 0,
+    "types": {
+      "de": [
+        {
+          "name": "just black",
+          "asin": "B077H28GFX",
+          "price": 1,
+          "link":
+            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+        },
+        {
+          "name": "just black",
+          "asin": "B076KT8HT2",
+          "price": 1,
+          "link":
+            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+        },
+        {
+          "name": "black/white",
+          "asin": "B077WSVG4Z",
+          "price": 1,
+          "link":
+            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+        },
+        {
+          "name": "black/white",
+          "asin": "B076L5ZZK1",
+          "price": 1,
+          "link":
+            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+        }
+      ],
+      "com": []
+    }
+  },
+  {
+    "name": "5t (64GB)",
+    "brand": "OnePlus",
+    "released": "2017-11",
+    "imagelink": "qPbTGxu",
+    "smallestPrice": 0,
+    "design": 5,
+    "display": 6,
+    "length": 156,
+    "width": 75,
+    "processor": 5,
+    "updates": 4,
+    "camera": 4,
+    "battery": 4,
+    "batterysize": 3300,
+    "storage": 64,
+    "memory": 6,
+    "sdslot": 0,
+    "simcards": 2,
+    "notch": 0,
+    "waterproof": "0",
+    "headphonejack": 1,
+    "totalscore": 0,
+    "types": {
+      "de": [
+        {
+          "name": "midnight black",
+          "asin": "B078WSQ4SC",
+          "price": 1,
+          "link":
+            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+        }
+      ],
+      "com": []
+    }
+  },
+  {
+    "name": "5t (128GB)",
+    "brand": "OnePlus",
+    "released": "2017-11",
+    "imagelink": "qPbTGxu",
+    "smallestPrice": 0,
+    "design": 5,
+    "display": 6,
+    "length": 156,
+    "width": 75,
+    "processor": 5,
+    "updates": 4,
+    "camera": 4,
+    "battery": 4,
+    "batterysize": 3300,
+    "storage": 128,
+    "memory": 8,
+    "sdslot": 0,
+    "simcards": 2,
+    "notch": 0,
+    "waterproof": "0",
+    "headphonejack": 1,
+    "totalscore": 0,
+    "types": {
+      "de": [
+        {
+          "name": "midnight black",
+          "asin": "B078WSFXPW",
+          "price": 1,
+          "link":
+            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+        },
+        {
+          "name": "star wars white",
+          "asin": "B0789MN114",
+          "price": 1,
+          "link":
+            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+        }
+      ],
+      "com": []
+    }
+  },
+  {
+    "name": "6 (64GB)",
+    "brand": "OnePlus",
+    "released": "2018-05",
+    "imagelink": "oneplus6",
+    "smallestPrice": 0,
+    "design": 5,
+    "display": 6.3,
+    "length": 156,
+    "width": 75,
+    "processor": 5,
+    "updates": 4,
+    "camera": 5,
+    "battery": 4,
+    "batterysize": 3300,
+    "storage": 64,
+    "memory": 6,
+    "sdslot": 0,
+    "simcards": 2,
+    "notch": 1,
+    "waterproof": "0",
+    "headphonejack": 1,
+    "totalscore": 0,
+    "types": {
+      "de": [
+        {
+          "name": "mirror black",
+          "asin": "B07CHQHFDZ",
+          "price": 1,
+          "link":
+            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+        }
+      ],
+      "com": []
+    }
+  },
+  {
+    "name": "6 (128GB)",
+    "brand": "OnePlus",
+    "released": "2018-05",
+    "imagelink": "oneplus6",
+    "smallestPrice": 0,
+    "design": 5,
+    "display": 6,
+    "length": 156,
+    "width": 75,
+    "processor": 5,
+    "updates": 4,
+    "camera": 4,
+    "battery": 4,
+    "batterysize": 3300,
+    "storage": 128,
+    "memory": 8,
+    "sdslot": 0,
+    "simcards": 2,
+    "notch": 1,
+    "waterproof": "0",
+    "headphonejack": 1,
+    "totalscore": 0,
+    "types": {
+      "de": [
+        {
+          "name": "mirror black",
+          "asin": "B07CK7KB95",
+          "price": 1,
+          "link":
+            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+        },
+        {
+          "name": "midnight black",
+          "asin": "B07CHL6XN6",
+          "price": 1,
+          "link":
+            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+        },
+        {
+          "name": "silk white",
+          "asin": "B07D5LXXG3",
+          "price": 1,
+          "link":
+            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+        }
+      ],
+      "com": []
+    }
+  },
+  {
+    "name": "Honor 7X",
+    "brand": "Huawei",
+    "released": "2017-12",
+    "imagelink": "9chGwId",
+    "smallestPrice": 0,
+    "design": 4,
+    "display": 5.9,
+    "length": 157,
+    "width": 75,
+    "processor": 3,
+    "updates": 4,
+    "camera": 3,
+    "battery": 4,
+    "batterysize": 3340,
+    "storage": 64,
+    "memory": 4,
+    "sdslot": 1,
+    "simcards": 2,
+    "notch": 0,
+    "waterproof": "0",
+    "headphonejack": 1,
+    "totalscore": 0,
+    "types": {
+      "de": [
+        {
+          "name": "grey",
+          "asin": "B0779STLGF",
+          "price": 1,
+          "link":
+            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+        },
+        {
+          "name": "midnight black",
+          "asin": "B0779SG4ZN",
+          "price": 1,
+          "link":
+            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+        },
+        {
+          "name": "phoenix red",
+          "asin": "B079SDRNJM",
+          "price": 1,
+          "link":
+            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+        },
+        {
+          "name": "sapphire blue",
+          "asin": "B0779RWX11",
+          "price": 1,
+          "link":
+            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+        }
+      ],
+      "com": []
+    }
+  },
+  {
+    "name": "Honor 10",
+    "brand": "Huawei",
+    "released": "2018-05",
+    "imagelink": "honor10",
+    "smallestPrice": 0,
+    "design": 4,
+    "display": 5.8,
+    "length": 150,
+    "width": 71,
+    "processor": 5,
+    "updates": 4,
+    "camera": 4,
+    "battery": 4,
+    "batterysize": 3400,
+    "storage": 64,
+    "memory": 4,
+    "sdslot": 0,
+    "simcards": 2,
+    "notch": 1,
+    "waterproof": "0",
+    "headphonejack": 1,
+    "totalscore": 0,
+    "types": {
+      "de": [
+        {
+          "name": "midnight black",
+          "asin": "B07CMSTFKQ",
+          "price": 1,
+          "link":
+            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+        },
+        {
+          "name": "glacier grey",
+          "asin": "B07CN24WB3",
+          "price": 1,
+          "link":
+            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+        },
+        {
+          "name": "phantom blue",
+          "asin": "B07CMXSHGH",
+          "price": 1,
+          "link":
+            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+        },
+        {
+          "name": "phantom green",
+          "asin": "B07D83JHPB",
+          "price": 1,
+          "link":
+            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+        }
+      ],
+      "com": []
+    }
+  },
+  {
+    "name": "Mate 10 Pro",
+    "brand": "Huawei",
+    "released": "2017-10",
+    "imagelink": "huawei-mate10-pro",
+    "smallestPrice": 0,
+    "design": 4,
+    "display": 6,
+    "length": 157,
+    "width": 75,
+    "processor": 3,
+    "updates": 3,
+    "camera": 4,
+    "battery": 5,
+    "batterysize": 4000,
+    "storage": 128,
+    "memory": 6,
+    "sdslot": 0,
+    "simcards": 2,
+    "notch": 0,
+    "waterproof": "7",
+    "headphonejack": 0,
+    "totalscore": 0,
+    "types": {
+      "de": [
+        {
+          "name": "midnight blue",
+          "asin": "B076CHQGV9",
+          "price": 1,
+          "link":
+            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+        },
+        {
+          "name": "titanium grey",
+          "asin": "B076CNDP4J",
+          "price": 1,
+          "link":
+            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+        }
+      ],
+      "com": []
+    }
+  },
+  {
+    "name": "P20",
+    "brand": "Huawei",
+    "released": "2018-04",
+    "imagelink": "vqPQcia",
+    "smallestPrice": 0,
+    "design": 5,
+    "display": 5.8,
+    "length": 149,
+    "width": 71,
+    "processor": 4,
+    "updates": 4,
+    "camera": 5,
+    "battery": 4,
+    "batterysize": 3400,
+    "storage": 128,
+    "memory": 4,
+    "sdslot": 0,
+    "simcards": 2,
+    "notch": 1,
+    "waterproof": "4",
+    "headphonejack": 0,
+    "totalscore": 0,
+    "types": {
+      "de": [
+        {
+          "name": "black",
+          "asin": "B07BHD7MHL",
+          "price": 1,
+          "link":
+            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+        },
+        {
+          "name": "blue",
+          "asin": "B07BHDC33K",
+          "price": 1,
+          "link":
+            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+        }
+      ],
+      "com": []
+    }
+  },
+  {
+    "name": "P20 lite",
+    "brand": "Huawei",
+    "released": "2018-03",
+    "imagelink": "5wTSOmp",
+    "smallestPrice": 0,
+    "design": 4,
+    "display": 5.8,
+    "length": 149,
+    "width": 71,
+    "processor": 4,
+    "updates": 3,
+    "camera": 3,
+    "battery": 4,
+    "batterysize": 3000,
+    "storage": 64,
+    "memory": 4,
+    "sdslot": 1,
+    "simcards": 2,
+    "notch": 1,
+    "waterproof": "0",
+    "headphonejack": 1,
+    "totalscore": 0,
+    "types": {
+      "de": [
+        {
+          "name": "black",
+          "asin": "B07BHDC9V6",
+          "price": 1,
+          "link":
+            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+        },
+        {
+          "name": "pink",
+          "asin": "B07BHDQPD9",
+          "price": 1,
+          "link":
+            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+        },
+        {
+          "name": "blue",
+          "asin": "B07BHDDDHB",
+          "price": 1,
+          "link":
+            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+        },
+        {
+          "name": "gold",
+          "asin": "B07BLYRC9M",
+          "price": 1,
+          "link":
+            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+        }
+      ],
+      "com": []
+    }
+  },
+  {
+    "name": "P20 Pro",
+    "brand": "Huawei",
+    "released": "2018-04",
+    "imagelink": "Vc0thgM",
+    "smallestPrice": 0,
+    "design": 5,
+    "display": 6.1,
+    "length": 155,
+    "width": 74,
+    "processor": 5,
+    "updates": 4,
+    "camera": 5,
+    "battery": 5,
+    "batterysize": 4000,
+    "storage": 128,
+    "memory": 6,
+    "sdslot": 1,
+    "simcards": 2,
+    "notch": 1,
+    "waterproof": "7",
+    "headphonejack": 1,
+    "totalscore": 0,
+    "types": {
+      "de": [
+        {
+          "name": "blue",
+          "asin": "B07BHD3L23",
+          "price": 1,
+          "link":
+            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+        },
+        {
+          "name": "black",
+          "asin": "B07BHDMHR1",
+          "price": 1,
+          "link":
+            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+        },
+        {
+          "name": "twilight",
+          "asin": "B07BHDDDHJ",
+          "price": 1,
+          "link":
+            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+        }
+      ],
+      "com": []
+    }
+  },
+  {
+    "name": "Phone",
+    "brand": "Essential",
+    "released": "2017-08",
+    "imagelink": "OGr1dfB",
+    "smallestPrice": 0,
+    "design": 5,
+    "display": 5.7,
+    "length": 142,
+    "width": 71,
+    "processor": 5,
+    "updates": 5,
+    "camera": 5,
+    "battery": 4,
+    "batterysize": 3040,
+    "storage": 128,
+    "memory": 4,
+    "sdslot": 0,
+    "simcards": 1,
+    "notch": 1,
+    "waterproof": "0",
+    "headphonejack": 0,
+    "totalscore": 0,
+    "types": {
+      "de": [
+        {
+          "name": "black moon",
+          "asin": "B074BWGRKH",
+          "price": 1,
+          "link":
+            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+        },
+        {
+          "name": "halo grey",
+          "asin": "B078SQ7GWK",
+          "price": 1,
+          "link":
+            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+        },
+        {
+          "name": "pure white",
+          "asin": "B0748TWQHK",
+          "price": 1,
+          "link":
+            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+        }
+      ],
+      "com": []
+    }
+  },
+  {
+    "name": "G6",
+    "brand": "LG",
+    "released": "2017-03",
+    "imagelink": "814YBWa7gGL._SY879_",
+    "smallestPrice": 0,
+    "design": 3,
+    "display": 5.7,
+    "length": 149,
+    "width": 72,
+    "processor": 4,
+    "updates": 4,
+    "camera": 4,
+    "battery": 4,
+    "batterysize": 3300,
+    "storage": 32,
+    "memory": 4,
+    "sdslot": 1,
+    "simcards": 1,
+    "notch": 0,
+    "waterproof": "8",
+    "headphonejack": 1,
+    "totalscore": 0,
+    "types": {
+      "de": [
+        {
+          "name": "black",
+          "asin": "B06XFRBM26",
+          "price": 1,
+          "link":
+            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+        },
+        {
+          "name": "blue",
+          "asin": "B077KDDQLV",
+          "price": 1,
+          "link":
+            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+        },
+        {
+          "name": "gold",
+          "asin": "B075SJ6LL4",
+          "price": 1,
+          "link":
+            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+        },
+        {
+          "name": "platinum",
+          "asin": "B06XFGMDKN",
+          "price": 1,
+          "link":
+            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+        },
+        {
+          "name": "white",
+          "asin": "B06XFS8F1Z",
+          "price": 1,
+          "link":
+            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+        }
+      ],
+      "com": []
+    }
+  },
+  {
+    "name": "G7 ThinQ",
+    "brand": "LG",
+    "released": "2018-05",
+    "imagelink": "g7thinQ",
+    "smallestPrice": 0,
+    "design": 5,
+    "display": 6.1,
+    "length": 153,
+    "width": 72,
+    "processor": 5,
+    "updates": 4,
+    "camera": 4,
+    "battery": 3,
+    "batterysize": 3000,
+    "storage": 64,
+    "memory": 4,
+    "sdslot": 1,
+    "simcards": 1,
+    "notch": 1,
+    "waterproof": "8",
+    "headphonejack": 1,
+    "totalscore": 0,
+    "types": {
+      "de": [
+        {
+          "name": "platinum grey",
+          "asin": "B07D7NXYT6",
+          "price": 1,
+          "link":
+            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+        },
+        {
+          "name": "black",
+          "asin": "B07D69KKBZ",
+          "price": 1,
+          "link":
+            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+        }
+      ],
+      "com": []
+    }
+  },
+  {
+    "name": "V30",
+    "brand": "LG",
+    "released": "2017-08",
+    "imagelink": "715GbwmYJjL._SY879_",
+    "smallestPrice": 0,
+    "design": 4,
+    "display": 6,
+    "length": 152,
+    "width": 75,
+    "processor": 5,
+    "updates": 4,
+    "camera": 4,
+    "battery": 4,
+    "batterysize": 3300,
+    "storage": 64,
+    "memory": 4,
+    "sdslot": 2,
+    "simcards": 2,
+    "notch": 0,
+    "waterproof": "8",
+    "headphonejack": 1,
+    "totalscore": 0,
+    "types": {
+      "de": [
+        {
+          "name": "cloud silver",
+          "asin": "B075GYD539",
+          "price": 1,
+          "link":
+            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+        },
+        {
+          "name": "moroccan blue",
+          "asin": "B075GTJYSV",
+          "price": 1,
+          "link":
+            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+        }
+      ],
+      "com": []
+    }
+  },
+  {
+    "name": "Xperia XZ2",
+    "brand": "Sony",
+    "released": "2018-04",
+    "imagelink": "lis9AWg",
+    "smallestPrice": 0,
+    "design": 3,
+    "display": 5.7,
+    "length": 153,
+    "width": 72,
+    "processor": 5,
+    "updates": 4,
+    "camera": 4,
+    "battery": 4,
+    "batterysize": 3180,
+    "storage": 64,
+    "memory": 4,
+    "sdslot": 1,
+    "simcards": 2,
+    "notch": 0,
+    "waterproof": "8",
+    "headphonejack": 0,
+    "totalscore": 0,
+    "types": {
+      "de": [
+        {
+          "name": "liquid black",
+          "asin": "B079YSBTY7",
+          "price": 1,
+          "link":
+            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+        },
+        {
+          "name": "ash pink",
+          "asin": "B079Z1G1DW",
+          "price": 1,
+          "link":
+            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+        },
+        {
+          "name": "deep green",
+          "asin": "B079YS5Q9K",
+          "price": 1,
+          "link":
+            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+        },
+        {
+          "name": "liquid silver",
+          "asin": "B079YS8SDR",
+          "price": 1,
+          "link":
+            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+        }
+      ],
+      "com": []
+    }
+  },
+  {
+    "name": "Xperia XZ2 Compact",
+    "brand": "Sony",
+    "released": "2018-04",
+    "imagelink": "ExuzR25",
+    "smallestPrice": 0,
+    "design": 3,
+    "display": 5,
+    "length": 135,
+    "width": 65,
+    "processor": 5,
+    "updates": 4,
+    "camera": 4,
+    "battery": 3,
+    "batterysize": 2870,
+    "storage": 64,
+    "memory": 4,
+    "sdslot": 1,
+    "simcards": 2,
+    "notch": 0,
+    "waterproof": "8",
+    "headphonejack": 0,
+    "totalscore": 0,
+    "types": {
+      "de": [
+        {
+          "name": "black",
+          "asin": "B079YZ7ZS4",
+          "price": 1,
+          "link":
+            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+        },
+        {
+          "name": "coral pink",
+          "asin": "B079YRCCK6",
+          "price": 1,
+          "link":
+            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+        },
+        {
+          "name": "moss green",
+          "asin": "B079YTJ1S4",
+          "price": 1,
+          "link":
+            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+        },
+        {
+          "name": "white silver",
+          "asin": "B079YRR6QR",
+          "price": 1,
+          "link":
+            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+        }
+      ],
+      "com": []
+    }
+  },
+  {
+    "name": "iPhone 8 (64GB)",
+    "brand": "Apple",
+    "released": "2017-09",
+    "imagelink": "xGEFWor",
+    "smallestPrice": 0,
+    "design": 3,
+    "display": 4.7,
+    "length": 138,
+    "width": 67,
+    "processor": 5,
+    "updates": 5,
+    "camera": 5,
+    "battery": 3,
+    "batterysize": 1821,
+    "storage": 64,
+    "memory": 2,
+    "sdslot": 0,
+    "simcards": 1,
+    "notch": 0,
+    "waterproof": "7",
+    "headphonejack": 0,
+    "totalscore": 0,
+    "types": {
+      "de": [
+        {
+          "name": "gold",
+          "asin": "B075LY82PT",
+          "price": 1,
+          "link":
+            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+        },
+        {
+          "name": "silver",
+          "asin": "B075LZGVKJ",
+          "price": 1,
+          "link":
+            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+        },
+        {
+          "name": "space grey",
+          "asin": "B075LXNGFH",
+          "price": 1,
+          "link":
+            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+        }
+      ],
+      "com": []
+    }
+  },
+  {
+    "name": "iPhone 8 (256GB)",
+    "brand": "Apple",
+    "released": "2017-09",
+    "imagelink": "xGEFWor",
+    "smallestPrice": 0,
+    "design": 3,
+    "display": 4.7,
+    "length": 138,
+    "width": 67,
+    "processor": 5,
+    "updates": 5,
+    "camera": 5,
+    "battery": 3,
+    "batterysize": 1821,
+    "storage": 256,
+    "memory": 2,
+    "sdslot": 0,
+    "simcards": 1,
+    "notch": 0,
+    "waterproof": "7",
+    "headphonejack": 0,
+    "totalscore": 0,
+    "types": {
+      "de": [
+        {
+          "name": "gold",
+          "asin": "B075LWT4JR",
+          "price": 1,
+          "link":
+            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+        },
+        {
+          "name": "silver",
+          "asin": "B075LZMNDM",
+          "price": 1,
+          "link":
+            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+        },
+        {
+          "name": "space grey",
+          "asin": "B075LX5T7P",
+          "price": 1,
+          "link":
+            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+        }
+      ],
+      "com": []
+    }
+  },
+  {
+    "name": "iPhone 8 Plus (64GB)",
+    "brand": "Apple",
+    "released": "2017-09",
+    "imagelink": "lq2EmJG",
+    "smallestPrice": 0,
+    "design": 3,
+    "display": 5.5,
+    "length": 158,
+    "width": 78,
+    "processor": 5,
+    "updates": 5,
+    "camera": 5,
+    "battery": 4,
+    "batterysize": 2691,
+    "storage": 64,
+    "memory": 3,
+    "sdslot": 0,
+    "simcards": 1,
+    "notch": 0,
+    "waterproof": "7",
+    "headphonejack": 0,
+    "totalscore": 0,
+    "types": {
+      "de": [
+        {
+          "name": "red",
+          "asin": "B07CC27HW5",
+          "price": 1,
+          "link":
+            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+        },
+        {
+          "name": "space grey",
+          "asin": "B075LZ4VQW",
+          "price": 1,
+          "link":
+            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+        },
+        {
+          "name": "silver",
+          "asin": "B075M4QCKW",
+          "price": 1,
+          "link":
+            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+        },
+        {
+          "name": "gold",
+          "asin": "B075LW8Z5R",
+          "price": 1,
+          "link":
+            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+        }
+      ],
+      "com": []
+    }
+  },
+  {
+    "name": "iPhone 8 Plus (256GB)",
+    "brand": "Apple",
+    "released": "2017-09",
+    "imagelink": "lq2EmJG",
+    "smallestPrice": 0,
+    "design": 3,
+    "display": 5.5,
+    "length": 158,
+    "width": 78,
+    "processor": 5,
+    "updates": 5,
+    "camera": 5,
+    "battery": 4,
+    "batterysize": 2691,
+    "storage": 256,
+    "memory": 3,
+    "sdslot": 0,
+    "simcards": 1,
+    "notch": 0,
+    "waterproof": "7",
+    "headphonejack": 0,
+    "totalscore": 0,
+    "types": {
+      "de": [
+        {
+          "name": "space grey",
+          "asin": "B075LY524V",
+          "price": 1,
+          "link":
+            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+        },
+        {
+          "name": "silver",
+          "asin": "B075LXS8MK",
+          "price": 1,
+          "link":
+            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+        },
+        {
+          "name": "gold",
+          "asin": "B075LYPPY9",
+          "price": 1,
+          "link":
+            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+        }
+      ],
+      "com": []
+    }
+  },
+  {
+    "name": "iPhone X (64GB)",
+    "brand": "Apple",
+    "released": "2017-10",
+    "imagelink": "UDV8YUp",
+    "smallestPrice": 0,
+    "design": 5,
+    "display": 5.8,
+    "length": 144,
+    "width": 71,
+    "processor": 5,
+    "updates": 5,
+    "camera": 5,
+    "battery": 4,
+    "batterysize": 2716,
+    "storage": 64,
+    "memory": 3,
+    "sdslot": 0,
+    "simcards": 1,
+    "notch": 1,
+    "waterproof": "7",
+    "headphonejack": 0,
+    "totalscore": 0,
+    "types": {
+      "de": [
+        {
+          "name": "space grey",
+          "asin": "B075LXNK24",
+          "price": 1,
+          "link":
+            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+        },
+        {
+          "name": "silver",
+          "asin": "B075LYDD7Z",
+          "price": 1,
+          "link":
+            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+        }
+      ],
+      "com": []
+    }
+  },
+  {
+    "name": "iPhone X (256GB)",
+    "brand": "Apple",
+    "released": "2017-10",
+    "imagelink": "UDV8YUp",
+    "smallestPrice": 0,
+    "design": 5,
+    "display": 5.8,
+    "length": 144,
+    "width": 71,
+    "processor": 5,
+    "updates": 5,
+    "camera": 5,
+    "battery": 4,
+    "batterysize": 2716,
+    "storage": 256,
+    "memory": 3,
+    "sdslot": 0,
+    "simcards": 1,
+    "notch": 1,
+    "waterproof": "7",
+    "headphonejack": 0,
+    "totalscore": 0,
+    "types": {
+      "de": [
+        {
+          "name": "space grey",
+          "asin": "B075LWF4C3",
+          "price": 1,
+          "link":
+            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+        },
+        {
+          "name": "silver",
+          "asin": "B075LRK2QK",
+          "price": 1,
+          "link":
+            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+        }
+      ],
+      "com": []
+    }
+  },
+  {
+    "name": "Moto X4",
+    "brand": "Motorola",
+    "released": "2017-10",
+    "imagelink": "61eEr3fsroL._SY879_",
+    "smallestPrice": 0,
+    "design": 3,
+    "display": 5.2,
+    "length": 148,
+    "width": 73,
+    "processor": 3,
+    "updates": 3,
+    "camera": 4,
+    "battery": 3,
+    "batterysize": 3000,
+    "storage": 32,
+    "memory": 3,
+    "sdslot": 1,
+    "simcards": 2,
+    "notch": 0,
+    "waterproof": "7",
+    "headphonejack": 1,
+    "totalscore": 0,
+    "types": {
+      "de": [
+        {
+          "name": "super black",
+          "asin": "B074MHFGFS",
+          "price": 1,
+          "link":
+            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+        },
+        {
+          "name": "sterling blue",
+          "asin": "B00V4Y3RII",
+          "price": 1,
+          "link":
+            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+        }
+      ],
+      "com": []
+    }
+  },
+  {
+    "name": "Moto Z2 Play",
+    "brand": "Motorola",
+    "released": "2017-06",
+    "imagelink": "motoz2play",
+    "smallestPrice": 0,
+    "design": 3,
+    "display": 5.5,
+    "length": 156,
+    "width": 76,
+    "processor": 3,
+    "updates": 3,
+    "camera": 3,
+    "battery": 3,
+    "batterysize": 3000,
+    "storage": 64,
+    "memory": 4,
+    "sdslot": 1,
+    "simcards": 2,
+    "notch": 0,
+    "waterproof": "4",
+    "headphonejack": 1,
+    "totalscore": 0,
+    "types": {
+      "de": [
+        {
+          "name": "lunar grey",
+          "asin": "B0747WYLTX",
+          "price": 1,
+          "link":
+            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+        },
+        {
+          "name": "fine gold",
+          "asin": "B0747X83J5",
+          "price": 1,
+          "link":
+            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+        }
+      ],
+      "com": []
+    }
+  },
+  {
+    "name": "Moto Z2 Force",
+    "brand": "Motorola",
+    "released": "2017-08",
+    "imagelink": "motoz2force",
+    "smallestPrice": 0,
+    "design": 3,
+    "display": 5.5,
+    "length": 156,
+    "width": 76,
+    "processor": 4,
+    "updates": 3,
+    "camera": 4,
+    "battery": 3,
+    "batterysize": 2730,
+    "storage": 64,
+    "memory": 6,
+    "sdslot": 1,
+    "simcards": 2,
+    "notch": 0,
+    "waterproof": "4",
+    "headphonejack": 0,
+    "totalscore": 0,
+    "types": {
+      "de": [
+        {
+          "name": "black",
+          "asin": "B074MH8DJ5",
+          "price": 1,
+          "link":
+            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+        }
+      ],
+      "com": []
+    }
+  },
+  {
+    "name": "Moto G6",
+    "brand": "Motorola",
+    "released": "2018-04",
+    "imagelink": "v3WB6HT",
+    "smallestPrice": 0,
+    "design": 3,
+    "display": 5.7,
+    "length": 154,
+    "width": 72,
+    "processor": 3,
+    "updates": 3,
+    "camera": 3,
+    "battery": 3,
+    "batterysize": 3000,
+    "storage": 32,
+    "memory": 3,
+    "sdslot": 1,
+    "simcards": 2,
+    "notch": 0,
+    "waterproof": "4",
+    "headphonejack": 1,
+    "totalscore": 0,
+    "types": {
+      "de": [
+        {
+          "name": "deep indigo",
+          "asin": "B07BXWZ8ZG",
+          "price": 1,
+          "link":
+            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+        }
+      ],
+      "com": []
+    }
+  },
+  {
+    "name": "Moto G6 [Amazon]",
+    "brand": "Motorola",
+    "released": "2018-04",
+    "imagelink": "motog6amazonexclusive",
+    "smallestPrice": 0,
+    "design": 3,
+    "display": 5.7,
+    "length": 154,
+    "width": 72,
+    "processor": 3,
+    "updates": 3,
+    "camera": 3,
+    "battery": 3,
+    "batterysize": 3000,
+    "storage": 64,
+    "memory": 4,
+    "sdslot": 1,
+    "simcards": 2,
+    "notch": 0,
+    "waterproof": "4",
+    "headphonejack": 1,
+    "totalscore": 0,
+    "types": {
+      "de": [
+        {
+          "name": "deep indigo",
+          "asin": "B079MT5K9N",
+          "price": 1,
+          "link":
+            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+        }
+      ],
+      "com": []
+    }
+  },
+  {
+    "name": "Moto G6 Plus",
+    "brand": "Motorola",
+    "released": "2018-05",
+    "imagelink": "phQJx7z",
+    "smallestPrice": 0,
+    "design": 3,
+    "display": 5.9,
+    "length": 160,
+    "width": 76,
+    "processor": 3,
+    "updates": 3,
+    "camera": 4,
+    "battery": 3,
+    "batterysize": 3200,
+    "storage": 64,
+    "memory": 3,
+    "sdslot": 1,
+    "simcards": 2,
+    "notch": 0,
+    "waterproof": "4",
+    "headphonejack": 1,
+    "totalscore": 0,
+    "types": {
+      "de": [
+        {
+          "name": "deep indigo",
+          "asin": "B07CBC869D",
+          "price": 1,
+          "link":
+            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+        }
+      ],
+      "com": []
+    }
+  },
+  {
+    "name": "Moto G6 Play",
+    "brand": "Motorola",
+    "released": "2018-05",
+    "imagelink": "JQ7Vnzc",
+    "smallestPrice": 0,
+    "design": 3,
+    "display": 5.7,
+    "length": 154,
+    "width": 72,
+    "processor": 2,
+    "updates": 2,
+    "camera": 3,
+    "battery": 5,
+    "batterysize": 4000,
+    "storage": 32,
+    "memory": 3,
+    "sdslot": 1,
+    "simcards": 2,
+    "notch": 0,
+    "waterproof": "4",
+    "headphonejack": 1,
+    "totalscore": 0,
+    "types": {
+      "de": [
+        {
+          "name": "deep indigo",
+          "asin": "B07BXFRK2Q",
+          "price": 1,
+          "link":
+            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+        }
+      ],
+      "com": []
+    }
+  },
+  {
+    "name": "Moto E4",
+    "brand": "Motorola",
+    "released": "2017-06",
+    "imagelink": "71r21xr50KL._SY879_",
+    "smallestPrice": 0,
+    "design": 2,
+    "display": 5,
+    "length": 144,
+    "width": 73,
+    "processor": 2,
+    "updates": 2,
+    "camera": 2,
+    "battery": 2,
+    "batterysize": 2800,
+    "storage": 16,
+    "memory": 2,
+    "sdslot": 1,
+    "simcards": 2,
+    "notch": 0,
+    "waterproof": "0",
+    "headphonejack": 1,
+    "totalscore": 0,
+    "types": {
+      "de": [
+        {
+          "name": "blush gold",
+          "asin": "B073Q2FYWF",
+          "price": 1,
+          "link":
+            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+        },
+        {
+          "name": "fine gold",
+          "asin": "B071J7FRBD",
+          "price": 1,
+          "link":
+            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+        },
+        {
+          "name": "iron grey",
+          "asin": "B073Q2D8RJ",
+          "price": 1,
+          "link":
+            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+        },
+        {
+          "name": "oxford blue",
+          "asin": "B073Q32CF9",
+          "price": 1,
+          "link":
+            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+        }
+      ],
+      "com": []
+    }
+  },
+  {
+    "name": "Moto E4 Plus",
+    "brand": "Motorola",
+    "released": "2017-06",
+    "imagelink": "motoe4plus",
+    "smallestPrice": 0,
+    "design": 2,
+    "display": 5.5,
+    "length": 155,
+    "width": 78,
+    "processor": 2,
+    "updates": 2,
+    "camera": 2,
+    "battery": 5,
+    "batterysize": 5000,
+    "storage": 16,
+    "memory": 3,
+    "sdslot": 1,
+    "simcards": 2,
+    "notch": 0,
+    "waterproof": "0",
+    "headphonejack": 1,
+    "totalscore": 0,
+    "types": {
+      "de": [
+        {
+          "name": "fine gold",
+          "asin": "B071J7FRBD",
+          "price": 1,
+          "link":
+            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+        }
+      ],
+      "com": []
+    }
+  },
+  {
+    "name": "Moto G5S",
+    "brand": "Motorola",
+    "released": "2017-08",
+    "imagelink": "S9FO30n",
+    "smallestPrice": 0,
+    "design": 3,
+    "display": 5.2,
+    "length": 150,
+    "width": 74,
+    "processor": 3,
+    "updates": 2,
+    "camera": 3,
+    "battery": 3,
+    "batterysize": 3000,
+    "storage": 32,
+    "memory": 3,
+    "sdslot": 1,
+    "simcards": 2,
+    "notch": 0,
+    "waterproof": "4",
+    "headphonejack": 1,
+    "totalscore": 0,
+    "types": {
+      "de": [
+        {
+          "name": "fine gold",
+          "asin": "B074MHL2DN",
+          "price": 1,
+          "link":
+            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+        },
+        {
+          "name": "lunar grey",
+          "asin": "B074MGP8GJ",
+          "price": 1,
+          "link":
+            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+        }
+      ],
+      "com": []
+    }
+  },
+  {
+    "name": "Moto G5S Plus",
+    "brand": "Motorola",
+    "released": "2017-08",
+    "imagelink": "tdlPqFG",
+    "smallestPrice": 0,
+    "design": 3,
+    "display": 5.5,
+    "length": 154,
+    "width": 76,
+    "processor": 3,
+    "updates": 2,
+    "camera": 3,
+    "battery": 3,
+    "batterysize": 3000,
+    "storage": 32,
+    "memory": 3,
+    "sdslot": 1,
+    "simcards": 2,
+    "notch": 0,
+    "waterproof": "4",
+    "headphonejack": 1,
+    "totalscore": 0,
+    "types": {
+      "de": [
+        {
+          "name": "blush gold",
+          "asin": "B074SQZ2PB",
+          "price": 1,
+          "link":
+            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+        },
+        {
+          "name": "lunar grey",
+          "asin": "B074SR2DVT",
+          "price": 1,
+          "link":
+            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+        }
+      ],
+      "com": []
+    }
+  },
+  {
+    "name": "Galaxy A5",
+    "brand": "Samsung",
+    "released": "2017-01",
+    "imagelink": "wrIcHyN",
+    "smallestPrice": 0,
+    "design": 1,
+    "display": 5.2,
+    "length": 146,
+    "width": 71,
+    "processor": 3,
+    "updates": 3,
+    "camera": 3,
+    "battery": 3,
+    "batterysize": 3000,
+    "storage": 32,
+    "memory": 3,
+    "sdslot": 1,
+    "simcards": 1,
+    "notch": 0,
+    "waterproof": "8",
+    "headphonejack": 1,
+    "totalscore": 0,
+    "types": {
+      "de": [
+        {
+          "name": "black",
+          "asin": "B01N6M3K34",
+          "price": 1,
+          "link":
+            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+        },
+        {
+          "name": "blue",
+          "asin": "B01N9MJTE6",
+          "price": 1,
+          "link":
+            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+        },
+        {
+          "name": "gold",
+          "asin": "B01MU5VUXK",
+          "price": 1,
+          "link":
+            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+        },
+        {
+          "name": "peach-cloud",
+          "asin": "B06W2H865T",
+          "price": 1,
+          "link":
+            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+        }
+      ],
+      "com": []
+    }
+  },
+  {
+    "name": "Galaxy S9 (64GB)",
+    "brand": "Samsung",
+    "released": "2018-03",
+    "imagelink": "71uI%2BnAzruL._SY879_",
+    "smallestPrice": 0,
+    "design": 5,
+    "display": 5.8,
+    "length": 148,
+    "width": 68,
+    "processor": 5,
+    "updates": 4,
+    "camera": 5,
+    "battery": 4,
+    "batterysize": 3000,
+    "storage": 64,
+    "memory": 4,
+    "sdslot": 1,
+    "simcards": 2,
+    "notch": 0,
+    "waterproof": "8",
+    "headphonejack": 1,
+    "totalscore": 0,
+    "types": {
+      "de": [
+        {
+          "name": "coral blue",
+          "asin": "B079SQ39RZ",
+          "price": 1,
+          "link":
+            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+        },
+        {
+          "name": "lilac purple",
+          "asin": "B079S5MZYH",
+          "price": 1,
+          "link":
+            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+        },
+        {
+          "name": "midnight black",
+          "asin": "B079SQ5VHX",
+          "price": 1,
+          "link":
+            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+        },
+        {
+          "name": "sunrise gold",
+          "asin": "B07D4PRJKW",
+          "price": 1,
+          "link":
+            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+        }
+      ],
+      "com": []
+    }
+  },
+  {
+    "name": "Galaxy S9 (256GB)",
+    "brand": "Samsung",
+    "released": "2018-03",
+    "imagelink": "71uI%2BnAzruL._SY879_",
+    "smallestPrice": 0,
+    "design": 5,
+    "display": 5.8,
+    "length": 148,
+    "width": 68,
+    "processor": 5,
+    "updates": 4,
+    "camera": 5,
+    "battery": 4,
+    "batterysize": 3000,
+    "storage": 256,
+    "memory": 4,
+    "sdslot": 1,
+    "simcards": 1,
+    "notch": 0,
+    "waterproof": "8",
+    "headphonejack": 1,
+    "totalscore": 0,
+    "types": {
+      "de": [
+        {
+          "name": "grey",
+          "asin": "B07C6351NJ",
+          "price": 1,
+          "link":
+            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+        },
+        {
+          "name": "midnight black",
+          "asin": "B07C5ZNN9Q",
+          "price": 1,
+          "link":
+            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+        }
+      ],
+      "com": []
+    }
+  },
+  {
+    "name": "Galaxy S9 Plus (64GB)",
+    "brand": "Samsung",
+    "released": "2018-03",
+    "imagelink": "71dd-elhT7L._SY879_",
+    "smallestPrice": 0,
+    "design": 5,
+    "display": 6.2,
+    "length": 158,
+    "width": 74,
+    "processor": 5,
+    "updates": 4,
+    "camera": 5,
+    "battery": 4,
+    "batterysize": 3500,
+    "storage": 64,
+    "memory": 6,
+    "sdslot": 1,
+    "simcards": 2,
+    "notch": 0,
+    "waterproof": "8",
+    "headphonejack": 1,
+    "totalscore": 0,
+    "types": {
+      "de": [
+        {
+          "name": "coral blue",
+          "asin": "B079SNGM3V",
+          "price": 1,
+          "link":
+            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+        },
+        {
+          "name": "lilac purple",
+          "asin": "B079SD4B68",
+          "price": 1,
+          "link":
+            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+        },
+        {
+          "name": "midnight black",
+          "asin": "B079SNGV9P",
+          "price": 1,
+          "link":
+            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+        },
+        {
+          "name": "sunrise gold",
+          "asin": "B07D4Q2L2T",
+          "price": 1,
+          "link":
+            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+        }
+      ],
+      "com": []
+    }
+  },
+  {
+    "name": "Galaxy S9 Plus (256GB)",
+    "brand": "Samsung",
+    "released": "2018-03",
+    "imagelink": "71dd-elhT7L._SY879_",
+    "smallestPrice": 0,
+    "design": 5,
+    "display": 6.2,
+    "length": 158,
+    "width": 74,
+    "processor": 5,
+    "updates": 4,
+    "camera": 5,
+    "battery": 4,
+    "batterysize": 3500,
+    "storage": 256,
+    "memory": 6,
+    "sdslot": 1,
+    "simcards": 1,
+    "notch": 0,
+    "waterproof": "8",
+    "headphonejack": 1,
+    "totalscore": 0,
+    "types": {
+      "de": [
+        {
+          "name": "grey",
+          "asin": "B07C64N3WD",
+          "price": 1,
+          "link":
+            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+        },
+        {
+          "name": "midnight black",
+          "asin": "B07C61XVDQ",
+          "price": 1,
+          "link":
+            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+        }
+      ],
+      "com": []
+    }
+  },
+  {
+    "name": "Galaxy S8 Note",
+    "brand": "Samsung",
+    "released": "2017-08",
+    "imagelink": "PQYBIud",
+    "smallestPrice": 0,
+    "design": 5,
+    "display": 6.3,
+    "length": 163,
+    "width": 75,
+    "processor": 5,
+    "updates": 4,
+    "camera": 5,
+    "battery": 4,
+    "batterysize": 3300,
+    "storage": 64,
+    "memory": 6,
+    "sdslot": 1,
+    "simcards": 1,
+    "notch": 0,
+    "waterproof": "8",
+    "headphonejack": 1,
+    "totalscore": 0,
+    "types": {
+      "de": [
+        {
+          "name": "deepsea blue",
+          "asin": "B076WWRQXX",
+          "price": 1,
+          "link":
+            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+        },
+        {
+          "name": "maple gold",
+          "asin": "B074PBD4V3",
+          "price": 1,
+          "link":
+            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+        },
+        {
+          "name": "maple gold",
+          "asin": "B074PBH2P4",
+          "price": 1,
+          "link":
+            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+        }
+      ],
+      "com": []
+    }
+  },
+  {
+    "name": "Galaxy S8",
+    "brand": "Samsung",
+    "released": "2017-04",
+    "imagelink": "6gY3U53",
+    "smallestPrice": 0,
+    "design": 5,
+    "display": 5.8,
+    "length": 148,
+    "width": 68,
+    "processor": 5,
+    "updates": 3,
+    "camera": 4,
+    "battery": 4,
+    "batterysize": 3000,
+    "storage": 64,
+    "memory": 4,
+    "sdslot": 1,
+    "simcards": 1,
+    "notch": 0,
+    "waterproof": "8",
+    "headphonejack": 1,
+    "totalscore": 0,
+    "types": {
+      "de": [
+        {
+          "name": "midnight black",
+          "asin": "B06XJ49G5B",
+          "price": 1,
+          "link":
+            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+        },
+        {
+          "name": "arctiv silver",
+          "asin": "B06XJ65K58",
+          "price": 1,
+          "link":
+            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+        },
+        {
+          "name": "orchid grey",
+          "asin": "B06XHRDF78",
+          "price": 1,
+          "link":
+            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+        },
+        {
+          "name": "rosa",
+          "asin": "B076X8K1ND",
+          "price": 1,
+          "link":
+            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+        }
+      ],
+      "com": []
+    }
+  }
+]

@@ -35,11 +35,9 @@ class SmartphoneStore {
   };
 
   findLowestPriceForAllSmartphones = () => {
-    for (var i = 0; i < this.obj.smartphones.length; i++) {
-      this.obj.smartphones[
-        i
-      ].smallestPrice = this.findLowestPriceForOneSmartphones(
-        this.obj.smartphones[i]
+    for (var i = 0; i < this.obj.length; i++) {
+      this.obj[i].smallestPrice = this.findLowestPriceForOneSmartphones(
+        this.obj[i]
       );
     }
   };
@@ -61,10 +59,8 @@ class SmartphoneStore {
   };
 
   calculateAllScores() {
-    for (var i = 0; i < this.obj.smartphones.length; i++) {
-      this.obj.smartphones[i].totalscore = this.calculateScore(
-        this.obj.smartphones[i]
-      );
+    for (var i = 0; i < this.obj.length; i++) {
+      this.obj[i].totalscore = this.calculateScore(this.obj[i]);
     }
   }
 
@@ -81,25 +77,23 @@ class SmartphoneStore {
   @computed
   get listOfFilteredObjects() {
     var listOfFilteredObjects = [];
-    if (this.obj.smartphones == null) {
+    if (this.obj == null) {
       return listOfFilteredObjects;
     }
-    for (var i = 0; i < this.obj.smartphones.length; i++) {
+    for (var i = 0; i < this.obj.length; i++) {
       if (
-        this.obj.smartphones[i].types[FilterStore.country][
-          this.obj.smartphones[i].smallestPrice
-        ].price == null ||
-        this.obj.smartphones[i].types[FilterStore.country][
-          this.obj.smartphones[i].smallestPrice
-        ].price === 0
+        this.obj[i].types[FilterStore.country][this.obj[i].smallestPrice]
+          .price == null ||
+        this.obj[i].types[FilterStore.country][this.obj[i].smallestPrice]
+          .price === 0
       ) {
         continue;
       }
 
       //release-date
       if (
-        FilterStore.release_minimum > this.obj.smartphones[i].released ||
-        FilterStore.release_maximum < this.obj.smartphones[i].released
+        FilterStore.release_minimum > this.obj[i].released ||
+        FilterStore.release_maximum < this.obj[i].released
       ) {
         continue;
       }
@@ -107,103 +101,98 @@ class SmartphoneStore {
       //price
       if (
         FilterStore.price_minimum_1 >
-          this.obj.smartphones[i].types[FilterStore.country][
-            this.obj.smartphones[i].smallestPrice
-          ].price ||
+          this.obj[i].types[FilterStore.country][this.obj[i].smallestPrice]
+            .price ||
         FilterStore.price_maximum_1 <
-          this.obj.smartphones[i].types[FilterStore.country][
-            this.obj.smartphones[i].smallestPrice
-          ].price
+          this.obj[i].types[FilterStore.country][this.obj[i].smallestPrice]
+            .price
       ) {
         continue;
       }
 
       //display
       if (
-        FilterStore.size_minimum_1 > this.obj.smartphones[i].display ||
-        FilterStore.size_maximum_1 < this.obj.smartphones[i].display
+        FilterStore.size_minimum_1 > this.obj[i].display ||
+        FilterStore.size_maximum_1 < this.obj[i].display
       ) {
         continue;
       }
 
       //length
       if (
-        FilterStore.size_minimum_2 > this.obj.smartphones[i].length ||
-        FilterStore.size_maximum_2 < this.obj.smartphones[i].length
+        FilterStore.size_minimum_2 > this.obj[i].length ||
+        FilterStore.size_maximum_2 < this.obj[i].length
       ) {
         continue;
       }
 
       //width
       if (
-        FilterStore.size_minimum_3 > this.obj.smartphones[i].width ||
-        FilterStore.size_maximum_3 < this.obj.smartphones[i].width
+        FilterStore.size_minimum_3 > this.obj[i].width ||
+        FilterStore.size_maximum_3 < this.obj[i].width
       ) {
         continue;
       }
 
       //design
-      if (this.obj.smartphones[i].design < FilterStore.design) {
+      if (this.obj[i].design < FilterStore.design) {
         continue;
       }
 
       //processor
-      if (this.obj.smartphones[i].processor < FilterStore.processor) {
+      if (this.obj[i].processor < FilterStore.processor) {
         continue;
       }
 
       //software updates
-      if (this.obj.smartphones[i].updates < FilterStore.updates) {
+      if (this.obj[i].updates < FilterStore.updates) {
         continue;
       }
 
       //camera
-      if (this.obj.smartphones[i].camera < FilterStore.camera) {
+      if (this.obj[i].camera < FilterStore.camera) {
         continue;
       }
 
       //battery
-      if (this.obj.smartphones[i].battery < FilterStore.battery) {
+      if (this.obj[i].battery < FilterStore.battery) {
         continue;
       }
 
       //storage
       if (FilterStore.storage !== "") {
-        if (this.obj.smartphones[i].storage < FilterStore.storage) {
+        if (this.obj[i].storage < FilterStore.storage) {
           continue;
         }
       }
       //storage
       if (FilterStore.waterproof !== "") {
-        if (this.obj.smartphones[i].waterproof < FilterStore.waterproof) {
+        if (this.obj[i].waterproof < FilterStore.waterproof) {
           continue;
         }
       }
 
       //headphonejack
-      if (
-        FilterStore.headphoneJack &&
-        this.obj.smartphones[i].headphonejack === 0
-      ) {
+      if (FilterStore.headphoneJack && this.obj[i].headphonejack === 0) {
         continue;
       }
 
       //simCardInput
-      if (FilterStore.simCards && this.obj.smartphones[i].simcards === 1) {
+      if (FilterStore.simCards && this.obj[i].simcards === 1) {
         continue;
       }
 
       //sdSLot
-      if (FilterStore.sdSlot && this.obj.smartphones[i].sdslot === 0) {
+      if (FilterStore.sdSlot && this.obj[i].sdslot === 0) {
         continue;
       }
 
       //notch
-      if (FilterStore.notch && this.obj.smartphones[i].notch === 1) {
+      if (FilterStore.notch && this.obj[i].notch === 1) {
         continue;
       }
 
-      listOfFilteredObjects.push(this.obj.smartphones[i]);
+      listOfFilteredObjects.push(this.obj[i]);
     }
     return listOfFilteredObjects;
   }

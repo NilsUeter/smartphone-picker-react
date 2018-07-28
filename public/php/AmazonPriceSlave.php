@@ -48,4 +48,7 @@
         echo "Updated phone {$key} <br>";
     }
     echo "Iterated through every Phone <br>";
+
+    file_put_contents("../data/smartphoneData.json", json_encode($phones));
+    echo "Files should be updated <br>";
 ?>
