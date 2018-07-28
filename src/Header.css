@@ -2,6 +2,7 @@
   box-sizing: border-box;
   font-weight: bold;
   position: relative;
+  height: 29px;
   z-index: 20;
   padding-top: 0;
   padding-left: 15%;
@@ -17,8 +18,12 @@
 }
 
 @media only screen and (min-width: 650px) {
+  .logo {
+    height: 58px;
+  }
+
   .logo-text {
-    font-size: 43.2px;
+    font-size: 42px;
   }
 }
 
@@ -34,8 +39,8 @@
   box-sizing: border-box;
   position: relative;
   z-index: 10;
+  height: 25px;
   margin-top: 0;
-  border-top: 1px solid #dcdcdc;
   outline-color: rgb(102, 102, 102);
   background-color: rgb(249, 249, 249);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
@@ -46,6 +51,7 @@
 
 .show-sidebar-button {
   min-width: 95px;
+  height: 25px;
   cursor: pointer;
   color: #12709e;
   border: 1px solid #12709e;
