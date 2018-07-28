@@ -114,7 +114,7 @@ class Smartphone extends Component {
                 href={
                   this.props.smartphone.types[FilterStore.country][
                     this.props.smartphone.smallestPrice
-                  ].amazon
+                  ].link
                 }
                 rel="noopener"
               >
