@@ -62,7 +62,7 @@
       $request_url = 'http://'.$this->endpoint.$this->uri.'?'.$canonical_query_string.'&Signature='.rawurlencode($signature);
 
       echo "Request URL: " . $request_url . "<br>";
-      logToFile("amazonSlave_de", "Request URL: {$request_url} <br>");
+      logToFile("AmazonPriceSlave", "Request URL: {$request_url} <br>");
 
       $response = file_get_contents($request_url);
 
