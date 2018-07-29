@@ -232,8 +232,8 @@ class SmartphoneStore {
   compareFunctionLowest(a, b, type) {
     return FilterStore.isDescending
       ? b.types[FilterStore.country][b.smallestPrice][type] -
-          a.types[FilterStore.country][b.smallestPrice][type]
-      : a.types[FilterStore.country][b.smallestPrice][type] -
+          a.types[FilterStore.country][a.smallestPrice][type]
+      : a.types[FilterStore.country][a.smallestPrice][type] -
           b.types[FilterStore.country][b.smallestPrice][type];
   }
 
