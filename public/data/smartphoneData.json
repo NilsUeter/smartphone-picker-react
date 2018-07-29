@@ -27,16 +27,16 @@
         {
           "name": "white/iron",
           "asin": "B07B6BBC35",
-          "price": 1,
+          "price": 265,
           "link":
             "https://www.amazon.de/Nokia-Smartphone-interner-Speicher-Dual-Sim-Wei%C3%9F-Kupfer/dp/B07B6BBC35?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B6BBC35"
         },
         {
           "name": "black/copper",
           "asin": "B07B6CMJ7K",
-          "price": 1,
+          "price": 229,
           "link":
-            "https://www.amazon.de/Nokia-Smartphone-interner-Speicher-Dual-SIM-Schwarz-Kupfer/dp/B07B6CMJ7K?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B6CMJ7K"
+            "https://www.amazon.de/Nokia-Smartphone-interner-Speicher-Dual-Sim-Schwarz-Kupfer/dp/B07B6CMJ7K?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B6CMJ7K"
         }
       ],
       "com": []
@@ -70,16 +70,16 @@
         {
           "name": "white/iron",
           "asin": "B07B68D9KP",
-          "price": 1,
+          "price": 365,
           "link":
             "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
         },
         {
           "name": "black/copper",
           "asin": "B07B68N35M",
-          "price": 1,
+          "price": 354,
           "link":
-            "https://www.amazon.de/Nokia-Plus-Handy-schwarz-kupfer/dp/B07B68N35M?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68N35M"
+            "https://www.amazon.de/Nokia-Plus-Handy-Schwarz-Kupfer/dp/B07B68N35M?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68N35M"
         }
       ],
       "com": []
@@ -113,37 +113,35 @@
         {
           "name": "glossy blue",
           "asin": "B0756RCPBZ",
-          "price": 1,
+          "price": 313,
           "link":
-            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+            "https://www.amazon.de/Nokia-13-Zoll-Smartphone-spritzgesch%C3%BCtzt-glossy-blue-64GB-4GB-RAM/dp/B0756RCPBZ?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B0756RCPBZ"
         },
         {
           "name": "copper",
           "asin": "B0756RGSVH",
-          "price": 1,
+          "price": 326,
           "link":
-            "https://www.amazon.de/Nokia-Plus-Handy-schwarz-kupfer/dp/B07B68N35M?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68N35M"
+            "https://www.amazon.de/Nokia-13-Zoll-Smartphone-spritzgesch%C3%BCtzt-kupfer-64GB-4-GB-RAM/dp/B0756RGSVH?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B0756RGSVH"
         },
         {
           "name": "stainless steel",
           "asin": "B074SRNB6S",
-          "price": 1,
-          "link":
-            "https://www.amazon.de/Nokia-Plus-Handy-schwarz-kupfer/dp/B07B68N35M?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68N35M"
+          "price": 0,
+          "link": ""
         },
         {
           "name": "tempered blue",
           "asin": "B074SJJBY2",
-          "price": 1,
-          "link":
-            "https://www.amazon.de/Nokia-Plus-Handy-schwarz-kupfer/dp/B07B68N35M?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68N35M"
+          "price": 0,
+          "link": ""
         },
         {
           "name": "tempered",
           "asin": "B0759NLL2T",
-          "price": 1,
+          "price": 355,
           "link":
-            "https://www.amazon.de/Nokia-Plus-Handy-schwarz-kupfer/dp/B07B68N35M?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68N35M"
+            "https://www.amazon.de/Nokia-64GB-Black-DS-5-3-Blu-Temperato/dp/B0759NLL2T?SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B0759NLL2T"
         }
       ],
       "com": []
@@ -177,16 +175,16 @@
         {
           "name": "black",
           "asin": "B07B69SLMB",
-          "price": 1,
+          "price": 599,
           "link":
-            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+            "https://www.amazon.de/Nokia-Sirocco-Hauptkamera-Frontkamera-spritzgesch%C3%BCtzt-Schwarz/dp/B07B69SLMB?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B69SLMB"
         },
         {
           "name": "black",
           "asin": "B07B69SLMB",
-          "price": 1,
+          "price": 599,
           "link":
-            "https://www.amazon.de/Nokia-Plus-Handy-schwarz-kupfer/dp/B07B68N35M?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68N35M"
+            "https://www.amazon.de/Nokia-Sirocco-Hauptkamera-Frontkamera-spritzgesch%C3%BCtzt-Schwarz/dp/B07B69SLMB?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B69SLMB"
         }
       ],
       "com": []
@@ -220,16 +218,16 @@
         {
           "name": "black",
           "asin": "B07CZPXGVJ",
-          "price": 1,
+          "price": 174,
           "link":
-            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+            "https://www.amazon.de/Xiaomi-Redmi-Note-Handy-Schwarz/dp/B07CZPXGVJ?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07CZPXGVJ"
         },
         {
           "name": "gold",
           "asin": "B07CRGJW16",
-          "price": 1,
+          "price": 175,
           "link":
-            "https://www.amazon.de/Nokia-Plus-Handy-schwarz-kupfer/dp/B07B68N35M?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68N35M"
+            "https://www.amazon.de/Xiaomi-Redmi-Note-32GB-Handy-Gold/dp/B07CRGJW16?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07CRGJW16"
         }
       ],
       "com": []
@@ -263,23 +261,23 @@
         {
           "name": "black",
           "asin": "B07CZS8W5Y",
-          "price": 1,
+          "price": 199,
           "link":
-            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+            "https://www.amazon.de/Xiaomi-Smartphone-Snapdragon-Octa-Core-Schwarz/dp/B07CZS8W5Y?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07CZS8W5Y"
         },
         {
           "name": "gold",
           "asin": "B07CZS7T17",
-          "price": 1,
+          "price": 205,
           "link":
-            "https://www.amazon.de/Nokia-Plus-Handy-schwarz-kupfer/dp/B07B68N35M?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68N35M"
+            "https://www.amazon.de/Xiaomi-Redmi-Note-64GB-Handy-Gold/dp/B07CZS7T17?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07CZS7T17"
         },
         {
           "name": "blue",
           "asin": "B07CZS9QDB",
-          "price": 1,
+          "price": 199,
           "link":
-            "https://www.amazon.de/Nokia-Plus-Handy-schwarz-kupfer/dp/B07B68N35M?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68N35M"
+            "https://www.amazon.de/Xiaomi-Redmi-Note-64GB-Handy-Blau/dp/B07CZS9QDB?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07CZS9QDB"
         }
       ],
       "com": []
@@ -313,30 +311,30 @@
         {
           "name": "gold",
           "asin": "B076FTDYFY",
-          "price": 1,
+          "price": 200,
           "link":
-            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+            "https://www.amazon.de/Xiaomi-A1-Smartphone-64GB-Gold-Wei%C3%9F/dp/B076FTDYFY?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B076FTDYFY"
         },
         {
           "name": "gold",
           "asin": "B0787LD1VS",
-          "price": 1,
+          "price": 161,
           "link":
-            "https://www.amazon.de/Nokia-Plus-Handy-schwarz-kupfer/dp/B07B68N35M?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68N35M"
+            "https://www.amazon.de/Xiaomi-Mi-A1-Smartphone-Display-Wei%C3%9F-Gold/dp/B0787LD1VS?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B0787LD1VS"
         },
         {
           "name": "rose gold",
           "asin": "B075V2TCLH",
-          "price": 1,
+          "price": 205,
           "link":
-            "https://www.amazon.de/Nokia-Plus-Handy-schwarz-kupfer/dp/B07B68N35M?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68N35M"
+            "https://www.amazon.de/Xiaomi-Smartphone-Display-Android-Ros%C3%A9gold/dp/B075V2TCLH?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B075V2TCLH"
         },
         {
           "name": "black",
           "asin": "B076493W9X",
-          "price": 1,
+          "price": 189,
           "link":
-            "https://www.amazon.de/Nokia-Plus-Handy-schwarz-kupfer/dp/B07B68N35M?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68N35M"
+            "https://www.amazon.de/Xiaomi-A1-Smartphone-Display-Android-Schwarz/dp/B076493W9X?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B076493W9X"
         }
       ],
       "com": []
@@ -370,23 +368,23 @@
         {
           "name": "black",
           "asin": "B0784RQR88",
-          "price": 1,
+          "price": 350,
           "link":
-            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+            "https://www.amazon.de/Xiaomi-Mi-Mix-Smartphone-Display-Schwarz/dp/B0784RQR88?SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B0784RQR88"
         },
         {
           "name": "black",
           "asin": "B076VLN14J",
-          "price": 1,
+          "price": 339,
           "link":
-            "https://www.amazon.de/Nokia-Plus-Handy-schwarz-kupfer/dp/B07B68N35M?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68N35M"
+            "https://www.amazon.de/Xiaomi-Smartphone-Display-Android-Schwarz/dp/B076VLN14J?SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B076VLN14J"
         },
         {
           "name": "white",
           "asin": "B0792TXZ46",
-          "price": 1,
+          "price": 491,
           "link":
-            "https://www.amazon.de/Nokia-Plus-Handy-schwarz-kupfer/dp/B07B68N35M?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68N35M"
+            "https://www.amazon.de/Xiaomi-Smartphone-15-2cm-Display-Android-Wei%C3%9F/dp/B0792TXZ46?SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B0792TXZ46"
         }
       ],
       "com": []
@@ -420,16 +418,16 @@
         {
           "name": "black",
           "asin": "B07CZFRXP1",
-          "price": 1,
+          "price": 485,
           "link":
-            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+            "https://www.amazon.de/Xiaomi-Mi-Mix-2S-Schwarz/dp/B07CZFRXP1?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07CZFRXP1"
         },
         {
           "name": "white",
           "asin": "B07D4NBDM9",
-          "price": 1,
+          "price": 475,
           "link":
-            "https://www.amazon.de/Nokia-Plus-Handy-schwarz-kupfer/dp/B07B68N35M?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68N35M"
+            "https://www.amazon.de/Xiaomi-Mix-64GB-Handy-Wei%C3%9F/dp/B07D4NBDM9?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07D4NBDM9"
         }
       ],
       "com": []
@@ -463,9 +461,9 @@
         {
           "name": "black",
           "asin": "B07D4QL67S",
-          "price": 1,
+          "price": 570,
           "link":
-            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+            "https://www.amazon.de/Xiaomi-Mix-Dual-128GB-Black-Schwarz/dp/B07D4QL67S?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07D4QL67S"
         }
       ],
       "com": []
@@ -499,16 +497,16 @@
         {
           "name": "brilliant black",
           "asin": "B076HWW5HN",
-          "price": 1,
+          "price": 218,
           "link":
-            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+            "https://www.amazon.de/HTC-Smartphone-Display-Speicher-Brilliant-Black/dp/B076HWW5HN?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B076HWW5HN"
         },
         {
           "name": "sapphire blue",
           "asin": "B076HSNZ8H",
-          "price": 1,
+          "price": 297,
           "link":
-            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+            "https://www.amazon.de/HTC-Smartphone-Display-Speicher-Sapphire-Blue/dp/B076HSNZ8H?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B076HSNZ8H"
         }
       ],
       "com": []
@@ -542,30 +540,30 @@
         {
           "name": "amazing silver",
           "asin": "B077PJXZFK",
-          "price": 1,
+          "price": 699,
           "link":
-            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+            "https://www.amazon.de/HTC-U11-Smartphone-Display-Speicher-Amazing-Silver/dp/B077PJXZFK?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B077PJXZFK"
         },
         {
           "name": "ceramic black",
           "asin": "B077PMJM3M",
-          "price": 1,
+          "price": 1500,
           "link":
-            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+            "https://www.amazon.de/HTC-Smartphone-Display-Speicher-Android-Ceramic-Black/dp/B077PMJM3M?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B077PMJM3M"
         },
         {
           "name": "solar red",
           "asin": "B079RCFMTB",
-          "price": 1,
+          "price": 699,
           "link":
-            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+            "https://www.amazon.de/HTC-U11-Smartphone-Display-Speicher-Solar-Red/dp/B079RCFMTB?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B079RCFMTB"
         },
         {
           "name": "translucent oil",
           "asin": "B077PG7JD3",
-          "price": 1,
+          "price": 628,
           "link":
-            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+            "https://www.amazon.de/HTC-Smartphone-Display-Speicher-Translucent-Oil/dp/B077PG7JD3?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B077PG7JD3"
         }
       ],
       "com": []
@@ -599,23 +597,23 @@
         {
           "name": "ceramic black",
           "asin": "B07D4Q89NG",
-          "price": 1,
+          "price": 729,
           "link":
-            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+            "https://www.amazon.de/HTC-Smartphone-LCD-Display-interner-Wasserdicht-Ceramic-Schwarz/dp/B07D4Q89NG?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07D4Q89NG"
         },
         {
           "name": "flame red",
           "asin": "B07D4RG7QQ",
-          "price": 1,
+          "price": 729,
           "link":
-            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+            "https://www.amazon.de/HTC-Smartphone-LCD-Display-interner-Wasserdicht-Flame-Red/dp/B07D4RG7QQ?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07D4RG7QQ"
         },
         {
           "name": "translucent blue",
           "asin": "B07D4RN2WQ",
-          "price": 1,
+          "price": 725,
           "link":
-            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+            "https://www.amazon.de/HTC-Smartphone-LCD-Display-Wasserdicht-Translucent-Blau/dp/B07D4RN2WQ?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07D4RN2WQ"
         }
       ],
       "com": []
@@ -649,30 +647,30 @@
         {
           "name": "clearly white",
           "asin": "B076KLKZ23",
-          "price": 1,
+          "price": 678,
           "link":
-            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+            "https://www.amazon.de/Google-Pixel-64GB-clearly-white-wei%C3%9F/dp/B076KLKZ23?SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B076KLKZ23"
         },
         {
           "name": "just black",
           "asin": "B076KSTG53",
-          "price": 1,
+          "price": 699,
           "link":
-            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+            "https://www.amazon.de/Google-Pixel-64GB-Vertrag-just-black-black/dp/B076KSTG53?SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B076KSTG53"
         },
         {
           "name": "just black",
           "asin": "B076L5FQ23",
-          "price": 1,
+          "price": 625,
           "link":
-            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+            "https://www.amazon.de/Google-Pixel-64GB-Android-Black-Schwarz/dp/B076L5FQ23?SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B076L5FQ23"
         },
         {
           "name": "kinda blue",
           "asin": "B076KM3PYP",
-          "price": 1,
+          "price": 674,
           "link":
-            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+            "https://www.amazon.de/Google-Pixel-64GB-Vertrag-kinda-blue-blau/dp/B076KM3PYP?SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B076KM3PYP"
         }
       ],
       "com": []
@@ -706,30 +704,30 @@
         {
           "name": "just black",
           "asin": "B077H28GFX",
-          "price": 1,
+          "price": 699,
           "link":
-            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+            "https://www.amazon.de/Google-Pixel-64GB-just-black-schwarz/dp/B077H28GFX?SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B077H28GFX"
         },
         {
           "name": "just black",
           "asin": "B076KT8HT2",
-          "price": 1,
+          "price": 629,
           "link":
-            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+            "https://www.amazon.de/Google-Pixel-XL-64GB-Schwarz/dp/B076KT8HT2?SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B076KT8HT2"
         },
         {
           "name": "black/white",
           "asin": "B077WSVG4Z",
-          "price": 1,
+          "price": 779,
           "link":
-            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+            "https://www.amazon.de/Google-Pixel-64GB-black-white-wei%C3%9F/dp/B077WSVG4Z?SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B077WSVG4Z"
         },
         {
           "name": "black/white",
           "asin": "B076L5ZZK1",
-          "price": 1,
+          "price": 812,
           "link":
-            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+            "https://www.amazon.de/Google-Pixel-Android-Black-White-Schwarz-Wei%C3%9F/dp/B076L5ZZK1?SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B076L5ZZK1"
         }
       ],
       "com": []
@@ -763,9 +761,9 @@
         {
           "name": "midnight black",
           "asin": "B078WSQ4SC",
-          "price": 1,
+          "price": 499,
           "link":
-            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+            "https://www.amazon.de/A5010-Smartphone-Touch-Display-interner-Speicher-Midnight-Schwarz/dp/B078WSQ4SC?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B078WSQ4SC"
         }
       ],
       "com": []
@@ -799,16 +797,16 @@
         {
           "name": "midnight black",
           "asin": "B078WSFXPW",
-          "price": 1,
+          "price": 577,
           "link":
-            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+            "https://www.amazon.de/A5010-Smartphone-Touch-Display-interner-Speicher-Midnight-Schwarz/dp/B078WSFXPW?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B078WSFXPW"
         },
         {
           "name": "star wars white",
           "asin": "B0789MN114",
-          "price": 1,
+          "price": 580,
           "link":
-            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+            "https://www.amazon.de/OnePlus-Star-Sandstein-128GB-Dual-Sim-Schwarz-Wei%C3%9F/dp/B0789MN114?SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B0789MN114"
         }
       ],
       "com": []
@@ -842,9 +840,9 @@
         {
           "name": "mirror black",
           "asin": "B07CHQHFDZ",
-          "price": 1,
+          "price": 501,
           "link":
-            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+            "https://www.amazon.de/OnePlus-Smartphone-15-Zoll-Touch-Display-Mirror-Black/dp/B07CHQHFDZ?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07CHQHFDZ"
         }
       ],
       "com": []
@@ -878,23 +876,23 @@
         {
           "name": "mirror black",
           "asin": "B07CK7KB95",
-          "price": 1,
+          "price": 569,
           "link":
-            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+            "https://www.amazon.de/OnePlus-Smartphone-15-Zoll-Touch-Display-Mirror-Black/dp/B07CK7KB95?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07CK7KB95"
         },
         {
           "name": "midnight black",
           "asin": "B07CHL6XN6",
-          "price": 1,
+          "price": 554,
           "link":
-            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+            "https://www.amazon.de/OnePlus-Smartphone-15-Zoll-Touch-Display-Midnight-Black/dp/B07CHL6XN6?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07CHL6XN6"
         },
         {
           "name": "silk white",
           "asin": "B07D5LXXG3",
-          "price": 1,
+          "price": 569,
           "link":
-            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+            "https://www.amazon.de/OnePlus-Smartphone-15-Zoll-Touch-Display-Silk-White/dp/B07D5LXXG3?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07D5LXXG3"
         }
       ],
       "com": []
@@ -928,30 +926,30 @@
         {
           "name": "grey",
           "asin": "B0779STLGF",
-          "price": 1,
+          "price": 169,
           "link":
-            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+            "https://www.amazon.de/Honor-Smartphone-Display-interner-Speicher-Grau/dp/B0779STLGF?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B0779STLGF"
         },
         {
           "name": "midnight black",
           "asin": "B0779SG4ZN",
-          "price": 1,
+          "price": 169,
           "link":
-            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+            "https://www.amazon.de/Honor-Smartphone-interner-Speicher-Midnight-Black/dp/B0779SG4ZN?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B0779SG4ZN"
         },
         {
           "name": "phoenix red",
           "asin": "B079SDRNJM",
-          "price": 1,
+          "price": 0,
           "link":
-            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+            "https://www.amazon.de/Honor-Smartphone-FullView-Display-Speicher-Phoenix-Red/dp/B079SDRNJM?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B079SDRNJM"
         },
         {
           "name": "sapphire blue",
           "asin": "B0779RWX11",
-          "price": 1,
+          "price": 226,
           "link":
-            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+            "https://www.amazon.de/Honor-Smartphone-interner-Speicher-Sapphire-Blue/dp/B0779RWX11?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B0779RWX11"
         }
       ],
       "com": []
@@ -985,30 +983,30 @@
         {
           "name": "midnight black",
           "asin": "B07CMSTFKQ",
-          "price": 1,
+          "price": 339,
           "link":
-            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+            "https://www.amazon.de/Honor-Smartphone-Touch-Display-interner-Frontkamera-Schwarz/dp/B07CMSTFKQ?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07CMSTFKQ"
         },
         {
           "name": "glacier grey",
           "asin": "B07CN24WB3",
-          "price": 1,
+          "price": 339,
           "link":
-            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+            "https://www.amazon.de/Honor-Smartphone-Touch-Display-interner-Frontkamera-Glacier-Grey/dp/B07CN24WB3?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07CN24WB3"
         },
         {
           "name": "phantom blue",
           "asin": "B07CMXSHGH",
-          "price": 1,
+          "price": 339,
           "link":
-            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+            "https://www.amazon.de/Honor-Smartphone-Touch-Display-interner-Frontkamera-Phantom-Blau/dp/B07CMXSHGH?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07CMXSHGH"
         },
         {
           "name": "phantom green",
           "asin": "B07D83JHPB",
-          "price": 1,
+          "price": 369,
           "link":
-            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+            "https://www.amazon.de/Honor-Smartphone-Touch-Display-interner-Frontkamera-Phantom-Gr%C3%BCn/dp/B07D83JHPB?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07D83JHPB"
         }
       ],
       "com": []
@@ -1042,16 +1040,14 @@
         {
           "name": "midnight blue",
           "asin": "B076CHQGV9",
-          "price": 1,
-          "link":
-            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+          "price": 0,
+          "link": ""
         },
         {
           "name": "titanium grey",
           "asin": "B076CNDP4J",
-          "price": 1,
-          "link":
-            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+          "price": 0,
+          "link": ""
         }
       ],
       "com": []
@@ -1085,16 +1081,16 @@
         {
           "name": "black",
           "asin": "B07BHD7MHL",
-          "price": 1,
+          "price": 464,
           "link":
-            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+            "https://www.amazon.de/Huawei-Smartphone-interner-Speicher-Android-Schwarz/dp/B07BHD7MHL?SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07BHD7MHL"
         },
         {
           "name": "blue",
           "asin": "B07BHDC33K",
-          "price": 1,
+          "price": 475,
           "link":
-            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+            "https://www.amazon.de/Huawei-Smartphone-interner-Speicher-Android-Blau/dp/B07BHDC33K?SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07BHDC33K"
         }
       ],
       "com": []
@@ -1128,30 +1124,30 @@
         {
           "name": "black",
           "asin": "B07BHDC9V6",
-          "price": 1,
+          "price": 277,
           "link":
-            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+            "https://www.amazon.de/Huawei-P20-Lite-Smartphone-interner-Schwarz/dp/B07BHDC9V6?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07BHDC9V6"
         },
         {
           "name": "pink",
           "asin": "B07BHDQPD9",
-          "price": 1,
+          "price": 292,
           "link":
-            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+            "https://www.amazon.de/Huawei-Smartphone-interner-Speicher-Android-Pink/dp/B07BHDQPD9?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07BHDQPD9"
         },
         {
           "name": "blue",
           "asin": "B07BHDDDHB",
-          "price": 1,
+          "price": 288,
           "link":
-            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+            "https://www.amazon.de/Huawei-51092FTP-Smartphone-interner-Speicher-Blau/dp/B07BHDDDHB?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07BHDDDHB"
         },
         {
           "name": "gold",
           "asin": "B07BLYRC9M",
-          "price": 1,
+          "price": 279,
           "link":
-            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+            "https://www.amazon.de/Huawei-Smartphone-interner-Speicher-Android-Gold/dp/B07BLYRC9M?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07BLYRC9M"
         }
       ],
       "com": []
@@ -1185,23 +1181,23 @@
         {
           "name": "blue",
           "asin": "B07BHD3L23",
-          "price": 1,
+          "price": 710,
           "link":
-            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+            "https://www.amazon.de/Huawei-Smartphone-interner-Speicher-Android-Blau/dp/B07BHD3L23?SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07BHD3L23"
         },
         {
           "name": "black",
           "asin": "B07BHDMHR1",
-          "price": 1,
+          "price": 653,
           "link":
-            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+            "https://www.amazon.de/Huawei-Smartphone-interner-Speicher-Android-Schwarz/dp/B07BHDMHR1?SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07BHDMHR1"
         },
         {
           "name": "twilight",
           "asin": "B07BHDDDHJ",
-          "price": 1,
+          "price": 769,
           "link":
-            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+            "https://www.amazon.de/Huawei-Smartphone-interner-Speicher-Twilight/dp/B07BHDDDHJ?SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07BHDDDHJ"
         }
       ],
       "com": []
@@ -1235,23 +1231,23 @@
         {
           "name": "black moon",
           "asin": "B074BWGRKH",
-          "price": 1,
+          "price": 519,
           "link":
-            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+            "https://www.amazon.de/Essential-Phone-Black-Edge-Edge-Moon/dp/B074BWGRKH?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B074BWGRKH"
         },
         {
           "name": "halo grey",
           "asin": "B078SQ7GWK",
-          "price": 1,
+          "price": 679,
           "link":
-            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+            "https://www.amazon.de/Essential-Phone-Unlocked-Display-Camera/dp/B078SQ7GWK?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B078SQ7GWK"
         },
         {
           "name": "pure white",
           "asin": "B0748TWQHK",
-          "price": 1,
+          "price": 509,
           "link":
-            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+            "https://www.amazon.de/Essential-Phone-Unlocked-Display-Camera/dp/B0748TWQHK?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B0748TWQHK"
         }
       ],
       "com": []
@@ -1285,37 +1281,37 @@
         {
           "name": "black",
           "asin": "B06XFRBM26",
-          "price": 1,
+          "price": 290,
           "link":
-            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+            "https://www.amazon.de/LG-Smartphone-Display-Speicher-Android-Schwarz/dp/B06XFRBM26?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B06XFRBM26"
         },
         {
           "name": "blue",
           "asin": "B077KDDQLV",
-          "price": 1,
+          "price": 360,
           "link":
-            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+            "https://www.amazon.de/LG-G6-Smartphone-Display-Speicher-Blau/dp/B077KDDQLV?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B077KDDQLV"
         },
         {
           "name": "gold",
           "asin": "B075SJ6LL4",
-          "price": 1,
+          "price": 399,
           "link":
-            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+            "https://www.amazon.de/LG-G6-Smartphone-Speicher-Gold/dp/B075SJ6LL4?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B075SJ6LL4"
         },
         {
           "name": "platinum",
           "asin": "B06XFGMDKN",
-          "price": 1,
+          "price": 288,
           "link":
-            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+            "https://www.amazon.de/LG-Smartphone-Display-Speicher-Platinum/dp/B06XFGMDKN?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B06XFGMDKN"
         },
         {
           "name": "white",
           "asin": "B06XFS8F1Z",
-          "price": 1,
+          "price": 340,
           "link":
-            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+            "https://www.amazon.de/LG-Smartphone-Display-Speicher-Android-Wei%C3%9F/dp/B06XFS8F1Z?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B06XFS8F1Z"
         }
       ],
       "com": []
@@ -1349,16 +1345,16 @@
         {
           "name": "platinum grey",
           "asin": "B07D7NXYT6",
-          "price": 1,
+          "price": 579,
           "link":
-            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+            "https://www.amazon.de/LG-Smartphone-FullVision-Einstellbare-MIL-STD-810G-Platinum-Grau/dp/B07D7NXYT6?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07D7NXYT6"
         },
         {
           "name": "black",
           "asin": "B07D69KKBZ",
-          "price": 1,
+          "price": 564,
           "link":
-            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+            "https://www.amazon.de/LG-Smartphone-FullVision-Einstellbare-MIL-STD-810G-Schwarz/dp/B07D69KKBZ?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07D69KKBZ"
         }
       ],
       "com": []
@@ -1392,16 +1388,16 @@
         {
           "name": "cloud silver",
           "asin": "B075GYD539",
-          "price": 1,
+          "price": 497,
           "link":
-            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+            "https://www.amazon.de/LG-Smartphone-Display-Speicher-Android-Cloud-Silver/dp/B075GYD539?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B075GYD539"
         },
         {
           "name": "moroccan blue",
           "asin": "B075GTJYSV",
-          "price": 1,
+          "price": 503,
           "link":
-            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+            "https://www.amazon.de/LG-Smartphone-Display-Speicher-Moroccan-Blue/dp/B075GTJYSV?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B075GTJYSV"
         }
       ],
       "com": []
@@ -1435,30 +1431,30 @@
         {
           "name": "liquid black",
           "asin": "B079YSBTY7",
-          "price": 1,
+          "price": 601,
           "link":
-            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+            "https://www.amazon.de/Sony-Smartphone-interner-Speicher-Dual-Sim-Liquid-Black/dp/B079YSBTY7?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B079YSBTY7"
         },
         {
           "name": "ash pink",
           "asin": "B079Z1G1DW",
-          "price": 1,
+          "price": 628,
           "link":
-            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+            "https://www.amazon.de/Sony-Smartphone-interner-Speicher-Dual-Sim-Ash-Pink/dp/B079Z1G1DW?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B079Z1G1DW"
         },
         {
           "name": "deep green",
           "asin": "B079YS5Q9K",
-          "price": 1,
+          "price": 632,
           "link":
-            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+            "https://www.amazon.de/Sony-Smartphone-interner-Speicher-Dual-Sim-Deep-Green/dp/B079YS5Q9K?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B079YS5Q9K"
         },
         {
           "name": "liquid silver",
           "asin": "B079YS8SDR",
-          "price": 1,
+          "price": 573,
           "link":
-            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+            "https://www.amazon.de/Sony-Smartphone-interner-Speicher-Dual-Sim-Liquid-Silver/dp/B079YS8SDR?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B079YS8SDR"
         }
       ],
       "com": []
@@ -1492,30 +1488,30 @@
         {
           "name": "black",
           "asin": "B079YZ7ZS4",
-          "price": 1,
+          "price": 571,
           "link":
-            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+            "https://www.amazon.de/Sony-Smartphone-interner-Speicher-Dual-Sim-Black/dp/B079YZ7ZS4?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B079YZ7ZS4"
         },
         {
           "name": "coral pink",
           "asin": "B079YRCCK6",
-          "price": 1,
+          "price": 529,
           "link":
-            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+            "https://www.amazon.de/Sony-Smartphone-interner-Speicher-Dual-Sim-Coral-Pink/dp/B079YRCCK6?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B079YRCCK6"
         },
         {
           "name": "moss green",
           "asin": "B079YTJ1S4",
-          "price": 1,
+          "price": 549,
           "link":
-            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+            "https://www.amazon.de/Sony-Smartphone-interner-Speicher-Dual-Sim-Moss-Green/dp/B079YTJ1S4?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B079YTJ1S4"
         },
         {
           "name": "white silver",
           "asin": "B079YRR6QR",
-          "price": 1,
+          "price": 529,
           "link":
-            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+            "https://www.amazon.de/Sony-Smartphone-interner-Speicher-Dual-Sim-White-Silver/dp/B079YRR6QR?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B079YRR6QR"
         }
       ],
       "com": []
@@ -1549,23 +1545,23 @@
         {
           "name": "gold",
           "asin": "B075LY82PT",
-          "price": 1,
+          "price": 654,
           "link":
-            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+            "https://www.amazon.de/Apple-iPhone-Display-2017-Gold/dp/B075LY82PT?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B075LY82PT"
         },
         {
           "name": "silver",
           "asin": "B075LZGVKJ",
-          "price": 1,
+          "price": 660,
           "link":
-            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+            "https://www.amazon.de/Apple-iPhone-Display-2017-Silber/dp/B075LZGVKJ?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B075LZGVKJ"
         },
         {
           "name": "space grey",
           "asin": "B075LXNGFH",
-          "price": 1,
+          "price": 653,
           "link":
-            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+            "https://www.amazon.de/Apple-iPhone-Display-2017-Space-Grau/dp/B075LXNGFH?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B075LXNGFH"
         }
       ],
       "com": []
@@ -1599,23 +1595,23 @@
         {
           "name": "gold",
           "asin": "B075LWT4JR",
-          "price": 1,
+          "price": 769,
           "link":
-            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+            "https://www.amazon.de/Apple-iPhone-Display-2017-Gold/dp/B075LWT4JR?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B075LWT4JR"
         },
         {
           "name": "silver",
           "asin": "B075LZMNDM",
-          "price": 1,
+          "price": 886,
           "link":
-            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+            "https://www.amazon.de/Apple-iPhone-Display-2017-Silber/dp/B075LZMNDM?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B075LZMNDM"
         },
         {
           "name": "space grey",
           "asin": "B075LX5T7P",
-          "price": 1,
+          "price": 891,
           "link":
-            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+            "https://www.amazon.de/Apple-iPhone-Display-2017-Space-Grau/dp/B075LX5T7P?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B075LX5T7P"
         }
       ],
       "com": []
@@ -1649,30 +1645,30 @@
         {
           "name": "red",
           "asin": "B07CC27HW5",
-          "price": 1,
+          "price": 789,
           "link":
-            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+            "https://www.amazon.de/Apple-iPhone-Plus-Display-Product-Rot/dp/B07CC27HW5?SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07CC27HW5"
         },
         {
           "name": "space grey",
           "asin": "B075LZ4VQW",
-          "price": 1,
+          "price": 779,
           "link":
-            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+            "https://www.amazon.de/Apple-iPhone-Plus-Display-Space-Grau/dp/B075LZ4VQW?SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B075LZ4VQW"
         },
         {
           "name": "silver",
           "asin": "B075M4QCKW",
-          "price": 1,
+          "price": 779,
           "link":
-            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+            "https://www.amazon.de/Apple-iPhone-Plus-Display-Silber/dp/B075M4QCKW?SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B075M4QCKW"
         },
         {
           "name": "gold",
           "asin": "B075LW8Z5R",
-          "price": 1,
+          "price": 789,
           "link":
-            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+            "https://www.amazon.de/Apple-iPhone-Plus-Display-2017-Gold/dp/B075LW8Z5R?SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B075LW8Z5R"
         }
       ],
       "com": []
@@ -1706,23 +1702,23 @@
         {
           "name": "space grey",
           "asin": "B075LY524V",
-          "price": 1,
+          "price": 964,
           "link":
-            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+            "https://www.amazon.de/Apple-iPhone-Plus-Display-Space-Grau/dp/B075LY524V?SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B075LY524V"
         },
         {
           "name": "silver",
           "asin": "B075LXS8MK",
-          "price": 1,
+          "price": 984,
           "link":
-            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+            "https://www.amazon.de/Apple-iPhone-Plus-Display-Silber/dp/B075LXS8MK?SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B075LXS8MK"
         },
         {
           "name": "gold",
           "asin": "B075LYPPY9",
-          "price": 1,
+          "price": 1004,
           "link":
-            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+            "https://www.amazon.de/Apple-iPhone-Plus-Display-2017-Gold/dp/B075LYPPY9?SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B075LYPPY9"
         }
       ],
       "com": []
@@ -1756,16 +1752,16 @@
         {
           "name": "space grey",
           "asin": "B075LXNK24",
-          "price": 1,
+          "price": 988,
           "link":
-            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+            "https://www.amazon.de/Apple-iPhone-Display-2017-Space-Grau/dp/B075LXNK24?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B075LXNK24"
         },
         {
           "name": "silver",
           "asin": "B075LYDD7Z",
-          "price": 1,
+          "price": 985,
           "link":
-            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+            "https://www.amazon.de/Apple-iPhone-Display-2017-Silber/dp/B075LYDD7Z?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B075LYDD7Z"
         }
       ],
       "com": []
@@ -1799,16 +1795,16 @@
         {
           "name": "space grey",
           "asin": "B075LWF4C3",
-          "price": 1,
+          "price": 1131,
           "link":
-            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+            "https://www.amazon.de/Apple-iPhone-Display-2017-Space-Grau/dp/B075LWF4C3?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B075LWF4C3"
         },
         {
           "name": "silver",
           "asin": "B075LRK2QK",
-          "price": 1,
+          "price": 1110,
           "link":
-            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+            "https://www.amazon.de/Apple-iPhone-Display-2017-Silber/dp/B075LRK2QK?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B075LRK2QK"
         }
       ],
       "com": []
@@ -1842,16 +1838,16 @@
         {
           "name": "super black",
           "asin": "B074MHFGFS",
-          "price": 1,
+          "price": 249,
           "link":
-            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+            "https://www.amazon.de/Motorola-Smartphone-Kamera-Android-Schwarz/dp/B074MHFGFS?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B074MHFGFS"
         },
         {
           "name": "sterling blue",
           "asin": "B00V4Y3RII",
-          "price": 1,
+          "price": 245,
           "link":
-            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+            "https://www.amazon.de/Motorola-Smartphone-Kamera-Android-Sterling-blau-nimbus/dp/B00V4Y3RII?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B00V4Y3RII"
         }
       ],
       "com": []
@@ -1885,16 +1881,16 @@
         {
           "name": "lunar grey",
           "asin": "B0747WYLTX",
-          "price": 1,
+          "price": 329,
           "link":
-            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+            "https://www.amazon.de/Motorola-Smartphone-Android-SoundBoost-Speaker-Black-Lunar-Gray/dp/B0747WYLTX?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B0747WYLTX"
         },
         {
           "name": "fine gold",
           "asin": "B0747X83J5",
-          "price": 1,
+          "price": 292,
           "link":
-            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+            "https://www.amazon.de/Motorola-Smartphone-Android-SoundBoost-Speaker-White-Fine-Gold/dp/B0747X83J5?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B0747X83J5"
         }
       ],
       "com": []
@@ -1928,9 +1924,9 @@
         {
           "name": "black",
           "asin": "B074MH8DJ5",
-          "price": 1,
+          "price": 330,
           "link":
-            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+            "https://www.amazon.de/Motorola-Smartphone-Speicher-Android-Schwarz-Super-Black/dp/B074MH8DJ5?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B074MH8DJ5"
         }
       ],
       "com": []
@@ -1964,9 +1960,9 @@
         {
           "name": "deep indigo",
           "asin": "B07BXWZ8ZG",
-          "price": 1,
+          "price": 234,
           "link":
-            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+            "https://www.amazon.de/Motorola-Smartphone-interner-Speicher-Android-Deep-Indigo/dp/B07BXWZ8ZG?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07BXWZ8ZG"
         }
       ],
       "com": []
@@ -2000,9 +1996,9 @@
         {
           "name": "deep indigo",
           "asin": "B079MT5K9N",
-          "price": 1,
+          "price": 269,
           "link":
-            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+            "https://www.amazon.de/Motorola-Smartphone-interner-Speicher-Exklusiv-Deep-Indigo/dp/B079MT5K9N?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B079MT5K9N"
         }
       ],
       "com": []
@@ -2036,9 +2032,9 @@
         {
           "name": "deep indigo",
           "asin": "B07CBC869D",
-          "price": 1,
+          "price": 250,
           "link":
-            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+            "https://www.amazon.de/Motorola-Smartphone-interner-Speicher-Android-Deep-Indigo/dp/B07CBC869D?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07CBC869D"
         }
       ],
       "com": []
@@ -2072,9 +2068,9 @@
         {
           "name": "deep indigo",
           "asin": "B07BXFRK2Q",
-          "price": 1,
+          "price": 149,
           "link":
-            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+            "https://www.amazon.de/Motorola-Smartphone-interner-Speicher-Android-Deep-Indigo/dp/B07BXFRK2Q?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07BXFRK2Q"
         }
       ],
       "com": []
@@ -2108,30 +2104,30 @@
         {
           "name": "blush gold",
           "asin": "B073Q2FYWF",
-          "price": 1,
+          "price": 99,
           "link":
-            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+            "https://www.amazon.de/Motorola-Smartphone-Display-Android-Blush-Gold/dp/B073Q2FYWF?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B073Q2FYWF"
         },
         {
           "name": "fine gold",
           "asin": "B071J7FRBD",
-          "price": 1,
+          "price": 118,
           "link":
-            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+            "https://www.amazon.de/Motorola-Moto-Plus-Smartphone-Android-Fine-Gold/dp/B071J7FRBD?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B071J7FRBD"
         },
         {
           "name": "iron grey",
           "asin": "B073Q2D8RJ",
-          "price": 1,
+          "price": 99,
           "link":
-            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+            "https://www.amazon.de/Motorola-Moto-Smartphone-Display-Android-Iron-Gray/dp/B073Q2D8RJ?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B073Q2D8RJ"
         },
         {
           "name": "oxford blue",
           "asin": "B073Q32CF9",
-          "price": 1,
+          "price": 114,
           "link":
-            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+            "https://www.amazon.de/Motorola-Moto-Smartphone-Android-Oxford-Blue/dp/B073Q32CF9?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B073Q32CF9"
         }
       ],
       "com": []
@@ -2165,9 +2161,9 @@
         {
           "name": "fine gold",
           "asin": "B071J7FRBD",
-          "price": 1,
+          "price": 118,
           "link":
-            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+            "https://www.amazon.de/Motorola-Moto-Plus-Smartphone-Android-Fine-Gold/dp/B071J7FRBD?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B071J7FRBD"
         }
       ],
       "com": []
@@ -2201,16 +2197,16 @@
         {
           "name": "fine gold",
           "asin": "B074MHL2DN",
-          "price": 1,
+          "price": 141,
           "link":
-            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+            "https://www.amazon.de/Motorola-Moto-Smartphone-Zoll-Android-Fine-Gold/dp/B074MHL2DN?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B074MHL2DN"
         },
         {
           "name": "lunar grey",
           "asin": "B074MGP8GJ",
-          "price": 1,
+          "price": 140,
           "link":
-            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+            "https://www.amazon.de/Motorola-Moto-Smartphone-Android-Mondgrau/dp/B074MGP8GJ?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B074MGP8GJ"
         }
       ],
       "com": []
@@ -2244,16 +2240,16 @@
         {
           "name": "blush gold",
           "asin": "B074SQZ2PB",
-          "price": 1,
+          "price": 188,
           "link":
-            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+            "https://www.amazon.de/Motorola-Smartphone-Kamera-Android-Blush-Gold/dp/B074SQZ2PB?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B074SQZ2PB"
         },
         {
           "name": "lunar grey",
           "asin": "B074SR2DVT",
-          "price": 1,
+          "price": 188,
           "link":
-            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+            "https://www.amazon.de/Motorola-Smartphone-Kamera-Android-Lunar-Gray/dp/B074SR2DVT?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B074SR2DVT"
         }
       ],
       "com": []
@@ -2287,30 +2283,30 @@
         {
           "name": "black",
           "asin": "B01N6M3K34",
-          "price": 1,
+          "price": 244,
           "link":
-            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+            "https://www.amazon.de/Samsung-Smartphone-Touch-Display-Speicher-Android-schwarz/dp/B01N6M3K34?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B01N6M3K34"
         },
         {
           "name": "blue",
           "asin": "B01N9MJTE6",
-          "price": 1,
+          "price": 213,
           "link":
-            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+            "https://www.amazon.de/Samsung-Smartphone-Touch-Display-Speicher-European-blau/dp/B01N9MJTE6?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B01N9MJTE6"
         },
         {
           "name": "gold",
           "asin": "B01MU5VUXK",
-          "price": 1,
+          "price": 223,
           "link":
-            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+            "https://www.amazon.de/Samsung-Smartphone-Touch-Display-Speicher-European-gold/dp/B01MU5VUXK?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B01MU5VUXK"
         },
         {
           "name": "peach-cloud",
           "asin": "B06W2H865T",
-          "price": 1,
+          "price": 251,
           "link":
-            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+            "https://www.amazon.de/Samsung-Smartphone-Touch-Display-Speicher-Peach-Cloud/dp/B06W2H865T?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B06W2H865T"
         }
       ],
       "com": []
@@ -2344,30 +2340,30 @@
         {
           "name": "coral blue",
           "asin": "B079SQ39RZ",
-          "price": 1,
+          "price": 597,
           "link":
-            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+            "https://www.amazon.de/Samsung-Smartphone-Touch-Display-interner-Speicher-Coral-Blue/dp/B079SQ39RZ?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B079SQ39RZ"
         },
         {
           "name": "lilac purple",
           "asin": "B079S5MZYH",
-          "price": 1,
+          "price": 634,
           "link":
-            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+            "https://www.amazon.de/Samsung-Smartphone-Touch-Display-interner-Speicher-Lilac-Purple/dp/B079S5MZYH?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B079S5MZYH"
         },
         {
           "name": "midnight black",
           "asin": "B079SQ5VHX",
-          "price": 1,
+          "price": 595,
           "link":
-            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+            "https://www.amazon.de/Samsung-Smartphone-Touch-Display-interner-Speicher-Midnight-Black/dp/B079SQ5VHX?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B079SQ5VHX"
         },
         {
           "name": "sunrise gold",
           "asin": "B07D4PRJKW",
-          "price": 1,
+          "price": 617,
           "link":
-            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+            "https://www.amazon.de/Samsung-Smartphone-Touch-Display-interner-Speicher-Sunrise-Gold/dp/B07D4PRJKW?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07D4PRJKW"
         }
       ],
       "com": []
@@ -2401,16 +2397,16 @@
         {
           "name": "grey",
           "asin": "B07C6351NJ",
-          "price": 1,
+          "price": 0,
           "link":
-            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+            "https://www.amazon.de/Samsung-Smartphone-interner-Speicher-Dual-Sim-Grey/dp/B07C6351NJ?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07C6351NJ"
         },
         {
           "name": "midnight black",
           "asin": "B07C5ZNN9Q",
-          "price": 1,
+          "price": 0,
           "link":
-            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+            "https://www.amazon.de/Samsung-Smartphone-interner-Speicher-Dual-Sim-Midnight-Black/dp/B07C5ZNN9Q?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07C5ZNN9Q"
         }
       ],
       "com": []
@@ -2444,30 +2440,30 @@
         {
           "name": "coral blue",
           "asin": "B079SNGM3V",
-          "price": 1,
+          "price": 0,
           "link":
-            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+            "https://www.amazon.de/Samsung-Smartphone-Touch-Display-interner-Speicher-Coral-Blue/dp/B079SNGM3V?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B079SNGM3V"
         },
         {
           "name": "lilac purple",
           "asin": "B079SD4B68",
-          "price": 1,
+          "price": 744,
           "link":
-            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+            "https://www.amazon.de/Samsung-Smartphone-Touch-Display-interner-Speicher-Lilac-Purple/dp/B079SD4B68?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B079SD4B68"
         },
         {
           "name": "midnight black",
           "asin": "B079SNGV9P",
-          "price": 1,
+          "price": 721,
           "link":
-            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+            "https://www.amazon.de/Samsung-Smartphone-Touch-Display-interner-Speicher-Midnight-Black/dp/B079SNGV9P?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B079SNGV9P"
         },
         {
           "name": "sunrise gold",
           "asin": "B07D4Q2L2T",
-          "price": 1,
+          "price": 689,
           "link":
-            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+            "https://www.amazon.de/Samsung-Smartphone-Touch-Display-interner-Speicher-Sunrise-Gold/dp/B07D4Q2L2T?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07D4Q2L2T"
         }
       ],
       "com": []
@@ -2501,16 +2497,16 @@
         {
           "name": "grey",
           "asin": "B07C64N3WD",
-          "price": 1,
+          "price": 0,
           "link":
-            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+            "https://www.amazon.de/Samsung-Smartphone-interner-Speicher-Dual-Sim-Titanium-Grey/dp/B07C64N3WD?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07C64N3WD"
         },
         {
           "name": "midnight black",
           "asin": "B07C61XVDQ",
-          "price": 1,
+          "price": 1049,
           "link":
-            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+            "https://www.amazon.de/Samsung-Smartphone-interner-Speicher-Dual-Sim-Midnight-Black/dp/B07C61XVDQ?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07C61XVDQ"
         }
       ],
       "com": []
@@ -2544,23 +2540,23 @@
         {
           "name": "deepsea blue",
           "asin": "B076WWRQXX",
-          "price": 1,
+          "price": 624,
           "link":
-            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+            "https://www.amazon.de/Samsung-Smartphone-Display-Speicher-Android-Deepsea-Blue/dp/B076WWRQXX?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B076WWRQXX"
         },
         {
           "name": "maple gold",
           "asin": "B074PBD4V3",
-          "price": 1,
+          "price": 617,
           "link":
-            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+            "https://www.amazon.de/Samsung-Smartphone-Touch-Display-interner-Speicher-maple-gold/dp/B074PBD4V3?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B074PBD4V3"
         },
         {
           "name": "maple gold",
           "asin": "B074PBH2P4",
-          "price": 1,
+          "price": 638,
           "link":
-            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+            "https://www.amazon.de/Samsung-Smartphone-Touch-Display-interner-Speicher-midnight-black/dp/B074PBH2P4?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B074PBH2P4"
         }
       ],
       "com": []
@@ -2594,30 +2590,30 @@
         {
           "name": "midnight black",
           "asin": "B06XJ49G5B",
-          "price": 1,
+          "price": 412,
           "link":
-            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+            "https://www.amazon.de/Samsung-Smartphone-Touch-Display-interner-Speicher-midnight-black/dp/B06XJ49G5B?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B06XJ49G5B"
         },
         {
           "name": "arctiv silver",
           "asin": "B06XJ65K58",
-          "price": 1,
+          "price": 434,
           "link":
-            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+            "https://www.amazon.de/Samsung-Smartphone-Touch-Display-interner-Speicher-arctic-silver/dp/B06XJ65K58?SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B06XJ65K58"
         },
         {
           "name": "orchid grey",
           "asin": "B06XHRDF78",
-          "price": 1,
+          "price": 414,
           "link":
-            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+            "https://www.amazon.de/Samsung-Smartphone-Touch-Display-interner-Speicher-orchid-grey/dp/B06XHRDF78?SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B06XHRDF78"
         },
         {
           "name": "rosa",
           "asin": "B076X8K1ND",
-          "price": 1,
+          "price": 484,
           "link":
-            "https://www.amazon.de/Nokia-11B2NW01A05-Smartphone-interner-Speicher-Wei%C3%9F-Kupfer/dp/B07B68D9KP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B68D9KP"
+            "https://www.amazon.de/Samsung-Smartphone-Display-Speicher-Android-rosa/dp/B076X8K1ND?SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B076X8K1ND"
         }
       ],
       "com": []
