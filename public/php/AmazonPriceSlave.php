@@ -9,6 +9,9 @@
     require_once "Logger.php";
     require_once "SmartphoneDataRequester.php";
 
+    ini_set("log_errors", 1);
+    ini_set("error_log", "../logs/php-error.log");
+
     $phones = json_decode(file_get_contents("../data/smartphoneData.json"),TRUE);
     $markets = json_decode(file_get_contents("../data/markets.json"),TRUE);
 

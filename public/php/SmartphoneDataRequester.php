@@ -4,6 +4,9 @@
 
   require_once "Logger.php";
 
+  ini_set("log_errors", 1);
+  ini_set("error_log", "../logs/php-error.log");
+
   class SmartphoneDataRequester {
 
     private $endpoint;
