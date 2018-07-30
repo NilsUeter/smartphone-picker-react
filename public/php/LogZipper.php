@@ -43,7 +43,7 @@
 
   $fileSizeSum = 0;
 
-  $dir = new DirectoryIterator('logs');
+  $dir = new DirectoryIterator('../logs');
   $logfiles = [];
   foreach ($dir as $fileinfo) {
     if (!$fileinfo->isDot() AND !$fileinfo->isDir() AND $fileinfo->getMTime() >= $date_before->getTimestamp() AND $fileinfo->getMTime() < $date_current->getTimestamp()) {
@@ -66,7 +66,7 @@
   logToFile("LogZipper", "Closed zipfile with result: " . ($ret ? "true" : "false"));
   echo "Closed zipfile with result: " . ($ret ? "true" : "false") . "<br>";
   logToFile("LogZipper", "Zip filesize: " . humanFilesize(filesize($filename)));
-  echo "<br>Zip filesize: " . humanFilesize(filesize($filename)) . "<br>";
+  echo "Zip filesize: " . humanFilesize(filesize($filename)) . "<br>";
 
   logToFile("LogZipper", "Logfiles");
   echo "<br>Logfiles<br>";
@@ -84,6 +84,6 @@
   function humanFilesize($bytes, $decimals = 2) {
     $sz = 'BKMGTP';
     $factor = floor((strlen($bytes) - 1) / 3);
-    return sprintf("%.{$decimals}f", $bytes / pow(1024, $factor)) . @$sz[$factor];
+    return sprintf("%.{$decimals}f", $bytes / pow(1024, $factor)) . @$sz[$factor] . "B";
   }
  ?>
