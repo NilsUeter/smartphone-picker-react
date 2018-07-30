@@ -5,15 +5,19 @@
     }
 
     ignore_user_abort(true);
+    set_time_limit(0);
+    ini_set("log_errors", 1);
+    ini_set("error_log", "../logs/php-error.log");
 
     require_once "Logger.php";
     require_once "SmartphoneDataRequester.php";
 
-    ini_set("log_errors", 1);
-    ini_set("error_log", "../logs/php-error.log");
-
     $phones = json_decode(file_get_contents("../data/smartphoneData.json"),TRUE);
     $markets = json_decode(file_get_contents("../data/markets.json"),TRUE);
+    $smartphoneDataRequesters = [];
+    foreach(array_keys($markets) as &$market) {
+        $smartphoneDataRequesters[$market] = new SmartphoneDataRequester($markets[$market]["endpoint"], $markets[$market]["associateTag"]);
+    }
 
     logToFile("AmazonPriceSlave", "Iterating through every Phone");
     echo "Iterating through every Phone <br>";
@@ -30,9 +34,6 @@
             echo "endpoint " . $markets[$market]["endpoint"] . "<br>";
             logToFile("AmazonPriceSlave", "associateTag " . $markets[$market]["associateTag"]);
             echo "associateTag " . $markets[$market]["associateTag"] . "<br>";
-
-            $smartphoneDataRequester = new SmartphoneDataRequester($markets[$market]["endpoint"], $markets[$market]["associateTag"]);
-
             logToFile("AmazonPriceSlave", "Iterating through every {$market} phone type");
             echo "<br>Iterating through every {$market} phone type <br>";
             foreach($phone["types"][$market] as $keyType => $phoneType) {
@@ -45,11 +46,10 @@
                 logToFile("AmazonPriceSlave", "Old price: " . $phoneType["price"]);
                 echo "Old price: " . $phoneType["price"] . " <br>";
     
-                $smartphoneData = $smartphoneDataRequester->getSmartPhoneData($phoneType["asin"]);
+                $smartphoneData = $smartphoneDataRequesters[$market]->getSmartPhoneData($phoneType["asin"]);
                 if($smartphoneData[0] === TRUE) {
                     logToFile("AmazonPriceSlave", "Amazon blocked");
                     echo "Amazon blocked <br>";
-    
                 } else {
                     $phones[$keyPhone]["types"][$market][$keyType]["link"] = $smartphoneData[1];
                     logToFile("AmazonPriceSlave", "New link: " . $smartphoneData[1]);
