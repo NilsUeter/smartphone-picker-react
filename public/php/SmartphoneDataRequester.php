@@ -1,8 +1,4 @@
 <?php
-  ignore_user_abort(true);
-  set_time_limit(0);
-
-  require_once "Logger.php";
 
   ini_set("log_errors", 1);
   ini_set("error_log", "../logs/php-error.log");
@@ -63,27 +59,25 @@
 
       // Generate the signed URL
       $request_url = 'http://'.$this->endpoint.$this->uri.'?'.$canonical_query_string.'&Signature='.rawurlencode($signature);
-
-      echo "Request URL: " . $request_url . "<br>";
-      logToFile("AmazonPriceSlave", "Request URL: {$request_url} <br>");
+      $smartphoneData["request_url"] = $request_url;
 
       $response = file_get_contents($request_url);
 
       if($response === FALSE)
       {
-        $smartphoneData[0] = TRUE;
-        $smartphoneData[1] = "";
-        $smartphoneData[2] = "";
+        $smartphoneData["failed"] = TRUE;
+        $smartphoneData["link"] = "";
+        $smartphoneData["price"] = "";
       }else {
         $smartphoneData[0] = FALSE;
         $xml = new DOMDocument();
         $xml->loadXML($response);
         $item = $xml->getElementsByTagName("Item")[0];
         if(is_null($item)) {
-            $smartphoneData[1] = "";
+            $smartphoneData["link"] = "";
         }
         else{
-            $smartphoneData[1] = $item->getElementsByTagName("DetailPageURL")[0]->nodeValue;
+            $smartphoneData["link"] = $item->getElementsByTagName("DetailPageURL")[0]->nodeValue;
             if($item->getElementsByTagName("Price")[0] === NULL)
             {
               $priceItem = $item->getElementsByTagName("LowestNewPrice")[0];
@@ -94,13 +88,13 @@
         }
         if(is_null($priceItem)) {
           //TODO Workaround lösen
-          $smartphoneData[2] = 0;
+          $smartphoneData["price"] = 0;
         } else {
-          $smartphoneData[2] = (int)substr($priceItem->getElementsByTagName("Amount")[0]->nodeValue, 0, -2);
+          $smartphoneData["price"] = (int)substr($priceItem->getElementsByTagName("Amount")[0]->nodeValue, 0, -2);
         }
       }
 
-      //Array mit 3 Objekten, 0 = Failed?, 1 = Link, 2 = Preis
+      //Array mit 4 Objekten, request_url=Request Url, failed = Failed?, link = Link, price = Preis
       return $smartphoneData;
     }
   }

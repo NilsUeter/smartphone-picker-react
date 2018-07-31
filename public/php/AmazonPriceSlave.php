@@ -8,6 +8,8 @@
     set_time_limit(0);
     ini_set("log_errors", 1);
     ini_set("error_log", "../logs/php-error.log");
+    ini_set('max_execution_time','200M'); 
+    ini_set('max_input_time','200M');
 
     require_once "Logger.php";
     require_once "SmartphoneDataRequester.php";
@@ -47,16 +49,18 @@
                 echo "Old price: " . $phoneType["price"] . " <br>";
     
                 $smartphoneData = $smartphoneDataRequesters[$market]->getSmartPhoneData($phoneType["asin"]);
-                if($smartphoneData[0] === TRUE) {
+                echo "Request Url: " . $smartphoneData[request_url] . " <br>";
+                logToFile("AmazonPriceSlave", "Request Url: " . $smartphoneData[request_url]);
+                if($smartphoneData["failed"] === TRUE) {
                     logToFile("AmazonPriceSlave", "Amazon blocked");
                     echo "Amazon blocked <br>";
                 } else {
-                    $phones[$keyPhone]["types"][$market][$keyType]["link"] = $smartphoneData[1];
-                    logToFile("AmazonPriceSlave", "New link: " . $smartphoneData[1]);
-                    echo "New link: " . $smartphoneData[1] . "<br>";
-                    $phones[$keyPhone]["types"][$market][$keyType]["price"] = $smartphoneData[2];
-                    logToFile("AmazonPriceSlave", "New price: " . $smartphoneData[2]);
-                    echo "New price: " . $smartphoneData[2] . "<br>";
+                    $phones[$keyPhone]["types"][$market][$keyType]["link"] = $smartphoneData["link"];
+                    logToFile("AmazonPriceSlave", "New link: " . $smartphoneData["link"]);
+                    echo "New link: " . $smartphoneData["link"] . "<br>";
+                    $phones[$keyPhone]["types"][$market][$keyType]["price"] = $smartphoneData["price"];
+                    logToFile("AmazonPriceSlave", "New price: " . $smartphoneData["price"]);
+                    echo "New price: " . $smartphoneData["price"] . "<br>";
                 }
             }
             logToFile("AmazonPriceSlave", "Iterated through every {$market} phone type");
