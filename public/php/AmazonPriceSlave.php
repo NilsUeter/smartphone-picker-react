@@ -62,6 +62,9 @@
                     logToFile("AmazonPriceSlave", "New price: " . $smartphoneData["price"]);
                     echo "New price: " . $smartphoneData["price"] . "<br>";
                 }
+
+                flush();
+                ob_flush();
             }
             logToFile("AmazonPriceSlave", "Iterated through every {$market} phone type");
             echo "<br>Iterated through every {$market} phone type <br>";
