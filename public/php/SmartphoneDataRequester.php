@@ -11,10 +11,10 @@
     private $params;
 
     function __construct($endpoint, $associateTag) {
-      $jsonKeys = json_decode(file_get_contents("../scripts/keys.js"),TRUE);
+      $jsonKeys = json_decode(file_get_contents("../data/keys.json"),TRUE);
 
       // Your Secret Key corresponding to the above ID, as taken from the Your Account page
-      $this->secret_key = $jsonKeys['secret_key'];
+      $this->secret_key = $jsonKeys["secret_key"];
 
       // Amazon marketplace/region
       $this->endpoint = $endpoint;
@@ -22,7 +22,7 @@
       $this->params = array(
         "Service" => "AWSECommerceService",
         "Operation" => "ItemLookup",
-        "AWSAccessKeyId" => $jsonKeys['access_key_id'],
+        "AWSAccessKeyId" => $jsonKeys["access_key_id"],
         "AssociateTag" => $associateTag,
         "ItemId" => "B07CHQHFDZ",
         "IdType" => "ASIN",
