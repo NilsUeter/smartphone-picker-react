@@ -31,6 +31,7 @@
             foreach($phone["types"][$market] as $keyType => $phoneType) {
 
                 if($counter < 40) {
+                    logToFile("AmazonPriceSlave", "Name: " . $phoneType["name"]);
                     logToFile("AmazonPriceSlave", "Last Updated: " . $phoneType["lastUpdated"]);
                     $dateLastUpdated = date_create_from_format("d.m.Y H:i:s", $phoneType["lastUpdated"]);
                     $dateUpdate = date_create();
@@ -38,7 +39,6 @@
                     logToFile("AmazonPriceSlave", "Update time (now-3H): " . date_format($dateUpdate, "d.m.Y H:i:s"));
 
                     if($dateLastUpdated < $dateUpdate) {
-                        logToFile("AmazonPriceSlave", "Name: " . $phoneType["name"]);
                         logToFile("AmazonPriceSlave", "Asin: " . $phoneType["asin"]);
                         logToFile("AmazonPriceSlave", "Old link: " . $phoneType["link"]);
                         logToFile("AmazonPriceSlave", "Old price: " . $phoneType["price"]);
