@@ -24,20 +24,12 @@
     $counter = 0;
     foreach ($phones as $keyPhone => $phone) {
         logToFile("AmazonPriceSlave", "Updating phone {$keyPhone}");
-        logToFile("AmazonPriceSlave", "Iterating though every market the phone has available types");
 
         foreach(array_keys($phone["types"]) as &$market) {
-            logToFile("AmazonPriceSlave", "Market name: {$market}");
-            logToFile("AmazonPriceSlave", "Endpoint " . $markets[$market]["endpoint"]);
-            logToFile("AmazonPriceSlave", "AssociateTag " . $markets[$market]["associateTag"]);
             logToFile("AmazonPriceSlave", "Iterating through every {$market} phone type");
 
             foreach($phone["types"][$market] as $keyType => $phoneType) {
-                logToFile("AmazonPriceSlave", "Name: " . $phoneType["name"]);
-                logToFile("AmazonPriceSlave", "Asin: " . $phoneType["asin"]);
-                logToFile("AmazonPriceSlave", "Old link: " . $phoneType["link"]);
-                logToFile("AmazonPriceSlave", "Old price: " . $phoneType["price"]);
-    
+
                 if($counter < 40) {
                     logToFile("AmazonPriceSlave", "Last Updated: " . $phoneType["lastUpdated"]);
                     $dateLastUpdated = date_create_from_format("d.m.Y H:i:s", $phoneType["lastUpdated"]);
@@ -46,6 +38,11 @@
                     logToFile("AmazonPriceSlave", "Update time (now-3H): " . date_format($dateUpdate, "d.m.Y H:i:s"));
 
                     if($dateLastUpdated < $dateUpdate) {
+                        logToFile("AmazonPriceSlave", "Name: " . $phoneType["name"]);
+                        logToFile("AmazonPriceSlave", "Asin: " . $phoneType["asin"]);
+                        logToFile("AmazonPriceSlave", "Old link: " . $phoneType["link"]);
+                        logToFile("AmazonPriceSlave", "Old price: " . $phoneType["price"]);
+
                         logToFile("AmazonPriceSlave", "Current request counter: {$counter}");
                         $smartphoneData = $smartphoneDataRequesters[$market]->getSmartPhoneData($phoneType["asin"]);
                         logToFile("AmazonPriceSlave", "Request Url: " . $smartphoneData[request_url]);
