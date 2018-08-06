@@ -60,9 +60,7 @@ class Header extends Component {
               {SmartphoneStore.listOfFilteredAndScoredObjects
                 ? SmartphoneStore.listOfFilteredAndScoredObjects.length
                 : 0}/
-              {SmartphoneStore.obj.smartphones
-                ? SmartphoneStore.obj.smartphones.length
-                : 0}
+              {SmartphoneStore.obj.smartphones ? SmartphoneStore.obj.length : 0}
             </a>
           </div>
         </div>
