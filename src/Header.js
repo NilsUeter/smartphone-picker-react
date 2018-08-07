@@ -18,7 +18,7 @@ class Header extends Component {
           </a>
           <TextSelect
             name="country"
-            options={[["de", "GERMANY"], ["com", "UNITED STATES"]]}
+            options={[["de", "GERMANY"]]}
             colorScheme="blue-white"
           />
         </div>
