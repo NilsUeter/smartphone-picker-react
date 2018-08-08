@@ -14,7 +14,7 @@ class Content extends Component {
   }
 
   scrollHorizontally(e) {
-    var delta = Math.max(-1, Math.min(1, e.deltaY || -e.detail));
+    const delta = Math.max(-1, Math.min(1, e.deltaY || -e.detail));
 
     // TODO: Make Scrolling smooth
     this.myRef.current.scrollBy(delta * 55, 0);

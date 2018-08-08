@@ -22,7 +22,7 @@ class SmartphoneStore {
   };
 
   loadJSON = callback => {
-    var xobj = new XMLHttpRequest();
+    const xobj = new XMLHttpRequest();
     xobj.overrideMimeType("application/json");
     xobj.open("GET", "./data/smartphoneData.json", true); // Replace 'my_data' with the path to your file
     xobj.onreadystatechange = () => {
@@ -35,7 +35,7 @@ class SmartphoneStore {
   };
 
   findLowestPriceForAllSmartphones = () => {
-    for (var i = 0; i < this.obj.length; i++) {
+    for (let i = 0; i < this.obj.length; i++) {
       this.obj[i].smallestPrice = this.findLowestPriceForOneSmartphones(
         this.obj[i]
       );
@@ -43,8 +43,8 @@ class SmartphoneStore {
   };
 
   findLowestPriceForOneSmartphones = smartphone => {
-    var lowest = 0;
-    for (var i = 1; i < smartphone.types[FilterStore.country].length; i++) {
+    let lowest = 0;
+    for (let i = 1; i < smartphone.types[FilterStore.country].length; i++) {
       if (
         smartphone.types[FilterStore.country][i].price <
           smartphone.types[FilterStore.country][lowest].price &&
@@ -59,7 +59,7 @@ class SmartphoneStore {
   };
 
   calculateAllScores() {
-    for (var i = 0; i < this.obj.length; i++) {
+    for (let i = 0; i < this.obj.length; i++) {
       this.obj[i].totalscore = this.calculateScore(this.obj[i]);
     }
   }
@@ -76,11 +76,11 @@ class SmartphoneStore {
 
   @computed
   get listOfFilteredObjects() {
-    var listOfFilteredObjects = [];
+    let listOfFilteredObjects = [];
     if (this.obj == null) {
       return listOfFilteredObjects;
     }
-    for (var i = 0; i < this.obj.length; i++) {
+    for (let i = 0; i < this.obj.length; i++) {
       if (
         this.obj[i].types[FilterStore.country][this.obj[i].smallestPrice]
           .price == null ||
@@ -199,7 +199,7 @@ class SmartphoneStore {
 
   @computed
   get listOfFilteredAndScoredObjects() {
-    var listOfFilteredAndScoredObjects = this.listOfFilteredObjects.slice(0);
+    let listOfFilteredAndScoredObjects = this.listOfFilteredObjects.slice(0);
     switch (FilterStore.filterType) {
       case "price":
         return listOfFilteredAndScoredObjects.sort((a, b) => {

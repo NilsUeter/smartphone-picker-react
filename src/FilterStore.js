@@ -80,7 +80,7 @@ class FilterStore {
 
   @action
   resetFilters = () => {
-    for (var name in this) {
+    for (let name in this) {
       switch (name) {
         case "filterTemplate": //Define filters which aren't expected to be reset
         case "country":
@@ -101,7 +101,7 @@ const filterStore = new FilterStore();
 const resetCopy = createBackup();
 function createBackup() {
   const da = new FilterStore();
-  for (var name in filterStore) {
+  for (let name in filterStore) {
     da[name] = filterStore[name];
   }
   return da;

@@ -23,9 +23,9 @@ const storageMarks = {
 @observer
 class Sidebar extends Component {
   getMinDate() {
-    var monthsMin = 0;
-    var start = new Date("2017-01");
-    var min = new Date(FilterStore.release_minimum);
+    let monthsMin = 0;
+    const start = new Date("2017-01");
+    const min = new Date(FilterStore.release_minimum);
 
     if (!isNaN(min.getTime())) {
       monthsMin = (min.getFullYear() - start.getFullYear()) * 12;
@@ -37,9 +37,9 @@ class Sidebar extends Component {
   }
 
   getMaxDate() {
-    var monthsMax = 0;
-    var start = new Date("2017-01");
-    var max = new Date(FilterStore.release_maximum);
+    let monthsMax = 0;
+    const start = new Date("2017-01");
+    const max = new Date(FilterStore.release_maximum);
 
     if (!isNaN(max.getTime())) {
       monthsMax = (max.getFullYear() - start.getFullYear()) * 12;
