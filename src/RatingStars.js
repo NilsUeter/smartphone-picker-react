@@ -6,6 +6,10 @@ import FilterStore from "./FilterStore.js";
 
 @observer
 class RatingStars extends Component {
+  changeAttribute = e => {
+    FilterStore.changeAttribute(this.props.name, e.target.value);
+  };
+
   render() {
     return (
       <div className="rating-stars">
@@ -15,12 +19,7 @@ class RatingStars extends Component {
           value="5"
           type="radio"
           checked={FilterStore[this.props.name] === "5"}
-          onChange={changeEvent => {
-            FilterStore.changeAttribute(
-              this.props.name,
-              changeEvent.target.value
-            );
-          }}
+          onChange={this.changeAttribute}
         />
         <label
           htmlFor={this.props.name + "input-1-5"}
@@ -32,12 +31,7 @@ class RatingStars extends Component {
           value="4"
           type="radio"
           checked={FilterStore[this.props.name] === "4"}
-          onChange={changeEvent => {
-            FilterStore.changeAttribute(
-              this.props.name,
-              changeEvent.target.value
-            );
-          }}
+          onChange={this.changeAttribute}
         />
         <label
           htmlFor={this.props.name + "input-1-4"}
@@ -49,12 +43,7 @@ class RatingStars extends Component {
           value="3"
           type="radio"
           checked={FilterStore[this.props.name] === "3"}
-          onChange={changeEvent => {
-            FilterStore.changeAttribute(
-              this.props.name,
-              changeEvent.target.value
-            );
-          }}
+          onChange={this.changeAttribute}
         />
         <label
           htmlFor={this.props.name + "input-1-3"}
@@ -66,12 +55,7 @@ class RatingStars extends Component {
           value="2"
           type="radio"
           checked={FilterStore[this.props.name] === "2"}
-          onChange={changeEvent => {
-            FilterStore.changeAttribute(
-              this.props.name,
-              changeEvent.target.value
-            );
-          }}
+          onChange={this.changeAttribute}
         />
         <label
           htmlFor={this.props.name + "input-1-2"}
@@ -83,12 +67,7 @@ class RatingStars extends Component {
           value="1"
           type="radio"
           checked={FilterStore[this.props.name] === "1"}
-          onChange={changeEvent => {
-            FilterStore.changeAttribute(
-              this.props.name,
-              changeEvent.target.value
-            );
-          }}
+          onChange={this.changeAttribute}
         />
         <label
           htmlFor={this.props.name + "input-1-1"}

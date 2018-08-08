@@ -6,6 +6,10 @@ import FilterStore from "./FilterStore.js";
 
 @observer
 class TextSelect extends Component {
+  changeAttribute = e => {
+    FilterStore.changeAttribute(this.props.name, e.target.value);
+  };
+
   render() {
     return (
       <label>
@@ -13,12 +17,7 @@ class TextSelect extends Component {
           id={this.props.name}
           className={"textSelect " + this.props.colorScheme}
           value={FilterStore[this.props.name]}
-          onChange={changeEvent => {
-            FilterStore.changeAttribute(
-              this.props.name,
-              changeEvent.target.value
-            );
-          }}
+          onChange={this.changeAttribute}
         >
           {this.props.options.map(smartphone => (
             <option key={smartphone[0]} value={smartphone[0]}>

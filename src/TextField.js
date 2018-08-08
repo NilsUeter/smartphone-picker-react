@@ -6,6 +6,10 @@ import FilterStore from "./FilterStore.js";
 
 @observer
 class TextField extends Component {
+  changeAttribute = e => {
+    FilterStore.changeAttribute(this.props.name, e.target.value);
+  };
+
   render() {
     return (
       <input
@@ -16,13 +20,7 @@ class TextField extends Component {
         type="text"
         pattern="[0-9]+([\.,-][0-9]+)?"
         value={FilterStore[this.props.name]}
-        onChange={changeEvent => {
-          FilterStore.changeAttribute(
-            this.props.name,
-            changeEvent.target.value,
-            "int"
-          );
-        }}
+        onChange={this.changeAttribute}
       />
     );
   }

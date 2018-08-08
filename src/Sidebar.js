@@ -23,25 +23,65 @@ const storageMarks = {
 @observer
 class Sidebar extends Component {
   getMinDate() {
+    var monthsMin = 0;
     var start = new Date("2017-01");
     var min = new Date(FilterStore.release_minimum);
-    var monthsMin;
-    monthsMin = (min.getFullYear() - start.getFullYear()) * 12;
-    monthsMin -= start.getMonth();
-    monthsMin += min.getMonth();
+
+    if (!isNaN(min.getTime())) {
+      monthsMin = (min.getFullYear() - start.getFullYear()) * 12;
+      monthsMin -= start.getMonth();
+      monthsMin += min.getMonth();
+    }
+
     return monthsMin;
   }
 
   getMaxDate() {
+    var monthsMax = 0;
     var start = new Date("2017-01");
     var max = new Date(FilterStore.release_maximum);
-    var monthsMax;
 
-    monthsMax = (max.getFullYear() - start.getFullYear()) * 12;
-    monthsMax -= start.getMonth();
-    monthsMax += max.getMonth();
+    if (!isNaN(max.getTime())) {
+      monthsMax = (max.getFullYear() - start.getFullYear()) * 12;
+      monthsMax -= start.getMonth();
+      monthsMax += max.getMonth();
+    }
+
     return monthsMax;
   }
+
+  toggleAttribute = name => e => {
+    e.preventDefault();
+
+    FilterStore.toggleAttribute(name);
+  };
+
+  changeAttributeSlider = (first, second) => changeEvent => {
+    FilterStore.changeAttribute(first, changeEvent[0]);
+    FilterStore.changeAttribute(second, changeEvent[1]);
+  };
+
+  changeAttributeStorage = changeEvent => {
+    FilterStore.changeAttribute("storage", 16 * Math.pow(2, changeEvent));
+  };
+
+  changeAttributeDateRange = changeEvent => {
+    FilterStore.changeAttribute(
+      "release_minimum",
+      "201" +
+        (7 + Math.floor(changeEvent[0] / 12)) +
+        "-" +
+        ("00" + ((changeEvent[0] % 12) + 1)).slice(-2)
+    );
+
+    FilterStore.changeAttribute(
+      "release_maximum",
+      "201" +
+        (7 + Math.floor(changeEvent[1] / 12)) +
+        "-" +
+        ("00" + ((changeEvent[1] % 12) + 1)).slice(-2)
+    );
+  };
 
   render() {
     return (
@@ -82,9 +122,7 @@ class Sidebar extends Component {
               height="22px"
               width="22px"
               alt="Submit"
-              onClick={() => {
-                FilterStore.toggleAttribute("isDescending");
-              }}
+              onClick={this.toggleAttribute("isDescending")}
             />
           </div>
           <p>Scale phones</p>
@@ -100,23 +138,7 @@ class Sidebar extends Component {
                 step={1}
                 pushable={1}
                 value={[this.getMinDate(), this.getMaxDate()]}
-                onChange={changeEvent => {
-                  FilterStore.changeAttribute(
-                    "release_minimum",
-                    "201" +
-                      (7 + Math.floor(changeEvent[0] / 12)) +
-                      "-" +
-                      ("00" + ((changeEvent[0] % 12) + 1)).slice(-2)
-                  );
-
-                  FilterStore.changeAttribute(
-                    "release_maximum",
-                    "201" +
-                      (7 + Math.floor(changeEvent[1] / 12)) +
-                      "-" +
-                      ("00" + ((changeEvent[1] % 12) + 1)).slice(-2)
-                  );
-                }}
+                onChange={this.changeAttributeDateRange}
                 trackStyle={[{ backgroundColor: "#12709e" }]}
                 handleStyle={[
                   { border: "solid 2px #12709e" },
@@ -149,16 +171,10 @@ class Sidebar extends Component {
                     : 0
                 ]}
                 pushable={50}
-                onChange={changeEvent => {
-                  FilterStore.changeAttribute(
-                    "price_minimum_1",
-                    parseInt(changeEvent[0], 10)
-                  );
-                  FilterStore.changeAttribute(
-                    "price_maximum_1",
-                    parseInt(changeEvent[1], 10)
-                  );
-                }}
+                onChange={this.changeAttributeSlider(
+                  "price_minimum_1",
+                  "price_maximum_1"
+                )}
                 trackStyle={[{ backgroundColor: "#12709e" }]}
                 handleStyle={[
                   { border: "solid 2px #12709e" },
@@ -191,10 +207,10 @@ class Sidebar extends Component {
                     ? parseFloat(FilterStore.size_maximum_1)
                     : 0
                 ]}
-                onChange={changeEvent => {
-                  FilterStore.changeAttribute("size_minimum_1", changeEvent[0]);
-                  FilterStore.changeAttribute("size_maximum_1", changeEvent[1]);
-                }}
+                onChange={this.changeAttributeSlider(
+                  "size_minimum_1",
+                  "size_maximum_1"
+                )}
                 trackStyle={[{ backgroundColor: "#12709e" }]}
                 handleStyle={[
                   { border: "solid 2px #12709e" },
@@ -227,10 +243,10 @@ class Sidebar extends Component {
                     ? parseInt(FilterStore.size_maximum_2, 10)
                     : 0
                 ]}
-                onChange={changeEvent => {
-                  FilterStore.changeAttribute("size_minimum_2", changeEvent[0]);
-                  FilterStore.changeAttribute("size_maximum_2", changeEvent[1]);
-                }}
+                onChange={this.changeAttributeSlider(
+                  "size_minimum_2",
+                  "size_maximum_2"
+                )}
                 trackStyle={[{ backgroundColor: "#12709e" }]}
                 handleStyle={[
                   { border: "solid 2px #12709e" },
@@ -263,10 +279,10 @@ class Sidebar extends Component {
                     ? parseInt(FilterStore.size_maximum_3, 10)
                     : 0
                 ]}
-                onChange={changeEvent => {
-                  FilterStore.changeAttribute("size_minimum_3", changeEvent[0]);
-                  FilterStore.changeAttribute("size_maximum_3", changeEvent[1]);
-                }}
+                onChange={this.changeAttributeSlider(
+                  "size_minimum_3",
+                  "size_maximum_3"
+                )}
                 trackStyle={[{ backgroundColor: "#12709e" }]}
                 handleStyle={[
                   { border: "solid 2px #12709e" },
@@ -305,12 +321,7 @@ class Sidebar extends Component {
               max={4}
               marks={storageMarks}
               step={null}
-              onChange={changeEvent => {
-                FilterStore.changeAttribute(
-                  "storage",
-                  16 * Math.pow(2, changeEvent)
-                );
-              }}
+              onChange={this.changeAttributeStorage}
               trackStyle={[{ backgroundColor: "#12709e" }]}
               handleStyle={[
                 { border: "solid 2px #12709e" },

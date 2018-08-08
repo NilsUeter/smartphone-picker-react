@@ -45,7 +45,7 @@ class FilterStore {
   };
 
   @action
-  changeAttribute = (name, newValue, type = "") => {
+  changeAttribute = (name, newValue) => {
     this[name] = newValue;
 
     if (name === "filterTemplate") {

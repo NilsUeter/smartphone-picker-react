@@ -9,6 +9,12 @@ import SmartphoneStore from "./SmartphoneStore.js";
 
 @observer
 class Header extends Component {
+  toggleAttribute = name => e => {
+    e.preventDefault();
+
+    FilterStore.toggleAttribute(name);
+  };
+
   render() {
     return (
       <header className="box header">
@@ -26,9 +32,7 @@ class Header extends Component {
           <div>
             <button
               className="show-sidebar-button"
-              onClick={() => {
-                FilterStore.toggleAttribute("sidebarHidden");
-              }}
+              onClick={this.toggleAttribute("sidebarHidden")}
             >
               {FilterStore.sidebarHidden ? "Show" : "Hide"} Filters
             </button>
@@ -48,9 +52,7 @@ class Header extends Component {
             </a>
             <a
               className="main-menu-link"
-              onClick={() => {
-                FilterStore.toggleAttribute("showAbout");
-              }}
+              onClick={this.toggleAttribute("showAbout")}
             >
               {FilterStore.showAbout ? "Smartphones" : "About"}
             </a>
