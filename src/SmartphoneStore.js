@@ -3,37 +3,27 @@ import { observable, computed, action } from "mobx";
 import FilterStore from "./FilterStore.js";
 
 class SmartphoneStore {
-  @observable obj = [];
+  @observable
+  obj = [];
 
   constructor(props) {
-    this.init();
+    this.loadJSON();
   }
 
-  init = () => {
-    this.loadJSON(this.init2);
-  };
-
   @action
-  init2 = responseText => {
-    // Parse JSON string into object
-    this.obj = JSON.parse(responseText);
+  init = responseText => {
+    this.obj = responseText;
     this.calculateAllScores();
     this.findLowestPriceForAllSmartphones();
   };
 
-  loadJSON = callback => {
-    const xobj = new XMLHttpRequest();
-    xobj.overrideMimeType("application/json");
-    xobj.open("GET", "./data/smartphoneData.json", true); // Replace 'my_data' with the path to your file
-    xobj.onreadystatechange = () => {
-      if (xobj.readyState === 4 && xobj.status === 200) {
-        // Required use of an anonymous callback as .open will NOT return a value but simply returns undefined in asynchronous mode
-        callback(xobj.responseText);
-      }
-    };
-    xobj.send(null);
+  loadJSON = () => {
+    fetch("./data/smartphoneData.json")
+      .then(r => r.json())
+      .then(data => this.init(data));
   };
 
+  @action
   findLowestPriceForAllSmartphones = () => {
     for (let i = 0; i < this.obj.length; i++) {
       this.obj[i].smallestPrice = this.findLowestPriceForOneSmartphones(
