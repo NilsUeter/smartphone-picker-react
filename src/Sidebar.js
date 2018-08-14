@@ -107,7 +107,8 @@ class Sidebar extends Component {
                 ["price", "Price"],
                 ["length", "Body-Size"],
                 ["display", "Screen-Size"],
-                ["totalscore", "Total Score"]
+                ["totalscore", "Total Score"],
+                ["released", "Release Date"]
               ]}
             />
             <input

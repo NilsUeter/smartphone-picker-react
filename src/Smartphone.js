@@ -50,41 +50,61 @@ class Smartphone extends Component {
           <p className="smartphone-name bs">
             {this.props.smartphone.brand + " " + this.props.smartphone.name}
           </p>
-          <p className="smartphone-display ls">
-            {this.props.smartphone.display + '"'}
+
+          <p className="smartphone-release ls">
+            {this.props.smartphone.released}
           </p>
+
           <p className="smartphone-price rs">
             {
               this.props.smartphone.types[FilterStore.country][
                 this.props.smartphone.smallestPrice
               ].price
-            }€
+            }
+            €
           </p>
+          <p className="bs">&nbsp;</p>
           <p className="smartphone-size ls">
-            {this.props.smartphone.width +
-              "*" +
-              this.props.smartphone.length +
-              "mm"}
+            <span className="highlight-color">
+              {this.props.smartphone.width + "*" + this.props.smartphone.length}{" "}
+            </span>
+            mm
           </p>
+          <p className="smartphone-display rs">
+            <span className="highlight-color">
+              {this.props.smartphone.display}
+            </span>
+            "
+          </p>
+
           <div className="ls">
-            <img className="icon" alt="" src="images/ram_icon.png" />
-            <p className="smartphone-memory">{this.props.smartphone.memory}</p>
+            <p className="smartphone-memory rs">
+              <span className="highlight-color">
+                {this.props.smartphone.memory}{" "}
+              </span>
+              GB RAM
+            </p>
           </div>
           <div className="rs">
-            <img className="icon" alt="" src="images/charging-battery.png" />
-            <p className="smartphone-batterysize">
-              {this.props.smartphone.batterysize}
+            <p className="smartphone-storage rs">
+              <span className="highlight-color">
+                {this.props.smartphone.storage}{" "}
+              </span>
+              GB{" "}
             </p>
-          </div>
-          <div className="ls">
             <img className="icon" alt="" src="images/sd_storage.png" />
-            <p className="smartphone-storage">
-              {this.props.smartphone.storage}
-            </p>
           </div>
 
-          <p />
-          <br />
+          <div className="ls">
+            <p className="smartphone-batterysize rs">
+              <span className="highlight-color">
+                {this.props.smartphone.batterysize}{" "}
+              </span>
+            </p>
+            <img className="icon" alt="" src="images/charging-battery.png" />
+          </div>
+
+          <p className="bs">&nbsp;</p>
           <p className="ls">Design</p>
           <p className="smartphone-design rs">{this.props.smartphone.design}</p>
           <p className="ls">Processor</p>

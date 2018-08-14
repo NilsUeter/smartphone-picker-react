@@ -210,15 +210,25 @@ class SmartphoneStore {
         return listOfFilteredAndScoredObjects.sort((a, b) => {
           return this.compareFunctionNormal(a, b, "display");
         });
+      case "released":
+        return listOfFilteredAndScoredObjects.sort((a, b) => {
+          return this.compareDates(a, b, "released");
+        });
 
       default:
+        console.log("Case not defined.");
         return [];
     }
+  }
+
+  compareDates(a, b, type) {
+    return FilterStore.isDescending ? b[type] > a[type] : a[type] > b[type];
   }
 
   compareFunctionNormal(a, b, type) {
     return FilterStore.isDescending ? b[type] - a[type] : a[type] - b[type];
   }
+
   compareFunctionLowest(a, b, type) {
     return FilterStore.isDescending
       ? b.types[FilterStore.country][b.smallestPrice][type] -

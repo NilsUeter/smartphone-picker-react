@@ -1,12 +1,12 @@
 .smartphone-details {
   display: grid;
-  grid-template-columns: minmax(90px, 1fr) minmax(90px, 1fr);
+  grid-template-columns: minmax(90px, 1fr) minmax(40px, 1fr);
   grid-auto-rows: minmax(0, auto);
+  grid-gap: 2px;
   font-size: 16px;
   letter-spacing: 0.1px;
-  font-family: "Open Sans2", sans-serif;
-  color: #12709e;
-  background: rgb(249, 249, 249);
+  line-height: 1.3;
+  color: #4f5259;
   padding: 5px;
   margin: 5px;
   margin-top: 15px;
@@ -37,8 +37,11 @@
 }
 
 .smartphone-display {
-  font-weight: bold;
-  color: #08080a;
+  color: #4f5259;
+}
+
+.smartphone-release {
+  color: #4f5259;
 }
 
 .smartphone-price {
@@ -57,6 +60,11 @@
 .smartphone-totalscore {
   font-weight: bold;
   color: #129e41;
+}
+
+.highlight-color {
+  color: #12709e;
+  font-weight: bold;
 }
 
 .ls {
@@ -91,7 +99,7 @@
 }
 
 .icon {
-  max-height: 20px;
+  max-height: 15px;
   display: inline;
 }
 
