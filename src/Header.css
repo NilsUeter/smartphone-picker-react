@@ -4,7 +4,7 @@
   position: relative;
   height: 29px;
   z-index: 20;
-  padding-top: 8px;
+  padding-top: 3px;
   padding-left: 15%;
   text-align: left;
   background-color: #12709e;
@@ -17,13 +17,22 @@
   color: #fefefe;
 }
 
+#country {
+  font-size: 14px;
+}
+
 @media only screen and (min-width: 650px) {
   .logo {
     height: 58px;
+    padding-top: 8px;
   }
 
   .logo-text {
     font-size: 42px;
+  }
+
+  #country {
+    font-size: 16px;
   }
 }
 
