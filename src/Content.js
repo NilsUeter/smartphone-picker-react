@@ -13,21 +13,26 @@ class Content extends Component {
     this.myRef = React.createRef();
   }
 
+  componentDidMount() {
+    this.contentObject = document.getElementById("content");
+    console.log(document.getElementById("content"));
+    document
+      .getElementById("content")
+      .addEventListener("wheel", e => this.scrollHorizontally(e), {
+        passive: true
+      });
+  }
+
   scrollHorizontally(e) {
     const delta = Math.max(-1, Math.min(1, e.deltaY || -e.detail));
 
     // TODO: Make Scrolling smooth
-    this.myRef.current.scrollBy(delta * 55, 0);
-    e.preventDefault();
+    this.contentObject.scrollBy(delta * 55, 0);
   }
 
   render() {
     return (
-      <div
-        className="content"
-        ref={this.myRef}
-        onWheel={e => this.scrollHorizontally(e)}
-      >
+      <div id="content" className="content">
         <div className="smartphones">
           {SmartphoneStore.listOfFilteredAndScoredObjects.map(smartphone => (
             <div key={smartphone.name} className="smartphone">
