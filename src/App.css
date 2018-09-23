@@ -52,7 +52,8 @@
 .App {
   line-height: 1;
   display: grid;
-  grid-template-rows: 54px 1fr 4px;
+  background-color: #eeeeee;
+  grid-template-rows: 53px 1fr 4px;
   grid-template-areas:
     "header header header"
     "sidebar content content"
@@ -61,28 +62,32 @@
 
 .content {
   grid-area: content;
+  background-color: #fff;
   height: calc(100vh - 58px);
   overflow: auto;
   box-shadow: 0 0 4px rgba(0, 0, 0, 0.12), 0 0 3px rgba(0, 0, 0, 0.24);
+  margin: 14px;
+  border-radius: 8px;
 }
 
 .sidebar {
   grid-area: sidebar;
-  height: calc(100vh - 58px);
+  background-color: #eeeeee;
+  height: calc(100vh - 85px);
   overflow: auto;
 }
 
 @media only screen and (min-width: 650px) {
   .App {
-    grid-template-rows: 83px 1fr 4px;
+    grid-template-rows: 78px 1fr 4px;
   }
 
   .content {
-    height: calc(100vh - 87px);
+    height: calc(100vh - 110px);
   }
 
   .sidebar {
-    height: calc(100vh - 87px);
+    height: calc(100vh - 82px);
   }
 }
 
@@ -121,6 +126,6 @@
   z-index: 20;
   padding-left: 15%;
   text-align: left;
-  background-color: #12709e;
+  background-color: #4285f4;
   box-shadow: 0 -10px 20px rgba(0, 0, 0, 0.19), 0 -6px 6px rgba(0, 0, 0, 0.23);
 }

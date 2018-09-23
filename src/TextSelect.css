@@ -1,7 +1,8 @@
 .textSelect {
-  color: #12709e;
-  border: 1px solid #12709e;
+  color: #4285f4;
+  border: 1px solid #4285f4;
   font-size: 16px;
+  margin: 4px;
 }
 
 .filterBox .textSelect {
@@ -9,7 +10,7 @@
 }
 
 .blue-white {
-  color: rgb(249, 249, 249);
-  border: 1px solid #12709e;
-  background-color: #12709e;
+  color: #ffffff;
+  background-color: transparent;
+  border: transparent;
 }

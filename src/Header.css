@@ -2,19 +2,19 @@
   box-sizing: border-box;
   font-weight: bold;
   position: relative;
-  height: 29px;
+  height: 26px;
   z-index: 20;
   padding-top: 3px;
   padding-left: 15%;
   text-align: left;
-  background-color: #12709e;
+  background-color: #4285f4;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 }
 
 .logo-text {
   font-size: 20px;
   text-decoration: none;
-  color: #fefefe;
+  color: #ffffff;
 }
 
 #country {
@@ -23,7 +23,7 @@
 
 @media only screen and (min-width: 650px) {
   .logo {
-    height: 58px;
+    height: 52px;
     padding-top: 8px;
   }
 
@@ -39,7 +39,7 @@
 .main-menu-link {
   font-weight: bold;
   text-decoration: none;
-  color: #12709e;
+  color: #ffffff;
   cursor: pointer;
   padding-right: 20px;
 }
@@ -48,10 +48,11 @@
   box-sizing: border-box;
   position: relative;
   z-index: 10;
-  height: 25px;
+  height: 27px;
   margin-top: 0;
-  background-color: #ffffff;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  background-color: #1976d2;
+  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12),
+    0 2px 4px -1px rgba(0, 0, 0, 0.2);
   display: grid;
   align-items: center;
   grid-template-columns: minmax(110px, 15%) minmax(200px, 1fr) minmax(10px, 4fr);
@@ -61,8 +62,9 @@
   min-width: 95px;
   height: 25px;
   cursor: pointer;
-  color: #12709e;
-  border: 1px solid #12709e;
+  color: #ffffff;
+  background-color: #1976d2;
+  border: 1px solid #1976d2;
   font-size: 16px;
   margin-left: 5px;
 }
@@ -75,5 +77,5 @@
   float: right;
   padding-right: 20px;
   font-weight: bold;
-  color: #12709e;
+  color: #ffffff;
 }

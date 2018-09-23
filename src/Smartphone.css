@@ -11,6 +11,7 @@
   margin: 5px;
   margin-top: 15px;
   box-shadow: 0 0 4px rgba(0, 0, 0, 0.12), 0 0 3px rgba(0, 0, 0, 0.24);
+  border-radius: 8px;
 }
 
 .smartphone-details p {
@@ -23,7 +24,7 @@
   padding-top: 8px;
   vertical-align: top;
   text-align: center;
-  color: #12709e;
+  color: #1976d2;
 }
 
 .smartphone-name {
@@ -45,7 +46,7 @@
 }
 
 .smartphone-price {
-  color: #129e41;
+  color: #4caf50;
   font-weight: bold;
 }
 
@@ -54,16 +55,17 @@
 .smartphone-updates,
 .smartphone-camera,
 .smartphone-battery {
-  color: #129e41;
+  color: #4caf50;
+  font-weight: bold;
 }
 
 .smartphone-totalscore {
   font-weight: bold;
-  color: #129e41;
+  color: #4caf50;
 }
 
 .highlight-color {
-  color: #12709e;
+  color: #1976d2;
   font-weight: bold;
 }
 

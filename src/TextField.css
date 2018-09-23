@@ -1,13 +1,13 @@
 .smallInput {
-  width: 30px;
-  font-size: 12px;
+  width: 40px;
+  font-size: 16px;
   text-align: right;
   border: none;
 }
 
 .bigInput {
-  width: 45px;
-  font-size: 12px;
+  width: 60px;
+  font-size: 16px;
   text-align: right;
   border: none;
 }

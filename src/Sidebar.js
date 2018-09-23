@@ -13,11 +13,36 @@ import FilterStore from "./FilterStore.js";
 const Range = Slider.Range;
 
 const storageMarks = {
-  0: "16",
-  1: "32",
-  2: "64",
-  3: "128",
-  4: "256"
+  0: {
+    style: {
+      color: "#2196f3"
+    },
+    label: "16"
+  },
+  1: {
+    style: {
+      color: "#2196f3"
+    },
+    label: "32"
+  },
+  2: {
+    style: {
+      color: "#2196f3"
+    },
+    label: "64"
+  },
+  3: {
+    style: {
+      color: "#2196f3"
+    },
+    label: "128"
+  },
+  4: {
+    style: {
+      color: "#2196f3"
+    },
+    label: "256"
+  }
 };
 
 @observer
@@ -140,10 +165,10 @@ class Sidebar extends Component {
                 pushable={1}
                 value={[this.getMinDate(), this.getMaxDate()]}
                 onChange={this.changeAttributeDateRange}
-                trackStyle={[{ backgroundColor: "#12709e" }]}
+                trackStyle={[{ backgroundColor: "#4285f4" }]}
                 handleStyle={[
-                  { border: "solid 2px #12709e" },
-                  { border: "solid 2px #12709e" }
+                  { border: "solid 2px #4285f4" },
+                  { border: "solid 2px #4285f4" }
                 ]}
               />
             </div>
@@ -176,10 +201,10 @@ class Sidebar extends Component {
                   "price_minimum_1",
                   "price_maximum_1"
                 )}
-                trackStyle={[{ backgroundColor: "#12709e" }]}
+                trackStyle={[{ backgroundColor: "#4285f4" }]}
                 handleStyle={[
-                  { border: "solid 2px #12709e" },
-                  { border: "solid 2px #12709e" }
+                  { border: "solid 2px #4285f4" },
+                  { border: "solid 2px #4285f4" }
                 ]}
               />
             </div>
@@ -212,10 +237,10 @@ class Sidebar extends Component {
                   "size_minimum_1",
                   "size_maximum_1"
                 )}
-                trackStyle={[{ backgroundColor: "#12709e" }]}
+                trackStyle={[{ backgroundColor: "#4285f4" }]}
                 handleStyle={[
-                  { border: "solid 2px #12709e" },
-                  { border: "solid 2px #12709e" }
+                  { border: "solid 2px #4285f4" },
+                  { border: "solid 2px #4285f4" }
                 ]}
               />
             </div>
@@ -248,10 +273,10 @@ class Sidebar extends Component {
                   "size_minimum_2",
                   "size_maximum_2"
                 )}
-                trackStyle={[{ backgroundColor: "#12709e" }]}
+                trackStyle={[{ backgroundColor: "#4285f4" }]}
                 handleStyle={[
-                  { border: "solid 2px #12709e" },
-                  { border: "solid 2px #12709e" }
+                  { border: "solid 2px #4285f4" },
+                  { border: "solid 2px #4285f4" }
                 ]}
               />
             </div>
@@ -284,10 +309,10 @@ class Sidebar extends Component {
                   "size_minimum_3",
                   "size_maximum_3"
                 )}
-                trackStyle={[{ backgroundColor: "#12709e" }]}
+                trackStyle={[{ backgroundColor: "#4285f4" }]}
                 handleStyle={[
-                  { border: "solid 2px #12709e" },
-                  { border: "solid 2px #12709e" }
+                  { border: "solid 2px #4285f4" },
+                  { border: "solid 2px #4285f4" }
                 ]}
               />
             </div>
@@ -323,12 +348,12 @@ class Sidebar extends Component {
               marks={storageMarks}
               step={null}
               onChange={this.changeAttributeStorage}
-              trackStyle={[{ backgroundColor: "#12709e" }]}
+              trackStyle={[{ backgroundColor: "#4285f4" }]}
               handleStyle={[
-                { border: "solid 2px #12709e" },
-                { border: "solid 2px #12709e" }
+                { border: "solid 2px #4285f4" },
+                { border: "solid 2px #4285f4" }
               ]}
-              activeDotStyle={{ border: "solid 2px #12709e" }}
+              activeDotStyle={{ border: "solid 2px #4285f4" }}
             />
           </div>
           <p>Headphone-Jack</p>

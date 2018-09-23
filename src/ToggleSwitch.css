@@ -12,7 +12,7 @@
   height: 28px;
   content: "";
   transition: all 0.1s linear;
-  border: 1px solid #12709e;
+  border: 1px solid #4285f4;
   border-radius: 100px;
   background: rgb(249, 249, 249);
 }
@@ -24,24 +24,24 @@
   height: 20px;
   margin: 5px;
   cursor: pointer;
-  border: 1px solid #12709e;
+  border: 1px solid #4285f4;
   border-radius: 100px;
 }
 
 .cbx:checked ~ label {
-  border: 1px solid #12709e;
-  background: #12709e;
+  border: 1px solid #4285f4;
+  background: #4285f4;
 }
 
 .cbx:checked ~ label:after {
   left: 30px;
-  border: 1px solid #12709e;
+  border: 1px solid #4285f4;
   background: rgb(249, 249, 249);
 }
 
 .cbx:disabled ~ label {
   pointer-events: none;
-  background: #12709e;
+  background: #4285f4;
 }
 
 .toggle-hidden {
@@ -49,5 +49,5 @@
 }
 
 .cbx:disabled ~ label:after {
-  background: #12709e;
+  background: #4285f4;
 }
