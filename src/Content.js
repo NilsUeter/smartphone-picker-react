@@ -15,7 +15,6 @@ class Content extends Component {
 
   componentDidMount() {
     this.contentObject = document.getElementById("content");
-    console.log(document.getElementById("content"));
     document
       .getElementById("content")
       .addEventListener("wheel", e => this.scrollHorizontally(e), {

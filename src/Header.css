@@ -3,18 +3,17 @@
   font-weight: bold;
   position: relative;
   height: 26px;
-  z-index: 20;
-  padding-top: 3px;
+  z-index: 0;
+  padding-bottom: 3px;
   padding-left: 15%;
   text-align: left;
-  background-color: #4285f4;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  background-color: #eeeeee;
 }
 
 .logo-text {
   font-size: 20px;
   text-decoration: none;
-  color: #ffffff;
+  color: #1976d2;
 }
 
 #country {
@@ -24,7 +23,7 @@
 @media only screen and (min-width: 650px) {
   .logo {
     height: 52px;
-    padding-top: 8px;
+    padding-bottom: 8px;
   }
 
   .logo-text {
