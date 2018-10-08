@@ -1,43 +1,72 @@
 import {} from "mobx-react";
-import { observable, action } from "mobx";
+import { observable, action, autorun } from "mobx";
 
 class FilterStore {
-  @observable showAbout = false;
-  @observable sidebarHidden = true;
-  @observable country = "de";
+  @observable
+  About = false;
+  @observable
+  sidebarHidden = true;
+  @observable
+  country = "de";
 
-  @observable filterTemplate = "";
-  @observable filterType = "price";
-  @observable isDescending = false;
-  @observable scaleInput = true;
-  @observable emptySmartphones = false;
-  @observable release_minimum = "2017-01";
-  @observable release_maximum = "2018-12";
+  @observable
+  filterTemplate = "";
+  @observable
+  filterType = "price";
+  @observable
+  isDescending = false;
+  @observable
+  scaleInput = true;
+  @observable
+  emptySmartphones = false;
+  @observable
+  release_minimum = "2017-01";
+  @observable
+  release_maximum = "2018-12";
 
-  @observable price_minimum_1 = 0;
-  @observable price_maximum_1 = 1200;
+  @observable
+  price_minimum_1 = 0;
+  @observable
+  price_maximum_1 = 1200;
 
-  @observable size_minimum_1 = 4.7;
-  @observable size_maximum_1 = 6.3;
+  @observable
+  size_minimum_1 = 4.7;
+  @observable
+  size_maximum_1 = 6.3;
 
-  @observable size_minimum_2 = 135;
-  @observable size_maximum_2 = 163;
+  @observable
+  size_minimum_2 = 135;
+  @observable
+  size_maximum_2 = 163;
 
-  @observable size_minimum_3 = 65;
-  @observable size_maximum_3 = 78;
+  @observable
+  size_minimum_3 = 65;
+  @observable
+  size_maximum_3 = 78;
 
-  @observable design = "1";
-  @observable processor = "1";
-  @observable updates = "1";
-  @observable camera = "1";
-  @observable battery = "1";
+  @observable
+  design = "1";
+  @observable
+  processor = "1";
+  @observable
+  updates = "1";
+  @observable
+  camera = "1";
+  @observable
+  battery = "1";
 
-  @observable storage = 16;
-  @observable headphoneJack = false;
-  @observable simCards = false;
-  @observable sdSlot = false;
-  @observable notch = false;
-  @observable waterproof = "";
+  @observable
+  storage = 16;
+  @observable
+  headphoneJack = false;
+  @observable
+  simCards = false;
+  @observable
+  sdSlot = false;
+  @observable
+  notch = false;
+  @observable
+  waterproof = "";
 
   @action
   toggleAttribute = name => {
@@ -94,17 +123,89 @@ class FilterStore {
       }
     }
   };
+
+  @action
+  loadURL = () => {
+    const searchParams = new URLSearchParams(window.location.search);
+
+    for (let key of searchParams) {
+      this[key[0]] = key[1];
+    }
+  };
+
+  updateURL = () => {
+    let query = "?";
+    let key;
+    for (key in this) {
+      switch (key) {
+        case "filterTemplate": //Define filters which aren't expected to be reset
+        case "country":
+        case "updateURL":
+        case "loadURL":
+        case "updateURLtoRepresentFilter":
+          break;
+        default:
+          if (this[key] && resetCopy && resetCopy[key] !== this[key]) {
+            query += key + "=" + this[key] + "&";
+          }
+
+          break;
+      }
+    }
+
+    if (resetCopy && window.location.search !== query && query !== "?") {
+      const newurl =
+        window.location.protocol +
+        "//" +
+        window.location.host +
+        window.location.pathname +
+        query;
+      window.history.pushState({ path: newurl }, "", newurl);
+    }
+  };
+
+  updateURLtoRepresentFilter = autorun(() => {
+    if (resetCopy === undefined) {
+      this.loadURL();
+    }
+    this.updateURL();
+  });
 }
 
 const filterStore = new FilterStore();
 
-const resetCopy = createBackup();
-function createBackup() {
-  const da = new FilterStore();
-  for (let name in filterStore) {
-    da[name] = filterStore[name];
-  }
-  return da;
-}
+const resetCopy = {
+  About: false,
+  sidebarHidden: true,
+  country: "de",
+  filterTemplate: "",
+  filterType: "price",
+  isDescending: false,
+  scaleInput: true,
+  emptySmartphones: false,
+  release_minimum: "2017-01",
+  release_maximum: "2018-12",
+  price_minimum_1: 0,
+  price_maximum_1: 1200,
+  size_minimum_1: 4.7,
+  size_maximum_1: 6.3,
+  size_minimum_2: 135,
+  size_maximum_2: 163,
+  size_minimum_3: 65,
+  size_maximum_3: 78,
+  design: "1",
+  processor: "1",
+  updates: "1",
+  camera: "1",
+  battery: "1",
+  storage: 16,
+  headphoneJack: false,
+  simCards: false,
+  sdSlot: false,
+  notch: false,
+  waterproof: ""
+};
+
+window.addEventListener("popstate", () => filterStore.loadURL(), false);
 
 export default filterStore;
