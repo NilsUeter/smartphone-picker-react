@@ -21,7 +21,7 @@ class Smartphone extends Component {
           {FilterStore.scaleInput ? (
             <img
               style={{
-                maxHeight: 0.26 * this.props.smartphone.length + "vh"
+                height: (this.props.smartphone.length / 165) * 100 + "%"
               }}
               className="qtip-img"
               src={
@@ -30,11 +30,12 @@ class Smartphone extends Component {
                   : "images/" + this.props.smartphone.imagelink + ".jpg"
               }
               alt=""
-              height="450"
             />
           ) : (
             <img
-              style={{ maxHeight: 0.3 * 140 + "vh" }}
+              style={{
+                height: (165 / 165) * 100 + "%"
+              }}
               className="qtip-img"
               src={
                 FilterStore.emptySmartphones
@@ -42,7 +43,6 @@ class Smartphone extends Component {
                   : "images/" + this.props.smartphone.imagelink + ".jpg"
               }
               alt=""
-              height="450"
             />
           )}
         </div>
