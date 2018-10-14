@@ -12,7 +12,7 @@
   margin-top: 15px;
   border-radius: 8px;
   border: #e0e0e0 2px solid;
-  min-width: 170px;
+  min-width: 200px;
 }
 
 .smartphone-details p {
@@ -22,7 +22,6 @@
 .smartphone-filtercriteria {
   font-weight: bold;
   padding-top: 4px;
-  padding-bottom: 4px;
   vertical-align: top;
   text-align: center;
   color: #1976d2;
@@ -30,8 +29,8 @@
 
 .smartphone-name {
   float: right;
-  font-size: 12px;
-  font-weight: bold;
+  font-size: 16px;
+  font-weight: 600;
   margin-top: 4px;
   text-align: center;
   color: #08080a;
@@ -85,10 +84,11 @@
 
 .qtip-img {
   vertical-align: middle;
+  width: auto;
+  min-height: 200px;
 }
 
 .img-container {
-  height: calc(100vh - 509px);
   align-items: flex-end;
   display: flex;
   justify-content: center;

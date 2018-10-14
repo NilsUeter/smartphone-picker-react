@@ -21,7 +21,14 @@ class Smartphone extends Component {
           {FilterStore.scaleInput ? (
             <img
               style={{
-                height: (this.props.smartphone.length / 165) * 100 + "%"
+                height:
+                  "calc(calc(100vh - 510px) * " +
+                  this.props.smartphone.length / 165 +
+                  ")",
+                paddingTop:
+                  "calc(calc(100vh - 510px) * " +
+                  (1 - this.props.smartphone.length / 165) +
+                  ")"
               }}
               className="qtip-img"
               src={
