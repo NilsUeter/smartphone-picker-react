@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import { observer } from "mobx-react";
-import "./Sidebar.css";
 import RatingStars from "./RatingStars";
 import ToggleSwitch from "./ToggleSwitch";
 import TextSelect from "./TextSelect";

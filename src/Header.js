@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import { observer } from "mobx-react";
-import "./Header.css";
 
 import TextSelect from "./TextSelect";
 
@@ -61,8 +60,8 @@ class Header extends Component {
             <a id="smartphoneCount" className="smartphoneCount">
               {SmartphoneStore.listOfFilteredAndScoredObjects
                 ? SmartphoneStore.listOfFilteredAndScoredObjects.length
-                : 0}/
-              {SmartphoneStore.obj.length ? SmartphoneStore.obj.length : 0}
+                : 0}
+              /{SmartphoneStore.obj.length ? SmartphoneStore.obj.length : 0}
             </a>
           </div>
         </div>

@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import { observer } from "mobx-react";
-import "./About.css";
 
 @observer
 class About extends Component {
@@ -115,7 +114,8 @@ class About extends Component {
               not fitting, please contact us{" "}
               <a className="" href="mailto:admin@smartphone-picker.com">
                 here
-              </a>.
+              </a>
+              .
             </p>
             <br />
             <br />

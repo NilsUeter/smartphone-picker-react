@@ -1,8 +1,6 @@
 import React, { Component } from "react";
 import { observer } from "mobx-react";
 
-import "./Smartphone.css";
-
 import FilterStore from "./FilterStore";
 import SmartphoneStore from "./SmartphoneStore";
 
