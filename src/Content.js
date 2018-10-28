@@ -22,10 +22,10 @@ class Content extends Component {
   }
 
   scrollHorizontally(e) {
-    const delta = Math.max(-1, Math.min(1, e.deltaY || -e.detail));
+    const delta = Math.max(-1, Math.min(1, e.wheelDelta || -e.detail));
 
     // TODO: Make Scrolling smooth
-    this.contentObject.scrollBy(delta * 55, 0);
+    this.contentObject.scrollBy(delta * -40, 0);
   }
 
   render() {
@@ -33,13 +33,11 @@ class Content extends Component {
       <div id="content" className="content">
         <div className="smartphones">
           {SmartphoneStore.listOfFilteredAndScoredObjects.map(smartphone => (
-            <div key={smartphone.name} className="smartphone">
-              <Smartphone
-                id={smartphone}
-                smartphone={smartphone}
-                filterStore={FilterStore}
-              />
-            </div>
+            <Smartphone
+              id={smartphone}
+              smartphone={smartphone}
+              filterStore={FilterStore}
+            />
           ))}
         </div>
       </div>

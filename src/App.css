@@ -154,14 +154,18 @@ body {
 }
 
 .smartphone {
-  margin-left: 14px;
+  margin-left: 4px;
   margin-right: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .smartphones {
   display: flex; /* or inline-flex */
   flex-direction: row;
   align-items: flex-start;
+  will-change: scroll-position;
 }
 
 .logo {
@@ -454,6 +458,7 @@ textarea:focus {
   margin-top: 15px;
   border-radius: 8px;
   border: #e0e0e0 2px solid;
+  width: 200px;
 }
 
 .smartphone-details p {
@@ -477,6 +482,8 @@ textarea:focus {
   text-align: center;
   color: #08080a;
   white-space: nowrap;
+  width: 200px;
+  overflow: hidden;
 }
 
 .smartphone-display {

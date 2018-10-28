@@ -8,7 +8,7 @@ import SmartphoneStore from "./SmartphoneStore";
 class Smartphone extends Component {
   render() {
     return (
-      <div>
+      <div key={this.props.smartphone.name} className="smartphone">
         <div className="smartphone-filtercriteria">
           {SmartphoneStore.getAttributeFromSmartphone(
             this.props.smartphone,
@@ -48,7 +48,7 @@ class Smartphone extends Component {
           )}
         </div>
         <div className="smartphone-details">
-          <p className="smartphone-name bs">
+          <p className="smartphone-name bs" title={this.props.smartphone.name}>
             {this.props.smartphone.brand + " " + this.props.smartphone.name}
           </p>
 
