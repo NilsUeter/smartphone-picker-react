@@ -99,36 +99,67 @@ class About extends Component {
           <br />
           <br />
           <div>
-            <h2>
-              We at smartphone-picker try our best to ensure that our smartphone
-              data is correct and our ratings are appropriate. Still we can make
-              mistakes and our ratings may be subject to bias.
-            </h2>
+            <h2>Impressum</h2>
+            <br />
             <p>
-              If a particular specification or aspect is vital to you, we always
-              recommend checking with the phone seller or reading trusted
-              reviews online.
+              <b>Geschäftsführer:</b> Nils Ueter und Martin Schulze Beckendorf
             </p>
             <p>
-              If you think that any specification or rating is wrong or simply
-              not fitting, please contact us{" "}
-              <a className="" href="mailto:admin@smartphone-picker.com">
-                here
-              </a>
-              .
+              <b>Redaktionell Verantwortlicher:</b> Nils Ueter
+            </p>
+            <p>
+              <b>Kontakt</b> unter admin@smartphone-picker.com
             </p>
             <br />
+            <h3>1. Warnhinweis zu Inhalten</h3>
             <br />
-            <p>Legal stuff: </p>
             <p>
-              <span className="accentColor">
-                smartphone-picker is not responsible for any errors or
-                omissions, or for the results obtained from the use of this
-                information. All information on this site is provided “as is,”
-                with no guarantee of completeness, accuracy, timeliness or the
-                results obtained from the use of this information.
-              </span>
+              Die kostenlosen und frei zugänglichen Inhalte dieser Webseite
+              wurden mit größtmöglicher Sorgfalt erstellt. Der Anbieter dieser
+              Webseite übernimmt jedoch keine Gewähr für die Richtigkeit und
+              Aktualität der bereitgestellten kostenlosen und frei zugänglichen
+              journalistischen Ratgeber und Nachrichten.
             </p>
+            <br />
+            <h3>2. Externe Links</h3>
+            <br />
+            <p>
+              Diese Website enthält Verknüpfungen zu Websites Dritter ("externe
+              Links"). Diese Websites unterliegen der Haftung der jeweiligen
+              Betreiber. Der Anbieter hat bei der erstmaligen Verknüpfung der
+              externen Links die fremden Inhalte daraufhin überprüft, ob etwaige
+              Rechtsverstöße bestehen. Zu dem Zeitpunkt waren keine
+              Rechtsverstöße ersichtlich. Der Anbieter hat keinerlei Einfluss
+              auf die aktuelle und zukünftige Gestaltung und auf die Inhalte der
+              verknüpften Seiten. Das Setzen von externen Links bedeutet nicht,
+              dass sich der Anbieter die hinter dem Verweis oder Link liegenden
+              Inhalte zu Eigen macht. Eine ständige Kontrolle der externen Links
+              ist für den Anbieter ohne konkrete Hinweise auf Rechtsverstöße
+              nicht zumutbar. Bei Kenntnis von Rechtsverstößen werden jedoch
+              derartige externe Links unverzüglich gelöscht.
+            </p>
+            <br />
+            <h3>3. Urheber- und Leistungsschutzrechte</h3>
+            <br />
+            <p>
+              Die auf dieser Website veröffentlichten Inhalte unterliegen dem
+              deutschen Urheber- und Leistungsschutzrecht. Jede vom deutschen
+              Urheber- und Leistungsschutzrecht nicht zugelassene Verwertung
+              bedarf der vorherigen schriftlichen Zustimmung des Anbieters oder
+              jeweiligen Rechteinhabers. Dies gilt insbesondere für
+              Vervielfältigung, Bearbeitung, Übersetzung, Einspeicherung,
+              Verarbeitung bzw. Wiedergabe von Inhalten in Datenbanken oder
+              anderen elektronischen Medien und Systemen. Inhalte und Rechte
+              Dritter sind dabei als solche gekennzeichnet. Die unerlaubte
+              Vervielfältigung oder Weitergabe einzelner Inhalte oder kompletter
+              Seiten ist nicht gestattet und strafbar. Lediglich die Herstellung
+              von Kopien und Downloads für den persönlichen, privaten und nicht
+              kommerziellen Gebrauch ist erlaubt.
+            </p>
+            <br />
+            <h3>4. Affliate Links</h3>
+            <br />
+            <p>Als Amazon-Partner verdiene ich an qualifizierten Verkäufen.</p>
           </div>
         </div>
       </div>

@@ -3,7 +3,7 @@ import { observable, action, autorun } from "mobx";
 
 class FilterStore {
   @observable
-  About = false;
+  showAbout = false;
   @observable
   sidebarHidden = true;
   @observable
@@ -175,7 +175,7 @@ class FilterStore {
 const filterStore = new FilterStore();
 
 const resetCopy = {
-  About: false,
+  showAbout: false,
   sidebarHidden: true,
   country: "de",
   filterTemplate: "",
