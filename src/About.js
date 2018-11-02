@@ -159,7 +159,7 @@ class About extends Component {
             <br />
             <h3>4. Affliate Links</h3>
             <br />
-            <p>Als Amazon-Partner verdiene ich an qualifizierten Verkäufen.</p>
+            <p>Als Amazon-Partner verdienen wir an qualifizierten Verkäufen.</p>
           </div>
         </div>
       </div>
