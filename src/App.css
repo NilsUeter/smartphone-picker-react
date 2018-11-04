@@ -245,6 +245,12 @@ body {
   margin-left: 5px;
 }
 
+.searchQuery input {
+  width: 95%;
+  margin: 4px;
+  border: 1px solid #4285f4;
+}
+
 .smartphoneCount {
   float: right;
   padding-right: 20px;
@@ -440,7 +446,7 @@ textarea:focus {
 }
 
 #filterType {
-  width: 145px;
+  width: 140px;
 }
 
 .storageSlider {

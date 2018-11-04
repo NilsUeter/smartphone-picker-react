@@ -80,6 +80,16 @@ class SmartphoneStore {
         continue;
       }
 
+      //searchQuery
+      if (
+        FilterStore.searchQuery !== "" &&
+        !(this.obj[i].brand + " " + this.obj[i].name)
+          .toLowerCase()
+          .includes(FilterStore.searchQuery.toLowerCase())
+      ) {
+        continue;
+      }
+
       //release-date
       if (
         FilterStore.release_minimum > this.obj[i].released ||

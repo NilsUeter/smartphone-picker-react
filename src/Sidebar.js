@@ -112,6 +112,11 @@ class Sidebar extends Component {
       <div className={FilterStore.sidebarHidden ? "sidebar hidden" : "sidebar"}>
         <div className="filterBox">
           <div className="filterBox-Header bs">Sorting Options</div>
+          <p>Search phones</p>
+          <div className={"searchQuery"}>
+            <TextField name="searchQuery" big={true} />
+          </div>
+
           <p>Filter Templates</p>
           <TextSelect
             name="filterTemplate"

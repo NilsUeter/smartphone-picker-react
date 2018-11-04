@@ -10,6 +10,8 @@ class FilterStore {
   country = "de";
 
   @observable
+  searchQuery = "";
+  @observable
   filterTemplate = "";
   @observable
   filterType = "price";
@@ -134,7 +136,8 @@ class FilterStore {
   };
 
   updateURL = () => {
-    let query = "?";
+    let queryComponents = [];
+    let finalquery = "";
     let key;
     for (key in this) {
       switch (key) {
@@ -146,20 +149,20 @@ class FilterStore {
           break;
         default:
           if (this[key] && resetCopy && resetCopy[key] !== this[key]) {
-            query += key + "=" + this[key] + "&";
+            queryComponents.push(key + "=" + this[key]);
           }
 
           break;
       }
     }
-
-    if (resetCopy && window.location.search !== query && query !== "?") {
+    finalquery = "?" + queryComponents.join("&");
+    if (resetCopy && window.location.search !== finalquery) {
       const newurl =
         window.location.protocol +
         "//" +
         window.location.host +
         window.location.pathname +
-        query;
+        finalquery;
       window.history.pushState({ path: newurl }, "", newurl);
     }
   };

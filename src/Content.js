@@ -34,7 +34,7 @@ class Content extends Component {
         <div className="smartphones">
           {SmartphoneStore.listOfFilteredAndScoredObjects.map(smartphone => (
             <Smartphone
-              id={smartphone}
+              key={smartphone.brand + smartphone.name}
               smartphone={smartphone}
               filterStore={FilterStore}
             />

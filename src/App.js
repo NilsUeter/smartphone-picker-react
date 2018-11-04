@@ -23,7 +23,6 @@ class App extends Component {
       >
         <Header />
         <Sidebar />
-        {console.log(!FilterStore.sidebarHidden)}
         {!FilterStore.sidebarHidden && window.innerWidth < 500 ? (
           <div />
         ) : FilterStore.showAbout ? (
