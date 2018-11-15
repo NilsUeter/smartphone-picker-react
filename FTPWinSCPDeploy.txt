@@ -12,6 +12,8 @@ rm "*.png"
 rm "index.html*"
 rm "manifest.json*"
 rm "service-worker.js*"
+rm "robots.txt*"
+rm "precache-manifest*"
 # Upload new deployment build
 lcd build/
 put *
