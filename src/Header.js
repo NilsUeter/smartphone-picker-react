@@ -50,6 +50,7 @@ class Header extends Component {
               Contact
             </a>
             <a
+              href="/"
               className="main-menu-link"
               onClick={this.toggleAttribute("showAbout")}
             >
@@ -57,12 +58,12 @@ class Header extends Component {
             </a>
           </div>
           <div className="countryDiv">
-            <a id="smartphoneCount" className="smartphoneCount">
+            <p id="smartphoneCount" className="smartphoneCount">
               {SmartphoneStore.listOfFilteredAndScoredObjects
                 ? SmartphoneStore.listOfFilteredAndScoredObjects.length
                 : 0}
               /{SmartphoneStore.obj.length ? SmartphoneStore.obj.length : 0}
-            </a>
+            </p>
           </div>
         </div>
       </header>

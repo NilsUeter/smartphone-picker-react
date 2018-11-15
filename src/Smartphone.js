@@ -135,12 +135,12 @@ class Smartphone extends Component {
               <a
                 className="a-link"
                 target="_blank"
+                rel="noreferrer noopener"
                 href={
                   this.props.smartphone.types[FilterStore.country][
                     this.props.smartphone.smallestPrice
                   ].link
                 }
-                rel="noopener"
               >
                 <span className="a-button-inner">
                   <img

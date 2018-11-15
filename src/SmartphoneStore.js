@@ -81,11 +81,14 @@ class SmartphoneStore {
       }
 
       //searchQuery
+      const lowerCaseName = (
+        this.obj[i].brand +
+        " " +
+        this.obj[i].name
+      ).toLowerCase();
       if (
         FilterStore.searchQuery !== "" &&
-        !(this.obj[i].brand + " " + this.obj[i].name)
-          .toLowerCase()
-          .includes(FilterStore.searchQuery.toLowerCase())
+        !lowerCaseName.includes(FilterStore.searchQuery.toLowerCase())
       ) {
         continue;
       }

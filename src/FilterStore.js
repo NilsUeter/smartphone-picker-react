@@ -116,6 +116,9 @@ class FilterStore {
         case "filterTemplate": //Define filters which aren't expected to be reset
         case "country":
         case "sidebarHidden":
+        case "updateURLtoRepresentFilter": //Define methods which shouldn't be overriden for mobx reasons
+        case "updateURL":
+        case "searchQuery":
           break;
         default:
           if (this[name] !== resetCopy[name]) {
