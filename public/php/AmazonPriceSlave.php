@@ -57,7 +57,6 @@
                         }
                         $counter++;
                     } else {
-                        echo "Ignoring a phone type in this update call, no 3 hours since last update of this type <br>";
                         logToFile("AmazonPriceSlave", "Ignoring this phone type in this update call, no 3 hours since last update");
                     }
                 } else {
