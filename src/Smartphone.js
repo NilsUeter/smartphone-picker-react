@@ -3,6 +3,9 @@ import { observer } from "mobx-react";
 
 import FilterStore from "./FilterStore";
 import SmartphoneStore from "./SmartphoneStore";
+import amazonIcon from "./images/Amazon-Favicon-64x64.png";
+import sdStorage from "./images/sd_storage.png";
+import chargingBattery from "./images/charging-battery.png";
 
 @observer
 class Smartphone extends Component {
@@ -93,7 +96,7 @@ class Smartphone extends Component {
               </span>
               GB{" "}
             </p>
-            <img className="icon" alt="" src="images/sd_storage.png" />
+            <img className="icon" alt="" src={sdStorage} />
           </div>
 
           <div className="ls">
@@ -102,7 +105,7 @@ class Smartphone extends Component {
                 {this.props.smartphone.batterysize}{" "}
               </span>
             </p>
-            <img className="icon" alt="" src="images/charging-battery.png" />
+            <img className="icon" alt="" src={chargingBattery} />
           </div>
 
           <p className="bs">&nbsp;</p>
@@ -142,7 +145,7 @@ class Smartphone extends Component {
                 <span className="a-button-inner">
                   <img
                     alt=""
-                    src="images/Amazon-Favicon-64x64.png"
+                    src={amazonIcon}
                     className="a-icon a-icon-shop-now"
                   />
                   <input

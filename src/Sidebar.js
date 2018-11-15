@@ -6,6 +6,7 @@ import TextSelect from "./TextSelect";
 import TextField from "./TextField";
 import "rc-slider/assets/index.css";
 import Slider from "rc-slider";
+import sortArrows from "./images/sort_arrows.png";
 
 import FilterStore from "./FilterStore.js";
 
@@ -142,7 +143,7 @@ class Sidebar extends Component {
             />
             <input
               type="image"
-              src="images/sort_arrows.png"
+              src={sortArrows}
               id="sorting_order"
               className={
                 FilterStore.isDescending
