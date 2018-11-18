@@ -398,7 +398,7 @@ radio {
 
 .filterBox-Header {
   vertical-align: top;
-  color: white;
+  color: var(--background-color);
   background: var(--first-color);
   font-size: 16px;
   font-weight: bold;
