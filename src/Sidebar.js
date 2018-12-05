@@ -15,31 +15,31 @@ const Range = Slider.Range;
 const storageMarks = {
   0: {
     style: {
-      color: "#2196f3"
+      color: "#4f5259"
     },
     label: "16"
   },
   1: {
     style: {
-      color: "#2196f3"
+      color: "#4f5259"
     },
     label: "32"
   },
   2: {
     style: {
-      color: "#2196f3"
+      color: "#4f5259"
     },
     label: "64"
   },
   3: {
     style: {
-      color: "#2196f3"
+      color: "#4f5259"
     },
     label: "128"
   },
   4: {
     style: {
-      color: "#2196f3"
+      color: "#4f5259"
     },
     label: "256"
   }
@@ -111,8 +111,8 @@ class Sidebar extends Component {
   render() {
     return (
       <div className={FilterStore.sidebarHidden ? "sidebar hidden" : "sidebar"}>
+        <div className="filterBox-Header bs">Sorting Options</div>
         <div className="filterBox">
-          <div className="filterBox-Header bs">Sorting Options</div>
           <p>Search phones</p>
           <div className={"searchQuery"}>
             <TextField name="searchQuery" big={true} />
@@ -170,10 +170,10 @@ class Sidebar extends Component {
                 pushable={1}
                 value={[this.getMinDate(), this.getMaxDate()]}
                 onChange={this.changeAttributeDateRange}
-                trackStyle={[{ backgroundColor: "#4285f4" }]}
+                trackStyle={[{ backgroundColor: "#4f5259" }]}
                 handleStyle={[
-                  { border: "solid 2px #4285f4" },
-                  { border: "solid 2px #4285f4" }
+                  { border: "solid 2px #4f5259" },
+                  { border: "solid 2px #4f5259" }
                 ]}
               />
             </div>
@@ -184,8 +184,8 @@ class Sidebar extends Component {
             </div>
           </div>
         </div>
+        <div className="filterBox-Header bs">Budget and Size</div>
         <div className="filterBox">
-          <div className="filterBox-Header bs">Budget and Size</div>
           <p>Price</p>
           <div>
             <div className="sliderContainer">
@@ -206,10 +206,10 @@ class Sidebar extends Component {
                   "price_minimum_1",
                   "price_maximum_1"
                 )}
-                trackStyle={[{ backgroundColor: "#4285f4" }]}
+                trackStyle={[{ backgroundColor: "#4f5259" }]}
                 handleStyle={[
-                  { border: "solid 2px #4285f4" },
-                  { border: "solid 2px #4285f4" }
+                  { border: "solid 2px #4f5259" },
+                  { border: "solid 2px #4f5259" }
                 ]}
               />
             </div>
@@ -242,10 +242,10 @@ class Sidebar extends Component {
                   "size_minimum_1",
                   "size_maximum_1"
                 )}
-                trackStyle={[{ backgroundColor: "#4285f4" }]}
+                trackStyle={[{ backgroundColor: "#4f5259" }]}
                 handleStyle={[
-                  { border: "solid 2px #4285f4" },
-                  { border: "solid 2px #4285f4" }
+                  { border: "solid 2px #4f5259" },
+                  { border: "solid 2px #4f5259" }
                 ]}
               />
             </div>
@@ -278,10 +278,10 @@ class Sidebar extends Component {
                   "size_minimum_2",
                   "size_maximum_2"
                 )}
-                trackStyle={[{ backgroundColor: "#4285f4" }]}
+                trackStyle={[{ backgroundColor: "#4f5259" }]}
                 handleStyle={[
-                  { border: "solid 2px #4285f4" },
-                  { border: "solid 2px #4285f4" }
+                  { border: "solid 2px #4f5259" },
+                  { border: "solid 2px #4f5259" }
                 ]}
               />
             </div>
@@ -314,10 +314,10 @@ class Sidebar extends Component {
                   "size_minimum_3",
                   "size_maximum_3"
                 )}
-                trackStyle={[{ backgroundColor: "#4285f4" }]}
+                trackStyle={[{ backgroundColor: "#4f5259" }]}
                 handleStyle={[
-                  { border: "solid 2px #4285f4" },
-                  { border: "solid 2px #4285f4" }
+                  { border: "solid 2px #4f5259" },
+                  { border: "solid 2px #4f5259" }
                 ]}
               />
             </div>
@@ -330,8 +330,8 @@ class Sidebar extends Component {
             </div>
           </div>
         </div>
+        <div className="filterBox-Header bs">Ratings</div>
         <div className="filterBox">
-          <div className="filterBox-Header bs">Ratings</div>
           <p>Design</p>
           <RatingStars name="design" />
           <p>Processor</p>
@@ -343,8 +343,8 @@ class Sidebar extends Component {
           <p>Battery</p>
           <RatingStars name="battery" />
         </div>
+        <div className="filterBox-Header bs">Personal Preferences</div>
         <div className="filterBox">
-          <div className="filterBox-Header bs">Personal Preferences</div>
           <p>Storage</p>
           <div className="sliderContainer storageSlider">
             <Slider
@@ -353,12 +353,12 @@ class Sidebar extends Component {
               marks={storageMarks}
               step={null}
               onChange={this.changeAttributeStorage}
-              trackStyle={[{ backgroundColor: "#4285f4" }]}
+              trackStyle={[{ backgroundColor: "#4f5259" }]}
               handleStyle={[
-                { border: "solid 2px #4285f4" },
-                { border: "solid 2px #4285f4" }
+                { border: "solid 2px #4f5259" },
+                { border: "solid 2px #4f5259" }
               ]}
-              activeDotStyle={{ border: "solid 2px #4285f4" }}
+              activeDotStyle={{ border: "solid 2px #4f5259" }}
             />
           </div>
           <p>Headphone-Jack</p>

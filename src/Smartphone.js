@@ -9,6 +9,22 @@ import chargingBattery from "./images/charging-battery.png";
 
 @observer
 class Smartphone extends Component {
+  getSmartphoneColorAbbreviation = () => {
+    let abbreviation = "";
+    const name = this.props.smartphone.types[FilterStore.country][
+      this.props.smartphone.smallestPrice
+    ].name;
+
+    if (name.includes(" ")) {
+      const index = name.indexOf(" ");
+      abbreviation = name.split("")[0] + name.split("")[index + 1];
+    } else {
+      abbreviation = name.split("")[0];
+    }
+
+    return abbreviation.toUpperCase();
+  };
+
   render() {
     return (
       <div key={this.props.smartphone.name} className="smartphone">
@@ -51,56 +67,73 @@ class Smartphone extends Component {
           )}
         </div>
         <div className="smartphone-details">
-          <p className="smartphone-name bs" title={this.props.smartphone.name}>
+          <p className="smartphone-name " title={this.props.smartphone.name}>
             {this.props.smartphone.brand + " " + this.props.smartphone.name}
           </p>
+          <div className="flex">
+            <p className="smartphone-release ">
+              {this.props.smartphone.released}
+            </p>
 
-          <p className="smartphone-release ls">
-            {this.props.smartphone.released}
-          </p>
-
-          <p className="smartphone-price rs">
-            {
-              this.props.smartphone.types[FilterStore.country][
-                this.props.smartphone.smallestPrice
-              ].price
-            }
-            €
-          </p>
-          <p className="bs">&nbsp;</p>
-          <p className="smartphone-size ls">
-            <span className="highlight-color">
-              {this.props.smartphone.width + "*" + this.props.smartphone.length}{" "}
-            </span>
-            mm
-          </p>
-          <p className="smartphone-display rs">
-            <span className="highlight-color">
-              {this.props.smartphone.display}
-            </span>
-            "
-          </p>
-
-          <div className="ls">
-            <p className="smartphone-memory rs">
+            <div className="flex smartphone-price-container">
+              <div
+                className="smartphone-colorpicker"
+                title={
+                  this.props.smartphone.types[FilterStore.country][
+                    this.props.smartphone.smallestPrice
+                  ].name
+                }
+              >
+                {this.getSmartphoneColorAbbreviation()}
+              </div>
+              <p className="smartphone-price">
+                {
+                  this.props.smartphone.types[FilterStore.country][
+                    this.props.smartphone.smallestPrice
+                  ].price
+                }
+                €
+              </p>
+            </div>
+          </div>
+          <p className="">&nbsp;</p>
+          <div className="flex">
+            <p className="smartphone-size ">
               <span className="highlight-color">
-                {this.props.smartphone.memory}{" "}
+                {this.props.smartphone.width +
+                  "*" +
+                  this.props.smartphone.length}{" "}
               </span>
-              GB RAM
+              mm
+            </p>
+            <p className="smartphone-display">
+              <span className="highlight-color">
+                {this.props.smartphone.display}
+              </span>
+              "
             </p>
           </div>
-          <div className="rs">
-            <p className="smartphone-storage rs">
-              <span className="highlight-color">
-                {this.props.smartphone.storage}{" "}
-              </span>
-              GB{" "}
-            </p>
-            <img className="icon" alt="" src={sdStorage} />
+          <div className="flex">
+            <div className="flex">
+              <p className="smartphone-memory">
+                <span className="highlight-color">
+                  {this.props.smartphone.memory}{" "}
+                </span>
+                GB RAM
+              </p>
+            </div>
+            <div className="flex">
+              <p className="smartphone-storage">
+                <span className="highlight-color">
+                  {this.props.smartphone.storage}{" "}
+                </span>
+                GB{" "}
+              </p>
+              <img className="icon" alt="" src={sdStorage} />
+            </div>
           </div>
-
-          <div className="ls">
-            <p className="smartphone-batterysize rs">
+          <div className="flex">
+            <p className="smartphone-batterysize">
               <span className="highlight-color">
                 {this.props.smartphone.batterysize}{" "}
               </span>
@@ -108,29 +141,39 @@ class Smartphone extends Component {
             <img className="icon" alt="" src={chargingBattery} />
           </div>
 
-          <p className="bs">&nbsp;</p>
-          <p className="ls">Design</p>
-          <p className="smartphone-design rs">{this.props.smartphone.design}</p>
-          <p className="ls">Processor</p>
-          <p className="smartphone-processor rs">
-            {this.props.smartphone.processor}
-          </p>
-          <p className="ls">Software</p>
-          <p className="smartphone-updates rs">
-            {this.props.smartphone.updates}
-          </p>
-          <p className="ls">Camera</p>
-          <p className="smartphone-camera rs">{this.props.smartphone.camera}</p>
-          <p className="ls">Battery</p>
-          <p className="smartphone-battery rs">
-            {this.props.smartphone.battery}
-          </p>
-          <hr className="horizontalRule bs" />
-          <p className="smartphone-totalscore rs">
+          <p className="">&nbsp;</p>
+          <div className="flex">
+            <p className="">Design</p>
+            <p className="smartphone-design">{this.props.smartphone.design}</p>
+          </div>
+          <div className="flex">
+            <p className="">Processor</p>
+            <p className="smartphone-processor ">
+              {this.props.smartphone.processor}
+            </p>
+          </div>
+          <div className="flex">
+            <p className="">Software</p>
+            <p className="smartphone-updates ">
+              {this.props.smartphone.updates}
+            </p>
+          </div>
+          <div className="flex">
+            <p className="">Camera</p>
+            <p className="smartphone-camera ">{this.props.smartphone.camera}</p>
+          </div>
+          <div className="flex">
+            <p className="">Battery</p>
+            <p className="smartphone-battery ">
+              {this.props.smartphone.battery}
+            </p>
+          </div>
+          <hr className="horizontalRule " />
+          <p className="smartphone-totalscore">
             {this.props.smartphone.totalscore}
           </p>
 
-          <div className="wrapper bs">
+          <div className="wrapper ">
             <div className="a-button a-button-primary">
               <a
                 className="a-link"

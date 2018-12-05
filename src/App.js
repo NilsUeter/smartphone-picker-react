@@ -16,22 +16,20 @@ import { observer } from "mobx-react";
 class App extends Component {
   render() {
     return (
-      <div
-        className={
-          FilterStore.sidebarHidden ? "App hide-sidebar" : "App show-sidebar"
-        }
-      >
+      <React.Fragment>
         <Header />
-        <Sidebar />
-        {!FilterStore.sidebarHidden && window.innerWidth < 500 ? (
-          <div />
-        ) : FilterStore.showAbout ? (
-          <About />
-        ) : (
-          <Content />
-        )}
+        <div className="sidebar-content-wrapper">
+          <Sidebar />
+          {!FilterStore.sidebarHidden && window.innerWidth < 500 ? (
+            <div />
+          ) : FilterStore.showAbout ? (
+            <About />
+          ) : (
+            <Content />
+          )}
+        </div>
         <Footer />
-      </div>
+      </React.Fragment>
     );
   }
 }

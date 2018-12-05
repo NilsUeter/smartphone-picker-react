@@ -1,10 +1,10 @@
 :root {
   --first-color: #1976d2;
-  --second-color: #2196f3;
-  --text-color: black;
+  --text-color: #4f5259;
   --highlight-color: #4caf50;
   --border-color: #e0e0e0;
-  --background-color: #fff;
+  --background-color: #e3eaff;
+  --foreground-color: #fff;
   --amazon-color: #febd69;
   --amazon-color-highlight: #f5d78e;
 }
@@ -15,7 +15,9 @@
   font-family: "Open Sans2", Sans-serif;
 }
 
+html,
 body {
+  height: 100%;
   margin: 0;
   padding: 0;
   font-family: sans-serif;
@@ -71,77 +73,52 @@ body {
   font-display: swap;
 }
 
-.App {
-  line-height: 1;
-  display: grid;
+#root {
+  display: flex;
+  height: 100%;
+  flex-flow: column;
   background-color: var(--background-color);
-  grid-template-rows: 53px 1fr 4px;
-  grid-template-areas:
-    "header header header"
-    "sidebar content content"
-    "footer footer footer";
+}
+
+.sidebar-content-wrapper {
+  display: flex;
+  flex: 1;
 }
 
 .content {
-  grid-area: content;
-  background-color: var(--background-color);
-  height: calc(100vh - 89px);
+  background-color: var(--foreground-color);
+  flex: 1;
+  display: flex;
+  flex-flow: column;
   overflow: auto;
   border-radius: 8px;
   margin: 14px;
+  margin-bottom: 0;
   border: var(--border-color) 1px solid;
 }
 
 .sidebar {
-  grid-area: sidebar;
-  height: calc(100vh - 57px);
+  flex: 1;
   overflow: auto;
-}
-
-@media only screen and (min-width: 650px) {
-  .App {
-    grid-template-rows: 78px 1fr 4px;
-  }
-
-  .content {
-    height: calc(100vh - 114px);
-  }
-
-  .sidebar {
-    height: calc(100vh - 82px);
-  }
-}
-
-.show-sidebar {
-  grid-template-columns: minmax(300px, 100fr) minmax(0px, 0.01fr);
-}
-
-.hide-sidebar {
-  grid-template-columns: minmax(0px, 0px) minmax(10px, 5fr);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
 @media only screen and (min-width: 500px) {
-  .show-sidebar {
-    grid-template-columns: minmax(330px, 330px) minmax(10px, 5fr);
+  .sidebar {
+    max-width: 230px;
   }
 
-  .hide-sidebar {
-    grid-template-columns: minmax(0px, 0px) minmax(10px, 5fr);
+  .sidebar.hidden {
+    max-width: 0px;
   }
 }
 
 .about {
-  grid-area: content;
   z-index: 1;
   background-color: var(--background-color);
 }
 
-.header {
-  grid-area: header;
-}
-
 .footer {
-  grid-area: footer;
   z-index: 20;
   padding-left: 15%;
   background-color: var(--first-color);
@@ -171,56 +148,41 @@ body {
   vertical-align: top;
 }
 
-.smartphone {
-  margin-left: 4px;
-  margin-right: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 .smartphones {
+  flex: 1;
   display: flex; /* or inline-flex */
   flex-direction: row;
   align-items: flex-start;
   will-change: scroll-position;
 }
 
+.smartphone {
+  margin-left: 4px;
+  margin-right: 0;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .logo {
   box-sizing: border-box;
   font-weight: bold;
   position: relative;
-  height: 26px;
   z-index: 0;
-  padding-bottom: 3px;
-  padding-left: 15%;
+  padding-left: 13%;
   text-align: left;
   background-color: var(--background-color);
 }
 
 .logo-text {
-  font-size: 20px;
+  font-size: 24px;
   text-decoration: none;
   color: var(--first-color);
 }
 
 #country {
   font-size: 14px;
-}
-
-@media only screen and (min-width: 650px) {
-  .logo {
-    height: 52px;
-    padding-bottom: 8px;
-  }
-
-  .logo-text {
-    font-size: 42px;
-  }
-
-  #country {
-    font-size: 16px;
-  }
 }
 
 .main-menu-link {
@@ -235,14 +197,13 @@ body {
   box-sizing: border-box;
   position: relative;
   z-index: 10;
-  height: 27px;
+  height: 32px;
   margin-top: 0;
   background-color: var(--first-color);
   box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12),
     0 2px 4px -1px rgba(0, 0, 0, 0.2);
-  display: grid;
+  display: flex;
   align-items: center;
-  grid-template-columns: minmax(110px, 15%) minmax(200px, 1fr) minmax(10px, 4fr);
 }
 
 .show-sidebar-button {
@@ -252,14 +213,15 @@ body {
   color: var(--background-color);
   background-color: var(--first-color);
   border: 1px solid var(--background-color);
+  border-radius: 2px;
   font-size: 16px;
   margin-left: 5px;
+  margin-right: 5px;
 }
 
 .searchQuery input {
   width: 95%;
-  margin: 4px;
-  border: 1px solid var(--second-color);
+  border: 1px solid var(--text-color);
 }
 
 .smartphoneCount {
@@ -338,25 +300,40 @@ radio {
 }
 
 .filterBox {
-  display: grid;
   align-items: center;
-  grid-template-columns: minmax(100px, 0.7fr) minmax(80px, 1fr);
-  grid-auto-rows: minmax(0, auto);
-
-  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-  background: var(--background-color);
-  border-radius: 8px;
-  border: var(--border-color) 1px solid;
+  background: var(--foreground-color);
   overflow: hidden;
-  margin-top: 14px;
-  margin-bottom: 14px;
-  margin-left: 14px;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-bottom: 10px;
+  font-size: 14px;
+}
+
+.filterBox p {
+  text-align: left;
+  letter-spacing: 0;
+  color: var(--text-color);
+  font-weight: 600;
+}
+
+.filterBox-Header {
+  vertical-align: top;
+  background-color: var(--foreground-color);
+  color: var(--first-color);
+  font-weight: bold;
+  padding-left: 10px;
+  padding-top: 5px;
+  border-top: 1px solid var(--border-color);
 }
 
 .sliderContainer {
-  padding-left: 30px;
+  padding-left: 16px;
   padding-right: 16px;
   padding-top: 5px;
+}
+
+.flex {
+  display: flex;
 }
 
 .flexBox {
@@ -372,41 +349,6 @@ radio {
   flex: 1;
 }
 
-.ls {
-  grid-column: 1;
-}
-
-.rs {
-  grid-column: 2;
-  text-align: right;
-}
-
-.bs {
-  grid-column: 1 / span 2;
-}
-
-.filterBox p {
-  text-align: left;
-  letter-spacing: 0;
-  color: var(--second-color);
-  font-size: 16px;
-  font-weight: bold;
-  padding-left: 5px;
-  padding-top: 6px;
-  padding-bottom: 6px;
-}
-
-.filterBox-Header {
-  vertical-align: top;
-  color: var(--background-color);
-  background: var(--first-color);
-  font-size: 16px;
-  font-weight: bold;
-  padding-left: 5px;
-  padding-top: 4px;
-  padding-bottom: 4px;
-}
-
 input[type="date"],
 input[type="datetime"],
 input[type="email"],
@@ -419,7 +361,7 @@ select,
 button,
 textarea {
   transition: all 0.3s ease-in-out;
-  color: var(--second-color);
+  color: var(--text-color);
 
   background-color: transparent;
 }
@@ -434,7 +376,7 @@ input[type="time"]:focus,
 input[type="url"]:focus,
 select:focus,
 textarea:focus {
-  box-shadow: 0 0 6px var(--second-color);
+  box-shadow: 0 0 6px var(--text-color);
 }
 
 .hidden {
@@ -463,14 +405,10 @@ textarea:focus {
 }
 
 .prefix {
-  color: var(--second-color);
-  font-size: 16px;
+  color: var(--text-color);
 }
 
 .smartphone-details {
-  display: grid;
-  grid-auto-rows: minmax(0, auto);
-  grid-gap: 2px;
   font-size: 16px;
   letter-spacing: 0.1px;
   line-height: 1.3;
@@ -483,8 +421,25 @@ textarea:focus {
   width: 200px;
 }
 
+.smartphone-details .flex *:first-child {
+  flex: 1;
+}
+
 .smartphone-details p {
-  display: inline;
+  white-space: nowrap;
+}
+
+.smartphone-price-container {
+  border-radius: 8px;
+  border: 1px solid var(--border-color);
+}
+
+.smartphone-colorpicker {
+  padding-left: 2px;
+  padding-right: 2px;
+  height: 20px;
+  overflow: hidden;
+  border-right: 1px solid var(--border-color);
   white-space: nowrap;
 }
 
@@ -497,7 +452,6 @@ textarea:focus {
 }
 
 .smartphone-name {
-  float: right;
   font-size: 16px;
   font-weight: 600;
   margin-top: 4px;
@@ -515,6 +469,7 @@ textarea:focus {
 .smartphone-price {
   color: var(--highlight-color);
   font-weight: bold;
+  padding-right: 2px;
 }
 
 .smartphone-design,
@@ -528,25 +483,13 @@ textarea:focus {
 
 .smartphone-totalscore {
   font-weight: bold;
+  text-align: right;
   color: var(--highlight-color);
 }
 
 .highlight-color {
   color: var(--first-color);
   font-weight: bold;
-}
-
-.ls {
-  grid-column: 1;
-}
-
-.rs {
-  grid-column: 2;
-  text-align: right;
-}
-
-.bs {
-  grid-column: 1 / span 2;
 }
 
 .qtip-img {
@@ -657,23 +600,19 @@ textarea:focus {
 
 .smallInput {
   width: 40px;
-  font-size: 16px;
   text-align: right;
   border: none;
 }
 
 .bigInput {
   width: 60px;
-  font-size: 16px;
   text-align: right;
   border: none;
 }
 
 .textSelect {
-  color: var(--second-color);
-  border: 1px solid var(--second-color);
-  font-size: 16px;
-  margin: 4px;
+  color: var(--text-color);
+  border: 1px solid var(--text-color);
   border-radius: 2px;
 }
 
@@ -696,11 +635,11 @@ textarea:focus {
   top: -4px;
   left: -2px;
   display: block;
-  width: 28px;
-  height: 28px;
+  width: 20px;
+  height: 20px;
   content: "";
   transition: all 0.1s linear;
-  border: 1px solid var(--second-color);
+  border: 1px solid var(--text-color);
   border-radius: 100px;
   background: rgb(249, 249, 249);
 }
@@ -708,28 +647,28 @@ textarea:focus {
 .lbl {
   position: relative;
   display: block;
-  width: 50px;
-  height: 20px;
+  width: 40px;
+  height: 12px;
   margin: 5px;
   cursor: pointer;
-  border: 1px solid var(--second-color);
+  border: 1px solid var(--text-color);
   border-radius: 100px;
 }
 
 .cbx:checked ~ label {
-  border: 1px solid var(--second-color);
-  background: var(--second-color);
+  border: 1px solid var(--text-color);
+  background: var(--text-color);
 }
 
 .cbx:checked ~ label:after {
-  left: 30px;
-  border: 1px solid var(--second-color);
+  left: 26px;
+  border: 1px solid var(--text-color);
   background: rgb(249, 249, 249);
 }
 
 .cbx:disabled ~ label {
   pointer-events: none;
-  background: var(--second-color);
+  background: var(--text-color);
 }
 
 .toggle-hidden {
@@ -737,5 +676,5 @@ textarea:focus {
 }
 
 .cbx:disabled ~ label:after {
-  background: var(--second-color);
+  background: var(--text-color);
 }

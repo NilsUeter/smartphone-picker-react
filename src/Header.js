@@ -16,7 +16,7 @@ class Header extends Component {
 
   render() {
     return (
-      <header className="box header">
+      <header className="header">
         <div className="logo">
           <a className="logo-text" href="index.html">
             <span>smartphone-picker</span>
