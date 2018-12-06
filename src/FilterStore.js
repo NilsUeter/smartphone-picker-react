@@ -3,6 +3,8 @@ import { observable, action, autorun } from "mobx";
 
 class FilterStore {
   @observable
+  lightmode = true;
+  @observable
   showAbout = false;
   @observable
   sidebarHidden = true;

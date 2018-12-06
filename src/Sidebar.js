@@ -1,45 +1,49 @@
 import React, { Component } from "react";
 import { observer } from "mobx-react";
-import RatingStars from "./RatingStars";
 import ToggleSwitch from "./ToggleSwitch";
 import TextSelect from "./TextSelect";
 import TextField from "./TextField";
 import "rc-slider/assets/index.css";
 import Slider from "rc-slider";
-import sortArrows from "./images/sort_arrows.png";
 
 import FilterStore from "./FilterStore.js";
 
 const Range = Slider.Range;
-
+const starMarks = {
+  1: <strong>1</strong>,
+  2: "2",
+  3: "3",
+  4: "4",
+  5: <strong>5</strong>
+};
 const storageMarks = {
   0: {
     style: {
-      color: "#4f5259"
+      color: "var(--text-color)"
     },
     label: "16"
   },
   1: {
     style: {
-      color: "#4f5259"
+      color: "var(--text-color)"
     },
     label: "32"
   },
   2: {
     style: {
-      color: "#4f5259"
+      color: "var(--text-color)"
     },
     label: "64"
   },
   3: {
     style: {
-      color: "#4f5259"
+      color: "var(--text-color)"
     },
     label: "128"
   },
   4: {
     style: {
-      color: "#4f5259"
+      color: "var(--text-color)"
     },
     label: "256"
   }
@@ -141,20 +145,23 @@ class Sidebar extends Component {
                 ["released", "Release Date"]
               ]}
             />
-            <input
-              type="image"
-              src={sortArrows}
+            <svg
               id="sorting_order"
               className={
                 FilterStore.isDescending
                   ? "sorting_order rotate-sorting-order"
                   : "sorting_order"
               }
+              role="img"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 256 512"
               height="22px"
               width="22px"
               alt="Submit"
               onClick={this.toggleAttribute("isDescending")}
-            />
+            >
+              <path d="M88 166.059V468c0 6.627 5.373 12 12 12h56c6.627 0 12-5.373 12-12V166.059h46.059c21.382 0 32.09-25.851 16.971-40.971l-86.059-86.059c-9.373-9.373-24.569-9.373-33.941 0l-86.059 86.059c-15.119 15.119-4.411 40.971 16.971 40.971H88z" />
+            </svg>
           </div>
           <p>Scale phones</p>
           <ToggleSwitch name="scaleInput" />
@@ -170,10 +177,10 @@ class Sidebar extends Component {
                 pushable={1}
                 value={[this.getMinDate(), this.getMaxDate()]}
                 onChange={this.changeAttributeDateRange}
-                trackStyle={[{ backgroundColor: "#4f5259" }]}
+                trackStyle={[{ backgroundColor: "var(--text-color)" }]}
                 handleStyle={[
-                  { border: "solid 2px #4f5259" },
-                  { border: "solid 2px #4f5259" }
+                  { border: "solid 2px var(--text-color)" },
+                  { border: "solid 2px var(--text-color)" }
                 ]}
               />
             </div>
@@ -206,10 +213,10 @@ class Sidebar extends Component {
                   "price_minimum_1",
                   "price_maximum_1"
                 )}
-                trackStyle={[{ backgroundColor: "#4f5259" }]}
+                trackStyle={[{ backgroundColor: "var(--text-color)" }]}
                 handleStyle={[
-                  { border: "solid 2px #4f5259" },
-                  { border: "solid 2px #4f5259" }
+                  { border: "solid 2px var(--text-color)" },
+                  { border: "solid 2px var(--text-color)" }
                 ]}
               />
             </div>
@@ -242,10 +249,10 @@ class Sidebar extends Component {
                   "size_minimum_1",
                   "size_maximum_1"
                 )}
-                trackStyle={[{ backgroundColor: "#4f5259" }]}
+                trackStyle={[{ backgroundColor: "var(--text-color)" }]}
                 handleStyle={[
-                  { border: "solid 2px #4f5259" },
-                  { border: "solid 2px #4f5259" }
+                  { border: "solid 2px var(--text-color)" },
+                  { border: "solid 2px var(--text-color)" }
                 ]}
               />
             </div>
@@ -278,10 +285,10 @@ class Sidebar extends Component {
                   "size_minimum_2",
                   "size_maximum_2"
                 )}
-                trackStyle={[{ backgroundColor: "#4f5259" }]}
+                trackStyle={[{ backgroundColor: "var(--text-color)" }]}
                 handleStyle={[
-                  { border: "solid 2px #4f5259" },
-                  { border: "solid 2px #4f5259" }
+                  { border: "solid 2px var(--text-color)" },
+                  { border: "solid 2px var(--text-color)" }
                 ]}
               />
             </div>
@@ -314,10 +321,10 @@ class Sidebar extends Component {
                   "size_minimum_3",
                   "size_maximum_3"
                 )}
-                trackStyle={[{ backgroundColor: "#4f5259" }]}
+                trackStyle={[{ backgroundColor: "var(--text-color)" }]}
                 handleStyle={[
-                  { border: "solid 2px #4f5259" },
-                  { border: "solid 2px #4f5259" }
+                  { border: "solid 2px var(--text-color)" },
+                  { border: "solid 2px var(--text-color)" }
                 ]}
               />
             </div>
@@ -333,32 +340,77 @@ class Sidebar extends Component {
         <div className="filterBox-Header bs">Ratings</div>
         <div className="filterBox">
           <p>Design</p>
-          <RatingStars name="design" />
+          <Slider
+            min={1}
+            max={5}
+            step={1}
+            onChange={changeevent =>
+              FilterStore.changeAttribute("design", changeevent)
+            }
+            trackStyle={[{ backgroundColor: "var(--text-color)" }]}
+            handleStyle={[{ border: "solid 2px var(--text-color)" }]}
+          />
           <p>Processor</p>
-          <RatingStars name="processor" />
+          <Slider
+            min={1}
+            max={5}
+            step={1}
+            onChange={changeevent =>
+              FilterStore.changeAttribute("processor", changeevent)
+            }
+            trackStyle={[{ backgroundColor: "var(--text-color)" }]}
+            handleStyle={[{ border: "solid 2px var(--text-color)" }]}
+          />
           <p>Updates</p>
-          <RatingStars name="updates" />
+          <Slider
+            min={1}
+            max={5}
+            step={1}
+            onChange={changeevent =>
+              FilterStore.changeAttribute("updates", changeevent)
+            }
+            trackStyle={[{ backgroundColor: "var(--text-color)" }]}
+            handleStyle={[{ border: "solid 2px var(--text-color)" }]}
+          />
           <p>Camera</p>
-          <RatingStars name="camera" />
+          <Slider
+            min={1}
+            max={5}
+            step={1}
+            onChange={changeevent =>
+              FilterStore.changeAttribute("camera", changeevent)
+            }
+            trackStyle={[{ backgroundColor: "var(--text-color)" }]}
+            handleStyle={[{ border: "solid 2px var(--text-color)" }]}
+          />
           <p>Battery</p>
-          <RatingStars name="battery" />
+          <Slider
+            min={1}
+            max={5}
+            step={1}
+            onChange={changeevent =>
+              FilterStore.changeAttribute("battery", changeevent)
+            }
+            trackStyle={[{ backgroundColor: "var(--text-color)" }]}
+            handleStyle={[{ border: "solid 2px var(--text-color)" }]}
+          />
         </div>
         <div className="filterBox-Header bs">Personal Preferences</div>
         <div className="filterBox">
           <p>Storage</p>
-          <div className="sliderContainer storageSlider">
+          <div className="storageSlider">
             <Slider
               min={0}
               max={4}
               marks={storageMarks}
               step={null}
               onChange={this.changeAttributeStorage}
-              trackStyle={[{ backgroundColor: "#4f5259" }]}
+              trackStyle={[{ backgroundColor: "var(--text-color)" }]}
               handleStyle={[
-                { border: "solid 2px #4f5259" },
-                { border: "solid 2px #4f5259" }
+                { border: "solid 2px var(--text-color)" },
+                { border: "solid 2px var(--text-color)" }
               ]}
-              activeDotStyle={{ border: "solid 2px #4f5259" }}
+              activeDotStyle={{ border: "solid 2px var(--text-color)" }}
             />
           </div>
           <p>Headphone-Jack</p>

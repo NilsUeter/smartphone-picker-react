@@ -13,25 +13,26 @@ class Content extends Component {
   }
 
   componentDidMount() {
-    this.contentObject = document.getElementById("content");
+    this.contentObject = document.getElementById("smartphones");
     document
-      .getElementById("content")
+      .getElementById("smartphones")
       .addEventListener("wheel", e => this.scrollHorizontally(e), {
         passive: true
       });
   }
 
   scrollHorizontally(e) {
-    const delta = Math.max(-1, Math.min(1, e.wheelDelta || -e.detail));
+    e = window.event || e;
+    var delta = Math.max(-1, Math.min(1, e.wheelDelta || -e.detail));
 
-    // TODO: Make Scrolling smooth
-    this.contentObject.scrollBy(delta * -40, 0);
+    this.contentObject.scrollLeft -= delta * 100;
+    e.preventDefault();
   }
 
   render() {
     return (
       <div id="content" className="content">
-        <div className="smartphones">
+        <div id="smartphones" className="smartphones">
           {SmartphoneStore.listOfFilteredAndScoredObjects.map(smartphone => (
             <Smartphone
               key={smartphone.brand + smartphone.name}

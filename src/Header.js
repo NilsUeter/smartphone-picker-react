@@ -28,14 +28,12 @@ class Header extends Component {
           />
         </div>
         <div className="main-menu">
-          <div>
-            <button
-              className="show-sidebar-button"
-              onClick={this.toggleAttribute("sidebarHidden")}
-            >
-              {FilterStore.sidebarHidden ? "Show" : "Hide"} Filters
-            </button>
-          </div>
+          <button
+            className="show-sidebar-button"
+            onClick={this.toggleAttribute("sidebarHidden")}
+          >
+            {FilterStore.sidebarHidden ? "Show" : "Hide"} Filters
+          </button>
           <div className="navdiv">
             <a
               className="main-menu-link"

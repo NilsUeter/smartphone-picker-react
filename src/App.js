@@ -16,7 +16,11 @@ import { observer } from "mobx-react";
 class App extends Component {
   render() {
     return (
-      <React.Fragment>
+      <div
+        className={
+          "react-head " + (FilterStore.lightmode ? "lightmode" : "darkmode")
+        }
+      >
         <Header />
         <div className="sidebar-content-wrapper">
           <Sidebar />
@@ -29,7 +33,7 @@ class App extends Component {
           )}
         </div>
         <Footer />
-      </React.Fragment>
+      </div>
     );
   }
 }
