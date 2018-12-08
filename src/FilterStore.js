@@ -121,6 +121,7 @@ class FilterStore {
         case "updateURLtoRepresentFilter": //Define methods which shouldn't be overriden for mobx reasons
         case "updateURL":
         case "searchQuery":
+        case "lightmode":
           break;
         default:
           if (this[name] !== resetCopy[name]) {
@@ -146,11 +147,12 @@ class FilterStore {
     let key;
     for (key in this) {
       switch (key) {
-        case "filterTemplate": //Define filters which aren't expected to be reset
+        case "filterTemplate": //Define filters which aren't expected to be included in the url
         case "country":
         case "updateURL":
         case "loadURL":
         case "updateURLtoRepresentFilter":
+        case "lightmode":
           break;
         default:
           if (this[key] && resetCopy && resetCopy[key] !== this[key]) {
