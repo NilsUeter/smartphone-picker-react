@@ -9,13 +9,6 @@ import Slider from "rc-slider";
 import FilterStore from "./FilterStore.js";
 
 const Range = Slider.Range;
-const starMarks = {
-  1: <strong>1</strong>,
-  2: "2",
-  3: "3",
-  4: "4",
-  5: <strong>5</strong>
-};
 const storageMarks = {
   0: {
     style: {
@@ -134,7 +127,7 @@ class Sidebar extends Component {
             ]}
           />
           <p>Sort table by</p>
-          <div>
+          <div className="flex">
             <TextSelect
               name="filterType"
               options={[
@@ -163,10 +156,14 @@ class Sidebar extends Component {
               <path d="M88 166.059V468c0 6.627 5.373 12 12 12h56c6.627 0 12-5.373 12-12V166.059h46.059c21.382 0 32.09-25.851 16.971-40.971l-86.059-86.059c-9.373-9.373-24.569-9.373-33.941 0l-86.059 86.059c-15.119 15.119-4.411 40.971 16.971 40.971H88z" />
             </svg>
           </div>
-          <p>Scale phones</p>
-          <ToggleSwitch name="scaleInput" />
-          <p>Empty phones</p>
-          <ToggleSwitch name="emptySmartphones" />
+          <div className="flex">
+            <p>Scale phones</p>
+            <ToggleSwitch name="scaleInput" />
+          </div>
+          <div className="flex">
+            <p>Empty phones</p>
+            <ToggleSwitch name="emptySmartphones" />
+          </div>
           <p>Release</p>
           <div>
             <div className="sliderContainer">
@@ -413,14 +410,22 @@ class Sidebar extends Component {
               activeDotStyle={{ border: "solid 2px var(--text-color)" }}
             />
           </div>
-          <p>Headphone-Jack</p>
-          <ToggleSwitch name="headphoneJack" />
-          <p>2 SIMS</p>
-          <ToggleSwitch name="simCards" />
-          <p>SD Slot</p>
-          <ToggleSwitch name="sdSlot" />
-          <p>No notch</p>
-          <ToggleSwitch name="notch" />
+          <div className="flex">
+            <p>Headphone-Jack</p>
+            <ToggleSwitch name="headphoneJack" />
+          </div>
+          <div className="flex">
+            <p>2 SIMS</p>
+            <ToggleSwitch name="simCards" />
+          </div>
+          <div className="flex">
+            <p>SD Slot</p>
+            <ToggleSwitch name="sdSlot" />
+          </div>
+          <div className="flex">
+            <p>No notch</p>
+            <ToggleSwitch name="notch" />
+          </div>
           <p>Waterproof</p>
           <TextSelect
             name="waterproof"

@@ -44,6 +44,7 @@
   margin: 0;
   padding: 0;
   font-family: "Open Sans2", Sans-serif;
+  transition: color, background-color 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
 html,
@@ -129,18 +130,19 @@ body,
 }
 
 .sidebar {
-  flex: 1;
   overflow: auto;
-  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition: width, color,
+    background-color 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  background-color: var(--sidebar-background);
 }
 
 @media only screen and (min-width: 500px) {
   .sidebar {
-    max-width: 230px;
+    width: 230px;
   }
 
   .sidebar.hidden {
-    max-width: 0px;
+    width: 0px;
   }
 }
 
@@ -252,7 +254,7 @@ body,
 }
 
 .searchQuery input {
-  width: 95%;
+  width: 190px;
   border: 1px solid var(--text-color);
 }
 
@@ -285,11 +287,11 @@ radio {
 
 .filterBox {
   align-items: center;
-  background: var(--sidebar-background);
   overflow: hidden;
   padding-left: 20px;
   padding-right: 15px;
   padding-bottom: 10px;
+  padding-top: 10px;
   font-size: 14px;
 }
 
@@ -299,15 +301,15 @@ radio {
   color: var(--text-color);
   font-weight: 600;
   line-height: 1.2;
+  align-self: center;
+  flex: 1;
 }
 
 .filterBox-Header {
   vertical-align: top;
-  background-color: var(--sidebar-background);
   color: var(--first-color);
   font-weight: bold;
   padding-left: 10px;
-  padding-top: 5px;
   border-top: 1px solid var(--border-color);
 }
 .filterBox-Header:first-child {
@@ -361,10 +363,6 @@ textarea:focus {
   box-shadow: 0 0 6px var(--text-color);
 }
 
-.hidden {
-  display: none;
-}
-
 .rotate-sorting-order {
   transform: rotate(180deg);
 }
@@ -380,13 +378,13 @@ textarea:focus {
 }
 
 #filterType {
-  width: 140px;
+  width: 180px;
 }
 
 .rc-slider {
   width: inherit !important;
-  margin-left: 16px;
-  margin-right: 16px;
+  margin-left: 8px;
+  margin-right: 8px;
 }
 
 .rc-slider-rail {
@@ -608,7 +606,7 @@ textarea:focus {
 }
 
 .filterBox .textSelect {
-  width: 95%;
+  width: 192px;
 }
 
 .blue-white {
@@ -618,6 +616,7 @@ textarea:focus {
 }
 .toggleSwitch {
   justify-self: center;
+  align-self: center;
 }
 
 .lbl:after {
@@ -630,9 +629,9 @@ textarea:focus {
   height: 20px;
   content: "";
   transition: all 0.1s linear;
-  border: 1px solid var(--text-color);
+  border: 1px solid var(--first-color);
   border-radius: 100px;
-  background: rgb(249, 249, 249);
+  background: var(--foreground-color);
 }
 
 .lbl {
@@ -642,24 +641,24 @@ textarea:focus {
   height: 12px;
   margin: 5px;
   cursor: pointer;
-  border: 1px solid var(--text-color);
+  border: 1px solid var(--first-color);
   border-radius: 100px;
 }
 
 .cbx:checked ~ label {
-  border: 1px solid var(--text-color);
-  background: var(--text-color);
+  border: 1px solid var(--first-color);
+  background: var(--first-color);
 }
 
 .cbx:checked ~ label:after {
   left: 26px;
-  border: 1px solid var(--text-color);
-  background: rgb(249, 249, 249);
+  border: 1px solid var(--first-color);
+  background: var(--foreground-color);
 }
 
 .cbx:disabled ~ label {
   pointer-events: none;
-  background: var(--text-color);
+  background: var(--first-color);
 }
 
 .toggle-hidden {
@@ -667,5 +666,5 @@ textarea:focus {
 }
 
 .cbx:disabled ~ label:after {
-  background: var(--text-color);
+  background: var(--first-color);
 }

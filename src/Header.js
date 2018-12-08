@@ -5,6 +5,7 @@ import TextSelect from "./TextSelect";
 
 import FilterStore from "./FilterStore.js";
 import SmartphoneStore from "./SmartphoneStore.js";
+import ToggleSwitch from "./ToggleSwitch";
 
 @observer
 class Header extends Component {
@@ -17,7 +18,7 @@ class Header extends Component {
   render() {
     return (
       <header className="header">
-        <div className="logo">
+        <div className="logo flex">
           <a className="logo-text" href="index.html">
             <span>smartphone-picker</span>
           </a>
@@ -26,6 +27,7 @@ class Header extends Component {
             options={[["de", "GERMANY"]]}
             colorScheme="blue-white"
           />
+          <ToggleSwitch name="lightmode" />
         </div>
         <div className="main-menu">
           <button
