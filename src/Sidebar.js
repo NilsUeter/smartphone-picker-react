@@ -426,16 +426,18 @@ class Sidebar extends Component {
             <p>No notch</p>
             <ToggleSwitch name="notch" />
           </div>
-          <p>Waterproof</p>
-          <TextSelect
-            name="waterproof"
-            options={[
-              ["", ""],
-              ["4", "IP X4 Splashing water"],
-              ["7", "IP X7 Immersion up to 1m"],
-              ["8", "IP X8 Immersion beyond 1m"]
-            ]}
-          />
+          <div className="flex">
+            <p>Waterproof</p>
+            <TextSelect
+              name="waterproof"
+              options={[
+                ["", ""],
+                ["4", "IP X4 Splashing water"],
+                ["7", "IP X7 Immersion up to 1m"],
+                ["8", "IP X8 Immersion beyond 1m"]
+              ]}
+            />
+          </div>
         </div>
       </div>
     );

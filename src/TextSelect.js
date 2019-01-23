@@ -11,7 +11,7 @@ class TextSelect extends Component {
 
   render() {
     return (
-      <label style={{ "align-self": "center", flex: "1" }}>
+      <label style={{ alignSelf: "center", flex: "1" }}>
         <select
           id={this.props.name}
           className={"textSelect " + this.props.colorScheme}
