@@ -340,13 +340,14 @@ radio {
   display: flex;
 }
 
-.flexBox {
+.sliderSubBar {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   align-items: center;
   padding-left: 3px;
   padding-right: 6.5px;
+  margin-top: -5px;
 }
 
 .filler {
@@ -408,7 +409,6 @@ textarea:focus {
 
 .rc-slider {
   width: inherit !important;
-  height: 8px !important;
   padding: 2px !important;
   margin-left: 8px;
   margin-right: 8px;

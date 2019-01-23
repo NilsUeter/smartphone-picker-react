@@ -180,7 +180,7 @@ class Sidebar extends Component {
                 ]}
               />
             </div>
-            <div className="flexBox">
+            <div className="sliderSubBar">
               <TextField name="release_minimum" big={true} />
               <div className="filler" />
               <TextField name="release_maximum" big={true} />
@@ -215,7 +215,7 @@ class Sidebar extends Component {
                 ]}
               />
             </div>
-            <div className="flexBox">
+            <div className="sliderSubBar">
               <TextField name="price_minimum_1" />
               <span className="prefix">€</span>
               <div className="filler" />
@@ -251,7 +251,7 @@ class Sidebar extends Component {
                 ]}
               />
             </div>
-            <div className="flexBox">
+            <div className="sliderSubBar">
               <TextField name="size_minimum_1" />
               <span className="prefix">"</span>
               <div className="filler" />
@@ -287,7 +287,7 @@ class Sidebar extends Component {
                 ]}
               />
             </div>
-            <div className="flexBox">
+            <div className="sliderSubBar">
               <TextField name="size_minimum_2" />
               <span className="prefix">mm</span>
               <div className="filler" />
@@ -323,7 +323,7 @@ class Sidebar extends Component {
                 ]}
               />
             </div>
-            <div className="flexBox">
+            <div className="sliderSubBar">
               <TextField name="size_minimum_3" />
               <span className="prefix">mm</span>
               <div className="filler" />
