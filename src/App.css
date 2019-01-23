@@ -29,7 +29,7 @@
 
 ::-webkit-scrollbar {
   width: 5px;
-  height: 15px;
+  height: 12px;
 }
 
 ::-webkit-scrollbar-track {
@@ -186,6 +186,7 @@ body,
   flex-direction: row;
   align-items: flex-start;
   will-change: scroll-position;
+  padding-left: 10px;
 }
 
 .smartphone {
@@ -251,6 +252,9 @@ body,
   margin-right: 55px;
 }
 
+.searchQuery {
+  flex: 1;
+}
 .searchQuery input {
   width: 100%;
   border: 1px solid var(--text-color);
@@ -289,8 +293,11 @@ radio {
   padding-left: 20px;
   padding-right: 15px;
   padding-bottom: 10px;
-  padding-top: 10px;
   font-size: 14px;
+}
+
+.filterBox--closed {
+  display: none;
 }
 
 .filterBox p {
@@ -300,19 +307,33 @@ radio {
   font-weight: 600;
   line-height: 1.2;
   align-self: center;
-  flex: 1;
+  flex: 1 1 50px;
 }
 
 .filterBox-Header {
-  vertical-align: top;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
   color: var(--first-color);
   font-weight: bold;
-  padding-top: 10px;
-  padding-left: 10px;
+  padding: 10px;
   border-top: 1px solid var(--border-color);
 }
+.filterBox-Header:hover {
+  background: rgba(184, 192, 203, 0.3);
+}
+
 .filterBox-Header:first-child {
   border-top: none;
+}
+
+.filterBoxArrow {
+  transform: rotate(180deg);
+  display: blocK;
+  fill: gray;
+}
+.filterBoxArrow--closed {
+  transform: rotate(0deg);
 }
 
 .flex {
@@ -347,6 +368,7 @@ textarea {
   color: var(--text-color);
   background-color: transparent;
   outline: none;
+  box-sizing: border-box;
 }
 
 input[type="date"]:focus,
@@ -368,7 +390,7 @@ textarea:focus {
 
 .sorting_order {
   transition: transform 0.8s ease;
-  vertical-align: middle;
+  align-self: center;
   fill: var(--text-color);
 }
 
@@ -380,10 +402,17 @@ textarea:focus {
   width: 100%;
 }
 
+.sliderContainer {
+  margin-bottom: 5px;
+}
+
 .rc-slider {
   width: inherit !important;
+  height: 8px !important;
+  padding: 2px !important;
   margin-left: 8px;
   margin-right: 8px;
+  margin-top: 5px;
 }
 
 .rc-slider-rail {
@@ -391,7 +420,7 @@ textarea:focus {
 }
 
 .storageSlider {
-  padding-bottom: 20px;
+  padding-bottom: 30px;
 }
 
 .prefix {
@@ -590,6 +619,7 @@ textarea:focus {
   width: 32px;
   text-align: right;
   border: none;
+  margin: 0;
 }
 
 .bigInput {
@@ -604,8 +634,11 @@ textarea:focus {
   border-radius: 2px;
 }
 
-.filterBox .textSelect {
+.filterBox select,
+input {
   width: 100%;
+  margin-top: 2.5px;
+  margin-bottom: 2.5px;
 }
 
 .blue-white {

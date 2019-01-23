@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { observer } from "mobx-react";
+import FilterBox from "./FilterBox";
 import ToggleSwitch from "./ToggleSwitch";
 import TextSelect from "./TextSelect";
 import TextField from "./TextField";
@@ -108,13 +109,11 @@ class Sidebar extends Component {
   render() {
     return (
       <div className={FilterStore.sidebarHidden ? "sidebar hidden" : "sidebar"}>
-        <div className="filterBox-Header bs">Sorting Options</div>
-        <div className="filterBox">
+        <FilterBox header="Sorting Options">
           <p>Search phones</p>
           <div className={"searchQuery"}>
             <TextField name="searchQuery" big={true} />
           </div>
-
           <p>Filter Templates</p>
           <TextSelect
             name="filterTemplate"
@@ -165,8 +164,8 @@ class Sidebar extends Component {
             <ToggleSwitch name="emptySmartphones" />
           </div>
           <p>Release</p>
-          <div>
-            <div className="sliderContainer">
+          <div className="sliderContainer">
+            <div>
               <Range
                 min={0}
                 max={23}
@@ -187,12 +186,11 @@ class Sidebar extends Component {
               <TextField name="release_maximum" big={true} />
             </div>
           </div>
-        </div>
-        <div className="filterBox-Header bs">Budget and Size</div>
-        <div className="filterBox">
+        </FilterBox>
+        <FilterBox header="Budget and Size">
           <p>Price</p>
-          <div>
-            <div className="sliderContainer">
+          <div className="sliderContainer">
+            <div>
               <Range
                 min={0}
                 max={1200}
@@ -227,8 +225,8 @@ class Sidebar extends Component {
           </div>
 
           <p>Display</p>
-          <div>
-            <div className="sliderContainer">
+          <div className="sliderContainer">
+            <div>
               <Range
                 min={4.7}
                 max={6.3}
@@ -263,8 +261,8 @@ class Sidebar extends Component {
           </div>
 
           <p>Length</p>
-          <div>
-            <div className="sliderContainer">
+          <div className="sliderContainer">
+            <div>
               <Range
                 min={135}
                 max={163}
@@ -299,8 +297,8 @@ class Sidebar extends Component {
           </div>
 
           <p>Width</p>
-          <div>
-            <div className="sliderContainer">
+          <div className="sliderContainer">
+            <div>
               <Range
                 min={65}
                 max={78}
@@ -333,9 +331,54 @@ class Sidebar extends Component {
               <span className="prefix">mm</span>
             </div>
           </div>
-        </div>
-        <div className="filterBox-Header bs">Ratings</div>
-        <div className="filterBox">
+        </FilterBox>
+        <FilterBox header="Personal Preferences">
+          <p>Storage</p>
+          <div className="storageSlider">
+            <Slider
+              min={0}
+              max={4}
+              marks={storageMarks}
+              step={null}
+              onChange={this.changeAttributeStorage}
+              trackStyle={[{ backgroundColor: "var(--text-color)" }]}
+              handleStyle={[
+                { border: "solid 2px var(--text-color)" },
+                { border: "solid 2px var(--text-color)" }
+              ]}
+              activeDotStyle={{ border: "solid 2px var(--text-color)" }}
+            />
+          </div>
+          <div className="flex">
+            <p>Headphone-Jack</p>
+            <ToggleSwitch name="headphoneJack" />
+          </div>
+          <div className="flex">
+            <p>2 SIMS</p>
+            <ToggleSwitch name="simCards" />
+          </div>
+          <div className="flex">
+            <p>SD Slot</p>
+            <ToggleSwitch name="sdSlot" />
+          </div>
+          <div className="flex">
+            <p>No notch</p>
+            <ToggleSwitch name="notch" />
+          </div>
+          <div className="flex">
+            <p>Waterproof</p>
+            <TextSelect
+              name="waterproof"
+              options={[
+                ["", ""],
+                ["4", "IP X4 Splashing water"],
+                ["7", "IP X7 Immersion up to 1m"],
+                ["8", "IP X8 Immersion beyond 1m"]
+              ]}
+            />
+          </div>
+        </FilterBox>
+        <FilterBox header="Ratings" startClosed={true}>
           <p>Design</p>
           <Slider
             min={1}
@@ -391,54 +434,7 @@ class Sidebar extends Component {
             trackStyle={[{ backgroundColor: "var(--text-color)" }]}
             handleStyle={[{ border: "solid 2px var(--text-color)" }]}
           />
-        </div>
-        <div className="filterBox-Header bs">Personal Preferences</div>
-        <div className="filterBox">
-          <p>Storage</p>
-          <div className="storageSlider">
-            <Slider
-              min={0}
-              max={4}
-              marks={storageMarks}
-              step={null}
-              onChange={this.changeAttributeStorage}
-              trackStyle={[{ backgroundColor: "var(--text-color)" }]}
-              handleStyle={[
-                { border: "solid 2px var(--text-color)" },
-                { border: "solid 2px var(--text-color)" }
-              ]}
-              activeDotStyle={{ border: "solid 2px var(--text-color)" }}
-            />
-          </div>
-          <div className="flex">
-            <p>Headphone-Jack</p>
-            <ToggleSwitch name="headphoneJack" />
-          </div>
-          <div className="flex">
-            <p>2 SIMS</p>
-            <ToggleSwitch name="simCards" />
-          </div>
-          <div className="flex">
-            <p>SD Slot</p>
-            <ToggleSwitch name="sdSlot" />
-          </div>
-          <div className="flex">
-            <p>No notch</p>
-            <ToggleSwitch name="notch" />
-          </div>
-          <div className="flex">
-            <p>Waterproof</p>
-            <TextSelect
-              name="waterproof"
-              options={[
-                ["", ""],
-                ["4", "IP X4 Splashing water"],
-                ["7", "IP X7 Immersion up to 1m"],
-                ["8", "IP X8 Immersion beyond 1m"]
-              ]}
-            />
-          </div>
-        </div>
+        </FilterBox>
       </div>
     );
   }
