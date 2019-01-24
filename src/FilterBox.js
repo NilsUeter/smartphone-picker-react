@@ -1,24 +1,28 @@
 import React, { Component } from "react";
+import { observer } from "mobx-react";
+import FilterStore from "./FilterStore.js";
 
+@observer
 class FilterBox extends Component {
-  constructor(props) {
-    super(props);
-    this.state = { closed: this.props.startClosed ? true : false };
-  }
-
   render() {
     return (
       <React.Fragment>
         <div
           className="filterBox-Header"
-          onClick={() => this.setState({ closed: !this.state.closed })}
+          onClick={() => {
+            if (FilterStore.activeFilterBox === this.props.header) {
+              FilterStore.activeFilterBox = "";
+            } else {
+              FilterStore.activeFilterBox = this.props.header;
+            }
+          }}
         >
           <p>{this.props.header}</p>
           <svg
             className={
-              this.state.closed
-                ? "filterBoxArrow filterBoxArrow--closed"
-                : "filterBoxArrow"
+              FilterStore.activeFilterBox === this.props.header
+                ? "filterBoxArrow"
+                : "filterBoxArrow filterBoxArrow--closed"
             }
             xmlns="http://www.w3.org/2000/svg"
             width="22px"
@@ -34,7 +38,9 @@ class FilterBox extends Component {
         </div>
         <div
           className={
-            this.state.closed ? "filterBox filterBox--closed" : "filterBox"
+            FilterStore.activeFilterBox === this.props.header
+              ? "filterBox"
+              : "filterBox filterBox--closed"
           }
         >
           {this.props.children}

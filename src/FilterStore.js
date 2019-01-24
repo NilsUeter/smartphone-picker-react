@@ -12,6 +12,9 @@ class FilterStore {
   country = "de";
 
   @observable
+  activeFilterBox = "Sorting Options";
+
+  @observable
   searchQuery = "";
   @observable
   filterTemplate = "";
@@ -118,6 +121,7 @@ class FilterStore {
         case "filterTemplate": //Define filters which aren't expected to be reset
         case "country":
         case "sidebarHidden":
+        case "activeFilterBox":
         case "updateURLtoRepresentFilter": //Define methods which shouldn't be overriden for mobx reasons
         case "updateURL":
         case "searchQuery":
@@ -150,6 +154,7 @@ class FilterStore {
         case "filterTemplate": //Define filters which aren't expected to be included in the url
         case "country":
         case "updateURL":
+        case "activeFilterBox":
         case "loadURL":
         case "updateURLtoRepresentFilter":
         case "lightmode":
@@ -163,6 +168,9 @@ class FilterStore {
       }
     }
     finalquery = "?" + queryComponents.join("&");
+    if (finalquery === "?") {
+      finalquery = "";
+    }
     if (resetCopy && window.location.search !== finalquery) {
       const newurl =
         window.location.protocol +
@@ -170,6 +178,7 @@ class FilterStore {
         window.location.host +
         window.location.pathname +
         finalquery;
+
       window.history.pushState({ path: newurl }, "", newurl);
     }
   };
