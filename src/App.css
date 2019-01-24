@@ -1,5 +1,8 @@
 :root {
   --first-color: #2f5a9a;
+  --show-sidebar-button: #2f9a6f;
+  --just-black: #263238;
+  --just-white: #fff;
 }
 
 .lightmode {
@@ -9,7 +12,6 @@
   --background-color: #fff;
   --foreground-color: #fff;
   --sidebar-background: #f4f5f7;
-  --just-black: #263238;
 }
 
 .darkmode {
@@ -19,8 +21,7 @@
   --border-color: #e0e0e0;
   --background-color: #263238;
   --foreground-color: var(--background-color);
-  --sidebar-background: var(--background-color);
-  --just-black: #263238;
+  --sidebar-background: #212c31;
 }
 
 .lightmode .sidebar {
@@ -128,19 +129,39 @@ body,
 
 .sidebar {
   width: 100%;
+  margin-right: 40px;
   overflow: auto;
-  transition: width, color,
-    background-color 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
   background-color: var(--sidebar-background);
+  position: relative;
 }
 
 .sidebar.hidden {
-  width: 0px;
+  width: 30px;
+  margin-right: 0;
+}
+
+.sidebar.hidden > * {
+  display: none;
 }
 
 @media only screen and (min-width: 500px) {
   .sidebar {
     width: 230px;
+    margin-right: 0;
+  }
+
+  .hide-sidebar-button {
+    left: 265px;
+  }
+
+  .logo {
+    padding-left: 5px;
+  }
+}
+
+@media (min-height: 1200px) {
+  .img-container {
+    height: calc((1200px - 450px));
   }
 }
 
@@ -209,7 +230,7 @@ body,
 }
 
 .logo-text {
-  font-size: 24px;
+  font-size: 20px;
   text-decoration: none;
   color: var(--first-color);
 }
@@ -223,13 +244,14 @@ body,
   text-decoration: none;
   color: var(--background-color);
   cursor: pointer;
-  padding-right: 20px;
+  padding-left: 20px;
 }
 
 .main-menu {
   box-sizing: border-box;
   position: relative;
   z-index: 10;
+  height: 25px;
   margin-top: 0;
   background-color: var(--first-color);
   box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12),
@@ -238,18 +260,34 @@ body,
   align-items: center;
 }
 
-.show-sidebar-button {
-  min-width: 95px;
-  height: 25px;
+.sidebar-button {
+  min-width: 120px;
+  height: 40px;
   cursor: pointer;
-  color: var(--background-color);
-  background-color: var(--first-color);
-  border: 1px solid var(--background-color);
-  border-left: none;
-  border-top: none;
-  border-bottom: none;
+  color: var(--just-white);
+  background-color: var(--show-sidebar-button);
+  border: none;
+  border-radius: 2px;
   font-size: 16px;
-  margin-right: 55px;
+  z-index: 6;
+  transform: rotate(90deg);
+  transform-origin: left top 0;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14),
+    0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+}
+
+.sidebar-button:hover {
+  background-color: #46b387;
+}
+
+.show-sidebar-button {
+  position: absolute;
+  left: 70px;
+}
+
+.hide-sidebar-button {
+  position: absolute;
+  right: -120px;
 }
 
 .searchQuery {
@@ -261,9 +299,7 @@ body,
 }
 
 .smartphoneCount {
-  float: right;
-  padding-right: 20px;
-  font-weight: bold;
+  padding-left: 10px;
   color: var(--background-color);
 }
 
@@ -365,7 +401,6 @@ input[type="url"],
 select,
 button,
 textarea {
-  transition: all 0.3s ease-in-out;
   color: var(--text-color);
   background-color: transparent;
   outline: none;
@@ -382,7 +417,7 @@ input[type="time"]:focus,
 input[type="url"]:focus,
 select:focus,
 textarea:focus {
-  box-shadow: 0 0 6px var(--text-color);
+  box-shadow: 0 0 2px var(--text-color);
 }
 
 .rotate-sorting-order {
@@ -522,12 +557,6 @@ textarea:focus {
   height: calc((100vh - 450px));
 }
 
-@media (min-height: 1200px) {
-  .img-container {
-    height: calc((1200px - 450px));
-  }
-}
-
 .horizontalRule {
   border: none;
   border-top: 2px solid var(--border-color);
@@ -631,7 +660,7 @@ textarea:focus {
 }
 
 .textSelect {
-  color: var(--just-black);
+  color: var(--text-color);
   border: 1px solid var(--text-color);
   border-radius: 2px;
 }

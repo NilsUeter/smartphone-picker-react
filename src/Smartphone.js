@@ -17,7 +17,6 @@ class Smartphone extends Component {
       document.documentElement.clientHeight,
       window.innerHeight || 0
     );
-    console.log(height);
     if (height < 1200) {
       this.smartphoneHeight =
         "calc(calc(100vh - 450px) * " +

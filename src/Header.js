@@ -30,12 +30,13 @@ class Header extends Component {
           <ToggleSwitch name="lightmode" />
         </div>
         <div className="main-menu">
-          <button
-            className="show-sidebar-button"
-            onClick={this.toggleAttribute("sidebarHidden")}
-          >
-            {FilterStore.sidebarHidden ? "Show" : "Hide"} Filters
-          </button>
+          <p id="smartphoneCount" className="smartphoneCount">
+            {SmartphoneStore.listOfFilteredAndScoredObjects
+              ? SmartphoneStore.listOfFilteredAndScoredObjects.length
+              : 0}
+            /{SmartphoneStore.obj.length ? SmartphoneStore.obj.length : 0}{" "}
+            Phones
+          </p>
           <div className="navdiv">
             <a
               className="main-menu-link"
@@ -56,14 +57,6 @@ class Header extends Component {
             >
               {FilterStore.showAbout ? "Smartphones" : "About"}
             </a>
-          </div>
-          <div className="countryDiv">
-            <p id="smartphoneCount" className="smartphoneCount">
-              {SmartphoneStore.listOfFilteredAndScoredObjects
-                ? SmartphoneStore.listOfFilteredAndScoredObjects.length
-                : 0}
-              /{SmartphoneStore.obj.length ? SmartphoneStore.obj.length : 0}
-            </p>
           </div>
         </div>
       </header>
