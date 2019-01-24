@@ -7,7 +7,7 @@ class FilterStore {
   @observable
   showAbout = false;
   @observable
-  sidebarHidden = true;
+  sidebarHidden = false;
   @observable
   country = "de";
 
@@ -28,8 +28,9 @@ class FilterStore {
   emptySmartphones = false;
   @observable
   release_minimum = "2017-01";
+
   @observable
-  release_maximum = "2018-12";
+  release_maximum = new Date().toISOString().slice(0, 7);
 
   @observable
   price_minimum_1 = 0;
@@ -154,6 +155,7 @@ class FilterStore {
         case "filterTemplate": //Define filters which aren't expected to be included in the url
         case "country":
         case "updateURL":
+        case "sidebarHidden":
         case "activeFilterBox":
         case "loadURL":
         case "updateURLtoRepresentFilter":
@@ -195,7 +197,7 @@ const filterStore = new FilterStore();
 
 const resetCopy = {
   showAbout: false,
-  sidebarHidden: true,
+  sidebarHidden: false,
   country: "de",
   filterTemplate: "",
   filterType: "price",

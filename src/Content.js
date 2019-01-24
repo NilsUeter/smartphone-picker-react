@@ -7,11 +7,6 @@ import Smartphone from "./Smartphone.js";
 
 @observer
 class Content extends Component {
-  constructor(props) {
-    super(props);
-    this.myRef = React.createRef();
-  }
-
   componentDidMount() {
     this.contentObject = document.getElementById("smartphones");
     document

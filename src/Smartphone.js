@@ -9,6 +9,28 @@ import chargingBattery from "./images/charging-battery.png";
 
 @observer
 class Smartphone extends Component {
+  smartphoneHeight;
+  constructor(props) {
+    super(props);
+
+    const height = Math.max(
+      document.documentElement.clientHeight,
+      window.innerHeight || 0
+    );
+    console.log(height);
+    if (height < 1200) {
+      this.smartphoneHeight =
+        "calc(calc(100vh - 450px) * " +
+        this.props.smartphone.length / 165 +
+        ")";
+    } else {
+      this.smartphoneHeight =
+        "calc(calc(1200px - 450px) * " +
+        this.props.smartphone.length / 165 +
+        ")";
+    }
+  }
+
   getSmartphoneColorAbbreviation = () => {
     let abbreviation = "";
     const name = this.props.smartphone.types[FilterStore.country][
@@ -38,10 +60,7 @@ class Smartphone extends Component {
           {FilterStore.scaleInput ? (
             <img
               style={{
-                height:
-                  "calc(calc(100vh - 510px) * " +
-                  this.props.smartphone.length / 165 +
-                  ")"
+                height: this.smartphoneHeight
               }}
               className="qtip-img"
               src={

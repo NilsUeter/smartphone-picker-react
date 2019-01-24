@@ -438,7 +438,7 @@ textarea:focus {
   margin-top: 15px;
   border-radius: 8px;
   border: var(--border-color) 2px solid;
-  width: 200px;
+  width: 260px;
 }
 
 .smartphone-details .flex *:first-child {
@@ -478,7 +478,6 @@ textarea:focus {
   text-align: center;
   color: var(--text-color);
   white-space: nowrap;
-  width: 200px;
   overflow: hidden;
 }
 
@@ -514,16 +513,19 @@ textarea:focus {
 
 .qtip-img {
   vertical-align: middle;
-  width: auto;
-  min-height: 200px;
 }
 
 .img-container {
   align-items: flex-end;
   display: flex;
   justify-content: center;
-  height: calc((100vh - 510px));
-  min-height: 200px;
+  height: calc((100vh - 450px));
+}
+
+@media (min-height: 1200px) {
+  .img-container {
+    height: calc((1200px - 450px));
+  }
 }
 
 .horizontalRule {
