@@ -20,7 +20,7 @@ class TextField extends Component {
         pattern="[0-9]+([\.,-][0-9]+)?"
         value={FilterStore[this.props.name]}
         onChange={this.changeAttribute}
-        autocomplete="new-password"
+        autoComplete="new-password"
       />
     );
   }

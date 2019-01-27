@@ -109,16 +109,6 @@ class Sidebar extends Component {
   render() {
     return (
       <React.Fragment>
-        <button
-          className={
-            FilterStore.sidebarHidden
-              ? "sidebar-button show-sidebar-button"
-              : "sidebar-button hide-sidebar-button"
-          }
-          onClick={this.toggleAttribute("sidebarHidden")}
-        >
-          {FilterStore.sidebarHidden ? "Show" : "Hide"} Filters
-        </button>
         <div
           className={FilterStore.sidebarHidden ? "sidebar hidden" : "sidebar"}
         >
@@ -449,6 +439,16 @@ class Sidebar extends Component {
             />
           </FilterBox>
         </div>
+        <button
+          className={
+            FilterStore.sidebarHidden
+              ? "sidebar-button show-sidebar-button"
+              : "sidebar-button hide-sidebar-button"
+          }
+          onClick={this.toggleAttribute("sidebarHidden")}
+        >
+          {FilterStore.sidebarHidden ? "Show" : "Hide"} Filters
+        </button>
       </React.Fragment>
     );
   }
