@@ -922,6 +922,241 @@
     }
   },
   {
+    "name": "Pixel 3 (64GB)",
+    "brand": "Google",
+    "released": "2018-11",
+    "imagelink": "pixel3",
+    "smallestPrice": 0,
+    "design": 3,
+    "display": 5.5,
+    "length": 146,
+    "width": 68,
+    "processor": 5,
+    "updates": 5,
+    "camera": 5,
+    "battery": 3,
+    "batterysize": 2915,
+    "storage": 64,
+    "memory": 4,
+    "sdslot": 0,
+    "simcards": 1,
+    "notch": 0,
+    "waterproof": "8",
+    "headphonejack": 0,
+    "totalscore": 0,
+    "types": {
+      "de": [
+        {
+          "name": "just black",
+          "asin": "B07J5NZY5T",
+          "price": 0,
+          "link": "",
+          "lastUpdated": "23.01.2019 18:21:01"
+        },
+        {
+          "name": "just black",
+          "asin": "B07K35W1NR",
+          "price": 0,
+          "link": "",
+          "lastUpdated": "23.01.2019 18:21:01"
+        },
+        {
+          "name": "clearly white",
+          "asin": "B07JBJSHLX",
+          "price": 469,
+          "link": "https://www.amazon.de/Google-Pixel-64GB-Vertrag-just-black-black/dp/B076KSTG53?SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B076KSTG53",
+          "lastUpdated": "23.01.2019 18:21:02"
+        },
+        {
+          "name": "clearly white",
+          "asin": "B07JB2M7MK",
+          "price": 469,
+          "link": "https://www.amazon.de/Google-Pixel-64GB-Vertrag-just-black-black/dp/B076KSTG53?SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B076KSTG53",
+          "lastUpdated": "23.01.2019 18:21:02"
+        }
+      ],
+      "com": []
+    }
+  },
+  {
+    "name": "Pixel 3 (128GB)",
+    "brand": "Google",
+    "released": "2018-11",
+    "imagelink": "pixel3",
+    "smallestPrice": 0,
+    "design": 3,
+    "display": 5.5,
+    "length": 146,
+    "width": 68,
+    "processor": 5,
+    "updates": 5,
+    "camera": 5,
+    "battery": 3,
+    "batterysize": 2915,
+    "storage": 64,
+    "memory": 4,
+    "sdslot": 0,
+    "simcards": 1,
+    "notch": 0,
+    "waterproof": "8",
+    "headphonejack": 0,
+    "totalscore": 0,
+    "types": {
+      "de": [
+        {
+          "name": "just black",
+          "asin": "B07J6RH4ZV",
+          "price": 0,
+          "link": "",
+          "lastUpdated": "23.01.2019 18:21:01"
+        },
+        {
+          "name": "just black",
+          "asin": "B07K35W1NR",
+          "price": 0,
+          "link": "",
+          "lastUpdated": "23.01.2019 18:21:01"
+        },
+        {
+          "name": "just black",
+          "asin": "B07L39KGX5",
+          "price": 0,
+          "link": "",
+          "lastUpdated": "23.01.2019 18:21:01"
+        },
+        {
+          "name": "clearly white",
+          "asin": "B07L6SQBTK",
+          "price": 469,
+          "link": "https://www.amazon.de/Google-Pixel-64GB-Vertrag-just-black-black/dp/B076KSTG53?SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B076KSTG53",
+          "lastUpdated": "23.01.2019 18:21:02"
+        },
+        {
+          "name": "clearly white",
+          "asin": "B07J9TD1Y5",
+          "price": 469,
+          "link": "https://www.amazon.de/Google-Pixel-64GB-Vertrag-just-black-black/dp/B076KSTG53?SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B076KSTG53",
+          "lastUpdated": "23.01.2019 18:21:02"
+        }
+      ],
+      "com": []
+    }
+  },
+  {
+    "name": "Pixel 3 XL (64GB)",
+    "brand": "Google",
+    "released": "2018-11",
+    "imagelink": "pixel3xl",
+    "smallestPrice": 0,
+    "design": 3,
+    "display": 6.3,
+    "length": 158,
+    "width": 77,
+    "processor": 5,
+    "updates": 5,
+    "camera": 5,
+    "battery": 4,
+    "batterysize": 3430,
+    "storage": 64,
+    "memory": 4,
+    "sdslot": 0,
+    "simcards": 1,
+    "notch": 1,
+    "waterproof": "8",
+    "headphonejack": 0,
+    "totalscore": 0,
+    "types": {
+      "de": [
+        {
+          "name": "not pink",
+          "asin": "B07JBD6CXJ",
+          "price": 474,
+          "link": "https://www.amazon.de/Google-Pixel-64GB-just-Black-Schwarz/dp/B077H28GFX?SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B077H28GFX",
+          "lastUpdated": "23.01.2019 18:21:05"
+        },
+        {
+          "name": "not pink",
+          "asin": "B07JBLDDC6",
+          "price": 449,
+          "link": "https://www.amazon.de/Google-Pixel-XL-64GB-schwarz/dp/B076KT8HT2?SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B076KT8HT2",
+          "lastUpdated": "23.01.2019 18:21:07"
+        },
+        {
+          "name": "just black",
+          "asin": "B07JVLK8WZ",
+          "price": 504,
+          "link": "https://www.amazon.de/Google-Pixel-64GB-black-white-wei%C3%9F/dp/B077WSVG4Z?SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B077WSVG4Z",
+          "lastUpdated": "23.01.2019 18:21:08"
+        },
+        {
+          "name": "clearly white",
+          "asin": "B07JB2M7MK",
+          "price": 480,
+          "link": "https://www.amazon.de/Google-Pixel-Android-Black-White-Schwarz-Wei%C3%9F/dp/B076L5ZZK1?SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B076L5ZZK1",
+          "lastUpdated": "23.01.2019 18:21:09"
+        }
+      ],
+      "com": []
+    }
+  },
+  {
+    "name": "Pixel 3 XL (128GB)",
+    "brand": "Google",
+    "released": "2018-11",
+    "imagelink": "pixel3xl",
+    "smallestPrice": 0,
+    "design": 3,
+    "display": 6.3,
+    "length": 158,
+    "width": 77,
+    "processor": 5,
+    "updates": 5,
+    "camera": 5,
+    "battery": 4,
+    "batterysize": 3430,
+    "storage": 64,
+    "memory": 4,
+    "sdslot": 0,
+    "simcards": 1,
+    "notch": 1,
+    "waterproof": "8",
+    "headphonejack": 0,
+    "totalscore": 0,
+    "types": {
+      "de": [
+        {
+          "name": "not pink",
+          "asin": "B07JBD6CXJ",
+          "price": 474,
+          "link": "https://www.amazon.de/Google-Pixel-64GB-just-Black-Schwarz/dp/B077H28GFX?SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B077H28GFX",
+          "lastUpdated": "23.01.2019 18:21:05"
+        },
+        {
+          "name": "not pink",
+          "asin": "B07JBLDDC6",
+          "price": 449,
+          "link": "https://www.amazon.de/Google-Pixel-XL-64GB-schwarz/dp/B076KT8HT2?SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B076KT8HT2",
+          "lastUpdated": "23.01.2019 18:21:07"
+        },
+        {
+          "name": "just black",
+          "asin": "B07JVLK8WZ",
+          "price": 504,
+          "link": "https://www.amazon.de/Google-Pixel-64GB-black-white-wei%C3%9F/dp/B077WSVG4Z?SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B077WSVG4Z",
+          "lastUpdated": "23.01.2019 18:21:08"
+        },
+        {
+          "name": "clearly white",
+          "asin": "B07JB2M7MK",
+          "price": 480,
+          "link": "https://www.amazon.de/Google-Pixel-Android-Black-White-Schwarz-Wei%C3%9F/dp/B076L5ZZK1?SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B076L5ZZK1",
+          "lastUpdated": "23.01.2019 18:21:09"
+        }
+      ],
+      "com": []
+    }
+  },
+  {
     "name": "5t (64GB)",
     "brand": "OnePlus",
     "released": "2017-11",
