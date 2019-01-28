@@ -129,15 +129,17 @@ body,
 
 .sidebar {
   width: 100%;
+  max-width: 600px;
   margin-right: 40px;
   overflow: auto;
   background-color: var(--sidebar-background);
   position: relative;
   box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.2);
+  transition: max-width 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
 .sidebar.hidden {
-  width: 10px;
+  max-width: 10px;
   margin-right: 0;
 }
 
@@ -152,17 +154,17 @@ body,
 
 .hide-sidebar-button {
   position: absolute;
-  right: -120px;
+  left: 100vw;
 }
 
 @media only screen and (min-width: 500px) {
   .sidebar {
-    width: 230px;
+    max-width: 230px;
     margin-right: 0;
   }
 
   .sidebar.hidden {
-    width: 30px;
+    max-width: 30px;
   }
 
   .hide-sidebar-button {
@@ -292,6 +294,7 @@ body,
   transform: rotate(90deg);
   transform-origin: left top 0;
   box-shadow: 4px -3px 8px 0px rgba(0, 0, 0, 0.2);
+  transition: left 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
 .sidebar-button:hover {
@@ -332,16 +335,17 @@ radio {
 }
 
 .filterBox {
+  max-height: 250px;
   align-items: center;
   overflow: hidden;
   padding-left: 20px;
   padding-right: 15px;
-  padding-bottom: 10px;
   font-size: 14px;
+  transition: max-height 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
 .filterBox--closed {
-  display: none;
+  max-height: 0px;
 }
 
 .filterBox p {
@@ -362,6 +366,7 @@ radio {
   font-weight: bold;
   padding: 10px;
   border-top: 1px solid var(--border-color);
+  user-select: none;
 }
 .filterBox-Header:hover {
   background: rgba(184, 192, 203, 0.3);
