@@ -135,7 +135,6 @@ body,
   background-color: var(--sidebar-background);
   position: relative;
   box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.2);
-  transition: max-width 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
 .sidebar.hidden {
@@ -161,10 +160,15 @@ body,
   .sidebar {
     max-width: 230px;
     margin-right: 0;
+    transition: max-width 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
   }
 
   .sidebar.hidden {
     max-width: 30px;
+  }
+
+  .sidebar-button {
+    transition: left 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
   }
 
   .hide-sidebar-button {
@@ -228,7 +232,6 @@ body,
   flex-direction: row;
   align-items: flex-start;
   will-change: scroll-position;
-  padding-left: 10px;
 }
 
 .smartphone {
@@ -245,7 +248,7 @@ body,
   font-weight: bold;
   position: relative;
   z-index: 0;
-  padding-left: 10%;
+  padding-left: 5%;
   text-align: left;
   background-color: var(--background-color);
 }
@@ -294,7 +297,6 @@ body,
   transform: rotate(90deg);
   transform-origin: left top 0;
   box-shadow: 4px -3px 8px 0px rgba(0, 0, 0, 0.2);
-  transition: left 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
 .sidebar-button:hover {
@@ -577,7 +579,7 @@ textarea:focus {
 
 .icon {
   max-height: 15px;
-  display: inline;
+  display: inline-block;
 }
 
 .a-icon-shop-now {

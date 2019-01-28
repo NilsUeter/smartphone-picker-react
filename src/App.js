@@ -1,9 +1,10 @@
 import React, { Component } from "react";
 
 import "./App.css";
+import "react-virtualized/styles.css";
 
 import Header from "./Header.js";
-import Sidebar from "./Sidebar.js";
+import SidebarContainer from "./SidebarContainer.js";
 import Content from "./Content.js";
 import About from "./About.js";
 import Footer from "./Footer.js";
@@ -23,7 +24,7 @@ class App extends Component {
       >
         <Header />
         <div className="sidebar-content-wrapper">
-          <Sidebar />
+          <SidebarContainer />
           {!FilterStore.sidebarHidden && window.innerWidth < 500 ? (
             <div />
           ) : FilterStore.showAbout ? (

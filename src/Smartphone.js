@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import { observer } from "mobx-react";
 
 import FilterStore from "./FilterStore";
 import SmartphoneStore from "./SmartphoneStore";
@@ -7,7 +6,6 @@ import amazonIcon from "./images/Amazon-Favicon-64x64.png";
 import sdStorage from "./images/sd_storage.png";
 import chargingBattery from "./images/charging-battery.png";
 
-@observer
 class Smartphone extends Component {
   smartphoneHeight;
   constructor(props) {
@@ -94,16 +92,6 @@ class Smartphone extends Component {
             </p>
 
             <div className="flex smartphone-price-container">
-              <div
-                className="smartphone-colorpicker"
-                title={
-                  this.props.smartphone.types[FilterStore.country][
-                    this.props.smartphone.smallestPrice
-                  ].name
-                }
-              >
-                {this.getSmartphoneColorAbbreviation()}
-              </div>
               <p className="smartphone-price">
                 {
                   this.props.smartphone.types[FilterStore.country][
@@ -141,21 +129,16 @@ class Smartphone extends Component {
               </p>
             </div>
             <div className="flex">
-              <p className="smartphone-storage">
-                <span className="highlight-color">
-                  {this.props.smartphone.storage}{" "}
-                </span>
-                GB{" "}
-              </p>
-              <img className="icon" alt="" src={sdStorage} />
+              <span className="highlight-color">
+                {this.props.smartphone.storage}{" "}
+              </span>
+              GB <img className="icon" alt="" src={sdStorage} />
             </div>
           </div>
-          <div className="flex">
-            <p className="smartphone-batterysize">
-              <span className="highlight-color">
-                {this.props.smartphone.batterysize}{" "}
-              </span>
-            </p>
+          <div className="">
+            <span className="highlight-color">
+              {this.props.smartphone.batterysize}{" "}
+            </span>
             <img className="icon" alt="" src={chargingBattery} />
           </div>
 
