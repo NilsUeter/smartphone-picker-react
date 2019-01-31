@@ -184,9 +184,16 @@ body,
   }
 }
 
-@media (min-height: 1200px) {
+.img-container {
+  align-items: flex-end;
+  display: flex;
+  justify-content: center;
+  height: calc((100vh - 450px));
+}
+
+@media (min-height: 1000px) {
   .img-container {
-    height: calc((1200px - 450px));
+    height: calc((1000px - 450px));
   }
 }
 
@@ -235,7 +242,7 @@ body,
 }
 
 .smartphone {
-  margin-left: 4px;
+  margin-left: 10px;
   margin-right: 0;
   flex: 1;
   display: flex;
@@ -563,13 +570,6 @@ textarea:focus {
 
 .qtip-img {
   vertical-align: middle;
-}
-
-.img-container {
-  align-items: flex-end;
-  display: flex;
-  justify-content: center;
-  height: calc((100vh - 450px));
 }
 
 .horizontalRule {

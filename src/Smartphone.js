@@ -15,14 +15,14 @@ class Smartphone extends Component {
       document.documentElement.clientHeight,
       window.innerHeight || 0
     );
-    if (height < 1200) {
+    if (height < 1000) {
       this.smartphoneHeight =
         "calc(calc(100vh - 450px) * " +
         this.props.smartphone.length / 165 +
         ")";
     } else {
       this.smartphoneHeight =
-        "calc(calc(1200px - 450px) * " +
+        "calc(calc(1000px - 450px) * " +
         this.props.smartphone.length / 165 +
         ")";
     }
