@@ -27,7 +27,7 @@ class FilterStore {
   @observable
   emptySmartphones = false;
   @observable
-  release_minimum = "2017-01";
+  release_minimum = this.getMinDate();
 
   @observable
   release_maximum = new Date().toISOString().slice(0, 7);
@@ -75,6 +75,12 @@ class FilterStore {
   notch = false;
   @observable
   waterproof = "";
+
+  getMinDate = () => {
+    const date = new Date();
+    date.setMonth(new Date().getMonth() - 16);
+    return date.toISOString().slice(0, 7);
+  };
 
   @action
   toggleAttribute = name => {
@@ -160,6 +166,7 @@ class FilterStore {
         case "loadURL":
         case "updateURLtoRepresentFilter":
         case "lightmode":
+        case "getMinDate":
           break;
         default:
           if (this[key] && resetCopy && resetCopy[key] !== this[key]) {
@@ -195,6 +202,12 @@ class FilterStore {
 
 const filterStore = new FilterStore();
 
+const getMinDate = () => {
+  const date = new Date();
+  date.setMonth(new Date().getMonth() - 16);
+  return date.toISOString().slice(0, 7);
+};
+
 const resetCopy = {
   showAbout: false,
   sidebarHidden: false,
@@ -204,8 +217,8 @@ const resetCopy = {
   isDescending: false,
   scaleInput: true,
   emptySmartphones: false,
-  release_minimum: "2017-01",
-  release_maximum: "2018-12",
+  release_minimum: getMinDate(),
+  release_maximum: new Date().toISOString().slice(0, 7),
   price_minimum_1: 0,
   price_maximum_1: 1200,
   size_minimum_1: 4.7,

@@ -21,7 +21,6 @@ class Content extends Component {
     var delta = Math.max(-1, Math.min(1, e.wheelDelta || -e.detail));
 
     this.contentObject.scrollLeft -= delta * 100;
-    e.preventDefault();
   }
 
   render() {

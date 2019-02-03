@@ -1,6 +1,6 @@
 :root {
   --first-color: #2f5a9a;
-  --show-sidebar-button: #2f9a6f;
+  --show-sidebar-button: #1b875b;
   --just-black: #263238;
   --just-white: #fff;
 }
@@ -26,19 +26,6 @@
 
 .lightmode .sidebar {
   --text-color: var(--first-color);
-}
-
-::-webkit-scrollbar {
-  width: 5px;
-  height: 12px;
-}
-
-::-webkit-scrollbar-track {
-  background: #ddd;
-}
-
-::-webkit-scrollbar-thumb {
-  background: var(--text-color);
 }
 
 * {
@@ -134,7 +121,7 @@ body,
   overflow: auto;
   background-color: var(--sidebar-background);
   position: relative;
-  box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 4px 4px 8px 4px rgba(0, 0, 0, 0.2);
 }
 
 .sidebar.hidden {
@@ -181,6 +168,19 @@ body,
 
   .logo {
     padding-left: 5px;
+  }
+
+  ::-webkit-scrollbar {
+    width: 5px;
+    height: 12px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #ddd;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: var(--text-color);
   }
 }
 
@@ -303,7 +303,7 @@ body,
   z-index: 6;
   transform: rotate(90deg);
   transform-origin: left top 0;
-  box-shadow: 4px -3px 8px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 4px -4px 8px 4px rgba(0, 0, 0, 0.2);
 }
 
 .sidebar-button:hover {
@@ -357,7 +357,8 @@ radio {
   max-height: 0px;
 }
 
-.filterBox p {
+.filterBox p,
+.filterBoxLabel {
   text-align: left;
   letter-spacing: 0;
   color: var(--text-color);
@@ -545,7 +546,8 @@ textarea:focus {
 .smartphone-price {
   color: var(--highlight-color);
   font-weight: bold;
-  padding-right: 2px;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
 .smartphone-design,
@@ -666,6 +668,7 @@ textarea:focus {
   text-align: right;
   border: none;
   margin: 0;
+  font-weight: 600;
 }
 
 .bigInput {

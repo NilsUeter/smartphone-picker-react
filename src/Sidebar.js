@@ -45,10 +45,10 @@ const storageMarks = {
 
 @observer
 class Sidebar extends Component {
-  getMinDate() {
+  getMinDateinMonths(minDate) {
     let monthsMin = 0;
     const start = new Date("2017-01");
-    const min = new Date(FilterStore.release_minimum);
+    const min = new Date(minDate);
 
     if (!isNaN(min.getTime())) {
       monthsMin = (min.getFullYear() - start.getFullYear()) * 12;
@@ -59,10 +59,10 @@ class Sidebar extends Component {
     return monthsMin;
   }
 
-  getMaxDate() {
+  getMaxDateInMonths(maxDate) {
     let monthsMax = 0;
     const start = new Date("2017-01");
-    const max = new Date(FilterStore.release_maximum);
+    const max = new Date(maxDate);
 
     if (!isNaN(max.getTime())) {
       monthsMax = (max.getFullYear() - start.getFullYear()) * 12;
@@ -105,10 +105,12 @@ class Sidebar extends Component {
     return (
       <React.Fragment>
         <FilterBox header="Sorting Options">
-          <p>Search phones</p>
-          <div className={"searchQuery"}>
-            <TextField name="searchQuery" big={true} />
-          </div>
+          <label className="filterBoxLabel">
+            Search phones
+            <div className={"searchQuery"}>
+              <TextField name="searchQuery" big={true} />
+            </div>
+          </label>
           <p>Filter Templates</p>
           <TextSelect
             name="filterTemplate"
@@ -158,174 +160,186 @@ class Sidebar extends Component {
             <p>Empty phones</p>
             <ToggleSwitch name="emptySmartphones" />
           </div>
-          <p>Release</p>
-          <div className="sliderContainer">
-            <div>
-              <Range
-                min={0}
-                max={23}
-                step={1}
-                pushable={1}
-                value={[this.getMinDate(), this.getMaxDate()]}
-                onChange={this.changeAttributeDateRange}
-                trackStyle={[{ backgroundColor: "var(--text-color)" }]}
-                handleStyle={[
-                  { border: "solid 2px var(--text-color)" },
-                  { border: "solid 2px var(--text-color)" }
-                ]}
-              />
+          <label className="filterBoxLabel">
+            Release
+            <div className="sliderContainer">
+              <div>
+                <Range
+                  min={0}
+                  max={this.getMaxDateInMonths(
+                    new Date().toISOString().slice(0, 7)
+                  )}
+                  step={1}
+                  pushable={1}
+                  value={[
+                    this.getMinDateinMonths(FilterStore.release_minimum),
+                    this.getMaxDateInMonths(FilterStore.release_maximum)
+                  ]}
+                  onChange={this.changeAttributeDateRange}
+                  trackStyle={[{ backgroundColor: "var(--text-color)" }]}
+                  handleStyle={[
+                    { border: "solid 2px var(--text-color)" },
+                    { border: "solid 2px var(--text-color)" }
+                  ]}
+                />
+              </div>
+              <div className="sliderSubBar">
+                <TextField name="release_minimum" big={true} />
+                <div className="filler" />
+                <TextField name="release_maximum" big={true} />
+              </div>
             </div>
-            <div className="sliderSubBar">
-              <TextField name="release_minimum" big={true} />
-              <div className="filler" />
-              <TextField name="release_maximum" big={true} />
-            </div>
-          </div>
+          </label>
         </FilterBox>
         <FilterBox header="Budget and Size">
-          <p>Price</p>
-          <div className="sliderContainer">
-            <div>
-              <Range
-                min={0}
-                max={1200}
-                step={50}
-                value={[
-                  parseInt(FilterStore.price_minimum_1, 10)
-                    ? parseInt(FilterStore.price_minimum_1, 10)
-                    : 0,
-                  parseInt(FilterStore.price_maximum_1, 10)
-                    ? parseInt(FilterStore.price_maximum_1, 10)
-                    : 0
-                ]}
-                pushable={50}
-                onChange={this.changeAttributeSlider(
-                  "price_minimum_1",
-                  "price_maximum_1"
-                )}
-                trackStyle={[{ backgroundColor: "var(--text-color)" }]}
-                handleStyle={[
-                  { border: "solid 2px var(--text-color)" },
-                  { border: "solid 2px var(--text-color)" }
-                ]}
-              />
+          <label className="filterBoxLabel">
+            Price
+            <div className="sliderContainer">
+              <div>
+                <Range
+                  min={0}
+                  max={1200}
+                  step={50}
+                  value={[
+                    parseInt(FilterStore.price_minimum_1, 10)
+                      ? parseInt(FilterStore.price_minimum_1, 10)
+                      : 0,
+                    parseInt(FilterStore.price_maximum_1, 10)
+                      ? parseInt(FilterStore.price_maximum_1, 10)
+                      : 0
+                  ]}
+                  pushable={50}
+                  onChange={this.changeAttributeSlider(
+                    "price_minimum_1",
+                    "price_maximum_1"
+                  )}
+                  trackStyle={[{ backgroundColor: "var(--text-color)" }]}
+                  handleStyle={[
+                    { border: "solid 2px var(--text-color)" },
+                    { border: "solid 2px var(--text-color)" }
+                  ]}
+                />
+              </div>
+              <div className="sliderSubBar">
+                <TextField name="price_minimum_1" />
+                <span className="prefix">€</span>
+                <div className="filler" />
+                <TextField name="price_maximum_1" />
+                <span className="prefix">€</span>
+              </div>
             </div>
-            <div className="sliderSubBar">
-              <TextField name="price_minimum_1" />
-              <span className="prefix">€</span>
-              <div className="filler" />
-              <TextField name="price_maximum_1" />
-              <span className="prefix">€</span>
+          </label>
+          <label className="filterBoxLabel">
+            Display
+            <div className="sliderContainer">
+              <div>
+                <Range
+                  min={4.7}
+                  max={6.3}
+                  step={0.1}
+                  pushable={0.1}
+                  value={[
+                    parseFloat(FilterStore.size_minimum_1)
+                      ? parseFloat(FilterStore.size_minimum_1)
+                      : 0,
+                    parseFloat(FilterStore.size_maximum_1)
+                      ? parseFloat(FilterStore.size_maximum_1)
+                      : 0
+                  ]}
+                  onChange={this.changeAttributeSlider(
+                    "size_minimum_1",
+                    "size_maximum_1"
+                  )}
+                  trackStyle={[{ backgroundColor: "var(--text-color)" }]}
+                  handleStyle={[
+                    { border: "solid 2px var(--text-color)" },
+                    { border: "solid 2px var(--text-color)" }
+                  ]}
+                />
+              </div>
+              <div className="sliderSubBar">
+                <TextField name="size_minimum_1" />
+                <span className="prefix">"</span>
+                <div className="filler" />
+                <TextField name="size_maximum_1" />
+                <span className="prefix">"</span>
+              </div>
             </div>
-          </div>
-
-          <p>Display</p>
-          <div className="sliderContainer">
-            <div>
-              <Range
-                min={4.7}
-                max={6.3}
-                step={0.1}
-                pushable={0.1}
-                value={[
-                  parseFloat(FilterStore.size_minimum_1)
-                    ? parseFloat(FilterStore.size_minimum_1)
-                    : 0,
-                  parseFloat(FilterStore.size_maximum_1)
-                    ? parseFloat(FilterStore.size_maximum_1)
-                    : 0
-                ]}
-                onChange={this.changeAttributeSlider(
-                  "size_minimum_1",
-                  "size_maximum_1"
-                )}
-                trackStyle={[{ backgroundColor: "var(--text-color)" }]}
-                handleStyle={[
-                  { border: "solid 2px var(--text-color)" },
-                  { border: "solid 2px var(--text-color)" }
-                ]}
-              />
+          </label>
+          <label className="filterBoxLabel">
+            Length
+            <div className="sliderContainer">
+              <div>
+                <Range
+                  min={135}
+                  max={163}
+                  step={1}
+                  pushable={1}
+                  value={[
+                    parseInt(FilterStore.size_minimum_2, 10)
+                      ? parseInt(FilterStore.size_minimum_2, 10)
+                      : 0,
+                    parseInt(FilterStore.size_maximum_2, 10)
+                      ? parseInt(FilterStore.size_maximum_2, 10)
+                      : 0
+                  ]}
+                  onChange={this.changeAttributeSlider(
+                    "size_minimum_2",
+                    "size_maximum_2"
+                  )}
+                  trackStyle={[{ backgroundColor: "var(--text-color)" }]}
+                  handleStyle={[
+                    { border: "solid 2px var(--text-color)" },
+                    { border: "solid 2px var(--text-color)" }
+                  ]}
+                />
+              </div>
+              <div className="sliderSubBar">
+                <TextField name="size_minimum_2" />
+                <span className="prefix">mm</span>
+                <div className="filler" />
+                <TextField name="size_maximum_2" />
+                <span className="prefix">mm</span>
+              </div>
             </div>
-            <div className="sliderSubBar">
-              <TextField name="size_minimum_1" />
-              <span className="prefix">"</span>
-              <div className="filler" />
-              <TextField name="size_maximum_1" />
-              <span className="prefix">"</span>
+          </label>
+          <label className="filterBoxLabel">
+            Width
+            <div className="sliderContainer">
+              <div>
+                <Range
+                  min={65}
+                  max={78}
+                  step={1}
+                  pushable={1}
+                  value={[
+                    parseInt(FilterStore.size_minimum_3, 10)
+                      ? parseInt(FilterStore.size_minimum_3, 10)
+                      : 0,
+                    parseInt(FilterStore.size_maximum_3, 10)
+                      ? parseInt(FilterStore.size_maximum_3, 10)
+                      : 0
+                  ]}
+                  onChange={this.changeAttributeSlider(
+                    "size_minimum_3",
+                    "size_maximum_3"
+                  )}
+                  trackStyle={[{ backgroundColor: "var(--text-color)" }]}
+                  handleStyle={[
+                    { border: "solid 2px var(--text-color)" },
+                    { border: "solid 2px var(--text-color)" }
+                  ]}
+                />
+              </div>
+              <div className="sliderSubBar">
+                <TextField name="size_minimum_3" />
+                <span className="prefix">mm</span>
+                <div className="filler" />
+                <TextField name="size_maximum_3" />
+                <span className="prefix">mm</span>
+              </div>
             </div>
-          </div>
-
-          <p>Length</p>
-          <div className="sliderContainer">
-            <div>
-              <Range
-                min={135}
-                max={163}
-                step={1}
-                pushable={1}
-                value={[
-                  parseInt(FilterStore.size_minimum_2, 10)
-                    ? parseInt(FilterStore.size_minimum_2, 10)
-                    : 0,
-                  parseInt(FilterStore.size_maximum_2, 10)
-                    ? parseInt(FilterStore.size_maximum_2, 10)
-                    : 0
-                ]}
-                onChange={this.changeAttributeSlider(
-                  "size_minimum_2",
-                  "size_maximum_2"
-                )}
-                trackStyle={[{ backgroundColor: "var(--text-color)" }]}
-                handleStyle={[
-                  { border: "solid 2px var(--text-color)" },
-                  { border: "solid 2px var(--text-color)" }
-                ]}
-              />
-            </div>
-            <div className="sliderSubBar">
-              <TextField name="size_minimum_2" />
-              <span className="prefix">mm</span>
-              <div className="filler" />
-              <TextField name="size_maximum_2" />
-              <span className="prefix">mm</span>
-            </div>
-          </div>
-
-          <p>Width</p>
-          <div className="sliderContainer">
-            <div>
-              <Range
-                min={65}
-                max={78}
-                step={1}
-                pushable={1}
-                value={[
-                  parseInt(FilterStore.size_minimum_3, 10)
-                    ? parseInt(FilterStore.size_minimum_3, 10)
-                    : 0,
-                  parseInt(FilterStore.size_maximum_3, 10)
-                    ? parseInt(FilterStore.size_maximum_3, 10)
-                    : 0
-                ]}
-                onChange={this.changeAttributeSlider(
-                  "size_minimum_3",
-                  "size_maximum_3"
-                )}
-                trackStyle={[{ backgroundColor: "var(--text-color)" }]}
-                handleStyle={[
-                  { border: "solid 2px var(--text-color)" },
-                  { border: "solid 2px var(--text-color)" }
-                ]}
-              />
-            </div>
-            <div className="sliderSubBar">
-              <TextField name="size_minimum_3" />
-              <span className="prefix">mm</span>
-              <div className="filler" />
-              <TextField name="size_maximum_3" />
-              <span className="prefix">mm</span>
-            </div>
-          </div>
+          </label>
         </FilterBox>
         <FilterBox header="Personal Preferences">
           <p>Storage</p>

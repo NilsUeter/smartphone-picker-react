@@ -23,7 +23,7 @@ class App extends Component {
         }
       >
         <Header />
-        <div className="sidebar-content-wrapper">
+        <main className="sidebar-content-wrapper">
           <SidebarContainer />
           {!FilterStore.sidebarHidden && window.innerWidth < 500 ? (
             <div />
@@ -32,7 +32,7 @@ class App extends Component {
           ) : (
             <Content />
           )}
-        </div>
+        </main>
         <Footer />
       </div>
     );
