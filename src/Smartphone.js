@@ -5,7 +5,9 @@ import SmartphoneStore from "./SmartphoneStore";
 import amazonIcon from "./images/Amazon-Favicon-64x64.png";
 import sdStorage from "./images/sd_storage.png";
 import chargingBattery from "./images/charging-battery.png";
+import { observer } from "mobx-react";
 
+@observer
 class Smartphone extends Component {
   smartphoneHeight;
   constructor(props) {
