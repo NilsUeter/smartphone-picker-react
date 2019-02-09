@@ -143,6 +143,17 @@ body,
   left: 100vw;
 }
 
+.clearFiltersButton {
+  fill: var(--first-color);
+  height: 25px;
+  padding: 2px;
+  border: none;
+}
+
+.clearFiltersButton:hover {
+  background-color: var(--border-color);
+}
+
 @media only screen and (min-width: 500px) {
   .sidebar {
     max-width: 230px;
@@ -318,11 +329,6 @@ body,
   border: 1px solid var(--text-color);
 }
 
-.smartphoneCount {
-  padding-left: 10px;
-  color: var(--background-color);
-}
-
 .rating {
   overflow: hidden;
 }
@@ -378,6 +384,12 @@ radio {
   border-top: 1px solid var(--border-color);
   user-select: none;
 }
+
+.sidebar-status-bar {
+  padding: 10px;
+  color: var(--first-color);
+}
+
 .filterBox-Header:hover {
   background: rgba(184, 192, 203, 0.3);
 }
@@ -397,6 +409,10 @@ radio {
 
 .flex {
   display: flex;
+}
+
+.flex-align-center {
+  align-items: center;
 }
 
 .sliderSubBar {

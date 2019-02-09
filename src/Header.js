@@ -4,7 +4,6 @@ import { observer } from "mobx-react";
 import TextSelect from "./TextSelect";
 
 import FilterStore from "./FilterStore.js";
-import SmartphoneStore from "./SmartphoneStore.js";
 import ToggleSwitch from "./ToggleSwitch";
 
 @observer
@@ -30,13 +29,6 @@ class Header extends Component {
           <ToggleSwitch name="lightmode" />
         </div>
         <div className="main-menu">
-          <p id="smartphoneCount" className="smartphoneCount">
-            {SmartphoneStore.listOfFilteredAndScoredObjects
-              ? SmartphoneStore.listOfFilteredAndScoredObjects.length
-              : 0}
-            /{SmartphoneStore.obj.length ? SmartphoneStore.obj.length : 0}{" "}
-            Phones
-          </p>
           <div className="navdiv">
             <a
               className="main-menu-link"
