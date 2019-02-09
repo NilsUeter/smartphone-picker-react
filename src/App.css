@@ -143,14 +143,15 @@ body,
   left: 100vw;
 }
 
-.clearFiltersButton {
+.sidebar-status-buttons {
   fill: var(--first-color);
   height: 25px;
   padding: 2px;
   border: none;
+  cursor: pointer;
 }
 
-.clearFiltersButton:hover {
+.sidebar-status-buttons:hover {
   background-color: var(--border-color);
 }
 
