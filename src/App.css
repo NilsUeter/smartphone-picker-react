@@ -94,6 +94,10 @@ body,
   font-display: swap;
 }
 
+.display-flex {
+  display: flex;
+}
+
 .react-head {
   display: flex;
   height: 100%;
@@ -210,17 +214,9 @@ body,
 }
 
 .about {
+  flex: 1;
   z-index: 1;
   background-color: var(--background-color);
-}
-
-.footer {
-  z-index: 20;
-  padding-left: 15%;
-  background-color: var(--first-color);
-}
-
-.about {
   overflow: auto;
   padding: 10px;
   padding-left: 10%;
@@ -253,6 +249,27 @@ body,
   will-change: scroll-position;
 }
 
+.smartphones-releases {
+  flex: 1;
+  overflow: auto;
+}
+
+.smartphones-releases-container:first-child {
+  margin-top: 16px;
+}
+
+.smartphones-releases-container {
+  margin-left: 64px;
+  min-height: 70px;
+  border-left: var(--border-color) 2px solid;
+}
+
+.smartphones-releases-month {
+  margin-left: 8px;
+  min-width: 64px;
+  align-self: center;
+}
+
 .smartphone {
   margin-left: 10px;
   margin-right: 0;
@@ -278,8 +295,43 @@ body,
   color: var(--first-color);
 }
 
-#country {
-  font-size: 14px;
+.filter__summary {
+  color: var(--background-color);
+  outline: none;
+  user-select: none;
+}
+
+.filter-drop-down__container {
+  margin-left: 16px;
+}
+
+.filter-drop-down {
+  background-color: var(--sidebar-background);
+  position: absolute;
+  top: 33px;
+  border-radius: 16px;
+  box-shadow: 0 3px 12px rgba(27, 31, 35, 0.35), 0 0 1px rgba(27, 31, 35, 0.4);
+}
+
+.filter-drop-down__element {
+  padding: 8px 16px;
+  line-height: 1.2;
+  vertical-align: middle;
+}
+
+.filter-drop-down__element:hover {
+  background-color: rgba(184, 192, 203, 0.3);
+}
+
+.filter-drop-down__link {
+  text-decoration: none;
+  color: var(--first-color);
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.filter-drop-down__span {
+  margin-left: 8px;
 }
 
 .main-menu-link {
@@ -472,10 +524,6 @@ textarea:focus {
 
 .sorting_order:hover {
   background-color: var(--border-color);
-}
-
-#filterType {
-  width: 100%;
 }
 
 .sliderContainer {

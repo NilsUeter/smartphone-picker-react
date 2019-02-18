@@ -5,8 +5,6 @@ class FilterStore {
   @observable
   lightmode = true;
   @observable
-  showAbout = false;
-  @observable
   sidebarHidden = false;
   @observable
   country = "de";
@@ -16,8 +14,6 @@ class FilterStore {
 
   @observable
   searchQuery = "";
-  @observable
-  filterTemplate = "";
   @observable
   filterType = "price";
   @observable
@@ -90,42 +86,13 @@ class FilterStore {
   @action
   changeAttribute = (name, newValue) => {
     this[name] = newValue;
-
-    if (name === "filterTemplate") {
-      this.setFilterTemplate();
-    }
-  };
-
-  @action
-  setFilterTemplate = () => {
-    this.resetFilters();
-    switch (this.filterTemplate) {
-      case "justGood":
-        this.design = "3";
-        this.processor = "3";
-        this.updates = "4";
-        this.camera = "3";
-        this.battery = "3";
-        break;
-      case "small":
-        this.size_maximum_2 = 150;
-        break;
-      case "big":
-        this.size_minimum_2 = 150;
-        break;
-      case "cheap":
-        this.price_maximum_1 = 200;
-        break;
-      default:
-        break;
-    }
   };
 
   @action
   resetFilters = () => {
     for (let name in this) {
       switch (name) {
-        case "filterTemplate": //Define filters which aren't expected to be reset
+        //Define filters which aren't expected to be reset
         case "country":
         case "sidebarHidden":
         case "activeFilterBox":
@@ -158,7 +125,7 @@ class FilterStore {
     let key;
     for (key in this) {
       switch (key) {
-        case "filterTemplate": //Define filters which aren't expected to be included in the url
+        //Define filters which aren't expected to be included in the url
         case "country":
         case "updateURL":
         case "sidebarHidden":
@@ -209,10 +176,8 @@ const getMinDate = () => {
 };
 
 const resetCopy = {
-  showAbout: false,
   sidebarHidden: false,
   country: "de",
-  filterTemplate: "",
   filterType: "price",
   isDescending: false,
   scaleInput: true,

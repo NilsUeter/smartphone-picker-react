@@ -166,17 +166,6 @@ class Sidebar extends Component {
               <TextField name="searchQuery" big={true} />
             </div>
           </label>
-          <p>Filter Templates</p>
-          <TextSelect
-            name="filterTemplate"
-            options={[
-              ["", ""],
-              ["justGood", "Good smartphones from all price ranges."],
-              ["small", "Smartphones made for small hands."],
-              ["big", "Smartphones made for freaky big hands."],
-              ["cheap", "Smartphones for small budgets."]
-            ]}
-          />
           <p>Sort table by</p>
           <div className="flex">
             <TextSelect

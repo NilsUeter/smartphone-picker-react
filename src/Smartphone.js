@@ -10,21 +10,30 @@ import { observer } from "mobx-react";
 @observer
 class Smartphone extends Component {
   smartphoneHeight;
+  imageContainerHeight;
   constructor(props) {
     super(props);
+    let size = "450px";
 
     const height = Math.max(
       document.documentElement.clientHeight,
       window.innerHeight || 0
     );
-    if (height < 1000) {
+
+    if (height < this.props.maxImgHeight - size) {
+      this.imageContainerHeight = "calc((100vh - " + size + "))";
       this.smartphoneHeight =
-        "calc(calc(100vh - 450px) * " +
+        "calc(calc(100vh - " +
+        size +
+        ") * " +
         this.props.smartphone.length / 165 +
         ")";
     } else {
+      this.imageContainerHeight = this.props.maxImgHeight + "px";
       this.smartphoneHeight =
-        "calc(calc(1000px - 450px) * " +
+        "calc(calc(" +
+        this.props.maxImgHeight +
+        "px) * " +
         this.props.smartphone.length / 165 +
         ")";
     }
@@ -55,7 +64,12 @@ class Smartphone extends Component {
             FilterStore.filterType
           )}
         </div>
-        <div className="img-container">
+        <div
+          className="img-container"
+          style={{
+            height: this.imageContainerHeight
+          }}
+        >
           {FilterStore.scaleInput ? (
             <img
               style={{

@@ -6,6 +6,7 @@ import "react-virtualized/styles.css";
 import Header from "./Header.js";
 import SidebarContainer from "./SidebarContainer.js";
 import Content from "./Content.js";
+import ContentReleases from "./ContentReleases.js";
 import About from "./About.js";
 import Footer from "./Footer.js";
 
@@ -15,6 +16,32 @@ import { observer } from "mobx-react";
 
 @observer
 class App extends Component {
+  getContentWithURL = () => {
+    let content = <Content />;
+    console.log(window.location.pathname);
+    switch (window.location.pathname) {
+      case "/about":
+        return <About />;
+      case "/releases":
+        content = <ContentReleases />;
+        break;
+      case "/justgood":
+        FilterStore.design = "3";
+        FilterStore.processor = "3";
+        FilterStore.updates = "4";
+        FilterStore.camera = "3";
+        FilterStore.battery = "3";
+        break;
+      default:
+        break;
+    }
+    return !FilterStore.sidebarHidden && window.innerWidth < 500 ? (
+      <div />
+    ) : (
+      content
+    );
+  };
+
   render() {
     return (
       <div
@@ -25,13 +52,7 @@ class App extends Component {
         <Header />
         <main className="sidebar-content-wrapper">
           <SidebarContainer />
-          {!FilterStore.sidebarHidden && window.innerWidth < 500 ? (
-            <div />
-          ) : FilterStore.showAbout ? (
-            <About />
-          ) : (
-            <Content />
-          )}
+          {this.getContentWithURL()}
         </main>
         <Footer />
       </div>
