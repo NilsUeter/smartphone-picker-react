@@ -31,6 +31,8 @@ class Content extends Component {
             <Smartphone
               key={smartphone.brand + smartphone.name}
               smartphone={smartphone}
+              showDetails={true}
+              maxImgHeight={500}
               filterStore={FilterStore}
             />
           ))}

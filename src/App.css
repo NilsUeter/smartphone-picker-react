@@ -205,6 +205,7 @@ body,
   display: flex;
   justify-content: center;
   height: calc((100vh - 450px));
+  margin-bottom: 16px;
 }
 
 @media (min-height: 1000px) {
@@ -252,26 +253,59 @@ body,
 .smartphones-releases {
   flex: 1;
   overflow: auto;
+  position: relative;
+  padding-top: 16px;
+  padding-bottom: 16px;
 }
 
-.smartphones-releases-container:first-child {
-  margin-top: 16px;
+.timeline-top-border {
+  border: 1px solid var(--border-color);
+  width: 16px;
+  position: absolute;
+  top: 16px;
+  left: 136px;
+}
+
+.timeline-bottom-border {
+  border: 1px solid var(--border-color);
+  width: 16px;
+  position: absolute;
+  left: 136px;
 }
 
 .smartphones-releases-container {
   margin-left: 64px;
-  min-height: 70px;
-  border-left: var(--border-color) 2px solid;
+  min-height: 32px;
 }
 
 .smartphones-releases-month {
-  margin-left: 8px;
+  position: relative;
+  margin-right: 16px;
+  margin-bottom: 4px;
   min-width: 64px;
-  align-self: center;
+  align-self: flex-end;
+  text-align: right;
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--first-color);
+}
+
+.smartphones-releases-month:after {
+  content: " ";
+  width: 32px;
+  border-top: 2px solid var(--border-color);
+  position: absolute;
+  top: 20px;
+  right: -16px;
+}
+
+.smartphones-in-month {
+  overflow: auto;
+  border-left: var(--border-color) 2px solid;
 }
 
 .smartphone {
-  margin-left: 10px;
+  margin-left: 8px;
   margin-right: 0;
   flex: 1;
   display: flex;
@@ -324,6 +358,7 @@ body,
 }
 
 .filter-drop-down__link {
+  display: flex;
   text-decoration: none;
   color: var(--first-color);
   font-weight: 600;
@@ -557,11 +592,19 @@ textarea:focus {
   background-color: var(--foreground-color);
   color: var(--text-color);
   padding: 5px;
-  margin: 5px;
-  margin-top: 15px;
   border-radius: 8px;
   border: var(--border-color) 2px solid;
   width: 260px;
+  margin-bottom: 8px;
+}
+
+.smartphone-details--hidden {
+  font-size: 12px;
+  width: inherit;
+}
+
+.smartphone-details--hidden .smartphone-name {
+  max-width: 128px;
 }
 
 .smartphone-details .flex *:first-child {
@@ -595,13 +638,13 @@ textarea:focus {
 }
 
 .smartphone-name {
-  font-size: 16px;
   font-weight: 600;
   margin-top: 4px;
   text-align: center;
   color: var(--text-color);
   white-space: nowrap;
   overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .smartphone-release {

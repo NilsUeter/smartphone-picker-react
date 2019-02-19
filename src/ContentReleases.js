@@ -30,9 +30,11 @@ class ContentReleases extends Component {
               className="smartphones-releases-container display-flex"
             >
               <div className="smartphones-releases-month">
-                {month.toISOString().slice(0, 7)}
+                {month.getMonth() === 0 // if month is january show year
+                  ? month.toISOString().slice(0, 7)
+                  : month.toISOString().slice(5, 7)}
               </div>
-              <div className="display-flex">
+              <div className="smartphones-in-month display-flex">
                 {SmartphoneStore.listOfFilteredAndScoredObjects
                   .filter(
                     smartphone =>
@@ -42,13 +44,16 @@ class ContentReleases extends Component {
                     <Smartphone
                       key={smartphone.brand + smartphone.name}
                       smartphone={smartphone}
-                      maxImgHeight={300}
+                      maxImgHeight={200}
+                      showDetails={false}
                       filterStore={FilterStore}
                     />
                   ))}
               </div>
             </div>
           ))}
+          <div className="timeline-top-border" />
+          <div className="timeline-bottom-border" />
         </div>
       </div>
     );

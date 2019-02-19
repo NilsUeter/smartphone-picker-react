@@ -18,7 +18,6 @@ import { observer } from "mobx-react";
 class App extends Component {
   getContentWithURL = () => {
     let content = <Content />;
-    console.log(window.location.pathname);
     switch (window.location.pathname) {
       case "/about":
         return <About />;
