@@ -263,18 +263,18 @@ body,
   width: 16px;
   position: absolute;
   top: 16px;
-  left: 136px;
+  left: 104px;
 }
 
 .timeline-bottom-border {
   border: 1px solid var(--border-color);
   width: 16px;
   position: absolute;
-  left: 136px;
+  left: 104px;
 }
 
 .smartphones-releases-container {
-  margin-left: 64px;
+  margin-left: 32px;
   min-height: 32px;
 }
 

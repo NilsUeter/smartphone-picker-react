@@ -1,14 +1,6 @@
 import React, { Component } from "react";
-import { observer } from "mobx-react";
 
-import FilterStore from "./FilterStore.js";
-
-@observer
-class TextField extends Component {
-  changeAttribute = e => {
-    FilterStore.changeAttribute(this.props.name, e.target.value);
-  };
-
+class TemplateDropDown extends Component {
   render() {
     return (
       <details className="filter-drop-down__container">
@@ -30,4 +22,4 @@ class TextField extends Component {
   }
 }
 
-export default TextField;
+export default TemplateDropDown;

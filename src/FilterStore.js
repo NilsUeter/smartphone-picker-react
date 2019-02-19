@@ -5,7 +5,7 @@ class FilterStore {
   @observable
   lightmode = true;
   @observable
-  sidebarHidden = false;
+  sidebarHidden = this.getSidebarHiddenInitialState();
   @observable
   country = "de";
 
@@ -71,6 +71,17 @@ class FilterStore {
   notch = false;
   @observable
   waterproof = "";
+
+  getSidebarHiddenInitialState = () => {
+    switch (window.location.pathname) {
+      case "/releases":
+        return true;
+      case "/justgood":
+        return true;
+      default:
+        return false;
+    }
+  };
 
   getMinDate = () => {
     const date = new Date();
