@@ -145,6 +145,7 @@ class FilterStore {
         case "updateURLtoRepresentFilter":
         case "lightmode":
         case "getMinDate":
+        case "getSidebarHiddenInitialState":
           break;
         default:
           if (this[key] && resetCopy && resetCopy[key] !== this[key]) {
