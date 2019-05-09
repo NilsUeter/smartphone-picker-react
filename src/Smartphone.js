@@ -116,16 +116,17 @@ class Smartphone extends Component {
                   {this.props.smartphone.released}
                 </p>
 
-                <div className="flex smartphone-price-container">
-                  <p className="smartphone-price">
-                    {
-                      this.props.smartphone.types[FilterStore.country][
-                        this.props.smartphone.smallestPrice
-                      ].price
-                    }
-                    €
-                  </p>
-                </div>
+                {/*
+                  <div className="flex smartphone-price-container">
+                    <p className="smartphone-price">
+                      {
+                        this.props.smartphone.types[FilterStore.country][
+                          this.props.smartphone.smallestPrice
+                        ].price
+                      }
+                      €
+                    </p>
+                  </div>*/}
               </div>
               <p className="">&nbsp;</p>
               <div className="flex">
@@ -199,8 +200,28 @@ class Smartphone extends Component {
                 </p>
               </div>
               <hr className="horizontalRule " />
+              <div className="flex">
+                <p className="">Decay</p>
+                <p className="smartphone-decay ">
+                  -
+                  {Math.round(
+                    SmartphoneStore.monthDiff(
+                      new Date(this.props.smartphone.released),
+                      new Date()
+                    ) *
+                      FilterStore.decayFactor *
+                      10
+                  ) / 10}
+                </p>
+              </div>
               <p className="smartphone-totalscore">
-                {this.props.smartphone.totalscore}
+                {this.props.smartphone.totalscore > 0 ? (
+                  this.props.smartphone.totalscore
+                ) : (
+                  <span style={{ color: "var(--bad-color)" }}>
+                    {this.props.smartphone.totalscore}
+                  </span>
+                )}
               </p>
 
               <div className="wrapper ">

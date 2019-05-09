@@ -1,13 +1,14 @@
 :root {
   --first-color: #2f5a9a;
   --show-sidebar-button: #1b875b;
+  --highlight-color: #4caf50;
+  --bad-color: #d22a2a;
   --just-black: #263238;
   --just-white: #fff;
 }
 
 .lightmode {
   --text-color: #4f5259;
-  --highlight-color: #4caf50;
   --border-color: #e0e0e0;
   --background-color: #fff;
   --foreground-color: #fff;
@@ -17,7 +18,6 @@
 .darkmode {
   --first-color: #f1f3f9;
   --text-color: #7d8a90;
-  --highlight-color: #4caf50;
   --border-color: #e0e0e0;
   --background-color: #263238;
   --foreground-color: var(--background-color);
@@ -113,6 +113,7 @@ body,
 .content {
   background-color: var(--foreground-color);
   flex: 1;
+  height: 100%;
   display: flex;
   flex-flow: column;
   overflow: hidden;
@@ -664,6 +665,11 @@ textarea:focus {
 .smartphone-camera,
 .smartphone-battery {
   color: var(--highlight-color);
+  font-weight: bold;
+}
+
+.smartphone-decay {
+  color: var(--bad-color);
   font-weight: bold;
 }
 

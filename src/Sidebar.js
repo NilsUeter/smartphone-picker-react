@@ -171,10 +171,10 @@ class Sidebar extends Component {
             <TextSelect
               name="filterType"
               options={[
-                ["price", "Price"],
+                /* ["price", "Price"],*/
+                ["totalscore", "Total Score"],
                 ["length", "Body-Size"],
                 ["display", "Screen-Size"],
-                ["totalscore", "Total Score"],
                 ["released", "Release Date"]
               ]}
             />
@@ -487,6 +487,27 @@ class Sidebar extends Component {
             trackStyle={[{ backgroundColor: "var(--text-color)" }]}
             handleStyle={[{ border: "solid 2px var(--text-color)" }]}
           />
+          <p>
+            Decay Factor (
+            <span style={{ color: "var(--bad-color)" }}>Subtract</span> points
+            for old phones)
+          </p>
+          <Slider
+            min={0}
+            max={1}
+            step={0.2}
+            value={parseFloat(FilterStore.decayFactor)}
+            onChange={changeevent =>
+              FilterStore.changeAttribute("decayFactor", changeevent)
+            }
+            trackStyle={[{ backgroundColor: "var(--text-color)" }]}
+            handleStyle={[{ border: "solid 2px var(--text-color)" }]}
+          />
+          <div className="sliderSubBar">
+            <div className="filler" />
+            <TextField name="decayFactor" />
+            <span className="prefix">per Month</span>
+          </div>
         </FilterBox>
       </React.Fragment>
     );

@@ -13,7 +13,6 @@ class SmartphoneStore {
   @action
   init = responseText => {
     this.obj = responseText;
-    this.calculateAllScores();
     this.findLowestPriceForAllSmartphones();
   };
 
@@ -48,45 +47,48 @@ class SmartphoneStore {
     return lowest;
   };
 
-  calculateAllScores() {
-    for (let i = 0; i < this.obj.length; i++) {
-      this.obj[i].totalscore = this.calculateScore(this.obj[i]);
-    }
-  }
-
   calculateScore(smartphone) {
     return (
-      smartphone.design +
-      smartphone.processor +
-      smartphone.updates +
-      smartphone.camera +
-      smartphone.battery
+      (Math.round(
+        smartphone.design +
+          smartphone.processor +
+          smartphone.updates +
+          smartphone.camera +
+          smartphone.battery -
+          this.monthDiff(new Date(smartphone.released), new Date()) *
+            FilterStore.decayFactor
+      ) *
+        10) /
+      10
+    );
+  }
+
+  monthDiff(dateFrom, dateTo) {
+    return (
+      dateTo.getMonth() -
+      dateFrom.getMonth() +
+      12 * (dateTo.getFullYear() - dateFrom.getFullYear())
     );
   }
 
   @computed
   get listOfFilteredObjects() {
     let listOfFilteredObjects = [];
-    if (this.obj == null) {
+    let obj = JSON.parse(JSON.stringify(this.obj));
+    if (obj == null) {
       return listOfFilteredObjects;
     }
-    for (let i = 0; i < this.obj.length; i++) {
+    for (let i = 0; i < obj.length; i++) {
       if (
-        this.obj[i].types[FilterStore.country][this.obj[i].smallestPrice]
-          .price == null ||
-        this.obj[i].types[FilterStore.country][this.obj[i].smallestPrice]
-          .price === 0
+        obj[i].types[FilterStore.country][obj[i].smallestPrice].price == null ||
+        obj[i].types[FilterStore.country][obj[i].smallestPrice].price === 0
       ) {
         continue;
       }
 
       //searchQuery
       if (FilterStore.searchQuery !== "") {
-        const lowerCaseName = (
-          this.obj[i].brand +
-          " " +
-          this.obj[i].name
-        ).toLowerCase();
+        const lowerCaseName = (obj[i].brand + " " + obj[i].name).toLowerCase();
         if (!lowerCaseName.includes(FilterStore.searchQuery.toLowerCase())) {
           continue;
         }
@@ -94,8 +96,8 @@ class SmartphoneStore {
 
       //release-date
       if (
-        FilterStore.release_minimum > this.obj[i].released ||
-        FilterStore.release_maximum < this.obj[i].released
+        FilterStore.release_minimum > obj[i].released ||
+        FilterStore.release_maximum < obj[i].released
       ) {
         continue;
       }
@@ -103,98 +105,99 @@ class SmartphoneStore {
       //price
       if (
         FilterStore.price_minimum_1 >
-          this.obj[i].types[FilterStore.country][this.obj[i].smallestPrice]
-            .price ||
+          obj[i].types[FilterStore.country][obj[i].smallestPrice].price ||
         FilterStore.price_maximum_1 <
-          this.obj[i].types[FilterStore.country][this.obj[i].smallestPrice]
-            .price
+          obj[i].types[FilterStore.country][obj[i].smallestPrice].price
       ) {
         continue;
       }
 
       //display
       if (
-        FilterStore.size_minimum_1 > this.obj[i].display ||
-        FilterStore.size_maximum_1 < this.obj[i].display
+        FilterStore.size_minimum_1 > obj[i].display ||
+        FilterStore.size_maximum_1 < obj[i].display
       ) {
         continue;
       }
 
       //length
       if (
-        FilterStore.size_minimum_2 > this.obj[i].length ||
-        FilterStore.size_maximum_2 < this.obj[i].length
+        FilterStore.size_minimum_2 > obj[i].length ||
+        FilterStore.size_maximum_2 < obj[i].length
       ) {
         continue;
       }
 
       //width
       if (
-        FilterStore.size_minimum_3 > this.obj[i].width ||
-        FilterStore.size_maximum_3 < this.obj[i].width
+        FilterStore.size_minimum_3 > obj[i].width ||
+        FilterStore.size_maximum_3 < obj[i].width
       ) {
         continue;
       }
 
       //design
-      if (this.obj[i].design < FilterStore.design) {
+      if (obj[i].design < FilterStore.design) {
         continue;
       }
 
       //processor
-      if (this.obj[i].processor < FilterStore.processor) {
+      if (obj[i].processor < FilterStore.processor) {
         continue;
       }
 
       //software updates
-      if (this.obj[i].updates < FilterStore.updates) {
+      if (obj[i].updates < FilterStore.updates) {
         continue;
       }
 
       //camera
-      if (this.obj[i].camera < FilterStore.camera) {
+      if (obj[i].camera < FilterStore.camera) {
         continue;
       }
 
       //battery
-      if (this.obj[i].battery < FilterStore.battery) {
+      if (obj[i].battery < FilterStore.battery) {
         continue;
       }
 
       //storage
       if (FilterStore.storage !== "") {
-        if (this.obj[i].storage < FilterStore.storage) {
+        if (obj[i].storage < FilterStore.storage) {
           continue;
         }
       }
       //storage
       if (FilterStore.waterproof !== "") {
-        if (this.obj[i].waterproof < FilterStore.waterproof) {
+        if (obj[i].waterproof < FilterStore.waterproof) {
           continue;
         }
       }
 
       //headphonejack
-      if (FilterStore.headphoneJack && this.obj[i].headphonejack === 0) {
+      if (FilterStore.headphoneJack && obj[i].headphonejack === 0) {
         continue;
       }
 
       //simCardInput
-      if (FilterStore.simCards && this.obj[i].simcards === 1) {
+      if (FilterStore.simCards && obj[i].simcards === 1) {
         continue;
       }
 
       //sdSLot
-      if (FilterStore.sdSlot && this.obj[i].sdslot === 0) {
+      if (FilterStore.sdSlot && obj[i].sdslot === 0) {
         continue;
       }
 
       //notch
-      if (FilterStore.notch && this.obj[i].notch === 1) {
+      if (FilterStore.notch && obj[i].notch === 1) {
         continue;
       }
 
-      listOfFilteredObjects.push(this.obj[i]);
+      //calculate score new
+      obj[i].totalscore = this.calculateScore(obj[i]);
+
+      listOfFilteredObjects.push(obj[i]);
     }
     return listOfFilteredObjects;
   }
