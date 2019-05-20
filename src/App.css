@@ -862,3 +862,8 @@ input {
 .cbx:disabled ~ label:after {
   background: var(--first-color);
 }
+
+.multiCheckboxContainer {
+  height: 200px;
+  overflow-y: scroll;
+}

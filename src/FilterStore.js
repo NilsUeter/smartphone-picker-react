@@ -74,6 +74,9 @@ class FilterStore {
   @observable
   waterproof = "";
 
+  @observable
+  selectedBrands = [];
+
   getSidebarHiddenInitialState = () => {
     switch (window.location.pathname) {
       case "/releases":
@@ -102,6 +105,16 @@ class FilterStore {
   };
 
   @action
+  toggleArrayAttribute = (name, newValue) => {
+    var index = this[name].indexOf(newValue);
+    if (index === -1) {
+      this[name].push(newValue); // add if it doesn't exist
+    } else {
+      this[name].splice(index, 1); // remove if it does
+    }
+  };
+
+  @action
   resetFilters = () => {
     for (let name in this) {
       switch (name) {
@@ -126,13 +139,19 @@ class FilterStore {
   @action
   loadURL = () => {
     const searchParams = new URLSearchParams(window.location.search);
-
+    // key[0] is the url key and key[1] the value, for example release_minimum=2017-01
     for (let key of searchParams) {
+      // parse selectedBrands to an Array
+      if (key[0] === "selectedBrands") {
+        this[key[0]] = key[1].split(",");
+        continue;
+      }
       this[key[0]] = key[1];
     }
   };
 
   updateURL = () => {
+    console.log("here");
     let queryComponents = [];
     let finalquery = "";
     let key;
@@ -148,6 +167,11 @@ class FilterStore {
         case "lightmode":
         case "getMinDate":
         case "getSidebarHiddenInitialState":
+          break;
+        case "selectedBrands":
+          if (this[key] && resetCopy && this[key].length > 0) {
+            queryComponents.push(key + "=" + this[key]);
+          }
           break;
         default:
           if (this[key] && resetCopy && resetCopy[key] !== this[key]) {
@@ -217,7 +241,8 @@ const resetCopy = {
   simCards: false,
   sdSlot: false,
   notch: false,
-  waterproof: ""
+  waterproof: "",
+  selectedBrands: []
 };
 
 window.addEventListener("popstate", () => filterStore.loadURL(), false);

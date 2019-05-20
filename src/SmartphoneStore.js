@@ -194,6 +194,14 @@ class SmartphoneStore {
         continue;
       }
 
+      //brands
+      if (
+        FilterStore.selectedBrands.length > 0 &&
+        FilterStore.selectedBrands.indexOf(obj[i].brand) === -1
+      ) {
+        continue;
+      }
+
       //calculate score new
       obj[i].totalscore = this.calculateScore(obj[i]);
 
@@ -234,6 +242,18 @@ class SmartphoneStore {
         console.log("Case not defined.");
         return [];
     }
+  }
+
+  getUniqueBrands() {
+    var unique = [];
+    this.obj.forEach(element => {
+      if (unique.indexOf(element.brand) === -1) {
+        unique.push(element.brand);
+      }
+    });
+
+    unique.sort();
+    return unique;
   }
 
   compareDates(a, b, type) {
