@@ -78,7 +78,7 @@
     logToFile("AmazonPriceSlave", "Iterated through every Phone");
     echo "Iterated through every Phone <br>";
 
-    file_put_contents("../data/smartphoneData.json", json_encode($phones));
+    file_put_contents("../data/smartphoneData.json", json_encode($phones, JSON_PRETTY_PRINT));
     logToFile("AmazonPriceSlave", "Files should be updated");
     echo "Files should be updated <br>";
 ?>
