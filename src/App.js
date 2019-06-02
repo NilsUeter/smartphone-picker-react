@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 
 import "./App.css";
-import "react-virtualized/styles.css";
 
 import Header from "./Header.js";
 import SidebarContainer from "./SidebarContainer.js";
