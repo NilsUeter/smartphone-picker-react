@@ -116,17 +116,16 @@ class Smartphone extends Component {
                   {this.props.smartphone.released}
                 </p>
 
-                {/*
-                  <div className="flex smartphone-price-container">
-                    <p className="smartphone-price">
-                      {
-                        this.props.smartphone.types[FilterStore.country][
-                          this.props.smartphone.smallestPrice
-                        ].price
-                      }
-                      €
-                    </p>
-                  </div>*/}
+                <div className="flex smartphone-price-container">
+                  <p className="smartphone-price">
+                    {
+                      this.props.smartphone.types[FilterStore.country][
+                        this.props.smartphone.smallestPrice
+                      ].price
+                    }
+                    €
+                  </p>
+                </div>
               </div>
               <p className="">&nbsp;</p>
               <div className="flex">

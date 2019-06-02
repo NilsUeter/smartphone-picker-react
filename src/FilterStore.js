@@ -15,7 +15,7 @@ class FilterStore {
   @observable
   searchQuery = "";
   @observable
-  filterType = "totalscore";
+  filterType = "price";
   @observable
   decayFactor = 0.2;
   @observable

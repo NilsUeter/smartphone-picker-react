@@ -172,7 +172,7 @@ class Sidebar extends Component {
             <TextSelect
               name="filterType"
               options={[
-                /* ["price", "Price"],*/
+                ["price", "Price"],
                 ["totalscore", "Total Score"],
                 ["length", "Body-Size"],
                 ["display", "Screen-Size"],
@@ -237,7 +237,7 @@ class Sidebar extends Component {
           </label>
         </FilterBox>
         <FilterBox header="Budget and Size">
-          {/*<label className="filterBoxLabel">
+          <label className="filterBoxLabel">
             Price
             <div className="sliderContainer">
               <div>
@@ -273,7 +273,7 @@ class Sidebar extends Component {
                 <span className="prefix">€</span>
               </div>
             </div>
-          </label> */}
+          </label>
           <label className="filterBoxLabel">
             Display
             <div className="sliderContainer">
