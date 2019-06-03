@@ -216,7 +216,7 @@ const getMinDate = () => {
 const resetCopy = {
   sidebarHidden: false,
   country: "de",
-  filterType: "totalscore",
+  filterType: "price",
   decayFactor: 0.2,
   isDescending: true,
   scaleInput: true,
