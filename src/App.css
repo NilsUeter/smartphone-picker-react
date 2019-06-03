@@ -796,8 +796,7 @@ textarea:focus {
   border-radius: 2px;
 }
 
-.filterBox select,
-input {
+.filterBox select {
   width: 100%;
   margin-top: 2.5px;
   margin-bottom: 2.5px;

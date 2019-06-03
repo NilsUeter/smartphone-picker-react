@@ -17,7 +17,7 @@ class FilterStore {
   @observable
   filterType = "price";
   @observable
-  decayFactor = 0.2;
+  decayFactor = 0.3;
   @observable
   isDescending = true;
   @observable
@@ -217,7 +217,7 @@ const resetCopy = {
   sidebarHidden: false,
   country: "de",
   filterType: "price",
-  decayFactor: 0.2,
+  decayFactor: 0.3,
   isDescending: true,
   scaleInput: true,
   emptySmartphones: false,
