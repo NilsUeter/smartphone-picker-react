@@ -10,13 +10,13 @@
 
         // Constructor
         public function __construct($smartphoneID, $marketID, $asin, $name, $price, $link, $lastUpdated) {
-            $this->smartphoneID = $smartphoneID;
+            $this->smartphoneID = (int)$smartphoneID;
             $this->marketID = $marketID;
             $this->asin = $asin;
             $this->name = $name;
-            $this->price = $price;
+            $this->price = (int)$price;
             $this->link = $link;
-            $this->lastUpdated = $lastUpdated;
+            $this->lastUpdated = strtotime($lastUpdated);
         }
     }
 ?>

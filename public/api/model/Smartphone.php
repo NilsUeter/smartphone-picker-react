@@ -25,26 +25,26 @@
 
         // Constructor
         public function __construct($db_row, $phoneModels) {
-            $this->id = $db_row['ID'];
+            $this->id = (int)$db_row['ID'];
             $this->name = $db_row['NAME'];
             $this->brand = $db_row['BRAND'];
             $this->released = $db_row['RELEASED'];
-            $this->design = $db_row['DESIGN'];
-            $this->display = $db_row['DISPLAY'];
-            $this->length = $db_row['LENGTH'];
-            $this->width = $db_row['WIDTH'];
-            $this->cpu = $db_row['CPU'];
-            $this->updates = $db_row['UPDATES'];
-            $this->camera = $db_row['CAMERA'];
-            $this->battery = $db_row['BATTERY'];
-            $this->batterysize = $db_row['BATTERYSIZE'];
-            $this->storage = $db_row['STORAGE'];
-            $this->memory = $db_row['MEMORY'];
-            $this->sdSlot = $db_row['SD_SLOT'];
-            $this->simCards = $db_row['SIM_CARDS'];
-            $this->notch = $db_row['NOTCH'];
-            $this->waterproof = $db_row['WATERPROOF'];
-            $this->headphoneJack = $db_row['HEADPHONE_JACK'];
+            $this->design = (int)$db_row['DESIGN'];
+            $this->display = (float)$db_row['DISPLAY'];
+            $this->length = (int)$db_row['LENGTH'];
+            $this->width = (int)$db_row['WIDTH'];
+            $this->cpu = (int)$db_row['CPU'];
+            $this->updates = (int)$db_row['UPDATES'];
+            $this->camera = (int)$db_row['CAMERA'];
+            $this->battery = (int)$db_row['BATTERY'];
+            $this->batterysize = (int)$db_row['BATTERYSIZE'];
+            $this->storage = (int)$db_row['STORAGE'];
+            $this->memory = (int)$db_row['MEMORY'];
+            $this->sdSlot = (int)$db_row['SD_SLOT'];
+            $this->simCards = (int)$db_row['SIM_CARDS'];
+            $this->notch = (int)$db_row['NOTCH'];
+            $this->waterproof = (int)$db_row['WATERPROOF'];
+            $this->headphoneJack = (int)$db_row['HEADPHONE_JACK'];
             $this->imageLink = $db_row['IMAGE_LINK'];
 
             $this->models = $phoneModels;
