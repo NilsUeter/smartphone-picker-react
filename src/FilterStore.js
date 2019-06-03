@@ -151,7 +151,6 @@ class FilterStore {
   };
 
   updateURL = () => {
-    console.log("here");
     let queryComponents = [];
     let finalquery = "";
     let key;
