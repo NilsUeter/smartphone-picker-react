@@ -45,7 +45,7 @@
 
                         logToFile("AmazonPriceSlave", "Current request counter: {$counter}");
                         $smartphoneData = $smartphoneDataRequesters[$market]->getSmartPhoneData($phoneType["asin"]);
-                        logToFile("AmazonPriceSlave", "Request Url: " . $smartphoneData[request_url]);
+                        logToFile("AmazonPriceSlave", "Request Url: " . $smartphoneData["request_url"]);
                         if($smartphoneData["failed"] === TRUE) {
                             logToFile("AmazonPriceSlave", "Amazon blocked");
                         } else {
