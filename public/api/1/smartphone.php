@@ -25,7 +25,7 @@
         for($j = 0; $j < $modelsResult->num_rows; $j++) {
             $modelsResult->data_seek($j);
             $modelRow = $modelsResult->fetch_assoc();
-            $models[$j] = new PhoneModel($modelRow['SMARTPHONE_ID'], $modelRow['MARKET_ID'], $modelRow['ASIN'], $modelRow['NAME'], $modelRow['PRICE'], $modelRow['LINK'], $modelRow['LAST_UPDATED']);
+            $models[$j] = new PhoneModel($modelRow);
         }
         $smartphones[$i] = new Smartphone($row, $models);
     }

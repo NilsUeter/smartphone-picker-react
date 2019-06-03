@@ -9,14 +9,14 @@
         public $lastUpdated;
 
         // Constructor
-        public function __construct($smartphoneID, $marketID, $asin, $name, $price, $link, $lastUpdated) {
-            $this->smartphoneID = (int)$smartphoneID;
-            $this->marketID = $marketID;
-            $this->asin = $asin;
-            $this->name = $name;
-            $this->price = (int)$price;
-            $this->link = $link;
-            $this->lastUpdated = strtotime($lastUpdated);
+        public function __construct($db_row) {
+            $this->smartphoneID = (int)$db_row['SMARTPHONE_ID'];
+            $this->marketID = $db_row['MARKET_ID'];
+            $this->asin = $db_row['ASIN'];
+            $this->name = $db_row['NAME'];
+            $this->price = (int)$db_row['PRICE'];
+            $this->link = $db_row['LINK'];
+            $this->lastUpdated = strtotime($db_row['LAST_UPDATED']);
         }
     }
 ?>
