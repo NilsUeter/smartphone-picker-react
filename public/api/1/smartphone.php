@@ -11,4 +11,23 @@
 
     //Retrieve Smartphone data, generate json and return
     require_once('dbConnect.php');
+    require_once('../model/PhoneModel.php');
+    require_once('../model/Smartphone.php');
+    $result = $connection->query("SELECT * FROM SMARTPHONE");
+
+    $smartphones = [];
+    for($i = 0; $i < $result->num_rows; $i++) {
+        $result->data_seek($i);
+        $row = $result->fetch_assoc();
+        $smartPhoneID = $row['ID'];
+        $modelsResult = $connection->query("SELECT * FROM PHONE_MODEL WHERE SMARTPHONE_ID = $smartPhoneID");
+        $models = [];
+        for($j = 0; $j < $modelsResult->num_rows; $j++) {
+            $modelsResult->data_seek($j);
+            $modelRow = $modelsResult->fetch_assoc();
+            $models[$j] = new PhoneModel($modelRow['SMARTPHONE_ID'], $modelRow['MARKET_ID'], $modelRow['ASIN'], $modelRow['NAME'], $modelRow['PRICE'], $modelRow['LINK'], $modelRow['LAST_UPDATED']);
+        }
+        $smartphones[$i] = new Smartphone($row, $models);
+    }
+    print_r(json_encode($smartphones));
 ?>
