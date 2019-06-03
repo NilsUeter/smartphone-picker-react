@@ -496,7 +496,7 @@ class Sidebar extends Component {
           <Slider
             min={0}
             max={1}
-            step={0.2}
+            step={0.1}
             value={parseFloat(FilterStore.decayFactor)}
             onChange={changeevent =>
               FilterStore.changeAttribute("decayFactor", changeevent)

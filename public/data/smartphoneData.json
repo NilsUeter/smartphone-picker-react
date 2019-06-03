@@ -2685,6 +2685,47 @@
     }
   },
   {
+    "name": "Moto G7",
+    "brand": "Motorola",
+    "released": "2019-03",
+    "imagelink": "motog7",
+    "design": 4,
+    "display": 6.2,
+    "length": 157,
+    "width": 75,
+    "processor": 3,
+    "updates": 2,
+    "camera": 3,
+    "battery": 3,
+    "batterysize": 3000,
+    "storage": 64,
+    "memory": 4,
+    "sdslot": 1,
+    "simcards": 2,
+    "notch": 2,
+    "waterproof": 4,
+    "headphonejack": 1,
+    "types": {
+      "de": [
+        {
+          "name": "clear white",
+          "asin": "B07N3BJRW5",
+          "price": 157,
+          "link": "https://www.amazon.de/Motorola-Smartphone-Kamera-Android-blush-Gold/dp/B074SQZ2PB?SubscriptionId=AKIAJCAFA7ECZQ5XGTGQ&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B074SQZ2PB",
+          "lastUpdated": "03.06.2019 16:16:41"
+        },
+        {
+          "name": "ceramic black",
+          "asin": "B07N39QP3X",
+          "price": 146,
+          "link": "https://www.amazon.de/Motorola-Smartphone-Kamera-Android-lunar-Gray/dp/B074SR2DVT?SubscriptionId=AKIAJCAFA7ECZQ5XGTGQ&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B074SR2DVT",
+          "lastUpdated": "03.06.2019 16:16:42"
+        }
+      ],
+      "com": []
+    }
+  },
+  {
     "name": "Galaxy A5",
     "brand": "Samsung",
     "released": "2017-01",
@@ -3492,7 +3533,7 @@
     "sdslot": 1,
     "simcards": 2,
     "notch": 2,
-    "waterproof": 8,
+    "waterproof": 0,
     "headphonejack": 1,
     "types": {
       "de": [

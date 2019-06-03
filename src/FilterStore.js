@@ -15,9 +15,9 @@ class FilterStore {
   @observable
   searchQuery = "";
   @observable
-  filterType = "price";
+  filterType = "totalscore";
   @observable
-  decayFactor = 0.3;
+  decayFactor = 0.2;
   @observable
   isDescending = true;
   @observable
@@ -216,8 +216,8 @@ const getMinDate = () => {
 const resetCopy = {
   sidebarHidden: false,
   country: "de",
-  filterType: "price",
-  decayFactor: 0.3,
+  filterType: "totalscore",
+  decayFactor: 0.2,
   isDescending: true,
   scaleInput: true,
   emptySmartphones: false,
