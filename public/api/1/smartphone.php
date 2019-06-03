@@ -10,4 +10,5 @@
     }
 
     //Retrieve Smartphone data, generate json and return
+    require_once('dbConnect.php');
 ?>
