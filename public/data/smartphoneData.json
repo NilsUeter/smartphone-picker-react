@@ -2694,8 +2694,8 @@
     "length": 157,
     "width": 75,
     "processor": 3,
-    "updates": 2,
-    "camera": 3,
+    "updates": 3,
+    "camera": 2,
     "battery": 3,
     "batterysize": 3000,
     "storage": 64,
@@ -2720,6 +2720,122 @@
           "price": 146,
           "link": "https://www.amazon.de/Motorola-Smartphone-Kamera-Android-lunar-Gray/dp/B074SR2DVT?SubscriptionId=AKIAJCAFA7ECZQ5XGTGQ&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B074SR2DVT",
           "lastUpdated": "03.06.2019 16:16:42"
+        }
+      ],
+      "com": []
+    }
+  },
+  {
+    "name": "Moto G7 Play",
+    "brand": "Motorola",
+    "released": "2019-03",
+    "imagelink": "motog7play",
+    "design": 2,
+    "display": 5.7,
+    "length": 147,
+    "width": 72,
+    "processor": 2,
+    "updates": 3,
+    "camera": 2,
+    "battery": 4,
+    "batterysize": 3000,
+    "storage": 32,
+    "memory": 2,
+    "sdslot": 1,
+    "simcards": 2,
+    "notch": 1,
+    "waterproof": 4,
+    "headphonejack": 1,
+    "types": {
+      "de": [
+        {
+          "name": "deep indigo",
+          "asin": "B07N4RR56N",
+          "price": 157,
+          "link": "https://www.amazon.de/Motorola-Smartphone-Kamera-Android-blush-Gold/dp/B074SQZ2PB?SubscriptionId=AKIAJCAFA7ECZQ5XGTGQ&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B074SQZ2PB",
+          "lastUpdated": "03.06.2019 16:16:41"
+        }
+      ],
+      "com": []
+    }
+  },
+  {
+    "name": "Moto G7 Plus",
+    "brand": "Motorola",
+    "released": "2019-03",
+    "imagelink": "motog7plus",
+    "design": 4,
+    "display": 6.2,
+    "length": 157,
+    "width": 75,
+    "processor": 3,
+    "updates": 3,
+    "camera": 3,
+    "battery": 2,
+    "batterysize": 3000,
+    "storage": 64,
+    "memory": 4,
+    "sdslot": 1,
+    "simcards": 2,
+    "notch": 2,
+    "waterproof": 4,
+    "headphonejack": 1,
+    "types": {
+      "de": [
+        {
+          "name": "deep indigo",
+          "asin": "B07Q758ZVQ",
+          "price": 157,
+          "link": "https://www.amazon.de/Motorola-Smartphone-Kamera-Android-blush-Gold/dp/B074SQZ2PB?SubscriptionId=AKIAJCAFA7ECZQ5XGTGQ&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B074SQZ2PB",
+          "lastUpdated": "03.06.2019 16:16:41"
+        },
+        {
+          "name": "viva red",
+          "asin": "B07Q4WFX6P",
+          "price": 157,
+          "link": "https://www.amazon.de/Motorola-Smartphone-Kamera-Android-blush-Gold/dp/B074SQZ2PB?SubscriptionId=AKIAJCAFA7ECZQ5XGTGQ&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B074SQZ2PB",
+          "lastUpdated": "03.06.2019 16:16:41"
+        }
+      ],
+      "com": []
+    }
+  },
+  {
+    "name": "Moto G7 Power",
+    "brand": "Motorola",
+    "released": "2019-02",
+    "imagelink": "motog7power",
+    "design": 2,
+    "display": 6.2,
+    "length": 159,
+    "width": 76,
+    "processor": 3,
+    "updates": 3,
+    "camera": 3,
+    "battery": 5,
+    "batterysize": 5000,
+    "storage": 64,
+    "memory": 4,
+    "sdslot": 1,
+    "simcards": 2,
+    "notch": 2,
+    "waterproof": 4,
+    "headphonejack": 1,
+    "types": {
+      "de": [
+        {
+          "name": "iced violet",
+          "asin": "B07N4S2SP3",
+          "price": 157,
+          "link": "https://www.amazon.de/Motorola-Smartphone-Kamera-Android-blush-Gold/dp/B074SQZ2PB?SubscriptionId=AKIAJCAFA7ECZQ5XGTGQ&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B074SQZ2PB",
+          "lastUpdated": "03.06.2019 16:16:41"
+        },
+        {
+          "name": "ceramic black",
+          "asin": "B07N4R146H",
+          "price": 157,
+          "link": "https://www.amazon.de/Motorola-Smartphone-Kamera-Android-blush-Gold/dp/B074SQZ2PB?SubscriptionId=AKIAJCAFA7ECZQ5XGTGQ&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B074SQZ2PB",
+          "lastUpdated": "03.06.2019 16:16:41"
         }
       ],
       "com": []
