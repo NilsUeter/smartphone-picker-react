@@ -16,6 +16,7 @@
   "scripts": {
     "start": "react-app-rewired start",
     "build": "react-app-rewired build",
+    "buildDeploy": "react-app-rewired build && deploy.bat",
     "test": "react-app-rewired test",
     "eject": "react-scripts eject"
   },
