@@ -16,6 +16,7 @@ class ContentReleases extends Component {
       dateMin.setMonth(dateMin.getMonth() + 1);
       monthArray.unshift(new Date(dateMin));
     }
+
     return monthArray;
   };
 
@@ -31,14 +32,19 @@ class ContentReleases extends Component {
             >
               <div className="smartphones-releases-month">
                 {month.getMonth() === 0 // if month is january show year
-                  ? month.toISOString().slice(0, 7)
-                  : month.toISOString().slice(5, 7)}
+                  ? month.getFullYear() + "-" + month.getMonth() + 1
+                  : month.getMonth() + 1}
               </div>
               <div className="smartphones-in-month display-flex">
                 {SmartphoneStore.listOfFilteredAndScoredObjects
                   .filter(
                     smartphone =>
-                      smartphone.released === month.toISOString().slice(0, 7)
+                      smartphone.released ===
+                      month.getFullYear() +
+                        "-" +
+                        (month.getMonth() < 10
+                          ? `0${month.getMonth() + 1}` //append 0 in front of month to match smartphone.released format
+                          : `${month.getMonth() + 1}`)
                   )
                   .map(smartphone => (
                     <Smartphone
