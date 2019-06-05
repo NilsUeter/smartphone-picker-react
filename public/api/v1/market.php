@@ -10,8 +10,8 @@
     }
 
     //Retrieve Market data, generate json and return
-    require_once('dbConnect.php');
-    require_once('../model/Market.php');
+    require_once('internal/dbConnect.php');
+    require_once('internal/model/Market.php');
     $result = $connection->query("SELECT * FROM MARKET");
 
     $markets = [];

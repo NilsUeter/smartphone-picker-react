@@ -25,7 +25,7 @@ yarn-error.log*
 
 #credentials
 *keys.*
-**/conf/*.ini
+**/config.ini
 
 #specific batch scripts
 *.bat

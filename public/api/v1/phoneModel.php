@@ -9,8 +9,8 @@
         die();
     }
 
-    require_once('dbConnect.php');
-    require_once('../model/PhoneModel.php');
+    require_once('internal/dbConnect.php');
+    require_once('internal/model/PhoneModel.php');
 
     switch($method){
         case 'GET':

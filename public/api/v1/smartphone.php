@@ -10,9 +10,9 @@
     }
 
     //Retrieve Smartphone data, generate json and return
-    require_once('dbConnect.php');
-    require_once('../model/PhoneModel.php');
-    require_once('../model/Smartphone.php');
+    require_once('internal/dbConnect.php');
+    require_once('internal/model/PhoneModel.php');
+    require_once('internal/model/Smartphone.php');
     $result = $connection->query("SELECT * FROM SMARTPHONE");
 
     $smartphones = [];
