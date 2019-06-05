@@ -15,7 +15,7 @@ class FilterStore {
   @observable
   searchQuery = "";
   @observable
-  filterType = "price";
+  filterType = "totalscore";
   @observable
   decayFactor = 0.2;
   @observable
@@ -151,7 +151,6 @@ class FilterStore {
   };
 
   updateURL = () => {
-    console.log("here");
     let queryComponents = [];
     let finalquery = "";
     let key;
