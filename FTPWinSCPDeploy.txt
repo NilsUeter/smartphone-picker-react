@@ -1,6 +1,6 @@
 # Connect to the ftp server with give authentification parameters
 open ftp://%1%:%2%@%3%/
 lcd build/
-synchronize remote -delete -criteria="size" -filemask="*.* | blog/;logs/;.ftpquota;google*"
+synchronize remote -delete -criteria="size" -filemask="*.* | blog/;logs/;.ftpquota"
 close
 exit
