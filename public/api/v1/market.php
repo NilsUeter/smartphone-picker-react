@@ -18,7 +18,7 @@
     for($i = 0; $i < $result->num_rows; $i++) {
         $result->data_seek($i);
         $row = $result->fetch_assoc();
-        $markets[$i] = new Market($row['ID'], $row['ENDPOINT'], $row['ASSOCIATE_TAG']);
+        $markets[$i] = new Market($row);
     }
 
     print_r(json_encode($markets));
