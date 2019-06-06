@@ -1493,8 +1493,8 @@
     "camera": 5,
     "battery": 4,
     "batterysize": 3700,
-    "storage": 128,
-    "memory": 6,
+    "storage": 256,
+    "memory": 8,
     "sdslot": 0,
     "simcards": 2,
     "notch": 1,
@@ -1508,6 +1508,115 @@
           "price": 577,
           "link": "https://www.amazon.de/OnePlus-256GB-Smartphone-Midnight-Black/dp/B07HFF2254?psc=1&SubscriptionId=AKIAJCAFA7ECZQ5XGTGQ&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07HFF2254",
           "lastUpdated": "03.06.2019 19:01:09"
+        }
+      ],
+      "com": []
+    }
+  },
+  {
+    "name": "7 (8GB + 256GB)",
+    "brand": "OnePlus",
+    "released": "2019-06",
+    "imagelink": "oneplus7",
+    "design": 4,
+    "display": 6.4,
+    "length": 158,
+    "width": 75,
+    "processor": 5,
+    "updates": 4,
+    "camera": 5,
+    "battery": 4,
+    "batterysize": 3700,
+    "storage": 256,
+    "memory": 8,
+    "sdslot": 0,
+    "simcards": 2,
+    "notch": 2,
+    "waterproof": 4,
+    "headphonejack": 0,
+    "types": {
+      "de": [
+        {
+          "name": "mirror gray",
+          "asin": "B07RDWX931",
+          "price": 609,
+          "link": "https://www.amazon.de/Oneplus-Mirror-Gray-256Gb-GM1903-Grau/dp/B07RDWX931/ref=sr_1_3?psc=1&SubscriptionId=AKIAJCAFA7ECZQ5XGTGQ&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07NWTJ1MJ",
+          "lastUpdated": "03.02.2019 21:00:57"
+        }
+      ],
+      "com": []
+    }
+  },
+  {
+    "name": "7 Pro (8GB + 256GB)",
+    "brand": "OnePlus",
+    "released": "2019-05",
+    "imagelink": "oneplus7pro",
+    "design": 5,
+    "display": 6.67,
+    "length": 163,
+    "width": 76,
+    "processor": 5,
+    "updates": 4,
+    "camera": 5,
+    "battery": 4,
+    "batterysize": 4000,
+    "storage": 256,
+    "memory": 8,
+    "sdslot": 0,
+    "simcards": 2,
+    "notch": 3,
+    "waterproof": 4,
+    "headphonejack": 0,
+    "types": {
+      "de": [
+        {
+          "name": "mirror gray",
+          "asin": "B07R97WZJ9",
+          "price": 759,
+          "link": "https://www.amazon.de/Oneplus-Mirror-Gray-256Gb-GM1903-Grau/dp/B07RDWX931/ref=sr_1_3?psc=1&SubscriptionId=AKIAJCAFA7ECZQ5XGTGQ&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07NWTJ1MJ",
+          "lastUpdated": "03.02.2019 21:00:57"
+        },
+        {
+          "name": "almond",
+          "asin": "B07RWL3K1Y",
+          "price": 759,
+          "link": "https://www.amazon.de/Oneplus-Mirror-Gray-256Gb-GM1903-Grau/dp/B07RDWX931/ref=sr_1_3?psc=1&SubscriptionId=AKIAJCAFA7ECZQ5XGTGQ&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07NWTJ1MJ",
+          "lastUpdated": "03.02.2019 21:00:57"
+        }
+      ],
+      "com": []
+    }
+  },
+  {
+    "name": "7 Pro (12GB + 256GB)",
+    "brand": "OnePlus",
+    "released": "2019-05",
+    "imagelink": "oneplus7pro",
+    "design": 5,
+    "display": 6.67,
+    "length": 163,
+    "width": 76,
+    "processor": 5,
+    "updates": 4,
+    "camera": 5,
+    "battery": 4,
+    "batterysize": 4000,
+    "storage": 256,
+    "memory": 12,
+    "sdslot": 0,
+    "simcards": 2,
+    "notch": 3,
+    "waterproof": 4,
+    "headphonejack": 0,
+    "types": {
+      "de": [
+        {
+          "name": "nebula blue",
+          "asin": "B07R844533",
+          "price": 829,
+          "link": "https://www.amazon.de/Oneplus-Mirror-Gray-256Gb-GM1903-Grau/dp/B07RDWX931/ref=sr_1_3?psc=1&SubscriptionId=AKIAJCAFA7ECZQ5XGTGQ&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07NWTJ1MJ",
+          "lastUpdated": "03.02.2019 21:00:57"
         }
       ],
       "com": []
