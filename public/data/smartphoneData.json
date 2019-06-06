@@ -59,7 +59,7 @@
     "sdslot": 1,
     "simcards": 2,
     "notch": 0,
-    "waterproof": "0",
+    "waterproof": 0,
     "headphonejack": 1,
     "types": {
       "de": [
@@ -203,7 +203,7 @@
     "sdslot": 1,
     "simcards": 2,
     "notch": 0,
-    "waterproof": "0",
+    "waterproof": 0,
     "headphonejack": 1,
     "types": {
       "de": [
@@ -244,7 +244,7 @@
     "sdslot": 1,
     "simcards": 2,
     "notch": 0,
-    "waterproof": "0",
+    "waterproof": 0,
     "headphonejack": 1,
     "types": {
       "de": [
@@ -274,6 +274,136 @@
     }
   },
   {
+    "name": "Redmi Note 7 (32GB)",
+    "brand": "Xiamoi",
+    "released": "2019-01",
+    "imagelink": "xiaominote7",
+    "design": 5,
+    "display": 6.3,
+    "length": 159,
+    "width": 75,
+    "processor": 4,
+    "updates": 2,
+    "camera": 4,
+    "battery": 5,
+    "batterysize": 4000,
+    "storage": 32,
+    "memory": 3,
+    "sdslot": 1,
+    "simcards": 2,
+    "notch": 2,
+    "waterproof": 0,
+    "headphonejack": 1,
+    "types": {
+      "de": [
+        {
+          "name": "space black",
+          "asin": "B07PKWHSK6",
+          "price": 174,
+          "link": "https://www.amazon.de/Xiaomi-Globale-Version-englisches-Handbuch-Black/dp/B07CZS8W5Y?psc=1&SubscriptionId=AKIAJCAFA7ECZQ5XGTGQ&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07CZS8W5Y",
+          "lastUpdated": "03.06.2019 18:31:25"
+        },
+        {
+          "name": "twilight gold",
+          "asin": "B07PDSJ2QZ",
+          "price": 171,
+          "link": "https://www.amazon.de/Xiaomi-Redmi-Note-64GB-Handy-Gold/dp/B07CZS7T17?psc=1&SubscriptionId=AKIAJCAFA7ECZQ5XGTGQ&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07CZS7T17",
+          "lastUpdated": "03.06.2019 18:31:26"
+        }
+      ],
+      "com": []
+    }
+  },
+  {
+    "name": "Redmi Note 7 (64GB)",
+    "brand": "Xiamoi",
+    "released": "2019-01",
+    "imagelink": "xiaominote7",
+    "design": 5,
+    "display": 6.3,
+    "length": 159,
+    "width": 75,
+    "processor": 4,
+    "updates": 2,
+    "camera": 4,
+    "battery": 5,
+    "batterysize": 4000,
+    "storage": 64,
+    "memory": 4,
+    "sdslot": 1,
+    "simcards": 2,
+    "notch": 2,
+    "waterproof": 0,
+    "headphonejack": 1,
+    "types": {
+      "de": [
+        {
+          "name": "space black",
+          "asin": "B07P6VP569",
+          "price": 174,
+          "link": "https://www.amazon.de/Xiaomi-Globale-Version-englisches-Handbuch-Black/dp/B07CZS8W5Y?psc=1&SubscriptionId=AKIAJCAFA7ECZQ5XGTGQ&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07CZS8W5Y",
+          "lastUpdated": "03.06.2019 18:31:25"
+        },
+        {
+          "name": "twilight gold",
+          "asin": "B07PFQCW92",
+          "price": 171,
+          "link": "https://www.amazon.de/Xiaomi-Redmi-Note-64GB-Handy-Gold/dp/B07CZS7T17?psc=1&SubscriptionId=AKIAJCAFA7ECZQ5XGTGQ&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07CZS7T17",
+          "lastUpdated": "03.06.2019 18:31:26"
+        },
+        {
+          "name": "neptune blue",
+          "asin": "B07PB8TYCJ",
+          "price": 171,
+          "link": "https://www.amazon.de/Xiaomi-Redmi-Note-64GB-Handy-Gold/dp/B07CZS7T17?psc=1&SubscriptionId=AKIAJCAFA7ECZQ5XGTGQ&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07CZS7T17",
+          "lastUpdated": "03.06.2019 18:31:26"
+        }
+      ],
+      "com": []
+    }
+  },
+  {
+    "name": "Redmi Note 7 (128GB)",
+    "brand": "Xiamoi",
+    "released": "2019-01",
+    "imagelink": "xiaominote7",
+    "design": 5,
+    "display": 6.3,
+    "length": 159,
+    "width": 75,
+    "processor": 4,
+    "updates": 2,
+    "camera": 4,
+    "battery": 5,
+    "batterysize": 4000,
+    "storage": 128,
+    "memory": 4,
+    "sdslot": 1,
+    "simcards": 2,
+    "notch": 2,
+    "waterproof": 0,
+    "headphonejack": 1,
+    "types": {
+      "de": [
+        {
+          "name": "space black",
+          "asin": "B07PGVWHYZ",
+          "price": 174,
+          "link": "https://www.amazon.de/Xiaomi-Globale-Version-englisches-Handbuch-Black/dp/B07CZS8W5Y?psc=1&SubscriptionId=AKIAJCAFA7ECZQ5XGTGQ&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07CZS8W5Y",
+          "lastUpdated": "03.06.2019 18:31:25"
+        },
+        {
+          "name": "neptune blue",
+          "asin": "B07PDSKDCX",
+          "price": 171,
+          "link": "https://www.amazon.de/Xiaomi-Redmi-Note-64GB-Handy-Gold/dp/B07CZS7T17?psc=1&SubscriptionId=AKIAJCAFA7ECZQ5XGTGQ&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07CZS7T17",
+          "lastUpdated": "03.06.2019 18:31:26"
+        }
+      ],
+      "com": []
+    }
+  },
+  {
     "name": "Mi A1",
     "brand": "Xiamoi",
     "released": "2017-09",
@@ -292,7 +422,7 @@
     "sdslot": 1,
     "simcards": 2,
     "notch": 0,
-    "waterproof": "0",
+    "waterproof": 0,
     "headphonejack": 1,
     "types": {
       "de": [
@@ -347,7 +477,7 @@
     "sdslot": 0,
     "simcards": 2,
     "notch": 0,
-    "waterproof": "0",
+    "waterproof": 0,
     "headphonejack": 0,
     "types": {
       "de": [
@@ -395,7 +525,7 @@
     "sdslot": 0,
     "simcards": 2,
     "notch": 0,
-    "waterproof": "0",
+    "waterproof": 0,
     "headphonejack": 0,
     "types": {
       "de": [
@@ -436,7 +566,7 @@
     "sdslot": 0,
     "simcards": 2,
     "notch": 0,
-    "waterproof": "0",
+    "waterproof": 0,
     "headphonejack": 0,
     "types": {
       "de": [
@@ -470,7 +600,7 @@
     "sdslot": 1,
     "simcards": 2,
     "notch": 0,
-    "waterproof": "0",
+    "waterproof": 0,
     "headphonejack": 1,
     "types": {
       "de": [
@@ -525,7 +655,7 @@
     "sdslot": 1,
     "simcards": 2,
     "notch": 0,
-    "waterproof": "0",
+    "waterproof": 0,
     "headphonejack": 1,
     "types": {
       "de": [
@@ -573,7 +703,7 @@
     "sdslot": 1,
     "simcards": 2,
     "notch": 1,
-    "waterproof": "0",
+    "waterproof": 0,
     "headphonejack": 1,
     "types": {
       "de": [
@@ -614,7 +744,7 @@
     "sdslot": 1,
     "simcards": 2,
     "notch": 1,
-    "waterproof": "0",
+    "waterproof": 0,
     "headphonejack": 1,
     "types": {
       "de": [
@@ -1129,7 +1259,7 @@
     "sdslot": 0,
     "simcards": 2,
     "notch": 0,
-    "waterproof": "0",
+    "waterproof": 0,
     "headphonejack": 1,
     "types": {
       "de": [
@@ -1163,7 +1293,7 @@
     "sdslot": 0,
     "simcards": 2,
     "notch": 0,
-    "waterproof": "0",
+    "waterproof": 0,
     "headphonejack": 1,
     "types": {
       "de": [
@@ -1204,7 +1334,7 @@
     "sdslot": 0,
     "simcards": 2,
     "notch": 1,
-    "waterproof": "0",
+    "waterproof": 0,
     "headphonejack": 1,
     "types": {
       "de": [
@@ -1238,7 +1368,7 @@
     "sdslot": 0,
     "simcards": 2,
     "notch": 1,
-    "waterproof": "0",
+    "waterproof": 0,
     "headphonejack": 1,
     "types": {
       "de": [
@@ -1286,7 +1416,7 @@
     "sdslot": 0,
     "simcards": 2,
     "notch": 1,
-    "waterproof": "0",
+    "waterproof": 0,
     "headphonejack": 0,
     "types": {
       "de": [
@@ -1320,7 +1450,7 @@
     "sdslot": 0,
     "simcards": 2,
     "notch": 1,
-    "waterproof": "0",
+    "waterproof": 0,
     "headphonejack": 0,
     "types": {
       "de": [
@@ -1363,12 +1493,12 @@
     "camera": 5,
     "battery": 4,
     "batterysize": 3700,
-    "storage": 128,
-    "memory": 6,
+    "storage": 256,
+    "memory": 8,
     "sdslot": 0,
     "simcards": 2,
     "notch": 1,
-    "waterproof": "0",
+    "waterproof": 0,
     "headphonejack": 0,
     "types": {
       "de": [
@@ -1378,6 +1508,115 @@
           "price": 577,
           "link": "https://www.amazon.de/OnePlus-256GB-Smartphone-Midnight-Black/dp/B07HFF2254?psc=1&SubscriptionId=AKIAJCAFA7ECZQ5XGTGQ&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07HFF2254",
           "lastUpdated": "03.06.2019 19:01:09"
+        }
+      ],
+      "com": []
+    }
+  },
+  {
+    "name": "7 (8GB + 256GB)",
+    "brand": "OnePlus",
+    "released": "2019-06",
+    "imagelink": "oneplus7",
+    "design": 4,
+    "display": 6.4,
+    "length": 158,
+    "width": 75,
+    "processor": 5,
+    "updates": 4,
+    "camera": 5,
+    "battery": 4,
+    "batterysize": 3700,
+    "storage": 256,
+    "memory": 8,
+    "sdslot": 0,
+    "simcards": 2,
+    "notch": 2,
+    "waterproof": 4,
+    "headphonejack": 0,
+    "types": {
+      "de": [
+        {
+          "name": "mirror gray",
+          "asin": "B07RDWX931",
+          "price": 609,
+          "link": "https://www.amazon.de/Oneplus-Mirror-Gray-256Gb-GM1903-Grau/dp/B07RDWX931/ref=sr_1_3?psc=1&SubscriptionId=AKIAJCAFA7ECZQ5XGTGQ&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07NWTJ1MJ",
+          "lastUpdated": "03.02.2019 21:00:57"
+        }
+      ],
+      "com": []
+    }
+  },
+  {
+    "name": "7 Pro (8GB + 256GB)",
+    "brand": "OnePlus",
+    "released": "2019-05",
+    "imagelink": "oneplus7pro",
+    "design": 5,
+    "display": 6.67,
+    "length": 163,
+    "width": 76,
+    "processor": 5,
+    "updates": 4,
+    "camera": 5,
+    "battery": 4,
+    "batterysize": 4000,
+    "storage": 256,
+    "memory": 8,
+    "sdslot": 0,
+    "simcards": 2,
+    "notch": 3,
+    "waterproof": 4,
+    "headphonejack": 0,
+    "types": {
+      "de": [
+        {
+          "name": "mirror gray",
+          "asin": "B07R97WZJ9",
+          "price": 759,
+          "link": "https://www.amazon.de/Oneplus-Mirror-Gray-256Gb-GM1903-Grau/dp/B07RDWX931/ref=sr_1_3?psc=1&SubscriptionId=AKIAJCAFA7ECZQ5XGTGQ&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07NWTJ1MJ",
+          "lastUpdated": "03.02.2019 21:00:57"
+        },
+        {
+          "name": "almond",
+          "asin": "B07RWL3K1Y",
+          "price": 759,
+          "link": "https://www.amazon.de/Oneplus-Mirror-Gray-256Gb-GM1903-Grau/dp/B07RDWX931/ref=sr_1_3?psc=1&SubscriptionId=AKIAJCAFA7ECZQ5XGTGQ&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07NWTJ1MJ",
+          "lastUpdated": "03.02.2019 21:00:57"
+        }
+      ],
+      "com": []
+    }
+  },
+  {
+    "name": "7 Pro (12GB + 256GB)",
+    "brand": "OnePlus",
+    "released": "2019-05",
+    "imagelink": "oneplus7pro",
+    "design": 5,
+    "display": 6.67,
+    "length": 163,
+    "width": 76,
+    "processor": 5,
+    "updates": 4,
+    "camera": 5,
+    "battery": 4,
+    "batterysize": 4000,
+    "storage": 256,
+    "memory": 12,
+    "sdslot": 0,
+    "simcards": 2,
+    "notch": 3,
+    "waterproof": 4,
+    "headphonejack": 0,
+    "types": {
+      "de": [
+        {
+          "name": "nebula blue",
+          "asin": "B07R844533",
+          "price": 829,
+          "link": "https://www.amazon.de/Oneplus-Mirror-Gray-256Gb-GM1903-Grau/dp/B07RDWX931/ref=sr_1_3?psc=1&SubscriptionId=AKIAJCAFA7ECZQ5XGTGQ&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07NWTJ1MJ",
+          "lastUpdated": "03.02.2019 21:00:57"
         }
       ],
       "com": []
@@ -1402,7 +1641,7 @@
     "sdslot": 1,
     "simcards": 2,
     "notch": 0,
-    "waterproof": "0",
+    "waterproof": 0,
     "headphonejack": 1,
     "types": {
       "de": [
@@ -1457,7 +1696,7 @@
     "sdslot": 0,
     "simcards": 2,
     "notch": 1,
-    "waterproof": "0",
+    "waterproof": 0,
     "headphonejack": 1,
     "types": {
       "de": [
@@ -1594,7 +1833,7 @@
     "sdslot": 1,
     "simcards": 2,
     "notch": 1,
-    "waterproof": "0",
+    "waterproof": 0,
     "headphonejack": 1,
     "types": {
       "de": [
@@ -1697,7 +1936,7 @@
     "sdslot": 0,
     "simcards": 1,
     "notch": 1,
-    "waterproof": "0",
+    "waterproof": 0,
     "headphonejack": 0,
     "types": {
       "de": [
@@ -2532,7 +2771,7 @@
     "sdslot": 1,
     "simcards": 2,
     "notch": 0,
-    "waterproof": "0",
+    "waterproof": 0,
     "headphonejack": 1,
     "types": {
       "de": [
@@ -2587,7 +2826,7 @@
     "sdslot": 1,
     "simcards": 2,
     "notch": 0,
-    "waterproof": "0",
+    "waterproof": 0,
     "headphonejack": 1,
     "types": {
       "de": [
