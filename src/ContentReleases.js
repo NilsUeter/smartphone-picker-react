@@ -26,14 +26,9 @@ class ContentReleases extends Component {
       <div id="content" className="content">
         <div className="smartphones-releases">
           {monthArray.map(month => (
-            <div
-              key={month}
-              className="smartphones-releases-container display-flex"
-            >
+            <div key={month} className="smartphones-releases-container">
               <div className="smartphones-releases-month">
-                {month.getMonth() === 0 // if month is january show year
-                  ? month.getFullYear() + "-" + month.getMonth() + 1
-                  : month.getMonth() + 1}
+                {month.getMonth() + 1 + "-" + month.getFullYear()}
               </div>
               <div className="smartphones-in-month display-flex">
                 {SmartphoneStore.listOfFilteredAndScoredObjects
