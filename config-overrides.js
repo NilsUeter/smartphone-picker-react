@@ -1,16 +1,3 @@
-const { injectBabelPlugin } = require("react-app-rewired");
+const { override, addDecoratorsLegacy } = require("customize-cra");
 
-function rewireMobX(config, env) {
-  config = injectBabelPlugin(
-    ["@babel/plugin-proposal-class-properties", { loose: true }],
-    config
-  );
-  config = injectBabelPlugin(
-    ["@babel/plugin-proposal-decorators", { legacy: true }],
-    config
-  );
-
-  return config;
-}
-
-module.exports = rewireMobX;
+module.exports = override(addDecoratorsLegacy());
