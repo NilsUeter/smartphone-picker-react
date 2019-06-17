@@ -18,7 +18,7 @@
 .darkmode {
   --first-color: #d6d8de;
   --text-color: #a0a0a0;
-  --border-color: #000000;
+  --border-color: #a0a0a0;
   --background-color: #263238;
   --foreground-color: var(--background-color);
   --sidebar-background: #212c31;
@@ -304,6 +304,7 @@ body,
 
 .smartphone {
   margin-left: 16px;
+  margin-bottom: 128px;
   margin-right: 0;
   display: flex;
   flex-direction: column;

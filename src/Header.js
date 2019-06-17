@@ -21,7 +21,7 @@ class Header extends Component {
           <a className="logo-text" href="index.html">
             <span>smartphone-picker</span>
           </a>
-          <div style={{ alignSelf: "end", flex: 1 }}>
+          <div style={{ alignSelf: "flex-end", flex: 1 }}>
             <TextSelect
               name="country"
               options={[["de", "GERMANY"]]}
