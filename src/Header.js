@@ -32,7 +32,7 @@ class Header extends Component {
             name="lightmode"
             icon={
               <svg
-                class="nightmode-switch"
+                className="nightmode-switch"
                 viewBox="0 0 1000 1000"
                 height="28px"
               >
@@ -45,7 +45,7 @@ class Header extends Component {
           />
         </div>
         <div className="main-menu">
-          <div className="navdiv display-flex">
+          <div className="navdiv flex">
             <TemplateDropDown
               summary="Smartphones"
               details={[

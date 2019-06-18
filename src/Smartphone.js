@@ -3,7 +3,6 @@ import React, { Component } from "react";
 import FilterStore from "./FilterStore";
 import SmartphoneStore from "./SmartphoneStore";
 import amazonIcon from "./images/Amazon-Favicon-64x64.png";
-import sdStorage from "./images/sd_storage.png";
 import chargingBattery from "./images/charging-battery.png";
 import { observer } from "mobx-react";
 
@@ -57,7 +56,7 @@ class Smartphone extends Component {
 
   render() {
     return (
-      <div key={this.props.smartphone.name} className="smartphone">
+      <div className="smartphone">
         <div className="smartphone-filtercriteria">
           {SmartphoneStore.getAttributeFromSmartphone(
             this.props.smartphone,
@@ -111,118 +110,98 @@ class Smartphone extends Component {
           </p>
           {this.props.showDetails && (
             <React.Fragment>
-              <div className="flex">
-                <p className="smartphone-release ">
-                  {this.props.smartphone.released}
-                </p>
-
-                <div className="flex smartphone-price-container">
-                  <p className="smartphone-price">
+              <details className="smartphone-price-details">
+                <summary className="smartphone-price-summary">
+                  <span>
+                    {
+                      this.props.smartphone.types[FilterStore.country][
+                        this.props.smartphone.smallestPrice
+                      ].name
+                    }
+                  </span>
+                  <span>{this.props.smartphone.memory}GB</span>
+                  <span>{this.props.smartphone.storage}GB</span>
+                  <span className="smartphone-price">
                     {
                       this.props.smartphone.types[FilterStore.country][
                         this.props.smartphone.smallestPrice
                       ].price
                     }
                     €
-                  </p>
-                </div>
-              </div>
-              <p className="">&nbsp;</p>
-              <div className="flex">
-                <p className="smartphone-size ">
-                  <span className="highlight-color">
-                    {this.props.smartphone.width +
-                      "*" +
-                      this.props.smartphone.length}{" "}
                   </span>
-                  mm
-                </p>
-                <p className="smartphone-display">
-                  <span className="highlight-color">
-                    {this.props.smartphone.display}
-                  </span>
-                  "
-                </p>
-              </div>
-              <div className="flex">
-                <div className="flex">
-                  <p className="smartphone-memory">
-                    <span className="highlight-color">
-                      {this.props.smartphone.memory}{" "}
-                    </span>
-                    GB RAM
-                  </p>
-                </div>
-                <div className="flex">
-                  <span className="highlight-color">
-                    {this.props.smartphone.storage}{" "}
-                  </span>
-                  GB <img className="icon" alt="" src={sdStorage} />
-                </div>
-              </div>
-              <div className="">
-                <span className="highlight-color">
-                  {this.props.smartphone.batterysize}{" "}
+                </summary>
+              </details>
+              <div className="flexBetween">
+                {" "}
+                <span className="smartphone-release ">
+                  {this.props.smartphone.released}
                 </span>
-                <img className="icon" alt="" src={chargingBattery} />
+                <span>
+                  <span>{this.props.smartphone.batterysize} </span>
+                  <img className="batteryIcon" alt="" src={chargingBattery} />
+                </span>
               </div>
 
-              <p className="">&nbsp;</p>
-              <div className="flex">
-                <p className="">Design</p>
-                <p className="smartphone-design">
-                  {this.props.smartphone.design}
-                </p>
+              <div className="flexBetween">
+                <span>
+                  {this.props.smartphone.width +
+                    "*" +
+                    this.props.smartphone.length +
+                    " mm"}
+                </span>
+                <span>{this.props.smartphone.display + '"'}</span>
               </div>
-              <div className="flex">
-                <p className="">Processor</p>
-                <p className="smartphone-processor ">
-                  {this.props.smartphone.processor}
-                </p>
-              </div>
-              <div className="flex">
-                <p className="">Software</p>
-                <p className="smartphone-updates ">
-                  {this.props.smartphone.updates}
-                </p>
-              </div>
-              <div className="flex">
-                <p className="">Camera</p>
-                <p className="smartphone-camera ">
-                  {this.props.smartphone.camera}
-                </p>
-              </div>
-              <div className="flex">
-                <p className="">Battery</p>
-                <p className="smartphone-battery ">
-                  {this.props.smartphone.battery}
-                </p>
-              </div>
-              <hr className="horizontalRule " />
-              <div className="flex">
-                <p className="">Decay</p>
-                <p className="smartphone-decay ">
-                  -
-                  {Math.round(
-                    SmartphoneStore.monthDiff(
-                      new Date(this.props.smartphone.released),
-                      new Date()
-                    ) *
-                      FilterStore.decayFactor *
-                      10
-                  ) / 10}
-                </p>
-              </div>
-              <p className="smartphone-totalscore">
-                {this.props.smartphone.totalscore > 0 ? (
-                  this.props.smartphone.totalscore
-                ) : (
-                  <span style={{ color: "var(--bad-color)" }}>
-                    {this.props.smartphone.totalscore}
-                  </span>
-                )}
-              </p>
+              <div className="flexBetween" />
 
+              <details className="smartphone-totalscore">
+                <summary>
+                  {this.props.smartphone.totalscore > 0 ? (
+                    <span style={{ color: "var(--highlight-color)" }}>
+                      {this.props.smartphone.totalscore} Points
+                    </span>
+                  ) : (
+                    <span style={{ color: "var(--bad-color)" }}>
+                      {this.props.smartphone.totalscore} Points
+                    </span>
+                  )}
+                </summary>
+
+                <div className="flexBetween">
+                  <p className="">Design</p>
+                  <p>{this.props.smartphone.design}</p>
+                </div>
+                <div className="flexBetween">
+                  <p className="">Processor</p>
+                  <p>{this.props.smartphone.processor}</p>
+                </div>
+                <div className="flexBetween">
+                  <p className="">Software</p>
+                  <p>{this.props.smartphone.updates}</p>
+                </div>
+                <div className="flexBetween">
+                  <p className="">Camera</p>
+                  <p>{this.props.smartphone.camera}</p>
+                </div>
+                <div className="flexBetween">
+                  <p className="">Battery</p>
+                  <p>{this.props.smartphone.battery}</p>
+                </div>
+                <hr className="horizontalRule " />
+                <div className="flexBetween">
+                  <p className="">Decay</p>
+                  <p className="smartphone-decay ">
+                    -
+                    {Math.round(
+                      SmartphoneStore.monthDiff(
+                        new Date(this.props.smartphone.released),
+                        new Date()
+                      ) *
+                        FilterStore.decayFactor *
+                        10
+                    ) / 10}
+                  </p>
+                </div>
+              </details>
               <div className="wrapper ">
                 <div className="a-button a-button-primary">
                   <a

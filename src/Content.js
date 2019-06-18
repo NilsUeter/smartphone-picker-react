@@ -13,7 +13,12 @@ class Content extends Component {
         <div id="smartphones" className="smartphones">
           {SmartphoneStore.listOfFilteredAndScoredObjects.map(smartphone => (
             <Smartphone
-              key={smartphone.brand + smartphone.name}
+              key={
+                smartphone.brand +
+                smartphone.name +
+                smartphone.memory +
+                smartphone.storage
+              }
               smartphone={smartphone}
               showDetails={true}
               maxImgHeight={500}

@@ -549,7 +549,7 @@
     "camera": 5,
     "battery": 4,
     "batterysize": 3400,
-    "storage": 64,
+    "storage": 128,
     "memory": 6,
     "sdslot": 0,
     "simcards": 2,
@@ -1059,7 +1059,7 @@
     "camera": 5,
     "battery": 3,
     "batterysize": 2915,
-    "storage": 64,
+    "storage": 128,
     "memory": 4,
     "sdslot": 0,
     "simcards": 1,
@@ -1074,34 +1074,6 @@
           "price": 882,
           "link": "https://www.amazon.de/Google-Pixel-128GB-Black-GA00460-/dp/B07J6RH4ZV?SubscriptionId=AKIAJCAFA7ECZQ5XGTGQ&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07J6RH4ZV",
           "lastUpdated": "03.06.2019 18:46:20"
-        },
-        {
-          "name": "just black",
-          "asin": "B07K35W1NR",
-          "price": 858,
-          "link": "https://www.amazon.de/Google-Pixel-128GB-Negro-G013A-Schwarz/dp/B07K35W1NR?SubscriptionId=AKIAJCAFA7ECZQ5XGTGQ&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07K35W1NR",
-          "lastUpdated": "03.06.2019 18:46:21"
-        },
-        {
-          "name": "just black",
-          "asin": "B07L39KGX5",
-          "price": 0,
-          "link": "https://www.amazon.de/Google-Pixel-128GB-just-Black-Schwarz/dp/B07L39KGX5?SubscriptionId=AKIAJCAFA7ECZQ5XGTGQ&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07L39KGX5",
-          "lastUpdated": "03.06.2019 18:46:23"
-        },
-        {
-          "name": "clearly white",
-          "asin": "B07L6SQBTK",
-          "price": 818,
-          "link": "https://www.amazon.de/Google-Pixel-128GB-Clearly-White-Wei%C3%9F/dp/B07L6SQBTK?SubscriptionId=AKIAJCAFA7ECZQ5XGTGQ&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07L6SQBTK",
-          "lastUpdated": "03.06.2019 18:46:24"
-        },
-        {
-          "name": "clearly white",
-          "asin": "B07J9TD1Y5",
-          "price": 843,
-          "link": "https://www.amazon.de/Google-Pixel-128GB-Clearly-White-Wei%C3%9F/dp/B07J9TD1Y5?SubscriptionId=AKIAJCAFA7ECZQ5XGTGQ&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07J9TD1Y5",
-          "lastUpdated": "03.06.2019 18:46:25"
         }
       ]
     }
@@ -1156,60 +1128,6 @@
           "price": 662,
           "link": "https://www.amazon.de/Google-Pixel-XL-64-Wei%C3%9F/dp/B07JB2M7MK?SubscriptionId=AKIAJCAFA7ECZQ5XGTGQ&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07JB2M7MK",
           "lastUpdated": "03.06.2019 18:46:29"
-        }
-      ]
-    }
-  },
-  {
-    "name": "Pixel 3 XL",
-    "brand": "Google",
-    "released": "2018-11",
-    "imagelink": "pixel3xl",
-    "design": 3,
-    "display": 6.3,
-    "length": 158,
-    "width": 77,
-    "processor": 5,
-    "updates": 5,
-    "camera": 5,
-    "battery": 4,
-    "batterysize": 3430,
-    "storage": 64,
-    "memory": 4,
-    "sdslot": 0,
-    "simcards": 1,
-    "notch": 1,
-    "waterproof": 8,
-    "headphonejack": 0,
-    "types": {
-      "de": [
-        {
-          "name": "not pink",
-          "asin": "B07JBD6CXJ",
-          "price": 652,
-          "link": "https://www.amazon.de/Google-Pixel-64GB-not-pink/dp/B07JBD6CXJ?SubscriptionId=AKIAJCAFA7ECZQ5XGTGQ&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07JBD6CXJ",
-          "lastUpdated": "03.06.2019 18:46:30"
-        },
-        {
-          "name": "not pink",
-          "asin": "B07JBLDDC6",
-          "price": 889,
-          "link": "https://www.amazon.de/Google-Pixel-XL-Not-Pink-Rosa/dp/B07JBLDDC6?SubscriptionId=AKIAJCAFA7ECZQ5XGTGQ&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07JBLDDC6",
-          "lastUpdated": "03.06.2019 18:46:32"
-        },
-        {
-          "name": "just black",
-          "asin": "B07JVLK8WZ",
-          "price": 638,
-          "link": "https://www.amazon.de/Google-Pixel-64GB-Black-99928202-Schwarz/dp/B07JVLK8WZ?SubscriptionId=AKIAJCAFA7ECZQ5XGTGQ&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07JVLK8WZ",
-          "lastUpdated": "03.06.2019 18:46:33"
-        },
-        {
-          "name": "clearly white",
-          "asin": "B07JB2M7MK",
-          "price": 662,
-          "link": "https://www.amazon.de/Google-Pixel-XL-64-Wei%C3%9F/dp/B07JB2M7MK?SubscriptionId=AKIAJCAFA7ECZQ5XGTGQ&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07JB2M7MK",
-          "lastUpdated": "03.06.2019 18:46:34"
         }
       ]
     }

@@ -94,10 +94,6 @@ body,
   font-display: swap;
 }
 
-.display-flex {
-  display: flex;
-}
-
 .react-head {
   display: flex;
   height: 100%;
@@ -502,6 +498,11 @@ radio {
   display: flex;
 }
 
+.flexBetween {
+  display: flex;
+  justify-content: space-between;
+}
+
 .flex-align-center {
   align-items: center;
 }
@@ -597,7 +598,7 @@ textarea:focus {
   padding: 8px 12px;
   border-radius: 8px;
   border: var(--border-color) 2px solid;
-  width: 230px;
+  width: 260px;
   margin-bottom: 8px;
 }
 
@@ -612,26 +613,16 @@ textarea:focus {
   margin-bottom: 0;
 }
 
-.smartphone-details .flex *:first-child {
-  flex: 1;
-}
-
-.smartphone-details p {
-  white-space: nowrap;
-}
-
-.smartphone-price-container {
+.smartphone-price-details {
   border-radius: 8px;
   border: 1px solid var(--border-color);
 }
 
-.smartphone-colorpicker {
-  padding-left: 2px;
-  padding-right: 2px;
-  height: 20px;
-  overflow: hidden;
-  border-right: 1px solid var(--border-color);
-  white-space: nowrap;
+.smartphone-price-summary {
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  padding: 2px;
 }
 
 .smartphone-filtercriteria {
@@ -645,8 +636,7 @@ textarea:focus {
 .smartphone-name {
   font-weight: 600;
   margin-bottom: 8px;
-  text-align: center;
-  color: var(--first-color);
+  color: var(--text-color);
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -659,17 +649,6 @@ textarea:focus {
 .smartphone-price {
   color: var(--highlight-color);
   font-weight: bold;
-  padding-left: 5px;
-  padding-right: 5px;
-}
-
-.smartphone-design,
-.smartphone-processor,
-.smartphone-updates,
-.smartphone-camera,
-.smartphone-battery {
-  color: var(--highlight-color);
-  font-weight: bold;
 }
 
 .smartphone-decay {
@@ -680,7 +659,7 @@ textarea:focus {
 .smartphone-totalscore {
   font-weight: bold;
   text-align: right;
-  color: var(--highlight-color);
+  margin-bottom: 8px;
 }
 
 .highlight-color {
@@ -697,8 +676,8 @@ textarea:focus {
   border-top: 2px solid var(--border-color);
 }
 
-.icon {
-  max-height: 15px;
+.batteryIcon {
+  max-height: 12px;
   display: inline-block;
 }
 
