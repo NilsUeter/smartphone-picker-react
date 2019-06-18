@@ -4,6 +4,7 @@
   --bad-color: #d22a2a;
   --just-black: #263238;
   --just-white: #fff;
+  --just-yellow: #f5a80b;
 }
 
 .lightmode {
@@ -501,9 +502,6 @@ radio {
 .flexBetween {
   display: flex;
   justify-content: space-between;
-}
-
-.flex-align-center {
   align-items: center;
 }
 
@@ -590,7 +588,7 @@ textarea:focus {
 }
 
 .smartphone-details {
-  font-size: 16px;
+  font-size: 14px;
   letter-spacing: 0.1px;
   line-height: 1.3;
   background-color: var(--foreground-color);
@@ -599,30 +597,19 @@ textarea:focus {
   border-radius: 8px;
   border: var(--border-color) 2px solid;
   width: 260px;
-  margin-bottom: 8px;
-}
-
-.smartphone-details--hidden {
-  font-size: 11px;
-  max-width: 128px;
-  padding: 8px 4px;
-}
-
-.smartphone-details--hidden .smartphone-name {
-  max-width: 128px;
-  margin-bottom: 0;
 }
 
 .smartphone-price-details {
   border-radius: 8px;
   border: 1px solid var(--border-color);
+  margin-bottom: 8px;
 }
 
 .smartphone-price-summary {
   justify-content: space-between;
   display: flex;
   align-items: center;
-  padding: 2px;
+  padding: 4px;
 }
 
 .smartphone-filtercriteria {
@@ -634,12 +621,20 @@ textarea:focus {
 }
 
 .smartphone-name {
+  font-size: 18px;
   font-weight: 600;
-  margin-bottom: 8px;
   color: var(--text-color);
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+
+.smartphone-fav-star {
+  fill: var(--border-color);
+}
+
+.smartphone-fav-star:hover {
+  fill: var(--just-yellow);
 }
 
 .smartphone-release {
@@ -649,6 +644,7 @@ textarea:focus {
 .smartphone-price {
   color: var(--highlight-color);
   font-weight: bold;
+  font-size: 18px;
 }
 
 .smartphone-decay {
@@ -657,7 +653,6 @@ textarea:focus {
 }
 
 .smartphone-totalscore {
-  font-weight: bold;
   text-align: right;
   margin-bottom: 8px;
 }

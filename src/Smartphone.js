@@ -3,7 +3,6 @@ import React, { Component } from "react";
 import FilterStore from "./FilterStore";
 import SmartphoneStore from "./SmartphoneStore";
 import amazonIcon from "./images/Amazon-Favicon-64x64.png";
-import chargingBattery from "./images/charging-battery.png";
 import { observer } from "mobx-react";
 
 @observer
@@ -105,22 +104,42 @@ class Smartphone extends Component {
               : "smartphone-details smartphone-details--hidden"
           }
         >
-          <p className="smartphone-name " title={this.props.smartphone.name}>
-            {this.props.smartphone.brand + " " + this.props.smartphone.name}
-          </p>
+          <div className="flexBetween" style={{ marginBottom: 8 }}>
+            <span
+              className="smartphone-name "
+              title={this.props.smartphone.name}
+            >
+              {this.props.smartphone.brand + " " + this.props.smartphone.name}
+            </span>
+            <svg
+              viewBox="0 0 940 940"
+              height="18px"
+              className="smartphone-fav-star "
+            >
+              <path
+                d="M885.344,319.071l-258-3.8l-102.7-264.399c-19.8-48.801-88.899-48.801-108.6,0l-102.7,264.399l-258,3.8
+		c-53.4,3.101-75.1,70.2-33.7,103.9l209.2,181.4l-71.3,247.7c-14,50.899,41.1,92.899,86.5,65.899l224.3-122.7l224.3,122.601
+		c45.4,27,100.5-15,86.5-65.9l-71.3-247.7l209.2-181.399C960.443,389.172,938.744,322.071,885.344,319.071z"
+              />
+            </svg>
+          </div>
           {this.props.showDetails && (
             <React.Fragment>
               <details className="smartphone-price-details">
                 <summary className="smartphone-price-summary">
-                  <span>
-                    {
-                      this.props.smartphone.types[FilterStore.country][
-                        this.props.smartphone.smallestPrice
-                      ].name
-                    }
-                  </span>
-                  <span>{this.props.smartphone.memory}GB</span>
-                  <span>{this.props.smartphone.storage}GB</span>
+                  <div style={{ flex: 1 }}>
+                    <span style={{ marginRight: 8 }}>
+                      {
+                        this.props.smartphone.types[FilterStore.country][
+                          this.props.smartphone.smallestPrice
+                        ].name
+                      }
+                    </span>
+                    <span style={{ marginRight: 8 }}>
+                      {this.props.smartphone.memory}GB
+                    </span>
+                    <span>{this.props.smartphone.storage}GB</span>
+                  </div>
                   <span className="smartphone-price">
                     {
                       this.props.smartphone.types[FilterStore.country][
@@ -132,17 +151,9 @@ class Smartphone extends Component {
                 </summary>
               </details>
               <div className="flexBetween">
-                {" "}
                 <span className="smartphone-release ">
                   {this.props.smartphone.released}
                 </span>
-                <span>
-                  <span>{this.props.smartphone.batterysize} </span>
-                  <img className="batteryIcon" alt="" src={chargingBattery} />
-                </span>
-              </div>
-
-              <div className="flexBetween">
                 <span>
                   {this.props.smartphone.width +
                     "*" +
@@ -151,10 +162,16 @@ class Smartphone extends Component {
                 </span>
                 <span>{this.props.smartphone.display + '"'}</span>
               </div>
+
+              <div className="flexBetween">
+                <span>
+                  <span>{this.props.smartphone.batterysize}mAh</span>
+                </span>
+              </div>
               <div className="flexBetween" />
 
               <details className="smartphone-totalscore">
-                <summary>
+                <summary style={{ padding: 2 }}>
                   {this.props.smartphone.totalscore > 0 ? (
                     <span style={{ color: "var(--highlight-color)" }}>
                       {this.props.smartphone.totalscore} Points
