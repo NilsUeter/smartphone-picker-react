@@ -153,28 +153,37 @@ class SmartphoneStore {
         continue;
       }
 
-      for (let t = 0; t < obj[i].types.length; t++) {
-        //storage
-        if (FilterStore.storage !== "") {
-          if (obj[i].types[t].storage < FilterStore.storage) {
-            obj[i].types.splice(i, 1);
-            continue;
-          }
-        }
+      //storage
+      obj[i].types = obj[i].types.filter(
+        type => type.storage >= FilterStore.storage
+      );
 
+      for (let t = 0; t < obj[i].types.length; t++) {
         for (let c = 0; c < obj[i].types[t].colors.length; c++) {
           //price
           if (
+            obj[i].types[t].colors[c].price === 0 ||
             FilterStore.price_minimum_1 > obj[i].types[t].colors[c].price ||
             FilterStore.price_maximum_1 < obj[i].types[t].colors[c].price
           ) {
-            continue;
+            if (obj[i].types[t].colors.length === 1) {
+              obj[i].types.splice(t, 1);
+              t--;
+              break;
+            } else {
+              obj[i].types[t].colors.splice(c, 1);
+              c--;
+            }
           }
         }
       }
+
+      if (obj[i].types.length < 1) {
+        continue;
+      }
+
       //calculate score new
       obj[i].totalscore = this.calculateScore(obj[i]);
-
       listOfFilteredObjects.push(obj[i]);
     }
     return listOfFilteredObjects;

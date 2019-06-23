@@ -604,6 +604,8 @@ textarea:focus {
   border: 1px solid var(--border-color);
   margin-bottom: 8px;
   width: 100%;
+  font-size: 14px;
+  padding: 2px 0;
 }
 
 .smartphone-price-item {
