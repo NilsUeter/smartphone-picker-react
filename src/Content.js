@@ -20,7 +20,6 @@ class Content extends Component {
                 smartphone.storage
               }
               smartphone={smartphone}
-              showDetails={true}
               maxImgHeight={500}
               filterStore={FilterStore}
             />

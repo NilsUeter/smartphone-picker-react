@@ -13,38 +13,12 @@ class SmartphoneStore {
   @action
   init = responseText => {
     this.obj = responseText;
-    this.findLowestPriceForAllSmartphones();
   };
 
   loadJSON = () => {
     fetch("./data/smartphoneData.json")
       .then(r => r.json())
       .then(data => this.init(data));
-  };
-
-  @action
-  findLowestPriceForAllSmartphones = () => {
-    for (let i = 0; i < this.obj.length; i++) {
-      this.obj[i].smallestPrice = this.findLowestPriceForOneSmartphones(
-        this.obj[i]
-      );
-    }
-  };
-
-  findLowestPriceForOneSmartphones = smartphone => {
-    let lowest = 0;
-    for (let i = 1; i < smartphone.types[FilterStore.country].length; i++) {
-      if (
-        smartphone.types[FilterStore.country][i].price <
-          smartphone.types[FilterStore.country][lowest].price &&
-        smartphone.types[FilterStore.country][i].price !== 0
-      ) {
-        lowest = i;
-      } else if (smartphone.types[FilterStore.country][lowest].price === 0) {
-        lowest = i;
-      }
-    }
-    return lowest;
   };
 
   calculateScore(smartphone) {
@@ -79,13 +53,6 @@ class SmartphoneStore {
       return listOfFilteredObjects;
     }
     for (let i = 0; i < obj.length; i++) {
-      if (
-        obj[i].types[FilterStore.country][obj[i].smallestPrice].price == null ||
-        obj[i].types[FilterStore.country][obj[i].smallestPrice].price === 0
-      ) {
-        continue;
-      }
-
       //searchQuery
       if (FilterStore.searchQuery !== "") {
         const lowerCaseName = (obj[i].brand + " " + obj[i].name).toLowerCase();
@@ -98,16 +65,6 @@ class SmartphoneStore {
       if (
         FilterStore.release_minimum > obj[i].released ||
         FilterStore.release_maximum < obj[i].released
-      ) {
-        continue;
-      }
-
-      //price
-      if (
-        FilterStore.price_minimum_1 >
-          obj[i].types[FilterStore.country][obj[i].smallestPrice].price ||
-        FilterStore.price_maximum_1 <
-          obj[i].types[FilterStore.country][obj[i].smallestPrice].price
       ) {
         continue;
       }
@@ -162,12 +119,6 @@ class SmartphoneStore {
       }
 
       //storage
-      if (FilterStore.storage !== "") {
-        if (obj[i].storage < FilterStore.storage) {
-          continue;
-        }
-      }
-      //storage
       if (FilterStore.waterproof !== "") {
         if (obj[i].waterproof < FilterStore.waterproof) {
           continue;
@@ -202,6 +153,25 @@ class SmartphoneStore {
         continue;
       }
 
+      for (let t = 0; t < obj[i].types.length; t++) {
+        //storage
+        if (FilterStore.storage !== "") {
+          if (obj[i].types[t].storage < FilterStore.storage) {
+            obj[i].types.splice(i, 1);
+            continue;
+          }
+        }
+
+        for (let c = 0; c < obj[i].types[t].colors.length; c++) {
+          //price
+          if (
+            FilterStore.price_minimum_1 > obj[i].types[t].colors[c].price ||
+            FilterStore.price_maximum_1 < obj[i].types[t].colors[c].price
+          ) {
+            continue;
+          }
+        }
+      }
       //calculate score new
       obj[i].totalscore = this.calculateScore(obj[i]);
 
@@ -266,20 +236,16 @@ class SmartphoneStore {
 
   compareFunctionLowest(a, b, type) {
     return FilterStore.isDescending
-      ? b.types[FilterStore.country][b.smallestPrice][type] -
-          a.types[FilterStore.country][a.smallestPrice][type]
-      : a.types[FilterStore.country][a.smallestPrice][type] -
-          b.types[FilterStore.country][b.smallestPrice][type];
+      ? b.types.colors[b.smallestPrice][type] -
+          a.types.colors[a.smallestPrice][type]
+      : a.types.colors[a.smallestPrice][type] -
+          b.types.colors[b.smallestPrice][type];
   }
 
   getAttributeFromSmartphone = (smartphone, type) => {
     switch (type) {
       case "price":
-        return (
-          smartphone.types[FilterStore.country][smartphone.smallestPrice][
-            type
-          ] + "€"
-        );
+        return smartphone.types.colors[smartphone.smallestPrice][type] + "€";
       case "length":
       case "width":
         return smartphone[type] + "mm";

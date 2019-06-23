@@ -11,6 +11,7 @@ class Smartphone extends Component {
   imageContainerHeight;
   constructor(props) {
     super(props);
+    this.state = { selectedType: 0, selectedColor: 0 };
     let size = 450;
 
     const height = Math.max(
@@ -36,22 +37,6 @@ class Smartphone extends Component {
         ")";
     }
   }
-
-  getSmartphoneColorAbbreviation = () => {
-    let abbreviation = "";
-    const name = this.props.smartphone.types[FilterStore.country][
-      this.props.smartphone.smallestPrice
-    ].name;
-
-    if (name.includes(" ")) {
-      const index = name.indexOf(" ");
-      abbreviation = name.split("")[0] + name.split("")[index + 1];
-    } else {
-      abbreviation = name.split("")[0];
-    }
-
-    return abbreviation.toUpperCase();
-  };
 
   render() {
     return (
@@ -97,13 +82,7 @@ class Smartphone extends Component {
           )}
         </div>
 
-        <div
-          className={
-            this.props.showDetails
-              ? "smartphone-details"
-              : "smartphone-details smartphone-details--hidden"
-          }
-        >
+        <div className="smartphone-details">
           <div className="flexBetween" style={{ marginBottom: 8 }}>
             <span
               className="smartphone-name "
@@ -123,132 +102,140 @@ class Smartphone extends Component {
               />
             </svg>
           </div>
-          {this.props.showDetails && (
-            <React.Fragment>
-              <details className="smartphone-price-details">
-                <summary className="smartphone-price-summary">
-                  <div style={{ flex: 1 }}>
-                    <span style={{ marginRight: 8 }}>
-                      {
-                        this.props.smartphone.types[FilterStore.country][
-                          this.props.smartphone.smallestPrice
-                        ].name
-                      }
-                    </span>
-                    <span style={{ marginRight: 8 }}>
-                      {this.props.smartphone.memory}GB
-                    </span>
-                    <span>{this.props.smartphone.storage}GB</span>
-                  </div>
-                  <span className="smartphone-price">
-                    {
-                      this.props.smartphone.types[FilterStore.country][
-                        this.props.smartphone.smallestPrice
-                      ].price
-                    }
-                    €
-                  </span>
-                </summary>
-              </details>
-              <div className="flexBetween">
-                <span className="smartphone-release ">
-                  {this.props.smartphone.released}
-                </span>
-                <span>
-                  {this.props.smartphone.width +
-                    "*" +
-                    this.props.smartphone.length +
-                    " mm"}
-                </span>
-                <span>{this.props.smartphone.display + '"'}</span>
-              </div>
 
-              <div className="flexBetween">
-                <span>
-                  <span>{this.props.smartphone.batterysize}mAh</span>
+          <select
+            className="smartphone-price-details"
+            onChange={e => {
+              this.setState({
+                selectedType: e.target.value.split(":")[0],
+                selectedColor: e.target.value.split(":")[1]
+              });
+            }}
+          >
+            {this.props.smartphone.types.map((type, typeIndex) =>
+              type.colors.map((color, colorIndex) => (
+                <option
+                  value={typeIndex + ":" + colorIndex}
+                  key={color.link}
+                  className="smartphone-price-item"
+                >
+                  {color.name +
+                    " " +
+                    type.memory +
+                    "GB " +
+                    type.storage +
+                    "GB " +
+                    color.price +
+                    "€"}
+                </option>
+              ))
+            )}
+          </select>
+          <div className="flexBetween">
+            <span className="smartphone-release ">
+              {this.props.smartphone.released}
+            </span>
+            <span>
+              {this.props.smartphone.width +
+                "*" +
+                this.props.smartphone.length +
+                " mm"}
+            </span>
+            <span>{this.props.smartphone.display + '"'}</span>
+          </div>
+
+          <div className="flexBetween">
+            <span>
+              <span>{this.props.smartphone.batterysize}mAh</span>
+            </span>
+          </div>
+          <div className="flexBetween" />
+
+          <details className="smartphone-totalscore">
+            <summary style={{ padding: 2 }}>
+              {this.props.smartphone.totalscore > 0 ? (
+                <span style={{ color: "var(--highlight-color)" }}>
+                  {this.props.smartphone.totalscore} Points
                 </span>
-              </div>
-              <div className="flexBetween" />
+              ) : (
+                <span style={{ color: "var(--bad-color)" }}>
+                  {this.props.smartphone.totalscore} Points
+                </span>
+              )}
+            </summary>
 
-              <details className="smartphone-totalscore">
-                <summary style={{ padding: 2 }}>
-                  {this.props.smartphone.totalscore > 0 ? (
-                    <span style={{ color: "var(--highlight-color)" }}>
-                      {this.props.smartphone.totalscore} Points
-                    </span>
-                  ) : (
-                    <span style={{ color: "var(--bad-color)" }}>
-                      {this.props.smartphone.totalscore} Points
-                    </span>
-                  )}
-                </summary>
-
-                <div className="flexBetween">
-                  <p className="">Design</p>
-                  <p>{this.props.smartphone.design}</p>
-                </div>
-                <div className="flexBetween">
-                  <p className="">Processor</p>
-                  <p>{this.props.smartphone.processor}</p>
-                </div>
-                <div className="flexBetween">
-                  <p className="">Software</p>
-                  <p>{this.props.smartphone.updates}</p>
-                </div>
-                <div className="flexBetween">
-                  <p className="">Camera</p>
-                  <p>{this.props.smartphone.camera}</p>
-                </div>
-                <div className="flexBetween">
-                  <p className="">Battery</p>
-                  <p>{this.props.smartphone.battery}</p>
-                </div>
-                <hr className="horizontalRule " />
-                <div className="flexBetween">
-                  <p className="">Decay</p>
-                  <p className="smartphone-decay ">
-                    -
-                    {Math.round(
-                      SmartphoneStore.monthDiff(
-                        new Date(this.props.smartphone.released),
-                        new Date()
-                      ) *
-                        FilterStore.decayFactor *
-                        10
-                    ) / 10}
-                  </p>
-                </div>
-              </details>
-              <div className="wrapper ">
-                <div className="a-button a-button-primary">
-                  <a
-                    className="a-link"
-                    target="_blank"
-                    rel="noreferrer noopener"
-                    href={
-                      this.props.smartphone.types[FilterStore.country][
-                        this.props.smartphone.smallestPrice
-                      ].link
-                    }
-                  >
-                    <span className="a-button-inner">
-                      <img
-                        alt=""
-                        src={amazonIcon}
-                        className="a-icon a-icon-shop-now"
-                      />
-                      <input
-                        className="a-button-input"
-                        type="submit"
-                        value="Add to cart"
-                      />
-                      <span className="a-button-text">Shop Now</span>
-                    </span>
-                  </a>
-                </div>
-              </div>
-            </React.Fragment>
-          )}
+            <div className="flexBetween">
+              <p className="">Design</p>
+              <p>{this.props.smartphone.design}</p>
+            </div>
+            <div className="flexBetween">
+              <p className="">Processor</p>
+              <p>{this.props.smartphone.processor}</p>
+            </div>
+            <div className="flexBetween">
+              <p className="">Software</p>
+              <p>{this.props.smartphone.updates}</p>
+            </div>
+            <div className="flexBetween">
+              <p className="">Camera</p>
+              <p>{this.props.smartphone.camera}</p>
+            </div>
+            <div className="flexBetween">
+              <p className="">Battery</p>
+              <p>{this.props.smartphone.battery}</p>
+            </div>
+            <hr className="horizontalRule " />
+            <div className="flexBetween">
+              <p className="">Decay</p>
+              <p className="smartphone-decay ">
+                -
+                {Math.round(
+                  SmartphoneStore.monthDiff(
+                    new Date(this.props.smartphone.released),
+                    new Date()
+                  ) *
+                    FilterStore.decayFactor *
+                    10
+                ) / 10}
+              </p>
+            </div>
+          </details>
+          <div className="flexBetween">
+            <span className="smartphone-price">
+              {
+                this.props.smartphone.types[this.state.selectedType].colors[
+                  this.state.selectedColor
+                ].price
+              }
+              €
+            </span>
+            <div className="a-button a-button-primary">
+              <a
+                className="a-link"
+                target="_blank"
+                rel="noreferrer noopener"
+                href={
+                  this.props.smartphone.types[this.state.selectedType].colors[
+                    this.state.selectedColor
+                  ].link
+                }
+              >
+                <span className="a-button-inner">
+                  <img
+                    alt=""
+                    src={amazonIcon}
+                    className="a-icon a-icon-shop-now"
+                  />
+                  <input
+                    className="a-button-input"
+                    type="submit"
+                    value="Add to cart"
+                  />
+                  <span className="a-button-text">Shop Now</span>
+                </span>
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     );

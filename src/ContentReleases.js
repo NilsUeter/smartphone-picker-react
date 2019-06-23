@@ -46,7 +46,6 @@ class ContentReleases extends Component {
                       key={smartphone.brand + smartphone.name}
                       smartphone={smartphone}
                       maxImgHeight={180}
-                      showDetails={false}
                       filterStore={FilterStore}
                     />
                   ))}
