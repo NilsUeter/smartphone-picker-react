@@ -30,7 +30,7 @@ class ContentReleases extends Component {
               <div className="smartphones-releases-month">
                 {month.getMonth() + 1 + "-" + month.getFullYear()}
               </div>
-              <div className="smartphones-in-month display-flex">
+              <div className="smartphones-in-month flex">
                 {SmartphoneStore.listOfFilteredAndScoredObjects
                   .filter(
                     smartphone =>
@@ -46,7 +46,6 @@ class ContentReleases extends Component {
                       key={smartphone.brand + smartphone.name}
                       smartphone={smartphone}
                       maxImgHeight={180}
-                      showDetails={false}
                       filterStore={FilterStore}
                     />
                   ))}

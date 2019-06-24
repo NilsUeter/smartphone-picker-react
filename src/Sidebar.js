@@ -120,7 +120,7 @@ class Sidebar extends Component {
     return (
       <React.Fragment>
         <div className="sidebar-status-bar">
-          <div className="flex flex-align-center">
+          <div className="flexBetween">
             <p id="smartphoneCount" className="smartphoneCount">
               {SmartphoneStore.listOfFilteredAndScoredObjects
                 ? SmartphoneStore.listOfFilteredAndScoredObjects.length

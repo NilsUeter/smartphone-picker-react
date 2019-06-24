@@ -3,8 +3,6 @@ import React, { Component } from "react";
 import FilterStore from "./FilterStore";
 import SmartphoneStore from "./SmartphoneStore";
 import amazonIcon from "./images/Amazon-Favicon-64x64.png";
-import sdStorage from "./images/sd_storage.png";
-import chargingBattery from "./images/charging-battery.png";
 import { observer } from "mobx-react";
 
 @observer
@@ -13,6 +11,7 @@ class Smartphone extends Component {
   imageContainerHeight;
   constructor(props) {
     super(props);
+    this.state = { selectedType: 0, selectedColor: 0 };
     let size = 450;
 
     const height = Math.max(
@@ -39,25 +38,9 @@ class Smartphone extends Component {
     }
   }
 
-  getSmartphoneColorAbbreviation = () => {
-    let abbreviation = "";
-    const name = this.props.smartphone.types[FilterStore.country][
-      this.props.smartphone.smallestPrice
-    ].name;
-
-    if (name.includes(" ")) {
-      const index = name.indexOf(" ");
-      abbreviation = name.split("")[0] + name.split("")[index + 1];
-    } else {
-      abbreviation = name.split("")[0];
-    }
-
-    return abbreviation.toUpperCase();
-  };
-
   render() {
     return (
-      <div key={this.props.smartphone.name} className="smartphone">
+      <div className="smartphone">
         <div className="smartphone-filtercriteria">
           {SmartphoneStore.getAttributeFromSmartphone(
             this.props.smartphone,
@@ -99,160 +82,160 @@ class Smartphone extends Component {
           )}
         </div>
 
-        <div
-          className={
-            this.props.showDetails
-              ? "smartphone-details"
-              : "smartphone-details smartphone-details--hidden"
-          }
-        >
-          <p className="smartphone-name " title={this.props.smartphone.name}>
-            {this.props.smartphone.brand + " " + this.props.smartphone.name}
-          </p>
-          {this.props.showDetails && (
-            <React.Fragment>
-              <div className="flex">
-                <p className="smartphone-release ">
-                  {this.props.smartphone.released}
-                </p>
+        <div className="smartphone-details">
+          <div className="flexBetween" style={{ marginBottom: 8 }}>
+            <span
+              className="smartphone-name "
+              title={this.props.smartphone.name}
+            >
+              {this.props.smartphone.brand + " " + this.props.smartphone.name}
+            </span>
+            <svg
+              viewBox="0 0 940 940"
+              height="18px"
+              className="smartphone-fav-star "
+            >
+              <path
+                d="M885.344,319.071l-258-3.8l-102.7-264.399c-19.8-48.801-88.899-48.801-108.6,0l-102.7,264.399l-258,3.8
+		c-53.4,3.101-75.1,70.2-33.7,103.9l209.2,181.4l-71.3,247.7c-14,50.899,41.1,92.899,86.5,65.899l224.3-122.7l224.3,122.601
+		c45.4,27,100.5-15,86.5-65.9l-71.3-247.7l209.2-181.399C960.443,389.172,938.744,322.071,885.344,319.071z"
+              />
+            </svg>
+          </div>
 
-                <div className="flex smartphone-price-container">
-                  <p className="smartphone-price">
-                    {
-                      this.props.smartphone.types[FilterStore.country][
-                        this.props.smartphone.smallestPrice
-                      ].price
-                    }
-                    €
-                  </p>
-                </div>
-              </div>
-              <p className="">&nbsp;</p>
-              <div className="flex">
-                <p className="smartphone-size ">
-                  <span className="highlight-color">
-                    {this.props.smartphone.width +
-                      "*" +
-                      this.props.smartphone.length}{" "}
-                  </span>
-                  mm
-                </p>
-                <p className="smartphone-display">
-                  <span className="highlight-color">
-                    {this.props.smartphone.display}
-                  </span>
-                  "
-                </p>
-              </div>
-              <div className="flex">
-                <div className="flex">
-                  <p className="smartphone-memory">
-                    <span className="highlight-color">
-                      {this.props.smartphone.memory}{" "}
-                    </span>
-                    GB RAM
-                  </p>
-                </div>
-                <div className="flex">
-                  <span className="highlight-color">
-                    {this.props.smartphone.storage}{" "}
-                  </span>
-                  GB <img className="icon" alt="" src={sdStorage} />
-                </div>
-              </div>
-              <div className="">
-                <span className="highlight-color">
-                  {this.props.smartphone.batterysize}{" "}
+          <select
+            className="smartphone-price-details"
+            onChange={e => {
+              this.setState({
+                selectedType: e.target.value.split(":")[0],
+                selectedColor: e.target.value.split(":")[1]
+              });
+            }}
+          >
+            {this.props.smartphone.types.map((type, typeIndex) =>
+              type.colors.map((color, colorIndex) => (
+                <option
+                  value={typeIndex + ":" + colorIndex}
+                  key={color.link}
+                  className="smartphone-price-item"
+                >
+                  {color.name +
+                    " " +
+                    type.memory +
+                    "GB " +
+                    type.storage +
+                    "GB " +
+                    color.price +
+                    "€"}
+                </option>
+              ))
+            )}
+          </select>
+          <div className="flexBetween">
+            <span className="smartphone-release ">
+              {this.props.smartphone.released}
+            </span>
+            <span>
+              {this.props.smartphone.width +
+                "*" +
+                this.props.smartphone.length +
+                " mm"}
+            </span>
+            <span>{this.props.smartphone.display + '"'}</span>
+          </div>
+
+          <div className="flexBetween">
+            <span>
+              <span>{this.props.smartphone.batterysize}mAh</span>
+            </span>
+          </div>
+          <div className="flexBetween" />
+
+          <details className="smartphone-totalscore">
+            <summary style={{ padding: 2 }}>
+              {this.props.smartphone.totalscore > 0 ? (
+                <span style={{ color: "var(--highlight-color)" }}>
+                  {this.props.smartphone.totalscore} Points
                 </span>
-                <img className="icon" alt="" src={chargingBattery} />
-              </div>
+              ) : (
+                <span style={{ color: "var(--bad-color)" }}>
+                  {this.props.smartphone.totalscore} Points
+                </span>
+              )}
+            </summary>
 
-              <p className="">&nbsp;</p>
-              <div className="flex">
-                <p className="">Design</p>
-                <p className="smartphone-design">
-                  {this.props.smartphone.design}
-                </p>
-              </div>
-              <div className="flex">
-                <p className="">Processor</p>
-                <p className="smartphone-processor ">
-                  {this.props.smartphone.processor}
-                </p>
-              </div>
-              <div className="flex">
-                <p className="">Software</p>
-                <p className="smartphone-updates ">
-                  {this.props.smartphone.updates}
-                </p>
-              </div>
-              <div className="flex">
-                <p className="">Camera</p>
-                <p className="smartphone-camera ">
-                  {this.props.smartphone.camera}
-                </p>
-              </div>
-              <div className="flex">
-                <p className="">Battery</p>
-                <p className="smartphone-battery ">
-                  {this.props.smartphone.battery}
-                </p>
-              </div>
-              <hr className="horizontalRule " />
-              <div className="flex">
-                <p className="">Decay</p>
-                <p className="smartphone-decay ">
-                  -
-                  {Math.round(
-                    SmartphoneStore.monthDiff(
-                      new Date(this.props.smartphone.released),
-                      new Date()
-                    ) *
-                      FilterStore.decayFactor *
-                      10
-                  ) / 10}
-                </p>
-              </div>
-              <p className="smartphone-totalscore">
-                {this.props.smartphone.totalscore > 0 ? (
-                  this.props.smartphone.totalscore
-                ) : (
-                  <span style={{ color: "var(--bad-color)" }}>
-                    {this.props.smartphone.totalscore}
-                  </span>
-                )}
+            <div className="flexBetween">
+              <p className="">Design</p>
+              <p>{this.props.smartphone.design}</p>
+            </div>
+            <div className="flexBetween">
+              <p className="">Processor</p>
+              <p>{this.props.smartphone.processor}</p>
+            </div>
+            <div className="flexBetween">
+              <p className="">Software</p>
+              <p>{this.props.smartphone.updates}</p>
+            </div>
+            <div className="flexBetween">
+              <p className="">Camera</p>
+              <p>{this.props.smartphone.camera}</p>
+            </div>
+            <div className="flexBetween">
+              <p className="">Battery</p>
+              <p>{this.props.smartphone.battery}</p>
+            </div>
+            <hr className="horizontalRule " />
+            <div className="flexBetween">
+              <p className="">Decay</p>
+              <p className="smartphone-decay ">
+                -
+                {Math.round(
+                  SmartphoneStore.monthDiff(
+                    new Date(this.props.smartphone.released),
+                    new Date()
+                  ) *
+                    FilterStore.decayFactor *
+                    10
+                ) / 10}
               </p>
-
-              <div className="wrapper ">
-                <div className="a-button a-button-primary">
-                  <a
-                    className="a-link"
-                    target="_blank"
-                    rel="noreferrer noopener"
-                    href={
-                      this.props.smartphone.types[FilterStore.country][
-                        this.props.smartphone.smallestPrice
-                      ].link
-                    }
-                  >
-                    <span className="a-button-inner">
-                      <img
-                        alt=""
-                        src={amazonIcon}
-                        className="a-icon a-icon-shop-now"
-                      />
-                      <input
-                        className="a-button-input"
-                        type="submit"
-                        value="Add to cart"
-                      />
-                      <span className="a-button-text">Shop Now</span>
-                    </span>
-                  </a>
-                </div>
-              </div>
-            </React.Fragment>
-          )}
+            </div>
+          </details>
+          <div className="flexBetween">
+            <span className="smartphone-price">
+              {
+                this.props.smartphone.types[this.state.selectedType].colors[
+                  this.state.selectedColor
+                ].price
+              }
+              €
+            </span>
+            <div className="a-button a-button-primary">
+              <a
+                className="a-link"
+                target="_blank"
+                rel="noreferrer noopener"
+                href={
+                  this.props.smartphone.types[this.state.selectedType].colors[
+                    this.state.selectedColor
+                  ].link
+                }
+              >
+                <span className="a-button-inner">
+                  <img
+                    alt=""
+                    src={amazonIcon}
+                    className="a-icon a-icon-shop-now"
+                  />
+                  <input
+                    className="a-button-input"
+                    type="submit"
+                    value="Add to cart"
+                  />
+                  <span className="a-button-text">Shop Now</span>
+                </span>
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     );
