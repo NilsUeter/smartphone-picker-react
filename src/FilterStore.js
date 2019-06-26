@@ -79,6 +79,8 @@ class FilterStore {
 
   @observable
   selectedFavorites = {};
+  @observable
+  onlyShowFavedPhones = false;
 
   getSidebarHiddenInitialState = () => {
     switch (window.location.pathname) {
@@ -270,7 +272,8 @@ const resetCopy = {
   notch: false,
   waterproof: "",
   selectedBrands: [],
-  selectedFavorites: {}
+  selectedFavorites: {},
+  onlyShowFavedPhones: false
 };
 
 window.addEventListener("popstate", () => filterStore.loadURL(), false);

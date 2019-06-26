@@ -151,7 +151,9 @@ class Sidebar extends Component {
                   ? " sidebar-fav-button--filled"
                   : "")
               }
-              onClick={() => FilterStore.resetFilters()}
+              onClick={() => {
+                FilterStore.toggleAttribute("onlyShowFavedPhones");
+              }}
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
