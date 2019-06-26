@@ -77,6 +77,9 @@ class FilterStore {
   @observable
   selectedBrands = [];
 
+  @observable
+  selectedFavorites = {};
+
   getSidebarHiddenInitialState = () => {
     switch (window.location.pathname) {
       case "/releases":
@@ -115,6 +118,17 @@ class FilterStore {
   };
 
   @action
+  toggleObjectAttribute = (name, newValue) => {
+    if (this[name]) {
+      if (this[name][newValue] == null) {
+        this[name][newValue] = newValue; // add if it doesn't exist
+      } else {
+        delete this[name][newValue]; // remove if it does
+      }
+    }
+  };
+
+  @action
   resetFilters = () => {
     for (let name in this) {
       switch (name) {
@@ -146,6 +160,13 @@ class FilterStore {
         this[key[0]] = key[1].split(",");
         continue;
       }
+      if (key[0] === "selectedFavorites") {
+        const keys = decodeURIComponent(key[1]).split(",");
+        const object = {};
+        keys.forEach(element => (object[element] = element));
+        this[key[0]] = object;
+        continue;
+      }
       this[key[0]] = key[1];
     }
   };
@@ -170,6 +191,13 @@ class FilterStore {
         case "selectedBrands":
           if (this[key] && resetCopy && this[key].length > 0) {
             queryComponents.push(key + "=" + this[key]);
+          }
+          break;
+        case "selectedFavorites":
+          if (this[key] && resetCopy && Object.keys(this[key]).length > 0) {
+            queryComponents.push(
+              key + "=" + encodeURIComponent(Object.keys(this[key]))
+            );
           }
           break;
         default:
@@ -241,7 +269,8 @@ const resetCopy = {
   sdSlot: false,
   notch: false,
   waterproof: "",
-  selectedBrands: []
+  selectedBrands: [],
+  selectedFavorites: {}
 };
 
 window.addEventListener("popstate", () => filterStore.loadURL(), false);

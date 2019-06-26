@@ -142,7 +142,21 @@ body,
   left: 100vw;
 }
 
+.sidebar-fav-button {
+  position: relative;
+  fill: var(--border-color);
+  height: 25px;
+  padding: 2px;
+  border: none;
+  cursor: pointer;
+}
+
+.sidebar-fav-button--filled {
+  fill: var(--just-yellow);
+}
+
 .sidebar-status-buttons {
+  position: relative;
   fill: var(--first-color);
   height: 25px;
   padding: 2px;
@@ -638,10 +652,27 @@ textarea:focus {
 
 .smartphone-fav-star {
   fill: var(--border-color);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
 .smartphone-fav-star:hover {
   fill: var(--just-yellow);
+}
+
+.smartphone-fav-star--clicked {
+  fill: var(--just-yellow);
+}
+
+.fav-sidebar-counter {
+  position: absolute;
+  box-sizing: border-box;
+  background-color: var(--sidebar-background);
+  box-shadow: inset 0 0 2px 0px #595959;
+  border-radius: 100%;
+  height: 18px;
+  padding: 0 4px;
+  left: 14px;
+  top: 12px;
 }
 
 .smartphone-release {

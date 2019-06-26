@@ -93,7 +93,20 @@ class Smartphone extends Component {
             <svg
               viewBox="0 0 940 940"
               height="18px"
-              className="smartphone-fav-star "
+              className={
+                "smartphone-fav-star " +
+                (FilterStore.selectedFavorites[
+                  this.props.smartphone.brand + " " + this.props.smartphone.name
+                ] != null
+                  ? "smartphone-fav-star--clicked"
+                  : "")
+              }
+              onClick={() => {
+                FilterStore.toggleObjectAttribute(
+                  "selectedFavorites",
+                  this.props.smartphone.brand + " " + this.props.smartphone.name
+                );
+              }}
             >
               <path
                 d="M885.344,319.071l-258-3.8l-102.7-264.399c-19.8-48.801-88.899-48.801-108.6,0l-102.7,264.399l-258,3.8
