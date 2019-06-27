@@ -41,47 +41,48 @@ class Smartphone extends Component {
   render() {
     return (
       <div className="smartphone">
-        <div className="smartphone-filtercriteria">
-          {SmartphoneStore.getAttributeFromSmartphone(
-            this.props.smartphone,
-            FilterStore.filterType
-          )}
+        <div>
+          <div className="smartphone-filtercriteria">
+            {SmartphoneStore.getAttributeFromSmartphone(
+              this.props.smartphone,
+              FilterStore.filterType
+            )}
+          </div>
+          <div
+            className="img-container"
+            style={{
+              height: this.imageContainerHeight
+            }}
+          >
+            {FilterStore.scaleInput ? (
+              <img
+                style={{
+                  height: this.smartphoneHeight
+                }}
+                className="qtip-img"
+                src={
+                  FilterStore.emptySmartphones
+                    ? "images/" + this.props.smartphone.imagelink + "_blank.png"
+                    : "images/" + this.props.smartphone.imagelink + ".jpg"
+                }
+                alt=""
+              />
+            ) : (
+              <img
+                style={{
+                  height: (165 / 165) * 100 + "%"
+                }}
+                className="qtip-img"
+                src={
+                  FilterStore.emptySmartphones
+                    ? "images/" + this.props.smartphone.imagelink + "_blank.png"
+                    : "images/" + this.props.smartphone.imagelink + ".jpg"
+                }
+                alt=""
+              />
+            )}
+          </div>
         </div>
-        <div
-          className="img-container"
-          style={{
-            height: this.imageContainerHeight
-          }}
-        >
-          {FilterStore.scaleInput ? (
-            <img
-              style={{
-                height: this.smartphoneHeight
-              }}
-              className="qtip-img"
-              src={
-                FilterStore.emptySmartphones
-                  ? "images/" + this.props.smartphone.imagelink + "_blank.png"
-                  : "images/" + this.props.smartphone.imagelink + ".jpg"
-              }
-              alt=""
-            />
-          ) : (
-            <img
-              style={{
-                height: (165 / 165) * 100 + "%"
-              }}
-              className="qtip-img"
-              src={
-                FilterStore.emptySmartphones
-                  ? "images/" + this.props.smartphone.imagelink + "_blank.png"
-                  : "images/" + this.props.smartphone.imagelink + ".jpg"
-              }
-              alt=""
-            />
-          )}
-        </div>
-
         <div className="smartphone-details">
           <div className="flexBetween" style={{ marginBottom: 8 }}>
             <span

@@ -192,36 +192,38 @@ class Sidebar extends Component {
               <TextField name="searchQuery" big={true} />
             </div>
           </label>
-          <p>Sort table by</p>
-          <div className="flex">
-            <TextSelect
-              name="filterType"
-              options={[
-                ["price", "Price"],
-                ["totalscore", "Total Score"],
-                ["length", "Body-Size"],
-                ["display", "Screen-Size"],
-                ["released", "Release Date"]
-              ]}
-            />
-            <svg
-              id="sorting_order"
-              className={
-                FilterStore.isDescending
-                  ? "sorting_order rotate-sorting-order"
-                  : "sorting_order"
-              }
-              role="img"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 256 512"
-              height="22px"
-              width="22px"
-              alt="Submit"
-              onClick={toggleAttribute("isDescending")}
-            >
-              <path d="M88 166.059V468c0 6.627 5.373 12 12 12h56c6.627 0 12-5.373 12-12V166.059h46.059c21.382 0 32.09-25.851 16.971-40.971l-86.059-86.059c-9.373-9.373-24.569-9.373-33.941 0l-86.059 86.059c-15.119 15.119-4.411 40.971 16.971 40.971H88z" />
-            </svg>
-          </div>
+          <label className="filterBoxLabel">
+            Sort table by
+            <div className="flex">
+              <TextSelect
+                name="filterType"
+                options={[
+                  ["price", "Price"],
+                  ["totalscore", "Total Score"],
+                  ["length", "Body-Size"],
+                  ["display", "Screen-Size"],
+                  ["released", "Release Date"]
+                ]}
+              />
+              <svg
+                id="sorting_order"
+                className={
+                  FilterStore.isDescending
+                    ? "sorting_order rotate-sorting-order"
+                    : "sorting_order"
+                }
+                role="img"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 256 512"
+                height="22px"
+                width="22px"
+                alt="Submit"
+                onClick={toggleAttribute("isDescending")}
+              >
+                <path d="M88 166.059V468c0 6.627 5.373 12 12 12h56c6.627 0 12-5.373 12-12V166.059h46.059c21.382 0 32.09-25.851 16.971-40.971l-86.059-86.059c-9.373-9.373-24.569-9.373-33.941 0l-86.059 86.059c-15.119 15.119-4.411 40.971 16.971 40.971H88z" />
+              </svg>
+            </div>
+          </label>
           <div className="flex">
             <p>Scale phones</p>
             <ToggleSwitch name="scaleInput" />
@@ -445,7 +447,7 @@ class Sidebar extends Component {
             <ToggleSwitch name="notch" />
           </div>
           <div className="flex">
-            <p>Waterproof</p>
+            <label className="filterBoxLabel">Waterproof</label>
             <TextSelect
               name="waterproof"
               options={[
@@ -532,7 +534,9 @@ class Sidebar extends Component {
           <div className="sliderSubBar">
             <div className="filler" />
             <TextField name="decayFactor" />
-            <span className="prefix">per Month</span>
+            <label htmlFor="decayFactor" className="prefix">
+              per Month
+            </label>
           </div>
         </FilterBox>{" "}
         <FilterBox header="Brands" startClosed={true}>

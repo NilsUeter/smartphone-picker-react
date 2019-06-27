@@ -34,7 +34,7 @@ class App extends Component {
         break;
     }
 
-    return !FilterStore.sidebarHidden && window.innerWidth < 500 ? (
+    return !FilterStore.sidebarHidden && window.innerWidth < 600 ? (
       <div />
     ) : (
       content

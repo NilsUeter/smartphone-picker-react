@@ -168,15 +168,17 @@ body,
   background-color: var(--border-color);
 }
 
-@media only screen and (min-width: 500px) {
+.logo-text {
+  font-size: 20px;
+  text-decoration: none;
+  color: var(--first-color);
+}
+
+@media only screen and (min-width: 600px) {
   .sidebar {
     max-width: 230px;
     margin-right: 0;
     transition: max-width 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
-  }
-
-  .sidebar.hidden {
-    max-width: 30px;
   }
 
   .sidebar-button {
@@ -185,10 +187,6 @@ body,
 
   .hide-sidebar-button {
     left: 270px;
-  }
-
-  .show-sidebar-button {
-    left: 70px;
   }
 
   .logo-text {
@@ -324,29 +322,19 @@ body,
 
 .logo {
   box-sizing: border-box;
-  padding: 2px 16px;
+  padding: 6px 8px;
   font-weight: bold;
   position: relative;
   z-index: 0;
   text-align: left;
   background-color: var(--background-color);
-}
-
-.logo-text {
-  font-size: 16px;
-  text-decoration: none;
-  color: var(--first-color);
-  align-self: center;
+  align-items: flex-end;
 }
 
 .filter__summary {
   color: var(--background-color);
   outline: none;
   user-select: none;
-}
-
-.filter-drop-down__container {
-  margin-left: 16px;
 }
 
 .filter-drop-down {
@@ -387,7 +375,6 @@ body,
 }
 
 .main-menu-link {
-  font-weight: bold;
   text-decoration: none;
   color: var(--background-color);
   cursor: pointer;
@@ -397,7 +384,7 @@ body,
 .main-menu {
   box-sizing: border-box;
   position: relative;
-  height: 25px;
+  padding: 4px 8px;
   margin-top: 0;
 
   display: flex;
@@ -413,6 +400,7 @@ body,
   border: none;
   border-radius: 2px;
   font-size: 16px;
+  font-weight: 600;
   z-index: 6;
   transform: rotate(90deg);
   transform-origin: left top 0;
@@ -544,6 +532,8 @@ input[type="url"],
 select,
 button,
 textarea {
+  font-size: 14px;
+  padding: 2px;
   color: var(--text-color);
   background-color: transparent;
   outline: none;

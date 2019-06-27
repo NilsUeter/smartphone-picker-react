@@ -83,14 +83,11 @@ class FilterStore {
   onlyShowFavedPhones = false;
 
   getSidebarHiddenInitialState = () => {
-    switch (window.location.pathname) {
-      case "/releases":
-        return true;
-      case "/justgood":
-        return true;
-      default:
-        return false;
+    const viewportWidth = window.innerWidth;
+    if (viewportWidth > 640) {
+      return false;
     }
+    return true;
   };
 
   getMinDate = () => {
@@ -140,7 +137,6 @@ class FilterStore {
         case "activeFilterBox":
         case "updateURLtoRepresentFilter": //Define methods which shouldn't be overriden for mobx reasons
         case "updateURL":
-        case "searchQuery":
         case "lightmode":
           break;
         default:
@@ -245,6 +241,7 @@ const getMinDate = () => {
 const resetCopy = {
   sidebarHidden: false,
   country: "de",
+  searchQuery: "",
   filterType: "totalscore",
   decayFactor: 0.2,
   isDescending: true,
