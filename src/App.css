@@ -159,6 +159,7 @@ body,
   right: 1.5rem;
   bottom: 1.5rem;
   display: flex;
+  align-items: center;
   cursor: pointer;
   color: var(--just-white);
   background-color: var(--show-sidebar-button);
