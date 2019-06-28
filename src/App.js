@@ -19,7 +19,7 @@ class App extends Component {
     let content = <Content />;
     switch (window.location.pathname) {
       case "/about":
-        return <About />;
+        return;
       case "/releases":
         content = <ContentReleases />;
         break;
@@ -50,8 +50,14 @@ class App extends Component {
       >
         <Header />
         <main className="sidebar-content-wrapper">
-          <SidebarContainer />
-          {this.getContentWithURL()}
+          {window.location.pathname === "/about" ? (
+            <About />
+          ) : (
+            <React.Fragment>
+              <SidebarContainer />
+              {this.getContentWithURL()}
+            </React.Fragment>
+          )}
         </main>
         <Footer />
       </div>

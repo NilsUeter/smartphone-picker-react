@@ -245,10 +245,6 @@ body,
   font-size: 18px;
 }
 
-.youdontknow td {
-  vertical-align: top;
-}
-
 .smartphones {
   display: flex;
   flex-wrap: wrap;
