@@ -107,16 +107,9 @@ body,
   flex: 1;
 }
 
-.content {
-  background-color: var(--foreground-color);
-  flex: 1;
-  height: 100%;
-}
-
 .sidebar {
   width: 100%;
   max-width: 600px;
-  margin-right: 40px;
   overflow: auto;
   background-color: var(--sidebar-background);
   position: relative;
@@ -176,9 +169,8 @@ body,
 
 @media only screen and (min-width: 600px) {
   .sidebar {
-    max-width: 230px;
-    margin-right: 0;
-    transition: max-width 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+    min-width: 300px;
+    max-width: 300px;
   }
 
   .sidebar-button {
@@ -186,7 +178,7 @@ body,
   }
 
   .hide-sidebar-button {
-    left: 270px;
+    display: none;
   }
 
   .logo-text {
@@ -255,7 +247,7 @@ body,
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  height: calc(100vh - 61px);
+  height: calc(100vh - 75px);
   overflow: auto;
 }
 
