@@ -16,11 +16,11 @@ class SidebarContainer extends Component {
   render() {
     return (
       <React.Fragment>
-        <div
+        <aside
           className={FilterStore.sidebarHidden ? "sidebar hidden" : "sidebar"}
         >
           <Sidebar toggleAttribute={this.toggleAttribute} />
-        </div>
+        </aside>
         <button
           className={
             FilterStore.sidebarHidden ? "sidebar-button" : "sidebar-button"

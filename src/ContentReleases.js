@@ -23,7 +23,7 @@ class ContentReleases extends Component {
   render() {
     const monthArray = this.createArrayOfMonths();
     return (
-      <div className="smartphones-releases">
+      <main className="smartphones-releases">
         {monthArray.map(month => (
           <div key={month} className="smartphones-releases-container">
             <div className="smartphones-releases-month">
@@ -53,7 +53,7 @@ class ContentReleases extends Component {
         ))}
         <div className="timeline-top-border" />
         <div className="timeline-bottom-border" />
-      </div>
+      </main>
     );
   }
 }

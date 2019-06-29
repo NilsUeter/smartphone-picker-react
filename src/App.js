@@ -7,7 +7,6 @@ import SidebarContainer from "./SidebarContainer.js";
 import Content from "./Content.js";
 import ContentReleases from "./ContentReleases.js";
 import About from "./About.js";
-import Footer from "./Footer.js";
 
 import FilterStore from "./FilterStore.js";
 
@@ -49,7 +48,7 @@ class App extends Component {
         }
       >
         <Header />
-        <main className="sidebar-content-wrapper">
+        <div>
           {window.location.pathname === "/about" ? (
             <About />
           ) : (
@@ -58,8 +57,7 @@ class App extends Component {
               {this.getContentWithURL()}
             </React.Fragment>
           )}
-        </main>
-        <Footer />
+        </div>
       </div>
     );
   }

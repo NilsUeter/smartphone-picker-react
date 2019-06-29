@@ -9,7 +9,7 @@ import Smartphone from "./Smartphone.js";
 class Content extends Component {
   render() {
     return (
-      <div id="smartphones" className="smartphones">
+      <main id="smartphones" className="smartphones">
         {SmartphoneStore.listOfFilteredAndScoredObjects.map(smartphone => (
           <Smartphone
             key={
@@ -23,7 +23,7 @@ class Content extends Component {
             filterStore={FilterStore}
           />
         ))}
-      </div>
+      </main>
     );
   }
 }
