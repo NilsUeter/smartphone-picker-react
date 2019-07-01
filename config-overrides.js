@@ -1,3 +1,14 @@
-const { override, addDecoratorsLegacy } = require("customize-cra");
+const {
+  adjustWorkbox,
+  override,
+  addDecoratorsLegacy
+} = require("customize-cra");
 
-module.exports = override(addDecoratorsLegacy());
+module.exports = override(
+  addDecoratorsLegacy(),
+  adjustWorkbox(wb =>
+    Object.assign(wb, {
+      skipWaiting: true
+    })
+  )
+);
