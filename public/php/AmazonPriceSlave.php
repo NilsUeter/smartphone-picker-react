@@ -25,35 +25,35 @@
     foreach ($phones as $keyPhone => $phone) {
         logToFile("AmazonPriceSlave", "Updating phone {$keyPhone}");
 
-        foreach(array_keys($phone["types"]) as &$market) {
-            logToFile("AmazonPriceSlave", "Iterating through every {$market} phone type");
+        foreach($phone["types"] as $typeIndex => $phoneType) {
+            logToFile("AmazonPriceSlave", "Iterating through every phone type, index: " . $typeIndex);
 
-            foreach($phone["types"][$market] as $keyType => $phoneType) {
+            foreach($phoneType["colors"] as $colorIndex => $phoneColor) {
 
                 if($counter < 40) {
-                    logToFile("AmazonPriceSlave", "Name: " . $phoneType["name"]);
-                    logToFile("AmazonPriceSlave", "Last Updated: " . $phoneType["lastUpdated"]);
-                    $dateLastUpdated = date_create_from_format("d.m.Y H:i:s", $phoneType["lastUpdated"]);
+                    logToFile("AmazonPriceSlave", "Color Name: " . $phoneColor["name"]);
+                    logToFile("AmazonPriceSlave", "Last Updated: " . $phoneColor["lastUpdated"]);
+                    $dateLastUpdated = date_create_from_format("d.m.Y H:i:s", $phoneColor["lastUpdated"]);
                     $dateUpdate = date_create();
                     date_modify($dateUpdate, '-3 hours');
                     logToFile("AmazonPriceSlave", "Update time (now-3H): " . date_format($dateUpdate, "d.m.Y H:i:s"));
 
                     if($dateLastUpdated < $dateUpdate) {
-                        logToFile("AmazonPriceSlave", "Asin: " . $phoneType["asin"]);
-                        logToFile("AmazonPriceSlave", "Old link: " . $phoneType["link"]);
-                        logToFile("AmazonPriceSlave", "Old price: " . $phoneType["price"]);
+                        logToFile("AmazonPriceSlave", "Asin: " . $phoneColor["asin"]);
+                        logToFile("AmazonPriceSlave", "Old link: " . $phoneColor["link"]);
+                        logToFile("AmazonPriceSlave", "Old price: " . $phoneColor["price"]);
 
                         logToFile("AmazonPriceSlave", "Current request counter: {$counter}");
-                        $smartphoneData = $smartphoneDataRequesters[$market]->getSmartPhoneData($phoneType["asin"]);
+                        $smartphoneData = $smartphoneDataRequesters[$market]->getSmartPhoneData($phoneColor["asin"]);
                         logToFile("AmazonPriceSlave", "Request Url: " . $smartphoneData["request_url"]);
                         if($smartphoneData["failed"] === TRUE) {
                             logToFile("AmazonPriceSlave", "Amazon blocked");
                         } else {
-                            $phones[$keyPhone]["types"][$market][$keyType]["link"] = $smartphoneData["link"];
+                            $phones[$keyPhone]["types"][$typeIndex]["colors"][$colorIndex]["link"] = $smartphoneData["link"];
                             logToFile("AmazonPriceSlave", "New link: " . $smartphoneData["link"]);
-                            $phones[$keyPhone]["types"][$market][$keyType]["price"] = $smartphoneData["price"];
+                            $phones[$keyPhone]["types"][$typeIndex]["colors"][$colorIndex]["price"] = $smartphoneData["price"];
                             logToFile("AmazonPriceSlave", "New price: " . $smartphoneData["price"]);
-                            $phones[$keyPhone]["types"][$market][$keyType]["lastUpdated"] = date_format(new DateTime(), "d.m.Y H:i:s");
+                            $phones[$keyPhone]["types"][$typeIndex]["colors"][$colorIndex]["lastUpdated"] = date_format(new DateTime(), "d.m.Y H:i:s");
                         }
                         $counter++;
                     } else {
