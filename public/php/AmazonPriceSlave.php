@@ -30,13 +30,13 @@
 
             foreach($phoneType["colors"] as $colorIndex => $phoneColor) {
 
-                if($counter < 40) {
+                if($counter < 2) {
                     logToFile("AmazonPriceSlave", "Color Name: " . $phoneColor["name"]);
                     logToFile("AmazonPriceSlave", "Last Updated: " . $phoneColor["lastUpdated"]);
                     $dateLastUpdated = date_create_from_format("d.m.Y H:i:s", $phoneColor["lastUpdated"]);
                     $dateUpdate = date_create();
-                    date_modify($dateUpdate, '-3 hours');
-                    logToFile("AmazonPriceSlave", "Update time (now-3H): " . date_format($dateUpdate, "d.m.Y H:i:s"));
+                    date_modify($dateUpdate, '-24 hours');
+                    logToFile("AmazonPriceSlave", "Update time (now-24H): " . date_format($dateUpdate, "d.m.Y H:i:s"));
 
                     if($dateLastUpdated < $dateUpdate) {
                         logToFile("AmazonPriceSlave", "Asin: " . $phoneColor["asin"]);
@@ -57,7 +57,7 @@
                         }
                         $counter++;
                     } else {
-                        logToFile("AmazonPriceSlave", "Ignoring this phone type in this update call, no 3 hours since last update");
+                        logToFile("AmazonPriceSlave", "Ignoring this phone type in this update call, no 24 hours since last update");
                     }
                 } else {
                     echo "Max request counter for one script call {$counter} reached, exiting <br>";
