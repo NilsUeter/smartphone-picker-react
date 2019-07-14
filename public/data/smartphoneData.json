@@ -1022,6 +1022,90 @@
     ]
   },
   {
+    "name": "Pixel 3a",
+    "brand": "Google",
+    "released": "2019-05",
+    "imagelink": "pixel3a",
+    "design": 3,
+    "display": 5.6,
+    "length": 151,
+    "width": 70,
+    "processor": 4,
+    "updates": 5,
+    "camera": 5,
+    "battery": 3,
+    "batterysize": 3000,
+    "sdslot": 0,
+    "simcards": 1,
+    "notch": 0,
+    "waterproof": 0,
+    "headphonejack": 1,
+    "types": [
+      {
+        "storage": 64,
+        "memory": 4,
+        "colors": [
+          {
+            "name": "just black",
+            "asin": "B07RLX5L82",
+            "price": 629,
+            "link": "https://www.amazon.de/Google-Pixel-64GB-Black-99928202-Schwarz/dp/B07JVLK8WZ?SubscriptionId=AKIAJWKQVEDLHTUZJHJA&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07JVLK8WZ",
+            "lastUpdated": "14.07.2019 05:00:55"
+          },
+          {
+            "name": "clearly white",
+            "asin": "B07RLVMT5N",
+            "price": 616,
+            "link": "https://www.amazon.de/Google-Pixel-XL-64-Wei%C3%9F/dp/B07JB2M7MK?SubscriptionId=AKIAJWKQVEDLHTUZJHJA&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07JB2M7MK",
+            "lastUpdated": "14.07.2019 05:00:56"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Pixel 3a XL",
+    "brand": "Google",
+    "released": "2019-05",
+    "imagelink": "pixel3axl",
+    "design": 3,
+    "display": 6.0,
+    "length": 160,
+    "width": 76,
+    "processor": 4,
+    "updates": 5,
+    "camera": 5,
+    "battery": 4,
+    "batterysize": 3700,
+    "sdslot": 0,
+    "simcards": 1,
+    "notch": 0,
+    "waterproof": 0,
+    "headphonejack": 1,
+    "types": [
+      {
+        "storage": 64,
+        "memory": 4,
+        "colors": [
+          {
+            "name": "just black",
+            "asin": "B07RLZZCVY",
+            "price": 629,
+            "link": "https://www.amazon.de/Google-Pixel-64GB-Black-99928202-Schwarz/dp/B07JVLK8WZ?SubscriptionId=AKIAJWKQVEDLHTUZJHJA&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07JVLK8WZ",
+            "lastUpdated": "14.07.2019 05:00:55"
+          },
+          {
+            "name": "clearly white",
+            "asin": "B07RHY1H52",
+            "price": 616,
+            "link": "https://www.amazon.de/Google-Pixel-XL-64-Wei%C3%9F/dp/B07JB2M7MK?SubscriptionId=AKIAJWKQVEDLHTUZJHJA&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07JB2M7MK",
+            "lastUpdated": "14.07.2019 05:00:56"
+          }
+        ]
+      }
+    ]
+  },
+  {
     "name": "5t",
     "brand": "OnePlus",
     "released": "2017-11",
