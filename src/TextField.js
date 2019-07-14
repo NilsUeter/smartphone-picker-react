@@ -16,7 +16,6 @@ class TextField extends Component {
         className={this.props.big ? "bigInput" : "smallInput"}
         size="2"
         type="text"
-        pattern="[0-9]+([\.,-][0-9]+)?"
         value={FilterStore[this.props.name]}
         onChange={this.changeAttribute}
         autoComplete="new-password"
