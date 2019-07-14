@@ -11,20 +11,20 @@ class TextSelect extends Component {
 
   render() {
     return (
-      <label style={{ alignSelf: "center", flex: "1" }}>
-        <select
-          id={this.props.name}
-          className={"textSelect " + this.props.colorScheme}
-          value={FilterStore[this.props.name]}
-          onChange={this.changeAttribute}
+      <select
+        id={this.props.name}
+        className={"textSelect " + this.props.colorScheme}
+        value={FilterStore[this.props.name]}
+        onChange={this.changeAttribute}
+        style={{ alignSelf: "center", flex: "1" }}
+      >
         >
-          {this.props.options.map(smartphone => (
-            <option key={smartphone[0]} value={smartphone[0]}>
-              {smartphone[1]}
-            </option>
-          ))}
-        </select>
-      </label>
+        {this.props.options.map(smartphone => (
+          <option key={smartphone[0]} value={smartphone[0]}>
+            {smartphone[1]}
+          </option>
+        ))}
+      </select>
     );
   }
 }

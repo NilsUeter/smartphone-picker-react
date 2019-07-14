@@ -12,8 +12,7 @@ class TextField extends Component {
   render() {
     return (
       <input
-        id={FilterStore[this.props.name]}
-        label={this.props.name}
+        id={this.props.name}
         className={this.props.big ? "bigInput" : "smallInput"}
         size="2"
         type="text"

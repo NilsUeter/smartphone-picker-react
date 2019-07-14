@@ -3,7 +3,7 @@ import React, { Component } from "react";
 class TemplateDropDown extends Component {
   render() {
     return (
-      <details className="filter-drop-down__container">
+      <details>
         <summary className="filter__summary">{this.props.summary}</summary>
         <div className="filter-drop-down">
           {this.props.details.map(detail => {

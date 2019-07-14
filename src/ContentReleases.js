@@ -23,39 +23,37 @@ class ContentReleases extends Component {
   render() {
     const monthArray = this.createArrayOfMonths();
     return (
-      <div id="content" className="content">
-        <div className="smartphones-releases">
-          {monthArray.map(month => (
-            <div key={month} className="smartphones-releases-container">
-              <div className="smartphones-releases-month">
-                {month.getMonth() + 1 + "-" + month.getFullYear()}
-              </div>
-              <div className="smartphones-in-month flex">
-                {SmartphoneStore.listOfFilteredAndScoredObjects
-                  .filter(
-                    smartphone =>
-                      smartphone.released ===
-                      month.getFullYear() +
-                        "-" +
-                        (month.getMonth() < 10
-                          ? `0${month.getMonth() + 1}` //append 0 in front of month to match smartphone.released format
-                          : `${month.getMonth() + 1}`)
-                  )
-                  .map(smartphone => (
-                    <Smartphone
-                      key={smartphone.brand + smartphone.name}
-                      smartphone={smartphone}
-                      maxImgHeight={180}
-                      filterStore={FilterStore}
-                    />
-                  ))}
-              </div>
+      <main className="smartphones-releases">
+        {monthArray.map(month => (
+          <div key={month} className="smartphones-releases-container">
+            <div className="smartphones-releases-month">
+              {month.getMonth() + 1 + "-" + month.getFullYear()}
             </div>
-          ))}
-          <div className="timeline-top-border" />
-          <div className="timeline-bottom-border" />
-        </div>
-      </div>
+            <div className="smartphones-in-month flex">
+              {SmartphoneStore.listOfFilteredAndScoredObjects
+                .filter(
+                  smartphone =>
+                    smartphone.released ===
+                    month.getFullYear() +
+                      "-" +
+                      (month.getMonth() < 10
+                        ? `0${month.getMonth() + 1}` //append 0 in front of month to match smartphone.released format
+                        : `${month.getMonth() + 1}`)
+                )
+                .map(smartphone => (
+                  <Smartphone
+                    key={smartphone.brand + smartphone.name}
+                    smartphone={smartphone}
+                    maxImgHeight={180}
+                    filterStore={FilterStore}
+                  />
+                ))}
+            </div>
+          </div>
+        ))}
+        <div className="timeline-top-border" />
+        <div className="timeline-bottom-border" />
+      </main>
     );
   }
 }

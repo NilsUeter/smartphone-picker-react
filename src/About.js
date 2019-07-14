@@ -17,65 +17,6 @@ class About extends Component {
             passed:
           </p>
           <br />
-          <table className="youdontknow">
-            <tbody>
-              <tr>
-                <td>
-                  <p>
-                    Does this smartphone have a{" "}
-                    <span className="accentColor">headphone jack</span>?
-                  </p>
-                </td>
-                <td>
-                  <p>You don't know because amazon sure isn't telling you.</p>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <p>
-                    Is the camera with <span className="accentColor">20</span>{" "}
-                    Megapixels or <span className="accentColor">13</span>{" "}
-                    Megapixels better?
-                  </p>
-                </td>
-                <td>
-                  <p>
-                    You don't know because these numbers are meaningless without
-                    context.
-                  </p>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <p>
-                    Does this smartphone get{" "}
-                    <span className="accentColor">regular updates</span>?
-                  </p>
-                </td>
-                <td>
-                  <p>
-                    {" "}
-                    You don't know, how about you check the last three
-                    smartphones of the brand to estimate their trustworthiness
-                    regarding updates.
-                  </p>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <p>
-                    <span className="accentColor">...</span>
-                  </p>
-                </td>
-                <td>
-                  <p>
-                    <span className="accentColor">...</span>
-                  </p>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-          <br />
           <p>I think you understand the problem, but there is a solution...</p>
           <h2>We read the reviews and rate the important aspects:</h2>
           <p>

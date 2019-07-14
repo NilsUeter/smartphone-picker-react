@@ -7,7 +7,6 @@ import SidebarContainer from "./SidebarContainer.js";
 import Content from "./Content.js";
 import ContentReleases from "./ContentReleases.js";
 import About from "./About.js";
-import Footer from "./Footer.js";
 
 import FilterStore from "./FilterStore.js";
 
@@ -19,7 +18,7 @@ class App extends Component {
     let content = <Content />;
     switch (window.location.pathname) {
       case "/about":
-        return <About />;
+        return;
       case "/releases":
         content = <ContentReleases />;
         break;
@@ -34,7 +33,7 @@ class App extends Component {
         break;
     }
 
-    return !FilterStore.sidebarHidden && window.innerWidth < 500 ? (
+    return !FilterStore.sidebarHidden && window.innerWidth < 600 ? (
       <div />
     ) : (
       content
@@ -49,11 +48,16 @@ class App extends Component {
         }
       >
         <Header />
-        <main className="sidebar-content-wrapper">
-          <SidebarContainer />
-          {this.getContentWithURL()}
-        </main>
-        <Footer />
+        <div style={{ display: "flex" }}>
+          {window.location.pathname === "/about" ? (
+            <About />
+          ) : (
+            <React.Fragment>
+              <SidebarContainer />
+              {this.getContentWithURL()}
+            </React.Fragment>
+          )}
+        </div>
       </div>
     );
   }

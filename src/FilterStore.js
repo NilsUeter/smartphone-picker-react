@@ -77,15 +77,17 @@ class FilterStore {
   @observable
   selectedBrands = [];
 
+  @observable
+  selectedFavorites = {};
+  @observable
+  onlyShowFavedPhones = false;
+
   getSidebarHiddenInitialState = () => {
-    switch (window.location.pathname) {
-      case "/releases":
-        return true;
-      case "/justgood":
-        return true;
-      default:
-        return false;
+    const viewportWidth = window.innerWidth;
+    if (viewportWidth > 640) {
+      return false;
     }
+    return true;
   };
 
   getMinDate = () => {
@@ -115,6 +117,17 @@ class FilterStore {
   };
 
   @action
+  toggleObjectAttribute = (name, newValue) => {
+    if (this[name]) {
+      if (this[name][newValue] == null) {
+        this[name][newValue] = newValue; // add if it doesn't exist
+      } else {
+        delete this[name][newValue]; // remove if it does
+      }
+    }
+  };
+
+  @action
   resetFilters = () => {
     for (let name in this) {
       switch (name) {
@@ -124,7 +137,6 @@ class FilterStore {
         case "activeFilterBox":
         case "updateURLtoRepresentFilter": //Define methods which shouldn't be overriden for mobx reasons
         case "updateURL":
-        case "searchQuery":
         case "lightmode":
           break;
         default:
@@ -144,6 +156,13 @@ class FilterStore {
       // parse selectedBrands to an Array
       if (key[0] === "selectedBrands") {
         this[key[0]] = key[1].split(",");
+        continue;
+      }
+      if (key[0] === "selectedFavorites") {
+        const keys = decodeURIComponent(key[1]).split(",");
+        const object = {};
+        keys.forEach(element => (object[element] = element));
+        this[key[0]] = object;
         continue;
       }
       this[key[0]] = key[1];
@@ -170,6 +189,13 @@ class FilterStore {
         case "selectedBrands":
           if (this[key] && resetCopy && this[key].length > 0) {
             queryComponents.push(key + "=" + this[key]);
+          }
+          break;
+        case "selectedFavorites":
+          if (this[key] && resetCopy && Object.keys(this[key]).length > 0) {
+            queryComponents.push(
+              key + "=" + encodeURIComponent(Object.keys(this[key]))
+            );
           }
           break;
         default:
@@ -215,6 +241,7 @@ const getMinDate = () => {
 const resetCopy = {
   sidebarHidden: false,
   country: "de",
+  searchQuery: "",
   filterType: "totalscore",
   decayFactor: 0.2,
   isDescending: true,
@@ -241,7 +268,9 @@ const resetCopy = {
   sdSlot: false,
   notch: false,
   waterproof: "",
-  selectedBrands: []
+  selectedBrands: [],
+  selectedFavorites: {},
+  onlyShowFavedPhones: false
 };
 
 window.addEventListener("popstate", () => filterStore.loadURL(), false);
