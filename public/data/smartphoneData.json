@@ -2384,7 +2384,7 @@
     ]
   },
   {
-    "name": "iPhone Xs",
+    "name": "iPhone XS",
     "brand": "Apple",
     "released": "2018-09",
     "imagelink": "iphonexs",
@@ -2478,6 +2478,109 @@
           {
             "name": "grey",
             "asin": "B07HBCSYLL",
+            "price": 0,
+            "link": "https://www.amazon.de/Apple-iPhone-X-64GB-Silber/dp/B075LYDD7Z?psc=1&SubscriptionId=AKIAJWKQVEDLHTUZJHJA&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B075LYDD7Z",
+            "lastUpdated": "14.07.2019 13:45:53"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "iPhone XS Max",
+    "brand": "Apple",
+    "released": "2018-09",
+    "imagelink": "iphonexsmax",
+    "design": 5,
+    "display": 6.5,
+    "length": 158,
+    "width": 77,
+    "processor": 5,
+    "updates": 5,
+    "camera": 5,
+    "battery": 4,
+    "batterysize": 3174,
+    "sdslot": 0,
+    "simcards": 1,
+    "notch": 1,
+    "waterproof": 8,
+    "headphonejack": 0,
+    "types": [
+      {
+        "storage": 64,
+        "memory": 4,
+        "colors": [
+          {
+            "name": "gold",
+            "asin": "B07HBF9DZ2",
+            "price": 1,
+            "link": "https://www.amazon.de/Apple-iPhone-64GB-Space-Grau/dp/B075LXNK24?psc=1&SubscriptionId=AKIAJWKQVEDLHTUZJHJA&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B075LXNK24",
+            "lastUpdated": "14.07.2019 13:45:52"
+          },
+          {
+            "name": "silver",
+            "asin": "B07HBT4MXG",
+            "price": 0,
+            "link": "https://www.amazon.de/Apple-iPhone-X-64GB-Silber/dp/B075LYDD7Z?psc=1&SubscriptionId=AKIAJWKQVEDLHTUZJHJA&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B075LYDD7Z",
+            "lastUpdated": "14.07.2019 13:45:53"
+          },
+          {
+            "name": "grey",
+            "asin": "B07HBC3CNF",
+            "price": 0,
+            "link": "https://www.amazon.de/Apple-iPhone-X-64GB-Silber/dp/B075LYDD7Z?psc=1&SubscriptionId=AKIAJWKQVEDLHTUZJHJA&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B075LYDD7Z",
+            "lastUpdated": "14.07.2019 13:45:53"
+          }
+        ]
+      },
+      {
+        "storage": 256,
+        "memory": 4,
+        "colors": [
+          {
+            "name": "gold",
+            "asin": "B07HBC3GPS",
+            "price": 1,
+            "link": "https://www.amazon.de/Apple-iPhone-64GB-Space-Grau/dp/B075LXNK24?psc=1&SubscriptionId=AKIAJWKQVEDLHTUZJHJA&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B075LXNK24",
+            "lastUpdated": "14.07.2019 13:45:52"
+          },
+          {
+            "name": "silver",
+            "asin": "B07HBD8LG6",
+            "price": 0,
+            "link": "https://www.amazon.de/Apple-iPhone-X-64GB-Silber/dp/B075LYDD7Z?psc=1&SubscriptionId=AKIAJWKQVEDLHTUZJHJA&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B075LYDD7Z",
+            "lastUpdated": "14.07.2019 13:45:53"
+          },
+          {
+            "name": "grey",
+            "asin": "B07HBCYHDH",
+            "price": 0,
+            "link": "https://www.amazon.de/Apple-iPhone-X-64GB-Silber/dp/B075LYDD7Z?psc=1&SubscriptionId=AKIAJWKQVEDLHTUZJHJA&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B075LYDD7Z",
+            "lastUpdated": "14.07.2019 13:45:53"
+          }
+        ]
+      },
+      {
+        "storage": 512,
+        "memory": 4,
+        "colors": [
+          {
+            "name": "gold",
+            "asin": "B07HBCZNDS",
+            "price": 1,
+            "link": "https://www.amazon.de/Apple-iPhone-64GB-Space-Grau/dp/B075LXNK24?psc=1&SubscriptionId=AKIAJWKQVEDLHTUZJHJA&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B075LXNK24",
+            "lastUpdated": "14.07.2019 13:45:52"
+          },
+          {
+            "name": "silver",
+            "asin": "B07HBDFF88",
+            "price": 0,
+            "link": "https://www.amazon.de/Apple-iPhone-X-64GB-Silber/dp/B075LYDD7Z?psc=1&SubscriptionId=AKIAJWKQVEDLHTUZJHJA&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B075LYDD7Z",
+            "lastUpdated": "14.07.2019 13:45:53"
+          },
+          {
+            "name": "grey",
+            "asin": "B07HBCNNL8",
             "price": 0,
             "link": "https://www.amazon.de/Apple-iPhone-X-64GB-Silber/dp/B075LYDD7Z?psc=1&SubscriptionId=AKIAJWKQVEDLHTUZJHJA&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B075LYDD7Z",
             "lastUpdated": "14.07.2019 13:45:53"
