@@ -3446,11 +3446,11 @@
     "brand": "Samsung",
     "released": "2019-02",
     "imagelink": "samsungM20",
-    "design": 4,
+    "design": 3,
     "display": 6.3,
     "length": 156,
     "width": 75,
-    "processor": 4,
+    "processor": 3,
     "updates": 3,
     "camera": 3,
     "battery": 5,
@@ -3475,6 +3475,48 @@
           {
             "name": "ocean blue",
             "asin": "B07NH46QQS",
+            "price": 1188,
+            "link": "https://www.amazon.de/Samsung-Galaxy-Andere-Europ%C3%A4ische-Version-Ceramic-Black/dp/B07NWTJ1MJ?psc=1&SubscriptionId=AKIAJCAFA7ECZQ5XGTGQ&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07NWTJ1MJ",
+            "lastUpdated": "03.06.2019 16:46:04"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Galaxy M30",
+    "brand": "Samsung",
+    "released": "2019-03",
+    "imagelink": "samsungM30",
+    "design": 4,
+    "display": 6.4,
+    "length": 159,
+    "width": 75,
+    "processor": 3,
+    "updates": 3,
+    "camera": 3,
+    "battery": 5,
+    "batterysize": 5000,
+    "sdslot": 1,
+    "simcards": 2,
+    "notch": 2,
+    "waterproof": 0,
+    "headphonejack": 1,
+    "types": [
+      {
+        "storage": 64,
+        "memory": 4,
+        "colors": [
+          {
+            "name": "charcoal black",
+            "asin": "B07HGJJ57K",
+            "price": 1684,
+            "link": "https://www.amazon.de/Samsung-Galaxy-Andere-Europ%C3%A4ische-Version-Ceramic-White/dp/B07NXFFNN2?psc=1&SubscriptionId=AKIAJCAFA7ECZQ5XGTGQ&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07NXFFNN2",
+            "lastUpdated": "03.06.2019 16:46:03"
+          },
+          {
+            "name": "ocean blue",
+            "asin": "B07HGJJ58K",
             "price": 1188,
             "link": "https://www.amazon.de/Samsung-Galaxy-Andere-Europ%C3%A4ische-Version-Ceramic-Black/dp/B07NWTJ1MJ?psc=1&SubscriptionId=AKIAJCAFA7ECZQ5XGTGQ&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07NWTJ1MJ",
             "lastUpdated": "03.06.2019 16:46:04"
