@@ -2384,6 +2384,109 @@
     ]
   },
   {
+    "name": "iPhone Xs",
+    "brand": "Apple",
+    "released": "2018-09",
+    "imagelink": "iphonexs",
+    "design": 5,
+    "display": 5.8,
+    "length": 144,
+    "width": 71,
+    "processor": 5,
+    "updates": 5,
+    "camera": 5,
+    "battery": 4,
+    "batterysize": 2658,
+    "sdslot": 0,
+    "simcards": 1,
+    "notch": 1,
+    "waterproof": 8,
+    "headphonejack": 0,
+    "types": [
+      {
+        "storage": 64,
+        "memory": 4,
+        "colors": [
+          {
+            "name": "gold",
+            "asin": "B07HBD26C7",
+            "price": 1,
+            "link": "https://www.amazon.de/Apple-iPhone-64GB-Space-Grau/dp/B075LXNK24?psc=1&SubscriptionId=AKIAJWKQVEDLHTUZJHJA&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B075LXNK24",
+            "lastUpdated": "14.07.2019 13:45:52"
+          },
+          {
+            "name": "silver",
+            "asin": "B07HBP1C2C",
+            "price": 0,
+            "link": "https://www.amazon.de/Apple-iPhone-X-64GB-Silber/dp/B075LYDD7Z?psc=1&SubscriptionId=AKIAJWKQVEDLHTUZJHJA&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B075LYDD7Z",
+            "lastUpdated": "14.07.2019 13:45:53"
+          },
+          {
+            "name": "grey",
+            "asin": "B07HBCCGY8",
+            "price": 0,
+            "link": "https://www.amazon.de/Apple-iPhone-X-64GB-Silber/dp/B075LYDD7Z?psc=1&SubscriptionId=AKIAJWKQVEDLHTUZJHJA&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B075LYDD7Z",
+            "lastUpdated": "14.07.2019 13:45:53"
+          }
+        ]
+      },
+      {
+        "storage": 256,
+        "memory": 4,
+        "colors": [
+          {
+            "name": "gold",
+            "asin": "B07HBDB755",
+            "price": 1,
+            "link": "https://www.amazon.de/Apple-iPhone-64GB-Space-Grau/dp/B075LXNK24?psc=1&SubscriptionId=AKIAJWKQVEDLHTUZJHJA&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B075LXNK24",
+            "lastUpdated": "14.07.2019 13:45:52"
+          },
+          {
+            "name": "silver",
+            "asin": "B07HBDNQBS",
+            "price": 0,
+            "link": "https://www.amazon.de/Apple-iPhone-X-64GB-Silber/dp/B075LYDD7Z?psc=1&SubscriptionId=AKIAJWKQVEDLHTUZJHJA&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B075LYDD7Z",
+            "lastUpdated": "14.07.2019 13:45:53"
+          },
+          {
+            "name": "grey",
+            "asin": "B07HBCSB2K",
+            "price": 0,
+            "link": "https://www.amazon.de/Apple-iPhone-X-64GB-Silber/dp/B075LYDD7Z?psc=1&SubscriptionId=AKIAJWKQVEDLHTUZJHJA&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B075LYDD7Z",
+            "lastUpdated": "14.07.2019 13:45:53"
+          }
+        ]
+      },
+      {
+        "storage": 512,
+        "memory": 4,
+        "colors": [
+          {
+            "name": "gold",
+            "asin": "B07HBCTN8B",
+            "price": 1,
+            "link": "https://www.amazon.de/Apple-iPhone-64GB-Space-Grau/dp/B075LXNK24?psc=1&SubscriptionId=AKIAJWKQVEDLHTUZJHJA&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B075LXNK24",
+            "lastUpdated": "14.07.2019 13:45:52"
+          },
+          {
+            "name": "silver",
+            "asin": "B07HBDNKZH",
+            "price": 0,
+            "link": "https://www.amazon.de/Apple-iPhone-X-64GB-Silber/dp/B075LYDD7Z?psc=1&SubscriptionId=AKIAJWKQVEDLHTUZJHJA&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B075LYDD7Z",
+            "lastUpdated": "14.07.2019 13:45:53"
+          },
+          {
+            "name": "grey",
+            "asin": "B07HBCSYLL",
+            "price": 0,
+            "link": "https://www.amazon.de/Apple-iPhone-X-64GB-Silber/dp/B075LYDD7Z?psc=1&SubscriptionId=AKIAJWKQVEDLHTUZJHJA&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B075LYDD7Z",
+            "lastUpdated": "14.07.2019 13:45:53"
+          }
+        ]
+      }
+    ]
+  },
+  {
     "name": "Moto X4",
     "brand": "Motorola",
     "released": "2017-10",
