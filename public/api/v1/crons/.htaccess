@@ -6,7 +6,7 @@ order deny,allow
 
 #HTTP Authorization Infos an die Scripte weitergeben
 #Rewrite rule explained:
-#Rewrite all requests (.*) to be the same (-) ut execute flag env and last [ev=xxx,last]
+#Rewrite all requests (.*) to be the same (-) but execute flag env and last [ev=xxx,last]
 #env: Set EnvironmentVariable HTTP_AUTHORIZATION to %{HTTP:Authorization} - Apache normally doesnt send %{HTTP:Authorization} to the scripts (Security)
 #last: This is the last rule, wont execute any more rules
 RewriteEngine on
