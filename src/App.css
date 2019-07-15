@@ -257,15 +257,13 @@ body,
   height: calc(100vh - 75px);
   overflow: auto;
   position: relative;
-  padding-top: 16px;
-  padding-bottom: 16px;
 }
 
 .timeline-top-border {
   border: 1px solid var(--border-color);
   width: 16px;
   position: absolute;
-  top: 16px;
+  top: 0;
   left: 10px;
 }
 
