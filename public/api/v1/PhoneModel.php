@@ -9,7 +9,7 @@
         die();
     }
 
-    require_once('internal/dbConnect.php');
+    require_once('internal/DbConnect.php');
     require_once('internal/model/PhoneModel.php');
 
     switch($method){

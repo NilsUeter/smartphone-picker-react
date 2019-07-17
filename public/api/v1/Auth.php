@@ -9,8 +9,8 @@
     }
     
     // Check Authentification
-    require_once('internal/authorizer.php');
-    require_once('internal/dbConnect.php');
+    require_once('internal/Authorizer.php');
+    require_once('internal/DbConnect.php');
     if(checkValidAuthentication($pdo, "AUTH")) {
         //Retrieve user data from request
         $userInput = json_decode(file_get_contents('php://input'), true);
