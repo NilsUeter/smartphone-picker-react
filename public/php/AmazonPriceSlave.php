@@ -30,7 +30,7 @@
 
             foreach($phoneType["colors"] as $colorIndex => $phoneColor) {
 
-                if($counter < 2) {
+                if($counter < 4) {
                     logToFile("AmazonPriceSlave", "Color Name: " . $phoneColor["name"]);
                     logToFile("AmazonPriceSlave", "Last Updated: " . $phoneColor["lastUpdated"]);
                     $dateLastUpdated = date_create_from_format("d.m.Y H:i:s", $phoneColor["lastUpdated"]);
