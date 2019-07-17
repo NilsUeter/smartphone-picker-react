@@ -257,16 +257,14 @@ class SmartphoneStore {
 
   compareFunctionLowest(a, b, type) {
     return FilterStore.isDescending
-      ? b.types.colors[b.smallestPrice][type] -
-          a.types.colors[a.smallestPrice][type]
-      : a.types.colors[a.smallestPrice][type] -
-          b.types.colors[b.smallestPrice][type];
+      ? b.types[0].colors[0][type] - a.types[0].colors[0][type]
+      : a.types[0].colors[0][type] - b.types[0].colors[0][type];
   }
 
   getAttributeFromSmartphone = (smartphone, type) => {
     switch (type) {
       case "price":
-        return smartphone.types.colors[smartphone.smallestPrice][type] + "€";
+        return smartphone.types[0].colors[0][type] + "€";
       case "length":
       case "width":
         return smartphone[type] + "mm";

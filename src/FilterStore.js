@@ -36,7 +36,7 @@ class FilterStore {
   price_maximum_1 = 1200;
 
   @observable
-  size_minimum_1 = 4.7;
+  size_minimum_1 = 4.6;
   @observable
   size_maximum_1 = 7;
 
@@ -251,7 +251,7 @@ const resetCopy = {
   release_maximum: new Date().toISOString().slice(0, 7),
   price_minimum_1: 0,
   price_maximum_1: 1200,
-  size_minimum_1: 4.7,
+  size_minimum_1: 4.6,
   size_maximum_1: 7,
   size_minimum_2: 135,
   size_maximum_2: 163,
