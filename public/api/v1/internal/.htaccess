@@ -1,0 +1,3 @@
+#default denied, allow regeln spezifizieren, dann Sonderdenyregeln, die elemente der allowregeln überschreiben
+#https://stackoverflow.com/questions/9943042/htaccess-order-deny-allow-deny
+order allow,deny
