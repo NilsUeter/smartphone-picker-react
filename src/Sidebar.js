@@ -138,6 +138,11 @@ class Sidebar extends Component {
 
           <button
             title="Favorited smartphones."
+            disabled={
+              Object.keys(FilterStore.selectedFavorites).length < 1
+                ? "disabled"
+                : ""
+            }
             className={
               "sidebar-fav-button" +
               (Object.keys(FilterStore.selectedFavorites).length

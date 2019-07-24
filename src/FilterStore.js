@@ -13,6 +13,9 @@ class FilterStore {
   activeFilterBox = "Sorting Options";
 
   @observable
+  currentQuery = "";
+
+  @observable
   searchQuery = "";
   @observable
   filterType = "totalscore";
@@ -176,6 +179,7 @@ class FilterStore {
     for (key in this) {
       switch (key) {
         //Define filters which aren't expected to be included in the url
+        case "currentQuery":
         case "country":
         case "updateURL":
         case "sidebarHidden":
@@ -219,6 +223,7 @@ class FilterStore {
         finalquery;
 
       window.history.pushState({ path: newurl }, "", newurl);
+      this.currentQuery = finalquery;
     }
   };
 

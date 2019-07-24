@@ -251,11 +251,13 @@ body,
   flex-wrap: wrap;
   justify-content: center;
   height: calc(100vh - 75px);
+  width: 100%;
   overflow: auto;
 }
 
 .smartphones-releases {
   height: calc(100vh - 75px);
+  width: 100%;
   overflow: auto;
   position: relative;
 }
