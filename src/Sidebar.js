@@ -42,6 +42,18 @@ const storageMarks = {
       color: "var(--text-color)"
     },
     label: "256"
+  },
+  5: {
+    style: {
+      color: "var(--text-color)"
+    },
+    label: "512"
+  },
+  6: {
+    style: {
+      color: "var(--text-color)"
+    },
+    label: "1024"
   }
 };
 
@@ -123,6 +135,7 @@ class Sidebar extends Component {
       <React.Fragment>
         <div className="sidebar-status-bar">
           <button
+            id="js_resetAllFiltersButton"
             title="Reset all chosen filters."
             className="sidebar-status-buttons"
             onClick={() => FilterStore.resetFilters()}
@@ -421,7 +434,7 @@ class Sidebar extends Component {
           <div className="storageSlider">
             <Slider
               min={0}
-              max={4}
+              max={6}
               marks={storageMarks}
               step={null}
               onChange={this.changeAttributeStorage}

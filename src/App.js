@@ -11,6 +11,27 @@ import About from "./About.js";
 import FilterStore from "./FilterStore.js";
 
 import { observer } from "mobx-react";
+import SmartphoneStore from "./SmartphoneStore";
+
+const NoResultsInfo = () => (
+  <div className="no-results-container">
+    <div className="no-results__header">No results</div>
+    <div className="no-results__description">
+      The filter criteria were probably too strict.
+      <br />
+      Remove some filters or click{" "}
+      <span
+        className="here-remove-filters"
+        onClick={() =>
+          document.getElementById("js_resetAllFiltersButton").click()
+        }
+      >
+        here
+      </span>{" "}
+      to remove all filters.
+    </div>
+  </div>
+);
 
 @observer
 class App extends Component {
@@ -33,6 +54,9 @@ class App extends Component {
         break;
     }
 
+    if (SmartphoneStore.listOfFilteredAndScoredObjects.length < 1) {
+      content = <NoResultsInfo />;
+    }
     return !FilterStore.sidebarHidden && window.innerWidth < 600 ? (
       <div />
     ) : (
