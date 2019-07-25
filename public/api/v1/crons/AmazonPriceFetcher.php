@@ -1,11 +1,19 @@
 <?php
+    require_once('../internal/Logger.php');
+    $logger = new Logger("CRON_AmazonPriceFetcher");
     // Check the HTTP method of the request
     header('Access-Control-Allow-Methods: GET');
     if($_SERVER['REQUEST_METHOD'] !== 'GET') {
+        $logger->logToFile($_SERVER['REQUEST_METHOD'].' Request from '.$_SERVER['REMOTE_ADDR'].' rejected');
         header('HTTP/1.1 405 Method not allowed Error');
+        header('Content-Type: application/json');
+        $status = array('status' => 'Request rejected');
+        echo json_encode($status);
         die();
     }
 
+    $logger->logToFile($_SERVER['REQUEST_METHOD'].' Request from '.$_SERVER['REMOTE_ADDR'].' accepted');
+    $logger->logToFile('Useragent: '.$_SERVER['HTTP_USER_AGENT']);
     require_once('../internal/Authorizer.php');
     require_once('../internal/DbConnect.php');
     if(checkValidAuthentication($pdo, "CRONS")) {
@@ -47,15 +55,12 @@
                                 //TODO Considered to be changed
                                 $items[$key]['PRICE'] = 0.00;
                             }
-                            
                          }
                     } else {
-                        //TODO Fehler loggen
-                        echo "not valid";
+                        $logger->logToFile('Request to Amazon PA-APO was not valid');
                     }
                 } else {
-                    //TODO Fehler loggen
-                    echo "request execution failed";
+                    $logger->logToFile('Request to Amazon PA-API failed');
                 }
                 unset($itemIDs);
                 $i = 0;
@@ -81,11 +86,14 @@
         }
         $pdo->commit();
 
-        //Return status object
+        //Return successful status object
+        $logger->logToFile('Persisted fetched prices in the database, request ended successfully');
         header('Content-Type: application/json');
         header('HTTP/1.1 200 OK');
         $status = array('status' => 'Successfully fetched and persisted current Amazon prices');
         echo json_encode($status);
+    } else {
+        $logger->logToFile('Authentification failed, request aborted');
     }
 
     //TODO externalisieren falls woanders benötigt
@@ -138,7 +146,19 @@
             //TODO loggen
             $request_url = 'https://'.$this->endpoint.$this->uri.'?'.$canonical_query_string.'&Signature='.rawurlencode($signature);
             //execute request and return result (FALSE if failed, XML with data when successful)
-            return file_get_contents($request_url);
+            //file_get_contents can timeout only resulting in an E_WARNING. To catch it and prevent further dmg adjust error handler
+            //just for this call and if the timeout is catched return FALSE
+            //https://stackoverflow.com/questions/1241728/can-i-try-catch-a-warning
+            set_error_handler(function ($err_severity, $err_msg, $err_file, $err_line, array $err_context) {
+                throw new ErrorException( $err_msg, 0, $err_severity, $err_file, $err_line );
+            }, E_WARNING);
+            try {
+                return file_get_contents($request_url);
+            } catch (Exception $e) {
+                $this->sErrorMsg = $e->getMessage();
+                return FALSE;
+            }
+            restore_error_handler();
         }
     }
 ?>
