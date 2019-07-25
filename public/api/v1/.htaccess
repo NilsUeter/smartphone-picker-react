@@ -1,4 +1,19 @@
 #Gilt auch für Subdirs, außer es wird überschrieben
+#Default denied, each Endpoint allowed
+#https://stackoverflow.com/questions/9943042/htaccess-order-deny-allow-deny
+order allow,deny
+<Files Auth.php>
+allow from all
+</Files>
+<Files Market.php>
+allow from all
+</Files>
+<Files PhoneModel.php>
+allow from all
+</Files>
+<Files Smartphone.php>
+allow from all
+</Files>
 #HTTP Authorization Infos an die Scripte weitergeben
 #Rewrite rule explained:
 #Rewrite all requests (.*) to be the same (-) but execute flag env and last [ev=xxx,last]
