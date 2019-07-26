@@ -84,6 +84,8 @@ class FilterStore {
   selectedFavorites = {};
   @observable
   onlyShowFavedPhones = false;
+  @observable
+  showBacksideDefault = false;
 
   getSidebarHiddenInitialState = () => {
     const viewportWidth = window.innerWidth;
@@ -275,7 +277,8 @@ const resetCopy = {
   waterproof: "",
   selectedBrands: [],
   selectedFavorites: {},
-  onlyShowFavedPhones: false
+  onlyShowFavedPhones: false,
+  showBacksideDefault: false
 };
 
 window.addEventListener("popstate", () => filterStore.loadURL(), false);

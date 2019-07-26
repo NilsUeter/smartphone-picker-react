@@ -49,11 +49,17 @@ class Smartphone extends Component {
             )}
           </div>
           <div
-            className="img-container"
+            className={
+              "img-container " +
+              (FilterStore.showBacksideDefault
+                ? "img-container--is-flipped"
+                : "")
+            }
             style={{
               height: this.imageContainerHeight
             }}
             onClick={e =>
+              window.innerWidth < 600 && //only allow mobile devices to switch with click
               e.currentTarget.classList.toggle("img-container--is-flipped")
             }
           >

@@ -233,11 +233,6 @@ body,
     transform: rotateY(180deg);
   }
 
-  /*only allow mobile devices to flip with click*/
-  .img-container--is-flipped {
-    transform: rotateY(0deg);
-  }
-
   ::-webkit-scrollbar {
     width: 10px;
     height: 12px;
