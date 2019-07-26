@@ -41,7 +41,7 @@ class Smartphone extends Component {
   render() {
     return (
       <div className="smartphone">
-        <div>
+        <div class="img-container-container">
           <div className="smartphone-filtercriteria">
             {SmartphoneStore.getAttributeFromSmartphone(
               this.props.smartphone,
@@ -53,34 +53,47 @@ class Smartphone extends Component {
             style={{
               height: this.imageContainerHeight
             }}
+            onClick={e =>
+              e.currentTarget.classList.toggle("img-container--is-flipped")
+            }
           >
-            {FilterStore.scaleInput ? (
-              <img
-                style={{
-                  height: this.smartphoneHeight
-                }}
-                className="qtip-img"
-                src={
-                  FilterStore.emptySmartphones
-                    ? "images/" + this.props.smartphone.imagelink + "_blank.png"
-                    : "images/" + this.props.smartphone.imagelink + ".jpg"
-                }
-                alt=""
-              />
-            ) : (
-              <img
-                style={{
-                  height: (165 / 165) * 100 + "%"
-                }}
-                className="qtip-img"
-                src={
-                  FilterStore.emptySmartphones
-                    ? "images/" + this.props.smartphone.imagelink + "_blank.png"
-                    : "images/" + this.props.smartphone.imagelink + ".jpg"
-                }
-                alt=""
-              />
-            )}
+            <img
+              style={
+                FilterStore.scaleInput
+                  ? {
+                      height: this.smartphoneHeight
+                    }
+                  : {
+                      height: (165 / 165) * 100 + "%"
+                    }
+              }
+              className="qtip-img"
+              src={
+                FilterStore.emptySmartphones
+                  ? "images/" + this.props.smartphone.imagelink + "_blank.png"
+                  : "images/" + this.props.smartphone.imagelink + ".jpg"
+              }
+              alt=""
+            />
+            <img
+              style={
+                FilterStore.scaleInput
+                  ? {
+                      height: this.smartphoneHeight
+                    }
+                  : {
+                      height: (165 / 165) * 100 + "%"
+                    }
+              }
+              className="qtip-img qtip-img-backside"
+              src={"images/" + this.props.smartphone.imagelink + "_back.jpg"}
+              onError={e =>
+                (e.target.src = FilterStore.emptySmartphones
+                  ? "images/" + this.props.smartphone.imagelink + "_blank.png"
+                  : "images/" + this.props.smartphone.imagelink + ".jpg")
+              }
+              alt=""
+            />
           </div>
         </div>
         <div className="smartphone-details">

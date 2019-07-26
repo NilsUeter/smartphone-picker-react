@@ -179,6 +179,35 @@ body,
   animation: pulse 2s infinite;
 }
 
+.img-container-container {
+  perspective: 600px;
+}
+
+.img-container {
+  position: relative;
+  align-items: flex-end;
+  display: flex;
+  justify-content: center;
+  height: calc((100vh - 450px));
+  margin-bottom: 16px;
+  padding: 0 8px 8px;
+  background-color: var(--just-white);
+  border-radius: 8px;
+  transform-style: preserve-3d;
+  transition: transform 1s;
+  min-width: 260px;
+}
+
+.img-container--is-flipped {
+  transform: rotateY(180deg);
+}
+
+@media (min-height: 1000px) {
+  .img-container {
+    height: calc((1000px - 450px));
+  }
+}
+
 @media only screen and (min-width: 600px) {
   .sidebar {
     position: relative;
@@ -199,6 +228,16 @@ body,
     position: absolute;
   }
 
+  /*only allow desktop devices to flip with hover*/
+  .img-container-container:hover .img-container {
+    transform: rotateY(180deg);
+  }
+
+  /*only allow mobile devices to flip with click*/
+  .img-container--is-flipped {
+    transform: rotateY(0deg);
+  }
+
   ::-webkit-scrollbar {
     width: 10px;
     height: 12px;
@@ -210,23 +249,6 @@ body,
 
   ::-webkit-scrollbar-thumb {
     background: var(--text-color);
-  }
-}
-
-.img-container {
-  align-items: flex-end;
-  display: flex;
-  justify-content: center;
-  height: calc((100vh - 450px));
-  margin-bottom: 16px;
-  padding: 0 8px 8px;
-  background-color: var(--just-white);
-  border-radius: 8px;
-}
-
-@media (min-height: 1000px) {
-  .img-container {
-    height: calc((1000px - 450px));
   }
 }
 
@@ -626,6 +648,7 @@ textarea:focus {
 .smartphone-filtercriteria {
   font-weight: bold;
   padding-top: 4px;
+  padding-bottom: 8px;
   vertical-align: top;
   text-align: center;
   color: var(--first-color);
@@ -690,7 +713,13 @@ textarea:focus {
 }
 
 .qtip-img {
+  position: absolute;
   vertical-align: middle;
+  backface-visibility: hidden;
+}
+
+.qtip-img-backside {
+  transform: rotateY(180deg);
 }
 
 .horizontalRule {
