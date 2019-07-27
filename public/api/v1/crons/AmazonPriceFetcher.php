@@ -17,6 +17,7 @@
     require_once('../internal/Authorizer.php');
     require_once('../internal/DbConnect.php');
     if(checkValidAuthentication($pdo, "CRONS")) {
+        $logger->logToFile('Fetching current Amazon Prices after successfully authentificated at this endpoint');
         //Get all Amazon Items to update
         //TODO andere Amazon Märkte, aktuell hardcode DE und nur AmazonDataRequester für DE,
         //Alle Amazon Vendoren abfragen, für jeden einen Requester und dann für alle ModelTypes jedes Vendors alle ASIN`s abfragen
@@ -47,20 +48,23 @@
                             $items[$key]['LINK'] = $XMLItem->DetailPageURL->__toString();
                             //Amazon delivers amounts without decimal separator, so we need to divide with 100
                             //e. g. 180,99€ comes as 18099 and 18099/100 = 180,99
-                            if($XMLItem->OfferSummary->LowestNewPrice->Amount !== NULL) {
-                                $amazonPriceString = $XMLItem->OfferSummary->LowestNewPrice->Amount->__toString();
+                            if($XMLItem->Offers->TotalOffers->__toString() !== '0') {
+                                //Take price of first Amazon offer
+                                $amazonPriceString = $XMLItem->Offers->Offer[0]->OfferListing->Price->Amount->__toString();
                                 $items[$key]['PRICE'] = (floatval($amazonPriceString)/100);
                             } else {
-                                //Element LowestNewPrice not existing, setting default value
-                                //TODO Considered to be changed
+                                //No offer for this item by Amazon
+                                $logger->logToFile('WARNING: Price set to 0.00 because there is no Amazon Offer for this ASIN: ' . $items[$key]['ITEM_ID']);
                                 $items[$key]['PRICE'] = 0.00;
                             }
                          }
                     } else {
-                        $logger->logToFile('Request to Amazon PA-APO was not valid');
+                        $logger->logToFile('ERROR: Request to Amazon PA-API was not valid, exiting script call');
+                        die();
                     }
                 } else {
-                    $logger->logToFile('Request to Amazon PA-API failed');
+                    $logger->logToFile('ERROR: Request to Amazon PA-API failed, exiting script call');
+                    die();
                 }
                 unset($itemIDs);
                 $i = 0;
@@ -116,9 +120,9 @@
               "AssociateTag" => $amazonVendor['ASSOCIATE_TAG'],
               "AWSAccessKeyId" => $amazonVendor['ACCESS_KEY'],
               "IdType" => "ASIN",
-              //'OfferSummary' for smallest price of the item with "New" condition
+              //'OfferListings' for current price offered by Amazon
               //'Small' for the DetailPageURL
-              "ResponseGroup" => "OfferSummary, Small"
+              "ResponseGroup" => "OfferListings, Small"
             );
         }
 
