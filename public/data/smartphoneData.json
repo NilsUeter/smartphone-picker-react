@@ -4531,5 +4531,54 @@
         ]
       }
     ]
+  },
+  {
+    "name": "Galaxy A80",
+    "brand": "Samsung",
+    "released": "2019-05",
+    "imagelink": "samsunga80",
+    "design": 5,
+    "display": 6.7,
+    "length": 165,
+    "width": 77,
+    "processor": 4,
+    "updates": 3,
+    "camera": 4,
+    "battery": 4,
+    "batterysize": 3700,
+    "sdslot": 0,
+    "simcards": 2,
+    "notch": 2,
+    "waterproof": 0,
+    "headphonejack": 0,
+    "types": [
+      {
+        "storage": 128,
+        "memory": 8,
+        "colors": [
+          {
+            "name": "phantom black",
+            "asin": "B07STFM4DR",
+            "price": 219,
+            "link": "https://www.amazon.de/Samsung-Smartphone-interner-Speicher-schwarz/dp/B07QKDX1T4?psc=1&SubscriptionId=AKIAJWKQVEDLHTUZJHJA&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07QKDX1T4",
+            "lastUpdated": "27.07.2019 19:15:58"
+          },
+          {
+            "name": "ghost white",
+            "asin": "B07SWNNY5F",
+            "price": 219,
+            "link": "https://www.amazon.de/Samsung-Galaxy-Smartphone-interner-Speicher-Wei%C3%9F/dp/B07QKDH1R3?psc=1&SubscriptionId=AKIAJWKQVEDLHTUZJHJA&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07QKDH1R3",
+            "lastUpdated": "27.07.2019 19:45:57"
+          },
+          {
+            "name": "angel gold",
+            "asin": "B07SSCCJL3",
+            "price": 219,
+            "link": "https://www.amazon.de/Samsung-Galaxy-Smartphone-interner-Speicher-Wei%C3%9F/dp/B07QKDH1R3?psc=1&SubscriptionId=AKIAJWKQVEDLHTUZJHJA&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07QKDH1R3",
+            "lastUpdated": "27.07.2019 19:45:57"
+          }
+        ]
+      }
+    ]
   }
 ]
