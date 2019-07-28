@@ -46,7 +46,7 @@ class FilterStore {
   @observable
   size_minimum_2 = 135;
   @observable
-  size_maximum_2 = 163;
+  size_maximum_2 = 165;
 
   @observable
   size_minimum_3 = 65;
@@ -261,7 +261,7 @@ const resetCopy = {
   size_minimum_1: 4.6,
   size_maximum_1: 7,
   size_minimum_2: 135,
-  size_maximum_2: 163,
+  size_maximum_2: 165,
   size_minimum_3: 65,
   size_maximum_3: 78,
   design: "1",

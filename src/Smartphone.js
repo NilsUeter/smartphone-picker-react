@@ -41,7 +41,7 @@ class Smartphone extends Component {
   render() {
     return (
       <div className="smartphone">
-        <div class="img-container-container">
+        <div className="img-container-container">
           <div className="smartphone-filtercriteria">
             {SmartphoneStore.getAttributeFromSmartphone(
               this.props.smartphone,
