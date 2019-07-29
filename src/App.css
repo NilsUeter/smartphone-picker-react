@@ -197,8 +197,19 @@ body,
   transition: transform 0.6s ease-in-out;
 }
 
+/*when backsideDefault is activated then it starts flipped*/
+.img-container--backsideDefault {
+  transform: rotateY(180deg);
+}
+
+/*flips smartphone to backside*/
 .img-container--is-flipped {
   transform: rotateY(180deg);
+}
+
+/*when backsideDefault is activated then is-flipped flips to front*/
+.img-container--backsideDefault.img-container--is-flipped {
+  transform: rotateY(0deg);
 }
 
 @media (min-height: 1000px) {
@@ -230,6 +241,11 @@ body,
   /*only allow desktop devices to flip with hover*/
   .img-container-container:hover .img-container {
     transform: rotateY(180deg);
+  }
+
+  /*with backsideDefault activated the hover flip flips to the front*/
+  .img-container-container:hover .img-container--backsideDefault {
+    transform: rotateY(0deg);
   }
 
   ::-webkit-scrollbar {

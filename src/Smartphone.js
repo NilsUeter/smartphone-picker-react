@@ -52,7 +52,7 @@ class Smartphone extends Component {
             className={
               "img-container " +
               (FilterStore.showBacksideDefault
-                ? "img-container--is-flipped"
+                ? "img-container--backsideDefault"
                 : "")
             }
             style={{
