@@ -5,6 +5,7 @@
   --just-black: #263238;
   --just-white: #fff;
   --just-yellow: #f5a80b;
+  --just-yellow-light: #f5a80b85;
 }
 
 .lightmode {
@@ -662,10 +663,13 @@ textarea:focus {
 }
 
 .smartphone-fav-star:hover {
-  fill: var(--just-yellow);
+  fill: var(--just-yellow-light);
 }
 
 .smartphone-fav-star--clicked {
+  fill: var(--just-yellow);
+}
+.smartphone-fav-star--clicked:hover {
   fill: var(--just-yellow);
 }
 

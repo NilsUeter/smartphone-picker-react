@@ -95,9 +95,10 @@ class FilterStore {
     return true;
   };
 
+  //warning getMinDate exists in this class and out of it
   getMinDate = () => {
     const date = new Date();
-    date.setMonth(new Date().getMonth() - 16);
+    date.setMonth(new Date().getMonth() - 18);
     return date.toISOString().slice(0, 7);
   };
 
@@ -239,9 +240,10 @@ class FilterStore {
 
 const filterStore = new FilterStore();
 
+//warning getMinDate exists in this class and out of it
 const getMinDate = () => {
   const date = new Date();
-  date.setMonth(new Date().getMonth() - 16);
+  date.setMonth(new Date().getMonth() - 18);
   return date.toISOString().slice(0, 7);
 };
 
