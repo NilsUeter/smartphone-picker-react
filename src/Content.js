@@ -19,7 +19,7 @@ class Content extends Component {
               smartphone.storage
             }
             smartphone={smartphone}
-            maxImgHeight={500}
+            maxImgHeight={450}
             filterStore={FilterStore}
           />
         ))}
