@@ -126,6 +126,7 @@ class Smartphone extends Component {
                   "selectedFavorites",
                   this.props.smartphone.brand + " " + this.props.smartphone.name
                 );
+                FilterStore.updateURL();
               }}
             >
               <path
