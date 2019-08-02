@@ -292,6 +292,7 @@ body,
   height: calc(100vh - 75px);
   width: 100%;
   overflow: auto;
+  will-change: transform;
 }
 
 .smartphones-releases {
