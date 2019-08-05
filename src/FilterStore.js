@@ -65,7 +65,7 @@ class FilterStore {
   battery = "1";
 
   @observable
-  storage = 16;
+  storage = 8;
   @observable
   headphoneJack = false;
   @observable
@@ -271,7 +271,7 @@ const resetCopy = {
   updates: "1",
   camera: "1",
   battery: "1",
-  storage: 16,
+  storage: 8,
   headphoneJack: false,
   simCards: false,
   sdSlot: false,

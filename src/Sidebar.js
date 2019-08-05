@@ -17,39 +17,45 @@ const storageMarks = {
     style: {
       color: "var(--text-color)"
     },
-    label: "16"
+    label: "8"
   },
   1: {
     style: {
       color: "var(--text-color)"
     },
-    label: "32"
+    label: "16"
   },
   2: {
     style: {
       color: "var(--text-color)"
     },
-    label: "64"
+    label: "32"
   },
   3: {
     style: {
       color: "var(--text-color)"
     },
-    label: "128"
+    label: "64"
   },
   4: {
     style: {
       color: "var(--text-color)"
     },
-    label: "256"
+    label: "128"
   },
   5: {
     style: {
       color: "var(--text-color)"
     },
-    label: "512"
+    label: "256"
   },
   6: {
+    style: {
+      color: "var(--text-color)"
+    },
+    label: "512"
+  },
+  7: {
     style: {
       color: "var(--text-color)"
     },
@@ -93,7 +99,7 @@ class Sidebar extends Component {
   };
 
   changeAttributeStorage = changeEvent => {
-    FilterStore.changeAttribute("storage", 16 * Math.pow(2, changeEvent));
+    FilterStore.changeAttribute("storage", 8 * Math.pow(2, changeEvent));
   };
 
   changeAttributeDateRange = changeEvent => {
@@ -168,7 +174,7 @@ class Sidebar extends Component {
             </svg>
           </button>
           <button
-            title="Favorited smartphones."
+            title="Show Favorited smartphones."
             disabled={
               Object.keys(FilterStore.selectedFavorites).length < 1
                 ? "disabled"
@@ -452,7 +458,7 @@ class Sidebar extends Component {
           <div className="storageSlider">
             <Slider
               min={0}
-              max={6}
+              max={7}
               marks={storageMarks}
               step={null}
               onChange={this.changeAttributeStorage}

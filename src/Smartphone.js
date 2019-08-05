@@ -74,6 +74,7 @@ class Smartphone extends Component {
                     }
               }
               className="qtip-img"
+              onError={e => (e.target.alt = "No image")}
               src={
                 FilterStore.emptySmartphones
                   ? "images/" + this.props.smartphone.imagelink + "_blank.png"
@@ -92,12 +93,8 @@ class Smartphone extends Component {
                     }
               }
               className="qtip-img qtip-img-backside"
+              onError={e => (e.target.alt = "No image")}
               src={"images/" + this.props.smartphone.imagelink + "_back.jpg"}
-              onError={e =>
-                (e.target.src = FilterStore.emptySmartphones
-                  ? "images/" + this.props.smartphone.imagelink + "_blank.png"
-                  : "images/" + this.props.smartphone.imagelink + ".jpg")
-              }
               alt=""
             />
           </div>
