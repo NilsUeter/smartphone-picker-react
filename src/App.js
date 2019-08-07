@@ -6,6 +6,7 @@ import Header from "./Header.js";
 import SidebarContainer from "./SidebarContainer.js";
 import Content from "./Content.js";
 import ContentReleases from "./ContentReleases.js";
+import ContentCharts from "./ContentCharts.js";
 import About from "./About.js";
 
 import FilterStore from "./FilterStore.js";
@@ -42,6 +43,9 @@ class App extends Component {
         return;
       case "/releases":
         content = <ContentReleases />;
+        break;
+      case "/charts":
+        content = <ContentCharts />;
         break;
       case "/justgood":
         FilterStore.design = "3";

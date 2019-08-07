@@ -175,8 +175,6 @@ body,
   z-index: 100;
   box-shadow: 0 3px 5px -1px rgba(0, 0, 0, 0.2),
     0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12);
-
-  box-shadow: 0 0 0 rgba(44, 204, 70, 0.4);
   animation: pulse 2s infinite;
 }
 
@@ -289,17 +287,26 @@ body,
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  height: calc(100vh - 75px);
-  width: 100%;
-  overflow: auto;
-  will-change: transform;
 }
 
-.smartphones-releases {
+.smartphones,
+.smartphones-releases,
+.smartphones-charts {
   height: calc(100vh - 75px);
   width: 100%;
   overflow: auto;
   position: relative;
+  will-change: transform;
+}
+
+.smartphones-charts {
+  overflow: hidden;
+}
+
+.chart-tooltip {
+  padding: 4px;
+  background-color: var(--background-color);
+  box-shadow: 0 3px 12px rgba(27, 31, 35, 0.35), 0 0 1px rgba(27, 31, 35, 0.4);
 }
 
 .timeline-top-border {
