@@ -41,7 +41,7 @@ class Smartphone extends Component {
   render() {
     return (
       <div className="smartphone">
-        <div>
+        <div className="img-container-container">
           <div className="smartphone-filtercriteria">
             {SmartphoneStore.getAttributeFromSmartphone(
               this.props.smartphone,
@@ -49,38 +49,54 @@ class Smartphone extends Component {
             )}
           </div>
           <div
-            className="img-container"
+            className={
+              "img-container " +
+              (FilterStore.showBacksideDefault
+                ? "img-container--backsideDefault"
+                : "")
+            }
             style={{
               height: this.imageContainerHeight
             }}
+            onClick={e =>
+              window.innerWidth < 600 && //only allow mobile devices to switch with click
+              e.currentTarget.classList.toggle("img-container--is-flipped")
+            }
           >
-            {FilterStore.scaleInput ? (
-              <img
-                style={{
-                  height: this.smartphoneHeight
-                }}
-                className="qtip-img"
-                src={
-                  FilterStore.emptySmartphones
-                    ? "images/" + this.props.smartphone.imagelink + "_blank.png"
-                    : "images/" + this.props.smartphone.imagelink + ".jpg"
-                }
-                alt=""
-              />
-            ) : (
-              <img
-                style={{
-                  height: (165 / 165) * 100 + "%"
-                }}
-                className="qtip-img"
-                src={
-                  FilterStore.emptySmartphones
-                    ? "images/" + this.props.smartphone.imagelink + "_blank.png"
-                    : "images/" + this.props.smartphone.imagelink + ".jpg"
-                }
-                alt=""
-              />
-            )}
+            <img
+              style={
+                FilterStore.scaleInput
+                  ? {
+                      height: this.smartphoneHeight
+                    }
+                  : {
+                      height: (165 / 165) * 100 + "%"
+                    }
+              }
+              className="qtip-img"
+              onError={e => (e.target.alt = "No image")}
+              src={
+                FilterStore.emptySmartphones
+                  ? "images/" + this.props.smartphone.imagelink + "_blank.png"
+                  : "images/" + this.props.smartphone.imagelink + ".jpg"
+              }
+              alt=""
+            />
+            <img
+              style={
+                FilterStore.scaleInput
+                  ? {
+                      height: this.smartphoneHeight
+                    }
+                  : {
+                      height: (165 / 165) * 100 + "%"
+                    }
+              }
+              className="qtip-img qtip-img-backside"
+              onError={e => (e.target.alt = "No image")}
+              src={"images/" + this.props.smartphone.imagelink + "_back.jpg"}
+              alt=""
+            />
           </div>
         </div>
         <div className="smartphone-details">
@@ -107,6 +123,7 @@ class Smartphone extends Component {
                   "selectedFavorites",
                   this.props.smartphone.brand + " " + this.props.smartphone.name
                 );
+                FilterStore.updateURL();
               }}
             >
               <path

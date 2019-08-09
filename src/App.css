@@ -5,11 +5,13 @@
   --just-black: #263238;
   --just-white: #fff;
   --just-yellow: #f5a80b;
+  --just-yellow-light: #f5a80b85;
 }
 
 .lightmode {
   --first-color: #2f5a9a;
   --text-color: #4f5259;
+  --text-color-dark: #2c2d2e;
   --border-color: #e0e0e0;
   --background-color: #fff;
   --foreground-color: #fff;
@@ -19,6 +21,7 @@
 .darkmode {
   --first-color: #d6d8de;
   --text-color: #a0a0a0;
+  --text-color-dark: #e7e7e7;
   --border-color: #a0a0a0;
   --background-color: #263238;
   --foreground-color: var(--background-color);
@@ -133,6 +136,7 @@ body,
 
 .sidebar-status-buttons {
   position: relative;
+  display: flex;
   fill: var(--first-color);
   height: 25px;
   padding: 2px;
@@ -171,9 +175,45 @@ body,
   z-index: 100;
   box-shadow: 0 3px 5px -1px rgba(0, 0, 0, 0.2),
     0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12);
-
-  box-shadow: 0 0 0 rgba(44, 204, 70, 0.4);
   animation: pulse 2s infinite;
+}
+
+.img-container-container {
+  perspective: 1000px;
+}
+
+.img-container {
+  position: relative;
+  align-items: flex-end;
+  display: flex;
+  justify-content: center;
+  height: calc((100vh - 450px));
+  margin-bottom: 16px;
+  background-color: var(--just-white);
+  border-radius: 8px;
+  transform-style: preserve-3d;
+  transition: transform 0.6s ease-in-out;
+}
+
+/*when backsideDefault is activated then it starts flipped*/
+.img-container--backsideDefault {
+  transform: rotateY(180deg);
+}
+
+/*flips smartphone to backside*/
+.img-container--is-flipped {
+  transform: rotateY(180deg);
+}
+
+/*when backsideDefault is activated then is-flipped flips to front*/
+.img-container--backsideDefault.img-container--is-flipped {
+  transform: rotateY(0deg);
+}
+
+@media (min-height: 1000px) {
+  .img-container {
+    height: calc((1000px - 450px));
+  }
 }
 
 @media only screen and (min-width: 600px) {
@@ -191,6 +231,21 @@ body,
     font-size: 24px;
   }
 
+  .status-button-share:focus + .clipboard-notifier {
+    display: block;
+    position: absolute;
+  }
+
+  /*only allow desktop devices to flip with hover*/
+  .img-container-container:hover .img-container {
+    transform: rotateY(180deg);
+  }
+
+  /*with backsideDefault activated the hover flip flips to the front*/
+  .img-container-container:hover .img-container--backsideDefault {
+    transform: rotateY(0deg);
+  }
+
   ::-webkit-scrollbar {
     width: 10px;
     height: 12px;
@@ -202,23 +257,6 @@ body,
 
   ::-webkit-scrollbar-thumb {
     background: var(--text-color);
-  }
-}
-
-.img-container {
-  align-items: flex-end;
-  display: flex;
-  justify-content: center;
-  height: calc((100vh - 450px));
-  margin-bottom: 16px;
-  padding: 0 8px 8px;
-  background-color: var(--just-white);
-  border-radius: 8px;
-}
-
-@media (min-height: 1000px) {
-  .img-container {
-    height: calc((1000px - 450px));
   }
 }
 
@@ -249,14 +287,26 @@ body,
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  height: calc(100vh - 75px);
-  overflow: auto;
 }
 
-.smartphones-releases {
+.smartphones,
+.smartphones-releases,
+.smartphones-charts {
   height: calc(100vh - 75px);
+  width: 100%;
   overflow: auto;
   position: relative;
+  will-change: transform;
+}
+
+.smartphones-charts {
+  overflow: hidden;
+}
+
+.chart-tooltip {
+  padding: 4px;
+  background-color: var(--background-color);
+  box-shadow: 0 3px 12px rgba(27, 31, 35, 0.35), 0 0 1px rgba(27, 31, 35, 0.4);
 }
 
 .timeline-top-border {
@@ -384,7 +434,18 @@ body,
 }
 
 .smartphoneCount {
-  margin-right: 8px;
+  margin-right: 4px;
+}
+
+.clipboard-notifier {
+  display: none;
+  z-index: 10;
+  padding: 2px 4px;
+  top: 40px;
+  right: 8px;
+  background: var(--background-color);
+  border-radius: 8px;
+  box-shadow: 4px 4px 8px 4px rgba(0, 0, 0, 0.2);
 }
 
 .searchQuery {
@@ -605,6 +666,7 @@ textarea:focus {
 .smartphone-filtercriteria {
   font-weight: bold;
   padding-top: 4px;
+  padding-bottom: 16px;
   vertical-align: top;
   text-align: center;
   color: var(--first-color);
@@ -613,7 +675,7 @@ textarea:focus {
 .smartphone-name {
   font-size: 18px;
   font-weight: 600;
-  color: var(--text-color);
+  color: var(--text-color-dark);
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -625,10 +687,13 @@ textarea:focus {
 }
 
 .smartphone-fav-star:hover {
-  fill: var(--just-yellow);
+  fill: var(--just-yellow-light);
 }
 
 .smartphone-fav-star--clicked {
+  fill: var(--just-yellow);
+}
+.smartphone-fav-star--clicked:hover {
   fill: var(--just-yellow);
 }
 
@@ -636,10 +701,9 @@ textarea:focus {
   position: absolute;
   box-sizing: border-box;
   background-color: var(--sidebar-background);
-  box-shadow: inset 0 0 2px 0px #595959;
   border-radius: 100%;
   height: 18px;
-  padding: 0 4px;
+  padding: 0 5px;
   left: 14px;
   top: 12px;
 }
@@ -670,7 +734,14 @@ textarea:focus {
 }
 
 .qtip-img {
+  position: absolute;
   vertical-align: middle;
+  backface-visibility: hidden;
+}
+
+.qtip-img-backside {
+  transform: rotateY(180deg);
+  position: relative;
 }
 
 .horizontalRule {
@@ -757,7 +828,7 @@ textarea:focus {
 }
 
 .smallInput {
-  width: 32px;
+  width: 36px;
   text-align: right;
   border: none;
   margin: 0;
@@ -854,4 +925,25 @@ textarea:focus {
 
 .nightmode-switch {
   fill: var(--first-color);
+}
+
+.no-results-container {
+  padding-top: 20%;
+  width: 100%;
+  text-align: center;
+}
+
+.no-results__header {
+  color: var(--bad-color);
+  font-weight: 700;
+}
+
+.no-results__description {
+  color: var(--text-color);
+  font-size: 14px;
+}
+.here-remove-filters {
+  color: var(--first-color);
+  font-weight: 700;
+  cursor: pointer;
 }

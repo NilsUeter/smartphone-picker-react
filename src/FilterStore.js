@@ -13,6 +13,9 @@ class FilterStore {
   activeFilterBox = "Sorting Options";
 
   @observable
+  currentQuery = "";
+
+  @observable
   searchQuery = "";
   @observable
   filterType = "totalscore";
@@ -36,14 +39,14 @@ class FilterStore {
   price_maximum_1 = 1200;
 
   @observable
-  size_minimum_1 = 4.7;
+  size_minimum_1 = 4.6;
   @observable
   size_maximum_1 = 7;
 
   @observable
   size_minimum_2 = 135;
   @observable
-  size_maximum_2 = 163;
+  size_maximum_2 = 165;
 
   @observable
   size_minimum_3 = 65;
@@ -62,7 +65,7 @@ class FilterStore {
   battery = "1";
 
   @observable
-  storage = 16;
+  storage = 8;
   @observable
   headphoneJack = false;
   @observable
@@ -81,6 +84,8 @@ class FilterStore {
   selectedFavorites = {};
   @observable
   onlyShowFavedPhones = false;
+  @observable
+  showBacksideDefault = false;
 
   getSidebarHiddenInitialState = () => {
     const viewportWidth = window.innerWidth;
@@ -90,9 +95,10 @@ class FilterStore {
     return true;
   };
 
+  //warning getMinDate exists in this class and out of it
   getMinDate = () => {
     const date = new Date();
-    date.setMonth(new Date().getMonth() - 16);
+    date.setMonth(new Date().getMonth() - 18);
     return date.toISOString().slice(0, 7);
   };
 
@@ -176,6 +182,7 @@ class FilterStore {
     for (key in this) {
       switch (key) {
         //Define filters which aren't expected to be included in the url
+        case "currentQuery":
         case "country":
         case "updateURL":
         case "sidebarHidden":
@@ -219,6 +226,7 @@ class FilterStore {
         finalquery;
 
       window.history.pushState({ path: newurl }, "", newurl);
+      this.currentQuery = finalquery;
     }
   };
 
@@ -232,9 +240,10 @@ class FilterStore {
 
 const filterStore = new FilterStore();
 
+//warning getMinDate exists in this class and out of it
 const getMinDate = () => {
   const date = new Date();
-  date.setMonth(new Date().getMonth() - 16);
+  date.setMonth(new Date().getMonth() - 18);
   return date.toISOString().slice(0, 7);
 };
 
@@ -251,10 +260,10 @@ const resetCopy = {
   release_maximum: new Date().toISOString().slice(0, 7),
   price_minimum_1: 0,
   price_maximum_1: 1200,
-  size_minimum_1: 4.7,
+  size_minimum_1: 4.6,
   size_maximum_1: 7,
   size_minimum_2: 135,
-  size_maximum_2: 163,
+  size_maximum_2: 165,
   size_minimum_3: 65,
   size_maximum_3: 78,
   design: "1",
@@ -262,7 +271,7 @@ const resetCopy = {
   updates: "1",
   camera: "1",
   battery: "1",
-  storage: 16,
+  storage: 8,
   headphoneJack: false,
   simCards: false,
   sdSlot: false,
@@ -270,7 +279,8 @@ const resetCopy = {
   waterproof: "",
   selectedBrands: [],
   selectedFavorites: {},
-  onlyShowFavedPhones: false
+  onlyShowFavedPhones: false,
+  showBacksideDefault: false
 };
 
 window.addEventListener("popstate", () => filterStore.loadURL(), false);

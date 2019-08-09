@@ -23,17 +23,16 @@ class SmartphoneStore {
 
   calculateScore(smartphone) {
     return (
-      (Math.round(
-        smartphone.design +
+      Math.round(
+        (smartphone.design +
           smartphone.processor +
           smartphone.updates +
           smartphone.camera +
           smartphone.battery -
           this.monthDiff(new Date(smartphone.released), new Date()) *
-            FilterStore.decayFactor
-      ) *
-        10) /
-      10
+            FilterStore.decayFactor) *
+          10
+      ) / 10
     );
   }
 
@@ -174,7 +173,6 @@ class SmartphoneStore {
           for (let c = 0; c < obj[i].types[t].colors.length; c++) {
             //price
             if (
-              obj[i].types[t].colors[c].price === 0 ||
               FilterStore.price_minimum_1 > obj[i].types[t].colors[c].price ||
               FilterStore.price_maximum_1 < obj[i].types[t].colors[c].price
             ) {
@@ -257,16 +255,14 @@ class SmartphoneStore {
 
   compareFunctionLowest(a, b, type) {
     return FilterStore.isDescending
-      ? b.types.colors[b.smallestPrice][type] -
-          a.types.colors[a.smallestPrice][type]
-      : a.types.colors[a.smallestPrice][type] -
-          b.types.colors[b.smallestPrice][type];
+      ? b.types[0].colors[0][type] - a.types[0].colors[0][type]
+      : a.types[0].colors[0][type] - b.types[0].colors[0][type];
   }
 
   getAttributeFromSmartphone = (smartphone, type) => {
     switch (type) {
       case "price":
-        return smartphone.types.colors[smartphone.smallestPrice][type] + "€";
+        return smartphone.types[0].colors[0][type] + "€";
       case "length":
       case "width":
         return smartphone[type] + "mm";
