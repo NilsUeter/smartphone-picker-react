@@ -26,11 +26,7 @@ class ContentCharts extends Component {
   }
 
   render() {
-    console.log(
-      SmartphoneStore.listOfFilteredAndScoredObjects.filter(
-        phone => phone.brand + " " + phone.name === this.state.selectedPhone
-      )[0]
-    );
+    console.log("rerender");
     const data = getData(SmartphoneStore.listOfFilteredAndScoredObjects);
     return (
       <React.Fragment>
@@ -51,7 +47,9 @@ class ContentCharts extends Component {
               );
             }}
             onMouseMove={node => {
-              this.setState({ selectedPhone: node.data.name });
+              if (this.state.selectedPhone !== node.data.name) {
+                this.setState({ selectedPhone: node.data.name });
+              }
             }}
             onClick={node => {
               this.setState({ selectedPhone: node.data.name });
