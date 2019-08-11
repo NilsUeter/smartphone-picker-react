@@ -76,7 +76,7 @@ class App extends Component {
         }
       >
         <Header />
-        <div style={{ display: "flex" }}>
+        <div style={{ display: "flex", overflow: "auto" }}>
           {window.location.pathname === "/about" ? (
             <About />
           ) : (
