@@ -5,6 +5,7 @@
     header('Access-Control-Allow-Methods: GET');
     if($_SERVER['REQUEST_METHOD'] !== 'GET') {
         $logger->logToFile($_SERVER['REQUEST_METHOD'].' Request from '.$_SERVER['REMOTE_ADDR'].' rejected');
+        $logger->logToFile('405 Method not allowed Error');
         header('HTTP/1.1 405 Method not allowed Error');
         header('Content-Type: application/json');
         $status = array('status' => 'Request rejected');
@@ -19,9 +20,10 @@
     if(checkValidAuthentication($pdo, "CRONS")) {
         $logger->logToFile('Fetching current Amazon Prices after successfully authentificated at this endpoint');
         //Get all Amazon Items to update
+        //Set PRICE and SOURCE defaults
         //TODO andere Amazon Märkte, aktuell hardcode DE und nur AmazonDataRequester für DE,
         //Alle Amazon Vendoren abfragen, für jeden einen Requester und dann für alle ModelTypes jedes Vendors alle ASIN`s abfragen
-        $statement = $pdo->query("SELECT ID, ITEM_ID FROM MODEL_TYPE WHERE VENDOR_ID = 'AMAZON_DE'");
+        $statement = $pdo->query("SELECT ID, ITEM_ID, NULL AS PRICE, 'NONE' AS SOURCE FROM MODEL_TYPE WHERE VENDOR_ID = 'AMAZON_DE'");
         $items = $statement->fetchAll();
         
         //Counter to get a maximum of 10 ASINS for each batch request
@@ -33,6 +35,8 @@
             After the evalutaion of the if $i++ inecrements the variable for the case when if returns false and the next item_id should be added */
             if($key === array_key_last($items) || $i++ === 9) {
                 $result = $dataRequester->batchRequest($itemIDs);
+                //Only 1 request per second to amazon API, sleep before setting actual timestamp
+                sleep(1);
                 //Check for failed request
                 if($result !== FALSE) {
                     $xmlResult = new SimpleXMLElement($result);
@@ -50,20 +54,31 @@
                             //e. g. 180,99€ comes as 18099 and 18099/100 = 180,99
                             if($XMLItem->Offers->TotalOffers->__toString() !== '0') {
                                 //Take price of first Amazon offer
-                                $amazonPriceString = $XMLItem->Offers->Offer[0]->OfferListing->Price->Amount->__toString();
-                                $items[$key]['PRICE'] = (floatval($amazonPriceString)/100);
+                                $price = (floatval($XMLItem->Offers->Offer[0]->OfferListing->Price->Amount->__toString())/100);
+                                $logger->logToFile($items[$key]['ITEM_ID'] . ': Price set to ' . $price);
+                                $items[$key]['PRICE'] = $price;
+                                $items[$key]['SOURCE'] = 'AMAZON';
                             } else {
                                 //No offer for this item by Amazon
-                                $logger->logToFile('WARNING: Price set to 0.00 because there is no Amazon Offer for this ASIN: ' . $items[$key]['ITEM_ID']);
-                                $items[$key]['PRICE'] = 0.00;
+                                $logger->logToFile($items[$key]['ITEM_ID'] . ': No current amazon offer');
                             }
                          }
                     } else {
                         $logger->logToFile('ERROR: Request to Amazon PA-API was not valid, exiting script call');
+                        $logger->logToFile('500 Internal server error');
+                        header('HTTP/1.1 500 Internal server error');
+                        header('Content-Type: application/json');
+                        $status = array('status' => 'Request to Amazon PA-API was not valid');
+                        echo json_encode($status);
                         die();
                     }
                 } else {
                     $logger->logToFile('ERROR: Request to Amazon PA-API failed, exiting script call');
+                    $logger->logToFile('500 Internal server error');
+                    header('HTTP/1.1 500 Internal server error');
+                    header('Content-Type: application/json');
+                    $status = array('status' => 'Request to Amazon PA-API failed');
+                    echo json_encode($status);
                     die();
                 }
                 unset($itemIDs);
@@ -75,7 +90,7 @@
         //The run though the array above only really executes every 10 items becuase of the batch request logic, now we need to execute everytime
         $sqlProps = "UPDATE MODEL_TYPE SET LINK = ?, LAST_UPDATED = CURRENT_TIMESTAMP() WHERE ID = ?";
         $statementProps = $pdo->prepare($sqlProps);
-        $sqlPrice = "INSERT INTO MODEL_TYPE_PRICE (MODEL_TYPE_ID, PRICE, TIMESTAMP) VALUES (?, ?, CURRENT_TIMESTAMP())";
+        $sqlPrice = "INSERT INTO MODEL_TYPE_PRICE (MODEL_TYPE_ID, PRICE, TIMESTAMP, SOURCE) VALUES (?, ?, CURRENT_TIMESTAMP(), ?)";
         $statementPrice = $pdo->prepare($sqlPrice);
         $pdo->beginTransaction();
         foreach($items as $item) {
@@ -86,6 +101,7 @@
             //Insert current MODEL_TYPE prices to price history
             $statementPrice->bindValue(1, $item['ID']);
             $statementPrice->bindValue(2, $item['PRICE']);
+            $statementPrice->bindValue(3, $item['SOURCE']);
             $statementPrice->execute();
         }
         $pdo->commit();
@@ -96,18 +112,21 @@
         header('HTTP/1.1 200 OK');
         $status = array('status' => 'Successfully fetched and persisted current Amazon prices');
         echo json_encode($status);
-    } else {
-        $logger->logToFile('Authentification failed, request aborted');
     }
+    $logger->logToFile('Failed to authorize, request cancelled');
 
     //TODO externalisieren falls woanders benötigt
     class AmazonDataRequester {
+        //TODO gucken ob Logger der Datei oben in dieser subclass verwendet werden kann, anstatt ein zweites Objekt auf die gleiche Datei zu erstellen
+        private $logger;
+
         private $endpoint;
         private $uri;
         private $secret_key;
         private $params;
 
         function __construct($amazonVendorID, $pdo) {
+            $logger = new Logger("CRON_AmazonPriceFetcher");
             $statement = $pdo->query("SELECT ENDPOINT, SECRET_KEY, ASSOCIATE_TAG, ACCESS_KEY FROM VENDOR WHERE ID = '$amazonVendorID'");
             $amazonVendor = $statement->fetch();
             //these are the fix properties of every request
@@ -128,7 +147,7 @@
 
         // Request smartphone Data from up to 10 ASIN's at a time
         public function batchRequest($asinList) {
-            //Convert ASIN list to 1 comma seperated ASIN list and set it in the request params
+            //Convert ASIN array to comma seperated ASIN string and set it in the request params
             $this->params['ItemId'] = join(",", $asinList);
             //Set current timestamp
             $this->params['Timestamp'] = gmdate('Y-m-d\TH:i:s\Z');
@@ -160,6 +179,7 @@
                 return file_get_contents($request_url);
             } catch (Exception $e) {
                 $this->sErrorMsg = $e->getMessage();
+                $logger->logToFile($e->getMessage());
                 return FALSE;
             }
             restore_error_handler();
