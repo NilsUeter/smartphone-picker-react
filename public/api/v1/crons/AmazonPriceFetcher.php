@@ -123,7 +123,7 @@
         private $params;
 
         function __construct($amazonVendorID, $pdo) {
-            $logger = new Logger("CRON_AmazonPriceFetcher");
+            $this->logger = new Logger("CRON_AmazonPriceFetcher");
             $statement = $pdo->query("SELECT ENDPOINT, SECRET_KEY, ASSOCIATE_TAG, ACCESS_KEY FROM VENDOR WHERE ID = '$amazonVendorID'");
             $amazonVendor = $statement->fetch();
             //these are the fix properties of every request
@@ -163,8 +163,8 @@
             //Generate the signature required by the Product Advertising API
             $signature = base64_encode(hash_hmac("sha256", $string_to_sign, $this->secret_key, true));
             // Generate the signed request URL
-            //TODO loggen
             $request_url = 'https://'.$this->endpoint.$this->uri.'?'.$canonical_query_string.'&Signature='.rawurlencode($signature);
+            $this->logger->logToFile('Request URL: ' . $request_url);
             /*Execute request and return result (FALSE if failed, XML with data when successful)
             file_get_contents can timeout only resulting in an E_WARNING. To catch it and prevent further dmg adjust error handler
             just for this call and if the timeout is catched return FALSE
@@ -175,7 +175,7 @@
             try {
                 return file_get_contents($request_url);
             } catch (Exception $e) {
-                $logger->logToFile($e->getMessage());
+                $this->logger->logToFile($e->getMessage());
                 return FALSE;
             }
             restore_error_handler();
