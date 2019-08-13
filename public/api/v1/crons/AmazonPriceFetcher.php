@@ -16,9 +16,12 @@
     $logger->logToFile($_SERVER['REQUEST_METHOD'].' Request from '.$_SERVER['REMOTE_ADDR'].' accepted');
     $logger->logToFile('Useragent: '.$_SERVER['HTTP_USER_AGENT']);
     require_once('../internal/Authorizer.php');
-    require_once('../internal/DbConnect.php');
-    if(!checkValidAuthentication($pdo, "CRONS")) {
+    if(!hasValidAuthentication("CRONS")) {
         $logger->logToFile('Failed to authorize, request cancelled');
+        header('WWW-Authenticate: Basic realm="CRONS"');
+        header('HTTP/1.0 401 Unauthorized');
+        header('Content-Type: application/json');
+        echo json_encode(array('status' => 'Request blocked, authentification failed'));
         die;
     }
 
@@ -27,12 +30,13 @@
     Set PRICE and SOURCE defaults */
     //TODO andere Amazon Märkte, aktuell hardcode DE und nur AmazonDataRequester für DE,
     //Alle Amazon Vendoren abfragen, für jeden einen Requester und dann für alle ModelTypes jedes Vendors alle ASIN`s abfragen
-    $statement = $pdo->query("SELECT ID, ITEM_ID, NULL AS PRICE, 'NONE' AS SOURCE FROM MODEL_TYPE WHERE VENDOR_ID = 'AMAZON_DE'");
+    require_once('../internal/DbConnect.php');
+    $statement = DbConnect::$pdo->query("SELECT ID, ITEM_ID, NULL AS PRICE, 'NONE' AS SOURCE FROM MODEL_TYPE WHERE VENDOR_ID = 'AMAZON_DE'");
     $items = $statement->fetchAll();
     
     //Counter to get a maximum of 10 ASINS for each batch request
     $i = 0;
-    $dataRequester = new AmazonDataRequester("AMAZON_DE", $pdo);
+    $dataRequester = new AmazonDataRequester("AMAZON_DE", DbConnect::$pdo);
     foreach($items as $key => $item) {
         $itemIDs[$i] = $item['ITEM_ID'];
         /*If the last or the 10th item_id (index 0-9) has been added to the array do the request and reset item_id array for the next one, else continue to add the next
@@ -87,10 +91,10 @@
     /* Persist fetched data into the database
     The run though the array above only really executes every 10 items becuase of the batch request logic, now we need to execute everytime */
     $sqlProps = "UPDATE MODEL_TYPE SET LINK = ?, LAST_UPDATED = CURRENT_TIMESTAMP() WHERE ID = ?";
-    $statementProps = $pdo->prepare($sqlProps);
+    $statementProps = DbConnect::$pdo->prepare($sqlProps);
     $sqlPrice = "INSERT INTO MODEL_TYPE_PRICE (MODEL_TYPE_ID, PRICE, TIMESTAMP, SOURCE) VALUES (?, ?, CURRENT_TIMESTAMP(), ?)";
-    $statementPrice = $pdo->prepare($sqlPrice);
-    $pdo->beginTransaction();
+    $statementPrice = DbConnect::$pdo->prepare($sqlPrice);
+    DbConnect::$pdo->beginTransaction();
     foreach($items as $item) {
         //Upate MODEL_TYPE sepcific properties
         $statementProps->bindValue(1, $item['LINK']);
@@ -102,7 +106,7 @@
         $statementPrice->bindValue(3, $item['SOURCE']);
         $statementPrice->execute();
     }
-    $pdo->commit();
+    DbConnect::$pdo->commit();
 
     //Return successful status object
     $logger->logToFile('Persisted fetched prices in the database, request ended successfully');
@@ -122,10 +126,13 @@
         private $secret_key;
         private $params;
 
-        function __construct($amazonVendorID, $pdo) {
+        function __construct($amazonVendorID) {
+            require_once('../internal/Logger.php');
             $this->logger = new Logger("CRON_AmazonPriceFetcher");
-            $statement = $pdo->query("SELECT ENDPOINT, SECRET_KEY, ASSOCIATE_TAG, ACCESS_KEY FROM VENDOR WHERE ID = '$amazonVendorID'");
+            require_once('../internal/DbConnect.php');
+            $statement = DbConnect::$pdo->query("SELECT ENDPOINT, SECRET_KEY, ASSOCIATE_TAG, ACCESS_KEY FROM VENDOR WHERE ID = '$amazonVendorID'");
             $amazonVendor = $statement->fetch();
+            $statement = NULL;
             //these are the fix properties of every request
             $this->endpoint = $amazonVendor['ENDPOINT'];
             $this->uri = "/onca/xml";
