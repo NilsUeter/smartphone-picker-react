@@ -35,51 +35,53 @@
     $dataRequester = new AmazonDataRequester("AMAZON_DE", $pdo);
     foreach($items as $key => $item) {
         $itemIDs[$i] = $item['ITEM_ID'];
-        /*If the last or the 10th item_id (index 0-9) has been added to the array do the request and reset item_id array for the next one
+        /*If the last or the 10th item_id (index 0-9) has been added to the array do the request and reset item_id array for the next one, else continue to add the next
         After the evalutaion of the if $i++ inecrements the variable for the case when if returns false and the next item_id should be added */
-        if($key === array_key_last($items) || $i++ === 9) {
-            $result = $dataRequester->batchRequest($itemIDs);
-            //Only 1 request per second to Amazon PA-API
-            sleep(1);
-            //Check for failed request
-            if($result === FALSE) {
-                $logger->logToFile('ERROR: Request to Amazon PA-API failed, continuation with next request');
-                $logger->logToFile($itemIDs);
-                continue;
-            }
-            $xmlResult = new SimpleXMLElement($result);
-            //Check if the successful request was valid
-            if($xmlResult->Items->Request->IsValid->__toString() !== "True") {
-                $logger->logToFile('ERROR: Request to Amazon PA-API was not valid, continuation with next request');
-                $logger->logToFile($itemIDs);
-                continue;
-            }
-
-            /* Parse the xml and get relevant data
-            Add the data of each Item to the corresponding $items entry fetched from the database before
-            Because the data of the db is ID keyed and the data from Amazon ASIN keyed we need to search for the array entry with the right ID,
-            get the key and use that key to store all the data */
-            foreach ($xmlResult->Items->Item as $XMLItem) {
-                $key = array_search($XMLItem->ASIN->__toString(), array_column($items, 'ITEM_ID'));
-                //Link to to Amazon detail page
-                $items[$key]['LINK'] = $XMLItem->DetailPageURL->__toString();
-                if($XMLItem->Offers->TotalOffers->__toString() === '0') {
-                    //No offer for this item by Amazon, continue with next item
-                    $logger->logToFile($items[$key]['ITEM_ID'] . ': No current amazon offer');
-                    continue;
-                }
-                /* Amazon delivers amounts without decimal separator, so we need to divide with 100
-                e. g. 180,99€ comes as 18099 and 18099/100 = 180,99
-                Take price of first Amazon offer */
-                $price = (floatval($XMLItem->Offers->Offer[0]->OfferListing->Price->Amount->__toString())/100);
-                $logger->logToFile($items[$key]['ITEM_ID'] . ': Price set to ' . $price);
-                $items[$key]['PRICE'] = $price;
-                $items[$key]['SOURCE'] = 'AMAZON';
-            }
-
-            unset($itemIDs);
-            $i = 0;
+        if($key !== array_key_last($items) && $i++ < 9) {
+            continue;
         }
+
+        $result = $dataRequester->batchRequest($itemIDs);
+        //Only 1 request per second to Amazon PA-API
+        sleep(1);
+        //Check for failed request
+        if($result === FALSE) {
+            $logger->logToFile('ERROR: Request to Amazon PA-API failed, continuation with next request');
+            $logger->logToFile($itemIDs);
+            continue;
+        }
+        $xmlResult = new SimpleXMLElement($result);
+        //Check if the successful request was valid
+        if($xmlResult->Items->Request->IsValid->__toString() !== "True") {
+            $logger->logToFile('ERROR: Request to Amazon PA-API was not valid, continuation with next request');
+            $logger->logToFile($itemIDs);
+            continue;
+        }
+
+        /* Parse the xml and get relevant data
+        Add the data of each Item to the corresponding $items entry fetched from the database before
+        Because the data of the db is ID keyed and the data from Amazon ASIN keyed we need to search for the array entry with the right ASIN,
+        get the key and use that key to store all the data */
+        foreach ($xmlResult->Items->Item as $XMLItem) {
+            $itemKey = array_search($XMLItem->ASIN->__toString(), array_column($items, 'ITEM_ID'));
+            //Link to to Amazon detail page
+            $items[$itemKey]['LINK'] = $XMLItem->DetailPageURL->__toString();
+            if($XMLItem->Offers->TotalOffers->__toString() === '0') {
+                //No offer for this item by Amazon, continue with next item
+                $logger->logToFile($items[$itemKey]['ITEM_ID'] . ': No current amazon offer');
+                continue;
+            }
+            /* Amazon delivers amounts without decimal separator, so we need to divide with 100
+            e. g. 180,99€ comes as 18099 and 18099/100 = 180,99
+            Take price of first Amazon offer */
+            $price = (floatval($XMLItem->Offers->Offer[0]->OfferListing->Price->Amount->__toString())/100);
+            $logger->logToFile($items[$itemKey]['ITEM_ID'] . ': Price set to ' . $price);
+            $items[$itemKey]['PRICE'] = $price;
+            $items[$itemKey]['SOURCE'] = 'AMAZON';
+        }
+
+        unset($itemIDs);
+        $i = 0;
     }
 
     /* Persist fetched data into the database
