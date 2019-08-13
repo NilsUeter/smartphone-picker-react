@@ -18,7 +18,7 @@
                 return new PDO($dsn, $config['username'], $config['password'], $options);
             } catch (\PDOException $e) {
                 print "Error!: " . $e->getMessage() . "<br/>";
-                die();
+                die;
             }
         }
     }
