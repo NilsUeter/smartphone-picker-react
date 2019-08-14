@@ -23,6 +23,8 @@
         die;
     }
 
+    ignore_user_abort(TRUE);
+    set_time_limit(0);
     $logger->logToFile($_SERVER['REQUEST_METHOD'].' Request from '.$_SERVER['REMOTE_ADDR'].' accepted');
     $logger->logToFile('Useragent: '.$_SERVER['HTTP_USER_AGENT']);
     $logger->logToFile('Fetching current Amazon Prices after successfully authentificated at this endpoint');
