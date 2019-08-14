@@ -1,5 +1,5 @@
 <?php
-    require_once('../internal/Logger.php');
+    require_once('internal/Logger.php');
     $logger = new Logger("Auth");
     // Check the HTTP method of the request
     header('Access-Control-Allow-Methods: POST');
