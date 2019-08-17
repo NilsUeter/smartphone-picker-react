@@ -93,10 +93,10 @@
     /* Persist fetched data into the database
     The run though the array above only really executes every 10 items becuase of the batch request logic, now we need to execute everytime */
     $sqlProps = "UPDATE MODEL_TYPE SET LINK = ?, LAST_UPDATED = CURRENT_TIMESTAMP() WHERE ID = ?";
-    $statementProps = DbConnect::$pdo->prepare($sqlProps);
+    $statementProps = MySQLDBConnection::$pdo->prepare($sqlProps);
     $sqlPrice = "INSERT INTO MODEL_TYPE_PRICE (MODEL_TYPE_ID, PRICE, TIMESTAMP, SOURCE) VALUES (?, ?, CURRENT_TIMESTAMP(), ?)";
-    $statementPrice = DbConnect::$pdo->prepare($sqlPrice);
-    DbConnect::$pdo->beginTransaction();
+    $statementPrice = MySQLDBConnection::$pdo->prepare($sqlPrice);
+    MySQLDBConnection::$pdo->beginTransaction();
     foreach($items as $item) {
         //Upate MODEL_TYPE sepcific properties
         $statementProps->bindValue(1, $item['LINK']);
@@ -108,7 +108,7 @@
         $statementPrice->bindValue(3, $item['SOURCE']);
         $statementPrice->execute();
     }
-    DbConnect::$pdo->commit();
+    MySQLDBConnection::$pdo->commit();
 
     //Return successful status object
     $logger->logToFile('Persisted fetched prices in the database, request ended successfully');
