@@ -300,7 +300,11 @@ body,
 }
 
 .smartphones-charts {
+  display: flex;
   overflow: hidden;
+  flex-wrap: wrap;
+  justify-content: center;
+  min-width: 1000px;
 }
 
 .chart-tooltip {
