@@ -32,13 +32,13 @@
     Set PRICE and SOURCE defaults */
     //TODO andere Amazon Märkte, aktuell hardcode DE und nur AmazonDataRequester für DE,
     //Alle Amazon Vendoren abfragen, für jeden einen Requester und dann für alle ModelTypes jedes Vendors alle ASIN`s abfragen
-    require_once('../internal/DbConnect.php');
-    $statement = DbConnect::$pdo->query("SELECT ID, ITEM_ID, NULL AS PRICE, 'NONE' AS SOURCE FROM MODEL_TYPE WHERE VENDOR_ID = 'AMAZON_DE'");
+    require_once('../internal/MySQLDBConnection.php');
+    $statement = MySQLDBConnection::$pdo->query("SELECT ID, ITEM_ID, NULL AS PRICE, 'NONE' AS SOURCE FROM MODEL_TYPE WHERE VENDOR_ID = 'AMAZON_DE'");
     $items = $statement->fetchAll();
     
     //Counter to get a maximum of 10 ASINS for each batch request
     $i = 0;
-    $dataRequester = new AmazonDataRequester("AMAZON_DE", DbConnect::$pdo);
+    $dataRequester = new AmazonDataRequester("AMAZON_DE");
     foreach($items as $key => $item) {
         $itemIDs[$i] = $item['ITEM_ID'];
         /*If the last or the 10th item_id (index 0-9) has been added to the array do the request and reset item_id array for the next one, else continue to add the next
@@ -131,8 +131,8 @@
         function __construct($amazonVendorID) {
             require_once('../internal/Logger.php');
             $this->logger = new Logger("CRON_AmazonPriceFetcher");
-            require_once('../internal/DbConnect.php');
-            $statement = DbConnect::$pdo->query("SELECT ENDPOINT, SECRET_KEY, ASSOCIATE_TAG, ACCESS_KEY FROM VENDOR WHERE ID = '$amazonVendorID'");
+            require_once('../internal/MySQLDBConnection.php');
+            $statement = MySQLDBConnection::$pdo->query("SELECT ENDPOINT, SECRET_KEY, ASSOCIATE_TAG, ACCESS_KEY FROM VENDOR WHERE ID = '$amazonVendorID'");
             $amazonVendor = $statement->fetch();
             $statement = NULL;
             //these are the fix properties of every request

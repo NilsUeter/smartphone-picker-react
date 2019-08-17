@@ -1,11 +1,11 @@
 <?php
-    class DbConnect {
+    class MySQLDBConnection {
         static $pdo;
 
         static function connect() {
             if(!isset($pdo)) {
                 // Load configuration as an array
-                $config = parse_ini_file('config.ini');
+                $config = parse_ini_file('MySQLDBConfig.ini');
                 $db_server = $config['servername'];
                 $db_name = $config['dbname'];
                 $dsn = "mysql:host=$db_server;dbname=$db_name;charset=utf8mb4";
@@ -17,7 +17,8 @@
                 ];
                 try {
                     self::$pdo = new PDO($dsn, $config['username'], $config['password'], $options);
-                } catch (\PDOException $e) {
+                } catch (PDOException $e) {
+                    //TODO
                     print "Error!: " . $e->getMessage() . "<br/>";
                     die;
                 }
@@ -25,5 +26,5 @@
         }
     }
 
-    DbConnect::connect();
+    MySQLDBConnection::connect();
 ?>

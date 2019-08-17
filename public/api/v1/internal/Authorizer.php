@@ -6,10 +6,10 @@
         $logger = new Logger("INTERNAL_Authorizer");
         $logger->logToFile('Authorization request for realm ' . $realm);
         if (isset($_SERVER['PHP_AUTH_USER'])) {
-            require_once('DbConnect.php');
+            require_once('MySQLDBConnection.php');
             $logger->logToFile('Trying to authorize as ' . $_SERVER['PHP_AUTH_USER']);
             $sql = "SELECT PW_SALTED_HASHED FROM USER WHERE NAME = ? AND REALM = ?";
-            $statement = DbConnect::$pdo->prepare($sql);
+            $statement = MySQLDBConnection::$pdo->prepare($sql);
             $statement->bindValue(1, $_SERVER['PHP_AUTH_USER']);
             $statement->bindValue(2, $realm);
             $statement->execute();

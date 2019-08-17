@@ -1,53 +1,59 @@
 <?php
-    class Smartphone {
-        public $id;
-        public $name;
-        public $brand;
-        public $released;
-        public $design;
-        public $display;
-        public $length;
-        public $width;
-        public $cpu;
-        public $updates;
-        public $camera;
-        public $battery;
-        public $batterysize;
-        public $storage;
-        public $memory;
-        public $sdSlot;
-        public $simCards;
-        public $notch;
-        public $waterproof;
-        public $headphoneJack;
-        public $imageLink;
-        public $models;
+    class Smartphone implements JsonSerializable {
+        private $id;
+        private $name;
+        private $brand;
+        private $released;
+        private $imageLink;
+        private $design;
+        private $display;
+        private $length;
+        private $width;
+        private $cpu;
+        private $updates;
+        private $camera;
+        private $battery;
+        private $batterysize;
+        private $sdSlot;
+        private $simCards;
+        private $notch;
+        private $waterproof;
+        private $headphoneJack;
+        private $models;
 
         // Constructor
-        public function __construct($db_row, $phoneModels) {
-            $this->id = (int)$db_row['ID'];
-            $this->name = $db_row['NAME'];
-            $this->brand = $db_row['BRAND'];
-            $this->released = $db_row['RELEASED'];
-            $this->design = (int)$db_row['DESIGN'];
-            $this->display = (float)$db_row['DISPLAY'];
-            $this->length = (int)$db_row['LENGTH'];
-            $this->width = (int)$db_row['WIDTH'];
-            $this->cpu = (int)$db_row['CPU'];
-            $this->updates = (int)$db_row['UPDATES'];
-            $this->camera = (int)$db_row['CAMERA'];
-            $this->battery = (int)$db_row['BATTERY'];
-            $this->batterysize = (int)$db_row['BATTERYSIZE'];
-            $this->storage = (int)$db_row['STORAGE'];
-            $this->memory = (int)$db_row['MEMORY'];
-            $this->sdSlot = (int)$db_row['SD_SLOT'];
-            $this->simCards = (int)$db_row['SIM_CARDS'];
-            $this->notch = (int)$db_row['NOTCH'];
-            $this->waterproof = (int)$db_row['WATERPROOF'];
-            $this->headphoneJack = (int)$db_row['HEADPHONE_JACK'];
-            $this->imageLink = $db_row['IMAGE_LINK'];
+        function __construct($objectData) {
+            $this->id = $objectData['ID'];
+            $this->name = $objectData['NAME'];
+            $this->brand = $objectData['BRAND'];
+            $this->released = $objectData['RELEASED'];
+            $this->imageLink = $objectData['IMAGE_LINK'];
+            $this->design = $objectData['DESIGN'];
+            $this->display = $objectData['DISPLAY'];
+            $this->length = $objectData['LENGTH'];
+            $this->width = $objectData['WIDTH'];
+            $this->cpu = $objectData['CPU'];
+            $this->updates = $objectData['UPDATES'];
+            $this->camera = $objectData['CAMERA'];
+            $this->battery = $objectData['BATTERY'];
+            $this->batterysize = $objectData['BATTERYSIZE'];
+            $this->sdSlot = $objectData['SD_SLOT'];
+            $this->simCards = $objectData['SIM_CARDS'];
+            $this->notch = $objectData['NOTCH'];
+            $this->waterproof = $objectData['WATERPROOF'];
+            $this->headphoneJack = $objectData['HEADPHONE_JACK'];
+        }
 
-            $this->models = $phoneModels;
+        public function setModels($models) {
+            $this->models = $models;
+        }
+
+        public function getId() {
+            return $this->id;
+        }
+
+        public function jsonSerialize() {
+            return get_object_vars($this);
         }
     }
 ?>

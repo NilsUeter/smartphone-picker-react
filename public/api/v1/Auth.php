@@ -32,7 +32,7 @@
     $userInput = json_decode(file_get_contents('php://input'), true);
     //Check if user is already existing
     $sql = "SELECT * FROM USER WHERE NAME = ?";
-    require_once('internal/DbConnect.php');
+    require_once('internal/MySQLDBConnection.php');
     $statement = DbConnect::$pdo->prepare($sql);
     $statement->bindValue(1, $userInput['username']);
     $statement->execute();
