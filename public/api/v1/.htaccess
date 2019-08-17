@@ -5,12 +5,6 @@ order allow,deny
 <Files Auth.php>
 allow from all
 </Files>
-<Files Market.php>
-allow from all
-</Files>
-<Files PhoneModel.php>
-allow from all
-</Files>
 <Files Smartphone.php>
 allow from all
 </Files>
