@@ -13,5 +13,7 @@
     require_once($_SERVER['DOCUMENT_ROOT'] . 'v1/internal/dao/SmartphoneDAO.php');
     $smartphoneDAO = new SmartphoneDAO(MySQLDBConnection::$pdo);
     $smartphones = $smartphoneDAO->getAll();
+    header('HTTP/1.1 200 OK');
+    header('Content-Type: application/json');
     echo json_encode($smartphones);
 ?>
