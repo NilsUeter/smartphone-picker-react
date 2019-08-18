@@ -17,7 +17,7 @@
     if(!hasValidAuthentication("CRONS")) {
         $logger->logToFile('Failed to authorize, request cancelled');
         header('WWW-Authenticate: Basic realm="CRONS"');
-        header('HTTP/1.0 401 Unauthorized');
+        header('HTTP/1.1 401 Unauthorized');
         header('Content-Type: application/json');
         echo json_encode(array('status' => 'Request blocked, authentification failed'));
         die;
@@ -53,14 +53,18 @@
         //Check for failed request
         if($result === FALSE) {
             $logger->logToFile('ERROR: Request to Amazon PA-API failed, continuation with next request');
-            $logger->logToFile($itemIDs);
+            $logger->logToFile(implode("|",$itemIDs));
+            unset($itemIDs);
+            $i = 0;
             continue;
         }
         $xmlResult = new SimpleXMLElement($result);
         //Check if the successful request was valid
         if($xmlResult->Items->Request->IsValid->__toString() !== "True") {
             $logger->logToFile('ERROR: Request to Amazon PA-API was not valid, continuation with next request');
-            $logger->logToFile($itemIDs);
+            $logger->logToFile(implode("|",$itemIDs));
+            unset($itemIDs);
+            $i = 0;
             continue;
         }
 
