@@ -14,6 +14,7 @@
     $smartphoneDAO = new SmartphoneDAO(MySQLDBConnection::$pdo);
     $smartphones = $smartphoneDAO->getAll();
     header('HTTP/1.1 200 OK');
+    header('Access-Control-Allow-Origin: *');
     header('Content-Type: application/json');
     echo json_encode($smartphones);
 ?>

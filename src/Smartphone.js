@@ -11,7 +11,7 @@ class Smartphone extends Component {
   imageContainerHeight;
   constructor(props) {
     super(props);
-    this.state = { selectedType: 0, selectedColor: 0 };
+    this.state = { selectedModel: 0, selectedType: 0 };
     let size = 450;
 
     const height = Math.max(
@@ -138,25 +138,25 @@ class Smartphone extends Component {
             className="smartphone-price-details"
             onChange={e => {
               this.setState({
-                selectedType: e.target.value.split(":")[0],
-                selectedColor: e.target.value.split(":")[1]
+                selectedModel: e.target.value.split(":")[0],
+                selectedType: e.target.value.split(":")[1]
               });
             }}
           >
-            {this.props.smartphone.types.map((type, typeIndex) =>
-              type.colors.map((color, colorIndex) => (
+            {this.props.smartphone.models.map((model, modelIndex) =>
+              model.types.map((type, typeIndex) => (
                 <option
-                  value={typeIndex + ":" + colorIndex}
-                  key={color.link}
+                  value={modelIndex + ":" + typeIndex}
+                  key={type.link}
                   className="smartphone-price-item"
                 >
-                  {color.name +
+                  {type.name +
                     " " +
-                    type.memory +
+                    model.memory +
                     "GB " +
-                    type.storage +
+                    model.storage +
                     "GB " +
-                    color.price +
+                    type.price +
                     "€"}
                 </option>
               ))
@@ -234,8 +234,8 @@ class Smartphone extends Component {
           <div className="flexBetween">
             <span className="smartphone-price">
               {
-                this.props.smartphone.types[this.state.selectedType].colors[
-                  this.state.selectedColor
+                this.props.smartphone.models[this.state.selectedModel].types[
+                  this.state.selectedType
                 ].price
               }
               €
@@ -246,8 +246,8 @@ class Smartphone extends Component {
                 target="_blank"
                 rel="noreferrer noopener"
                 href={
-                  this.props.smartphone.types[this.state.selectedType].colors[
-                    this.state.selectedColor
+                  this.props.smartphone.models[this.state.selectedModel].types[
+                    this.state.selectedType
                   ].link
                 }
               >

@@ -16,7 +16,7 @@ class SmartphoneStore {
   };
 
   loadJSON = () => {
-    fetch("./data/smartphoneData.json")
+    fetch("https://api.smartphone-picker.com/v1/Smartphone.php")
       .then(r => r.json())
       .then(data => this.init(data));
   };
@@ -25,13 +25,13 @@ class SmartphoneStore {
     return (
       Math.round(
         (smartphone.design +
-          smartphone.processor +
+          smartphone.cpu +
           smartphone.updates +
           smartphone.camera +
           smartphone.battery -
           this.monthDiff(new Date(smartphone.released), new Date()) *
-            FilterStore.decayFactor) *
-          10
+          FilterStore.decayFactor) *
+        10
       ) / 10
     );
   }
@@ -110,7 +110,7 @@ class SmartphoneStore {
         }
 
         //processor
-        if (obj[i].processor < FilterStore.processor) {
+        if (obj[i].cpu < FilterStore.cpu) {
           continue;
         }
 
@@ -137,17 +137,17 @@ class SmartphoneStore {
         }
 
         //headphonejack
-        if (FilterStore.headphoneJack && obj[i].headphonejack === 0) {
+        if (FilterStore.headphoneJack && obj[i].headphoneJack === 0) {
           continue;
         }
 
         //simCardInput
-        if (FilterStore.simCards && obj[i].simcards === 1) {
+        if (FilterStore.simCards && obj[i].simCards === 1) {
           continue;
         }
 
         //sdSLot
-        if (FilterStore.sdSlot && obj[i].sdslot === 0) {
+        if (FilterStore.sdSlot && obj[i].sdSlot === 0) {
           continue;
         }
 
@@ -165,30 +165,30 @@ class SmartphoneStore {
         }
 
         //storage
-        obj[i].types = obj[i].types.filter(
-          type => type.storage >= FilterStore.storage
+        obj[i].models = obj[i].models.filter(
+          model => model.storage >= FilterStore.storage
         );
 
-        for (let t = 0; t < obj[i].types.length; t++) {
-          for (let c = 0; c < obj[i].types[t].colors.length; c++) {
+        for (let t = 0; t < obj[i].models.length; t++) {
+          for (let c = 0; c < obj[i].models[t].types.length; c++) {
             //price
             if (
-              FilterStore.price_minimum_1 > obj[i].types[t].colors[c].price ||
-              FilterStore.price_maximum_1 < obj[i].types[t].colors[c].price
+              FilterStore.price_minimum_1 > obj[i].models[t].types[c].price ||
+              FilterStore.price_maximum_1 < obj[i].models[t].types[c].price
             ) {
-              if (obj[i].types[t].colors.length === 1) {
-                obj[i].types.splice(t, 1);
+              if (obj[i].models[t].types.length === 1) {
+                obj[i].models.splice(t, 1);
                 t--;
                 break;
               } else {
-                obj[i].types[t].colors.splice(c, 1);
+                obj[i].models[t].types.splice(c, 1);
                 c--;
               }
             }
           }
         }
 
-        if (obj[i].types.length < 1) {
+        if (obj[i].models.length < 1) {
           continue;
         }
       }
@@ -245,33 +245,33 @@ class SmartphoneStore {
     return unique;
   }
 
-  compareDates(a, b, type) {
-    return FilterStore.isDescending ? b[type] > a[type] : a[type] > b[type];
+  compareDates(a, b, attribute) {
+    return FilterStore.isDescending ? b[attribute] > a[attribute] : a[attribute] > b[attribute];
   }
 
-  compareFunctionNormal(a, b, type) {
-    return FilterStore.isDescending ? b[type] - a[type] : a[type] - b[type];
+  compareFunctionNormal(a, b, attribute) {
+    return FilterStore.isDescending ? b[attribute] - a[attribute] : a[attribute] - b[attribute];
   }
 
-  compareFunctionLowest(a, b, type) {
+  compareFunctionLowest(a, b, attribute) {
     return FilterStore.isDescending
-      ? b.types[0].colors[0][type] - a.types[0].colors[0][type]
-      : a.types[0].colors[0][type] - b.types[0].colors[0][type];
+      ? b.models[0].types[0][attribute] - a.models[0].types[0][attribute]
+      : a.models[0].types[0][attribute] - b.models[0].types[0][attribute];
   }
 
-  getAttributeFromSmartphone = (smartphone, type) => {
-    switch (type) {
+  getAttributeFromSmartphone = (smartphone, attribute) => {
+    switch (attribute) {
       case "price":
-        return smartphone.types[0].colors[0][type] + "€";
+        return smartphone.models[0].types[0][attribute] + "€";
       case "length":
       case "width":
-        return smartphone[type] + "mm";
+        return smartphone[attribute] + "mm";
       case "display":
-        return smartphone[type] + '"';
+        return smartphone[attribute] + '"';
       case "totalscore":
-        return smartphone[type] + " Points";
+        return smartphone[attribute] + " Points";
       default:
-        return smartphone[type];
+        return smartphone[attribute];
     }
   };
 }

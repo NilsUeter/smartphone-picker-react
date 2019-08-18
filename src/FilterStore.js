@@ -1,4 +1,4 @@
-import {} from "mobx-react";
+import { } from "mobx-react";
 import { observable, action, autorun } from "mobx";
 
 class FilterStore {
@@ -56,7 +56,7 @@ class FilterStore {
   @observable
   design = "1";
   @observable
-  processor = "1";
+  cpu = "1";
   @observable
   updates = "1";
   @observable
@@ -267,7 +267,7 @@ const resetCopy = {
   size_minimum_3: 65,
   size_maximum_3: 78,
   design: "1",
-  processor: "1",
+  cpu: "1",
   updates: "1",
   camera: "1",
   battery: "1",
