@@ -53,7 +53,7 @@
         //Check for failed request
         if($result === FALSE) {
             $logger->logToFile('ERROR: Request to Amazon PA-API failed, continuation with next request');
-            $logger->logToFile(implode("|",$itemIDs));
+            $logger->logToFile(implode(',',$itemIDs));
             unset($itemIDs);
             $i = 0;
             continue;
@@ -62,7 +62,7 @@
         //Check if the successful request was valid
         if($xmlResult->Items->Request->IsValid->__toString() !== "True") {
             $logger->logToFile('ERROR: Request to Amazon PA-API was not valid, continuation with next request');
-            $logger->logToFile(implode("|",$itemIDs));
+            $logger->logToFile(implode(',',$itemIDs));
             unset($itemIDs);
             $i = 0;
             continue;
