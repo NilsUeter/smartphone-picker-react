@@ -39,6 +39,11 @@ class Smartphone extends Component {
   }
 
   render() {
+    console.log(
+      this.props.smartphone.models[this.state.selectedModel].types[
+        this.state.selectedType
+      ]
+    );
     return (
       <div className="smartphone" style={this.props.style}>
         <div className="img-container-container">
@@ -77,8 +82,8 @@ class Smartphone extends Component {
               onError={e => (e.target.alt = "No image")}
               src={
                 FilterStore.emptySmartphones
-                  ? "images/" + this.props.smartphone.imagelink + "_blank.png"
-                  : "images/" + this.props.smartphone.imagelink + ".jpg"
+                  ? "images/" + this.props.smartphone.imageLink + "_blank.png"
+                  : "images/" + this.props.smartphone.imageLink + ".jpg"
               }
               alt=""
             />
@@ -94,7 +99,7 @@ class Smartphone extends Component {
               }
               className="qtip-img qtip-img-backside"
               onError={e => (e.target.alt = "No image")}
-              src={"images/" + this.props.smartphone.imagelink + "_back.jpg"}
+              src={"images/" + this.props.smartphone.imageLink + "_back.jpg"}
               alt=""
             />
           </div>
@@ -233,11 +238,12 @@ class Smartphone extends Component {
           </details>
           <div className="flexBetween">
             <span className="smartphone-price">
-              {
+              {this.props.smartphone.models[this.state.selectedModel].types[
+                this.state.selectedType
+              ] &&
                 this.props.smartphone.models[this.state.selectedModel].types[
                   this.state.selectedType
-                ].price
-              }
+                ].price}
               €
             </span>
             <div className="a-button a-button-primary">
@@ -246,6 +252,9 @@ class Smartphone extends Component {
                 target="_blank"
                 rel="noreferrer noopener"
                 href={
+                  this.props.smartphone.models[this.state.selectedModel].types[
+                    this.state.selectedType
+                  ] &&
                   this.props.smartphone.models[this.state.selectedModel].types[
                     this.state.selectedType
                   ].link
