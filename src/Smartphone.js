@@ -39,11 +39,6 @@ class Smartphone extends Component {
   }
 
   render() {
-    console.log(
-      this.props.smartphone.models[this.state.selectedModel].types[
-        this.state.selectedType
-      ]
-    );
     return (
       <div className="smartphone" style={this.props.style}>
         <div className="img-container-container">
@@ -239,9 +234,6 @@ class Smartphone extends Component {
           <div className="flexBetween">
             <span className="smartphone-price">
               {this.props.smartphone.models[this.state.selectedModel].types[
-                this.state.selectedType
-              ] &&
-                this.props.smartphone.models[this.state.selectedModel].types[
                   this.state.selectedType
                 ].price}
               €
@@ -252,9 +244,6 @@ class Smartphone extends Component {
                 target="_blank"
                 rel="noreferrer noopener"
                 href={
-                  this.props.smartphone.models[this.state.selectedModel].types[
-                    this.state.selectedType
-                  ] &&
                   this.props.smartphone.models[this.state.selectedModel].types[
                     this.state.selectedType
                   ].link

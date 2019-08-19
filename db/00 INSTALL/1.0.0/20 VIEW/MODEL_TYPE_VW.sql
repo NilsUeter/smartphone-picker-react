@@ -8,4 +8,4 @@ select
 	`type`.`LAST_UPDATED` AS `LAST_UPDATED`,
 	`price`.`PRICE` AS `PRICE` 
 from 
-	(`MODEL_TYPE` `type` left join `CURRENT_TYPE_PRICES` `price` on((`type`.`ID` = `price`.`MODEL_TYPE_ID`))) where (`type`.`LINK` <> '')
+	(`MODEL_TYPE` `type` left join `CURRENT_TYPE_PRICES` `price` on((`type`.`ID` = `price`.`MODEL_TYPE_ID`)))
