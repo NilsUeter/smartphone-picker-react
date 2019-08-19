@@ -24,8 +24,9 @@
 
     ignore_user_abort(TRUE);
     set_time_limit(0);
-
-    $logger->logToFile("LogZipper", "Starting to zip Logs of last Week");
+    $logger->logToFile($_SERVER['REQUEST_METHOD'].' Request from '.$_SERVER['REMOTE_ADDR'].' accepted');
+    $logger->logToFile('Useragent: '.$_SERVER['HTTP_USER_AGENT']);
+    $logger->logToFile('Starting to zip Logs of last Week');
 
     //Create archive directory if not existing
     if (!file_exists($_SERVER['DOCUMENT_ROOT'] . 'v1/logs/archive')) {
@@ -57,19 +58,19 @@
         }
     }
 
-    $logger->logToFile("LogZipper", "Number of logfiles: " . $zip->numFiles);
-    $logger->logToFile("LogZipper", "File size Sum: " . humanFilesize($fileSizeSum));
-    $logger->logToFile("LogZipper", "Status of the new zip file:" . $zip->status);
+    $logger->logToFile('Number of logfiles: ' . $zip->numFiles);
+    $logger->logToFile('File size Sum: ' . humanFilesize($fileSizeSum));
+    $logger->logToFile('Status of the new zip file: ' . $zip->status);
     $ret = $zip->close();
-    $logger->logToFile("LogZipper", "Closed zipfile with result: " . ($ret ? "Success" : "Failure"));
-    $logger->logToFile("LogZipper", "Zip filesize: " . humanFilesize(filesize($filename)));
-    $logger->logToFile("LogZipper", "Logfiles");
+    $logger->logToFile('Closed zipfile with result: ' . ($ret ? 'Success' : 'Failure'));
+    $logger->logToFile('Zip filesize: ' . humanFilesize(filesize($filename)));
+    $logger->logToFile('Logfiles');
     asort($logfiles);
     foreach ($logfiles as $i => $logfile) {
-        $logger->logToFile("LogZipper", $logfile);
+        $logger->logToFile($logfile);
         unlink($_SERVER['DOCUMENT_ROOT'] . 'v1/logs/' . $logfile);
     }
-    $logger->logToFile("LogZipper", "Deleted original log files after saving them in the archive zip");
+    $logger->logToFile('Deleted original log files after saving them in the archive zip');
 
     //Return successful status object
     $logger->logToFile('LogArchiver Request ended successfully');
