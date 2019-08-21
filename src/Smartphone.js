@@ -204,7 +204,7 @@ class Smartphone extends Component {
             </div>
             <div className="flexBetween">
               <p className="">Processor</p>
-              <p>{this.props.smartphone.processor}</p>
+              <p>{this.props.smartphone.cpu}</p>
             </div>
             <div className="flexBetween">
               <p className="">Software</p>
