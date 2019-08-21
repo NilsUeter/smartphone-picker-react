@@ -39,6 +39,9 @@ class Smartphone extends Component {
   }
 
   render() {
+    const { price } = this.props.smartphone.models[
+      this.state.selectedModel
+    ].types[this.state.selectedType];
     return (
       <div className="smartphone" style={this.props.style}>
         <div className="img-container-container">
@@ -156,7 +159,7 @@ class Smartphone extends Component {
                     "GB " +
                     model.storage +
                     "GB " +
-                    type.price +
+                    (type.price ? type.price : "N/A") +
                     "€"}
                 </option>
               ))
@@ -232,12 +235,7 @@ class Smartphone extends Component {
             </div>
           </details>
           <div className="flexBetween">
-            <span className="smartphone-price">
-              {this.props.smartphone.models[this.state.selectedModel].types[
-                  this.state.selectedType
-                ].price}
-              €
-            </span>
+            <span className="smartphone-price">{price ? price : "N/A"}€</span>
             <div className="a-button a-button-primary">
               <a
                 className="a-link"
