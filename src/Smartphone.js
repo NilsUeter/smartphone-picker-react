@@ -236,32 +236,35 @@ class Smartphone extends Component {
           </details>
           <div className="flexBetween">
             <span className="smartphone-price">{price ? price : "N/A"}€</span>
-            <div className="a-button a-button-primary">
-              <a
-                className="a-link"
-                target="_blank"
-                rel="noreferrer noopener"
-                href={
-                  this.props.smartphone.models[this.state.selectedModel].types[
-                    this.state.selectedType
-                  ].link
-                }
-              >
-                <span className="a-button-inner">
-                  <img
-                    alt=""
-                    src={amazonIcon}
-                    className="a-icon a-icon-shop-now"
-                  />
-                  <input
-                    className="a-button-input"
-                    type="submit"
-                    value="Add to cart"
-                  />
-                  <span className="a-button-text">Shop Now</span>
-                </span>
-              </a>
-            </div>
+            {this.props.smartphone.models[this.state.selectedModel].types[
+              this.state.selectedType
+            ].link && (
+              <div className="a-button a-button-primary">
+                <a
+                  className="a-link"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  href={
+                    this.props.smartphone.models[this.state.selectedModel]
+                      .types[this.state.selectedType].link
+                  }
+                >
+                  <span className="a-button-inner">
+                    <img
+                      alt=""
+                      src={amazonIcon}
+                      className="a-icon a-icon-shop-now"
+                    />
+                    <input
+                      className="a-button-input"
+                      type="submit"
+                      value="Add to cart"
+                    />
+                    <span className="a-button-text">Shop Now</span>
+                  </span>
+                </a>
+              </div>
+            )}
           </div>
         </div>
       </div>
