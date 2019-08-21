@@ -7,13 +7,21 @@
 
         // Constructor
         public function __construct($objectData) {
-            $this->id = $objectData['ID'];
+            $this->id = $objectData['MODEL_ID'];
             $this->storage = $objectData['STORAGE'];
             $this->memory = $objectData['MEMORY'];
+
+            $this->types = array();
         }
 
-        public function setTypes($types) {
-            $this->types = $types;
+        public static function withType($objectData, $type) {
+            $instance = new self($objectData);
+            $instance->addType($type);
+            return $instance;
+        }
+
+        public function addType($type) {
+            $this->types[] = $type;
         }
 
         public function getId() {

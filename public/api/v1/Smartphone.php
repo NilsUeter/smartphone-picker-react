@@ -12,7 +12,7 @@
     require_once($_SERVER['DOCUMENT_ROOT'] . 'v1/internal/MySQLDBConnection.php');
     require_once($_SERVER['DOCUMENT_ROOT'] . 'v1/internal/dao/SmartphoneDAO.php');
     $smartphoneDAO = new SmartphoneDAO(MySQLDBConnection::$pdo);
-    $smartphones = $smartphoneDAO->getAll();
+    $smartphones = $smartphoneDAO->getAllDetailed();
     header('HTTP/1.1 200 OK');
     header('Access-Control-Allow-Origin: *');
     header('Content-Type: application/json');

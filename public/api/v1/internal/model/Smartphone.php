@@ -42,14 +42,26 @@
             $this->notch = $objectData['NOTCH'];
             $this->waterproof = $objectData['WATERPROOF'];
             $this->headphoneJack = $objectData['HEADPHONE_JACK'];
+
+            $this->models = array();
         }
 
-        public function setModels($models) {
-            $this->models = $models;
+        public static function withModel($objectData, $model) {
+            $instance = new self($objectData);
+            $instance->addModel($model);
+            return $instance;
         }
 
-        public function getId() {
+        public function addModel($model) {
+            $this->models[] = $model;
+        }
+
+        public function getID() {
             return $this->id;
+        }
+
+        public function getModels() {
+            return $this->models;
         }
 
         public function jsonSerialize() {

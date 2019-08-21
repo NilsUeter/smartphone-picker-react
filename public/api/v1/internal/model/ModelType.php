@@ -1,6 +1,5 @@
 <?php
     class ModelType implements JsonSerializable {
-        private $id;
         private $vendor;
         private $name;
         private $itemId;
@@ -10,9 +9,8 @@
 
         // Constructor
         public function __construct($objectData) {
-            $this->id = $objectData['ID'];
-            $this->vendor = $objectData['VENDOR_ID'];
-            $this->name = $objectData['NAME'];
+            $this->vendor = $objectData['VENDOR'];
+            $this->name = $objectData['TYPE_NAME'];
             $this->itemId = $objectData['ITEM_ID'];
             $this->link = $objectData['LINK'];
             $this->lastUpdated = $objectData['LAST_UPDATED'];
