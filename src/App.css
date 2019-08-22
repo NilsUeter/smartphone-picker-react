@@ -942,6 +942,11 @@ textarea:focus {
   font-weight: 700;
 }
 
+.loading-info__header {
+  color: var(--highlight-color);
+  font-weight: 700;
+}
+
 .no-results__description {
   color: var(--text-color);
   font-size: 14px;

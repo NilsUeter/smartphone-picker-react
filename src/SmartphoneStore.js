@@ -6,6 +6,9 @@ class SmartphoneStore {
   @observable
   obj = [];
 
+  @observable
+  hasLoaded = false;
+
   constructor(props) {
     this.loadJSON();
   }
@@ -13,6 +16,8 @@ class SmartphoneStore {
   @action
   init = responseText => {
     this.obj = responseText;
+    // Set variable to show it finished loading
+    this.hasLoaded = true;
   };
 
   loadJSON = () => {
@@ -30,8 +35,8 @@ class SmartphoneStore {
           smartphone.camera +
           smartphone.battery -
           this.monthDiff(new Date(smartphone.released), new Date()) *
-          FilterStore.decayFactor) *
-        10
+            FilterStore.decayFactor) *
+          10
       ) / 10
     );
   }
@@ -246,11 +251,15 @@ class SmartphoneStore {
   }
 
   compareDates(a, b, attribute) {
-    return FilterStore.isDescending ? b[attribute] > a[attribute] : a[attribute] > b[attribute];
+    return FilterStore.isDescending
+      ? b[attribute] > a[attribute]
+      : a[attribute] > b[attribute];
   }
 
   compareFunctionNormal(a, b, attribute) {
-    return FilterStore.isDescending ? b[attribute] - a[attribute] : a[attribute] - b[attribute];
+    return FilterStore.isDescending
+      ? b[attribute] - a[attribute]
+      : a[attribute] - b[attribute];
   }
 
   compareFunctionLowest(a, b, attribute) {

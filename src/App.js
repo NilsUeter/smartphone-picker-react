@@ -34,6 +34,12 @@ const NoResultsInfo = () => (
   </div>
 );
 
+const LoadingInfo = () => (
+  <div className="no-results-container">
+    <div className="loading-info__header">Loading phones...</div>
+  </div>
+);
+
 @observer
 class App extends Component {
   getContentWithURL = () => {
@@ -60,6 +66,9 @@ class App extends Component {
 
     if (SmartphoneStore.listOfFilteredAndScoredObjects.length < 1) {
       content = <NoResultsInfo />;
+    }
+    if (SmartphoneStore.hasLoaded === false) {
+      content = <LoadingInfo />;
     }
     return !FilterStore.sidebarHidden && window.innerWidth < 600 ? (
       <div />
