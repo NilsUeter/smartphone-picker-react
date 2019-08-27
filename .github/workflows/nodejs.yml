@@ -15,8 +15,8 @@ jobs:
     - uses: actions/checkout@v1
     - name: npm install, build, and test
       run: |
-        npm install
-        npm run build --if-present
-        npm test
+        yarn install
+        yarn run build --if-present
+        yarn test
       env:
         CI: true
