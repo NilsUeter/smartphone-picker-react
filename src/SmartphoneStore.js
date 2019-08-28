@@ -1,6 +1,7 @@
 import { observable, computed, action } from "mobx";
 
 import FilterStore from "./FilterStore.js";
+import { monthDiff } from "./helperFunctions";
 
 class SmartphoneStore {
   @observable
@@ -34,18 +35,10 @@ class SmartphoneStore {
           smartphone.updates +
           smartphone.camera +
           smartphone.battery -
-          this.monthDiff(new Date(smartphone.released), new Date()) *
+          monthDiff(new Date(smartphone.released), new Date()) *
             FilterStore.decayFactor) *
           10
       ) / 10
-    );
-  }
-
-  monthDiff(dateFrom, dateTo) {
-    return (
-      dateTo.getMonth() -
-      dateFrom.getMonth() +
-      12 * (dateTo.getFullYear() - dateFrom.getFullYear())
     );
   }
 
@@ -267,22 +260,6 @@ class SmartphoneStore {
       ? b.models[0].types[0][attribute] - a.models[0].types[0][attribute]
       : a.models[0].types[0][attribute] - b.models[0].types[0][attribute];
   }
-
-  getAttributeFromSmartphone = (smartphone, attribute) => {
-    switch (attribute) {
-      case "price":
-        return smartphone.models[0].types[0][attribute] + "€";
-      case "length":
-      case "width":
-        return smartphone[attribute] + "mm";
-      case "display":
-        return smartphone[attribute] + '"';
-      case "totalscore":
-        return smartphone[attribute] + " Points";
-      default:
-        return smartphone[attribute];
-    }
-  };
 }
 
 const smartphoneStore = new SmartphoneStore();

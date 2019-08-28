@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 
-import FilterStore from "./FilterStore";
-import SmartphoneStore from "./SmartphoneStore";
 import amazonIcon from "./images/Amazon-Favicon-64x64.png";
+
+import { monthDiff, getAttributeFromSmartphone } from "./helperFunctions";
 import { observer } from "mobx-react";
 
 @observer
@@ -39,22 +39,20 @@ class Smartphone extends Component {
   }
 
   render() {
-    const { price } = this.props.smartphone.models[
-      this.state.selectedModel
-    ].types[this.state.selectedType];
+    const { smartphone, filterStore } = this.props;
+    const { price } = smartphone.models[this.state.selectedModel].types[
+      this.state.selectedType
+    ];
     return (
       <div className="smartphone" style={this.props.style}>
         <div className="img-container-container">
           <div className="smartphone-filtercriteria">
-            {SmartphoneStore.getAttributeFromSmartphone(
-              this.props.smartphone,
-              FilterStore.filterType
-            )}
+            {getAttributeFromSmartphone(smartphone, filterStore.filterType)}
           </div>
           <div
             className={
               "img-container " +
-              (FilterStore.showBacksideDefault
+              (filterStore.showBacksideDefault
                 ? "img-container--backsideDefault"
                 : "")
             }
@@ -68,7 +66,7 @@ class Smartphone extends Component {
           >
             <img
               style={
-                FilterStore.scaleInput
+                filterStore.scaleInput
                   ? {
                       height: this.smartphoneHeight
                     }
@@ -79,15 +77,15 @@ class Smartphone extends Component {
               className="qtip-img"
               onError={e => (e.target.alt = "No image")}
               src={
-                FilterStore.emptySmartphones
-                  ? "images/" + this.props.smartphone.imageLink + "_blank.png"
-                  : "images/" + this.props.smartphone.imageLink + ".jpg"
+                filterStore.emptySmartphones
+                  ? "images/" + smartphone.imageLink + "_blank.png"
+                  : "images/" + smartphone.imageLink + ".jpg"
               }
               alt=""
             />
             <img
               style={
-                FilterStore.scaleInput
+                filterStore.scaleInput
                   ? {
                       height: this.smartphoneHeight
                     }
@@ -97,36 +95,33 @@ class Smartphone extends Component {
               }
               className="qtip-img qtip-img-backside"
               onError={e => (e.target.alt = "No image")}
-              src={"images/" + this.props.smartphone.imageLink + "_back.jpg"}
+              src={"images/" + smartphone.imageLink + "_back.jpg"}
               alt=""
             />
           </div>
         </div>
         <div className="smartphone-details">
           <div className="flexBetween" style={{ marginBottom: 8 }}>
-            <span
-              className="smartphone-name "
-              title={this.props.smartphone.name}
-            >
-              {this.props.smartphone.brand + " " + this.props.smartphone.name}
+            <span className="smartphone-name " title={smartphone.name}>
+              {smartphone.brand + " " + smartphone.name}
             </span>
             <svg
               viewBox="0 0 940 940"
               height="18px"
               className={
                 "smartphone-fav-star " +
-                (FilterStore.selectedFavorites[
-                  this.props.smartphone.brand + " " + this.props.smartphone.name
+                (filterStore.selectedFavorites[
+                  smartphone.brand + " " + smartphone.name
                 ] != null
                   ? "smartphone-fav-star--clicked"
                   : "")
               }
               onClick={() => {
-                FilterStore.toggleObjectAttribute(
+                filterStore.toggleObjectAttribute(
                   "selectedFavorites",
-                  this.props.smartphone.brand + " " + this.props.smartphone.name
+                  smartphone.brand + " " + smartphone.name
                 );
-                FilterStore.updateURL();
+                filterStore.updateURL();
               }}
             >
               <path
@@ -146,7 +141,7 @@ class Smartphone extends Component {
               });
             }}
           >
-            {this.props.smartphone.models.map((model, modelIndex) =>
+            {smartphone.models.map((model, modelIndex) =>
               model.types.map((type, typeIndex) => (
                 <option
                   value={modelIndex + ":" + typeIndex}
@@ -166,57 +161,50 @@ class Smartphone extends Component {
             )}
           </select>
           <div className="flexBetween">
-            <span className="smartphone-release ">
-              {this.props.smartphone.released}
-            </span>
-            <span>
-              {this.props.smartphone.width +
-                "*" +
-                this.props.smartphone.length +
-                " mm"}
-            </span>
-            <span>{this.props.smartphone.display + '"'}</span>
+            <span className="smartphone-release ">{smartphone.released}</span>
+            <span>{smartphone.width + "*" + smartphone.length + " mm"}</span>
+            <span>{smartphone.display + '"'}</span>
           </div>
 
           <div className="flexBetween">
             <span>
-              <span>{this.props.smartphone.batterysize}mAh</span>
+              <span>{smartphone.batterysize}mAh</span>
             </span>
           </div>
           <div className="flexBetween" />
 
           <details className="smartphone-totalscore">
             <summary style={{ padding: 2 }}>
-              {this.props.smartphone.totalscore > 0 ? (
+              {smartphone.totalscore > 0 ? (
                 <span style={{ color: "var(--highlight-color)" }}>
-                  {this.props.smartphone.totalscore} Points
+                  {smartphone.totalscore} Points
                 </span>
               ) : (
                 <span style={{ color: "var(--bad-color)" }}>
-                  {this.props.smartphone.totalscore} Points
+                  {smartphone.totalscore} Points
                 </span>
               )}
             </summary>
 
             <div className="flexBetween">
               <p className="">Design</p>
-              <p>{this.props.smartphone.design}</p>
+              <p>{smartphone.design}</p>
             </div>
             <div className="flexBetween">
               <p className="">Processor</p>
-              <p>{this.props.smartphone.cpu}</p>
+              <p>{smartphone.cpu}</p>
             </div>
             <div className="flexBetween">
               <p className="">Software</p>
-              <p>{this.props.smartphone.updates}</p>
+              <p>{smartphone.updates}</p>
             </div>
             <div className="flexBetween">
               <p className="">Camera</p>
-              <p>{this.props.smartphone.camera}</p>
+              <p>{smartphone.camera}</p>
             </div>
             <div className="flexBetween">
               <p className="">Battery</p>
-              <p>{this.props.smartphone.battery}</p>
+              <p>{smartphone.battery}</p>
             </div>
             <hr className="horizontalRule " />
             <div className="flexBetween">
@@ -224,11 +212,8 @@ class Smartphone extends Component {
               <p className="smartphone-decay ">
                 -
                 {Math.round(
-                  SmartphoneStore.monthDiff(
-                    new Date(this.props.smartphone.released),
-                    new Date()
-                  ) *
-                    FilterStore.decayFactor *
+                  monthDiff(new Date(smartphone.released), new Date()) *
+                    filterStore.decayFactor *
                     10
                 ) / 10}
               </p>
@@ -236,7 +221,7 @@ class Smartphone extends Component {
           </details>
           <div className="flexBetween">
             <span className="smartphone-price">{price ? price : "N/A"}€</span>
-            {this.props.smartphone.models[this.state.selectedModel].types[
+            {smartphone.models[this.state.selectedModel].types[
               this.state.selectedType
             ].link && (
               <div className="a-button a-button-primary">
@@ -245,8 +230,9 @@ class Smartphone extends Component {
                   target="_blank"
                   rel="noreferrer noopener"
                   href={
-                    this.props.smartphone.models[this.state.selectedModel]
-                      .types[this.state.selectedType].link
+                    smartphone.models[this.state.selectedModel].types[
+                      this.state.selectedType
+                    ].link
                   }
                 >
                   <span className="a-button-inner">
