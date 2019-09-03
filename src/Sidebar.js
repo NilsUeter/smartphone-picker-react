@@ -6,62 +6,46 @@ import TextSelect from "./TextSelect";
 import TextField from "./TextField";
 import MultiCheckBox from "./MultiCheckBox";
 import "rc-slider/assets/index.css";
-import Slider from "rc-slider";
+
+import Slider from "@material-ui/core/Slider";
 
 import FilterStore from "./FilterStore.js";
 import SmartphoneStore from "./SmartphoneStore.js";
 
-const Range = Slider.Range;
-const storageMarks = {
-  0: {
-    style: {
-      color: "var(--text-color)"
-    },
+const storageMarks = [
+  {
+    value: 0,
     label: "8"
   },
-  1: {
-    style: {
-      color: "var(--text-color)"
-    },
+  {
+    value: 1,
     label: "16"
   },
-  2: {
-    style: {
-      color: "var(--text-color)"
-    },
+  {
+    value: 2,
     label: "32"
   },
-  3: {
-    style: {
-      color: "var(--text-color)"
-    },
+  {
+    value: 3,
     label: "64"
   },
-  4: {
-    style: {
-      color: "var(--text-color)"
-    },
+  {
+    value: 4,
     label: "128"
   },
-  5: {
-    style: {
-      color: "var(--text-color)"
-    },
+  {
+    value: 5,
     label: "256"
   },
-  6: {
-    style: {
-      color: "var(--text-color)"
-    },
+  {
+    value: 6,
     label: "512"
   },
-  7: {
-    style: {
-      color: "var(--text-color)"
-    },
+  {
+    value: 7,
     label: "1024"
   }
-};
+];
 
 @observer
 class Sidebar extends Component {
@@ -93,30 +77,26 @@ class Sidebar extends Component {
     return monthsMax;
   }
 
-  changeAttributeSlider = (first, second) => changeEvent => {
-    FilterStore.changeAttribute(first, changeEvent[0]);
-    FilterStore.changeAttribute(second, changeEvent[1]);
+  changeAttributeSlider = (first, second) => (e, value) => {
+    FilterStore.changeAttribute(first, value[0]);
+    FilterStore.changeAttribute(second, value[1]);
   };
 
-  changeAttributeStorage = changeEvent => {
-    FilterStore.changeAttribute("storage", 8 * Math.pow(2, changeEvent));
-  };
-
-  changeAttributeDateRange = changeEvent => {
+  changeAttributeDateSlider = (e, value) => {
     FilterStore.changeAttribute(
       "release_minimum",
       "201" +
-        (7 + Math.floor(changeEvent[0] / 12)) +
+        (7 + Math.floor(value[0] / 12)) +
         "-" +
-        ("00" + ((changeEvent[0] % 12) + 1)).slice(-2)
+        ("00" + ((value[0] % 12) + 1)).slice(-2)
     );
 
     FilterStore.changeAttribute(
       "release_maximum",
       "201" +
-        (7 + Math.floor(changeEvent[1] / 12)) +
+        (7 + Math.floor(value[1] / 12)) +
         "-" +
-        ("00" + ((changeEvent[1] % 12) + 1)).slice(-2)
+        ("00" + ((value[1] % 12) + 1)).slice(-2)
     );
   };
 
@@ -276,7 +256,7 @@ class Sidebar extends Component {
             Release
             <div className="sliderContainer">
               <div>
-                <Range
+                <Slider
                   min={0}
                   max={this.getMaxDateInMonths(
                     new Date().toISOString().slice(0, 7)
@@ -287,12 +267,7 @@ class Sidebar extends Component {
                     this.getMinDateinMonths(FilterStore.release_minimum),
                     this.getMaxDateInMonths(FilterStore.release_maximum)
                   ]}
-                  onChange={this.changeAttributeDateRange}
-                  trackStyle={[{ backgroundColor: "var(--text-color)" }]}
-                  handleStyle={[
-                    { border: "solid 2px var(--text-color)" },
-                    { border: "solid 2px var(--text-color)" }
-                  ]}
+                  onChange={this.changeAttributeDateSlider}
                 />
               </div>
               <div className="sliderSubBar">
@@ -308,7 +283,7 @@ class Sidebar extends Component {
             Price
             <div className="sliderContainer">
               <div>
-                <Range
+                <Slider
                   min={0}
                   max={1200}
                   step={50}
@@ -325,11 +300,6 @@ class Sidebar extends Component {
                     "price_minimum_1",
                     "price_maximum_1"
                   )}
-                  trackStyle={[{ backgroundColor: "var(--text-color)" }]}
-                  handleStyle={[
-                    { border: "solid 2px var(--text-color)" },
-                    { border: "solid 2px var(--text-color)" }
-                  ]}
                 />
               </div>
               <div className="sliderSubBar">
@@ -345,7 +315,7 @@ class Sidebar extends Component {
             Display
             <div className="sliderContainer">
               <div>
-                <Range
+                <Slider
                   min={4.6}
                   max={7}
                   step={0.1}
@@ -362,11 +332,6 @@ class Sidebar extends Component {
                     "size_minimum_1",
                     "size_maximum_1"
                   )}
-                  trackStyle={[{ backgroundColor: "var(--text-color)" }]}
-                  handleStyle={[
-                    { border: "solid 2px var(--text-color)" },
-                    { border: "solid 2px var(--text-color)" }
-                  ]}
                 />
               </div>
               <div className="sliderSubBar">
@@ -382,7 +347,7 @@ class Sidebar extends Component {
             Length
             <div className="sliderContainer">
               <div>
-                <Range
+                <Slider
                   min={135}
                   max={163}
                   step={1}
@@ -399,11 +364,6 @@ class Sidebar extends Component {
                     "size_minimum_2",
                     "size_maximum_2"
                   )}
-                  trackStyle={[{ backgroundColor: "var(--text-color)" }]}
-                  handleStyle={[
-                    { border: "solid 2px var(--text-color)" },
-                    { border: "solid 2px var(--text-color)" }
-                  ]}
                 />
               </div>
               <div className="sliderSubBar">
@@ -419,7 +379,7 @@ class Sidebar extends Component {
             Width
             <div className="sliderContainer">
               <div>
-                <Range
+                <Slider
                   min={65}
                   max={78}
                   step={1}
@@ -436,11 +396,6 @@ class Sidebar extends Component {
                     "size_minimum_3",
                     "size_maximum_3"
                   )}
-                  trackStyle={[{ backgroundColor: "var(--text-color)" }]}
-                  handleStyle={[
-                    { border: "solid 2px var(--text-color)" },
-                    { border: "solid 2px var(--text-color)" }
-                  ]}
                 />
               </div>
               <div className="sliderSubBar">
@@ -457,17 +412,13 @@ class Sidebar extends Component {
           <p>Storage</p>
           <div className="storageSlider">
             <Slider
+              marks={storageMarks}
               min={0}
               max={7}
-              marks={storageMarks}
               step={null}
-              onChange={this.changeAttributeStorage}
-              trackStyle={[{ backgroundColor: "var(--text-color)" }]}
-              handleStyle={[
-                { border: "solid 2px var(--text-color)" },
-                { border: "solid 2px var(--text-color)" }
-              ]}
-              activeDotStyle={{ border: "solid 2px var(--text-color)" }}
+              onChange={(e, value) =>
+                FilterStore.changeAttribute("storage", 8 * Math.pow(2, value))
+              }
             />
           </div>
           <div className="flex">
@@ -505,55 +456,45 @@ class Sidebar extends Component {
             min={1}
             max={5}
             step={1}
-            onChange={changeevent =>
-              FilterStore.changeAttribute("design", changeevent)
+            onChange={(e, value) =>
+              FilterStore.changeAttribute("design", value)
             }
-            trackStyle={[{ backgroundColor: "var(--text-color)" }]}
-            handleStyle={[{ border: "solid 2px var(--text-color)" }]}
           />
           <p>Processor</p>
           <Slider
             min={1}
             max={5}
             step={1}
-            onChange={changeevent =>
-              FilterStore.changeAttribute("processor", changeevent)
+            onChange={(e, value) =>
+              FilterStore.changeAttribute("processor", value)
             }
-            trackStyle={[{ backgroundColor: "var(--text-color)" }]}
-            handleStyle={[{ border: "solid 2px var(--text-color)" }]}
           />
           <p>Updates</p>
           <Slider
             min={1}
             max={5}
             step={1}
-            onChange={changeevent =>
-              FilterStore.changeAttribute("updates", changeevent)
+            onChange={(e, value) =>
+              FilterStore.changeAttribute("updates", value)
             }
-            trackStyle={[{ backgroundColor: "var(--text-color)" }]}
-            handleStyle={[{ border: "solid 2px var(--text-color)" }]}
           />
           <p>Camera</p>
           <Slider
             min={1}
             max={5}
             step={1}
-            onChange={changeevent =>
-              FilterStore.changeAttribute("camera", changeevent)
+            onChange={(e, value) =>
+              FilterStore.changeAttribute("camera", value)
             }
-            trackStyle={[{ backgroundColor: "var(--text-color)" }]}
-            handleStyle={[{ border: "solid 2px var(--text-color)" }]}
           />
           <p>Battery</p>
           <Slider
             min={1}
             max={5}
             step={1}
-            onChange={changeevent =>
-              FilterStore.changeAttribute("battery", changeevent)
+            onChange={(e, value) =>
+              FilterStore.changeAttribute("battery", value)
             }
-            trackStyle={[{ backgroundColor: "var(--text-color)" }]}
-            handleStyle={[{ border: "solid 2px var(--text-color)" }]}
           />
           <p>
             Decay Factor (
@@ -565,11 +506,9 @@ class Sidebar extends Component {
             max={1}
             step={0.1}
             value={parseFloat(FilterStore.decayFactor)}
-            onChange={changeevent =>
-              FilterStore.changeAttribute("decayFactor", changeevent)
+            onChange={(e, value) =>
+              FilterStore.changeAttribute("decayFactor", value)
             }
-            trackStyle={[{ backgroundColor: "var(--text-color)" }]}
-            handleStyle={[{ border: "solid 2px var(--text-color)" }]}
           />
           <div className="sliderSubBar">
             <div className="filler" />

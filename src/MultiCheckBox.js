@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { observer } from "mobx-react";
 
 import FilterStore from "./FilterStore.js";
+import Checkbox from "@material-ui/core/Checkbox";
 
 @observer
 class MultiCheckBox extends Component {
@@ -23,18 +24,14 @@ class MultiCheckBox extends Component {
       <React.Fragment>
         <div className="flex" style={{ marginBottom: "8px" }}>
           <label className="filterBoxLabel">
-            <input
-              type="checkbox"
-              onChange={() => this.toggleSelectAll()}
+            <Checkbox
+              className="overwrite-material-checkbox"
+              color="primary"
               checked={
                 FilterStore[this.props.name].length ===
                 this.props.options.length
               }
-              style={{
-                width: "auto",
-                alignSelf: "center",
-                marginRight: "8px"
-              }}
+              onChange={() => this.toggleSelectAll()}
             />
             Select All
           </label>
@@ -43,15 +40,11 @@ class MultiCheckBox extends Component {
           {this.props.options.map(option => (
             <div key={option} className="flex">
               <label className="filterBoxLabel">
-                <input
-                  type="checkbox"
-                  onChange={() => this.changeMultiSelection(option)}
+                <Checkbox
+                  className="overwrite-material-checkbox"
+                  color="primary"
                   checked={FilterStore[this.props.name].indexOf(option) !== -1}
-                  style={{
-                    width: "auto",
-                    alignSelf: "center",
-                    marginRight: "8px"
-                  }}
+                  onChange={() => this.changeMultiSelection(option)}
                 />
                 {option}
               </label>

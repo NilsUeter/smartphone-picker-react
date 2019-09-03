@@ -1,24 +1,20 @@
 import React, { Component } from "react";
 import { observer } from "mobx-react";
 
+import Switch from "@material-ui/core/Switch";
 import FilterStore from "./FilterStore.js";
 
 @observer
 class ToggleSwitch extends Component {
   render() {
     return (
-      <div className="toggleSwitch">
-        <input
-          type="checkbox"
-          id={this.props.name}
-          className="cbx toggle-hidden rating_updater"
-          checked={FilterStore[this.props.name]}
-          onChange={() => {
-            FilterStore.toggleAttribute(this.props.name);
-          }}
-        />
-        <label htmlFor={this.props.name} className="lbl" />
-      </div>
+      <Switch
+        checked={FilterStore[this.props.name]}
+        onChange={() => {
+          FilterStore.toggleAttribute(this.props.name);
+        }}
+        color="primary"
+      />
     );
   }
 }

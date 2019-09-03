@@ -1,4 +1,4 @@
-import { } from "mobx-react";
+import {} from "mobx-react";
 import { observable, action, autorun } from "mobx";
 
 class FilterStore {
@@ -54,15 +54,15 @@ class FilterStore {
   size_maximum_3 = 78;
 
   @observable
-  design = "1";
+  design = 1;
   @observable
-  cpu = "1";
+  cpu = 1;
   @observable
-  updates = "1";
+  updates = 1;
   @observable
-  camera = "1";
+  camera = 1;
   @observable
-  battery = "1";
+  battery = 1;
 
   @observable
   storage = 8;
@@ -104,6 +104,7 @@ class FilterStore {
 
   @action
   toggleAttribute = name => {
+    console.log(name);
     this[name] = !this[name];
   };
 
@@ -266,11 +267,11 @@ const resetCopy = {
   size_maximum_2: 165,
   size_minimum_3: 65,
   size_maximum_3: 78,
-  design: "1",
-  cpu: "1",
-  updates: "1",
-  camera: "1",
-  battery: "1",
+  design: 1,
+  cpu: 1,
+  updates: 1,
+  camera: 1,
+  battery: 1,
   storage: 8,
   headphoneJack: false,
   simCards: false,
