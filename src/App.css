@@ -107,7 +107,7 @@ body,
   position: absolute;
   transform: translateX(0);
   z-index: 50;
-  height: calc(100vh - 75px);
+  height: 100%;
   width: 100%;
   max-width: 600px;
   background-color: var(--background-color);
@@ -290,7 +290,7 @@ body,
 .smartphones,
 .smartphones-releases,
 .smartphones-charts {
-  height: calc(100vh - 75px);
+  height: 100%;
   width: 100%;
   overflow: auto;
   position: relative;
@@ -366,7 +366,7 @@ body,
 
 .logo {
   box-sizing: border-box;
-  padding: 6px 8px;
+  padding: 4px 8px;
   font-weight: bold;
   position: relative;
   z-index: 0;
@@ -574,6 +574,7 @@ input[type="url"],
 select,
 button,
 textarea {
+  border-radius: 2px;
   font-size: 14px;
   padding: 2px;
   color: var(--text-color);
@@ -830,9 +831,9 @@ textarea:focus {
 }
 
 .smallInput {
-  width: 36px;
+  width: 38px;
   text-align: right;
-  border: none;
+  border: 1px solid #f0f0f0;
   margin: 0;
   font-weight: 600;
 }

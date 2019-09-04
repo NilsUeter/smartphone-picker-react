@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { useState, useEffect } from "react";
 
 import "./App.css";
 
@@ -40,64 +40,70 @@ const LoadingInfo = () => (
   </div>
 );
 
-@observer
-class App extends Component {
-  getContentWithURL = () => {
-    let content = <Content />;
-    switch (window.location.pathname) {
-      case "/about":
-        return;
-      case "/releases":
-        content = <ContentReleases />;
-        break;
-      case "/charts":
-        content = <ContentCharts />;
-        break;
-      case "/justgood":
-        FilterStore.design = "3";
-        FilterStore.processor = "3";
-        FilterStore.updates = "4";
-        FilterStore.camera = "3";
-        FilterStore.battery = "3";
-        break;
-      default:
-        break;
-    }
-
-    if (SmartphoneStore.listOfFilteredAndScoredObjects.length < 1) {
-      content = <NoResultsInfo />;
-    }
-    if (SmartphoneStore.hasLoaded === false) {
-      content = <LoadingInfo />;
-    }
-    return !FilterStore.sidebarHidden && window.innerWidth < 600 ? (
-      <div />
-    ) : (
-      content
-    );
-  };
-
-  render() {
-    return (
-      <div
-        className={
-          "react-head " + (FilterStore.lightmode ? "lightmode" : "darkmode")
-        }
-      >
-        <Header />
-        <div style={{ display: "flex", overflow: "auto" }}>
-          {window.location.pathname === "/about" ? (
-            <About />
-          ) : (
-            <React.Fragment>
-              <SidebarContainer />
-              {this.getContentWithURL()}
-            </React.Fragment>
-          )}
-        </div>
-      </div>
-    );
+const getContentWithURL = currentURL => {
+  let content = <Content />;
+  switch (currentURL) {
+    case "/about":
+      return;
+    case "/releases":
+      content = <ContentReleases />;
+      break;
+    case "/charts":
+      content = <ContentCharts />;
+      break;
+    case "/justgood":
+      FilterStore.design = "3";
+      FilterStore.processor = "3";
+      FilterStore.updates = "4";
+      FilterStore.camera = "3";
+      FilterStore.battery = "3";
+      break;
+    default:
+      break;
   }
-}
+
+  if (SmartphoneStore.listOfFilteredAndScoredObjects.length < 1) {
+    content = <NoResultsInfo />;
+  }
+  if (SmartphoneStore.hasLoaded === false) {
+    content = <LoadingInfo />;
+  }
+  return !FilterStore.sidebarHidden && window.innerWidth < 600 ? (
+    <div />
+  ) : (
+    content
+  );
+};
+
+const App = observer(() => {
+  const [currentURL, setCurrentURL] = useState(window.location.pathname);
+  useEffect(() => {
+    window.addEventListener(
+      "popstate",
+      () => setCurrentURL(window.location.pathname),
+      false
+    );
+  });
+
+  return (
+    <div
+      className={
+        "react-head " + (FilterStore.lightmode ? "lightmode" : "darkmode")
+      }
+    >
+      <Header />
+      <div style={{ display: "flex", overflow: "auto" }}>
+        {currentURL === "/about" ? (
+          <About />
+        ) : (
+          <React.Fragment>
+            <SidebarContainer />
+            {getContentWithURL(currentURL)}
+          </React.Fragment>
+        )}
+      </div>
+    </div>
+  );
+});
 
 export default App;

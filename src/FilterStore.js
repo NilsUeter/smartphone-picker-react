@@ -104,7 +104,6 @@ class FilterStore {
 
   @action
   toggleAttribute = name => {
-    console.log(name);
     this[name] = !this[name];
   };
 

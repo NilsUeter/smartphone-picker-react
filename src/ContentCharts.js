@@ -26,7 +26,6 @@ class ContentCharts extends Component {
   }
 
   render() {
-    console.log("rerender");
     const data = getData(SmartphoneStore.listOfFilteredAndScoredObjects);
     return (
       <React.Fragment>

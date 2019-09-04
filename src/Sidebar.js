@@ -108,7 +108,6 @@ class Sidebar extends Component {
           text: "Check out my filtered list of smartphones!",
           url: window.location.href
         })
-        .then(() => console.log("Successful share"))
         .catch(error => console.log("Error sharing", error));
     } else {
       navigator.clipboard.writeText(window.location.href);
