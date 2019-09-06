@@ -5,7 +5,6 @@ import ToggleSwitch from "./ToggleSwitch";
 import TextSelect from "./TextSelect";
 import TextField from "./TextField";
 import MultiCheckBox from "./MultiCheckBox";
-import "rc-slider/assets/index.css";
 
 import Slider from "@material-ui/core/Slider";
 
