@@ -45,11 +45,6 @@ class ContentCharts extends Component {
                 <span className="chart-tooltip">{phone.node.data.name}</span>
               );
             }}
-            onMouseMove={node => {
-              if (this.state.selectedPhone !== node.data.name) {
-                this.setState({ selectedPhone: node.data.name });
-              }
-            }}
             onClick={node => {
               this.setState({ selectedPhone: node.data.name });
             }}
@@ -64,10 +59,7 @@ class ContentCharts extends Component {
               orient: "left",
               tickSize: 5,
               tickPadding: 5,
-              tickRotation: 0,
-              legend: "size",
-              legendPosition: "middle",
-              legendOffset: -60
+              tickRotation: 0
             }}
             theme={theme}
           />
