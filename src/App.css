@@ -107,12 +107,13 @@ body,
   position: absolute;
   transform: translateX(0);
   z-index: 50;
-  height: 100%;
+  height: calc(100vh - 71px);
   width: 100%;
   max-width: 600px;
   background-color: var(--background-color);
   border-right: 1px solid var(--border-color);
   transition: transform 0.25s ease;
+  box-sizing: border-box;
 }
 
 .sidebar.hidden {
@@ -290,7 +291,7 @@ body,
 .smartphones,
 .smartphones-releases,
 .smartphones-charts {
-  height: 100%;
+  height: calc(100vh - 71px);
   width: 100%;
   overflow: auto;
   position: relative;
