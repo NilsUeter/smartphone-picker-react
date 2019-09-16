@@ -3422,10 +3422,10 @@ csstype@^2.2.0, csstype@^2.5.2, csstype@^2.6.5:
   resolved "https://registry.yarnpkg.com/csstype/-/csstype-2.6.6.tgz#c34f8226a94bbb10c32cc0d714afdf942291fc41"
   integrity sha512-RpFbQGUE74iyPgvr46U9t1xoQBM8T4BL8SxrN66Le2xYAPSaDJJKeztV3awugusb3g3G9iL8StmkBBXhcbbXhg==
 
-customize-cra@0.6.0:
-  version "0.6.0"
-  resolved "https://registry.yarnpkg.com/customize-cra/-/customize-cra-0.6.0.tgz#5eca0fff1d357f0299286990cb9252d5ed69c024"
-  integrity sha512-RzrJ/3Cg1piCMW7M028tpxcKism2Wmna7eCro1t/YHUMR8SnpM80JwqB1Ln6QdSAw4dz3SS9jZIJvw73LQONSQ==
+customize-cra@0.7.0:
+  version "0.7.0"
+  resolved "https://registry.yarnpkg.com/customize-cra/-/customize-cra-0.7.0.tgz#0116318557d365f560d5736304644da5d6124c0a"
+  integrity sha512-ayLAG7E7Odr4ZtOlhXiJO+ufny8TAbHC1EewH2YmHjct1tKkVgwqVGoFO6Ua3z8W0Vfkw512M4XWxR4ENX3qJw==
   dependencies:
     lodash.flow "^3.5.0"
 
