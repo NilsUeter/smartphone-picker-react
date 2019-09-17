@@ -186,8 +186,7 @@ body,
   align-items: flex-end;
   display: flex;
   justify-content: center;
-  height: calc((100vh - 450px));
-  margin-bottom: 16px;
+  margin-bottom: 8px;
   background-color: var(--just-white);
   border-radius: 8px;
   transform-style: preserve-3d;
@@ -209,10 +208,15 @@ body,
   transform: rotateY(0deg);
 }
 
-@media (min-height: 1000px) {
-  .img-container {
-    height: calc((1000px - 450px));
-  }
+.smartphone {
+  flex: 1;
+  font-size: 14px;
+  margin-left: 8px;
+  margin-bottom: 32px;
+  margin-right: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 @media only screen and (min-width: 600px) {
@@ -243,6 +247,10 @@ body,
   /*with backsideDefault activated the hover flip flips to the front*/
   .img-container-container:hover .img-container--backsideDefault {
     transform: rotateY(0deg);
+  }
+
+  .smartphone {
+    font-size: 16px;
   }
 
   ::-webkit-scrollbar {
@@ -354,15 +362,6 @@ body,
 
 .smartphones-in-month {
   flex-wrap: wrap;
-}
-
-.smartphone {
-  margin-left: 8px;
-  margin-bottom: 96px;
-  margin-right: 8px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 .logo {
@@ -636,15 +635,14 @@ textarea:focus {
 }
 
 .smartphone-details {
-  font-size: 14px;
+  font-size: 0.8em;
   letter-spacing: 0.1px;
   line-height: 1.3;
   background-color: var(--foreground-color);
   color: var(--text-color);
-  padding: 8px 12px;
+  padding: 8px 0.875em;
   border-radius: 8px;
   border: var(--border-color) 2px solid;
-  width: 260px;
 }
 
 .smartphone-price-details {
@@ -652,7 +650,7 @@ textarea:focus {
   border: 1px solid var(--border-color);
   margin-bottom: 8px;
   width: 100%;
-  font-size: 14px;
+  font-size: 1em;
   padding: 2px 0;
 }
 
@@ -670,14 +668,14 @@ textarea:focus {
 .smartphone-filtercriteria {
   font-weight: bold;
   padding-top: 4px;
-  padding-bottom: 16px;
+  padding-bottom: 8px;
   vertical-align: top;
   text-align: center;
   color: var(--first-color);
 }
 
 .smartphone-name {
-  font-size: 18px;
+  font-size: 1.2em;
   font-weight: 600;
   color: var(--text-color-dark);
   white-space: nowrap;
@@ -712,14 +710,17 @@ textarea:focus {
   top: 12px;
 }
 
-.smartphone-release {
+.smartphone-release,
+.smartphone-width-length {
   color: var(--text-color);
+  margin-right: 8px;
+  white-space: nowrap;
 }
 
 .smartphone-price {
   color: var(--highlight-color);
   font-weight: bold;
-  font-size: 18px;
+  font-size: 1.25em;
 }
 
 .smartphone-decay {
@@ -759,22 +760,14 @@ textarea:focus {
 }
 
 .a-icon-shop-now {
-  position: absolute;
-  top: 3px;
-  left: 3px;
-  display: inline-block;
-  width: 25px;
-  height: 25px;
-  vertical-align: top;
-  background: 0 0;
+  width: 1.5em;
+  height: 1.5em;
+  margin-right: 8px;
 }
 
 .a-button {
   box-sizing: border-box;
   display: block;
-  overflow: hidden;
-  width: 130px;
-  height: 31px;
   cursor: pointer;
   border-radius: 3px;
 }
@@ -785,13 +778,10 @@ textarea:focus {
 
 .a-button-text {
   font-family: Arial, sans-serif;
-  font-size: 12px;
-  line-height: 29px;
   position: relative;
   z-index: 10;
   display: block;
   margin: 0;
-  padding: 2px 2px 0 29px;
   text-align: center;
   white-space: nowrap;
   text-decoration: none;
@@ -814,12 +804,12 @@ textarea:focus {
 }
 
 .a-button-inner {
+  padding: 4px 8px;
   position: relative;
-  display: block;
-  overflow: hidden;
+  display: flex;
+  align-items: center;
   height: 100%;
   cursor: pointer;
-  text-align: center;
   border-radius: 3px;
 }
 

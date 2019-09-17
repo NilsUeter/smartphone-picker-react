@@ -8,6 +8,7 @@ import Smartphone from "./Smartphone.js";
 @observer
 class Content extends Component {
   render() {
+    const maxImgHeight = window.innerWidth < 600 ? 250 : 450;
     return (
       <main id="smartphones" className="smartphones">
         {SmartphoneStore.listOfFilteredAndScoredObjects.map(smartphone => (
@@ -19,7 +20,7 @@ class Content extends Component {
               smartphone.storage
             }
             smartphone={smartphone}
-            maxImgHeight={450}
+            maxImgHeight={maxImgHeight}
             filterStore={FilterStore}
           />
         ))}

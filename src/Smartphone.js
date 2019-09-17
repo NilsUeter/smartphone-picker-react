@@ -3,12 +3,6 @@ import { observer } from "mobx-react";
 import amazonIcon from "./images/Amazon-Favicon-64x64.png";
 import { monthDiff, getAttributeFromSmartphone } from "./helperFunctions";
 
-const SIZE = 450;
-const WINDOWHEIGHT = Math.max(
-  document.documentElement.clientHeight,
-  window.innerHeight || 0
-);
-
 const Smartphone = observer(
   ({ smartphone, maxImgHeight, style, filterStore }) => {
     const [selectedModel, setSelectedModel] = useState(0);
@@ -16,17 +10,8 @@ const Smartphone = observer(
     const { price, link } = smartphone.models[selectedModel].types[
       selectedType
     ];
-    let imageContainerHeight, smartphoneHeight;
+    let height = (smartphone.length / 165) * 100 + "%";
 
-    if (WINDOWHEIGHT < maxImgHeight + SIZE) {
-      imageContainerHeight = "calc((100vh - " + SIZE + "px))";
-      smartphoneHeight =
-        "calc(calc(100vh - " + SIZE + "px) * " + smartphone.length / 165 + ")";
-    } else {
-      imageContainerHeight = maxImgHeight + "px";
-      smartphoneHeight =
-        "calc(calc(" + maxImgHeight + "px) * " + smartphone.length / 165 + ")";
-    }
     return (
       <div className="smartphone" style={style}>
         <div className="img-container-container">
@@ -41,7 +26,7 @@ const Smartphone = observer(
                 : "")
             }
             style={{
-              height: imageContainerHeight
+              height: maxImgHeight
             }}
             onClick={e =>
               window.innerWidth < 600 && //only allow mobile devices to switch with click
@@ -50,9 +35,18 @@ const Smartphone = observer(
           >
             <img
               style={
+                filterStore.scaleInput ? { height } : { height: 100 + "%" }
+              }
+              className="qtip-img qtip-img-backside"
+              onError={e => (e.target.alt = "No image")}
+              src={"images/" + smartphone.imageLink + "_back.jpg"}
+              alt=""
+            />
+            <img
+              style={
                 filterStore.scaleInput
                   ? {
-                      height: smartphoneHeight
+                      height: height
                     }
                   : {
                       height: (165 / 165) * 100 + "%"
@@ -65,21 +59,6 @@ const Smartphone = observer(
                   ? "images/" + smartphone.imageLink + "_blank.png"
                   : "images/" + smartphone.imageLink + ".jpg"
               }
-              alt=""
-            />
-            <img
-              style={
-                filterStore.scaleInput
-                  ? {
-                      height: smartphoneHeight
-                    }
-                  : {
-                      height: (165 / 165) * 100 + "%"
-                    }
-              }
-              className="qtip-img qtip-img-backside"
-              onError={e => (e.target.alt = "No image")}
-              src={"images/" + smartphone.imageLink + "_back.jpg"}
               alt=""
             />
           </div>
@@ -143,7 +122,9 @@ const Smartphone = observer(
           </select>
           <div className="flexBetween">
             <span className="smartphone-release ">{smartphone.released}</span>
-            <span>{smartphone.width + "*" + smartphone.length + " mm"}</span>
+            <span className="smartphone-width-length ">
+              {smartphone.width + "*" + smartphone.length + " mm"}
+            </span>
             <span>{smartphone.display + '"'}</span>
           </div>
 
@@ -202,7 +183,7 @@ const Smartphone = observer(
           </details>
           <div className="flexBetween">
             <span className="smartphone-price">{price ? price : "N/A"}€</span>
-            {link && (
+            {true && (
               <div className="a-button a-button-primary">
                 <a
                   className="a-link"
