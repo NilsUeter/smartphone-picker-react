@@ -183,7 +183,7 @@ const Smartphone = observer(
           </details>
           <div className="flexBetween">
             <span className="smartphone-price">{price ? price : "N/A"}€</span>
-            {true && (
+            {link && (
               <div className="a-button a-button-primary">
                 <a
                   className="a-link"

@@ -239,6 +239,11 @@ body,
     position: absolute;
   }
 
+  /* only apply hover on non-mobile*/
+  .smartphone-fav-star:hover {
+    fill: var(--just-yellow-light);
+  }
+
   /*only allow desktop devices to flip with hover*/
   .img-container-container:hover .img-container {
     transform: rotateY(180deg);
@@ -686,10 +691,6 @@ textarea:focus {
 .smartphone-fav-star {
   fill: var(--border-color);
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-}
-
-.smartphone-fav-star:hover {
-  fill: var(--just-yellow-light);
 }
 
 .smartphone-fav-star--clicked {
