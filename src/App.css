@@ -304,7 +304,7 @@ body,
 .smartphones,
 .smartphones-releases,
 .smartphones-charts {
-  height: calc(100vh - 71px);
+  height: calc(100vh - 70px);
   width: 100%;
   overflow: auto;
   position: relative;
