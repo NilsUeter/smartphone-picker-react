@@ -148,7 +148,7 @@ body,
 }
 
 .logo-text {
-  font-size: 20px;
+  font-size: 18px;
   text-decoration: none;
   color: var(--first-color);
 }
@@ -231,7 +231,7 @@ body,
   }
 
   .logo-text {
-    font-size: 24px;
+    font-size: 23px;
   }
 
   .status-button-share:focus + .clipboard-notifier {
@@ -304,7 +304,7 @@ body,
 .smartphones,
 .smartphones-releases,
 .smartphones-charts {
-  height: calc(100vh - 70px);
+  height: calc(100vh - 71px);
   width: 100%;
   overflow: auto;
   position: relative;
