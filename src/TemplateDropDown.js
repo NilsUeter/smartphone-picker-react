@@ -16,7 +16,11 @@ function TemplateDropDown({ summary, details }) {
                   // close current details
                   detailsRef.current.removeAttribute("open");
                   // change url without reload
-                  window.history.pushState(null, detail.desc, detail.href);
+                  window.history.pushState(
+                    null,
+                    detail.desc,
+                    detail.href + window.location.search
+                  );
                   // trigger popstate because pushState doesn't
                   window.dispatchEvent(
                     new PopStateEvent("popstate", { state: null })

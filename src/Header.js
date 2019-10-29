@@ -50,7 +50,7 @@ class Header extends Component {
             summary="Smartphones"
             details={[
               {
-                href: "/home" + FilterStore.currentQuery,
+                href: "/home",
                 icon: (
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -67,7 +67,7 @@ class Header extends Component {
                 desc: "Side by side comparison"
               },
               {
-                href: "/releases" + FilterStore.currentQuery,
+                href: "/releases",
                 icon: (
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -84,7 +84,7 @@ class Header extends Component {
                 desc: "Smartphone timeline"
               },
               {
-                href: "/charts" + FilterStore.currentQuery,
+                href: "/charts",
                 icon: (
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -101,7 +101,7 @@ class Header extends Component {
                 desc: "Charts"
               },
               {
-                href: "justGood" + FilterStore.currentQuery,
+                href: "justGood",
                 icon: (
                   <svg
                     xmlns="http://www.w3.org/2000/svg"

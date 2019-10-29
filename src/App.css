@@ -306,9 +306,11 @@ body,
 .smartphones-charts {
   height: calc(100vh - 71px);
   width: 100%;
-  overflow: auto;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
   position: relative;
   will-change: transform;
+  z-index: 0;
 }
 
 .smartphones-charts {

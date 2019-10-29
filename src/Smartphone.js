@@ -3,6 +3,20 @@ import { observer } from "mobx-react";
 import amazonIcon from "./images/Amazon-Favicon-64x64.png";
 import { monthDiff, getAttributeFromSmartphone } from "./helperFunctions";
 
+const calculateScore = (smartphone, decay) => {
+  return (
+    Math.round(
+      (smartphone.design +
+        smartphone.cpu +
+        smartphone.updates +
+        smartphone.camera +
+        smartphone.battery -
+        monthDiff(new Date(smartphone.released), new Date()) * decay) *
+        10
+    ) / 10
+  );
+};
+
 const Smartphone = observer(
   ({ smartphone, maxImgHeight, style, filterStore }) => {
     const [selectedModel, setSelectedModel] = useState(0);
@@ -11,7 +25,7 @@ const Smartphone = observer(
       selectedType
     ];
     let height = (smartphone.length / 165) * 100 + "%";
-
+    smartphone.totalscore = calculateScore(smartphone, filterStore.decayFactor);
     return (
       <div className="smartphone" style={style}>
         <div className="img-container-container">
@@ -137,15 +151,15 @@ const Smartphone = observer(
 
           <details className="smartphone-totalscore">
             <summary style={{ padding: 2 }}>
-              {smartphone.totalscore > 0 ? (
-                <span style={{ color: "var(--highlight-color)" }}>
-                  {smartphone.totalscore} Points
-                </span>
-              ) : (
-                <span style={{ color: "var(--bad-color)" }}>
-                  {smartphone.totalscore} Points
-                </span>
-              )}
+              <span
+                style={
+                  smartphone.totalscore > 0
+                    ? { color: "var(--highlight-color)" }
+                    : { color: "var(--bad-color)" }
+                }
+              >
+                {smartphone.totalscore} Points
+              </span>
             </summary>
 
             <div className="flexBetween">

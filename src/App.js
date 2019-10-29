@@ -3,7 +3,7 @@ import React, { useState, useEffect } from "react";
 import "./App.css";
 
 import Header from "./Header.js";
-import SidebarContainer from "./SidebarContainer.js";
+import SidebarContainer from "./Sidebar/SidebarContainer.js";
 import Content from "./Content.js";
 import ContentReleases from "./ContentReleases.js";
 import ContentCharts from "./ContentCharts.js";

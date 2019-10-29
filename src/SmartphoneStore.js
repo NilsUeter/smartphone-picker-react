@@ -1,7 +1,5 @@
 import { observable, computed, action } from "mobx";
-
 import FilterStore from "./FilterStore.js";
-import { monthDiff } from "./helperFunctions";
 
 class SmartphoneStore {
   @observable
@@ -27,25 +25,11 @@ class SmartphoneStore {
       .then(data => this.init(data));
   };
 
-  calculateScore(smartphone) {
-    return (
-      Math.round(
-        (smartphone.design +
-          smartphone.cpu +
-          smartphone.updates +
-          smartphone.camera +
-          smartphone.battery -
-          monthDiff(new Date(smartphone.released), new Date()) *
-            FilterStore.decayFactor) *
-          10
-      ) / 10
-    );
-  }
-
   @computed
   get listOfFilteredObjects() {
+    console.log("getting");
     let listOfFilteredObjects = [];
-    let obj = JSON.parse(JSON.stringify(this.obj));
+    let obj = this.obj;
     if (obj == null) {
       return listOfFilteredObjects;
     }
@@ -162,12 +146,11 @@ class SmartphoneStore {
           continue;
         }
 
-        //storage
-        obj[i].models = obj[i].models.filter(
-          model => model.storage >= FilterStore.storage
-        );
-
         for (let t = 0; t < obj[i].models.length; t++) {
+          //storage
+          if (obj[i].models[t].storage < FilterStore.storage) {
+            continue;
+          }
           for (let c = 0; c < obj[i].models[t].types.length; c++) {
             //price
             if (
@@ -190,8 +173,6 @@ class SmartphoneStore {
           continue;
         }
       }
-      //calculate score new
-      obj[i].totalscore = this.calculateScore(obj[i]);
       listOfFilteredObjects.push(obj[i]);
     }
     return listOfFilteredObjects;
