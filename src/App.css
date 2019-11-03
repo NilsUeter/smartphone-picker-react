@@ -745,6 +745,7 @@ textarea:focus {
   position: absolute;
   vertical-align: middle;
   backface-visibility: hidden;
+  will-change: opacity; /*workaround for https://bugs.chromium.org/p/chromium/issues/detail?id=1006692*/
 }
 
 .qtip-img-backside {
