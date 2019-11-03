@@ -1,8 +1,8 @@
 import { observable, computed, action } from "mobx";
 import FilterStore from "./FilterStore.js";
+import { monthDiff } from "./helperFunctions";
 
 class SmartphoneStore {
-  @observable
   obj = [];
 
   @observable
@@ -27,28 +27,24 @@ class SmartphoneStore {
 
   @computed
   get listOfFilteredObjects() {
-    console.log("getting");
     let listOfFilteredObjects = [];
-    let obj = this.obj;
-    if (obj == null) {
+    if (!this.hasLoaded) {
       return listOfFilteredObjects;
     }
-    for (let i = 0; i < obj.length; i++) {
+    let obj = JSON.parse(JSON.stringify(this.obj)); // deep copy
+    let phone;
+    for (let key in obj) {
+      phone = obj[key];
       if (FilterStore.onlyShowFavedPhones) {
         if (
-          FilterStore.selectedFavorites[obj[i].brand + " " + obj[i].name] ==
-          null
+          FilterStore.selectedFavorites[phone.brand + " " + phone.name] == null
         ) {
           continue;
         }
       } else {
         if (FilterStore.searchQuery !== "") {
           //searchQuery
-          const lowerCaseName = (
-            obj[i].brand +
-            " " +
-            obj[i].name
-          ).toLowerCase();
+          const lowerCaseName = (phone.brand + " " + phone.name).toLowerCase();
           if (!lowerCaseName.includes(FilterStore.searchQuery.toLowerCase())) {
             continue;
           }
@@ -56,131 +52,150 @@ class SmartphoneStore {
 
         //release-date
         if (
-          FilterStore.release_minimum > obj[i].released ||
-          FilterStore.release_maximum < obj[i].released
+          FilterStore.release_minimum > phone.released ||
+          FilterStore.release_maximum < phone.released
         ) {
           continue;
         }
 
         //display
         if (
-          FilterStore.size_minimum_1 > obj[i].display ||
-          FilterStore.size_maximum_1 < obj[i].display
+          FilterStore.size_minimum_1 > phone.display ||
+          FilterStore.size_maximum_1 < phone.display
         ) {
           continue;
         }
 
         //length
         if (
-          FilterStore.size_minimum_2 > obj[i].length ||
-          FilterStore.size_maximum_2 < obj[i].length
+          FilterStore.size_minimum_2 > phone.length ||
+          FilterStore.size_maximum_2 < phone.length
         ) {
           continue;
         }
 
         //width
         if (
-          FilterStore.size_minimum_3 > obj[i].width ||
-          FilterStore.size_maximum_3 < obj[i].width
+          FilterStore.size_minimum_3 > phone.width ||
+          FilterStore.size_maximum_3 < phone.width
         ) {
           continue;
         }
 
         //design
-        if (obj[i].design < FilterStore.design) {
+        if (phone.design < FilterStore.design) {
           continue;
         }
 
         //processor
-        if (obj[i].cpu < FilterStore.cpu) {
+        if (phone.cpu < FilterStore.cpu) {
           continue;
         }
 
         //software updates
-        if (obj[i].updates < FilterStore.updates) {
+        if (phone.updates < FilterStore.updates) {
           continue;
         }
 
         //camera
-        if (obj[i].camera < FilterStore.camera) {
+        if (phone.camera < FilterStore.camera) {
           continue;
         }
 
         //battery
-        if (obj[i].battery < FilterStore.battery) {
+        if (phone.battery < FilterStore.battery) {
           continue;
         }
 
         //storage
         if (FilterStore.waterproof !== "") {
-          if (obj[i].waterproof < FilterStore.waterproof) {
+          if (phone.waterproof < FilterStore.waterproof) {
             continue;
           }
         }
 
         //headphonejack
-        if (FilterStore.headphoneJack && obj[i].headphoneJack === 0) {
+        if (FilterStore.headphoneJack && phone.headphoneJack === 0) {
           continue;
         }
 
         //simCardInput
-        if (FilterStore.simCards && obj[i].simCards === 1) {
+        if (FilterStore.simCards && phone.simCards === 1) {
           continue;
         }
 
         //sdSLot
-        if (FilterStore.sdSlot && obj[i].sdSlot === 0) {
+        if (FilterStore.sdSlot && phone.sdSlot === 0) {
           continue;
         }
 
         //notch
-        if (FilterStore.notch && obj[i].notch === 1) {
+        if (FilterStore.notch && phone.notch === 1) {
           continue;
         }
 
         //brands
         if (
           FilterStore.selectedBrands.length > 0 &&
-          FilterStore.selectedBrands.indexOf(obj[i].brand) === -1
+          FilterStore.selectedBrands.indexOf(phone.brand) === -1
         ) {
           continue;
         }
 
-        for (let t = 0; t < obj[i].models.length; t++) {
+        for (let t = 0; t < phone.models.length; t++) {
           //storage
-          if (obj[i].models[t].storage < FilterStore.storage) {
-            continue;
+          if (phone.models[t].storage < FilterStore.storage) {
+            phone.models.splice(t, 1);
+            t--;
+            break;
           }
-          for (let c = 0; c < obj[i].models[t].types.length; c++) {
+          for (let c = 0; c < phone.models[t].types.length; c++) {
             //price
             if (
-              FilterStore.price_minimum_1 > obj[i].models[t].types[c].price ||
-              FilterStore.price_maximum_1 < obj[i].models[t].types[c].price
+              FilterStore.price_minimum_1 > phone.models[t].types[c].price ||
+              FilterStore.price_maximum_1 < phone.models[t].types[c].price
             ) {
-              if (obj[i].models[t].types.length === 1) {
-                obj[i].models.splice(t, 1);
+              if (phone.models[t].types.length === 1) {
+                phone.models.splice(t, 1);
                 t--;
                 break;
               } else {
-                obj[i].models[t].types.splice(c, 1);
+                phone.models[t].types.splice(c, 1);
                 c--;
               }
             }
           }
         }
 
-        if (obj[i].models.length < 1) {
+        if (phone.models.length < 1) {
           continue;
         }
+
+        phone.totalscore = this.calculateScore(phone, FilterStore.decayFactor);
       }
-      listOfFilteredObjects.push(obj[i]);
+      listOfFilteredObjects.push(phone);
     }
     return listOfFilteredObjects;
   }
 
+  calculateScore = (smartphone, decay) => {
+    return (
+      Math.round(
+        (smartphone.design +
+          smartphone.cpu +
+          smartphone.updates +
+          smartphone.camera +
+          smartphone.battery -
+          monthDiff(new Date(smartphone.released), new Date()) * decay) *
+          10
+      ) / 10
+    );
+  };
+
   @computed
   get listOfFilteredAndScoredObjects() {
     let listOfFilteredAndScoredObjects = this.listOfFilteredObjects.slice(0);
+
     switch (FilterStore.filterType) {
       case "price":
         return listOfFilteredAndScoredObjects.sort((a, b) => {

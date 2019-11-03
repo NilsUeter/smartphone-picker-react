@@ -210,6 +210,7 @@ body,
 }
 
 .smartphone {
+  flex: 1;
   font-size: 14px;
   margin-left: 8px;
   margin-bottom: 32px;
@@ -682,7 +683,7 @@ textarea:focus {
 }
 
 .smartphone-name {
-  font-size: 1.2em;
+  font-size: 1.3em;
   font-weight: 600;
   color: var(--text-color-dark);
   white-space: nowrap;
