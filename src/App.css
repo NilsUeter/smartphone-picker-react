@@ -12,6 +12,7 @@
   --first-color: #2f5a9a;
   --text-color: #4f5259;
   --text-color-dark: #2c2d2e;
+  --svg-hover-color: var(--text-color-dark);
   --border-color: #e0e0e0;
   --background-color: #fff;
   --foreground-color: #fff;
@@ -21,6 +22,7 @@
   --first-color: #d6d8de;
   --text-color: #a0a0a0;
   --text-color-dark: #e7e7e7;
+  --svg-hover-color: var(--text-color);
   --border-color: #a0a0a0;
   --background-color: #263238;
   --foreground-color: var(--background-color);
@@ -144,7 +146,7 @@ body,
 }
 
 .sidebar-status-buttons:hover {
-  background-color: var(--border-color);
+  fill: var(--svg-hover-color);
 }
 
 .logo-text {
@@ -609,13 +611,15 @@ textarea:focus {
 }
 
 .sorting_order {
-  transition: transform 0.8s ease;
+  transition: transform 0.4s ease;
   align-self: center;
-  fill: var(--text-color);
+  fill: var(--first-color);
+  cursor: pointer;
+  margin-left: -12px;
 }
 
 .sorting_order:hover {
-  background-color: var(--border-color);
+  fill: var(--svg-hover-color);
 }
 
 .sliderContainer {

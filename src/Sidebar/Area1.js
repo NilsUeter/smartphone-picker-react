@@ -76,23 +76,22 @@ export const Area1 = observer(() => {
               ["released", "Release Date"]
             ]}
           />
-          <svg
-            id="sorting_order"
-            className={
-              FilterStore.isDescending
-                ? "sorting_order rotate-sorting-order"
-                : "sorting_order"
-            }
-            role="img"
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 256 512"
-            height="22px"
-            width="22px"
-            alt="Submit"
-            onClick={() => FilterStore.toggleAttribute("isDescending")}
-          >
-            <path d="M88 166.059V468c0 6.627 5.373 12 12 12h56c6.627 0 12-5.373 12-12V166.059h46.059c21.382 0 32.09-25.851 16.971-40.971l-86.059-86.059c-9.373-9.373-24.569-9.373-33.941 0l-86.059 86.059c-15.119 15.119-4.411 40.971 16.971 40.971H88z" />
-          </svg>
+          <div style={{ display: "flex", overflow: "hidden" }}>
+            <svg
+              id="sorting_order"
+              className={
+                FilterStore.isDescending
+                  ? "sorting_order rotate-sorting-order"
+                  : "sorting_order"
+              }
+              viewBox="0 0 32 16"
+              height="24px"
+              alt="Submit"
+              onClick={() => FilterStore.toggleAttribute("isDescending")}
+            >
+              <path d="M 0 0 L 0 4 L 4 4 L 4 0 L 0 0 z M 16 0 L 12 4 L 14 4 L 14 16 L 18 16 L 18 4 L 20 4 L 16 0 z M 24 0 L 24 4 L 32 4 L 32 0 L 24 0 z M 0 6 L 0 10 L 6 10 L 6 6 L 0 6 z M 26 6 L 26 10 L 32 10 L 32 6 L 26 6 z M 0 12 L 0 16 L 8 16 L 8 12 L 0 12 z M 28 12 L 28 16 L 32 16 L 32 12 L 28 12 z " />
+            </svg>{" "}
+          </div>
         </div>
       </label>
       <div className="flex">

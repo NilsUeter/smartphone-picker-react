@@ -229,6 +229,9 @@ class SmartphoneStore {
 
   getUniqueBrands() {
     var unique = [];
+    if (!this.hasLoaded) {
+      return unique;
+    }
     this.obj.forEach(element => {
       if (unique.indexOf(element.brand) === -1) {
         unique.push(element.brand);
