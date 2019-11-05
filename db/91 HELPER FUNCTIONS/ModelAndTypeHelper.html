@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Helper page</title>
+  </head>
+  <style type="text/css">
+    body,
+    input,
+    button {
+      font-size: 20px;
+    }
+
+    label {
+      display: flex;
+      margin-right: 8px;
+    }
+
+    .label-text {
+      margin-right: 4px;
+    }
+
+    .container {
+      padding: 8px;
+    }
+  </style>
+  <body>
+    <div id="template" class="container" style="display: none;">
+      <label>
+        <span class="label-text">Storage</span>
+        <input class="storage" type="number" />
+      </label>
+      <label>
+        <span class="label-text">Memory</span>
+        <input class="memory" type="number" />
+      </label>
+      <label style="flex:1">
+        <span class="label-text">Types</span>
+        <input class="memory" type="text" style="width: 100%;" />
+      </label>
+    </div>
+    <div id="js_smartphoneModels" class="container">
+      <div><span>Enter Types in format: color:asin,color:asin, ...</span></div>
+    </div>
+    <div class="container">
+      <button id="newModelButton">Create new model</button>
+    </div>
+    <div class="container">
+      <button id="copyToClipboard">Copy SQL to Clipboard</button>
+    </div>
+  </body>
+  <script type="text/javascript">
+    createNewModel();
+    document.getElementById("newModelButton").onclick = () => createNewModel();
+    function createNewModel() {
+      const template = document.getElementById("template");
+      var clone = template.cloneNode(true);
+      clone.removeAttribute("id");
+      clone.classList.add("model");
+      clone.style.display = "flex";
+      document.getElementById("js_smartphoneModels").appendChild(clone);
+    }
+
+    document.getElementById("copyToClipboard").onclick = function() {
+      let sql = "";
+      const models = document.querySelectorAll(".model");
+      models.forEach(model => {
+        const storage = model.children[0].children[1].value;
+        const memory = model.children[1].children[1].value;
+        sql += `INSERT INTO \`PHONE_MODEL\`
+        (\`SMARTPHONE_ID\`,\`STORAGE\`,\`MEMORY\`)
+        SELECT
+        	MAX(ID),${storage},${memory}
+        FROM
+            SMARTPHONE;`;
+
+        const types = model.children[2].children[1].value;
+        types.split(",").forEach(type => {
+          const [color, asin] = type.split(":");
+          sql += `INSERT INTO \`MODEL_TYPE\`
+    (\`PHONE_MODEL_ID\`,\`VENDOR_ID\`,\`NAME\`,\`ITEM_ID\`,\`LINK\`,\`LAST_UPDATED\`)
+    SELECT
+    	MAX(ID),'AMAZON_DE','${color}','${asin}','','0000-00-00 00:00:00'
+    FROM
+    	PHONE_MODEL;`;
+        });
+      });
+
+      console.log(sql);
+      navigator.clipboard.writeText(sql);
+    };
+  </script>
+</html>
