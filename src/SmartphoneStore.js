@@ -170,9 +170,8 @@ class SmartphoneStore {
         if (phone.models.length < 1) {
           continue;
         }
-
-        phone.totalscore = this.calculateScore(phone, FilterStore.decayFactor);
       }
+      phone.totalscore = this.calculateScore(phone, FilterStore.decayFactor);
       listOfFilteredObjects.push(phone);
     }
     return listOfFilteredObjects;

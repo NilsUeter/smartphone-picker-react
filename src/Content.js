@@ -13,12 +13,7 @@ class Content extends Component {
       <main id="smartphones" className="smartphones">
         {SmartphoneStore.listOfFilteredAndScoredObjects.map(smartphone => (
           <Smartphone
-            key={
-              smartphone.brand +
-              smartphone.name +
-              smartphone.memory +
-              smartphone.storage
-            }
+            key={smartphone.brand + smartphone.name}
             smartphone={smartphone}
             maxImgHeight={maxImgHeight}
             filterStore={FilterStore}

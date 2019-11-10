@@ -100,24 +100,37 @@ const Smartphone = observer(
               setSelectedType(e.target.value.split(":")[1]);
             }}
           >
-            {smartphone.models.map((model, modelIndex) =>
-              model.types.map((type, typeIndex) => (
-                <option
-                  value={modelIndex + ":" + typeIndex}
-                  key={type.name + model.memory + model.storage}
-                  className="smartphone-price-item"
-                >
-                  {type.name +
-                    " " +
-                    model.memory +
-                    "GB " +
-                    model.storage +
-                    "GB " +
-                    (type.price ? type.price : "N/A") +
-                    "€"}
-                </option>
-              ))
-            )}
+            {smartphone.models.map((model, modelIndex) => {
+              return (
+                <>
+                  {model.types.map((type, typeIndex) => (
+                    <option
+                      value={modelIndex + ":" + typeIndex}
+                      key={type.name + model.memory + model.storage}
+                      className="smartphone-price-item"
+                    >
+                      {type.name +
+                        " " +
+                        model.memory +
+                        "GB " +
+                        model.storage +
+                        "GB " +
+                        (type.price ? type.price : "N/A") +
+                        "€"}
+                    </option>
+                  ))}
+                  {modelIndex < smartphone.models.length - 1 && (
+                    <option
+                      value={modelIndex + ":divider"}
+                      disabled
+                      className="smartphone-price-item-divider"
+                    >
+                      ------------------------------
+                    </option>
+                  )}
+                </>
+              );
+            })}
           </select>
           <div className="flexBetween">
             <span className="smartphone-release ">{smartphone.released}</span>

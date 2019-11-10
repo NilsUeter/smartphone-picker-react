@@ -374,6 +374,10 @@ body,
   flex-wrap: wrap;
 }
 
+.smartphones-in-month > .smartphone {
+  flex: none;
+}
+
 .logo {
   box-sizing: border-box;
   padding: 4px 8px;
@@ -671,6 +675,11 @@ textarea:focus {
   display: flex;
   align-items: center;
   padding: 4px;
+}
+
+.smartphone-price-item-divider {
+  user-select: none;
+  pointer-events: none;
 }
 
 .smartphone-price-summary {

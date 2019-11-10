@@ -34,7 +34,7 @@ class FilterStore {
   release_maximum = new Date().toISOString().slice(0, 7);
 
   @observable
-  price_minimum_1 = 0;
+  price_minimum_1 = 50;
   @observable
   price_maximum_1 = 1200;
 
@@ -258,7 +258,7 @@ const resetCopy = {
   emptySmartphones: false,
   release_minimum: getMinDate(),
   release_maximum: new Date().toISOString().slice(0, 7),
-  price_minimum_1: 0,
+  price_minimum_1: 50,
   price_maximum_1: 1200,
   size_minimum_1: 4.6,
   size_maximum_1: 7,

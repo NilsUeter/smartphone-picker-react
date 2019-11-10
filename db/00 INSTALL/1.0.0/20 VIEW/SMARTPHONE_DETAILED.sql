@@ -1,7 +1,7 @@
 CREATE VIEW `SMARTPHONE_DETAILED` AS
 SELECT
 	types.VENDOR_ID 	AS VENDOR,
-    types.NAME 			AS NAME,
+    types.NAME 			AS TYPE_NAME,
     types.ITEM_ID 		AS ITEM_ID,
     types.LINK 			AS LINK,
     types.LAST_UPDATED	AS LAST_UPDATED,
@@ -17,4 +17,4 @@ FROM
 ORDER BY
 	phones.ID,
     models.ID,
-    types.PRICE DESC;
+    types.PRICE ASC;
