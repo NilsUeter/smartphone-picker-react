@@ -16,6 +16,7 @@
   --border-color: #e0e0e0;
   --background-color: #fff;
   --foreground-color: #fff;
+  --scrollbar-track: var(--border-color);
 }
 
 .darkmode {
@@ -26,6 +27,7 @@
   --border-color: #a0a0a0;
   --background-color: #263238;
   --foreground-color: var(--background-color);
+  --scrollbar-track: var(--first-color);
 }
 
 .lightmode .sidebar {
@@ -184,12 +186,13 @@ body,
 }
 
 .img-container {
-  padding: 0 6px;
+  box-sizing: border-box;
+  padding: 0 8px 4px;
   position: relative;
   align-items: flex-end;
   display: flex;
   justify-content: center;
-  margin-bottom: 8px;
+  margin-bottom: 4px;
   background-color: var(--just-white);
   border-radius: 8px;
   transform-style: preserve-3d;
@@ -262,12 +265,12 @@ body,
   }
 
   ::-webkit-scrollbar {
-    width: 10px;
+    width: 16px;
     height: 12px;
   }
 
   ::-webkit-scrollbar-track {
-    background: transparent;
+    background: var(--scrollbar-track);
   }
 
   ::-webkit-scrollbar-thumb {
@@ -283,6 +286,7 @@ body,
   padding: 10px;
   padding-left: 10%;
   padding-right: 10%;
+  color: var(--text-color);
 }
 
 .accentColor {
@@ -347,31 +351,23 @@ body,
 
 .smartphones-releases-container {
   min-height: 32px;
-  margin-left: 16px;
-  border-left: var(--border-color) 2px solid;
 }
 
 .smartphones-releases-month {
   position: relative;
   margin-bottom: 20px;
   padding-left: 32px;
-  min-width: 64px;
+  border-top: 1px solid var(--border-color);
   font-weight: 600;
   font-size: 14px;
   color: var(--first-color);
-}
-
-.smartphones-releases-month:after {
-  content: " ";
-  width: 128px;
-  border-top: 2px solid var(--border-color);
-  position: absolute;
-  top: 20px;
-  left: 0;
+  font-size: 16px;
+  padding-top: 4px;
 }
 
 .smartphones-in-month {
   flex-wrap: wrap;
+  padding-left: 8px;
 }
 
 .smartphones-in-month > .smartphone {
@@ -393,20 +389,43 @@ body,
   color: var(--background-color);
   outline: none;
   user-select: none;
+  cursor: pointer;
+  padding: 4px 8px;
+}
+
+.filter-drop-down-padder {
+  position: absolute;
+  top: 30px;
+  height: 6px;
+  width: 230px;
 }
 
 .filter-drop-down {
+  display: flex;
   background-color: var(--background-color);
   position: absolute;
-  top: 33px;
-  border-radius: 16px;
+  top: 36px;
+  left: 8px;
+  margin-right: 8px;
+  border-radius: 8px;
   box-shadow: 0 3px 12px rgba(27, 31, 35, 0.35), 0 0 1px rgba(27, 31, 35, 0.4);
+  overflow: hidden;
+}
+
+.filter-drop-down__header {
+  padding: 7px 15px;
+  font-size: 18px;
+  letter-spacing: 2px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--first-color);
 }
 
 .filter-drop-down__element {
-  padding: 8px 16px;
+  padding: 7px 15px;
   line-height: 1.2;
   vertical-align: middle;
+  cursor: pointer;
 }
 
 .filter-drop-down__element:hover {
@@ -418,11 +437,11 @@ body,
   text-decoration: none;
   color: var(--first-color);
   font-weight: 600;
-  font-size: 15px;
+  font-size: 16px;
 }
 
 .filter-drop-down__span {
-  margin-left: 8px;
+  margin-left: 12px;
 }
 
 .header {
@@ -433,6 +452,7 @@ body,
 }
 
 .main-menu-link {
+  padding: 4px 8px;
   text-decoration: none;
   color: var(--background-color);
   cursor: pointer;
@@ -442,7 +462,6 @@ body,
 .main-menu {
   box-sizing: border-box;
   position: relative;
-  padding: 4px 8px;
   margin-top: 0;
 
   display: flex;
@@ -659,6 +678,7 @@ textarea:focus {
   padding: 8px 0.875em;
   border-radius: 8px;
   border: var(--border-color) 2px solid;
+  min-width: 200px;
 }
 
 .smartphone-price-details {

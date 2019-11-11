@@ -37,8 +37,6 @@ class About extends Component {
             lasts you a day and not how many mAh it has.{" "}
           </p>
           <br />
-          <br />
-          <br />
           <div>
             <h2>Impressum</h2>
             <br />
@@ -49,7 +47,18 @@ class About extends Component {
               <b>Redaktionell Verantwortlicher:</b> Nils Ueter
             </p>
             <p>
-              <b>Kontakt</b> unter admin@smartphone-picker.com
+              <b>Kontakt</b> unter{" "}
+              <a
+                className="main-menu-link"
+                href="mailto:admin@smartphone-picker.com"
+                style={{
+                  color: "var(--first-color)",
+                  display: "inline-block",
+                  padding: 0
+                }}
+              >
+                admin@smartphone-picker.com
+              </a>
             </p>
             <br />
             <h3>1. Warnhinweis zu Inhalten</h3>

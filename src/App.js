@@ -51,13 +51,6 @@ const getContentWithURL = currentURL => {
     case "/charts":
       content = <ContentCharts />;
       break;
-    case "/justgood":
-      FilterStore.design = "3";
-      FilterStore.processor = "3";
-      FilterStore.updates = "4";
-      FilterStore.camera = "3";
-      FilterStore.battery = "3";
-      break;
     default:
       break;
   }
