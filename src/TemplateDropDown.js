@@ -29,13 +29,13 @@ function TemplateDropDown({ summary, detailCategories }) {
       <div className="filter-drop-down-padder"></div>
       <div className="filter-drop-down">
         {Object.keys(detailCategories).map(key => (
-          <div>
+          <div key={key}>
             <div className="filter-drop-down__header">{key}</div>
             {detailCategories[key].map(detail => {
               return (
                 <div
                   className="filter-drop-down__element"
-                  key={detail.href}
+                  key={detail.desc}
                   onClick={e => {
                     console.log("here");
                     // close current details
