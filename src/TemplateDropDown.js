@@ -13,15 +13,19 @@ function TemplateDropDown({ summary, detailCategories }) {
       onMouseLeave={e => {
         detailsRef.current.removeAttribute("open");
       }}
-      onFocus={e => {
-        e.preventDefault();
-        e.stopPropagation();
-        if (detailsRef.current.hasAttribute("open")) {
-          detailsRef.current.removeAttribute("open");
-        }
-      }}
     >
-      <summary className="filter__summary">{summary}</summary>
+      <summary
+        className="filter__summary"
+        onFocus={e => {
+          e.preventDefault();
+          e.stopPropagation();
+          if (detailsRef.current.hasAttribute("open")) {
+            detailsRef.current.removeAttribute("open");
+          }
+        }}
+      >
+        {summary}
+      </summary>
       <div className="filter-drop-down-padder"></div>
       <div className="filter-drop-down">
         {Object.keys(detailCategories).map(key => (
@@ -33,6 +37,7 @@ function TemplateDropDown({ summary, detailCategories }) {
                   className="filter-drop-down__element"
                   key={detail.href}
                   onClick={e => {
+                    console.log("here");
                     // close current details
                     detailsRef.current.removeAttribute("open");
                     // change url without reload

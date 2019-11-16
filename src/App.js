@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, Suspense } from "react";
 
 import "./App.css";
 
@@ -6,13 +6,14 @@ import Header from "./Header.js";
 import SidebarContainer from "./Sidebar/SidebarContainer.js";
 import Content from "./Content.js";
 import ContentReleases from "./ContentReleases.js";
-import ContentCharts from "./ContentCharts.js";
 import About from "./About.js";
 
 import FilterStore from "./FilterStore.js";
 
 import { observer } from "mobx-react";
 import SmartphoneStore from "./SmartphoneStore";
+
+const ContentCharts = React.lazy(() => import("./ContentCharts"));
 
 const NoResultsInfo = () => (
   <div className="no-results-container">
@@ -91,7 +92,9 @@ const App = observer(() => {
         ) : (
           <React.Fragment>
             <SidebarContainer />
-            {getContentWithURL(currentURL)}
+            <Suspense fallback={<div>Loading...</div>}>
+              {getContentWithURL(currentURL)}
+            </Suspense>
           </React.Fragment>
         )}
       </div>
