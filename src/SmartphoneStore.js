@@ -107,7 +107,7 @@ class SmartphoneStore {
           continue;
         }
 
-        //storage
+        //waterproof
         if (FilterStore.waterproof !== "") {
           if (phone.waterproof < FilterStore.waterproof) {
             continue;
@@ -147,7 +147,7 @@ class SmartphoneStore {
           if (phone.models[t].storage < FilterStore.storage) {
             phone.models.splice(t, 1);
             t--;
-            break;
+            continue;
           }
           for (let c = 0; c < phone.models[t].types.length; c++) {
             //price

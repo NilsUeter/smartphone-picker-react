@@ -19,8 +19,8 @@ const changeAttributeDateSlider = (e, value) => {
 
   FilterStore.changeAttribute(
     "release_maximum",
-    "201" +
-      (7 + Math.floor(value[1] / 12)) +
+    "20" +
+      (17 + Math.floor(value[1] / 12)) +
       "-" +
       ("00" + ((value[1] % 12) + 1)).slice(-2)
   );
@@ -50,7 +50,6 @@ const getMaxDateInMonths = maxDate => {
     monthsMax -= start.getMonth();
     monthsMax += max.getMonth();
   }
-
   return monthsMax;
 };
 
