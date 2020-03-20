@@ -1,0 +1,22 @@
+{
+  "name": "api",
+  "version": "0.0.1",
+  "description": "Awesome project developed with TypeORM.",
+  "devDependencies": {
+    "@types/node": "^13.7.0",
+    "ts-node": "8.6.2",
+    "typescript": "3.7.5"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "nodemon": "^2.0.2",
+    "pg": "^7.18.1",
+    "reflect-metadata": "^0.1.13",
+    "typeorm": "0.2.22"
+  },
+  "scripts": {
+    "start": "nodemon --exec ts-node --files src/index.ts",
+    "start:production": "pm2 start --name 'jira_api' node -- -r ./tsconfig-paths.js build/index.js",
+    "build": "cd src && tsc"
+  }
+}
