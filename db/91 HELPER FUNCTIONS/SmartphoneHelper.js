@@ -59,6 +59,6 @@
         break;
     }
   }
-  console.log(`INSERT INTO 'SMARTPHONE' ('NAME','BRAND','RELEASED','IMAGE_LINK','DESIGN','DISPLAY','LENGTH','WIDTH','CPU','UPDATES','CAMERA','BATTERY','BATTERYSIZE','SD_SLOT','SIM_CARDS','NOTCH','WATERPROOF','HEADPHONE_JACK')
+  console.log(`INSERT INTO \`SMARTPHONE\` (\`NAME\`,\`BRAND\`,\`RELEASED\`,\`IMAGE_LINK\`,\`DESIGN\`,\`DISPLAY\`,\`LENGTH\`,\`WIDTH\`,\`CPU\`,\`UPDATES\`,\`CAMERA\`,\`BATTERY\`,\`BATTERYSIZE\`,\`SD_SLOT\`,\`SIM_CARDS\`,\`NOTCH\`,\`WATERPROOF\`,\`HEADPHONE_JACK\`)
   VALUES ('${name}','${brand}','${release}','${imgName}',DESIGN,${displaySize},${height},${width},CPU,UPDATES,CAMERA,BATTERY,${batterySize},${sdSlot},SIMCARDS,NOTCH,${waterproof},${headphoneJack});`);
 }
