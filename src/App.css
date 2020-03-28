@@ -612,21 +612,7 @@ textarea {
   padding: 2px;
   color: var(--text-color);
   background-color: transparent;
-  outline: none;
   box-sizing: border-box;
-}
-
-input[type="date"]:focus,
-input[type="datetime"]:focus,
-input[type="email"]:focus,
-input[type="number"]:focus,
-input[type="search"]:focus,
-input[type="text"]:focus,
-input[type="time"]:focus,
-input[type="url"]:focus,
-select:focus,
-textarea:focus {
-  box-shadow: 0 0 2px var(--text-color);
 }
 
 .rotate-sorting-order {
@@ -952,7 +938,7 @@ textarea:focus {
 
 .multiCheckboxContainer {
   height: 200px;
-  overflow-y: scroll;
+  overflow-y: auto;
 }
 
 .overwrite-material-checkbox {
