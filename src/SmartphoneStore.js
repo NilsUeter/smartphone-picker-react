@@ -244,10 +244,10 @@ class SmartphoneStore {
   compareDates(a, b, attribute) {
     return FilterStore.isDescending
       ? b[attribute] > a[attribute]
-        ? 0
+        ? 1
         : -1
       : a[attribute] > b[attribute]
-      ? 0
+      ? 1
       : -1;
   }
 
