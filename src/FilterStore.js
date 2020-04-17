@@ -86,6 +86,8 @@ class FilterStore {
   onlyShowFavedPhones = false;
   @observable
   showBacksideDefault = false;
+  @observable
+  showPhonesWithoutPrices = false;
 
   getSidebarHiddenInitialState = () => {
     const viewportWidth = window.innerWidth;
@@ -103,7 +105,7 @@ class FilterStore {
   };
 
   @action
-  toggleAttribute = name => {
+  toggleAttribute = (name) => {
     this[name] = !this[name];
   };
 
@@ -167,7 +169,7 @@ class FilterStore {
       if (key[0] === "selectedFavorites") {
         const keys = decodeURIComponent(key[1]).split(",");
         const object = {};
-        keys.forEach(element => (object[element] = element));
+        keys.forEach((element) => (object[element] = element));
         this[key[0]] = object;
         continue;
       }
@@ -280,7 +282,8 @@ const resetCopy = {
   selectedBrands: [],
   selectedFavorites: {},
   onlyShowFavedPhones: false,
-  showBacksideDefault: false
+  showBacksideDefault: false,
+  showPhonesWithoutPrices: false,
 };
 
 window.addEventListener("popstate", () => filterStore.loadURL(), false);

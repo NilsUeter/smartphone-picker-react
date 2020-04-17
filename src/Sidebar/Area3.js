@@ -10,36 +10,36 @@ import FilterStore from "../FilterStore.js";
 const storageMarks = [
   {
     value: 0,
-    label: "8"
+    label: "8",
   },
   {
     value: 1,
-    label: "16"
+    label: "16",
   },
   {
     value: 2,
-    label: "32"
+    label: "32",
   },
   {
     value: 3,
-    label: "64"
+    label: "64",
   },
   {
     value: 4,
-    label: "128"
+    label: "128",
   },
   {
     value: 5,
-    label: "256"
+    label: "256",
   },
   {
     value: 6,
-    label: "512"
+    label: "512",
   },
   {
     value: 7,
-    label: "1024"
-  }
+    label: "1024",
+  },
 ];
 
 export const Area3 = observer(() => {
@@ -81,7 +81,7 @@ export const Area3 = observer(() => {
             ["", ""],
             ["4", "IP X4 Splashing water"],
             ["7", "IP X7 Immersion up to 1m"],
-            ["8", "IP X8 Immersion beyond 1m"]
+            ["8", "IP X8 Immersion beyond 1m"],
           ]}
         />
       </div>

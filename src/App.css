@@ -512,7 +512,7 @@ radio {
 }
 
 .filterBox {
-  max-height: 300px;
+  max-height: 350px;
   align-items: center;
   overflow: hidden;
   padding-left: 20px;
@@ -587,9 +587,7 @@ radio {
   flex-direction: row;
   flex-wrap: nowrap;
   align-items: center;
-  padding-left: 3px;
-  padding-right: 6.5px;
-  margin-top: -5px;
+  margin-top: -8px;
 }
 
 .filler {
@@ -607,7 +605,7 @@ input[type="url"],
 select,
 button,
 textarea {
-  border-radius: 2px;
+  border-radius: 3px;
   font-size: 14px;
   padding: 2px;
   color: var(--text-color);
@@ -632,7 +630,7 @@ textarea {
 }
 
 .sliderContainer {
-  margin-bottom: 5px;
+  margin-bottom: 8px;
 }
 
 .rc-slider {
@@ -848,7 +846,7 @@ textarea {
 .smallInput {
   width: 38px;
   text-align: right;
-  border: 1px solid #f0f0f0;
+  border: 1px solid #e0e0e0;
   margin: 0;
   font-weight: 600;
 }

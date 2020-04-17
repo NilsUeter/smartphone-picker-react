@@ -115,7 +115,7 @@ const Smartphone = observer(
                         "GB " +
                         model.storage +
                         "GB " +
-                        (type.price ? type.price : "N/A") +
+                        (type.price !== -1 ? type.price : "N/A") +
                         "€"}
                     </option>
                   ))}
@@ -195,7 +195,9 @@ const Smartphone = observer(
             </div>
           </details>
           <div className="flexBetween">
-            <span className="smartphone-price">{price ? price : "N/A"}€</span>
+            <span className="smartphone-price">
+              {price !== -1 ? price : "N/A"}€
+            </span>
             {link && (
               <div className="a-button a-button-primary">
                 <a

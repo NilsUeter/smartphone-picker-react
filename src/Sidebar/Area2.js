@@ -4,6 +4,7 @@ import FilterBox from "../FilterBox";
 import TextField from "../TextField";
 
 import Slider from "@material-ui/core/Slider";
+import ToggleSwitch from "../ToggleSwitch";
 import FilterStore from "../FilterStore.js";
 
 const changeAttributeSlider = (first, second) => (e, value) => {
@@ -16,7 +17,7 @@ export const Area2 = observer(() => {
     <FilterBox header="Budget and Size">
       <label className="filterBoxLabel">
         Price
-        <div className="sliderContainer">
+        <div className="sliderContainer" style={{ marginBottom: 0 }}>
           <div>
             <Slider
               min={0}
@@ -28,7 +29,7 @@ export const Area2 = observer(() => {
                   : 0,
                 parseInt(FilterStore.price_maximum_1, 10)
                   ? parseInt(FilterStore.price_maximum_1, 10)
-                  : 0
+                  : 0,
               ]}
               pushable={50}
               onChange={changeAttributeSlider(
@@ -46,6 +47,10 @@ export const Area2 = observer(() => {
           </div>
         </div>
       </label>
+      <div className="flex" style={{ marginBottom: 16 }}>
+        <p>Show phones without prices</p>
+        <ToggleSwitch name="showPhonesWithoutPrices" />
+      </div>
       <label className="filterBoxLabel">
         Display
         <div className="sliderContainer">
@@ -61,7 +66,7 @@ export const Area2 = observer(() => {
                   : 0,
                 parseFloat(FilterStore.size_maximum_1)
                   ? parseFloat(FilterStore.size_maximum_1)
-                  : 0
+                  : 0,
               ]}
               onChange={changeAttributeSlider(
                 "size_minimum_1",
@@ -93,7 +98,7 @@ export const Area2 = observer(() => {
                   : 0,
                 parseInt(FilterStore.size_maximum_2, 10)
                   ? parseInt(FilterStore.size_maximum_2, 10)
-                  : 0
+                  : 0,
               ]}
               onChange={changeAttributeSlider(
                 "size_minimum_2",
@@ -125,7 +130,7 @@ export const Area2 = observer(() => {
                   : 0,
                 parseInt(FilterStore.size_maximum_3, 10)
                   ? parseInt(FilterStore.size_maximum_3, 10)
-                  : 0
+                  : 0,
               ]}
               onChange={changeAttributeSlider(
                 "size_minimum_3",
