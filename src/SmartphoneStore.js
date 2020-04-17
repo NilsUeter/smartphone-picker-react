@@ -13,16 +13,16 @@ class SmartphoneStore {
   }
 
   @action
-  init = responseText => {
+  init = (responseText) => {
     this.obj = responseText;
     // Set variable to show it finished loading
     this.hasLoaded = true;
   };
 
   loadJSON = () => {
-    fetch("https://api.smartphone-picker.com/v1/Smartphone.php")
-      .then(r => r.json())
-      .then(data => this.init(data));
+    fetch("https://api-java.azurewebsites.net/v1/smartphone")
+      .then((r) => r.json())
+      .then((data) => this.init(data));
   };
 
   @computed
@@ -115,22 +115,22 @@ class SmartphoneStore {
         }
 
         //headphonejack
-        if (FilterStore.headphoneJack && phone.headphoneJack === 0) {
+        if (FilterStore.headphoneJack && !phone.headphoneJack) {
           continue;
         }
 
         //simCardInput
-        if (FilterStore.simCards && phone.simCards === 1) {
+        if (FilterStore.simCards && !phone.dualSim) {
           continue;
         }
 
         //sdSLot
-        if (FilterStore.sdSlot && phone.sdSlot === 0) {
+        if (FilterStore.sdSlot && !phone.sdSlot) {
           continue;
         }
 
         //notch
-        if (FilterStore.notch && phone.notch === 1) {
+        if (FilterStore.notch && phone.notchType === "NOTCH") {
           continue;
         }
 
@@ -142,32 +142,36 @@ class SmartphoneStore {
           continue;
         }
 
-        for (let t = 0; t < phone.models.length; t++) {
+        for (let t = 0; t < phone.phoneModels.length; t++) {
           //storage
-          if (phone.models[t].storage < FilterStore.storage) {
-            phone.models.splice(t, 1);
+          if (phone.phoneModels[t].storage < FilterStore.storage) {
+            phone.phoneModels.splice(t, 1);
             t--;
             continue;
           }
-          for (let c = 0; c < phone.models[t].types.length; c++) {
+          for (let c = 0; c < phone.phoneModels[t].modelTypes.length; c++) {
             //price
-            if (
-              FilterStore.price_minimum_1 > phone.models[t].types[c].price ||
-              FilterStore.price_maximum_1 < phone.models[t].types[c].price
+            if (phone.phoneModels[t].modelTypes[c].price === -1) {
+              // no price info
+            } else if (
+              FilterStore.price_minimum_1 >
+                phone.phoneModels[t].modelTypes[c].price ||
+              FilterStore.price_maximum_1 <
+                phone.phoneModels[t].modelTypes[c].price
             ) {
-              if (phone.models[t].types.length === 1) {
-                phone.models.splice(t, 1);
+              if (phone.phoneModels[t].modelTypes.length === 1) {
+                phone.phoneModels.splice(t, 1);
                 t--;
                 break;
               } else {
-                phone.models[t].types.splice(c, 1);
+                phone.phoneModels[t].modelTypes.splice(c, 1);
                 c--;
               }
             }
           }
         }
 
-        if (phone.models.length < 1) {
+        if (phone.phoneModels.length < 1) {
           continue;
         }
       }
@@ -231,7 +235,7 @@ class SmartphoneStore {
     if (!this.hasLoaded) {
       return unique;
     }
-    this.obj.forEach(element => {
+    this.obj.forEach((element) => {
       if (unique.indexOf(element.brand) === -1) {
         unique.push(element.brand);
       }
@@ -259,8 +263,10 @@ class SmartphoneStore {
 
   compareFunctionLowest(a, b, attribute) {
     return FilterStore.isDescending
-      ? b.models[0].types[0][attribute] - a.models[0].types[0][attribute]
-      : a.models[0].types[0][attribute] - b.models[0].types[0][attribute];
+      ? b.models[0].modelTypes[0][attribute] -
+          a.models[0].modelTypes[0][attribute]
+      : a.models[0].modelTypes[0][attribute] -
+          b.models[0].modelTypes[0][attribute];
   }
 }
 

@@ -7,7 +7,7 @@ const Smartphone = observer(
   ({ smartphone, maxImgHeight, style, filterStore }) => {
     const [selectedModel, setSelectedModel] = useState(0);
     const [selectedType, setSelectedType] = useState(0);
-    const { price, link } = smartphone.models[selectedModel].types[
+    const { price, link } = smartphone.phoneModels[selectedModel].modelTypes[
       selectedType
     ];
     let height = (smartphone.length / 165) * 100 + "%";
@@ -25,9 +25,9 @@ const Smartphone = observer(
                 : "")
             }
             style={{
-              height: maxImgHeight
+              height: maxImgHeight,
             }}
-            onClick={e =>
+            onClick={(e) =>
               window.innerWidth < 600 && //only allow mobile devices to switch with click
               e.currentTarget.classList.toggle("img-container--is-flipped")
             }
@@ -37,26 +37,26 @@ const Smartphone = observer(
                 filterStore.scaleInput ? { height } : { height: 100 + "%" }
               }
               className="qtip-img qtip-img-backside"
-              onError={e => (e.target.alt = "No image")}
-              src={"images/" + smartphone.imageLink + "_back.jpg"}
+              onError={(e) => (e.target.alt = "No image")}
+              src={"images/" + smartphone.image + "_back.jpg"}
               alt=""
             />
             <img
               style={
                 filterStore.scaleInput
                   ? {
-                      height: height
+                      height: height,
                     }
                   : {
-                      height: (165 / 165) * 100 + "%"
+                      height: (165 / 165) * 100 + "%",
                     }
               }
               className="qtip-img"
-              onError={e => (e.target.alt = "No image")}
+              onError={(e) => (e.target.alt = "No image")}
               src={
                 filterStore.emptySmartphones
-                  ? "images/" + smartphone.imageLink + "_blank.png"
-                  : "images/" + smartphone.imageLink + ".jpg"
+                  ? "images/" + smartphone.image + "_blank.png"
+                  : "images/" + smartphone.image + ".jpg"
               }
               alt=""
             />
@@ -95,18 +95,18 @@ const Smartphone = observer(
           </div>
           <select
             className="smartphone-price-details"
-            onChange={e => {
+            onChange={(e) => {
               setSelectedModel(e.target.value.split(":")[0]);
               setSelectedType(e.target.value.split(":")[1]);
             }}
           >
-            {smartphone.models.map((model, modelIndex) => {
+            {smartphone.phoneModels.map((model, modelIndex) => {
               return (
-                <>
-                  {model.types.map((type, typeIndex) => (
+                <React.Fragment key={model.id}>
+                  {model.modelTypes.map((type, typeIndex) => (
                     <option
                       value={modelIndex + ":" + typeIndex}
-                      key={type.name + model.memory + model.storage}
+                      key={type.id}
                       className="smartphone-price-item"
                     >
                       {type.name +
@@ -119,8 +119,9 @@ const Smartphone = observer(
                         "€"}
                     </option>
                   ))}
-                  {modelIndex < smartphone.models.length - 1 && (
+                  {modelIndex < smartphone.phoneModels.length - 1 && (
                     <option
+                      key="divider"
                       value={modelIndex + ":divider"}
                       disabled
                       className="smartphone-price-item-divider"
@@ -128,7 +129,7 @@ const Smartphone = observer(
                       ------------------------------
                     </option>
                   )}
-                </>
+                </React.Fragment>
               );
             })}
           </select>

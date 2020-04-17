@@ -5,18 +5,18 @@ function TemplateDropDown({ summary, detailCategories }) {
   return (
     <details
       ref={detailsRef}
-      onMouseOver={e => {
+      onMouseOver={(e) => {
         e.preventDefault();
         e.stopPropagation();
         detailsRef.current.setAttribute("open", "open");
       }}
-      onMouseLeave={e => {
+      onMouseLeave={(e) => {
         detailsRef.current.removeAttribute("open");
       }}
     >
       <summary
         className="filter__summary"
-        onFocus={e => {
+        onFocus={(e) => {
           e.preventDefault();
           e.stopPropagation();
           if (detailsRef.current.hasAttribute("open")) {
@@ -28,16 +28,15 @@ function TemplateDropDown({ summary, detailCategories }) {
       </summary>
       <div className="filter-drop-down-padder"></div>
       <div className="filter-drop-down">
-        {Object.keys(detailCategories).map(key => (
+        {Object.keys(detailCategories).map((key) => (
           <div key={key}>
             <div className="filter-drop-down__header">{key}</div>
-            {detailCategories[key].map(detail => {
+            {detailCategories[key].map((detail) => {
               return (
                 <div
                   className="filter-drop-down__element"
                   key={detail.desc}
-                  onClick={e => {
-                    console.log("here");
+                  onClick={(e) => {
                     // close current details
                     detailsRef.current.removeAttribute("open");
                     // change url without reload

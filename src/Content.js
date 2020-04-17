@@ -11,10 +11,10 @@ class Content extends Component {
     const maxImgHeight = window.innerWidth < 600 ? 250 : 450;
     return (
       <main id="smartphones" className="smartphones">
-        {SmartphoneStore.listOfFilteredAndScoredObjects.map(smartphone => (
+        {SmartphoneStore.listOfFilteredAndScoredObjects.map((phone) => (
           <Smartphone
-            key={smartphone.brand + smartphone.name}
-            smartphone={smartphone}
+            key={phone.id}
+            smartphone={phone}
             maxImgHeight={maxImgHeight}
             filterStore={FilterStore}
           />
