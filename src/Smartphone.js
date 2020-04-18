@@ -7,7 +7,7 @@ const Smartphone = observer(
   ({ smartphone, maxImgHeight, style, filterStore }) => {
     const [selectedModel, setSelectedModel] = useState(0);
     const [selectedType, setSelectedType] = useState(0);
-    const { price, link } = smartphone.phoneModels[selectedModel].modelTypes[
+    const { price, link } = smartphone.models[selectedModel].types[
       selectedType
     ];
     let height = (smartphone.length / 165) * 100 + "%";
@@ -100,10 +100,10 @@ const Smartphone = observer(
               setSelectedType(e.target.value.split(":")[1]);
             }}
           >
-            {smartphone.phoneModels.map((model, modelIndex) => {
+            {smartphone.models.map((model, modelIndex) => {
               return (
                 <React.Fragment key={model.id}>
-                  {model.modelTypes.map((type, typeIndex) => (
+                  {model.types.map((type, typeIndex) => (
                     <option
                       value={modelIndex + ":" + typeIndex}
                       key={type.id}
@@ -119,7 +119,7 @@ const Smartphone = observer(
                         "€"}
                     </option>
                   ))}
-                  {modelIndex < smartphone.phoneModels.length - 1 && (
+                  {modelIndex < smartphone.models.length - 1 && (
                     <option
                       key="divider"
                       value={modelIndex + ":divider"}

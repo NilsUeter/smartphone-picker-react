@@ -87,7 +87,7 @@ class FilterStore {
   @observable
   showBacksideDefault = false;
   @observable
-  showPhonesWithoutPrices = false;
+  showPhonesWithoutPrices = true;
 
   getSidebarHiddenInitialState = () => {
     const viewportWidth = window.innerWidth;
@@ -283,7 +283,7 @@ const resetCopy = {
   selectedFavorites: {},
   onlyShowFavedPhones: false,
   showBacksideDefault: false,
-  showPhonesWithoutPrices: false,
+  showPhonesWithoutPrices: true,
 };
 
 window.addEventListener("popstate", () => filterStore.loadURL(), false);

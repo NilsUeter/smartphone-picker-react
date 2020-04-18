@@ -142,39 +142,37 @@ class SmartphoneStore {
           continue;
         }
 
-        for (let t = 0; t < phone.phoneModels.length; t++) {
+        for (let t = 0; t < phone.models.length; t++) {
           //storage
-          if (phone.phoneModels[t].storage < FilterStore.storage) {
-            phone.phoneModels.splice(t, 1);
+          if (phone.models[t].storage < FilterStore.storage) {
+            phone.models.splice(t, 1);
             t--;
             continue;
           }
-          for (let c = 0; c < phone.phoneModels[t].modelTypes.length; c++) {
+          for (let c = 0; c < phone.models[t].types.length; c++) {
             //price
             if (
-              phone.phoneModels[t].modelTypes[c].price === -1 &&
+              phone.models[t].types[c].price === -1 &&
               FilterStore.showPhonesWithoutPrices
             ) {
               // no price info but ignore when showPhonesWithoutPrices is true
             } else if (
-              FilterStore.price_minimum_1 >
-                phone.phoneModels[t].modelTypes[c].price ||
-              FilterStore.price_maximum_1 <
-                phone.phoneModels[t].modelTypes[c].price
+              FilterStore.price_minimum_1 > phone.models[t].types[c].price ||
+              FilterStore.price_maximum_1 < phone.models[t].types[c].price
             ) {
-              if (phone.phoneModels[t].modelTypes.length === 1) {
-                phone.phoneModels.splice(t, 1);
+              if (phone.models[t].types.length === 1) {
+                phone.models.splice(t, 1);
                 t--;
                 break;
               } else {
-                phone.phoneModels[t].modelTypes.splice(c, 1);
+                phone.models[t].types.splice(c, 1);
                 c--;
               }
             }
           }
         }
 
-        if (phone.phoneModels.length < 1) {
+        if (phone.models.length < 1) {
           continue;
         }
       }
@@ -266,10 +264,8 @@ class SmartphoneStore {
 
   compareFunctionLowest(a, b, attribute) {
     return FilterStore.isDescending
-      ? b.models[0].modelTypes[0][attribute] -
-          a.models[0].modelTypes[0][attribute]
-      : a.models[0].modelTypes[0][attribute] -
-          b.models[0].modelTypes[0][attribute];
+      ? b.models[0].types[0][attribute] - a.models[0].types[0][attribute]
+      : a.models[0].types[0][attribute] - b.models[0].types[0][attribute];
   }
 }
 

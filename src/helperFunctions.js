@@ -9,7 +9,7 @@ export function monthDiff(dateFrom, dateTo) {
 export function getAttributeFromSmartphone(smartphone, attribute) {
   switch (attribute) {
     case "price":
-      return smartphone.phoneModels[0].modelTypes[0][attribute] + "€";
+      return smartphone.models[0].types[0][attribute] + "€";
     case "length":
     case "width":
       return smartphone[attribute] + "mm";
